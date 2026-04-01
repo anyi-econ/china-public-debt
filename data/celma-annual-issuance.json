@@ -1,0 +1,172 @@
+{
+  "updatedAt": "2026-04-01",
+  "source": {
+    "name": "中国地方政府债券信息公开平台",
+    "organization": "财政部建设",
+    "url": "https://www.celma.org.cn/ndsj/index.jhtml",
+    "note": "通过官方年度数据页对应接口 loadBondData.action 抓取全国年度发行额指标。"
+  },
+  "series": [
+    {
+      "key": "total",
+      "metricId": "0301",
+      "label": "全国地方政府债券发行额",
+      "unit": "亿元",
+      "values": [
+        {
+          "year": 2015,
+          "value": 38350.6
+        },
+        {
+          "year": 2016,
+          "value": 60458.4
+        },
+        {
+          "year": 2017,
+          "value": 43580.9
+        },
+        {
+          "year": 2018,
+          "value": 41651.7
+        },
+        {
+          "year": 2019,
+          "value": 43624.3
+        },
+        {
+          "year": 2020,
+          "value": 64438.1
+        },
+        {
+          "year": 2021,
+          "value": 74898.3
+        },
+        {
+          "year": 2022,
+          "value": 73675.8
+        },
+        {
+          "year": 2023,
+          "value": 93373.7
+        },
+        {
+          "year": 2024,
+          "value": 97935.9
+        }
+      ]
+    },
+    {
+      "key": "general",
+      "metricId": "030101",
+      "label": "全国一般债券发行额",
+      "unit": "亿元",
+      "values": [
+        {
+          "year": 2015,
+          "value": 28606.9
+        },
+        {
+          "year": 2016,
+          "value": 35339.8
+        },
+        {
+          "year": 2017,
+          "value": 23619.4
+        },
+        {
+          "year": 2018,
+          "value": 22192.2
+        },
+        {
+          "year": 2019,
+          "value": 17742
+        },
+        {
+          "year": 2020,
+          "value": 23033.7
+        },
+        {
+          "year": 2021,
+          "value": 25669.2
+        },
+        {
+          "year": 2022,
+          "value": 22359.8
+        },
+        {
+          "year": 2023,
+          "value": 33473.9
+        },
+        {
+          "year": 2024,
+          "value": 20674.9
+        }
+      ]
+    },
+    {
+      "key": "special",
+      "metricId": "030102",
+      "label": "全国专项债券发行额",
+      "unit": "亿元",
+      "values": [
+        {
+          "year": 2015,
+          "value": 9743.7
+        },
+        {
+          "year": 2016,
+          "value": 25118.6
+        },
+        {
+          "year": 2017,
+          "value": 19961.6
+        },
+        {
+          "year": 2018,
+          "value": 19459.5
+        },
+        {
+          "year": 2019,
+          "value": 25882.2
+        },
+        {
+          "year": 2020,
+          "value": 41404.5
+        },
+        {
+          "year": 2021,
+          "value": 49229.1
+        },
+        {
+          "year": 2022,
+          "value": 51316
+        },
+        {
+          "year": 2023,
+          "value": 59899.8
+        },
+        {
+          "year": 2024,
+          "value": 77261
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "title": "年度数据：全国地方政府债券发行额",
+      "url": "https://www.celma.org.cn/ndsj/index.jhtml",
+      "description": "官方年度数据页，对应指标 ID 0301、030101、030102。"
+    },
+    {
+      "title": "债券信息检索页",
+      "url": "https://www.celma.org.cn/zqxx/index.jhtml",
+      "description": "可按地区、期限、债券类型和发行日期检索具体债券条目。"
+    },
+    {
+      "title": "月度数据页",
+      "url": "https://www.celma.org.cn/ydsj/index.jhtml",
+      "description": "适合后续补充月度发行额、还本付息和余额变化口径。"
+    }
+  ]
+}

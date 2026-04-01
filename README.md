@@ -2,14 +2,15 @@
 
 面向高校财税研究团队的内部研究网页。当前版本聚焦两件事：
 
-- 权威来源导航
+- 权威文章 / 政策 / 数据页链接聚合
 - 月度 / 历史简报归档
 
 系统仅保存元数据和 AI 生成的简报内容，不持久化保存原文。
 
 ## 当前能力
 
-- 前端展示政策、数据、新闻、文献四类来源导航
+- 前端展示总览、数据、政策、新闻、文献 5 个核心栏目
+- 数据页优先展示中国地方政府债券信息公开平台的全国年度发行规模
 - 支持按月生成简报，并归档到 `data/reports.json`
 - 支持指定月份回溯生成，如 `2026-03`
 - 通过 `data/crawl-index.json` 维护增量去重索引
@@ -19,10 +20,11 @@
 ## 页面
 
 - `/` 总览
+- `/data` 数据
 - `/briefs` 月度简报归档
 - `/sources` 权威来源导航
 - `/policies` 政策元数据
-- `/debt` 债务动态
+- `/debt` 债务动态（兼容旧链接）
 - `/news` 新闻讨论
 - `/papers` 文献研究
 - `/updates` 更新中心
@@ -40,6 +42,7 @@ app/
   updates/page.tsx
 data/
   bundle.json
+  celma-annual-issuance.json
   source-catalog.json
   reports.json
   crawl-index.json
@@ -47,6 +50,7 @@ lib/
   data.ts
   types.ts
 scripts/
+  fetch-celma-annual.mjs
   update.mjs
   import-url.mjs
 server/
@@ -87,6 +91,12 @@ npm run api
 
 ```bash
 npm run update:monthly
+```
+
+### 更新 CELMA 年度发行规模
+
+```bash
+npm run fetch:celma
 ```
 
 ### 生成指定月份简报
@@ -192,7 +202,7 @@ npm run import:url -- https://example.com/paper paper
 
 - 中国人大网预算与债务报告
 - 财政部债务管理司月度统计
-- 中国地方政府债券信息公开平台
+- 中国地方政府债券信息公开平台（当前已接入年度发行规模）
 - 新华社、人民日报、央视新闻
 
 ### 仅导航，不自动抓取

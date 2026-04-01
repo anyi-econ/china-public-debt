@@ -2,10 +2,11 @@ import { PageIntro } from "@/components/layout/page-intro";
 import { SiteShell } from "@/components/layout/site-shell";
 import { DebtOverview } from "@/components/pages/debt-overview";
 import { SectionCard } from "@/components/ui/section-card";
-import { getDebtData } from "@/lib/data";
+import { getAnnualIssuanceDataset, getDebtData } from "@/lib/data";
 
 export default function DebtPage() {
   const items = getDebtData();
+  const annualIssuance = getAnnualIssuanceDataset();
 
   return (
     <SiteShell currentPath="/debt">
@@ -18,7 +19,7 @@ export default function DebtPage() {
 
       <div className="container-page topic-body">
         <SectionCard title="债务统计与图表" description="月度结构与明细">
-          <DebtOverview items={items} />
+          <DebtOverview items={items} annualIssuance={annualIssuance} />
         </SectionCard>
       </div>
     </SiteShell>

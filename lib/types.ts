@@ -27,6 +27,35 @@ export interface DebtDataItem {
   url?: string;
 }
 
+export interface AnnualMetricPoint {
+  year: number;
+  value: number;
+}
+
+export interface AnnualMetricSeries {
+  key: string;
+  metricId: string;
+  label: string;
+  unit: string;
+  values: AnnualMetricPoint[];
+}
+
+export interface AnnualIssuanceDataset {
+  updatedAt: string;
+  source: {
+    name: string;
+    organization: string;
+    url: string;
+    note: string;
+  };
+  series: AnnualMetricSeries[];
+  links: Array<{
+    title: string;
+    url: string;
+    description: string;
+  }>;
+}
+
 export interface NewsItem {
   id: string;
   title: string;

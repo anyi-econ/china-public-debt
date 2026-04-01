@@ -2,23 +2,24 @@ import { PageIntro } from "@/components/layout/page-intro";
 import { SiteShell } from "@/components/layout/site-shell";
 import { DebtOverview } from "@/components/pages/debt-overview";
 import { SectionCard } from "@/components/ui/section-card";
-import { getDebtData } from "@/lib/data";
+import { getAnnualIssuanceDataset, getDebtData } from "@/lib/data";
 
 export default function DataPage() {
   const items = getDebtData();
+  const annualIssuance = getAnnualIssuanceDataset();
 
   return (
     <SiteShell currentPath="/data">
       <PageIntro
         eyebrow="Data Dashboard"
         title="数据"
-        description="以财政部债务管理司和地方债公开平台口径为基础，展示地方政府债发行、专项债结构和债务余额等可视化信息。"
-        meta={`共 ${items.length} 条结构化记录 · 支持月度观察`}
+        description="优先展示中国地方政府债券信息公开平台的全国年度发行规模，并辅以财政部月度统计口径，形成可核验的数据观察页。"
+        meta={`年度发行序列 ${annualIssuance.series[0]?.values.length ?? 0} 年 · 月度记录 ${items.length} 条`}
       />
 
       <div className="container-page topic-body">
-        <SectionCard title="债务数据可视化" description="图表与明细">
-          <DebtOverview items={items} />
+        <SectionCard title="债务数据可视化" description="年度发行规模与月度补充">
+          <DebtOverview items={items} annualIssuance={annualIssuance} />
         </SectionCard>
       </div>
     </SiteShell>

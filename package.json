@@ -9,6 +9,7 @@
     "start": "next start",
     "api": "node server/api.mjs",
     "lint": "tsc --noEmit",
+    "fetch:celma": "node scripts/fetch-celma-annual.mjs",
     "update:weekly": "node scripts/update.mjs weekly",
     "update:monthly": "node scripts/update.mjs monthly",
     "import:url": "node scripts/import-url.mjs"

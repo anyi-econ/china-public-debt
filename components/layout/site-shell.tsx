@@ -8,8 +8,7 @@ const navItems: Array<{ href: Route; label: string; dot?: string }> = [
   { href: "/data" as Route, label: "数据", dot: "#1B4965" },
   { href: "/policies" as Route, label: "政策", dot: "#8B0000" },
   { href: "/news" as Route, label: "新闻", dot: "#2E7D32" },
-  { href: "/papers" as Route, label: "文献", dot: "#5C6BC0" },
-  { href: "/updates" as Route, label: "更新中心" }
+  { href: "/papers" as Route, label: "文献", dot: "#5C6BC0" }
 ];
 
 export function SiteShell({ children, currentPath }: { children: ReactNode; currentPath: string }) {
