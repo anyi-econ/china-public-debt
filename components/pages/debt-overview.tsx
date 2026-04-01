@@ -1,6 +1,7 @@
 import { DebtDataItem } from "@/lib/types";
 import { AnnualIssuanceDataset } from "@/lib/types";
 import { SimpleBarChart } from "@/components/charts/simple-bar-chart";
+import { SimpleLineChart } from "@/components/charts/simple-line-chart";
 
 export function DebtOverview({ items, annualIssuance }: { items: DebtDataItem[]; annualIssuance: AnnualIssuanceDataset }) {
   const issuance = items.filter((item) => item.metricType === "issuance");
@@ -40,12 +41,7 @@ export function DebtOverview({ items, annualIssuance }: { items: DebtDataItem[];
     tone: (index % 2 ? "secondary" : "primary") as "primary" | "secondary"
   }));
 
-  const annualBars =
-    totalSeries?.values.map((item, index) => ({
-      label: `${item.year}`,
-      value: item.value,
-      tone: (index === totalSeries.values.length - 1 ? "primary" : "secondary") as "primary" | "secondary"
-    })) ?? [];
+  const annualLineData = totalSeries?.values.map((item) => ({ label: `${item.year}`, value: item.value })) ?? [];
 
   const latestStructure = [
     {
@@ -108,7 +104,7 @@ export function DebtOverview({ items, annualIssuance }: { items: DebtDataItem[];
       <div className="grid gap-4 lg:grid-cols-2">
         <article className="info-card p-4">
           <h3 className="section-title">全国年度发行规模</h3>
-          <SimpleBarChart data={annualBars} unit="亿元" />
+          <SimpleLineChart data={annualLineData} unit="亿元" />
         </article>
         <article className="info-card p-4">
           <h3 className="section-title">最新年度结构</h3>
