@@ -8,11 +8,15 @@ export function Tag({
   tone?: "default" | "accent" | "success" | "muted";
 }) {
   const toneClass = {
-    default: "border-line bg-mist text-slate-600",
-    accent: "border-slateBlue/20 bg-slateBlue/10 text-slateBlue",
+    default: "border-[var(--line)] bg-white/50 text-[var(--ink-soft)]",
+    accent: "border-[rgba(157,107,63,0.24)] bg-[var(--accent-soft)] text-[var(--accent)]",
     success: "border-emerald-200 bg-emerald-50 text-emerald-700",
-    muted: "border-slate-200 bg-slate-50 text-slate-500"
+    muted: "border-[var(--line)] bg-white/35 text-[var(--ink-soft)]"
   }[tone];
 
-  return <span className={`inline-flex items-center rounded-full border px-2.5 py-1 text-xs ${toneClass}`}>{children}</span>;
+  return (
+    <span className={`inline-flex items-center rounded-full border px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] ${toneClass}`}>
+      {children}
+    </span>
+  );
 }

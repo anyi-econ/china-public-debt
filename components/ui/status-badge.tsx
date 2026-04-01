@@ -15,5 +15,5 @@ export function StatusBadge({
     error: "异常"
   }[status];
 
-  return <span className={`inline-flex rounded-full border px-2.5 py-1 text-xs ${styles}`}>{label}</span>;
+  return <span className={`inline-flex rounded-full border px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] ${styles}`}>{label}</span>;
 }
