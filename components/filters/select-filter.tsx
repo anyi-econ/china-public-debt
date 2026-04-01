@@ -12,11 +12,7 @@ export function SelectFilter({
   allLabel?: string;
 }) {
   return (
-    <select
-      value={value}
-      onChange={(event) => onChange(event.target.value)}
-      className="filter-shell rounded-full px-4 py-3 text-sm text-[var(--ink)] outline-none"
-    >
+    <select value={value} onChange={(event) => onChange(event.target.value)} className="filter-shell">
       <option value="">{allLabel}</option>
       {options.map((option) => (
         <option key={option} value={option}>

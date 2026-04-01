@@ -12,12 +12,13 @@ export function SectionCard({
   actions?: ReactNode;
 }) {
   return (
-    <section className="border-t border-[var(--line-strong)] pt-7">
-      <div className="mb-7 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-        <div className="max-w-3xl">
-          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">Section</p>
-          <h2 className="section-title text-[var(--ink)]">{title}</h2>
-          {description ? <p className="mt-3 text-sm leading-7 text-[var(--ink-soft)]">{description}</p> : null}
+    <section>
+      <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
+        <div className="min-w-0 flex-1">
+          <h2 className="section-title">
+            {title}
+            {description ? <span className="section-sub">{description}</span> : null}
+          </h2>
         </div>
         {actions}
       </div>

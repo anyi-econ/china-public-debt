@@ -1,17 +1,16 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ArrowUpRight } from "lucide-react";
 import { NewsItem } from "@/lib/types";
-import { formatDate, uniqueValues } from "@/lib/utils";
+import { uniqueValues } from "@/lib/utils";
 import { SearchFilter } from "@/components/filters/search-filter";
 import { SelectFilter } from "@/components/filters/select-filter";
-import { Tag } from "@/components/ui/tag";
 import { EmptyState } from "@/components/ui/empty-state";
 
 export function NewsClient({ items }: { items: NewsItem[] }) {
   const [query, setQuery] = useState("");
   const [source, setSource] = useState("");
+  const [openId, setOpenId] = useState(items[0]?.id ?? "");
 
   const sources = useMemo(() => uniqueValues(items.map((item) => item.source)), [items]);
 
@@ -22,52 +21,67 @@ export function NewsClient({ items }: { items: NewsItem[] }) {
     });
   }, [items, query, source]);
 
-  return (
-    <div className="space-y-7">
-      <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
-        <div className="flex-1">
-          <SearchFilter value={query} onChange={setQuery} placeholder="搜索标题、来源、标签或摘要" />
+  if (filtered.length === 0) {
+    return (
+      <>
+        <div className="lit-toolbar">
+          <div className="lit-filters">
+            <SearchFilter value={query} onChange={setQuery} placeholder="搜索标题、来源、标签或摘要" />
+            <SelectFilter value={source} onChange={setSource} options={sources} allLabel="全部来源" />
+          </div>
         </div>
-        <SelectFilter value={source} onChange={setSource} options={sources} allLabel="全部来源" />
-      </div>
-
-      <div className="flex flex-wrap gap-2">
-        <Tag tone="accent">结果 {filtered.length} 条</Tag>
-        <Tag tone="muted">按日期倒序</Tag>
-        {source ? <Tag tone="muted">当前来源：{source}</Tag> : null}
-      </div>
-
-      {filtered.length === 0 ? (
         <EmptyState message="当前暂无符合条件的新闻与讨论数据。" />
-      ) : (
-        <div className="divide-y divide-[var(--line)] border-y border-[var(--line)]">
-          {filtered.map((item) => (
-            <article key={item.id} className="grid gap-4 py-6 lg:grid-cols-[150px_minmax(0,1fr)_130px]">
-              <div className="text-sm text-[var(--ink-soft)]">{formatDate(item.date)}</div>
-              <div>
-                <div className="mb-3 flex flex-wrap gap-2">
-                  <Tag tone="accent">{item.source}</Tag>
-                  {item.tags.map((tag) => (
-                    <Tag key={tag} tone="muted">
-                      {tag}
-                    </Tag>
-                  ))}
+      </>
+    );
+  }
+
+  return (
+    <>
+      <div className="lit-toolbar">
+        <div className="lit-filters">
+          <SearchFilter value={query} onChange={setQuery} placeholder="搜索标题、来源、标签或摘要" />
+          <SelectFilter value={source} onChange={setSource} options={sources} allLabel="全部来源" />
+        </div>
+        <div className="muted">共 {filtered.length} 条，权威来源优先</div>
+      </div>
+
+      <div className="flex flex-col gap-3">
+        {filtered.map((item) => {
+          const expanded = openId === item.id;
+          return (
+            <article key={item.id} className={`event-card ${expanded ? "expanded" : ""}`}>
+              <button type="button" className="event-card-header" onClick={() => setOpenId(expanded ? "" : item.id)}>
+                <span className="event-date">{item.date.slice(5)}</span>
+                <span className="event-type-tag" style={{ background: "#1B4965", color: "#fff" }}>
+                  新闻
+                </span>
+                <span className="event-title">{item.title}</span>
+                <span className="event-toggle">›</span>
+              </button>
+
+              <div className="event-card-body">
+                <div className="event-card-content">
+                  <div className="event-summary">{item.summary}</div>
+                  <div className="event-metrics">
+                    <span className="metric-badge">{item.source}</span>
+                    {item.tags.map((tag) => (
+                      <span key={tag} className="metric-badge">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="event-sources">
+                    <span>链接：</span>
+                    <a href={item.url} target="_blank" rel="noreferrer">
+                      打开原文 ↗
+                    </a>
+                  </div>
                 </div>
-                <h3 className="display-serif max-w-4xl text-[1.85rem] font-semibold leading-10 tracking-[-0.03em] text-[var(--ink)]">
-                  {item.title}
-                </h3>
-                <p className="mt-4 max-w-4xl text-sm leading-8 text-[var(--ink-soft)]">{item.summary}</p>
-              </div>
-              <div className="flex items-start lg:justify-end">
-                <a href={item.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-[var(--accent)]">
-                  查看链接
-                  <ArrowUpRight className="h-4 w-4" />
-                </a>
               </div>
             </article>
-          ))}
-        </div>
-      )}
-    </div>
+          );
+        })}
+      </div>
+    </>
   );
 }

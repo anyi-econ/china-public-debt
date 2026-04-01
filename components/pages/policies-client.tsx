@@ -1,17 +1,16 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ArrowUpRight } from "lucide-react";
 import { PolicyItem } from "@/lib/types";
-import { formatDate, uniqueValues } from "@/lib/utils";
+import { uniqueValues } from "@/lib/utils";
 import { SearchFilter } from "@/components/filters/search-filter";
 import { SelectFilter } from "@/components/filters/select-filter";
-import { Tag } from "@/components/ui/tag";
 import { EmptyState } from "@/components/ui/empty-state";
 
 export function PoliciesClient({ items }: { items: PolicyItem[] }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
+  const [openId, setOpenId] = useState(items[0]?.id ?? "");
 
   const categories = useMemo(() => uniqueValues(items.map((item) => item.category)), [items]);
 
@@ -22,53 +21,67 @@ export function PoliciesClient({ items }: { items: PolicyItem[] }) {
     });
   }, [items, query, category]);
 
-  return (
-    <div className="space-y-7">
-      <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
-        <div className="flex-1">
-          <SearchFilter value={query} onChange={setQuery} placeholder="搜索标题、来源、标签或摘要" />
+  if (filtered.length === 0) {
+    return (
+      <>
+        <div className="lit-toolbar">
+          <div className="lit-filters">
+            <SearchFilter value={query} onChange={setQuery} placeholder="搜索政策标题、来源、标签或摘要" />
+            <SelectFilter value={category} onChange={setCategory} options={categories} allLabel="全部分类" />
+          </div>
         </div>
-        <SelectFilter value={category} onChange={setCategory} options={categories} allLabel="全部分类" />
+        <EmptyState message="当前筛选条件下暂无政策数据。" />
+      </>
+    );
+  }
+
+  return (
+    <>
+      <div className="lit-toolbar">
+        <div className="lit-filters">
+          <SearchFilter value={query} onChange={setQuery} placeholder="搜索政策标题、来源、标签或摘要" />
+          <SelectFilter value={category} onChange={setCategory} options={categories} allLabel="全部分类" />
+        </div>
+        <div className="muted">共 {filtered.length} 条，按日期倒序</div>
       </div>
 
-      <div className="flex flex-wrap gap-2">
-        <Tag tone="accent">结果 {filtered.length} 条</Tag>
-        <Tag tone="muted">按日期倒序</Tag>
-        {category ? <Tag tone="muted">当前分类：{category}</Tag> : null}
-      </div>
+      <div className="flex flex-col gap-3">
+        {filtered.map((item) => {
+          const expanded = openId === item.id;
+          return (
+            <article key={item.id} className={`event-card ${expanded ? "expanded" : ""}`}>
+              <button type="button" className="event-card-header" onClick={() => setOpenId(expanded ? "" : item.id)}>
+                <span className="event-date">{item.date.slice(5)}</span>
+                <span className="event-type-tag" style={{ background: "#8B0000", color: "#fff" }}>
+                  {item.category}
+                </span>
+                <span className="event-title">{item.title}</span>
+                <span className="event-toggle">›</span>
+              </button>
 
-      {filtered.length === 0 ? (
-        <EmptyState message="当前筛选条件下暂无政策数据，可运行更新脚本或调整检索条件后重试。" />
-      ) : (
-        <div className="divide-y divide-[var(--line)] border-y border-[var(--line)]">
-          {filtered.map((item) => (
-            <article key={item.id} className="grid gap-4 py-6 lg:grid-cols-[150px_minmax(0,1fr)_130px]">
-              <div className="text-sm text-[var(--ink-soft)]">{formatDate(item.date)}</div>
-              <div>
-                <div className="mb-3 flex flex-wrap gap-2">
-                  <Tag tone="accent">{item.category}</Tag>
-                  <Tag tone="muted">{item.source}</Tag>
-                  {item.tags.slice(0, 2).map((tag) => (
-                    <Tag key={tag} tone="muted">
-                      {tag}
-                    </Tag>
-                  ))}
+              <div className="event-card-body">
+                <div className="event-card-content">
+                  <div className="event-summary">{item.summary}</div>
+                  <div className="event-metrics">
+                    <span className="metric-badge">{item.source}</span>
+                    {item.tags.map((tag) => (
+                      <span key={tag} className="metric-badge">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="event-sources">
+                    <span>原文：</span>
+                    <a href={item.url} target="_blank" rel="noreferrer">
+                      {item.source} ↗
+                    </a>
+                  </div>
                 </div>
-                <h3 className="display-serif max-w-4xl text-[1.9rem] font-semibold leading-10 tracking-[-0.03em] text-[var(--ink)]">
-                  {item.title}
-                </h3>
-                <p className="mt-4 max-w-4xl text-sm leading-8 text-[var(--ink-soft)]">{item.summary}</p>
-              </div>
-              <div className="flex items-start lg:justify-end">
-                <a href={item.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-[var(--accent)]">
-                  查看原文
-                  <ArrowUpRight className="h-4 w-4" />
-                </a>
               </div>
             </article>
-          ))}
-        </div>
-      )}
-    </div>
+          );
+        })}
+      </div>
+    </>
   );
 }
