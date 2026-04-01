@@ -30,27 +30,27 @@
   },
   {
     "key": "gov-policy-library",
-    "name": "中国政府网政策库",
+    "name": "中国政府网政策库与新华社稿件",
     "category": "policy",
     "authority": "official",
     "cadence": "manual",
     "reliability": "high",
     "method": "html",
     "url": "https://www.gov.cn/zhengce/zuixin/",
-    "description": "中国政府网政策库与国务院办公厅文件页，适合作为专项债和财政政策的主信源。",
+    "description": "中国政府网政策库与转载新华社稿件，是专项债、化债和财政政策的重要权威来源。",
     "selectors": {
       "list": "ul li",
       "title": "a",
       "date": "span"
     },
-    "tags": ["中国政府网", "国务院办公厅", "专项债"],
+    "tags": ["中国政府网", "新华社", "专项债"],
     "categoryName": "专项债",
     "fallback": [
       {
         "title": "国务院办公厅关于优化完善地方政府专项债券管理机制的意见",
         "date": "2024-12-25",
         "source": "中国政府网",
-        "url": "https://www.gov.cn/zhengce/zhengceku/202412/content_6994503.htm",
+        "url": "https://zwgls.mof.gov.cn/zcgz/202511/t20251102_3975537.htm",
         "summary": "国务院办公厅关于优化完善地方政府专项债券管理机制的正式政策文件。",
         "tags": ["专项债", "国务院办公厅", "政策文件"],
         "category": "专项债"
@@ -59,14 +59,14 @@
   },
   {
     "key": "npc-budget-report",
-    "name": "中国人大网预算报告",
+    "name": "中国人大网预算与债务报告",
     "category": "policy",
     "authority": "official",
     "cadence": "manual",
     "reliability": "high",
     "method": "manual",
     "url": "https://www.npc.gov.cn/",
-    "description": "全国人大公开预算报告全文，可直接获取年度国债、地方政府债务余额和限额安排。",
+    "description": "全国人大公开预算报告和政府债务管理报告全文，可直接获取年度国债、地方政府债务余额和限额安排。",
     "tags": ["全国人大", "预算报告", "政府债务"],
     "fallback": [
       {
@@ -74,7 +74,7 @@
         "date": "2026-03-16",
         "source": "中国人大网",
         "url": "https://www.npc.gov.cn/npc/c2/c30834/202603/t20260316_453265.html",
-        "summary": "全国人大公开2026年预算草案报告全文。",
+        "summary": "全国人大公开 2026 年预算草案报告全文。",
         "tags": ["预算草案", "全国人大", "政府债务"],
         "category": "预算报告"
       }
@@ -89,7 +89,7 @@
     "reliability": "high",
     "method": "manual",
     "url": "https://zwgls.mof.gov.cn/tjsj/",
-    "description": "财政部债务管理司月度统计页面，发布地方政府债券发行和债务余额情况。",
+    "description": "财政部债务管理司月度统计页面，持续发布地方政府债券发行和债务余额情况。",
     "tags": ["财政部债务管理司", "月度统计", "地方债"],
     "fallback": [
       {
@@ -104,38 +104,16 @@
     ]
   },
   {
-    "key": "gov-xinhua-news",
-    "name": "中国政府网 / 新华社权威新闻",
-    "category": "news",
-    "authority": "state-media",
-    "cadence": "manual",
-    "reliability": "high",
-    "method": "manual",
-    "url": "https://www.gov.cn/yaowen/liebiao/",
-    "description": "中国政府网转载新华社等权威稿件，适合做老师可直接核验的政策新闻页。",
-    "tags": ["新华社", "中国政府网", "政策解读"],
-    "fallback": [
-      {
-        "title": "国务院办公厅印发《关于优化完善地方政府专项债券管理机制的意见》",
-        "date": "2024-12-25",
-        "source": "中国政府网/新华社",
-        "url": "https://www.gov.cn/yaowen/liebiao/202412/content_6994511.htm",
-        "summary": "新华社对专项债新规的权威新闻稿。",
-        "tags": ["新华社", "专项债", "政策发布"]
-      }
-    ]
-  },
-  {
-    "key": "nber-local-government-finance",
-    "name": "NBER 中国地方政府融资研究",
+    "key": "research-papers",
+    "name": "NBER / ScienceDirect / 社科院研究",
     "category": "paper",
     "authority": "research",
     "cadence": "manual",
     "reliability": "high",
     "method": "manual",
     "url": "https://www.nber.org/papers/w23598",
-    "description": "NBER 公开工作论文页面，可直接访问中国地方政府融资和债务研究代表性成果。",
-    "tags": ["NBER", "地方政府融资", "研究论文"],
+    "description": "文献页优先保留 NBER、正式期刊落地页、RePEc 索引和中国社科院公开研究。",
+    "tags": ["NBER", "期刊论文", "社科院"],
     "fallback": [
       {
         "title": "The Financing of Local Government in China: Stimulus Loan Wanes and Shadow Banking Waxes",
@@ -145,29 +123,6 @@
         "summary": "中国地方政府融资与影子银行扩张研究的代表性论文。",
         "tags": ["NBER", "地方政府融资", "中国"],
         "category": "Working Paper"
-      }
-    ]
-  },
-  {
-    "key": "cass-local-debt-paper",
-    "name": "中国社科院地方债研究",
-    "category": "paper",
-    "authority": "research",
-    "cadence": "manual",
-    "reliability": "high",
-    "method": "manual",
-    "url": "https://rdi.cass.cn/yjcg/202409/P020240920454727689962.pdf",
-    "description": "中国社科院公开论文，可直接用于中文研究文献汇总。",
-    "tags": ["中国社科院", "地方政府债务", "研究论文"],
-    "fallback": [
-      {
-        "title": "中国增长模式视角下的地方债务风险及其化解",
-        "date": "2024-09-20",
-        "source": "中国社会科学院农村发展研究所",
-        "url": "https://rdi.cass.cn/yjcg/202409/P020240920454727689962.pdf",
-        "summary": "从中国增长模式视角分析地方债务风险与化解路径。",
-        "tags": ["中国社科院", "地方债务", "风险化解"],
-        "category": "研究论文"
       }
     ]
   }

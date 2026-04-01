@@ -25,9 +25,9 @@ export default function HomePage() {
               <Tag tone="muted">周更 / 月更</Tag>
               <Tag tone="muted">官方源优先</Tag>
             </div>
-            <h2 className="text-2xl font-semibold tracking-tight text-ink">从政策文本到债券动态，形成统一的研究工作台</h2>
+            <h2 className="text-2xl font-semibold tracking-tight text-ink">从政策文本到债务统计，形成一套老师可直接核验的研究工作台</h2>
             <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
-              首页用于快速判断本期有哪些新增政策、债务线索、讨论和文献，并将可信来源、最新更新与本月观察集中展示。
+              当前版本只保留能回跳到财政部、中国政府网、中国人大网与权威研究机构页面的条目，适合直接分享给老师查看和继续扩展。
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -39,7 +39,7 @@ export default function HomePage() {
             <div className="rounded-2xl border border-line bg-mist p-4">
               <p className="text-sm text-slate-500">最近更新</p>
               <p className="mt-2 text-3xl font-semibold text-ink">{formatDate(stats.lastUpdated)}</p>
-              <p className="mt-2 text-sm text-slate-600">已覆盖 {sources.filter((item) => item.category === "policy").length} 个政策源与开放文献源</p>
+              <p className="mt-2 text-sm text-slate-600">已覆盖 {sources.filter((item) => item.category === "policy").length} 个政策源与权威研究入口</p>
             </div>
           </div>
         </div>
@@ -47,10 +47,10 @@ export default function HomePage() {
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
         <StatCard label="最新更新日期" value={formatDate(stats.lastUpdated)} hint="最近一次批量更新" icon={<CalendarDays className="h-5 w-5" />} />
-        <StatCard label="本月新增政策" value={stats.newPolicies} hint="中央与地方债务制度相关" icon={<FileText className="h-5 w-5" />} />
-        <StatCard label="本月新增债务动态" value={stats.newDebt} hint="发行、到期与余额指标" icon={<Wallet className="h-5 w-5" />} />
-        <StatCard label="本月新增新闻评论" value={stats.newNews} hint="媒体、机构与政策解读" icon={<Newspaper className="h-5 w-5" />} />
-        <StatCard label="本年纳入文献" value={stats.newPapers} hint="论文、工作论文与报告" icon={<LibraryBig className="h-5 w-5" />} />
+        <StatCard label="最近政策日期" value={formatDate(stats.latestPolicyDate)} hint="当前样本中最新政策文本" icon={<FileText className="h-5 w-5" />} />
+        <StatCard label="最近债务统计" value={formatDate(stats.latestDebtDate)} hint="财政部月度债务统计口径" icon={<Wallet className="h-5 w-5" />} />
+        <StatCard label="政策样本数" value={stats.totalPolicies} hint="仅保留可核验原文链接" icon={<Newspaper className="h-5 w-5" />} />
+        <StatCard label="文献样本数" value={stats.totalPapers} hint="NBER / 期刊 / 研究机构页面" icon={<LibraryBig className="h-5 w-5" />} />
       </div>
 
       <SectionCard title="来源覆盖" description="首版优先接入财政部、中国政府网、地方政府债券信息公开平台，以及开放学术检索源。">

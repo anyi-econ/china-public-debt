@@ -9,7 +9,7 @@ import type {
   SourceCatalogItem,
   UpdateLogItem
 } from "@/lib/types";
-import { isSameMonth, sortByDateDesc } from "@/lib/utils";
+import { sortByDateDesc } from "@/lib/utils";
 
 const appData = bundle as AppDataBundle;
 const sourceRegistry = sourceCatalog as SourceCatalogItem[];
@@ -39,13 +39,19 @@ export function getRecentUpdates(): UpdateLogItem[] {
 }
 
 export function getDashboardStats() {
-  const currentMonthBase = new Date(appData.metadata.lastUpdated);
+  const policies = sortByDateDesc(appData.policies);
+  const debt = sortByDateDesc(appData.debt);
+  const news = sortByDateDesc(appData.news);
+  const papers = [...appData.papers].sort((a, b) => b.year - a.year);
+
   return {
     lastUpdated: appData.metadata.lastUpdated,
-    newPolicies: appData.policies.filter((item) => isSameMonth(item.date, currentMonthBase)).length,
-    newDebt: appData.debt.filter((item) => isSameMonth(item.date, currentMonthBase)).length,
-    newNews: appData.news.filter((item) => isSameMonth(item.date, currentMonthBase)).length,
-    newPapers: appData.papers.filter((item) => item.year === currentMonthBase.getFullYear()).length,
+    latestPolicyDate: policies[0]?.date ?? appData.metadata.lastUpdated,
+    latestDebtDate: debt[0]?.date ?? appData.metadata.lastUpdated,
+    totalPolicies: appData.policies.length,
+    totalDebt: appData.debt.length,
+    totalNews: appData.news.length,
+    totalPapers: appData.papers.length,
     activeSources: sourceRegistry.length,
     officialSources: sourceRegistry.filter((item) => item.authority === "official").length
   };
