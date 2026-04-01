@@ -5,11 +5,9 @@ import { cn } from "@/lib/utils";
 
 const navItems: Array<{ href: Route; label: string; dot?: string }> = [
   { href: "/" as Route, label: "总览", dot: "#8B0000" },
-  { href: "/briefs" as Route, label: "简报", dot: "#8B0000" },
-  { href: "/sources" as Route, label: "来源", dot: "#8B0000" },
+  { href: "/data" as Route, label: "数据", dot: "#1B4965" },
   { href: "/policies" as Route, label: "政策", dot: "#8B0000" },
-  { href: "/debt" as Route, label: "债务", dot: "#1B4965" },
-  { href: "/news" as Route, label: "讨论", dot: "#2E7D32" },
+  { href: "/news" as Route, label: "新闻", dot: "#2E7D32" },
   { href: "/papers" as Route, label: "文献", dot: "#5C6BC0" },
   { href: "/updates" as Route, label: "更新中心" }
 ];
@@ -27,9 +25,8 @@ export function SiteShell({ children, currentPath }: { children: ReactNode; curr
           </div>
 
           <div className="nav-links">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <div key={item.href} className="contents">
-                {index === 5 ? <span className="nav-divider" /> : null}
                 <Link href={item.href} className={cn("nav-link", currentPath === item.href && "active")}>
                   {item.dot ? <span className="nav-dot" style={{ background: item.dot }} /> : null}
                   {item.label}

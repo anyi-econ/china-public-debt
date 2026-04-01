@@ -10,16 +10,18 @@ import { EmptyState } from "@/components/ui/empty-state";
 export function NewsClient({ items }: { items: NewsItem[] }) {
   const [query, setQuery] = useState("");
   const [source, setSource] = useState("");
+  const [month, setMonth] = useState("");
   const [openId, setOpenId] = useState(items[0]?.id ?? "");
 
   const sources = useMemo(() => uniqueValues(items.map((item) => item.source)), [items]);
+  const months = useMemo(() => uniqueValues(items.map((item) => item.date.slice(0, 7))).reverse(), [items]);
 
   const filtered = useMemo(() => {
     return items.filter((item) => {
       const haystack = [item.title, item.source, item.summary, ...item.tags].join(" ").toLowerCase();
-      return (!query || haystack.includes(query.toLowerCase())) && (!source || item.source === source);
+      return (!query || haystack.includes(query.toLowerCase())) && (!source || item.source === source) && (!month || item.date.startsWith(month));
     });
-  }, [items, query, source]);
+  }, [items, query, source, month]);
 
   if (filtered.length === 0) {
     return (
@@ -28,6 +30,7 @@ export function NewsClient({ items }: { items: NewsItem[] }) {
           <div className="lit-filters">
             <SearchFilter value={query} onChange={setQuery} placeholder="搜索标题、来源、标签或摘要" />
             <SelectFilter value={source} onChange={setSource} options={sources} allLabel="全部来源" />
+            <SelectFilter value={month} onChange={setMonth} options={months} allLabel="全部时间" />
           </div>
         </div>
         <EmptyState message="当前暂无符合条件的新闻与讨论数据。" />
@@ -41,8 +44,9 @@ export function NewsClient({ items }: { items: NewsItem[] }) {
         <div className="lit-filters">
           <SearchFilter value={query} onChange={setQuery} placeholder="搜索标题、来源、标签或摘要" />
           <SelectFilter value={source} onChange={setSource} options={sources} allLabel="全部来源" />
+          <SelectFilter value={month} onChange={setMonth} options={months} allLabel="全部时间" />
         </div>
-        <div className="muted">共 {filtered.length} 条，权威来源优先</div>
+        <div className="muted">共 {filtered.length} 条，支持按时间筛选</div>
       </div>
 
       <div className="flex flex-col gap-3">

@@ -42,7 +42,7 @@ export function PapersClient({ items }: { items: PaperItem[] }) {
           <SearchFilter value={query} onChange={setQuery} placeholder="搜索标题、作者、机构、关键词或摘要" />
           <SelectFilter value={year} onChange={setYear} options={years} allLabel="全部年份" />
         </div>
-        <div className="muted">共 {filtered.length} 条，按年份倒序</div>
+        <div className="muted">共 {filtered.length} 条，支持按年份筛选</div>
       </div>
 
       <div className="flex flex-col gap-3">

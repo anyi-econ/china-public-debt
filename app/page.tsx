@@ -19,15 +19,15 @@ const topicCards: Array<{
     bullets: ["预算草案报告", "专项债制度优化", "债务管理年度报告", "财政部制度文件"]
   },
   {
-    href: "/debt",
-    label: "债务",
+    href: "/data" as Route,
+    label: "数据",
     color: "#1B4965",
     lead: "围绕财政部月度统计，追踪地方债发行规模、专项债结构和余额变化。",
     bullets: ["月度发行规模", "专项债与一般债", "债务余额节点", "财政部统计原页"]
   },
   {
     href: "/news",
-    label: "讨论",
+    label: "新闻",
     color: "#2E7D32",
     lead: "统一收束到中国政府网与新华社，保留老师可直接核验的权威解读。",
     bullets: ["政策发布稿", "权威解读", "化债口径", "专项债投向变化"]
@@ -41,12 +41,12 @@ const topicCards: Array<{
   }
 ];
 
-type SectionRoute = "/policies" | "/debt" | "/news" | "/papers";
+type SectionRoute = "/policies" | "/data" | "/news" | "/papers";
 
 const sectionEntries: Array<{ href: SectionRoute; label: string; color: string }> = [
-  { href: "/policies", label: "政策与制度", color: "#8B0000" },
-  { href: "/debt", label: "债务动态", color: "#1B4965" },
-  { href: "/news", label: "新闻与讨论", color: "#2E7D32" },
+  { href: "/policies", label: "政策列表", color: "#8B0000" },
+  { href: "/data", label: "数据可视化", color: "#1B4965" },
+  { href: "/news", label: "新闻列表", color: "#2E7D32" },
   { href: "/papers", label: "文献研究", color: "#5C6BC0" }
 ];
 
@@ -61,7 +61,7 @@ export default function HomePage() {
 
   const sectionData: Record<SectionRoute, Array<{ date: string; title: string }>> = {
     "/policies": policies.map((item) => ({ date: item.date.slice(5), title: item.title })),
-    "/debt": debt.map((item) => ({ date: item.date.slice(5), title: `${item.bondType}：${item.value.toLocaleString("zh-CN")}${item.unit}` })),
+    "/data": debt.map((item) => ({ date: item.date.slice(5), title: `${item.bondType}：${item.value.toLocaleString("zh-CN")}${item.unit}` })),
     "/news": news.map((item) => ({ date: item.date.slice(5), title: item.title })),
     "/papers": papers.map((item) => ({ date: String(item.year), title: item.title }))
   };
@@ -75,7 +75,7 @@ export default function HomePage() {
           <p className="hero-issue">{formatDate(stats.lastUpdated)} 更新版</p>
           <div className="hero-colophon">
             <span className="hero-inst">面向高校财税研究团队的内部研究网页</span>
-            <span className="hero-authors">政策 · 债务 · 讨论 · 文献</span>
+            <span className="hero-authors">总览 · 数据 · 政策 · 新闻 · 文献</span>
           </div>
         </div>
       </section>
@@ -112,7 +112,7 @@ export default function HomePage() {
 
           <div className="topic-cards">
             {sectionEntries.map((entry) => (
-              <Link key={entry.href} href={entry.href} className="topic-entry-card">
+              <Link key={entry.href} href={entry.href as Route} className="topic-entry-card">
                 <div className="topic-entry-header">
                   <span className="topic-entry-label" style={{ color: entry.color }}>
                     {entry.label}
@@ -133,9 +133,9 @@ export default function HomePage() {
             ))}
           </div>
 
-          <Link href="/updates" className="t5-entry-link" style={{ ["--topic-color" as never]: "#455A64" }}>
-            <span className="t5-entry-name">更新中心与来源状态</span>
-            <span className="t5-entry-count">{updates.length} 条记录</span>
+          <Link href="/briefs" className="t5-entry-link" style={{ ["--topic-color" as never]: "#455A64" }}>
+            <span className="t5-entry-name">月度简报归档</span>
+            <span className="t5-entry-count">{updates.length} 条更新</span>
             <span className="t5-entry-arrow">→</span>
           </Link>
 
