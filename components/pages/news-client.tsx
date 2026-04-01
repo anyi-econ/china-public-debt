@@ -30,7 +30,7 @@ export function NewsClient({ items }: { items: NewsItem[] }) {
         <SelectFilter value={source} onChange={setSource} options={sources} allLabel="全部来源" />
       </div>
 
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="flex flex-wrap items-center gap-2 border-b border-line/80 pb-4">
         <Tag tone="accent">结果 {filtered.length} 条</Tag>
         <Tag tone="muted">按时间倒序</Tag>
         {source ? <Tag tone="muted">当前来源：{source}</Tag> : null}
@@ -39,15 +39,15 @@ export function NewsClient({ items }: { items: NewsItem[] }) {
       {filtered.length === 0 ? (
         <EmptyState message="当前暂无符合条件的新闻与讨论数据。" />
       ) : (
-        <div className="space-y-4">
+        <div>
           {filtered.map((item) => (
-            <article key={item.id} className="rounded-2xl border border-line bg-white p-5">
+            <article key={item.id} className="list-row first:pt-0">
               <div className="mb-3 flex flex-wrap gap-2">
                 <Tag tone="accent">{item.source}</Tag>
                 <Tag tone="muted">{formatDate(item.date)}</Tag>
               </div>
-              <h3 className="text-lg font-medium text-ink">{item.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-600">{item.summary}</p>
+              <h3 className="max-w-4xl text-xl font-semibold leading-8 text-ink">{item.title}</h3>
+              <p className="mt-4 max-w-4xl text-sm leading-7 text-slate-600">{item.summary}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {item.tags.map((tag) => (
                   <Tag key={tag}>{tag}</Tag>

@@ -17,23 +17,23 @@ export default function UpdatesPage() {
       <SectionCard title="更新中心" description="展示数据更新时间、来源状态和最近更新记录，方便研究团队快速确认样本新鲜度。">
         <div className="grid gap-4 xl:grid-cols-[320px_1fr]">
           <div className="space-y-4">
-            <div className="rounded-2xl bg-mist p-5">
-            <p className="text-sm text-slate-500">最近批量更新</p>
-            <p className="mt-2 text-2xl font-semibold text-ink">{formatDate(data.metadata.lastUpdated)}</p>
-            <p className="mt-4 text-sm text-slate-600">更新模式：{data.metadata.updateMode}</p>
-            <p className="mt-2 text-sm text-slate-600">支持 `npm run update:weekly` 与 `npm run update:monthly` 两种节奏。</p>
-          </div>
+            <div className="rounded-[24px] bg-[#102033] p-5 text-white">
+              <p className="text-sm text-slate-400">最近批量更新</p>
+              <p className="mt-2 text-2xl font-semibold">{formatDate(data.metadata.lastUpdated)}</p>
+              <p className="mt-4 text-sm text-slate-300">更新模式：{data.metadata.updateMode}</p>
+              <p className="mt-2 text-sm leading-6 text-slate-300">支持 `npm run update:weekly` 与 `npm run update:monthly` 两种节奏。</p>
+            </div>
             <div className="grid grid-cols-2 gap-3">
-              <div className="rounded-2xl border border-line bg-white p-4">
+              <div className="rounded-[24px] border border-line/80 bg-slate-50/70 p-4">
                 <p className="text-sm text-slate-500">正常来源</p>
                 <p className="mt-2 text-2xl font-semibold text-ink">{successCount}</p>
               </div>
-              <div className="rounded-2xl border border-line bg-white p-4">
+              <div className="rounded-[24px] border border-line/80 bg-slate-50/70 p-4">
                 <p className="text-sm text-slate-500">兜底来源</p>
                 <p className="mt-2 text-2xl font-semibold text-ink">{fallbackCount}</p>
               </div>
             </div>
-            <div className="rounded-2xl border border-line bg-white p-4 text-sm text-slate-600">
+            <div className="rounded-[24px] border border-line/80 bg-slate-50/70 p-4 text-sm text-slate-600">
               <p className="font-medium text-ink">建议工作流</p>
               <ol className="mt-3 space-y-2 leading-6">
                 <li>1. 先运行更新脚本。</li>
@@ -42,9 +42,9 @@ export default function UpdatesPage() {
               </ol>
             </div>
           </div>
-          <div className="overflow-x-auto rounded-2xl border border-line">
+          <div className="overflow-x-auto rounded-[24px] border border-line/80">
             <table className="min-w-full text-left text-sm">
-              <thead className="border-b border-line bg-white text-slate-500">
+              <thead className="border-b border-line/80 bg-slate-50/70 text-slate-500">
                 <tr>
                   <th className="px-4 py-3 font-medium">来源</th>
                   <th className="px-4 py-3 font-medium">类型</th>
@@ -74,12 +74,12 @@ export default function UpdatesPage() {
       </SectionCard>
 
       <SectionCard title="更新日志" description="用于人工核对新条目、判断是否需要补充标签、摘要或全文。">
-        <div className="space-y-4">
+        <div>
           {updates.map((item) => (
-            <div key={item.id} className="rounded-2xl border border-line bg-white p-5">
+            <div key={item.id} className="list-row first:pt-0">
               <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <h3 className="text-base font-medium text-ink">{item.title}</h3>
+                  <h3 className="text-base font-medium leading-7 text-ink">{item.title}</h3>
                   <p className="mt-1 text-sm text-slate-500">{item.type} · {item.source} · {item.status}</p>
                 </div>
                 <div className="text-sm text-slate-500">{formatDate(item.date)}</div>

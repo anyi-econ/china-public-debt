@@ -36,17 +36,17 @@ export function DebtOverview({ items }: { items: DebtDataItem[] }) {
   return (
     <div className="space-y-6">
       <div className="grid gap-4 md:grid-cols-3">
-        <div className="rounded-2xl border border-line bg-white p-5">
+        <div className="rounded-[24px] border border-line/80 bg-slate-50/70 p-5">
           <p className="text-sm text-slate-500">样本期发行规模合计</p>
           <p className="mt-3 text-3xl font-semibold text-ink">{monthlyTotal.toLocaleString("zh-CN")}</p>
           <p className="mt-2 text-sm text-slate-500">单位：亿元</p>
         </div>
-        <div className="rounded-2xl border border-line bg-white p-5">
+        <div className="rounded-[24px] border border-line/80 bg-slate-50/70 p-5">
           <p className="text-sm text-slate-500">最新债务余额</p>
           <p className="mt-3 text-3xl font-semibold text-ink">{latestBalance ? latestBalance.value.toLocaleString("zh-CN") : "--"}</p>
           <p className="mt-2 text-sm text-slate-500">单位：{latestBalance?.unit ?? "亿元"}</p>
         </div>
-        <div className="rounded-2xl border border-line bg-white p-5">
+        <div className="rounded-[24px] border border-line/80 bg-slate-50/70 p-5">
           <p className="text-sm text-slate-500">最近统计日期</p>
           <p className="mt-3 text-3xl font-semibold text-ink">{latestBalance ? formatDate(latestBalance.date) : "--"}</p>
           <p className="mt-2 text-sm text-slate-500">可按周 / 月继续补充</p>
@@ -54,13 +54,13 @@ export function DebtOverview({ items }: { items: DebtDataItem[] }) {
       </div>
 
       <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="rounded-2xl border border-line bg-mist p-5">
-          <h3 className="text-lg font-medium text-ink">研究提示</h3>
-          <p className="mt-3 text-sm leading-7 text-slate-600">
+        <div className="rounded-[24px] bg-[#102033] p-6 text-white">
+          <h3 className="text-lg font-medium text-white">研究提示</h3>
+          <p className="mt-3 text-sm leading-7 text-slate-300">
             首版债务动态以地方政府债券信息公开平台和财政部公开信息为核心，适合做月度发行节奏、专项债占比与债务余额变化的基础观测。
           </p>
         </div>
-        <div className="rounded-2xl border border-line bg-white p-5">
+        <div className="rounded-[24px] border border-line/80 bg-slate-50/70 p-5">
           <p className="text-sm text-slate-500">专项债样本规模</p>
           <p className="mt-2 text-3xl font-semibold text-ink">{specialBondShare.toLocaleString("zh-CN")}</p>
           <p className="mt-2 text-sm text-slate-500">单位：亿元，用于观察一般债与专项债结构差异</p>
@@ -68,17 +68,17 @@ export function DebtOverview({ items }: { items: DebtDataItem[] }) {
       </div>
 
       <div className="grid gap-6 xl:grid-cols-2">
-        <div className="rounded-2xl border border-line bg-white p-5">
+        <div className="rounded-[24px] border border-line/80 bg-white p-5">
           <h3 className="mb-4 text-lg font-medium text-ink">近 6 个样本月发行规模</h3>
           <SimpleBarChart data={byMonth} unit="亿元" />
         </div>
-        <div className="rounded-2xl border border-line bg-white p-5">
+        <div className="rounded-[24px] border border-line/80 bg-white p-5">
           <h3 className="mb-4 text-lg font-medium text-ink">样本期债券类型分布</h3>
           <SimpleBarChart data={byType} unit="亿元" />
         </div>
       </div>
 
-      <div className="rounded-2xl border border-line bg-white p-5">
+      <div className="rounded-[24px] border border-line/80 bg-white p-5">
         <h3 className="mb-4 text-lg font-medium text-ink">月度发行与余额明细</h3>
         <div className="overflow-x-auto">
           <table className="min-w-full text-left text-sm">

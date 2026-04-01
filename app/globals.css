@@ -9,8 +9,9 @@
 body {
   @apply bg-mist text-ink antialiased;
   background-image:
-    radial-gradient(circle at top, rgba(90, 122, 161, 0.10), transparent 32%),
-    linear-gradient(180deg, #f9fbfd 0%, #f3f7fb 48%, #eef3f8 100%);
+    radial-gradient(circle at top left, rgba(90, 122, 161, 0.08), transparent 24%),
+    radial-gradient(circle at top right, rgba(17, 32, 51, 0.05), transparent 22%),
+    linear-gradient(180deg, #f7fafc 0%, #f1f5f9 45%, #ecf2f7 100%);
 }
 
 a {
@@ -27,11 +28,11 @@ a {
 }
 
 .card {
-  @apply rounded-2xl border border-line bg-white shadow-soft backdrop-blur;
+  @apply rounded-[28px] border border-line/80 bg-white shadow-soft backdrop-blur;
 }
 
 .section-title {
-  @apply text-xl font-semibold tracking-tight text-ink;
+  @apply text-xl font-semibold tracking-tight text-ink sm:text-2xl;
 }
 
 .muted {
@@ -43,4 +44,16 @@ a {
     linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
     linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
   background-size: 26px 26px;
+}
+
+.editorial-surface {
+  @apply rounded-[28px] border border-line/70 bg-white/95 shadow-soft;
+}
+
+.data-divider > * + * {
+  @apply border-l border-line/80;
+}
+
+.list-row {
+  @apply border-b border-line/70 py-5 transition-colors hover:bg-slate-50/70;
 }

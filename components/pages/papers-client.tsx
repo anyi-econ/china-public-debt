@@ -30,7 +30,7 @@ export function PapersClient({ items }: { items: PaperItem[] }) {
         <SelectFilter value={year} onChange={setYear} options={years} allLabel="全部年份" />
       </div>
 
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="flex flex-wrap items-center gap-2 border-b border-line/80 pb-4">
         <Tag tone="accent">结果 {filtered.length} 条</Tag>
         <Tag tone="muted">按年份倒序</Tag>
         {year ? <Tag tone="muted">当前年份：{year}</Tag> : null}
@@ -39,17 +39,17 @@ export function PapersClient({ items }: { items: PaperItem[] }) {
       {filtered.length === 0 ? (
         <EmptyState message="暂无符合条件的文献数据。" />
       ) : (
-        <div className="space-y-4">
+        <div>
           {filtered.map((item) => (
-            <article key={item.id} className="rounded-2xl border border-line bg-white p-5">
+            <article key={item.id} className="list-row first:pt-0">
               <div className="mb-3 flex flex-wrap gap-2">
                 <Tag tone="accent">{item.year}</Tag>
                 <Tag tone="muted">{item.venue}</Tag>
                 <Tag tone="muted">{item.source}</Tag>
               </div>
-              <h3 className="text-lg font-medium text-ink">{item.title}</h3>
+              <h3 className="max-w-4xl text-xl font-semibold leading-8 text-ink">{item.title}</h3>
               <p className="mt-2 text-sm text-slate-500">{item.authors.join("；")}</p>
-              <p className="mt-3 text-sm leading-6 text-slate-600">{item.abstract}</p>
+              <p className="mt-4 max-w-4xl text-sm leading-7 text-slate-600">{item.abstract}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {item.keywords.map((keyword) => (
                   <Tag key={keyword}>{keyword}</Tag>
