@@ -217,6 +217,22 @@ npm run import:url -- https://example.com/paper paper
 3. 执行 `npm install && npm run build`
 4. 若需要定期更新，可在外部定时任务中运行更新脚本后再部署
 
+### 方案三：GitHub Pages
+
+本仓库已包含 `GitHub Pages` 自动部署工作流：
+
+1. 将仓库推送到 GitHub
+2. 在仓库 `Settings -> Pages` 中将 `Source` 设置为 `GitHub Actions`
+3. 每次 push 到 `main` 分支后，会自动生成静态站点并发布
+
+如果仓库地址为：
+
+- `https://github.com/1486964828-beep/china-government-debt-tracker`
+
+则发布后的网页地址通常为：
+
+- `https://1486964828-beep.github.io/china-government-debt-tracker/`
+
 ### 方案二：本地 / 服务器部署
 
 ```bash
