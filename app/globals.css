@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-mist text-ink antialiased;
+  background-image:
+    radial-gradient(circle at top, rgba(90, 122, 161, 0.10), transparent 32%),
+    linear-gradient(180deg, #f9fbfd 0%, #f3f7fb 48%, #eef3f8 100%);
+}
+
+a {
+  @apply text-slateBlue transition-colors hover:text-ink;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9bb0c7 #eef3f8;
+}
+
+.container-page {
+  @apply mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply rounded-2xl border border-line bg-white shadow-soft backdrop-blur;
+}
+
+.section-title {
+  @apply text-xl font-semibold tracking-tight text-ink;
+}
+
+.muted {
+  @apply text-sm text-slate-500;
+}
+
+.grid-surface {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
