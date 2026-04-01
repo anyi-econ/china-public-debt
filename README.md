@@ -1,67 +1,56 @@
 # 中国政府债务追踪平台（China Government Debt Tracker）
 
-面向高校财税研究团队的内部研究型网页 MVP，用于持续汇总中国政府债务的政策制度、债券发行与存量动态、媒体讨论，以及学术文献与研究报告。
+面向高校财税研究团队的内部研究网页。当前版本聚焦两件事：
 
-## 项目特性
+- 权威来源导航
+- 月度 / 历史简报归档
 
-- 中文界面，偏学术、清爽、可读性优先
-- `Next.js + TypeScript + Tailwind CSS` 快速搭建，结构清晰
-- 本地 `JSON` 数据驱动，首版无须复杂数据库即可运行
-- 预置样例数据，首次启动不会出现空页面
-- 提供周更 / 月更脚本，支持半自动更新与手动导入链接
-- 抓取失败自动回退到兜底样例，不因单个来源异常导致整个项目崩溃
+系统仅保存元数据和 AI 生成的简报内容，不持久化保存原文。
 
-## 页面结构
+## 当前能力
 
-- `/` 首页 Dashboard
-- `/updates` 更新中心
-- `/policies` 政策与制度
+- 前端展示政策、数据、新闻、文献四类来源导航
+- 支持按月生成简报，并归档到 `data/reports.json`
+- 支持指定月份回溯生成，如 `2026-03`
+- 通过 `data/crawl-index.json` 维护增量去重索引
+- 本地提供轻量 API 服务，便于后续与前端或云部署对接
+- 无 LLM Key 时使用规则摘要；有 Key 时可生成更自然的简报段落
+
+## 页面
+
+- `/` 总览
+- `/briefs` 月度简报归档
+- `/sources` 权威来源导航
+- `/policies` 政策元数据
 - `/debt` 债务动态
-- `/news` 新闻与讨论
-- `/papers` 文献与研究
+- `/news` 新闻讨论
+- `/papers` 文献研究
+- `/updates` 更新中心
 
-## 技术栈
-
-- `Next.js` App Router
-- `TypeScript`
-- `Tailwind CSS`
-- `Node.js` 更新脚本
-- `Cheerio` 用于首版静态页面解析
-
-## 项目目录
+## 目录
 
 ```text
 app/
+  briefs/page.tsx
+  sources/page.tsx
   debt/page.tsx
   news/page.tsx
   papers/page.tsx
   policies/page.tsx
   updates/page.tsx
-  globals.css
-  layout.tsx
-  page.tsx
-components/
-  charts/
-  filters/
-  layout/
-  lists/
-  pages/
-  ui/
 data/
   bundle.json
   source-catalog.json
+  reports.json
+  crawl-index.json
 lib/
   data.ts
   types.ts
-  utils.ts
 scripts/
-  import-url.mjs
   update.mjs
-.env.example
-package.json
-README.md
-tailwind.config.ts
-tsconfig.json
+  import-url.mjs
+server/
+  api.mjs
 ```
 
 ## 本地运行
@@ -72,238 +61,227 @@ tsconfig.json
 npm install
 ```
 
-### 2. 启动开发环境
+### 2. 启动前端
 
 ```bash
 npm run dev
 ```
 
-默认访问：
+访问：
 
 - [http://localhost:3000](http://localhost:3000)
 
-### 3. 生产构建
+### 3. 启动本地 API
 
 ```bash
-npm run build
-npm run start
+npm run api
 ```
 
-## 数据更新
+默认地址：
 
-### 周更
+- [http://localhost:4010/api/health](http://localhost:4010/api/health)
 
-```bash
-npm run update:weekly
-```
+## 数据更新与简报生成
 
-### 月更
+### 生成上个月简报
 
 ```bash
 npm run update:monthly
 ```
 
-更新脚本会：
-
-1. 尝试抓取配置中的公开来源
-2. 解析标题、日期、来源、链接
-3. 生成规则摘要
-4. 按 URL + 标题做去重
-5. 写回 `data/bundle.json`
-6. 更新 `/updates` 页面所需日志与来源状态
-
-### 手动导入链接
-
-当某些来源不适合直接抓取，或遇到复杂 JS / 反爬页面时，可采用手动导入：
+### 生成指定月份简报
 
 ```bash
-npm run import:url -- https://example.com/news policy
+npm run update:monthly -- --month=2026-03
 ```
 
-或：
+### 周度更新
+
+```bash
+npm run update:weekly
+```
+
+更新脚本会：
+
+1. 读取 `data/source-catalog.json`
+2. 只处理指定月份内的记录
+3. 通过 `data/crawl-index.json` 去重
+4. 仅保存元数据，不保存原文
+5. 生成 / 更新当月简报到 `data/reports.json`
+6. 同步更新 `data/bundle.json` 与前端页面
+
+## 手动导入链接
+
+当来源不适合自动抓取时，可手动导入：
 
 ```bash
 npm run import:url -- https://example.com/news news
 ```
 
-或导入文献 / 报告链接：
+```bash
+npm run import:url -- https://example.com/policy policy
+```
 
 ```bash
 npm run import:url -- https://example.com/paper paper
 ```
 
-脚本会自动抽取：
+## 本地 API
 
-- 页面标题
-- `meta description`
-- 前几段正文文本
+当前提供只读接口：
 
-并写入本地数据文件。
+- `GET /api/health`
+- `GET /api/dashboard`
+- `GET /api/sources`
+- `GET /api/sources?category=policy`
+- `GET /api/briefs`
+- `GET /api/briefs/2026-03`
+- `GET /api/records?category=policy&month=2026-03`
 
-## 当前首版数据方案
+说明：
 
-### 官方源
+- API 直接读取本地 JSON 文件
+- 适合本地开发和后续迁移到云服务器
+- GitHub Pages 静态站点不承载这些 API；云部署时建议使用 Node 进程运行
 
-首版已为以下方向预留抓取配置：
+## 数据设计
 
-- 财政部预算司政策规章页
-- 中国政府网最新政策页
-- 中国地方政府债券信息公开平台（政策法规、发行结果、数据统计）
-- 来源注册表集中维护于 `data/source-catalog.json`
+### 元数据
 
-### 新闻与评论源
+主数据保存在 `data/bundle.json`：
 
-首版采用“少量样例 + 半自动导入”的务实方案，页面已经支持：
+- `policies`
+- `debt`
+- `news`
+- `papers`
+- `updates`
 
-- 按时间浏览
-- 按来源筛选
-- 关键词搜索
-- 通过更新中心查看来源状态与可信度分层
+### 简报
 
-### 文献源
+月度简报保存在 `data/reports.json`：
 
-首版预留开放检索接口：
+- `month`
+- `title`
+- `sourceCounts`
+- `sections.policy`
+- `sections.data`
+- `sections.news`
+- `sections.papers`
+- `sections.analysis`
 
-- OpenAlex
-- Crossref
-- SSRN
-- RePEc
+### 增量索引
 
-目前默认内置样例文献，确保页面可直接展示。
+去重索引保存在 `data/crawl-index.json`：
 
-## 数据模型
+- `key`
+- `url`
+- `date`
+- `month`
+- `source`
+- `category`
+- `lastSeenAt`
 
-主要模型定义在 `lib/types.ts`：
+## 来源策略
 
-- `PolicyItem`
-- `DebtDataItem`
-- `NewsItem`
-- `PaperItem`
-- `UpdateLogItem`
-- `SourceCatalogItem`
+### 自动抓取优先
 
-统一字段设计便于后续：
+- 财政部预算司
+- 中国政府网
 
-- 增加数据源
-- 接入数据库
-- 接入全文抽取
-- 接入 LLM 摘要与标签分类
+### 手动 / 半自动优先
 
-## 摘要与标签逻辑
+- 中国人大网预算与债务报告
+- 财政部债务管理司月度统计
+- 中国地方政府债券信息公开平台
+- 新华社、人民日报、央视新闻
 
-首版更新脚本包含兜底摘要逻辑：
+### 仅导航，不自动抓取
 
-- 没有模型时：使用规则摘要 / 标题摘要
-- 后续可按环境变量扩展模型调用
+- 财新网
+- 第一财经
+- 中国知网
 
-推荐后续扩展方式：
+## 关于中国知网
 
-1. 在 `scripts/update.mjs` 中增加 `summarizeWithLLM()` 方法
-2. 检查 `LLM_API_KEY`
-3. 有 Key 时调用模型生成：
-   - 1-3 句摘要
-   - 分类标签
-   - 风险级别或主题标签
-4. 无 Key 时继续使用当前兜底逻辑
+按你的要求，文献来源保留中国知网，但当前版本采取合规降级：
 
-## 部署建议
+- 作为导航源展示
+- 不做自动抓取
+- 不绕过访问限制
+- 支持研究团队人工检索后，再用 `import:url` 导入元数据
 
-### 方案一：Vercel
+## LLM 摘要
 
-适合只做前端展示与轻量静态更新：
+如果配置了环境变量：
 
-1. 推送到 Git 仓库
-2. 在 Vercel 导入项目
-3. 执行 `npm install && npm run build`
-4. 若需要定期更新，可在外部定时任务中运行更新脚本后再部署
+- `LLM_API_KEY`
+- `LLM_BASE_URL`
+- `LLM_MODEL`
 
-### 方案三：GitHub Pages
+更新脚本会尝试增强月度简报内容。
 
-本仓库已包含 `GitHub Pages` 自动部署工作流：
+未配置时，系统使用规则摘要和模板化月报生成逻辑。
 
-1. 将仓库推送到 GitHub
-2. 在仓库 `Settings -> Pages` 中将 `Source` 设置为 `GitHub Actions`
-3. 每次 push 到 `main` 分支后，会自动生成静态站点并发布
+## 已生成的示例
 
-如果仓库地址为：
+当前仓库已内置：
 
-- `https://github.com/1486964828-beep/china-government-debt-tracker`
+- `2026-03` 月度简报
 
-则发布后的网页地址通常为：
+对应内容可在：
 
-- `https://1486964828-beep.github.io/china-government-debt-tracker/`
+- `/briefs`
 
-### 方案二：本地 / 服务器部署
+查看。
+
+## 构建与部署
+
+### 本地生产环境
 
 ```bash
-npm install
 npm run build
 npm run start
 ```
 
-建议配合：
+### GitHub Pages
 
-- Windows 任务计划程序
-- `cron`
-- GitHub Actions
-
-定期运行：
+当前仓库仍支持静态导出：
 
 ```bash
-npm run update:weekly
+npm run build
 ```
 
-或：
+GitHub Pages 可展示前端页面和静态 JSON 内容，但不承载本地 API。
 
-```bash
-npm run update:monthly
-```
+### 后续云部署建议
 
-## 真实抓取的注意事项
+建议拆成两部分：
 
-- 仅面向公开网页、公开列表页进行抓取
-- 不绕过登录、验证码或访问限制
-- 对复杂 JS 页面优先采用“手动导入链接 + 自动抽取元数据”替代
-- 建议对每个来源单独做配置与错误兜底，不要让单个来源影响整体更新
+- Next.js 前端
+- Node API / 定时任务进程
+
+推荐流程：
+
+1. 云服务器运行 `npm run api`
+2. 定时执行 `npm run update:monthly -- --month=YYYY-MM`
+3. 前端读取同一份 JSON 或通过 API 拉取
 
 ## 后续迭代建议
 
-### 1. 增加更多数据源
-
-- 扩展财政部更多栏目
-- 接入各省财政厅 / 发改委专项债项目公开页面
-- 增加权威媒体与研究机构的稳定来源
-
-### 2. 引入真正的 LLM 摘要与标签分类
-
-- 自动生成研究摘要
-- 自动打标签，如“专项债”“隐性债务”“中央加杠杆”“风险化解”
-- 自动输出“本周观察”或“本月观察”
-
-### 3. 增加专题页
-
-- 隐性债务
-- 专项债
-- 中央加杠杆
-- 再融资债与置换
-
-### 4. 增加时间序列图表与导出功能
-
-- 月度发行规模趋势图
-- 一般债 / 专项债结构图
-- 债务余额趋势图
-- CSV / Excel 导出
-
-### 5. 引入轻量数据库
-
-- 将 `data/bundle.json` 升级为 `SQLite`
-- 支持更稳定的去重、索引和查询
-
-### 6. 增加人工校对工作流
-
-- 新抓取条目进入“待复核”
-- 人工确认摘要、标签、分类后发布
+- 增加真实自动抓取源的覆盖面
+- 引入更稳健的详情页正文临时抽取
+- 增加“最新简报卡片”到首页首屏
+- 增加简报单月详情页
+- 把本地 JSON 升级为 SQLite
+- 为人工导入增加审核状态
+- 将新闻源按“自动 / 手动 / 导航-only”分层展示
 
 ## 说明
 
-首版强调“先跑起来、结构清晰、便于扩展”。如果某个真实来源当前抓取不稳定，项目仍会通过样例数据和兜底逻辑保证网页可用。
+这版优先满足：
+
+1. 可以生成指定月份简报
+2. 只保存元数据与简报
+3. 有增量索引
+4. 有本地 API
+5. 前端已能查看来源导航和历史简报

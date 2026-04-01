@@ -4,12 +4,14 @@ import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 const navItems: Array<{ href: Route; label: string; dot?: string }> = [
-  { href: "/", label: "总览", dot: "#8B0000" },
-  { href: "/policies", label: "政策", dot: "#8B0000" },
-  { href: "/debt", label: "债务", dot: "#1B4965" },
-  { href: "/news", label: "讨论", dot: "#2E7D32" },
-  { href: "/papers", label: "文献", dot: "#5C6BC0" },
-  { href: "/updates", label: "更新中心" }
+  { href: "/" as Route, label: "总览", dot: "#8B0000" },
+  { href: "/briefs" as Route, label: "简报", dot: "#8B0000" },
+  { href: "/sources" as Route, label: "来源", dot: "#8B0000" },
+  { href: "/policies" as Route, label: "政策", dot: "#8B0000" },
+  { href: "/debt" as Route, label: "债务", dot: "#1B4965" },
+  { href: "/news" as Route, label: "讨论", dot: "#2E7D32" },
+  { href: "/papers" as Route, label: "文献", dot: "#5C6BC0" },
+  { href: "/updates" as Route, label: "更新中心" }
 ];
 
 export function SiteShell({ children, currentPath }: { children: ReactNode; currentPath: string }) {

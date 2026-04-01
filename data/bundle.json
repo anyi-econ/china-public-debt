@@ -6,7 +6,11 @@
       "date": "2026-03-16",
       "source": "中国人大网",
       "category": "预算报告",
-      "tags": ["预算草案", "全国人大", "政府债务"],
+      "tags": [
+        "预算草案",
+        "全国人大",
+        "政府债务"
+      ],
       "summary": "全国人大公开预算报告全文，包含2025年末国债与地方政府债务余额、2026年地方债限额及专项债安排，是年度研究的基础文本。",
       "url": "https://www.npc.gov.cn/npc/c2/c30834/202603/t20260316_453265.html"
     },
@@ -16,7 +20,11 @@
       "date": "2024-12-25",
       "source": "中国政府网",
       "category": "专项债",
-      "tags": ["国务院办公厅", "专项债", "政策文件"],
+      "tags": [
+        "国务院办公厅",
+        "专项债",
+        "政策文件"
+      ],
       "summary": "国务院办公厅发布专项债机制优化意见，明确投向负面清单、资本金范围和全流程管理要求，是当前专项债制度研究的核心政策文本。",
       "url": "https://zwgls.mof.gov.cn/zcgz/202511/t20251102_3975537.htm"
     },
@@ -26,7 +34,11 @@
       "date": "2024-12-21",
       "source": "中国人大网",
       "category": "债务管理",
-      "tags": ["政府债务管理", "全国人大", "年度报告"],
+      "tags": [
+        "政府债务管理",
+        "全国人大",
+        "年度报告"
+      ],
       "summary": "国务院向全国人大常委会报告年度政府债务管理情况，适合用来追踪法定债务、风险防控和地方隐性债务化解安排。",
       "url": "https://www.npc.gov.cn/npc/c2/c30834/202412/t20241221_441343.html"
     },
@@ -36,7 +48,12 @@
       "date": "2024-04-23",
       "source": "中国政府网",
       "category": "专项债",
-      "tags": ["专项债", "项目筛选", "国家发展改革委", "财政部"],
+      "tags": [
+        "专项债",
+        "项目筛选",
+        "国家发展改革委",
+        "财政部"
+      ],
       "summary": "官方通报2024年专项债项目筛选结果，披露项目数量与需求规模，可用于跟踪专项债项目储备与前期审核机制。",
       "url": "https://www.gov.cn/lianbo/bumen/202404/content_6947118.htm"
     },
@@ -46,12 +63,40 @@
       "date": "2021-02-09",
       "source": "财政部预算司",
       "category": "债务管理",
-      "tags": ["财政部", "信息公开", "地方债"],
+      "tags": [
+        "财政部",
+        "信息公开",
+        "地方债"
+      ],
       "summary": "财政部明确地方政府债券信息公开平台的管理责任、公开范围与时效要求，是平台制度设计的重要依据。",
       "url": "https://yss.mof.gov.cn/zhengceguizhang/202102/t20210209_3656874.htm"
     }
   ],
   "debt": [
+    {
+      "id": "debt-2026-01-local-total",
+      "date": "2026-03-09",
+      "level": "local",
+      "bondType": "地方政府债券",
+      "metricType": "issuance",
+      "value": 8634,
+      "unit": "亿元",
+      "source": "财政部债务管理司",
+      "notes": "2026年1月当月发行合计",
+      "url": "https://zwgls.mof.gov.cn/tjsj/202603/t20260309_4530041.htm"
+    },
+    {
+      "id": "debt-2026-01-local-balance",
+      "date": "2026-03-09",
+      "level": "local",
+      "bondType": "地方政府债务余额",
+      "metricType": "balance",
+      "value": 555774,
+      "unit": "亿元",
+      "source": "财政部债务管理司",
+      "notes": "2026年1月末地方政府债务余额",
+      "url": "https://zwgls.mof.gov.cn/tjsj/202603/t20260309_4530041.htm"
+    },
     {
       "id": "debt-2024-12-local-total",
       "date": "2024-12-31",
@@ -151,11 +196,28 @@
   ],
   "news": [
     {
+      "id": "news-xinhua-2026-gov-work-report",
+      "title": "2026年政府工作报告（全文）",
+      "date": "2026-03-13",
+      "source": "新华社",
+      "tags": [
+        "政府工作报告",
+        "专项债",
+        "财政扩张"
+      ],
+      "summary": "政府工作报告提出拟发行特别国债和新增地方政府专项债务限额安排，是 3 月公开讨论政府债务与积极财政政策的核心文本。",
+      "url": "https://www.hnswjrb.gov.cn/2026/03-14/3634696.html"
+    },
+    {
       "id": "news-gov-2024-12-special-bond-opinion",
       "title": "国务院办公厅印发《关于优化完善地方政府专项债券管理机制的意见》",
       "date": "2024-12-25",
       "source": "中国政府网/新华社",
-      "tags": ["新华社", "专项债", "政策发布"],
+      "tags": [
+        "新华社",
+        "专项债",
+        "政策发布"
+      ],
       "summary": "新华社稿件概括了专项债投向、资本金比例和项目审核机制等关键信息，适合作为政策发布后的权威新闻样本。",
       "url": "https://www.gov.cn/yaowen/liebiao/202412/content_6994511.htm"
     },
@@ -164,7 +226,11 @@
       "title": "聚焦专项债、政府投资基金，国务院作出新部署",
       "date": "2024-12-16",
       "source": "中国政府网/新华社",
-      "tags": ["专项债", "政策解读", "国务院常务会议"],
+      "tags": [
+        "专项债",
+        "政策解读",
+        "国务院常务会议"
+      ],
       "summary": "新华社围绕国务院常务会议对专项债和政府投资基金的部署进行了提炼，适合跟踪政策取向变化。",
       "url": "https://www.gov.cn/zhengce/202412/content_6992969.htm"
     },
@@ -173,7 +239,11 @@
       "title": "权威部门详解地方化债“组合拳”",
       "date": "2024-11-09",
       "source": "中国政府网/新华社",
-      "tags": ["化债", "隐性债务", "政策解读"],
+      "tags": [
+        "化债",
+        "隐性债务",
+        "政策解读"
+      ],
       "summary": "新华社对地方化债政策组合进行集中说明，是理解隐性债务置换与再融资安排的重要权威解读。",
       "url": "https://www.gov.cn/zhengce/202411/content_6985784.htm"
     },
@@ -182,7 +252,11 @@
       "title": "“6+4+2”万亿元！地方化债“三箭齐发”",
       "date": "2024-11-08",
       "source": "中国政府网/新华社",
-      "tags": ["化债", "隐性债务", "政策解读"],
+      "tags": [
+        "化债",
+        "隐性债务",
+        "政策解读"
+      ],
       "summary": "新华社梳理地方化债“三箭齐发”组合安排，适合观察隐性债务置换、专项债补充财力和后续财政安排。",
       "url": "https://www.gov.cn/zhengce/202411/content_6985669.htm"
     },
@@ -191,7 +265,11 @@
       "title": "直接安排10万亿元！地方政府化债压力将大大减轻",
       "date": "2024-11-08",
       "source": "中国政府网/新华社",
-      "tags": ["化债", "隐性债务", "财政部发布会"],
+      "tags": [
+        "化债",
+        "隐性债务",
+        "财政部发布会"
+      ],
       "summary": "中国政府网转载新华社稿件，披露地方化债资源安排与政策目标，适合用于官方口径追踪。",
       "url": "https://www.gov.cn/lianbo/bumen/202411/content_6985603.htm"
     },
@@ -200,7 +278,11 @@
       "title": "学习《决定》每日问答 | 怎样理解完善政府债务管理制度",
       "date": "2024-09-07",
       "source": "中国政府网/新华社",
-      "tags": ["政府债务管理制度", "政策解读", "新华社"],
+      "tags": [
+        "政府债务管理制度",
+        "政策解读",
+        "新华社"
+      ],
       "summary": "新华社以政策问答形式梳理政府债务制度改革方向，涉及专项债支持范围、全口径监测监管和隐性债务风险长效机制。",
       "url": "https://www.gov.cn/zhengce/202409/content_6972939.htm"
     },
@@ -209,7 +291,11 @@
       "title": "地方政府专项债券投向领域更“新”",
       "date": "2024-04-22",
       "source": "中国政府网/新华社",
-      "tags": ["专项债", "投向领域", "国新办发布会"],
+      "tags": [
+        "专项债",
+        "投向领域",
+        "国新办发布会"
+      ],
       "summary": "报道披露财政部对专项债投向领域和资本金使用范围的最新调整，适合用于政策取向与投向结构观察。",
       "url": "https://www.gov.cn/lianbo/bumen/202404/content_6946887.htm"
     }
@@ -218,60 +304,117 @@
     {
       "id": "paper-nber-2017-financing-local-government",
       "title": "The Financing of Local Government in China: Stimulus Loan Wanes and Shadow Banking Waxes",
-      "authors": ["Zhuo Chen", "Zhiguo He", "Chun Liu"],
+      "authors": [
+        "Zhuo Chen",
+        "Zhiguo He",
+        "Chun Liu"
+      ],
       "year": 2017,
       "venue": "NBER Working Paper 23598",
       "abstract": "论文研究刺激计划后中国地方政府融资从银行贷款转向债券和影子银行融资的过程，是研究地方融资平台和债务滚续的重要文献。",
-      "keywords": ["Local Government Financing", "Shadow Banking", "China"],
+      "keywords": [
+        "Local Government Financing",
+        "Shadow Banking",
+        "China"
+      ],
       "url": "https://www.nber.org/papers/w23598",
       "source": "NBER"
     },
     {
       "id": "paper-jfe-2020-financing-local-government",
       "title": "The financing of local government in China: Stimulus loan wanes and shadow banking waxes",
-      "authors": ["Zhuo Chen", "Zhiguo He", "Chun Liu"],
+      "authors": [
+        "Zhuo Chen",
+        "Zhiguo He",
+        "Chun Liu"
+      ],
       "year": 2020,
       "venue": "Journal of Financial Economics",
       "abstract": "正式发表版本进一步分析地方政府融资平台在刺激计划后如何转向债券与影子银行融资，对中国地方债研究具有代表性。",
-      "keywords": ["地方政府融资平台", "债券融资", "影子银行"],
+      "keywords": [
+        "地方政府融资平台",
+        "债券融资",
+        "影子银行"
+      ],
       "url": "https://www.sciencedirect.com/science/article/pii/S0304405X20300179",
       "source": "ScienceDirect"
     },
     {
       "id": "paper-jfe-2021-subnational-debt",
       "title": "Subnational debt of China: The politics-finance nexus",
-      "authors": ["Haoyu Gao", "Hong Ru", "Dragon Yongjun Tang"],
+      "authors": [
+        "Haoyu Gao",
+        "Hong Ru",
+        "Dragon Yongjun Tang"
+      ],
       "year": 2021,
       "venue": "Journal of Financial Economics",
       "abstract": "论文从政治—金融关联视角研究中国地方政府债务选择性违约与银行政治影响力，对地方债务治理机制分析具有较强启发。",
-      "keywords": ["Subnational Debt", "Politics-Finance Nexus", "China"],
+      "keywords": [
+        "Subnational Debt",
+        "Politics-Finance Nexus",
+        "China"
+      ],
       "url": "https://ideas.repec.org/a/eee/jfinec/v141y2021i3p881-895.html",
       "source": "RePEc"
     },
     {
       "id": "paper-jof-2020-local-crowding-out",
       "title": "Local Crowding-Out in China",
-      "authors": ["Yi Huang", "Marco Pagano", "Ugo Panizza"],
+      "authors": [
+        "Yi Huang",
+        "Marco Pagano",
+        "Ugo Panizza"
+      ],
       "year": 2020,
       "venue": "Journal of Finance",
       "abstract": "论文研究地方公共债务对企业融资和投资的挤出效应，是理解地方债务与实体经济关系的经典研究。",
-      "keywords": ["Crowding Out", "Local Public Debt", "China"],
+      "keywords": [
+        "Crowding Out",
+        "Local Public Debt",
+        "China"
+      ],
       "url": "https://www.ifn.se/en/publications/scientific-articles-in-english/2020/2020-76/",
       "source": "IFN / Journal of Finance"
     },
     {
       "id": "paper-cass-2024-local-debt-risk",
       "title": "中国增长模式视角下的地方债务风险及其化解",
-      "authors": ["陶然", "余家林"],
+      "authors": [
+        "陶然",
+        "余家林"
+      ],
       "year": 2024,
       "venue": "中国社会科学院农村发展研究所论文",
       "abstract": "研究从中国增长模式角度讨论地方债务扩张的结构性与区域性风险，并提出债务重组与结构改革的化解思路。",
-      "keywords": ["地方政府债务", "债务化解", "中国增长模式"],
+      "keywords": [
+        "地方政府债务",
+        "债务化解",
+        "中国增长模式"
+      ],
       "url": "https://rdi.cass.cn/yjcg/202409/P020240920454727689962.pdf",
       "source": "中国社会科学院农村发展研究所"
     }
   ],
   "updates": [
+    {
+      "id": "update-生成-2026年3月中国政府债务月度简报-1775025866676-e11d",
+      "date": "2026-04-01",
+      "type": "policy",
+      "title": "生成 2026年3月中国政府债务月度简报",
+      "source": "系统简报生成器",
+      "status": "新增",
+      "note": "基于 2026-03 元数据生成月度简报并完成归档。"
+    },
+    {
+      "id": "update-2026-04-01-brief-1",
+      "date": "2026-04-01",
+      "type": "policy",
+      "title": "生成 2026 年 3 月政府债务月度简报",
+      "source": "系统简报生成器",
+      "status": "新增",
+      "note": "根据 2026 年 3 月政策、债务统计与权威新闻元数据生成首份月度简报，并建立月度归档。"
+    },
     {
       "id": "update-2026-04-01-1",
       "date": "2026-04-01",
@@ -320,6 +463,14 @@
   ],
   "highlights": [
     {
+      "id": "highlight-2026-03-brief",
+      "title": "2026 年 3 月简报已归档：预算报告与 1 月地方债统计共同构成核心线索",
+      "date": "2026-04-01",
+      "category": "月度简报",
+      "summary": "3 月简报显示，当月政府债务信息主要集中在全国人大预算草案报告和财政部债务管理司的月度统计两个口径上。",
+      "url": ""
+    },
+    {
       "id": "highlight-1",
       "title": "2026 年预算报告提供了最新地方政府债务限额与余额信息",
       "date": "2026-03-16",
@@ -338,51 +489,114 @@
   ],
   "observation": {
     "month": "2026 年 4 月",
-    "title": "当前版本优先保证“老师一键打开就能核验”",
-    "summary": "这轮更新不再追求来源数量，而是优先保证每一条内容都能点回财政部、中国政府网、中国人大网或权威研究机构页面，让老师可以直接核查原文。",
+    "title": "当前版本开始按“导航 + 月度简报归档”方式组织内容",
+    "summary": "本轮更新把网站重心调整为权威来源导航和月度简报生成：保留元数据、链接和 AI 生成简报，不在本地持久化保存原文。",
     "bullets": [
-      "政策页围绕国务院办公厅、财政部和全国人大正式文件构建。",
-      "债务动态页优先展示财政部债务管理司月度统计口径。",
-      "新闻页统一为中国政府网 / 新华社权威解读，减少口径分散。"
+      "已建立 2026 年 3 月简报归档，支持后续按月份回溯生成。",
+      "来源目录扩展为政策、新闻、数据、文献四大类导航。",
+      "知网在首版中仅保留导航与手动导入，不做自动抓取。"
     ]
   },
   "metadata": {
     "lastUpdated": "2026-04-01",
-    "updateMode": "manual",
+    "updateMode": "monthly",
     "sourceStatus": [
       {
         "name": "财政部预算司政策规章",
         "category": "policy",
-        "status": "success",
-        "message": "使用财政部预算司正式政策页面，链接可直接回到官方原文。",
-        "updatedAt": "2026-04-01"
-      },
-      {
-        "name": "中国政府网政策库与新华社稿件",
-        "category": "policy",
-        "status": "success",
-        "message": "政策与新闻条目均可回跳至中国政府网正式页面。",
+        "status": "fallback",
+        "message": "财政部预算司正式政策规章页面，可直接回跳到地方政府债务、预算制度与信息公开原文。；本次使用兜底记录。fetch failed",
         "updatedAt": "2026-04-01"
       },
       {
         "name": "中国人大网预算与债务报告",
         "category": "policy",
         "status": "success",
-        "message": "纳入全国人大公开预算报告与债务管理报告全文。",
+        "message": "全国人大公开预算报告和政府债务管理报告全文，可直接获取年度国债、地方政府债务余额和限额安排。；本次处理 1 条候选记录。",
+        "updatedAt": "2026-04-01"
+      },
+      {
+        "name": "中国政府网政策库",
+        "category": "policy",
+        "status": "fallback",
+        "message": "中国政府网政策库与转载新华社稿件，是专项债、化债和财政政策的重要权威来源。；本次使用兜底记录。fetch failed",
+        "updatedAt": "2026-04-01"
+      },
+      {
+        "name": "国家发展改革委政策发布",
+        "category": "policy",
+        "status": "fallback",
+        "message": "首版仅作为导航源，暂不自动抓取。",
+        "updatedAt": "2026-04-01"
+      },
+      {
+        "name": "中国人民银行公告与政策",
+        "category": "policy",
+        "status": "fallback",
+        "message": "首版仅作为导航源，暂不自动抓取。",
+        "updatedAt": "2026-04-01"
+      },
+      {
+        "name": "新华社",
+        "category": "news",
+        "status": "success",
+        "message": "新华社是政策发布和两会财经口径的重要权威媒体来源。；本次处理 1 条候选记录。",
+        "updatedAt": "2026-04-01"
+      },
+      {
+        "name": "人民日报",
+        "category": "news",
+        "status": "fallback",
+        "message": "该来源当前仅作为导航源保留，不执行自动抓取。",
+        "updatedAt": "2026-04-01"
+      },
+      {
+        "name": "央视新闻",
+        "category": "news",
+        "status": "fallback",
+        "message": "该来源当前仅作为导航源保留，不执行自动抓取。",
+        "updatedAt": "2026-04-01"
+      },
+      {
+        "name": "财新网",
+        "category": "news",
+        "status": "fallback",
+        "message": "仅导航，不做自动抓取。",
+        "updatedAt": "2026-04-01"
+      },
+      {
+        "name": "第一财经",
+        "category": "news",
+        "status": "fallback",
+        "message": "仅导航，不做自动抓取。",
         "updatedAt": "2026-04-01"
       },
       {
         "name": "财政部债务管理司月度统计",
         "category": "debt",
         "status": "success",
-        "message": "债务动态页优先展示财政部债务管理司月度发行与余额统计。",
+        "message": "财政部债务管理司月度统计页面，持续发布地方政府债券发行和债务余额情况。；本次纳入 2 条月度统计记录。",
+        "updatedAt": "2026-04-01"
+      },
+      {
+        "name": "中国地方政府债券信息公开平台",
+        "category": "debt",
+        "status": "fallback",
+        "message": "该来源当前仅作为导航源保留，不执行自动抓取。",
+        "updatedAt": "2026-04-01"
+      },
+      {
+        "name": "中国知网",
+        "category": "paper",
+        "status": "fallback",
+        "message": "出于访问限制与合规考虑，首版仅做导航与手动导入。",
         "updatedAt": "2026-04-01"
       },
       {
         "name": "NBER / ScienceDirect / 社科院研究",
         "category": "paper",
-        "status": "success",
-        "message": "文献页保留可直接访问的权威研究机构和期刊页面。",
+        "status": "fallback",
+        "message": "文献页优先保留 NBER、正式期刊落地页、RePEc 索引和中国社科院公开研究。；本次处理 0 条候选记录。",
         "updatedAt": "2026-04-01"
       }
     ]

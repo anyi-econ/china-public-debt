@@ -1,4 +1,6 @@
 export type ContentType = "policy" | "debt" | "news" | "paper";
+export type SourceAuthority = "official" | "state-media" | "research" | "open-data" | "commercial";
+export type SourceMethod = "html" | "api" | "manual";
 
 export interface PolicyItem {
   id: string;
@@ -40,6 +42,7 @@ export interface PaperItem {
   title: string;
   authors: string[];
   year: number;
+  date?: string;
   venue: string;
   abstract: string;
   keywords: string[];
@@ -73,6 +76,49 @@ export interface MonthlyObservation {
   bullets: string[];
 }
 
+export interface BriefSection {
+  title: string;
+  summary: string;
+  bullets: string[];
+}
+
+export interface MonthlyBrief {
+  id: string;
+  month: string;
+  title: string;
+  generatedAt: string;
+  mode: "monthly" | "manual" | "weekly";
+  sourceCounts: Record<ContentType, number>;
+  highlights: string[];
+  sections: {
+    policy: BriefSection;
+    data: BriefSection;
+    news: BriefSection;
+    papers: BriefSection;
+    analysis: BriefSection;
+  };
+  relatedIds: Record<ContentType, string[]>;
+  relatedLinks: Array<{
+    title: string;
+    url: string;
+    source: string;
+    category: ContentType;
+  }>;
+  notes?: string[];
+}
+
+export interface CrawlIndexEntry {
+  key: string;
+  url: string;
+  title: string;
+  date: string;
+  month: string;
+  source: string;
+  category: ContentType;
+  fingerprint?: string;
+  lastSeenAt: string;
+}
+
 export interface Metadata {
   lastUpdated: string;
   updateMode: "weekly" | "monthly" | "manual";
@@ -85,14 +131,32 @@ export interface Metadata {
   }>;
 }
 
+export interface SourceFallbackItem {
+  title: string;
+  date: string;
+  source: string;
+  url: string;
+  summary?: string;
+  tags?: string[];
+  category?: string;
+  authors?: string[];
+  venue?: string;
+  level?: "central" | "local";
+  bondType?: string;
+  metricType?: string;
+  value?: number;
+  unit?: string;
+  notes?: string;
+}
+
 export interface SourceCatalogItem {
   key: string;
   name: string;
-  category: "policy" | "debt" | "news" | "paper";
-  authority: "official" | "state-media" | "research" | "open-data";
+  category: ContentType;
+  authority: SourceAuthority;
   cadence: "weekly" | "monthly" | "manual";
   reliability: "high" | "medium";
-  method: "html" | "api" | "manual";
+  method: SourceMethod;
   url: string;
   description: string;
   selectors?: {
@@ -103,15 +167,10 @@ export interface SourceCatalogItem {
   };
   tags?: string[];
   categoryName?: string;
-  fallback: Array<{
-    title: string;
-    date: string;
-    source: string;
-    url: string;
-    summary?: string;
-    tags?: string[];
-    category?: string;
-  }>;
+  navigationOnly?: boolean;
+  automation?: "auto" | "manual-only" | "disabled";
+  notes?: string;
+  fallback: SourceFallbackItem[];
 }
 
 export interface AppDataBundle {

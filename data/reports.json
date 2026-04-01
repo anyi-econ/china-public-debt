@@ -1,0 +1,105 @@
+[
+  {
+    "id": "brief-2026-03",
+    "month": "2026-03",
+    "title": "2026年3月中国政府债务与地方债简报",
+    "generatedAt": "2026-04-01",
+    "mode": "monthly",
+    "sourceCounts": {
+      "policy": 1,
+      "debt": 2,
+      "news": 1,
+      "paper": 0
+    },
+    "highlights": [
+      "关于2025年中央和地方预算执行情况与2026年中央和地方预算草案的报告（中国人大网，2026-03-16）",
+      "2026-03-09：地方政府债券8,634亿元",
+      "2026年政府工作报告（全文）（新华社）"
+    ],
+    "sections": {
+      "policy": {
+        "title": "核心政策动态",
+        "summary": "2026年3月政策线索主要集中在《关于2025年中央和地方预算执行情况与2026年中央和地方预算草案的报告》等正式文本上，政策观察重点重新回到年度预算、专项债安排与地方债务管理框架。",
+        "bullets": [
+          "关于2025年中央和地方预算执行情况与2026年中央和地方预算草案的报告（中国人大网，2026-03-16）"
+        ]
+      },
+      "data": {
+        "title": "关键数据概览",
+        "summary": "2026年3月公开债务数据以财政部月度统计为主；本月样本中的发行合计 8,634 亿元，最新余额节点为 555,774 亿元。",
+        "bullets": [
+          "2026-03-09：地方政府债券8,634亿元",
+          "2026-03-09：地方政府债务余额555,774亿元"
+        ]
+      },
+      "news": {
+        "title": "新闻焦点",
+        "summary": "2026年3月新闻焦点主要围绕政府工作报告、预算安排与专项债政策表述展开，公开讨论整体偏政策解读型。",
+        "bullets": [
+          "2026年政府工作报告（全文）（新华社）"
+        ]
+      },
+      "papers": {
+        "title": "文献观点",
+        "summary": "2026年3月未自动抓取到新增开放文献元数据。当前仍以《The Financing of Local Government in China: Stimulus Loan Wanes and Shadow Banking Waxes》等开放来源文献作为观点补充，中国知网保持导航与人工导入模式。",
+        "bullets": [
+          "The Financing of Local Government in China: Stimulus Loan Wanes and Shadow Banking Waxes（NBER）",
+          "The financing of local government in China: Stimulus loan wanes and shadow banking waxes（ScienceDirect）",
+          "Subnational debt of China: The politics-finance nexus（RePEc）"
+        ]
+      },
+      "analysis": {
+        "title": "简要分析",
+        "summary": "2026年3月共汇总政策 1 条、债务数据 2 条、新闻 1 条、文献 0 条。整体看，政府债务议题仍围绕预算总量安排、专项债工具使用和月度债务余额变化展开，后续应继续跟踪当月新增口径。",
+        "bullets": [
+          "2026年3月的信息重心集中在预算安排与月度债务统计。",
+          "后续应重点追踪专项债发行节奏、部委解释口径与地方化债政策推进。",
+          "文献部分在首版中继续采用开放来源和手动导入并行机制。"
+        ]
+      }
+    },
+    "relatedIds": {
+      "policy": [
+        "policy-npc-2026-budget-report"
+      ],
+      "debt": [
+        "debt-2026-01-local-total",
+        "debt-2026-01-local-balance"
+      ],
+      "news": [
+        "news-xinhua-2026-gov-work-report"
+      ],
+      "paper": []
+    },
+    "relatedLinks": [
+      {
+        "title": "关于2025年中央和地方预算执行情况与2026年中央和地方预算草案的报告",
+        "url": "https://www.npc.gov.cn/npc/c2/c30834/202603/t20260316_453265.html",
+        "source": "中国人大网",
+        "category": "policy"
+      },
+      {
+        "title": "地方政府债券",
+        "url": "https://zwgls.mof.gov.cn/tjsj/202603/t20260309_4530041.htm",
+        "source": "财政部债务管理司",
+        "category": "debt"
+      },
+      {
+        "title": "地方政府债务余额",
+        "url": "https://zwgls.mof.gov.cn/tjsj/202603/t20260309_4530041.htm",
+        "source": "财政部债务管理司",
+        "category": "debt"
+      },
+      {
+        "title": "2026年政府工作报告（全文）",
+        "url": "https://www.hnswjrb.gov.cn/2026/03-14/3634696.html",
+        "source": "新华社",
+        "category": "news"
+      }
+    ],
+    "notes": [
+      "系统仅保存元数据与 AI 生成简报，不持久化保存原文。",
+      "中国知网在首版中仅作为导航源，文献元数据需人工导入。"
+    ]
+  }
+]

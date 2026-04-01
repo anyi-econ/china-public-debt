@@ -7,6 +7,7 @@
     "build": "next build",
     "build:pages": "next build",
     "start": "next start",
+    "api": "node server/api.mjs",
     "lint": "tsc --noEmit",
     "update:weekly": "node scripts/update.mjs weekly",
     "update:monthly": "node scripts/update.mjs monthly",
