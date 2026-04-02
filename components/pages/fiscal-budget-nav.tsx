@@ -1,13 +1,11 @@
+"use client";
+
+import { useMemo, useState } from "react";
+
 interface FiscalRegion {
   code: string;
   name: string;
   url: string;
-}
-
-interface FiscalCity {
-  name: string;
-  url: string;
-  domain: string;
 }
 
 const PROVINCES: FiscalRegion[] = [
@@ -37,7 +35,7 @@ const PROVINCES: FiscalRegion[] = [
   { code: "guizhou", name: "贵州省", url: "https://czt.guizhou.gov.cn" },
   { code: "yunnan", name: "云南省", url: "https://czt.yn.gov.cn" },
   { code: "xizang", name: "西藏自治区", url: "https://czt.xizang.gov.cn" },
-  { code: "shanxi2", name: "陕西省", url: "https://czt.shaanxi.gov.cn" },
+  { code: "shaanxi", name: "陕西省", url: "https://czt.shaanxi.gov.cn" },
   { code: "gansu", name: "甘肃省", url: "https://czt.gansu.gov.cn" },
   { code: "qinghai", name: "青海省", url: "https://czt.qinghai.gov.cn" },
   { code: "ningxia", name: "宁夏回族自治区", url: "https://czt.nx.gov.cn" },
@@ -47,106 +45,102 @@ const PROVINCES: FiscalRegion[] = [
   { code: "macao", name: "澳门特别行政区", url: "https://www.dsf.gov.mo/" }
 ];
 
-const ZHEJIANG_CITIES: FiscalCity[] = [
-  { name: "杭州市", url: "https://czj.hangzhou.gov.cn", domain: "hangzhou.gov.cn" },
-  { name: "宁波市", url: "https://czj.ningbo.gov.cn", domain: "ningbo.gov.cn" },
-  { name: "温州市", url: "https://czj.wenzhou.gov.cn", domain: "wenzhou.gov.cn" },
-  { name: "嘉兴市", url: "https://czj.jiaxing.gov.cn", domain: "jiaxing.gov.cn" },
-  { name: "湖州市", url: "https://czj.huzhou.gov.cn", domain: "huzhou.gov.cn" },
-  { name: "绍兴市", url: "https://www.shaoxing.gov.cn", domain: "shaoxing.gov.cn" },
-  { name: "金华市", url: "https://www.jinhua.gov.cn", domain: "jinhua.gov.cn" },
-  { name: "衢州市", url: "https://www.quzhou.gov.cn", domain: "quzhou.gov.cn" },
-  { name: "舟山市", url: "https://www.zhoushan.gov.cn", domain: "zhoushan.gov.cn" },
-  { name: "台州市", url: "https://czj.taizhou.gov.cn", domain: "taizhou.gov.cn" },
-  { name: "丽水市", url: "https://www.lishui.gov.cn", domain: "lishui.gov.cn" }
-];
-
-function buildSearchLink(query: string) {
-  return `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
-}
-
-function buildSiteBudgetQuery(name: string, site: string) {
-  return `${name} 预决算公开 site:${site}`;
-}
-
-const NATIONAL_ENTRIES = [
-  {
-    title: "财政部预算司（预决算公开平台）",
-    url: "https://yss.mof.gov.cn/",
-    description: "全国财政预决算公开统一入口，可继续下钻到各省与基层单位。"
-  },
-  {
-    title: "中国政府网：中央预决算公开检索",
-    url: buildSearchLink("中央 预决算公开 site:gov.cn"),
-    description: "检索中央部门预算、决算公开与说明材料。"
-  },
-  {
-    title: "全国地方预决算公开检索",
-    url: buildSearchLink("地方 财政 预决算公开 site:gov.cn"),
-    description: "按地区筛选地方财政公开目录、预算草案与决算报告。"
-  }
-];
+const CITY_BY_PROVINCE: Record<string, FiscalRegion[]> = {
+  zhejiang: [
+    { code: "hz", name: "杭州市", url: "https://czj.hangzhou.gov.cn" },
+    { code: "nb", name: "宁波市", url: "https://czj.ningbo.gov.cn" },
+    { code: "wz", name: "温州市", url: "https://czj.wenzhou.gov.cn" },
+    { code: "jx", name: "嘉兴市", url: "https://czj.jiaxing.gov.cn" },
+    { code: "huz", name: "湖州市", url: "https://czj.huzhou.gov.cn" },
+    { code: "sx", name: "绍兴市", url: "https://www.shaoxing.gov.cn" },
+    { code: "jh", name: "金华市", url: "https://www.jinhua.gov.cn" },
+    { code: "qz", name: "衢州市", url: "https://www.quzhou.gov.cn" },
+    { code: "zs", name: "舟山市", url: "https://www.zhoushan.gov.cn" },
+    { code: "tz", name: "台州市", url: "https://czj.taizhou.gov.cn" },
+    { code: "ls", name: "丽水市", url: "https://www.lishui.gov.cn" }
+  ]
+};
 
 export function FiscalBudgetNav() {
+  const [activeProvinceCode, setActiveProvinceCode] = useState<string | null>(null);
+
+  const activeProvince = useMemo(
+    () => PROVINCES.find((province) => province.code === activeProvinceCode) ?? null,
+    [activeProvinceCode]
+  );
+
+  const cities = activeProvinceCode ? CITY_BY_PROVINCE[activeProvinceCode] ?? [] : [];
+
   return (
-    <div className="space-y-4">
-      <article className="info-card p-4">
-        <h3 className="section-title">全国统一入口</h3>
-        <div className="space-y-3">
-          {NATIONAL_ENTRIES.map((entry) => (
-            <div key={entry.title} className="list-row pb-3 last:border-b-0 last:pb-0">
-              <div className="event-title">{entry.title}</div>
-              <div className="event-summary mt-1">{entry.description}</div>
-              <div className="event-sources">
-                <a href={entry.url} target="_blank" rel="noreferrer">
-                  打开入口 ↗
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </article>
+    <article className="info-card p-4">
+      <div className="mb-4 flex items-center justify-between gap-3">
+        <h3 className="section-title mb-0 border-b-0 pb-0">
+          财政预决算导航
+          <span className="section-sub">{activeProvince ? `${activeProvince.name} 地级市` : "省级地区"}</span>
+        </h3>
+        {activeProvince ? (
+          <button
+            type="button"
+            className="rounded border border-[var(--color-border)] px-3 py-1 text-[0.82rem] text-[var(--color-link)] hover:bg-[var(--color-surface)]"
+            onClick={() => setActiveProvinceCode(null)}
+          >
+            返回省级列表
+          </button>
+        ) : null}
+      </div>
 
-      <article className="info-card p-4">
-        <h3 className="section-title">省级财政预决算导航（官网直达）</h3>
-        <div className="grid gap-2 md:grid-cols-2 xl:grid-cols-3">
+      {!activeProvince ? (
+        <div className="grid grid-cols-5 gap-2">
           {PROVINCES.map((province) => (
-            <div key={province.code} className="rounded border border-[var(--color-border)] bg-[var(--color-surface)] p-3">
-              <p className="font-semibold text-[0.95rem]">{province.name}</p>
-              <div className="event-sources mt-1 flex flex-wrap gap-3 text-[0.86rem]">
-                <a href={province.url} target="_blank" rel="noreferrer">
-                  财政部门官网 ↗
-                </a>
-                <a href={buildSearchLink(buildSiteBudgetQuery(province.name, "gov.cn"))} target="_blank" rel="noreferrer">
-                  预决算公开检索 ↗
-                </a>
-              </div>
-            </div>
+            <button
+              key={province.code}
+              type="button"
+              className="rounded border border-[var(--color-border)] bg-[var(--color-surface)] px-2 py-3 text-center text-[0.9rem] font-semibold leading-tight transition hover:border-[var(--color-link)] hover:text-[var(--color-link)]"
+              onClick={() => setActiveProvinceCode(province.code)}
+            >
+              {province.name}
+            </button>
           ))}
         </div>
-      </article>
-
-      <article className="info-card p-4">
-        <h3 className="section-title">浙江省地级市财政预决算入口（11市）</h3>
-        <div className="event-summary mb-3">
-          已覆盖杭州、宁波、温州、嘉兴、湖州、绍兴、金华、衢州、舟山、台州、丽水，优先给财政官网直达；无法稳定识别财政局域名的城市先给市政府站点并附预决算公开检索。
+      ) : cities.length > 0 ? (
+        <div className="space-y-3">
+          <a
+            href={activeProvince.url}
+            target="_blank"
+            rel="noreferrer"
+            className="block rounded border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2 text-[0.9rem] font-semibold hover:border-[var(--color-link)] hover:text-[var(--color-link)]"
+          >
+            {activeProvince.name}
+          </a>
+          <div className="grid grid-cols-5 gap-2">
+            {cities.map((city) => (
+              <a
+                key={city.code}
+                href={city.url}
+                target="_blank"
+                rel="noreferrer"
+                className="block rounded border border-[var(--color-border)] bg-[var(--color-surface)] px-2 py-3 text-center text-[0.9rem] font-semibold leading-tight transition hover:border-[var(--color-link)] hover:text-[var(--color-link)]"
+              >
+                {city.name}
+              </a>
+            ))}
+          </div>
         </div>
-        <div className="grid gap-2 md:grid-cols-2 xl:grid-cols-3">
-          {ZHEJIANG_CITIES.map((city) => (
-            <div key={city.name} className="rounded border border-[var(--color-border)] bg-[var(--color-surface)] p-3">
-              <p className="font-semibold text-[0.95rem]">{city.name}</p>
-              <div className="event-sources mt-1 flex flex-wrap gap-3 text-[0.86rem]">
-                <a href={city.url} target="_blank" rel="noreferrer">
-                  官网直达 ↗
-                </a>
-                <a href={buildSearchLink(buildSiteBudgetQuery(city.name, city.domain))} target="_blank" rel="noreferrer">
-                  预决算公开检索 ↗
-                </a>
-              </div>
-            </div>
-          ))}
+      ) : (
+        <div className="space-y-3">
+          <a
+            href={activeProvince.url}
+            target="_blank"
+            rel="noreferrer"
+            className="block rounded border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2 text-[0.9rem] font-semibold hover:border-[var(--color-link)] hover:text-[var(--color-link)]"
+          >
+            {activeProvince.name}
+          </a>
+          <div className="rounded border border-dashed border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-6 text-center text-[0.86rem] text-[var(--color-muted)]">
+            当前仅已录入浙江省地级市列表。
+          </div>
         </div>
-      </article>
-    </div>
+      )}
+    </article>
   );
 }
