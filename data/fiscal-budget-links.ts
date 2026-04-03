@@ -278,16 +278,16 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         url: "https://czj.hangzhou.gov.cn/col/col1229249469/index.html",
         children: [
           { name: "上城区", url: "" },
-          { name: "拱墅区", url: "" },
+          { name: "拱墅区", url: "https://www.gongshu.gov.cn/col/col1229113742/index.html" },
           { name: "西湖区", url: "" },
           { name: "滨江区", url: "" },
-          { name: "萧山区", url: "" },
+          { name: "萧山区", url: "https://www.xiaoshan.gov.cn/col/col1229461366/index.html" },
           { name: "余杭区", url: "" },
           { name: "临平区", url: "" },
-          { name: "钱塘区", url: "" },
+          { name: "钱塘区", url: "https://www.qiantang.gov.cn/col/col1229607514/index.html" },
           { name: "富阳区", url: "" },
           { name: "临安区", url: "" },
-          { name: "桐庐县", url: "" },
+          { name: "桐庐县", url: "http://www.tonglu.gov.cn/col/col1229137242/index.html" },
           { name: "淳安县", url: "" },
           { name: "建德市", url: "" },
         ],
@@ -364,7 +364,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "金华市",
-        url: "",
+        url: "http://czj.jinhua.gov.cn/col/col1229318173/index.html",
         children: [
           { name: "婺城区", url: "" },
           { name: "金东区", url: "" },
@@ -379,7 +379,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "衢州市",
-        url: "",
+        url: "http://czj.qz.gov.cn/",
         children: [
           { name: "柯城区", url: "" },
           { name: "衢江区", url: "" },
@@ -391,7 +391,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "舟山市",
-        url: "",
+        url: "https://www.zhoushan.gov.cn/col/col1229028945/index.html",
         children: [
           { name: "定海区", url: "" },
           { name: "普陀区", url: "" },
@@ -401,7 +401,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "台州市",
-        url: "",
+        url: "https://czj.zjtz.gov.cn/col/col1229890821/index.html",
         children: [
           { name: "椒江区", url: "" },
           { name: "黄岩区", url: "" },
