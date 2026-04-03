@@ -3,6 +3,21 @@
 import { useState } from "react";
 import { FISCAL_REGIONS, type FiscalRegionNode } from "@/data/fiscal-budget-links";
 
+/** 统计节点下"有链接"的市/县数量 */
+function countCoverage(node: FiscalRegionNode): { cities: number; citiesTotal: number; counties: number; countiesTotal: number } {
+  const children = node.children ?? [];
+  let cities = 0, citiesTotal = 0, counties = 0, countiesTotal = 0;
+  for (const city of children) {
+    citiesTotal++;
+    if (city.url) cities++;
+    for (const county of city.children ?? []) {
+      countiesTotal++;
+      if (county.url) counties++;
+    }
+  }
+  return { cities, citiesTotal, counties, countiesTotal };
+}
+
 /** 根据导航路径获取当前层级的标题和列表 */
 function resolveLevel(path: number[]): {
   label: string;
@@ -40,13 +55,25 @@ function RegionItem({
   index,
   hasChildren,
   onDrill,
+  showCoverage,
 }: {
   node: FiscalRegionNode;
   index: number;
   hasChildren: boolean;
   onDrill: (index: number) => void;
+  showCoverage?: boolean;
 }) {
   const hasUrl = node.url.length > 0;
+
+  // 覆盖率标注（仅省级）
+  let coverageLabel: string | null = null;
+  if (showCoverage && hasChildren) {
+    const { cities, citiesTotal, counties, countiesTotal } = countCoverage(node);
+    const parts: string[] = [];
+    if (citiesTotal > 0) parts.push(`市 ${cities}/${citiesTotal}`);
+    if (countiesTotal > 0) parts.push(`县 ${counties}/${countiesTotal}`);
+    coverageLabel = parts.length > 0 ? parts.join(" · ") : null;
+  }
 
   if (hasChildren) {
     // 可下钻的地区按钮
@@ -62,6 +89,11 @@ function RegionItem({
         onClick={() => onDrill(index)}
       >
         {node.name}
+        {coverageLabel && (
+          <span className="mt-1 block text-[0.7rem] font-normal text-[var(--color-muted)]">
+            {coverageLabel}
+          </span>
+        )}
       </button>
     );
   }
@@ -138,6 +170,7 @@ export function FiscalBudgetNav() {
               index={i}
               hasChildren={(node.children?.length ?? 0) > 0}
               onDrill={drillDown}
+              showCoverage={path.length === 0}
             />
           ))}
         </div>
