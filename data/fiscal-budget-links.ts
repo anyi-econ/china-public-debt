@@ -327,7 +327,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 吉林省 ═══════
   {
     name: "吉林省",
-    url: "",
+    url: "http://czt.jl.gov.cn/yjs/",
     children: [
       { name: "长春市", url: "" },
       { name: "吉林市", url: "" },
@@ -344,7 +344,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 黑龙江省 ═══════
   {
     name: "黑龙江省",
-    url: "",
+    url: "https://www.hlj.gov.cn/hlj/c108417/zfxxgk.shtml",
     children: [
       { name: "哈尔滨市", url: "" },
       { name: "齐齐哈尔市", url: "" },
@@ -742,7 +742,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 河南省 ═══════
   {
     name: "河南省",
-    url: "",
+    url: "http://czt.henan.gov.cn/xxgk/czzj",
     children: [
       { name: "郑州市", url: "" },
       { name: "开封市", url: "" },
@@ -1461,7 +1461,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 青海省 ═══════
   {
     name: "青海省",
-    url: "",
+    url: "http://czt.qinghai.gov.cn/zfxxgk/index.html",
     children: [
       { name: "西宁市", url: "" },
       { name: "海东市", url: "" },
