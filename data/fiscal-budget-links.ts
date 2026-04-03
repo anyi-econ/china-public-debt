@@ -22,10 +22,10 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
     name: "北京市",
     url: "https://czj.beijing.gov.cn/zwxx/czsj/czyjs/index.html",
     children: [
-      { name: "东城区", url: "https://www.bjdch.gov.cn/n3229/n4044/n4055/index.html" },
-      { name: "西城区", url: "https://www.bjxch.gov.cn/xchxxgk/yjsgk/index.html" },
+      { name: "东城区", url: "https://www.bjdch.gov.cn/ztzl/bmyjsgkzl/index.html" },
+      { name: "西城区", url: "" },
       { name: "朝阳区", url: "https://www.bjchy.gov.cn/dynamic/more_list.html?category_id=533" },
-      { name: "海淀区", url: "https://www.bjhd.gov.cn/zfxxgk/fdzdgknr/czyjsgk/" },
+      { name: "海淀区", url: "" },
       { name: "丰台区", url: "" },
       { name: "石景山区", url: "" },
       { name: "门头沟区", url: "" },
@@ -192,7 +192,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
     name: "辽宁省",
     url: "https://www.ln.gov.cn/web/zwgkx/sjjhczbg/index.shtml",
     children: [
-      { name: "沈阳市", url: "" },
+      { name: "沈阳市", url: "https://www.shenyang.gov.cn/zwgk/fdzdgknr/ysjs/" },
       { name: "大连市", url: "" },
       { name: "鞍山市", url: "" },
       { name: "抚顺市", url: "" },
@@ -252,7 +252,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
     name: "江苏省",
     url: "http://yjsgk.jsczt.cn/",
     children: [
-      { name: "南京市", url: "https://czj.nanjing.gov.cn/njcz/zwgk/czsjgb/" },
+      { name: "南京市", url: "" },
       { name: "无锡市", url: "" },
       { name: "徐州市", url: "" },
       { name: "常州市", url: "" },
@@ -271,11 +271,11 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 浙江省 ═══════
   {
     name: "浙江省",
-    url: "https://czt.zj.gov.cn/col/col1229441464/index.html",
+    url: "https://czt.zj.gov.cn/col/col1229887714/index.html",
     children: [
       {
         name: "杭州市",
-        url: "https://czj.hangzhou.gov.cn/col/col1229272822/index.html",
+        url: "https://czj.hangzhou.gov.cn/col/col1229249469/index.html",
         children: [
           { name: "上城区", url: "" },
           { name: "拱墅区", url: "" },
@@ -294,7 +294,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "宁波市",
-        url: "https://czj.ningbo.gov.cn/col/col1229247816/index.html",
+        url: "http://yjs.czj.ningbo.gov.cn/",
         children: [
           { name: "海曙区", url: "" },
           { name: "江北区", url: "" },
@@ -310,7 +310,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "温州市",
-        url: "https://czj.wenzhou.gov.cn/col/col1621499/index.html",
+        url: "",
         children: [
           { name: "鹿城区", url: "" },
           { name: "龙湾区", url: "" },
@@ -328,7 +328,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "嘉兴市",
-        url: "https://czj.jiaxing.gov.cn/col/col1229442024/index.html",
+        url: "",
         children: [
           { name: "南湖区", url: "" },
           { name: "秀洲区", url: "" },
@@ -341,7 +341,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "湖州市",
-        url: "https://czj.huzhou.gov.cn/col/col1229286408/index.html",
+        url: "",
         children: [
           { name: "吴兴区", url: "" },
           { name: "南浔区", url: "" },
@@ -401,7 +401,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "台州市",
-        url: "https://czj.taizhou.gov.cn/col/col1717186/index.html",
+        url: "",
         children: [
           { name: "椒江区", url: "" },
           { name: "黄岩区", url: "" },
@@ -437,7 +437,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
     name: "安徽省",
     url: "https://czt.ah.gov.cn/public/column/7041?type=4&catId=49938051&action=list",
     children: [
-      { name: "合肥市", url: "" },
+      { name: "合肥市", url: "https://www.hefei.gov.cn/zwgk/site/tpl/1541" },
       { name: "芜湖市", url: "" },
       { name: "蚌埠市", url: "" },
       { name: "淮南市", url: "" },
@@ -461,7 +461,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
     name: "福建省",
     url: "https://czt.fujian.gov.cn/ztzl/sjyjsgkpt/",
     children: [
-      { name: "福州市", url: "" },
+      { name: "福州市", url: "http://www.fuzhou.gov.cn/zgfzzt/czzj/" },
       { name: "厦门市", url: "" },
       { name: "莆田市", url: "" },
       { name: "三明市", url: "" },
@@ -497,7 +497,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
     name: "山东省",
     url: "https://czt.shandong.gov.cn/col/col97891/index.html",
     children: [
-      { name: "济南市", url: "" },
+      { name: "济南市", url: "http://jncz.jinan.gov.cn/col/col115040" },
       { name: "青岛市", url: "" },
       { name: "淄博市", url: "" },
       { name: "枣庄市", url: "" },
@@ -547,7 +547,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
     name: "湖北省",
     url: "https://czt.hubei.gov.cn/budget/#/dashboard",
     children: [
-      { name: "武汉市", url: "" },
+      { name: "武汉市", url: "https://czj.wuhan.gov.cn/FBJD/XXGKML/CZGK/CZYJS/" },
       { name: "黄石市", url: "" },
       { name: "十堰市", url: "" },
       { name: "宜昌市", url: "" },
@@ -572,7 +572,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
     name: "湖南省",
     url: "https://czt.hunan.gov.cn/ztzl/hnczysgk/",
     children: [
-      { name: "长沙市", url: "" },
+      { name: "长沙市", url: "http://www.changsha.gov.cn/szf/ztzl/ysgk/" },
       { name: "株洲市", url: "" },
       { name: "湘潭市", url: "" },
       { name: "衡阳市", url: "" },
