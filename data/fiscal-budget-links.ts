@@ -250,7 +250,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 江苏省 ═══════
   {
     name: "江苏省",
-    url: "https://czt.jiangsu.gov.cn/col/col76498/index.html",
+    url: "http://yjsgk.jsczt.cn/",
     children: [
       { name: "南京市", url: "https://czj.nanjing.gov.cn/njcz/zwgk/czsjgb/" },
       { name: "无锡市", url: "" },
@@ -435,7 +435,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 安徽省 ═══════
   {
     name: "安徽省",
-    url: "https://czt.ah.gov.cn/gk/czgk/yjsgk/index.html",
+    url: "https://czt.ah.gov.cn/public/column/7041?type=4&catId=49938051&action=list",
     children: [
       { name: "合肥市", url: "" },
       { name: "芜湖市", url: "" },
@@ -459,7 +459,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 福建省 ═══════
   {
     name: "福建省",
-    url: "https://czt.fujian.gov.cn/xxgk/zfxxgkzl/fdzdgknr/czyjsgk/",
+    url: "https://czt.fujian.gov.cn/ztzl/sjyjsgkpt/",
     children: [
       { name: "福州市", url: "" },
       { name: "厦门市", url: "" },
@@ -545,7 +545,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 湖北省 ═══════
   {
     name: "湖北省",
-    url: "https://czt.hubei.gov.cn/bmdt/czyjs/",
+    url: "https://czt.hubei.gov.cn/budget/#/dashboard",
     children: [
       { name: "武汉市", url: "" },
       { name: "黄石市", url: "" },
@@ -570,7 +570,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 湖南省 ═══════
   {
     name: "湖南省",
-    url: "https://czt.hunan.gov.cn/czt/xxgk/sjgb/",
+    url: "https://czt.hunan.gov.cn/ztzl/hnczysgk/",
     children: [
       { name: "长沙市", url: "" },
       { name: "株洲市", url: "" },
@@ -621,7 +621,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 广西壮族自治区 ═══════
   {
     name: "广西壮族自治区",
-    url: "https://czt.gxzf.gov.cn/xxgk/fdzdgknr/czyjs/",
+    url: "https://czt.gxzf.gov.cn/zt/yjsgkxx/index.shtml",
     children: [
       { name: "南宁市", url: "" },
       { name: "柳州市", url: "" },
@@ -643,7 +643,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 海南省 ═══════
   {
     name: "海南省",
-    url: "https://mof.hainan.gov.cn/czt/xxgk/czyjs/",
+    url: "https://mof.hainan.gov.cn/sczt/zdly/zdly.shtml",
     children: [
       { name: "海口市", url: "" },
       { name: "三亚市", url: "" },
@@ -670,7 +670,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 四川省 ═══════
   {
     name: "四川省",
-    url: "https://czt.sc.gov.cn/scczt/c104462/yjsgk.shtml",
+    url: "https://czt.sc.gov.cn/scczt/c102367/sbjyjs.shtml",
     children: [
       { name: "成都市", url: "" },
       { name: "自贡市", url: "" },
@@ -699,7 +699,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 贵州省 ═══════
   {
     name: "贵州省",
-    url: "https://czt.guizhou.gov.cn/zfxxgk/fdzdgknr/czyjsgk/",
+    url: "https://czt.guizhou.gov.cn/zwgk/zdlyxx/czys/",
     children: [
       { name: "贵阳市", url: "" },
       { name: "六盘水市", url: "" },
@@ -716,7 +716,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 云南省 ═══════
   {
     name: "云南省",
-    url: "https://czt.yn.gov.cn/xxgk/czsjgb/",
+    url: "https://czt.yn.gov.cn/czsj_list.html?id=5608443490473698929&pid=1",
     children: [
       { name: "昆明市", url: "" },
       { name: "曲靖市", url: "" },
@@ -755,7 +755,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 陕西省 ═══════
   {
     name: "陕西省",
-    url: "https://czt.shaanxi.gov.cn/yjsgk/",
+    url: "",
     children: [
       { name: "西安市", url: "" },
       { name: "铜川市", url: "" },
@@ -795,7 +795,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 青海省 ═══════
   {
     name: "青海省",
-    url: "https://czt.qinghai.gov.cn/xxgk/zdly/czyjsgk/",
+    url: "",
     children: [
       { name: "西宁市", url: "" },
       { name: "海东市", url: "" },
@@ -811,7 +811,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 宁夏回族自治区 ═══════
   {
     name: "宁夏回族自治区",
-    url: "https://czt.nx.gov.cn/xxgk_30/xxgkml/fdzdgknr/czyjsgk/",
+    url: "https://czt.nx.gov.cn/zwgk/zfxxgkml/yjsgk/index.html",
     children: [
       { name: "银川市", url: "" },
       { name: "石嘴山市", url: "" },
@@ -824,7 +824,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   // ═══════ 新疆维吾尔自治区 ═══════
   {
     name: "新疆维吾尔自治区",
-    url: "https://czt.xinjiang.gov.cn/czt/czgk/yjsgk.shtml",
+    url: "https://czt.xinjiang.gov.cn/xjczt/c114993/xjcztyjsgk.shtml",
     children: [
       { name: "乌鲁木齐市", url: "" },
       { name: "克拉玛依市", url: "" },
