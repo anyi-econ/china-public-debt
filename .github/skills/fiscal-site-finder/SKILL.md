@@ -137,9 +137,82 @@ Many city pinyin abbreviations collide with provincial or major-city domains:
 | `hg` | 鹤岗/黄冈 | 互相冲突 |
 | `lz` | 柳州/林芝 | 兰州市 |
 
+#### County domain name traps:
+Some county domains resolve to completely wrong locations:
+| Domain | Expected | Actually resolves to |
+|--------|----------|---------------------|
+| `xihu.gov.cn` | 杭州西湖区 | 辽宁本溪溪湖区 |
+| `wuyi.gov.cn` | 浙江武义县 | 河北衡水市 |
+
 **Rule:** When generating candidate URLs, **avoid two-letter abbreviations that conflict with major cities or provinces**. Only use full pinyin or the city's known official abbreviation.
 
 **Why Tier 3 is critical:** Roughly 30-40% of prefecture-level cities do NOT have a standalone fiscal bureau website. This is the norm in western/central China (云南, 贵州, 西藏, 青海, 甘肃, 宁夏, 广西). The government portal fallback is not an exception — it is a **standard search path**.
+
+### Tier 3B: Municipality District (直辖市区县) URL Discovery
+
+The four municipalities (北京市, 天津市, 上海市, 重庆市) have **districts (区)** instead of prefecture-level cities. District fiscal URLs require a distinct approach since there is no intermediate "city fiscal bureau" — each district's government portal is the primary source.
+
+#### Beijing (北京市)
+Beijing's fiscal bureau has a centralized district page at:
+```
+https://czj.beijing.gov.cn/zwxx/czsj/gqczyjs/index.html
+```
+This lists all 16 districts with direct links to their budget disclosure pages. **Always check this page first.**
+
+#### Tianjin (天津市)
+- No centralized district listing page found on `cz.tj.gov.cn` (JS-heavy, often fails to load)
+- Each district government portal has its own unique path structure — **no single pattern works for all**
+- Known working patterns:
+  ```
+  https://www.tjhp.gov.cn/zw/zfxxgk/fdzdgknr/czyjs/     # 和平区
+  https://www.tjnk.gov.cn/NKQZF/ZWGK5712/.../czyjs1/     # 南开区 (deeply nested)
+  https://www.tjhx.gov.cn/zwgk/zfxxgk/fdzdgknr/czyjs/    # 河西区
+  https://www.tjbh.gov.cn/zw/zfxxgk/fdzdgknr/czyjs/      # 滨海新区
+  ```
+- District domains follow `www.tj{abbr}.gov.cn` (e.g., `tjhp`, `tjnk`, `tjhx`, `tjbh`)
+
+#### Shanghai (上海市)
+- Each district uses completely different URL patterns
+- Some use query-string based navigation: `xxgk/portal/article/list?menuType=wgk&code=jcgk_czyjsgk`
+- Others use standard paths: `/zwgk/zfxxgk/fd/czyjs/`
+
+#### Chongqing (重庆市)
+- Has 38 districts/counties — the most among municipalities
+- `czj.cq.gov.cn` is JS-rendered and hard to access via automated tools
+- District government portals are the primary search path
+
+#### Key lesson for 直辖市:
+The UI component uses "区" (not "市") as the unit label for municipality children. When the fiscal-budget-nav.tsx component shows coverage stats for municipalities, it should say "区 x/y" instead of "市 x/y".
+
+### Tier 3C: Zhejiang Province CMS Column Pattern (col/col{number})
+
+Zhejiang province counties share a unified CMS platform (浙江省政府网站集约化平台). Budget pages use a column-based URL pattern:
+
+```
+https://{domain}/col/col{number}/index.html
+```
+
+Each county has a unique numeric column ID for its budget page. The ID **cannot be guessed** — it must be discovered from the county's website navigation.
+
+#### Discovery method:
+1. Navigate to the county portal → "政务公开" → "法定主动公开内容" or "政府信息公开"
+2. Look for "财政信息" or "财政预决算" in the sidebar navigation
+3. Extract the `col{number}` from the link URL
+
+#### Common false positives:
+- `col1229396854` — This is a **shared news column** (省政府要闻) that appears on many ZJ county sites. **Always reject this column number.** It contains national/provincial news, not budget data.
+- Homepage link crawling returns many non-budget columns (公告公示, 要闻, 今日xxx) — only accept links whose anchor text explicitly contains "预决算", "财政预决算", or "财政信息"
+
+#### Hangzhou district domain warnings:
+Some Hangzhou districts use non-obvious domain names:
+| District | Correct Domain | Trap (wrong) |
+|----------|---------------|--------------|
+| 上城区 | `www.hzsc.gov.cn` | `shangcheng.gov.cn` (not exist) |
+| 西湖区 | `www.hzxh.gov.cn` | `xihu.gov.cn` → 辽宁溪湖区 |
+| 滨江区 | `www.hhtz.gov.cn` | `binjiang.gov.cn` (no budget info) |
+| 淳安县 | `www.qdh.gov.cn` | `chunan.gov.cn` (not exist) |
+
+**Tip:** Fetch a known Hangzhou district page (e.g., 临安区 `www.linan.gov.cn`) and check the footer — it lists clickable links to all sibling districts with their correct domains.
 
 ### Tier 4: Provincial Fiscal Bureau Navigation Pages
 

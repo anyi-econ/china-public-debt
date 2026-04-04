@@ -3,9 +3,12 @@
 import { useState } from "react";
 import { FISCAL_REGIONS, type FiscalRegionNode } from "@/data/fiscal-budget-links";
 
+const MUNICIPALITIES = new Set(["北京市", "天津市", "上海市", "重庆市"]);
+
 /** 统计节点下"有链接"的市/县数量 */
-function countCoverage(node: FiscalRegionNode): { cities: number; citiesTotal: number; counties: number; countiesTotal: number } {
+function countCoverage(node: FiscalRegionNode): { cities: number; citiesTotal: number; counties: number; countiesTotal: number; isMunicipality: boolean } {
   const children = node.children ?? [];
+  const isMunicipality = MUNICIPALITIES.has(node.name);
   let cities = 0, citiesTotal = 0, counties = 0, countiesTotal = 0;
   for (const city of children) {
     citiesTotal++;
@@ -15,7 +18,7 @@ function countCoverage(node: FiscalRegionNode): { cities: number; citiesTotal: n
       if (county.url) counties++;
     }
   }
-  return { cities, citiesTotal, counties, countiesTotal };
+  return { cities, citiesTotal, counties, countiesTotal, isMunicipality };
 }
 
 /** 根据导航路径获取当前层级的标题和列表 */
@@ -40,8 +43,11 @@ function resolveLevel(path: number[]): {
     return { label: "省级地区", items: FISCAL_REGIONS, parent: null };
   }
 
+  const isMuni = path.length >= 1 && MUNICIPALITIES.has(FISCAL_REGIONS[path[0]]?.name);
   const levelName =
-    path.length === 1 ? "地级市 / 州" : path.length === 2 ? "区 / 县 / 市" : "下级地区";
+    path.length === 1
+      ? isMuni ? "区 / 县" : "地级市 / 州"
+      : path.length === 2 ? "区 / 县 / 市" : "下级地区";
 
   return {
     label: `${node.name} · ${levelName}`,
@@ -68,9 +74,9 @@ function RegionItem({
   // 覆盖率标注（仅省级）
   let coverageLabel: string | null = null;
   if (showCoverage && hasChildren) {
-    const { cities, citiesTotal, counties, countiesTotal } = countCoverage(node);
+    const { cities, citiesTotal, counties, countiesTotal, isMunicipality } = countCoverage(node);
     const parts: string[] = [];
-    if (citiesTotal > 0) parts.push(`市 ${cities}/${citiesTotal}`);
+    if (citiesTotal > 0) parts.push(`${isMunicipality ? "区" : "市"} ${cities}/${citiesTotal}`);
     if (countiesTotal > 0) parts.push(`县 ${counties}/${countiesTotal}`);
     coverageLabel = parts.length > 0 ? parts.join(" · ") : null;
   }
