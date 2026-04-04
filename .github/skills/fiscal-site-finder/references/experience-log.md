@@ -1,6 +1,6 @@
 # Fiscal Site Finder — Experience Log
 
-Last updated: 2026-04-03
+Last updated: 2026-04-04
 
 ---
 
@@ -70,9 +70,20 @@ Last updated: 2026-04-03
 - Consider: province may centralize disclosure
 
 ### 浙江省
-- Already populated with county-level data from previous sessions
-- Missing city URLs found: 温州(czj.wenzhou.gov.cn), 嘉兴(czj.jiaxing.gov.cn), 湖州(czj.huzhou.gov.cn)
-- 丽水 not found via pattern matching
+- **County-level complete** (90/90 counties have URLs as of 2026-04-04)
+- **CMS pattern**: Unified 浙江省政府网站集约化平台, all counties use `col/col{number}/index.html`
+- **Domain discovery**: Official 浙江省 "市、县（市、区）政府网站" navigation portal (JS-rendered, required human assistance to extract HTML)
+- **Key domain corrections** (7 domains wrong from pinyin guessing):
+  - 长兴县→`zjcx`, 婺城区→`wuch`, 衢江区→`qjq`, 常山县→`zjcs`, 黄岩区→`zjhy`, 天台县→`zjtt`, 仙居县→`zjxj`
+- **Batch discovery results**:
+  - Round 1 (`zj-batch-fiscal.mjs`, 36 targets): 6 COL_FOUND, 7 PATH_FOUND, 15 DOMAIN_ONLY, 8 NO_DOMAIN
+  - Round 2 (`zj-deep-probe.mjs`, 30 targets with corrected domains): +9 upgraded (COL/NUM found)
+  - Round 3 (manual `fetch_webpage`, 9 rounds): Remaining ~17 targets resolved
+- **`?number=D001` parameter**: Standard ZJ CMS code for 财政信息, appending to any 信息公开 col URL often reveals fiscal section
+- **`?number=D001-A001`**: Sub-category for 财政预决算, more specific than D001
+- **Stubborn failures**: 临平区 (site returned 404 consistently), 武义县 (extraction always failed), 嘉善县 (D001 parameter never worked)
+- **Best technique for ZJ counties**: Official domain list → batch col discovery → `?number=` parameter probing → manual fetch_webpage
+- 丽水 city URL found via portal navigation (not via czj pattern)
 
 ### 安徽省
 - Hit rate: 10/16 — 合肥(known), 蚌埠(www.bengbu.gov.cn/zwgk/czzj/), 淮北, 黄山, 滁州, 铜陵, 池州, 六安, 阜阳, 亳州(www.bozhou.gov.cn/zwgk/czzj/), 宣城
@@ -147,6 +158,7 @@ Last updated: 2026-04-03
 | 2026-04-03 | Initial creation | Based on 97-city batch scan across 10 provinces |
 | 2026-04-03 | Guangdong notes | Province + 21 cities + 12 counties |
 | 2026-04-04 | Gov portal fallback | Added 3-phase HEAD→GET→link-crawl batch validator; found 33 confirmed URLs for cities without fiscal bureau sites |
+| 2026-04-04 | ZJ county complete | 36 county URLs filled via batch scripts + manual exploration; documented CMS col pattern, ?number= params, domain corrections |
 
 ---
 

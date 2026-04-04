@@ -184,35 +184,83 @@ This lists all 16 districts with direct links to their budget disclosure pages. 
 #### Key lesson for 直辖市:
 The UI component uses "区" (not "市") as the unit label for municipality children. When the fiscal-budget-nav.tsx component shows coverage stats for municipalities, it should say "区 x/y" instead of "市 x/y".
 
-### Tier 3C: Zhejiang Province CMS Column Pattern (col/col{number})
+### Tier 3C: Provincial Unified CMS Column Pattern (col/col{number})
 
-Zhejiang province counties share a unified CMS platform (浙江省政府网站集约化平台). Budget pages use a column-based URL pattern:
+Several provinces use unified CMS platforms (政府网站集约化平台) where budget pages use column-based URLs with site-specific numeric IDs. **Zhejiang is the most prominent example**, but Hunan (益阳 `col/col1229454672`) and others follow similar patterns.
 
 ```
 https://{domain}/col/col{number}/index.html
+https://{domain}/col/col{number}/index.html?number=D001        # 财政信息 index
+https://{domain}/col/col{number}/index.html?number=D001-A001   # 财政预决算 sub-index
 ```
 
-Each county has a unique numeric column ID for its budget page. The ID **cannot be guessed** — it must be discovered from the county's website navigation.
+Each county has a unique numeric column ID. The ID **cannot be guessed** — it must be discovered from the county's website navigation.
 
-#### Discovery method:
-1. Navigate to the county portal → "政务公开" → "法定主动公开内容" or "政府信息公开"
-2. Look for "财政信息" or "财政预决算" in the sidebar navigation
-3. Extract the `col{number}` from the link URL
+#### Discovery method (multi-phase):
+1. **Homepage scan**: Fetch the county portal homepage, extract navigation links containing `col/col`
+2. **政务公开 entry**: Navigate to "政务公开" → "法定主动公开内容" or "政府信息公开"
+3. **Fiscal section hunt**: Look for "财政信息", "财政预决算", "财政公开" in sidebar navigation
+4. **Parameter probing**: If a `col{number}` is found for 政务公开/信息公开, append `?number=D001` (财政信息 standard code) or `?number=D001-A001` (财政预决算 sub-code) — this often reveals the fiscal section even when sidebar links don't show it
+5. **Department page fallback**: Navigate to 部门信息公开 → 财政局 — the 财政局 department page often has its own col number
+
+#### `?number=` parameter patterns (ZJ CMS):
+| Parameter | Meaning | Use Case |
+|-----------|---------|----------|
+| `?number=D001` | 财政信息 standard category | Most common fiscal index |
+| `?number=D001-A001` | 财政预决算公开 sub-category | More specific, shows budget docs directly |
+| `?number=08` | Non-standard numbering (诸暨) | Some sites use numeric codes |
+| `?number=SZI01` | Site-specific code (嵊州) | Rare, site-specific |
+| `?sj=gongkai` | 公开 filter (衢江) | Alternative parameter for disclosure pages |
+| `?number=A009` | Alternative category (德清) | Less common |
+
+**Key insight**: When a `col` page returns generic 政务公开 content, appending `?number=D001` or `?number=D001-A001` can transform it into a fiscal-specific page. Always try these parameters before giving up on a col URL.
 
 #### Common false positives:
-- `col1229396854` — This is a **shared news column** (省政府要闻) that appears on many ZJ county sites. **Always reject this column number.** It contains national/provincial news, not budget data.
+- `col1229396854` — **Shared news column** (省政府要闻) that appears on many ZJ county sites. **Always reject this column number.**
 - Homepage link crawling returns many non-budget columns (公告公示, 要闻, 今日xxx) — only accept links whose anchor text explicitly contains "预决算", "财政预决算", or "财政信息"
+- 重点领域 pages often list many categories but may NOT include 财政信息 — verify before accepting
 
-#### Hangzhou district domain warnings:
-Some Hangzhou districts use non-obvious domain names:
-| District | Correct Domain | Trap (wrong) |
-|----------|---------------|--------------|
-| 上城区 | `www.hzsc.gov.cn` | `shangcheng.gov.cn` (not exist) |
-| 西湖区 | `www.hzxh.gov.cn` | `xihu.gov.cn` → 辽宁溪湖区 |
-| 滨江区 | `www.hhtz.gov.cn` | `binjiang.gov.cn` (no budget info) |
-| 淳安县 | `www.qdh.gov.cn` | `chunan.gov.cn` (not exist) |
+#### Zhejiang county domain reference:
+Many ZJ county domains are **non-obvious** and cannot be reliably guessed from the county name. The authoritative source is the ZJ provincial government navigation page (JS-rendered — requires human assistance to extract).
 
-**Tip:** Fetch a known Hangzhou district page (e.g., 临安区 `www.linan.gov.cn`) and check the footer — it lists clickable links to all sibling districts with their correct domains.
+**Complete verified domain mapping** (from official 浙江省市、县（市、区）政府网站 navigation):
+
+杭州: `hzsc`(上城), `gongshu`(拱墅), `hzxh`(西湖), `hhtz`(滨江), `xiaoshan`(萧山), `yuhang`(余杭), `linping`(临平), `qiantang`(钱塘), `fuyang`(富阳), `linan`(临安), `tonglu`(桐庐), `qdh`(淳安), `jiande`(建德)
+
+湖州: `wuxing`(吴兴), `nanxun`(南浔), `deqing`(德清), `zjcx`(长兴), `anji`(安吉)
+
+嘉兴: `nanhu`(南湖), `xiuzhou`(秀洲), `jiashan`(嘉善), `pinghu`(平湖), `haiyan`(海盐), `haining`(海宁), `tx`(桐乡)
+
+绍兴: `sx`(绍兴市), `sxyc`(越城), `kq`(柯桥), `shangyu`(上虞), `zhuji`(诸暨), `szzj`(嵊州), `zjxc`(新昌)
+
+金华: `wuch`(婺城), `jindong`(金东), `lanxi`(兰溪), `dongyang`(东阳), `yw`(义乌), `yk`(永康), `pj`(浦江), `zjwy`(武义), `panan`(磐安)
+
+衢州: `kecheng`(柯城), `qjq`(衢江), `longyou`(龙游), `jiangshan`(江山), `zjcs`(常山), `kaihua`(开化)
+
+舟山: `dinghai`(定海), `putuo`(普陀), `daishan`(岱山), `shengsi`(嵊泗)
+
+台州: `jj`(椒江), `zjhy`(黄岩), `luqiao`(路桥), `linhai`(临海), `wl`(温岭), `yuhuan`(玉环), `zjtt`(天台), `zjxj`(仙居), `sanmen`(三门)
+
+丽水: `liandu`(莲都), `longquan`(龙泉), `qingtian`(青田), `yunhe`(云和), `zjqy`(庆元), `jinyun`(缙云), `suichang`(遂昌), `songyang`(松阳), `jingning`(景宁)
+
+All domains follow `www.{abbr}.gov.cn`. Domain format for ZJ: `https://www.{abbr}.gov.cn/col/col{number}/index.html`
+
+#### Domain trap warnings:
+| Location | Correct Domain | Trap (wrong) | Why |
+|----------|---------------|--------------|-----|
+| 上城区 | `hzsc.gov.cn` | `shangcheng.gov.cn` | Doesn't exist |
+| 西湖区 | `hzxh.gov.cn` | `xihu.gov.cn` | Resolves to 辽宁溪湖区 |
+| 滨江区 | `hhtz.gov.cn` | `binjiang.gov.cn` | No budget info |
+| 淳安县 | `qdh.gov.cn` | `chunan.gov.cn` | Doesn't exist |
+| 长兴县 | `zjcx.gov.cn` | `changxing.gov.cn` | Wrong site |
+| 武义县 | `zjwy.gov.cn` | `wuyi.gov.cn` | Resolves to 河北衡水 |
+| 衢江区 | `qjq.gov.cn` | `qujiang.gov.cn` | Wrong site |
+| 常山县 | `zjcs.gov.cn` | `changshan.gov.cn` | Wrong site |
+| 黄岩区 | `zjhy.gov.cn` | `huangyan.gov.cn` | Wrong site |
+| 天台县 | `zjtt.gov.cn` | `tiantai.gov.cn` | Wrong site |
+| 仙居县 | `zjxj.gov.cn` | `xianju.gov.cn` | Wrong site |
+
+**Tip:** For any province with a unified CMS, the official "市、县政府网站" navigation page is the authoritative domain source. If it's JS-rendered (common), request human assistance to paste the HTML.
 
 ### Tier 4: Provincial Fiscal Bureau Navigation Pages
 
@@ -246,9 +294,15 @@ Use the `fetch_webpage` tool to load government websites and look for navigation
 
 ## Workflow
 
-### Phase 1: Batch Discovery (HEAD-first validation)
+### Overview
 
-Use a **two-phase URL validation** approach for efficiency:
+The workflow differs significantly between **city-level** and **county-level** discovery. City-level is more automated (domain patterns work well). County-level requires province-specific strategies and more manual exploration.
+
+### City-Level Discovery Workflow
+
+#### Phase 1: Batch Discovery (HEAD-first validation)
+
+Use a **three-phase URL validation** approach for efficiency:
 
 1. **Generate candidates**: For each missing city, generate all candidate URLs (Tier 2 + Tier 3 patterns) — typically 40-60 URLs per city
 2. **Phase 1 — HEAD check (parallel)**: Run concurrent HEAD requests (30 workers, 3.5s timeout) to quickly filter alive URLs. This eliminates 80-90% of candidates in seconds.
@@ -263,16 +317,139 @@ Key design principles:
 - **Content scoring**: Rank results by fiscal keyword density, prefer pages with "预决算公开" in content
 - **Source classification**: Tag each result as 财政局官网 / 市政府官网 / 政务公开平台
 
-### Phase 2: Gap Filling
+#### Phase 2: Gap Filling
 4. For provinces with many failures, try Tier 1 (provincial platform) or Tier 4 (provincial navigation)
 5. For remaining individual cities, use `fetch_webpage` for targeted manual investigation
 6. For stubborn cases, try Tier 5/6 (Baidu search)
 
-### Phase 3: Data Update
+#### Phase 3: Data Update
 7. Update `data/fiscal-budget-links.ts` with found URLs
 8. For each city that gets a URL, create empty county `children` arrays using standard administrative divisions
 9. Validate TypeScript compilation (no errors)
 10. Git commit and push
+
+### County-Level Discovery Workflow
+
+County-level URLs require a fundamentally different approach because:
+- County domains are often **non-obvious** (not just `{pinyin}.gov.cn`)
+- Many counties share provincial CMS platforms with unique column IDs
+- County fiscal pages are nested deeper in navigation hierarchies
+- Batch domain guessing has a much lower hit rate (~30% vs ~55% for cities)
+
+#### Step 1: Identify the Province's CMS Pattern
+
+Before batch-checking counties, determine the province's website architecture:
+
+| Province Type | Strategy | Example |
+|---------------|----------|---------|
+| **Unified CMS** (col-based) | Discover col numbers per county | 浙江 `/col/col{N}/index.html` |
+| **Centralized platform** | One URL with parameters | 江苏 `yjsgk.jsczt.cn`, 内蒙古, 宁波 |
+| **Independent sites** | Each county has its own domain/path | 广东, 山东, etc. |
+| **Mixed** | Some centralized, some independent | Most provinces |
+
+#### Step 2: Domain Discovery
+
+For provinces with independent county sites, domain discovery is the bottleneck:
+
+1. **Official navigation portal** (best source): Provincial government "政府网站导航" or "市、县政府网站" page. Often JS-rendered — may need human assistance to extract HTML.
+2. **Sibling footer links**: Fetch a known county's homepage → check footer for "友情链接" or "区县政府" links listing sibling counties with correct domains.
+3. **City-level portal**: The city government homepage often lists subordinate county links in navigation.
+4. **Batch domain guessing**: Try `{pinyin}.gov.cn`, `www.{pinyin}.gov.cn`, `{province_abbr}{pinyin}.gov.cn` — lower hit rate but catches standard naming.
+
+#### Step 3: Batch Fiscal Page Discovery
+
+Once domains are known, use a batch script to discover fiscal pages:
+
+```
+Phase 1: HEAD-check all candidate URLs (concurrency 6-8, timeout 6-8s)
+Phase 2: For alive domains, fetch 政务公开/信息公开 pages
+Phase 3: Extract fiscal-specific links from navigation
+Phase 4: Score and classify results
+```
+
+Script templates: `scripts/zj-batch-fiscal.mjs`, `scripts/zj-deep-probe.mjs`
+
+#### Step 4: Manual Exploration (fetch_webpage)
+
+For counties where batch scripts return DOMAIN_ONLY (domain found but no fiscal page):
+
+1. Fetch the county homepage → find 政务公开/信息公开 entry
+2. Navigate through 法定主动公开内容 → look for 财政 section
+3. Try CMS parameter tricks (`?number=D001`, `?number=D001-A001`)
+4. Check 部门信息公开 → 财政局 as alternative path
+5. If all fail, use the best available page (政务公开 general page)
+
+**Batch fetch_webpage calls**: Process 4-5 counties per round to stay within tool limits. Group by city for logical progression.
+
+#### Step 5: URL Quality Classification
+
+When applying URLs, classify each result:
+
+| Quality | Definition | Example |
+|---------|------------|---------|
+| **Confirmed** | Page shows fiscal budget content directly | `col/col1229265274` with 财政预决算 in nav |
+| **Likely** | Correct section but content not directly visible | `col/col1229518457?number=D001` |
+| **General** | 政务公开/信息公开 general page, not fiscal-specific | `col/col1229253826` (重点领域) |
+| **Fallback** | Homepage only — fiscal page could not be found | `https://www.linping.gov.cn/` |
+
+Track quality in commit messages or comments. Fallback URLs should be revisited in future sessions.
+
+### Human-Assisted Discovery
+
+Some tasks cannot be fully automated. Recognize these situations early and request human help:
+
+#### When to request human assistance:
+1. **JS-rendered navigation portals**: Provincial "政府网站导航" pages that render county links via JavaScript. The `fetch_webpage` tool can handle some JS, but complex portals may return empty.
+2. **CAPTCHA-protected sites**: Some government sites require CAPTCHA for access.
+3. **Domain verification**: When automated domain guessing fails for >50% of counties in a province, the official navigation portal (which may be JS-rendered) is needed.
+4. **Content behind login**: Some fiscal disclosure pages require 统一认证 login.
+
+#### How to request:
+- Be specific: "请打开 https://xxx.gov.cn/navigation 并复制该页面的HTML内容"
+- Explain why: "该网站使用JavaScript渲染，自动工具无法获取县级政府域名列表"
+- Suggest alternative if possible: "或者请提供以下县的正确政府域名: 长兴县、常山县..."
+
+## Technique Effectiveness Summary
+
+Based on ~130 city URLs and ~100 county URLs discovered across 20+ provinces:
+
+| Technique | Scope | Success Rate | Speed | Best For |
+|-----------|-------|-------------|-------|----------|
+| Centralized provincial platform | All cities in province | 100% (where exists) | Very Fast | 江苏, 内蒙古, 宁波 |
+| `czj.{pinyin}.gov.cn` domain | City-level | ~55% | Fast (batch) | First pass, all provinces |
+| Government portal fallback (3-phase) | City-level | ~43% of remaining | Medium | Western/central China |
+| CMS col discovery (batch script) | County-level | ~36% first pass | Medium | 浙江 and similar CMS provinces |
+| CMS deep probe (with `?number=`) | County-level | +23% on second pass | Medium | ZJ CMS counties |
+| Manual `fetch_webpage` exploration | County-level | ~70% of remaining | Slow | Final gap filling |
+| Human-assisted domain discovery | County-level domains | ~95% | Varies | JS-rendered navigation portals |
+
+### Province difficulty tiers:
+
+| Difficulty | Provinces | Why |
+|------------|-----------|-----|
+| **Easy** | 江苏, 内蒙古, 福建 | Centralized platforms |
+| **Medium** | 辽宁, 安徽, 山东, 浙江 | Standard patterns + some manual work |
+| **Hard** | 河北, 山西, 吉林, 黑龙江 | Low pattern hit rate, JS-heavy portals |
+| **Very Hard** | 西藏, 青海, 宁夏 | Few standalone fiscal bureau sites |
+
+### Government portal fallback success by province:
+- **云南**: 54% (7/13) — highest portal ratio
+- **广西**: 33% (3/9) + 2 fiscal bureau variants
+- **甘肃**: 33% (3/9)
+- **湖南**: 43% (3/7)
+- **湖北**: 29% (2/7)
+
+## County Domain Name Traps (Cross-Province)
+
+| Domain | Expected | Actually Resolves To |
+|--------|----------|---------------------|
+| `xihu.gov.cn` | 杭州西湖区 | 辽宁本溪溪湖区 |
+| `wuyi.gov.cn` | 浙江武义县 | 河北衡水市 |
+| `changshan.gov.cn` | 浙江常山县 | Wrong site |
+| `tiantai.gov.cn` | 浙江天台县 | Wrong site |
+| `huangyan.gov.cn` | 浙江黄岩区 | Wrong site |
+
+**General rule:** For counties with common Chinese place names, always verify the domain actually serves the intended county. Check the page title and footer for the correct administrative region. ZJ counties with `zj` prefix in domain (e.g., `zjcx`, `zjhy`, `zjtt`, `zjxj`, `zjwy`, `zjcs`, `zjqy`) use this to disambiguate from same-name locations in other provinces.
 
 ## Data File Format
 
@@ -322,6 +499,21 @@ Detailed per-province patterns, domain quirks, and failure lessons are tracked i
 → `references/experience-log.md`
 
 Consult this file when working on a specific province. Update it after each search session with new findings.
+
+### Script Templates
+
+| Script | Purpose | Config |
+|--------|---------|--------|
+| `scripts/batch-validate-v3.mjs` | City-level 3-phase batch validation | 30 workers, HEAD 3.5s, GET 8s |
+| `scripts/zj-batch-fiscal.mjs` | ZJ county batch discovery (first pass) | 8 workers, 6s timeout |
+| `scripts/zj-deep-probe.mjs` | ZJ county deep probe with `?number=` params | 6 workers, 8s timeout |
+| `scripts/province-stats.mjs` | Count gaps per province | Read-only analysis |
+| `scripts/count-gaps.mjs` | Count total empty URLs | Read-only analysis |
+
+When targeting a new province's counties, copy and adapt `zj-batch-fiscal.mjs`:
+1. Update the target list with province-specific counties
+2. Adjust domain patterns for the province's naming convention
+3. Adjust CMS patterns if the province uses a different platform
 
 ## When to Promote Experience to This Skill
 
