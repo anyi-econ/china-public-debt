@@ -974,13 +974,13 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "松原市",
-        url: "",
+        url: "https://www.jlsy.gov.cn/zwgk/zdlygk/czysjs/zfczyjs/",
         children: [
-          { name: "宁江区", url: "" },
-          { name: "前郭尔罗斯蒙古族自治县", url: "" },
-          { name: "长岭县", url: "" },
-          { name: "乾安县", url: "" },
-          { name: "扶余市", url: "" },
+          { name: "宁江区", url: "http://xxgk.ningjiang.gov.cn/czyjs/" },
+          { name: "前郭尔罗斯蒙古族自治县", url: "http://www.qianguo.gov.cn/ygzw/czgk/" },
+          { name: "长岭县", url: "http://www.jlcl.gov.cn/zwgk/ysjs/" },
+          { name: "乾安县", url: "http://www.jlqa.gov.cn/zwgk/czsj/" },
+          { name: "扶余市", url: "http://www.jlfy.gov.cn/zwgk/gwgb/czys/" },
         ],
       },
       {
