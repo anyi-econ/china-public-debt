@@ -154,7 +154,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "深泽县", url: "" },
           { name: "赞皇县", url: "" },
           { name: "无极县", url: "http://www.wuji.gov.cn/columns/00061199-7246-49fa-8034-d1f174868965/index.html" },
-          { name: "平山县", url: "http://www.pingshan.gov.cn/publicity/qzfxx/czyjs/bmjs/zfb/138411" },
+          { name: "平山县", url: "" },
           { name: "元氏县", url: "http://www.yuanshi.gov.cn/columns/1291cbe5-298b-4e96-9f32-8d22f7f3c7e7/index.html" },
           { name: "赵县", url: "http://www.zhaoxian.gov.cn/columns/146f259d-02c3-40ff-91cf-b1fe77aaae52/index.html" },
           { name: "辛集市", url: "" },
