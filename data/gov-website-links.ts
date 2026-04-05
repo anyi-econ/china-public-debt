@@ -9488,70 +9488,64 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         url: "https://www.danzhou.gov.cn/"
       },
       {
-        name: "省直辖县级行政单位",
-        url: "",
-        children: [
-          {
-            name: "五指山市",
-            url: "https://www.wzs.gov.cn/"
-          },
-          {
-            name: "文昌市",
-            url: "https://www.wenchang.gov.cn/"
-          },
-          {
-            name: "琼海市",
-            url: "https://qionghai.hainan.gov.cn/"
-          },
-          {
-            name: "万宁市",
-            url: "https://www.wanning.gov.cn/"
-          },
-          {
-            name: "东方市",
-            url: "https://www.dongfang.gov.cn/"
-          },
-          {
-            name: "定安县",
-            url: "https://www.dingan.gov.cn/"
-          },
-          {
-            name: "屯昌县",
-            url: "https://www.tunchang.gov.cn/"
-          },
-          {
-            name: "澄迈县",
-            url: "https://www.chengmai.gov.cn/"
-          },
-          {
-            name: "临高县",
-            url: "https://www.lingao.gov.cn/"
-          },
-          {
-            name: "白沙黎族自治县",
-            url: "https://www.baisha.gov.cn/"
-          },
-          {
-            name: "昌江黎族自治县",
-            url: "https://www.changjiang.gov.cn/"
-          },
-          {
-            name: "乐东黎族自治县",
-            url: "https://www.ledong.gov.cn/"
-          },
-          {
-            name: "陵水黎族自治县",
-            url: "https://www.lingshui.gov.cn/"
-          },
-          {
-            name: "保亭黎族苗族自治县",
-            url: "https://www.baoting.gov.cn/"
-          },
-          {
-            name: "琼中黎族苗族自治县",
-            url: "https://www.qiongzhong.gov.cn/"
-          }
-        ]
+        name: "五指山市",
+        url: "https://www.wzs.gov.cn/"
+      },
+      {
+        name: "文昌市",
+        url: "https://www.wenchang.gov.cn/"
+      },
+      {
+        name: "琼海市",
+        url: "https://qionghai.hainan.gov.cn/"
+      },
+      {
+        name: "万宁市",
+        url: "https://www.wanning.gov.cn/"
+      },
+      {
+        name: "东方市",
+        url: "https://www.dongfang.gov.cn/"
+      },
+      {
+        name: "定安县",
+        url: "https://www.dingan.gov.cn/"
+      },
+      {
+        name: "屯昌县",
+        url: "https://www.tunchang.gov.cn/"
+      },
+      {
+        name: "澄迈县",
+        url: "https://www.chengmai.gov.cn/"
+      },
+      {
+        name: "临高县",
+        url: "https://www.lingao.gov.cn/"
+      },
+      {
+        name: "白沙黎族自治县",
+        url: "https://www.baisha.gov.cn/"
+      },
+      {
+        name: "昌江黎族自治县",
+        url: "https://www.changjiang.gov.cn/"
+      },
+      {
+        name: "乐东黎族自治县",
+        url: "https://www.ledong.gov.cn/"
+      },
+      {
+        name: "陵水黎族自治县",
+        url: "https://www.lingshui.gov.cn/"
+      },
+      {
+        name: "保亭黎族苗族自治县",
+        url: "https://www.baoting.gov.cn/"
+      },
+      {
+        name: "琼中黎族苗族自治县",
+        url: "https://www.qiongzhong.gov.cn/"
       }
     ]
   },
@@ -13536,12 +13530,66 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
             url: "https://www.jmn.gov.cn/"
           }
         ]
+      },
+      {
+        name: "新疆生产建设兵团",
+        url: "http://www.xjbt.gov.cn/",
+        children: [
+          {
+            name: "石河子市",
+            url: "http://www.shz.gov.cn/"
+          },
+          {
+            name: "阿拉尔市",
+            url: "http://www.ale.gov.cn/"
+          },
+          {
+            name: "图木舒克市",
+            url: "http://www.xjbtss.gov.cn/"
+          },
+          {
+            name: "五家渠市",
+            url: "http://www.wjq.gov.cn/"
+          },
+          {
+            name: "北屯市",
+            url: "http://www.bts.gov.cn/"
+          },
+          {
+            name: "铁门关市",
+            url: "http://www.tmg.gov.cn/"
+          },
+          {
+            name: "双河市",
+            url: "http://www.xjshs.gov.cn/"
+          },
+          {
+            name: "可克达拉市",
+            url: "http://www.btds.gov.cn/"
+          },
+          {
+            name: "昆玉市",
+            url: "https://www.btdsss.gov.cn/"
+          },
+          {
+            name: "胡杨河市",
+            url: "http://www.nqs.gov.cn/"
+          },
+          {
+            name: "新星市",
+            url: "https://www.btnsss.gov.cn/"
+          },
+          {
+            name: "白杨市",
+            url: ""
+          }
+        ]
       }
     ]
   },
   {
-    name: "新疆生产建设兵团",
-    url: "http://www.xjbt.gov.cn/"
+    name: "台湾省",
+    url: ""
   },
   {
     name: "香港特别行政区",

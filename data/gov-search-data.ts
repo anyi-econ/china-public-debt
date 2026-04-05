@@ -229,6 +229,20 @@ export function buildProvinceSearchData(): GovSearchItem[] {
  */
 export function buildCitySearchData(): GovSearchItem[] {
   const items: GovSearchItem[] = [];
+
+  /** 省直辖县级行政单位 */
+  const PROVINCE_DIRECT_COUNTIES = new Set([
+    "济源示范区",
+    "仙桃市", "潜江市", "天门市", "神农架林区",
+    "五指山市", "文昌市", "琼海市", "万宁市", "东方市",
+    "定安县", "屯昌县", "澄迈县", "临高县",
+    "白沙黎族自治县", "昌江黎族自治县", "乐东黎族自治县",
+    "陵水黎族自治县", "保亭黎族苗族自治县", "琼中黎族苗族自治县",
+  ]);
+
+  /** 非地级市的容器节点，其子节点按县级处理 */
+  const NON_CITY_CONTAINERS = new Set(["新疆生产建设兵团"]);
+
   for (const province of GOV_WEBSITES) {
     // 省级条目
     items.push(...generateEntriesForSite(province, province.name, "province"));
@@ -236,12 +250,25 @@ export function buildCitySearchData(): GovSearchItem[] {
     if (province.children) {
       for (const city of province.children) {
         const isMuni = !!province.name.match(/^(北京|天津|上海|重庆)/);
-        const level = isMuni ? "county" : "city";
-        items.push(...generateEntriesForSite(city, province.name, level, city.name));
-        // 处理容器节点（如"省直辖县级行政单位"：无URL但有子节点），其子节点按县级处理
-        if (!isMuni && !city.url && city.children) {
-          for (const county of city.children) {
-            items.push(...generateEntriesForSite(county, province.name, "county", county.name));
+
+        if (isMuni || PROVINCE_DIRECT_COUNTIES.has(city.name)) {
+          // 省直辖县级行政单位按县级处理
+          items.push(...generateEntriesForSite(city, province.name, "county", city.name));
+        } else if (NON_CITY_CONTAINERS.has(city.name)) {
+          // 容器节点（如兵团）：自身按市级生成条目，子节点按县级处理
+          items.push(...generateEntriesForSite(city, province.name, "city", city.name));
+          if (city.children) {
+            for (const county of city.children) {
+              items.push(...generateEntriesForSite(county, province.name, "county", county.name));
+            }
+          }
+        } else {
+          items.push(...generateEntriesForSite(city, province.name, "city", city.name));
+          // 处理容器节点（无URL但有子节点），其子节点按县级处理
+          if (!city.url && city.children) {
+            for (const county of city.children) {
+              items.push(...generateEntriesForSite(county, province.name, "county", county.name));
+            }
           }
         }
       }
