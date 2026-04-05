@@ -1139,43 +1139,43 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "小店区",
-            url: ""
+            url: "https://www.tyxd.gov.cn/"
           },
           {
             name: "迎泽区",
-            url: ""
+            url: "https://www.yingze.gov.cn/"
           },
           {
             name: "杏花岭区",
-            url: ""
+            url: "https://www.sxtyxhl.gov.cn/"
           },
           {
             name: "尖草坪区",
-            url: ""
+            url: "http://www.sxjcp.gov.cn/"
           },
           {
             name: "万柏林区",
-            url: ""
+            url: "https://www.wanbailin.gov.cn/"
           },
           {
             name: "晋源区",
-            url: ""
+            url: "https://www.sxjyq.gov.cn/"
           },
           {
             name: "清徐县",
-            url: ""
+            url: "http://www.qingxu.gov.cn/"
           },
           {
             name: "阳曲县",
-            url: ""
+            url: "http://www.yangqu.gov.cn/"
           },
           {
             name: "娄烦县",
-            url: ""
+            url: "http://www.loufan.gov.cn/"
           },
           {
             name: "古交市",
-            url: ""
+            url: "https://www.sxgujiao.gov.cn/"
           }
         ]
       },
@@ -1185,43 +1185,43 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "新荣区",
-            url: ""
+            url: "http://www.xinrong.gov.cn/"
           },
           {
             name: "平城区",
-            url: ""
+            url: "http://www.pingcheng.gov.cn/"
           },
           {
             name: "云冈区",
-            url: ""
+            url: "http://www.yungang.gov.cn/"
           },
           {
             name: "云州区",
-            url: ""
+            url: "http://www.yunzhou.gov.cn/"
           },
           {
             name: "阳高县",
-            url: ""
+            url: "http://www.yanggao.gov.cn/"
           },
           {
             name: "天镇县",
-            url: ""
+            url: "http://www.tianzhen.gov.cn/"
           },
           {
             name: "广灵县",
-            url: ""
+            url: "http://www.guangling.gov.cn/"
           },
           {
             name: "灵丘县",
-            url: ""
+            url: "http://www.lingqiu.gov.cn/"
           },
           {
             name: "浑源县",
-            url: ""
+            url: "http://www.hunyuan.gov.cn/"
           },
           {
             name: "左云县",
-            url: ""
+            url: "http://www.zuoyun.gov.cn/"
           }
         ]
       },
@@ -1231,11 +1231,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "城区",
-            url: ""
+            url: "http://www.yqcq.gov.cn/"
           },
           {
             name: "矿区",
-            url: ""
+            url: "http://www.yqkq.gov.cn/"
           },
           {
             name: "郊区",
@@ -1243,11 +1243,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "平定县",
-            url: ""
+            url: "http://www.pd.gov.cn/"
           },
           {
             name: "盂县",
-            url: ""
+            url: "https://www.sxyx.gov.cn/"
           }
         ]
       },
@@ -1257,51 +1257,51 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "潞州区",
-            url: ""
+            url: "http://www.luzhouqu.gov.cn/"
           },
           {
             name: "上党区",
-            url: ""
+            url: "http://www.shangdangqu.gov.cn/"
           },
           {
             name: "屯留区",
-            url: ""
+            url: "http://www.tunliu.gov.cn/"
           },
           {
             name: "潞城区",
-            url: ""
+            url: "http://www.luchengqu.gov.cn/"
           },
           {
             name: "襄垣县",
-            url: ""
+            url: "http://www.xiangyuan.gov.cn/"
           },
           {
             name: "平顺县",
-            url: ""
+            url: "http://www.pingshun.gov.cn/"
           },
           {
             name: "黎城县",
-            url: ""
+            url: "http://www.licheng.gov.cn/"
           },
           {
             name: "壶关县",
-            url: ""
+            url: "http://www.huguan.gov.cn/"
           },
           {
             name: "长子县",
-            url: ""
+            url: "http://www.changzi.gov.cn/"
           },
           {
             name: "武乡县",
-            url: ""
+            url: "http://www.wuxiang.gov.cn/"
           },
           {
             name: "沁县",
-            url: ""
+            url: "http://www.qinxian.gov.cn/"
           },
           {
             name: "沁源县",
-            url: ""
+            url: "http://www.qinyuan.gov.cn/"
           }
         ]
       },
@@ -1311,27 +1311,27 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "城区",
-            url: ""
+            url: "http://www.jccq.gov.cn/"
           },
           {
             name: "沁水县",
-            url: ""
+            url: "https://www.qinshui.gov.cn/"
           },
           {
             name: "阳城县",
-            url: ""
+            url: "https://www.yczf.gov.cn/"
           },
           {
             name: "陵川县",
-            url: ""
+            url: "http://www.sxlc.gov.cn/"
           },
           {
             name: "泽州县",
-            url: ""
+            url: "http://www.zezhou.gov.cn/"
           },
           {
             name: "高平市",
-            url: ""
+            url: "https://www.sxgp.gov.cn/"
           }
         ]
       },
@@ -1341,27 +1341,27 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "朔城区",
-            url: ""
+            url: "http://www.szscq.gov.cn/"
           },
           {
             name: "平鲁区",
-            url: ""
+            url: "http://www.szpinglu.gov.cn/"
           },
           {
             name: "怀仁市",
-            url: ""
+            url: "http://www.zghr.gov.cn/"
           },
           {
             name: "山阴县",
-            url: ""
+            url: "http://www.shanyin.gov.cn/"
           },
           {
             name: "应县",
-            url: ""
+            url: "http://www.yingxian.gov.cn/"
           },
           {
             name: "右玉县",
-            url: ""
+            url: "http://www.youyuzf.gov.cn/"
           }
         ]
       },
@@ -1371,47 +1371,47 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "榆次区",
-            url: ""
+            url: "http://www.sxyuci.gov.cn/"
           },
           {
             name: "太谷区",
-            url: ""
+            url: "http://www.sxtg.gov.cn/"
           },
           {
             name: "榆社县",
-            url: ""
+            url: "http://www.yushe.gov.cn/"
           },
           {
             name: "左权县",
-            url: ""
+            url: "http://www.sxzq.gov.cn/"
           },
           {
             name: "和顺县",
-            url: ""
+            url: "http://www.sxhs.gov.cn/"
           },
           {
             name: "昔阳县",
-            url: ""
+            url: "http://www.sxxiyang.gov.cn/"
           },
           {
             name: "寿阳县",
-            url: ""
+            url: "http://www.shouyang.gov.cn/"
           },
           {
             name: "祁县",
-            url: ""
+            url: "http://www.qixian.gov.cn/"
           },
           {
             name: "平遥县",
-            url: ""
+            url: "http://www.pingyao.gov.cn/"
           },
           {
             name: "灵石县",
-            url: ""
+            url: "http://www.lingshi.gov.cn/"
           },
           {
             name: "介休市",
-            url: ""
+            url: "http://www.jiexiu.gov.cn/"
           }
         ]
       },
@@ -1421,55 +1421,55 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "盐湖区",
-            url: ""
+            url: "http://www.yanhu.gov.cn/"
           },
           {
             name: "临猗县",
-            url: ""
+            url: "http://www.sxly.gov.cn/"
           },
           {
             name: "万荣县",
-            url: ""
+            url: "http://www.wanrong.gov.cn/"
           },
           {
             name: "闻喜县",
-            url: ""
+            url: "http://www.wenxi.gov.cn/"
           },
           {
             name: "稷山县",
-            url: ""
+            url: "http://www.jishan.gov.cn/"
           },
           {
             name: "新绛县",
-            url: ""
+            url: "http://www.jiangzhou.gov.cn/"
           },
           {
             name: "绛县",
-            url: ""
+            url: "http://www.jiangxian.gov.cn/"
           },
           {
             name: "垣曲县",
-            url: ""
+            url: "http://www.yuanqu.gov.cn/"
           },
           {
             name: "夏县",
-            url: ""
+            url: "http://www.xiaxian.gov.cn/"
           },
           {
             name: "平陆县",
-            url: ""
+            url: "http://www.pinglu.gov.cn/"
           },
           {
             name: "芮城县",
-            url: ""
+            url: "http://www.ruicheng.gov.cn/"
           },
           {
             name: "永济市",
-            url: ""
+            url: "http://www.yongji.gov.cn/"
           },
           {
             name: "河津市",
-            url: ""
+            url: "http://www.hejin.gov.cn/"
           }
         ]
       },
@@ -1479,59 +1479,59 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "忻府区",
-            url: ""
+            url: "http://www.xzxfq.gov.cn/"
           },
           {
             name: "定襄县",
-            url: ""
+            url: "http://www.dingxiang.gov.cn/"
           },
           {
             name: "五台县",
-            url: ""
+            url: "http://www.wutaishan.gov.cn/"
           },
           {
             name: "代县",
-            url: ""
+            url: "http://www.daixian.gov.cn/"
           },
           {
             name: "繁峙县",
-            url: ""
+            url: "http://www.fanzhi.gov.cn/"
           },
           {
             name: "宁武县",
-            url: ""
+            url: "http://www.ningwu.gov.cn/"
           },
           {
             name: "静乐县",
-            url: ""
+            url: "http://www.sxjl.gov.cn/"
           },
           {
             name: "神池县",
-            url: ""
+            url: "http://www.shenchi.gov.cn/"
           },
           {
             name: "五寨县",
-            url: ""
+            url: "http://www.wuzhai.gov.cn/"
           },
           {
             name: "岢岚县",
-            url: ""
+            url: "http://www.kelan.gov.cn/"
           },
           {
             name: "河曲县",
-            url: ""
+            url: "http://www.hequ.gov.cn/"
           },
           {
             name: "保德县",
-            url: ""
+            url: "http://www.baode.gov.cn/"
           },
           {
             name: "偏关县",
-            url: ""
+            url: "http://www.pianguan.gov.cn/"
           },
           {
             name: "原平市",
-            url: ""
+            url: "http://www.yuanping.gov.cn/"
           }
         ]
       },
@@ -1541,71 +1541,71 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "尧都区",
-            url: ""
+            url: "http://www.yaodu.gov.cn/"
           },
           {
             name: "曲沃县",
-            url: ""
+            url: "http://www.quwo.gov.cn/"
           },
           {
             name: "翼城县",
-            url: ""
+            url: "http://www.yicheng.gov.cn/"
           },
           {
             name: "襄汾县",
-            url: ""
+            url: "http://www.xiangfen.gov.cn/"
           },
           {
             name: "洪洞县",
-            url: ""
+            url: "http://www.hongtong.gov.cn/"
           },
           {
             name: "古县",
-            url: ""
+            url: "http://www.guxian.gov.cn/"
           },
           {
             name: "安泽县",
-            url: ""
+            url: "http://www.anze.gov.cn/"
           },
           {
             name: "浮山县",
-            url: ""
+            url: "http://www.fushan.gov.cn/"
           },
           {
             name: "吉县",
-            url: ""
+            url: "http://www.jixian.gov.cn/"
           },
           {
             name: "乡宁县",
-            url: ""
+            url: "http://www.xiangning.gov.cn/"
           },
           {
             name: "大宁县",
-            url: ""
+            url: "http://www.daning.gov.cn/"
           },
           {
             name: "隰县",
-            url: ""
+            url: "http://www.xixian.gov.cn/"
           },
           {
             name: "永和县",
-            url: ""
+            url: "http://www.yonghe.gov.cn/"
           },
           {
             name: "蒲县",
-            url: ""
+            url: "http://www.puxian.gov.cn/"
           },
           {
             name: "汾西县",
-            url: ""
+            url: "http://www.fenxi.gov.cn/"
           },
           {
             name: "侯马市",
-            url: ""
+            url: "http://www.houma.gov.cn/"
           },
           {
             name: "霍州市",
-            url: ""
+            url: "http://www.huozhou.gov.cn/"
           }
         ]
       },
@@ -1615,55 +1615,55 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "离石区",
-            url: ""
+            url: "http://www.lishi.gov.cn/"
           },
           {
             name: "文水县",
-            url: ""
+            url: "http://www.wenshui.gov.cn/"
           },
           {
             name: "交城县",
-            url: ""
+            url: "http://www.jiaocheng.gov.cn/"
           },
           {
             name: "兴县",
-            url: ""
+            url: "http://www.sxxingxian.gov.cn/"
           },
           {
             name: "临县",
-            url: ""
+            url: "http://www.linxiancn.gov.cn/"
           },
           {
             name: "柳林县",
-            url: ""
+            url: "http://www.liulin.gov.cn/"
           },
           {
             name: "石楼县",
-            url: ""
+            url: "http://www.shilou.gov.cn/"
           },
           {
             name: "岚县",
-            url: ""
+            url: "http://www.lanxian.gov.cn/"
           },
           {
             name: "方山县",
-            url: ""
+            url: "http://www.fangshan.gov.cn/"
           },
           {
             name: "中阳县",
-            url: ""
+            url: "http://www.zhongyang.gov.cn/"
           },
           {
             name: "交口县",
-            url: ""
+            url: "http://www.jiaokou.gov.cn/"
           },
           {
             name: "孝义市",
-            url: ""
+            url: "http://www.sxxiaoyi.gov.cn/"
           },
           {
             name: "汾阳市",
-            url: ""
+            url: "http://www.fenyang.gov.cn/"
           }
         ]
       }
