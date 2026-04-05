@@ -5,16 +5,49 @@ import { FISCAL_REGIONS, type FiscalRegionNode } from "@/data/fiscal-budget-link
 
 const MUNICIPALITIES = new Set(["北京市", "天津市", "上海市", "重庆市"]);
 
+/** 省直辖县级行政单位（不统计为地级市，统计为县级） */
+const PROVINCE_DIRECT_COUNTIES = new Set([
+  "济源示范区",
+  "仙桃市", "潜江市", "天门市", "神农架林区",
+  "五指山市", "文昌市", "琼海市", "万宁市", "东方市",
+  "定安县", "屯昌县", "澄迈县", "临高县",
+  "白沙黎族自治县", "昌江黎族自治县", "乐东黎族自治县",
+  "陵水黎族自治县", "保亭黎族苗族自治县", "琼中黎族苗族自治县",
+]);
+
+/** 非地级市的容器节点（不统计为地级市，其子节点统计为县级） */
+const NON_CITY_CONTAINERS = new Set(["新疆生产建设兵团"]);
+
+/** 不纳入县级统计的地区（林业局管辖区等） */
+const EXCLUDED_COUNTIES = new Set(["加格达奇区", "松岭区", "新林区", "呼中区"]);
+
+/** 统计时排除的省级地区 */
+const EXCLUDED_PROVINCES = new Set(["香港特别行政区", "澳门特别行政区", "台湾省"]);
+
 /** 统计全局覆盖率 */
 function countGlobalCoverage(nodes: FiscalRegionNode[]): { provinces: number; provincesTotal: number; cities: number; citiesTotal: number; counties: number; countiesTotal: number } {
   let provinces = 0, provincesTotal = 0, cities = 0, citiesTotal = 0, counties = 0, countiesTotal = 0;
   for (const prov of nodes) {
+    if (EXCLUDED_PROVINCES.has(prov.name)) continue;
     provincesTotal++;
     if (prov.url) provinces++;
+    const isMuni = MUNICIPALITIES.has(prov.name);
     for (const city of prov.children ?? []) {
-      citiesTotal++;
-      if (city.url) cities++;
+      if (isMuni || PROVINCE_DIRECT_COUNTIES.has(city.name)) {
+        countiesTotal++;
+        if (city.url) counties++;
+      } else if (NON_CITY_CONTAINERS.has(city.name)) {
+        for (const county of city.children ?? []) {
+          countiesTotal++;
+          if (county.url) counties++;
+        }
+        continue;
+      } else {
+        citiesTotal++;
+        if (city.url) cities++;
+      }
       for (const county of city.children ?? []) {
+        if (EXCLUDED_COUNTIES.has(county.name)) continue;
         countiesTotal++;
         if (county.url) counties++;
       }
@@ -29,9 +62,21 @@ function countCoverage(node: FiscalRegionNode): { cities: number; citiesTotal: n
   const isMunicipality = MUNICIPALITIES.has(node.name);
   let cities = 0, citiesTotal = 0, counties = 0, countiesTotal = 0;
   for (const city of children) {
-    citiesTotal++;
-    if (city.url) cities++;
+    if (isMunicipality || PROVINCE_DIRECT_COUNTIES.has(city.name)) {
+      countiesTotal++;
+      if (city.url) counties++;
+    } else if (NON_CITY_CONTAINERS.has(city.name)) {
+      for (const county of city.children ?? []) {
+        countiesTotal++;
+        if (county.url) counties++;
+      }
+      continue;
+    } else {
+      citiesTotal++;
+      if (city.url) cities++;
+    }
     for (const county of city.children ?? []) {
+      if (EXCLUDED_COUNTIES.has(county.name)) continue;
       countiesTotal++;
       if (county.url) counties++;
     }
@@ -165,20 +210,20 @@ export function FiscalBudgetNav() {
         <article className="info-card p-5">
           <p className="data-kicker">省级覆盖率</p>
           <h3 className="data-stat">{provRate}%</h3>
-          <p className="data-substat">{coverage.provinces} / {coverage.provincesTotal} 个省级地区</p>
-          <p className="data-note">已收录的省级财政预决算公开入口。</p>
+          <p className="data-substat">{coverage.provinces} / {coverage.provincesTotal} 个省区市</p>
+          <p className="data-note">统计不含港澳台。</p>
         </article>
         <article className="info-card p-5">
           <p className="data-kicker">市级覆盖率</p>
           <h3 className="data-stat">{cityRate}%</h3>
-          <p className="data-substat">{coverage.cities} / {coverage.citiesTotal} 个地级市</p>
-          <p className="data-note">已收录的地级市财政预决算公开入口。</p>
+          <p className="data-substat">{coverage.cities} / {coverage.citiesTotal} 个地市州</p>
+          <p className="data-note">统计不含港澳台。</p>
         </article>
         <article className="info-card p-5">
           <p className="data-kicker">县级覆盖率</p>
           <h3 className="data-stat">{countyRate}%</h3>
-          <p className="data-substat">{coverage.counties} / {coverage.countiesTotal} 个县级地区</p>
-          <p className="data-note">已收录的县级财政预决算公开入口。</p>
+          <p className="data-substat">{coverage.counties} / {coverage.countiesTotal} 个区县</p>
+          <p className="data-note">统计不含港澳台。</p>
         </article>
       </div>
 

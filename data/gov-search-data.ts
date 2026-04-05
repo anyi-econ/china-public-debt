@@ -229,14 +229,41 @@ export function buildProvinceSearchData(): GovSearchItem[] {
  */
 export function buildCitySearchData(): GovSearchItem[] {
   const items: GovSearchItem[] = [];
+
+  /** 省直辖县级行政单位 */
+  const PROVINCE_DIRECT_COUNTIES = new Set([
+    "济源示范区",
+    "仙桃市", "潜江市", "天门市", "神农架林区",
+    "五指山市", "文昌市", "琼海市", "万宁市", "东方市",
+    "定安县", "屯昌县", "澄迈县", "临高县",
+    "白沙黎族自治县", "昌江黎族自治县", "乐东黎族自治县",
+    "陵水黎族自治县", "保亭黎族苗族自治县", "琼中黎族苗族自治县",
+  ]);
+
+  /** 非地级市的容器节点，其子节点按县级处理 */
+  const NON_CITY_CONTAINERS = new Set(["新疆生产建设兵团"]);
+
   for (const province of GOV_WEBSITES) {
     // 省级条目
     items.push(...generateEntriesForSite(province, province.name, "province"));
-    // 地级市条目（直辖市下属为区县，当作city层级处理）
+    // 按行政层级分类处理下级条目
     if (province.children) {
       for (const city of province.children) {
-        const level = province.name.match(/^(北京|天津|上海|重庆)/) ? "county" : "city";
-        items.push(...generateEntriesForSite(city, province.name, level, city.name));
+        const isMuni = !!province.name.match(/^(北京|天津|上海|重庆)/);
+
+        if (isMuni || PROVINCE_DIRECT_COUNTIES.has(city.name)) {
+          // 直辖市下辖区县 / 省直辖县级行政单位 → 按县级处理
+          items.push(...generateEntriesForSite(city, province.name, "county", city.name));
+        } else if (NON_CITY_CONTAINERS.has(city.name)) {
+          // 容器节点（如兵团）：自身按市级生成条目，子节点按县级处理
+          items.push(...generateEntriesForSite(city, province.name, "city", city.name));
+          for (const county of city.children ?? []) {
+            items.push(...generateEntriesForSite(county, province.name, "county", county.name));
+          }
+        } else {
+          // 普通地级市
+          items.push(...generateEntriesForSite(city, province.name, "city", city.name));
+        }
       }
     }
   }

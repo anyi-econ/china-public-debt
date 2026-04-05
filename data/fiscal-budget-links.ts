@@ -933,7 +933,6 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "铁东区", url: "http://tdq.siping.gov.cn/" },
           { name: "梨树县", url: "http://www.lishu.gov.cn/zw/zt/xysyjsgzzl/" },
           { name: "伊通满族自治县", url: "http://www.yitong.gov.cn/zw/czxx/" },
-          { name: "公主岭市", url: "" },
           { name: "双辽市", url: "http://www.shuangliao.gov.cn/" },
         ],
       },
@@ -3427,7 +3426,14 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "崖州区", url: "" },
         ],
       },
-      { name: "三沙市", url: "" },
+      {
+        name: "三沙市",
+        url: "",
+        children: [
+          { name: "西沙区", url: "" },
+          { name: "南沙区", url: "" },
+        ],
+      },
       { name: "儋州市", url: "" },
       { name: "五指山市", url: "" },
       { name: "文昌市", url: "" },
@@ -4340,6 +4346,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "长武县", url: "" },
           { name: "旬邑县", url: "" },
           { name: "淳化县", url: "" },
+          { name: "杨陵区", url: "" },
         ],
       },
       {
@@ -4356,6 +4363,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "白水县", url: "" },
           { name: "富平县", url: "" },
           { name: "华阴市", url: "" },
+          { name: "韩城市", url: "" },
         ],
       },
       {
@@ -4962,15 +4970,28 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "吉木乃县", url: "https://www.jmn.gov.cn/govxxgk/gov-listTwoPage.html" },
         ],
       },
+      {
+        name: "新疆生产建设兵团",
+        url: "https://czj.xjbt.gov.cn/czgk/yjsgk/",
+        children: [
+          { name: "石河子市", url: "" },
+          { name: "阿拉尔市", url: "" },
+          { name: "图木舒克市", url: "" },
+          { name: "五家渠市", url: "" },
+          { name: "北屯市", url: "" },
+          { name: "铁门关市", url: "" },
+          { name: "双河市", url: "" },
+          { name: "可克达拉市", url: "" },
+          { name: "昆玉市", url: "" },
+          { name: "胡杨河市", url: "" },
+          { name: "新星市", url: "" },
+          { name: "白杨市", url: "" },
+        ],
+      },
     ],
   },
 
-  // ═══════ 特别行政区 / 兵团 ═══════
-  {
-    name: "新疆生产建设兵团",
-    url: "https://czj.xjbt.gov.cn/czgk/yjsgk/",
-    children: [],
-  },
+  // ═══════ 特别行政区 ═══════
   {
     name: "香港特别行政区",
     url: "https://www.budget.gov.hk/",
@@ -4979,6 +5000,11 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   {
     name: "澳门特别行政区",
     url: "https://www.dsf.gov.mo/",
+    children: [],
+  },
+  {
+    name: "台湾省",
+    url: "",
     children: [],
   },
 ];

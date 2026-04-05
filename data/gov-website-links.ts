@@ -2766,10 +2766,6 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
             url: "http://www.yitong.gov.cn/"
           },
           {
-            name: "公主岭市",
-            url: ""
-          },
-          {
             name: "双辽市",
             url: "http://www.shuangliao.gov.cn/"
           }
@@ -9475,7 +9471,17 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
       },
       {
         name: "三沙市",
-        url: "https://www.sansha.gov.cn/"
+        url: "https://www.sansha.gov.cn/",
+        children: [
+          {
+            name: "西沙区",
+            url: ""
+          },
+          {
+            name: "南沙区",
+            url: ""
+          }
+        ]
       },
       {
         name: "儋州市",
@@ -11974,6 +11980,10 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           {
             name: "淳化县",
             url: "http://www.snchunhua.gov.cn/"
+          },
+          {
+            name: "杨陵区",
+            url: "https://www.ylq.gov.cn/"
           }
         ]
       },
@@ -12020,6 +12030,10 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           {
             name: "华阴市",
             url: "http://www.huayin.gov.cn/"
+          },
+          {
+            name: "韩城市",
+            url: "http://www.hancheng.gov.cn/"
           }
         ]
       },
@@ -13524,12 +13538,62 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
             url: "https://www.jmn.gov.cn/"
           }
         ]
+      },
+      {
+        name: "新疆生产建设兵团",
+        url: "http://www.xjbt.gov.cn/",
+        children: [
+          {
+            name: "石河子市",
+            url: "http://www.shz.gov.cn/"
+          },
+          {
+            name: "阿拉尔市",
+            url: "http://www.ale.gov.cn/"
+          },
+          {
+            name: "图木舒克市",
+            url: "http://www.xjbtss.gov.cn/"
+          },
+          {
+            name: "五家渠市",
+            url: "http://www.wjq.gov.cn/"
+          },
+          {
+            name: "北屯市",
+            url: "http://www.bts.gov.cn/"
+          },
+          {
+            name: "铁门关市",
+            url: "http://www.tmg.gov.cn/"
+          },
+          {
+            name: "双河市",
+            url: "http://www.xjshs.gov.cn/"
+          },
+          {
+            name: "可克达拉市",
+            url: "http://www.cocodala.gov.cn/"
+          },
+          {
+            name: "昆玉市",
+            url: "https://www.btdsss.gov.cn/"
+          },
+          {
+            name: "胡杨河市",
+            url: "http://www.nqs.gov.cn/"
+          },
+          {
+            name: "新星市",
+            url: "https://www.btnsss.gov.cn/"
+          },
+          {
+            name: "白杨市",
+            url: "https://www.btdjs.gov.cn/"
+          }
+        ]
       }
     ]
-  },
-  {
-    name: "新疆生产建设兵团",
-    url: "http://www.xjbt.gov.cn/"
   },
   {
     name: "香港特别行政区",
@@ -13538,5 +13602,9 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
   {
     name: "澳门特别行政区",
     url: "https://www.gov.mo/"
+  },
+  {
+    name: "台湾省",
+    url: ""
   }
 ];
