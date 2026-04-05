@@ -1,26 +1,23 @@
 import { PageIntro } from "@/components/layout/page-intro";
 import { SiteShell } from "@/components/layout/site-shell";
-import { PoliciesClient } from "@/components/pages/policies-client";
-import { SectionCard } from "@/components/ui/section-card";
+import { PoliciesPageClient } from "@/components/pages/policies-page-client";
 import { getPolicies } from "@/lib/data";
+import { buildProvinceSearchData } from "@/data/gov-search-data";
 
 export default function PoliciesPage() {
-  const items = getPolicies();
+  const policyItems = getPolicies();
+  const govSearchItems = buildProvinceSearchData();
 
   return (
     <SiteShell currentPath="/policies">
       <PageIntro
         eyebrow="Policy & Institutions"
         title="政策与制度"
-        description="聚合财政部、中国政府网、全国人大等正式页面中的政策、预算报告与制度文本。"
-        meta={`共 ${items.length} 条样本 · 原文可回跳核验`}
+        description="聚合债券政策动态与政府官网政策信息检索，支持按地区、类型、主题等多维度筛选。"
+        meta={`债券政策 ${policyItems.length} 条 · 政府官网检索 ${govSearchItems.length} 条`}
       />
 
-      <div className="container-page topic-body">
-        <SectionCard title="政策样本库" description="按关键词和分类检索">
-          <PoliciesClient items={items} />
-        </SectionCard>
-      </div>
+      <PoliciesPageClient policyItems={policyItems} govSearchItems={govSearchItems} />
     </SiteShell>
   );
 }

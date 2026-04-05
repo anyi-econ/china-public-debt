@@ -202,6 +202,37 @@ export interface SourceCatalogItem {
   fallback: SourceFallbackItem[];
 }
 
+/* ── 政府官网信息检索数据结构 ── */
+export type ContentScope = "本地" | "上级" | "外地" | "全国";
+export type GovDocType = "领导活动" | "其他新闻" | "产业政策文件" | "其他政策文件";
+export type LeaderRole = "书记" | "市长" | "其他" | "无";
+
+export interface GovSearchItem {
+  id: string;
+  title: string;
+  url: string;
+  /** 发布网站名称 */
+  siteName: string;
+  /** 发布网站所属地区 */
+  siteRegion: string;
+  /** 内容所属地区 */
+  contentRegion: string;
+  /** 内容范围：本地 / 上级 / 外地 / 全国 */
+  contentScope: ContentScope;
+  /** 类型标签 */
+  docType: GovDocType;
+  /** 领导身份 */
+  leaderRole: LeaderRole;
+  /** 主题标签（多个） */
+  topics: string[];
+  /** 发布时间 YYYY-MM-DD */
+  publishedAt: string;
+  /** 摘要 */
+  summary: string;
+  /** 行政层级 province / city / county */
+  adminLevel: "province" | "city" | "county";
+}
+
 export interface AppDataBundle {
   policies: PolicyItem[];
   debt: DebtDataItem[];
