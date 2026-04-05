@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - 'copilot/**'
   workflow_dispatch:
 
 permissions:
@@ -44,7 +43,6 @@ jobs:
           path: ./out
 
   deploy:
-    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
