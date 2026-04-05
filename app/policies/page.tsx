@@ -2,11 +2,11 @@ import { PageIntro } from "@/components/layout/page-intro";
 import { SiteShell } from "@/components/layout/site-shell";
 import { PoliciesPageClient } from "@/components/pages/policies-page-client";
 import { getPolicies } from "@/lib/data";
-import { buildProvinceSearchData } from "@/data/gov-search-data";
+import { buildCitySearchData } from "@/data/gov-search-data";
 
 export default function PoliciesPage() {
   const policyItems = getPolicies();
-  const govSearchItems = buildProvinceSearchData();
+  const govSearchItems = buildCitySearchData();
 
   return (
     <SiteShell currentPath="/policies">
