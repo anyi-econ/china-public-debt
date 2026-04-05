@@ -10,7 +10,7 @@
  * - 支持全文检索
  */
 
-import type { GovSearchItem, ContentScope, GovDocType, LeaderRole } from "@/lib/types";
+import type { GovSearchItem, ContentScope, GovDocType, LeaderRole, PolicySubType } from "@/lib/types";
 import { GOV_WEBSITES, type GovWebsiteNode } from "@/data/gov-website-links";
 
 /** 示例主题标签池 */
@@ -20,11 +20,14 @@ const TOPIC_POOL = [
   "数字经济", "绿色发展", "乡村振兴", "城市更新", "产业升级",
 ];
 
-/** 文档类型池 */
-const DOC_TYPES: GovDocType[] = ["领导活动", "其他新闻", "产业政策文件", "其他政策文件"];
+/** 一级文档类型池（四类） */
+const DOC_TYPES: GovDocType[] = ["领导活动", "政策文件", "社会新闻", "其他"];
 
-/** 领导身份池 */
-const LEADER_ROLES: LeaderRole[] = ["书记", "市长", "其他", "无"];
+/** 领导身份池（二级 —— 领导活动下） */
+const LEADER_ROLES: LeaderRole[] = ["书记", "市长", "其他领导", "无"];
+
+/** 政策文件二级子类型池 */
+const POLICY_SUB_TYPES: PolicySubType[] = ["产业政策", "财政金融", "营商环境", "数字经济", "其他"];
 
 /** 内容范围池 */
 const CONTENT_SCOPES: ContentScope[] = ["本地", "上级", "全国"];
@@ -67,6 +70,22 @@ function stableDate(name: string, offset: number): string {
  * 为一个政府网站生成多条检索条目
  * 每个有URL的政府门户对应若干条信息条目，模拟真实政务公开栏目
  */
+/** 基于基础 URL 和条目信息生成模拟具体文章 URL */
+function generateArticleUrl(baseUrl: string, regionName: string, index: number, docType: GovDocType): string {
+  if (!baseUrl) return "";
+  const h = stableHash(regionName + "art" + index);
+  const articleId = String(100000 + (h % 900000));
+  const base = baseUrl.replace(/\/+$/, "");
+  const pathMap: Record<GovDocType, string> = {
+    "领导活动": "/xinwen/lddt",
+    "政策文件": "/zhengce/zfwj",
+    "社会新闻": "/xinwen/shxw",
+    "其他": "/gongkai/tzgg",
+  };
+  const path = pathMap[docType] || "/xinwen";
+  return `${base}${path}/${articleId}.html`;
+}
+
 function generateEntriesForSite(
   node: GovWebsiteNode,
   province: string,
@@ -88,18 +107,21 @@ function generateEntriesForSite(
     const tpl = templates[i];
     const docType = tpl.docType;
     const leaderRole = docType === "领导活动"
-      ? pickFromPool(["书记", "市长", "其他"] as LeaderRole[], regionName, i)[0]
+      ? pickFromPool(["书记", "市长", "其他领导"] as LeaderRole[], regionName, i)[0]
       : "无" as LeaderRole;
+    const policySubType = docType === "政策文件" ? tpl.policySubType : undefined;
 
     entries.push({
       id: `gov-${adminLevel}-${regionName}-${i}`,
       title: tpl.title,
       url: node.url,
+      articleUrl: generateArticleUrl(node.url, regionName, i, docType),
       siteName: `${regionName}人民政府`,
       siteRegion: province,
       contentRegion: regionName,
       contentScope: tpl.scope,
       docType,
+      policySubType,
       leaderRole,
       topics: tpl.topics,
       publishedAt: stableDate(regionName, i),
@@ -119,6 +141,7 @@ function getTemplatesForRegion(
 ): Array<{
   title: string;
   docType: GovDocType;
+  policySubType?: PolicySubType;
   scope: ContentScope;
   topics: string[];
   summary: string;
@@ -150,7 +173,8 @@ function getTemplatesForRegion(
     },
     {
       title: `${regionName}人民政府关于加快${topic2}产业高质量发展的实施意见`,
-      docType: "产业政策文件",
+      docType: "政策文件",
+      policySubType: "产业政策",
       scope: "本地",
       topics: [topic2, "产业升级"],
       summary: `${regionName}出台关于${topic2}产业发展的实施意见，提出到2027年${topic2}产业规模达到新目标，完善政策支持体系。`,
@@ -164,21 +188,22 @@ function getTemplatesForRegion(
     },
     {
       title: `${regionName}${h % 2 === 0 ? "2025年" : "2026年"}重大项目集中开工`,
-      docType: "其他新闻",
+      docType: "社会新闻",
       scope: "本地",
       topics: ["重大项目", "园区建设"],
       summary: `${regionName}举行重大项目集中开工仪式，涵盖${topic1}、${topic2}等领域，总投资额超过百亿元。`,
     },
     {
       title: `${regionName}财政局关于做好${h % 2 === 0 ? "2025" : "2026"}年度财政预算执行工作的通知`,
-      docType: "其他政策文件",
+      docType: "政策文件",
+      policySubType: "财政金融",
       scope: "本地",
       topics: ["财政金融"],
       summary: `${regionName}财政局发布年度财政预算执行工作通知，要求各部门严格执行预算，优化支出结构。`,
     },
     {
       title: `${regionName}积极融入${province === regionName ? "国家" : province}${topic1}发展战略`,
-      docType: "其他新闻",
+      docType: "社会新闻",
       scope: province === regionName ? "全国" : "上级",
       topics: [topic1, "数字经济"],
       summary: `${regionName}积极对接${province === regionName ? "国家" : province}战略部署，推动${topic1}领域合作取得新进展。`,
@@ -224,4 +249,5 @@ export const GOV_SEARCH_TOPICS = TOPIC_POOL;
 /** 导出类型和角色常量供筛选器使用 */
 export const GOV_DOC_TYPES = DOC_TYPES;
 export const GOV_LEADER_ROLES = LEADER_ROLES;
+export const GOV_POLICY_SUB_TYPES = POLICY_SUB_TYPES;
 export const GOV_CONTENT_SCOPES: ContentScope[] = ["本地", "上级", "外地", "全国"];

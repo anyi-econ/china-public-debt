@@ -204,13 +204,17 @@ export interface SourceCatalogItem {
 
 /* ── 政府官网信息检索数据结构 ── */
 export type ContentScope = "本地" | "上级" | "外地" | "全国";
-export type GovDocType = "领导活动" | "其他新闻" | "产业政策文件" | "其他政策文件";
-export type LeaderRole = "书记" | "市长" | "其他" | "无";
+export type GovDocType = "领导活动" | "政策文件" | "社会新闻" | "其他";
+export type LeaderRole = "书记" | "市长" | "其他领导" | "无";
+export type PolicySubType = "产业政策" | "财政金融" | "营商环境" | "数字经济" | "其他";
 
 export interface GovSearchItem {
   id: string;
   title: string;
+  /** 政府门户首页 URL */
   url: string;
+  /** 具体信息页面 URL（文章/政策/公告等） */
+  articleUrl: string;
   /** 发布网站名称 */
   siteName: string;
   /** 发布网站所属地区 */
@@ -219,9 +223,11 @@ export interface GovSearchItem {
   contentRegion: string;
   /** 内容范围：本地 / 上级 / 外地 / 全国 */
   contentScope: ContentScope;
-  /** 类型标签 */
+  /** 一级类型标签 */
   docType: GovDocType;
-  /** 领导身份 */
+  /** 二级类型 —— 仅在 docType 为 "政策文件" 时有意义 */
+  policySubType?: PolicySubType;
+  /** 领导身份 —— 仅在 docType 为 "领导活动" 时有意义 */
   leaderRole: LeaderRole;
   /** 主题标签（多个） */
   topics: string[];
