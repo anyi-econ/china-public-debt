@@ -246,30 +246,23 @@ export function buildCitySearchData(): GovSearchItem[] {
   for (const province of GOV_WEBSITES) {
     // 省级条目
     items.push(...generateEntriesForSite(province, province.name, "province"));
-    // 地级市条目（直辖市下属为区县，当作county层级处理）
+    // 按行政层级分类处理下级条目
     if (province.children) {
       for (const city of province.children) {
         const isMuni = !!province.name.match(/^(北京|天津|上海|重庆)/);
 
         if (isMuni || PROVINCE_DIRECT_COUNTIES.has(city.name)) {
-          // 省直辖县级行政单位按县级处理
+          // 直辖市下辖区县 / 省直辖县级行政单位 → 按县级处理
           items.push(...generateEntriesForSite(city, province.name, "county", city.name));
         } else if (NON_CITY_CONTAINERS.has(city.name)) {
           // 容器节点（如兵团）：自身按市级生成条目，子节点按县级处理
           items.push(...generateEntriesForSite(city, province.name, "city", city.name));
-          if (city.children) {
-            for (const county of city.children) {
-              items.push(...generateEntriesForSite(county, province.name, "county", county.name));
-            }
+          for (const county of city.children ?? []) {
+            items.push(...generateEntriesForSite(county, province.name, "county", county.name));
           }
         } else {
+          // 普通地级市
           items.push(...generateEntriesForSite(city, province.name, "city", city.name));
-          // 处理容器节点（无URL但有子节点），其子节点按县级处理
-          if (!city.url && city.children) {
-            for (const county of city.children) {
-              items.push(...generateEntriesForSite(county, province.name, "county", county.name));
-            }
-          }
         }
       }
     }
