@@ -1239,7 +1239,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "郊区",
-            url: "https://www.jmsjqzf.gov.cn/"
+            url: "http://www.yqjq.gov.cn/"
           },
           {
             name: "平定县",
@@ -1323,7 +1323,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "陵川县",
-            url: "http://www.sxlc.gov.cn/"
+            url: "https://www.lczf.gov.cn/"
           },
           {
             name: "泽州县",
@@ -8795,7 +8795,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "连山壮族瑶族自治县",
-            url: "http://www.lianshan.gov.cn/"
+            url: "http://www.gdls.gov.cn/"
           },
           {
             name: "连南瑶族自治县",
@@ -11265,7 +11265,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "文山市",
-            url: "http://www.ynws.gov.cn/"
+            url: "http://www.ynwss.gov.cn/"
           },
           {
             name: "砚山县",
