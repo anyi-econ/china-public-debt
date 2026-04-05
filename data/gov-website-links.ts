@@ -475,7 +475,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "辛集市",
-            url: ""
+            url: "http://www.xinji.gov.cn/"
           },
           {
             name: "晋州市",
@@ -493,7 +493,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "路南区",
-            url: ""
+            url: "http://www.lunan.gov.cn/"
           },
           {
             name: "路北区",
@@ -537,7 +537,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "遵化市",
-            url: ""
+            url: "http://www.zunhua.gov.cn/"
           },
           {
             name: "迁安市",
@@ -545,7 +545,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "滦州市",
-            url: ""
+            url: "http://www.luanxian.gov.cn/"
           }
         ]
       },
@@ -555,7 +555,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "海港区",
-            url: ""
+            url: "http://www.qhdhgq.gov.cn/"
           },
           {
             name: "山海关区",
@@ -567,15 +567,15 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "抚宁区",
-            url: ""
+            url: "https://www.chinafuning.gov.cn/"
           },
           {
             name: "青龙满族自治县",
-            url: ""
+            url: "https://www.chinaqinglong.gov.cn/"
           },
           {
             name: "昌黎县",
-            url: ""
+            url: "http://www.clxzf.gov.cn/"
           },
           {
             name: "卢龙县",
@@ -601,11 +601,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "峰峰矿区",
-            url: ""
+            url: "http://www.ff.gov.cn/"
           },
           {
             name: "肥乡区",
-            url: ""
+            url: "https://www.fxq.gov.cn/"
           },
           {
             name: "永年区",
@@ -641,7 +641,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "广平县",
-            url: ""
+            url: "http://www.gpx.gov.cn/"
           },
           {
             name: "馆陶县",
@@ -649,11 +649,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "魏县",
-            url: ""
+            url: "https://wei.gov.cn/"
           },
           {
             name: "曲周县",
-            url: ""
+            url: "http://www.qzx.gov.cn/"
           },
           {
             name: "武安市",
@@ -735,7 +735,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "沙河市",
-            url: ""
+            url: "http://www.shaheshi.gov.cn/"
           }
         ]
       },
@@ -797,7 +797,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "安新县",
-            url: ""
+            url: "https://www.anxin.gov.cn/"
           },
           {
             name: "易县",
@@ -813,7 +813,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "顺平县",
-            url: ""
+            url: "http://www.shunping.gov.cn/"
           },
           {
             name: "博野县",
@@ -829,7 +829,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "定州市",
-            url: ""
+            url: "http://www.dzs.gov.cn/"
           },
           {
             name: "安国市",
@@ -1045,7 +1045,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "固安县",
-            url: ""
+            url: "http://www.guan.gov.cn/"
           },
           {
             name: "永清县",
@@ -1065,15 +1065,15 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "大厂回族自治县",
-            url: ""
+            url: "https://www.lfdc.gov.cn/"
           },
           {
             name: "霸州市",
-            url: ""
+            url: "http://www.bazhou.gov.cn/"
           },
           {
             name: "三河市",
-            url: ""
+            url: "http://www.san-he.gov.cn/"
           }
         ]
       },
@@ -1119,7 +1119,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "阜城县",
-            url: ""
+            url: "http://www.hbfcx.gov.cn/"
           },
           {
             name: "深州市",
