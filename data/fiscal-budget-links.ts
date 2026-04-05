@@ -1192,7 +1192,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "绥化市",
-        url: "",
+        url: "https://www.suihua.gov.cn/sh/ysjs/zfxxgk.shtml",
         children: [
           { name: "北林区", url: "" },
           { name: "望奎县", url: "" },
@@ -1608,7 +1608,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "安庆市",
-        url: "",
+        url: "https://www.anqing.gov.cn/zwgk/ztzl/czzj/index.html",
         children: [
           { name: "迎江区", url: "" },
           { name: "大观区", url: "" },
@@ -1665,7 +1665,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "宿州市",
-        url: "",
+        url: "https://www.ahsz.gov.cn/zwgk/ztzl/bmyjshsgjf/index.html",
         children: [
           { name: "埇桥区", url: "" },
           { name: "砀山县", url: "" },
@@ -1912,7 +1912,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "九江市",
-        url: "",
+        url: "https://www.jiujiang.gov.cn/fdzdxxgk/01/04/01/",
         children: [
           { name: "濂溪区", url: "" },
           { name: "浔阳区", url: "" },
@@ -1991,7 +1991,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "宜春市",
-        url: "",
+        url: "https://www.yichun.gov.cn/ycsrmzf/czxx/pc/list.html",
         children: [
           { name: "袁州区", url: "" },
           { name: "奉新县", url: "" },
@@ -2007,7 +2007,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "抚州市",
-        url: "",
+        url: "https://www.jxfz.gov.cn/col/col24612/index.html",
         children: [
           { name: "临川区", url: "" },
           { name: "东乡区", url: "" },
@@ -2024,7 +2024,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "上饶市",
-        url: "",
+        url: "https://www.zgsr.gov.cn/zgsr/czzj/zwgk_xxgklists.shtml",
         children: [
           { name: "信州区", url: "" },
           { name: "广丰区", url: "" },
@@ -2110,7 +2110,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "东营市",
-        url: "",
+        url: "http://www.dongying.gov.cn/col/col192064/index.html",
         children: [
           { name: "东营区", url: "" },
           { name: "河口区", url: "" },
@@ -2267,7 +2267,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "菏泽市",
-        url: "",
+        url: "http://www.heze.gov.cn/czyjs/",
         children: [
           { name: "牡丹区", url: "" },
           { name: "定陶区", url: "" },
@@ -3409,7 +3409,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
     children: [
       {
         name: "海口市",
-        url: "",
+        url: "http://www.haikou.gov.cn/xxgk/szfbjxxgk/cztz/",
         children: [
           { name: "秀英区", url: "" },
           { name: "龙华区", url: "" },
@@ -3419,7 +3419,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "三亚市",
-        url: "",
+        url: "https://www.sanya.gov.cn/sanyasite/czxx/nav_list.shtml",
         children: [
           { name: "海棠区", url: "" },
           { name: "吉阳区", url: "" },
@@ -3895,7 +3895,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "黔南布依族苗族自治州",
-        url: "",
+        url: "http://www.qiannan.gov.cn/ztzl/qnzczzjxxgk/index.html",
         children: [
           { name: "都匀市", url: "" },
           { name: "福泉市", url: "" },
@@ -3999,7 +3999,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "丽江市",
-        url: "",
+        url: "https://www.lijiang.gov.cn/ljsrmzf/c102170/zfxxgk_gknr.shtml",
         children: [
           { name: "古城区", url: "" },
           { name: "玉龙纳西族自治县", url: "" },
@@ -4010,7 +4010,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "普洱市",
-        url: "",
+        url: "https://www.puershi.gov.cn/zwgk/zfxxgk2/fdzdgknr/czyjs.htm",
         children: [
           { name: "思茅区", url: "" },
           { name: "宁洱哈尼族彝族自治县", url: "" },
@@ -4056,7 +4056,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "红河哈尼族彝族自治州",
-        url: "",
+        url: "http://www.hh.gov.cn/zfxxgk/fdzdgknr/cwxx/czzjzdjc.htm",
         children: [
           { name: "个旧市", url: "" },
           { name: "开远市", url: "" },
@@ -4098,7 +4098,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "大理白族自治州",
-        url: "",
+        url: "http://www.dali.gov.cn/dlzrmzf/xxgkml/c105900/pc/list.html",
         children: [
           { name: "大理市", url: "" },
           { name: "漾濞彝族自治县", url: "" },
@@ -4588,7 +4588,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "临夏回族自治州",
-        url: "",
+        url: "https://www.linxia.gov.cn/lxz/zwgk/fdzdgknr/cwxx/index.html",
         children: [
           { name: "临夏市", url: "" },
           { name: "临夏县", url: "" },
@@ -4602,7 +4602,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "甘南藏族自治州",
-        url: "",
+        url: "http://www.gnzrmzf.gov.cn/zfxxgk/fdzdgknr1/ysjs.htm",
         children: [
           { name: "合作市", url: "" },
           { name: "临潭县", url: "" },
@@ -4669,7 +4669,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "海南藏族自治州",
-        url: "",
+        url: "https://www.hainanzhou.gov.cn/zwgk/fdzdgknr/czyjs",
         children: [
           { name: "共和县", url: "" },
           { name: "同德县", url: "" },
@@ -4745,7 +4745,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "吴忠市",
-        url: "",
+        url: "https://www.wuzhong.gov.cn/xxgk/zfxxgkml/yjsgkqk/",
         children: [
           { name: "利通区", url: "" },
           { name: "红寺堡区", url: "" },

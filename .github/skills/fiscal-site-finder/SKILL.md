@@ -70,7 +70,9 @@ Fetch a homepage, extract all `<a>` tags, filter for fiscal keywords:
 Use for JS-rendered sites. Limit to 4-5 URLs per call. Good for exploring CMS sites with dynamic navigation.
 
 ### M7: Search Engines (last resort)
-Baidu: `{地名}财政局 预决算公开 site:gov.cn`
+- Baidu: `{地名}财政局 预决算公开 site:gov.cn`
+- Bing: `{地名}财政局 预决算公开 site:gov.cn` (via bing.com)
+- Google: `{地名}财政局 预决算公开 site:gov.cn` (via google.com)
 
 ---
 
