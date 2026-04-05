@@ -12709,31 +12709,31 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "城东区",
-            url: ""
+            url: "http://www.xncd.gov.cn/"
           },
           {
             name: "城中区",
-            url: ""
+            url: "https://xncz.gov.cn/"
           },
           {
             name: "城西区",
-            url: ""
+            url: "https://www.xncx.gov.cn/"
           },
           {
             name: "城北区",
-            url: ""
+            url: "http://www.xncbq.gov.cn/"
           },
           {
             name: "湟中区",
-            url: ""
+            url: "https://www.xnhzq.gov.cn/"
           },
           {
             name: "大通回族土族自治县",
-            url: ""
+            url: "https://www.datong.gov.cn/"
           },
           {
             name: "湟源县",
-            url: ""
+            url: "https://www.huangyuan.gov.cn/"
           }
         ]
       },
@@ -12743,27 +12743,27 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "乐都区",
-            url: ""
+            url: "https://www.ledu.gov.cn/"
           },
           {
             name: "平安区",
-            url: ""
+            url: "https://www.pinganqu.gov.cn/"
           },
           {
             name: "民和回族土族自治县",
-            url: ""
+            url: "http://www.minhe.gov.cn/"
           },
           {
             name: "互助土族自治县",
-            url: ""
+            url: "http://www.huzhu.gov.cn/"
           },
           {
             name: "化隆回族自治县",
-            url: ""
+            url: "http://www.hualong.gov.cn/"
           },
           {
             name: "循化撒拉族自治县",
-            url: ""
+            url: "http://www.xunhua.gov.cn/"
           }
         ]
       },
@@ -12773,19 +12773,19 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "门源回族自治县",
-            url: ""
+            url: "http://www.menyuan.gov.cn/"
           },
           {
             name: "祁连县",
-            url: ""
+            url: "http://www.qilian.gov.cn/"
           },
           {
             name: "海晏县",
-            url: ""
+            url: "http://www.haiyanxian.gov.cn/"
           },
           {
             name: "刚察县",
-            url: ""
+            url: "https://www.gangcha.gov.cn/"
           }
         ]
       },
@@ -12795,19 +12795,19 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "同仁市",
-            url: ""
+            url: "http://www.hntongren.gov.cn/"
           },
           {
             name: "尖扎县",
-            url: ""
+            url: "http://www.jianzha.gov.cn/"
           },
           {
             name: "泽库县",
-            url: ""
+            url: "http://www.zeku.gov.cn/"
           },
           {
             name: "河南蒙古族自治县",
-            url: ""
+            url: "http://www.henanxian.gov.cn/"
           }
         ]
       },
@@ -12817,23 +12817,23 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "共和县",
-            url: ""
+            url: "https://www.gonghe.gov.cn/"
           },
           {
             name: "同德县",
-            url: ""
+            url: "https://www.tongde.gov.cn/"
           },
           {
             name: "贵德县",
-            url: ""
+            url: "https://www.guide.gov.cn/"
           },
           {
             name: "兴海县",
-            url: ""
+            url: "https://www.xinghai.gov.cn/"
           },
           {
             name: "贵南县",
-            url: ""
+            url: "https://www.guinan.gov.cn/"
           }
         ]
       },
@@ -12843,27 +12843,27 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "玛沁县",
-            url: ""
+            url: "http://www.maqin.gov.cn/"
           },
           {
             name: "班玛县",
-            url: ""
+            url: "http://www.banma.gov.cn/"
           },
           {
             name: "甘德县",
-            url: ""
+            url: "http://www.gande.gov.cn/"
           },
           {
             name: "达日县",
-            url: ""
+            url: "http://www.dari.gov.cn/"
           },
           {
             name: "久治县",
-            url: ""
+            url: "http://www.jiuzhixian.gov.cn/"
           },
           {
             name: "玛多县",
-            url: ""
+            url: "http://www.maduo.gov.cn/"
           }
         ]
       },
@@ -12873,27 +12873,27 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "玉树市",
-            url: ""
+            url: "http://www.yss.gov.cn/"
           },
           {
             name: "杂多县",
-            url: ""
+            url: "http://www.qhzaduo.gov.cn/"
           },
           {
             name: "称多县",
-            url: ""
+            url: "http://www.qhcd.gov.cn/"
           },
           {
             name: "治多县",
-            url: ""
+            url: "http://www.zhiduo.gov.cn/"
           },
           {
             name: "囊谦县",
-            url: ""
+            url: "http://www.nangqian.gov.cn/"
           },
           {
             name: "曲麻莱县",
-            url: ""
+            url: "http://www.qml.gov.cn/"
           }
         ]
       },
@@ -12903,27 +12903,27 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "格尔木市",
-            url: ""
+            url: "https://www.geermu.gov.cn/"
           },
           {
             name: "德令哈市",
-            url: ""
+            url: "http://www.delingha.gov.cn/"
           },
           {
             name: "茫崖市",
-            url: ""
+            url: "https://www.mangya.gov.cn/"
           },
           {
             name: "乌兰县",
-            url: ""
+            url: "http://www.wulanxian.gov.cn/"
           },
           {
             name: "都兰县",
-            url: ""
+            url: "http://www.dulan.gov.cn/"
           },
           {
             name: "天峻县",
-            url: ""
+            url: "http://www.tianjun.gov.cn/"
           }
         ]
       }
