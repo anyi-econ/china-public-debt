@@ -11980,6 +11980,10 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           {
             name: "淳化县",
             url: "http://www.snchunhua.gov.cn/"
+          },
+          {
+            name: "杨陵区",
+            url: "https://www.ylq.gov.cn/"
           }
         ]
       },
@@ -12026,6 +12030,10 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           {
             name: "华阴市",
             url: "http://www.huayin.gov.cn/"
+          },
+          {
+            name: "韩城市",
+            url: "http://www.hancheng.gov.cn/"
           }
         ]
       },

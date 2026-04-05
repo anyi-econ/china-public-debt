@@ -4346,6 +4346,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "长武县", url: "" },
           { name: "旬邑县", url: "" },
           { name: "淳化县", url: "" },
+          { name: "杨陵区", url: "" },
         ],
       },
       {
@@ -4362,6 +4363,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "白水县", url: "" },
           { name: "富平县", url: "" },
           { name: "华阴市", url: "" },
+          { name: "韩城市", url: "" },
         ],
       },
       {

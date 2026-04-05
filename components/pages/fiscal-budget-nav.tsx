@@ -18,6 +18,9 @@ const PROVINCE_DIRECT_COUNTIES = new Set([
 /** 非地级市的容器节点（不统计为地级市，其子节点统计为县级） */
 const NON_CITY_CONTAINERS = new Set(["新疆生产建设兵团"]);
 
+/** 不纳入县级统计的地区（林业局管辖区等） */
+const EXCLUDED_COUNTIES = new Set(["加格达奇区", "松岭区", "新林区", "呼中区"]);
+
 /** 统计时排除的省级地区 */
 const EXCLUDED_PROVINCES = new Set(["香港特别行政区", "澳门特别行政区", "台湾省"]);
 
@@ -44,6 +47,7 @@ function countGlobalCoverage(nodes: FiscalRegionNode[]): { provinces: number; pr
         if (city.url) cities++;
       }
       for (const county of city.children ?? []) {
+        if (EXCLUDED_COUNTIES.has(county.name)) continue;
         countiesTotal++;
         if (county.url) counties++;
       }
@@ -72,6 +76,7 @@ function countCoverage(node: FiscalRegionNode): { cities: number; citiesTotal: n
       if (city.url) cities++;
     }
     for (const county of city.children ?? []) {
+      if (EXCLUDED_COUNTIES.has(county.name)) continue;
       countiesTotal++;
       if (county.url) counties++;
     }
