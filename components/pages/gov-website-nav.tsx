@@ -12,8 +12,13 @@ function countCoverage(nodes: GovWebsiteNode[]): { provinces: number; provincesT
     if (prov.url) provinces++;
     const isMuni = MUNICIPALITIES.has(prov.name);
     for (const city of prov.children ?? []) {
-      citiesTotal++;
-      if (city.url) cities++;
+      if (isMuni) {
+        countiesTotal++;
+        if (city.url) counties++;
+      } else {
+        citiesTotal++;
+        if (city.url) cities++;
+      }
       for (const county of city.children ?? []) {
         countiesTotal++;
         if (county.url) counties++;

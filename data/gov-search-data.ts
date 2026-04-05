@@ -232,11 +232,18 @@ export function buildCitySearchData(): GovSearchItem[] {
   for (const province of GOV_WEBSITES) {
     // 省级条目
     items.push(...generateEntriesForSite(province, province.name, "province"));
-    // 地级市条目（直辖市下属为区县，当作city层级处理）
+    // 地级市条目（直辖市下属为区县，当作county层级处理）
     if (province.children) {
       for (const city of province.children) {
-        const level = province.name.match(/^(北京|天津|上海|重庆)/) ? "county" : "city";
+        const isMuni = !!province.name.match(/^(北京|天津|上海|重庆)/);
+        const level = isMuni ? "county" : "city";
         items.push(...generateEntriesForSite(city, province.name, level, city.name));
+        // 处理容器节点（如"省直辖县级行政单位"：无URL但有子节点），其子节点按县级处理
+        if (!isMuni && !city.url && city.children) {
+          for (const county of city.children) {
+            items.push(...generateEntriesForSite(county, province.name, "county", county.name));
+          }
+        }
       }
     }
   }
