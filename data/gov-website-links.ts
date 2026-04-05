@@ -3115,7 +3115,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "恒山区",
-            url: ""
+            url: "https://www.jixihengshan.gov.cn/"
           },
           {
             name: "滴道区",
@@ -11751,31 +11751,31 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "普兰县",
-            url: ""
+            url: "https://www.pulan.gov.cn/"
           },
           {
             name: "札达县",
-            url: ""
+            url: "https://zhada.gov.cn/"
           },
           {
             name: "噶尔县",
-            url: ""
+            url: "https://gaer.gov.cn/"
           },
           {
             name: "日土县",
-            url: ""
+            url: "https://rituxian.gov.cn/"
           },
           {
             name: "革吉县",
-            url: ""
+            url: "https://geji.gov.cn/"
           },
           {
             name: "改则县",
-            url: ""
+            url: "https://gaizexian.gov.cn/"
           },
           {
             name: "措勤县",
-            url: ""
+            url: "https://cuoqinxian.gov.cn/"
           }
         ]
       }
