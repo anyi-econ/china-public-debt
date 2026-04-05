@@ -1679,39 +1679,39 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "新城区",
-            url: ""
+            url: "http://www.xinchengqu.gov.cn/"
           },
           {
             name: "回民区",
-            url: ""
+            url: "http://www.huiminqu.gov.cn/"
           },
           {
             name: "玉泉区",
-            url: ""
+            url: "http://www.yuquan.gov.cn/"
           },
           {
             name: "赛罕区",
-            url: ""
+            url: "http://www.saihan.gov.cn/"
           },
           {
             name: "土默特左旗",
-            url: ""
+            url: "http://www.tmtzq.gov.cn/"
           },
           {
             name: "托克托县",
-            url: ""
+            url: "http://www.tuoketuo.gov.cn/"
           },
           {
             name: "和林格尔县",
-            url: ""
+            url: "http://www.helingeer.gov.cn/"
           },
           {
             name: "清水河县",
-            url: ""
+            url: "http://www.qingshuihe.gov.cn/"
           },
           {
             name: "武川县",
-            url: ""
+            url: "http://www.wuchuan.gov.cn/"
           }
         ]
       },
@@ -1721,11 +1721,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "东河区",
-            url: ""
+            url: "http://www.donghe.gov.cn/"
           },
           {
             name: "昆都仑区",
-            url: ""
+            url: "https://www.kdl.gov.cn/"
           },
           {
             name: "青山区",
@@ -1733,27 +1733,27 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "石拐区",
-            url: ""
+            url: "http://www.shiguai.gov.cn/"
           },
           {
             name: "白云鄂博矿区",
-            url: ""
+            url: "http://www.byeb.gov.cn/"
           },
           {
             name: "九原区",
-            url: ""
+            url: "https://www.jiuyuanqu.gov.cn/"
           },
           {
             name: "土默特右旗",
-            url: ""
+            url: "http://www.tmtyq.gov.cn/"
           },
           {
             name: "固阳县",
-            url: ""
+            url: "https://www.guyang.gov.cn/"
           },
           {
             name: "达尔罕茂明安联合旗",
-            url: ""
+            url: "http://www.dmlhq.gov.cn/"
           }
         ]
       },
@@ -1763,15 +1763,15 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "海勃湾区",
-            url: ""
+            url: "https://www.haibowan.gov.cn/"
           },
           {
             name: "海南区",
-            url: ""
+            url: "https://www.hainanqu.gov.cn/"
           },
           {
             name: "乌达区",
-            url: ""
+            url: "https://www.wuda.gov.cn/"
           }
         ]
       },
@@ -1781,51 +1781,51 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "红山区",
-            url: ""
+            url: "http://www.hongshanqu.gov.cn/"
           },
           {
             name: "元宝山区",
-            url: ""
+            url: "http://www.ybsq.gov.cn/"
           },
           {
             name: "松山区",
-            url: ""
+            url: "http://www.ssq.gov.cn/"
           },
           {
             name: "阿鲁科尔沁旗",
-            url: ""
+            url: "http://www.alkeq.gov.cn/"
           },
           {
             name: "巴林左旗",
-            url: ""
+            url: "http://www.blzq.gov.cn/"
           },
           {
             name: "巴林右旗",
-            url: ""
+            url: "http://www.blyq.gov.cn/"
           },
           {
             name: "林西县",
-            url: ""
+            url: "http://www.linxi.gov.cn/"
           },
           {
             name: "克什克腾旗",
-            url: ""
+            url: "http://www.kskqq.gov.cn/"
           },
           {
             name: "翁牛特旗",
-            url: ""
+            url: "http://www.wntq.gov.cn/"
           },
           {
             name: "喀喇沁旗",
-            url: ""
+            url: "http://www.klq.gov.cn/"
           },
           {
             name: "宁城县",
-            url: ""
+            url: "http://www.nmgningcheng.gov.cn/"
           },
           {
             name: "敖汉旗",
-            url: ""
+            url: "http://www.aohan.gov.cn/"
           }
         ]
       },
@@ -1835,35 +1835,35 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "科尔沁区",
-            url: ""
+            url: "http://www.keerqin.gov.cn/"
           },
           {
             name: "科尔沁左翼中旗",
-            url: ""
+            url: "http://www.kzzq.gov.cn/"
           },
           {
             name: "科尔沁左翼后旗",
-            url: ""
+            url: "http://www.kzhq.gov.cn/"
           },
           {
             name: "开鲁县",
-            url: ""
+            url: "http://www.kailu.gov.cn/"
           },
           {
             name: "库伦旗",
-            url: ""
+            url: "http://www.kulun.gov.cn/"
           },
           {
             name: "奈曼旗",
-            url: ""
+            url: "http://www.naiman.gov.cn/"
           },
           {
             name: "扎鲁特旗",
-            url: ""
+            url: "http://www.zhalute.gov.cn/"
           },
           {
             name: "霍林郭勒市",
-            url: ""
+            url: "http://www.hlgl.gov.cn/"
           }
         ]
       },
@@ -1873,39 +1873,39 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "东胜区",
-            url: ""
+            url: "http://www.ds.gov.cn/"
           },
           {
             name: "康巴什区",
-            url: ""
+            url: "http://www.kbs.gov.cn/"
           },
           {
             name: "达拉特旗",
-            url: ""
+            url: "http://www.dlt.gov.cn/"
           },
           {
             name: "准格尔旗",
-            url: ""
+            url: "http://www.zge.gov.cn/"
           },
           {
             name: "鄂托克前旗",
-            url: ""
+            url: "http://www.etkqq.gov.cn/"
           },
           {
             name: "鄂托克旗",
-            url: ""
+            url: "http://www.etkq.gov.cn/"
           },
           {
             name: "杭锦旗",
-            url: ""
+            url: "http://www.hjq.gov.cn/"
           },
           {
             name: "乌审旗",
-            url: ""
+            url: "http://www.wsq.gov.cn/"
           },
           {
             name: "伊金霍洛旗",
-            url: ""
+            url: "http://www.yjl.gov.cn/"
           }
         ]
       },
@@ -1915,59 +1915,59 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "海拉尔区",
-            url: ""
+            url: "https://www.hailar.gov.cn/"
           },
           {
             name: "扎赉诺尔区",
-            url: ""
+            url: "http://www.zhalainuoer.gov.cn/"
           },
           {
             name: "阿荣旗",
-            url: ""
+            url: "http://www.arq.gov.cn/"
           },
           {
             name: "莫力达瓦达斡尔族自治旗",
-            url: ""
+            url: "https://www.mldw.gov.cn/"
           },
           {
             name: "鄂伦春自治旗",
-            url: ""
+            url: "http://www.elc.gov.cn/"
           },
           {
             name: "鄂温克族自治旗",
-            url: ""
+            url: "https://www.ewenke.gov.cn/"
           },
           {
             name: "陈巴尔虎旗",
-            url: ""
+            url: "http://www.cbrhq.gov.cn/"
           },
           {
             name: "新巴尔虎左旗",
-            url: ""
+            url: "http://www.xzq.gov.cn/"
           },
           {
             name: "新巴尔虎右旗",
-            url: ""
+            url: "http://www.xbehyq.gov.cn/"
           },
           {
             name: "满洲里市",
-            url: ""
+            url: "http://www.manzhouli.gov.cn/"
           },
           {
             name: "牙克石市",
-            url: ""
+            url: "https://www.yks.gov.cn/"
           },
           {
             name: "扎兰屯市",
-            url: ""
+            url: "https://www.zhalantun.gov.cn/"
           },
           {
             name: "额尔古纳市",
-            url: ""
+            url: "http://www.eegn.gov.cn/"
           },
           {
             name: "根河市",
-            url: ""
+            url: "https://www.genhe.gov.cn/"
           }
         ]
       },
@@ -1977,31 +1977,31 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "临河区",
-            url: ""
+            url: "http://www.linhe.gov.cn/"
           },
           {
             name: "五原县",
-            url: ""
+            url: "http://www.wuyuan.gov.cn/"
           },
           {
             name: "磴口县",
-            url: ""
+            url: "http://www.dengkou.gov.cn/"
           },
           {
             name: "乌拉特前旗",
-            url: ""
+            url: "http://www.wltqq.gov.cn/"
           },
           {
             name: "乌拉特中旗",
-            url: ""
+            url: "http://www.wltzq.gov.cn/"
           },
           {
             name: "乌拉特后旗",
-            url: ""
+            url: "http://www.wlthq.gov.cn/"
           },
           {
             name: "杭锦后旗",
-            url: ""
+            url: "http://www.hjhq.gov.cn/"
           }
         ]
       },
@@ -2011,47 +2011,47 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "集宁区",
-            url: ""
+            url: "http://www.jnq.gov.cn/"
           },
           {
             name: "卓资县",
-            url: ""
+            url: "https://www.zhuozi.gov.cn/"
           },
           {
             name: "化德县",
-            url: ""
+            url: "http://www.huade.gov.cn/"
           },
           {
             name: "商都县",
-            url: ""
+            url: "http://www.shangdu.gov.cn/"
           },
           {
             name: "兴和县",
-            url: ""
+            url: "https://www.xinghe.gov.cn/"
           },
           {
             name: "凉城县",
-            url: ""
+            url: "http://www.liangcheng.gov.cn/"
           },
           {
             name: "察哈尔右翼前旗",
-            url: ""
+            url: "http://www.chyyqq.gov.cn/"
           },
           {
             name: "察哈尔右翼中旗",
-            url: ""
+            url: "http://www.chayouzhongqi.gov.cn/"
           },
           {
             name: "察哈尔右翼后旗",
-            url: ""
+            url: "http://www.cyhq.gov.cn/"
           },
           {
             name: "四子王旗",
-            url: ""
+            url: "https://www.szwq.gov.cn/"
           },
           {
             name: "丰镇市",
-            url: ""
+            url: "https://www.fengzhen.gov.cn/"
           }
         ]
       },
@@ -2061,27 +2061,27 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "乌兰浩特市",
-            url: ""
+            url: "http://www.wlht.gov.cn/"
           },
           {
             name: "阿尔山市",
-            url: ""
+            url: "http://www.aes.gov.cn/"
           },
           {
             name: "科尔沁右翼前旗",
-            url: ""
+            url: "http://www.kyqq.gov.cn/"
           },
           {
             name: "科尔沁右翼中旗",
-            url: ""
+            url: "http://www.kyzq.gov.cn/"
           },
           {
             name: "扎赉特旗",
-            url: ""
+            url: "http://www.zltq.gov.cn/"
           },
           {
             name: "突泉县",
-            url: ""
+            url: "http://www.tq.gov.cn/"
           }
         ]
       },
@@ -2091,51 +2091,51 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "二连浩特市",
-            url: ""
+            url: "http://www.elht.gov.cn/"
           },
           {
             name: "锡林浩特市",
-            url: ""
+            url: "http://www.xilinhaote.gov.cn/"
           },
           {
             name: "阿巴嘎旗",
-            url: ""
+            url: "https://www.abg.gov.cn/"
           },
           {
             name: "苏尼特左旗",
-            url: ""
+            url: "https://www.sntzq.gov.cn/"
           },
           {
             name: "苏尼特右旗",
-            url: ""
+            url: "https://www.sntyq.gov.cn/"
           },
           {
             name: "东乌珠穆沁旗",
-            url: ""
+            url: "https://www.dwq.gov.cn/"
           },
           {
             name: "西乌珠穆沁旗",
-            url: ""
+            url: "https://www.xwq.gov.cn/"
           },
           {
             name: "太仆寺旗",
-            url: ""
+            url: "https://www.tpsq.gov.cn/"
           },
           {
             name: "镶黄旗",
-            url: ""
+            url: "https://www.nmxhq.gov.cn/"
           },
           {
             name: "正镶白旗",
-            url: ""
+            url: "https://www.zxbq.gov.cn/"
           },
           {
             name: "正蓝旗",
-            url: ""
+            url: "https://www.zlq.gov.cn/"
           },
           {
             name: "多伦县",
-            url: ""
+            url: "https://www.dlx.gov.cn/"
           }
         ]
       },
@@ -2145,15 +2145,15 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "阿拉善左旗",
-            url: ""
+            url: "http://www.alszq.gov.cn/"
           },
           {
             name: "阿拉善右旗",
-            url: ""
+            url: "https://www.alsyq.gov.cn/"
           },
           {
             name: "额济纳旗",
-            url: ""
+            url: "https://www.ejnq.gov.cn/"
           }
         ]
       }
