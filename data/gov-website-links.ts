@@ -11447,35 +11447,35 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "城关区",
-            url: ""
+            url: "https://www.cgq.gov.cn/"
           },
           {
             name: "堆龙德庆区",
-            url: ""
+            url: "https://www.dldqq.gov.cn/"
           },
           {
             name: "达孜区",
-            url: ""
+            url: "https://www.dzq.gov.cn/"
           },
           {
             name: "林周县",
-            url: ""
+            url: "https://www.linzhouxian.gov.cn/"
           },
           {
             name: "当雄县",
-            url: ""
+            url: "https://www.dxx.gov.cn/"
           },
           {
             name: "尼木县",
-            url: ""
+            url: "https://www.nmx.gov.cn/"
           },
           {
             name: "曲水县",
-            url: ""
+            url: "https://www.qushuixian.gov.cn/"
           },
           {
             name: "墨竹工卡县",
-            url: ""
+            url: "https://www.xzmzgk.gov.cn/"
           }
         ]
       },
@@ -11485,75 +11485,75 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "桑珠孜区",
-            url: ""
+            url: "http://www.sangzhuzi.gov.cn/"
           },
           {
             name: "南木林县",
-            url: ""
+            url: "http://www.nmlx.gov.cn/"
           },
           {
             name: "江孜县",
-            url: ""
+            url: "http://www.jiangzi.gov.cn/"
           },
           {
             name: "定日县",
-            url: ""
+            url: "http://www.dingri.gov.cn/"
           },
           {
             name: "萨迦县",
-            url: ""
+            url: "http://www.sajia.gov.cn/"
           },
           {
             name: "拉孜县",
-            url: ""
+            url: "http://www.lazi.gov.cn/"
           },
           {
             name: "昂仁县",
-            url: ""
+            url: "http://www.angren.gov.cn/"
           },
           {
             name: "谢通门县",
-            url: ""
+            url: "http://www.xietongmen.gov.cn/"
           },
           {
             name: "白朗县",
-            url: ""
+            url: "http://www.bailang.gov.cn/"
           },
           {
             name: "仁布县",
-            url: ""
+            url: "http://www.xzrb.gov.cn/"
           },
           {
             name: "康马县",
-            url: ""
+            url: "http://www.kmx.gov.cn/"
           },
           {
             name: "定结县",
-            url: ""
+            url: "http://www.xzdj.gov.cn/"
           },
           {
             name: "仲巴县",
-            url: ""
+            url: "http://www.zbx.gov.cn/"
           },
           {
             name: "亚东县",
-            url: ""
+            url: "http://www.xzyadong.gov.cn/"
           },
           {
             name: "吉隆县",
-            url: ""
+            url: "http://www.xzjilong.gov.cn/"
           },
           {
             name: "聂拉木县",
-            url: ""
+            url: "http://www.xznlm.gov.cn/"
           },
           {
             name: "萨嘎县",
-            url: ""
+            url: "http://www.xzsaga.gov.cn/"
           },
           {
             name: "岗巴县",
-            url: ""
+            url: "http://www.gangba.gov.cn/"
           }
         ]
       },
@@ -11563,47 +11563,47 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "卡若区",
-            url: ""
+            url: "https://karuo.changdu.gov.cn/"
           },
           {
             name: "江达县",
-            url: ""
+            url: "https://jiangda.changdu.gov.cn/"
           },
           {
             name: "贡觉县",
-            url: ""
+            url: "https://gongjue.changdu.gov.cn/"
           },
           {
             name: "类乌齐县",
-            url: ""
+            url: "https://leiwuqi.changdu.gov.cn/"
           },
           {
             name: "丁青县",
-            url: ""
+            url: "https://dingqing.changdu.gov.cn/"
           },
           {
             name: "察雅县",
-            url: ""
+            url: "https://chaya.changdu.gov.cn/"
           },
           {
             name: "八宿县",
-            url: ""
+            url: "https://basu.changdu.gov.cn/"
           },
           {
             name: "左贡县",
-            url: ""
+            url: "https://zuogong.changdu.gov.cn/"
           },
           {
             name: "芒康县",
-            url: ""
+            url: "https://mangkang.changdu.gov.cn/"
           },
           {
             name: "洛隆县",
-            url: ""
+            url: "https://luolong.changdu.gov.cn/"
           },
           {
             name: "边坝县",
-            url: ""
+            url: "https://bianba.changdu.gov.cn/"
           }
         ]
       },
@@ -11613,23 +11613,23 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "巴宜区",
-            url: ""
+            url: "http://www.bayiqu.gov.cn/"
           },
           {
             name: "工布江达县",
-            url: ""
+            url: "http://www.gongbujiangda.gov.cn/"
           },
           {
             name: "米林市",
-            url: ""
+            url: "http://www.milin.gov.cn/"
           },
           {
             name: "墨脱县",
-            url: ""
+            url: "http://www.motuo.gov.cn/"
           },
           {
             name: "波密县",
-            url: ""
+            url: "http://www.bomi.gov.cn/"
           },
           {
             name: "察隅县",
@@ -11637,7 +11637,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "朗县",
-            url: ""
+            url: "http://www.langxian.gov.cn/"
           }
         ]
       },
@@ -11647,51 +11647,51 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "乃东区",
-            url: ""
+            url: "http://www.naidong.gov.cn/"
           },
           {
             name: "扎囊县",
-            url: ""
+            url: "http://www.zhanang.gov.cn/"
           },
           {
             name: "贡嘎县",
-            url: ""
+            url: "http://www.gongga.gov.cn/"
           },
           {
             name: "桑日县",
-            url: ""
+            url: "http://www.sangri.gov.cn/"
           },
           {
             name: "琼结县",
-            url: ""
+            url: "http://www.qiongjie.gov.cn/"
           },
           {
             name: "曲松县",
-            url: ""
+            url: "http://www.qusong.gov.cn/"
           },
           {
             name: "措美县",
-            url: ""
+            url: "http://www.cuomei.gov.cn/"
           },
           {
             name: "洛扎县",
-            url: ""
+            url: "http://www.luozha.gov.cn/"
           },
           {
             name: "加查县",
-            url: ""
+            url: "http://www.jiacha.gov.cn/"
           },
           {
             name: "隆子县",
-            url: ""
+            url: "http://www.longzixian.gov.cn/"
           },
           {
             name: "错那市",
-            url: ""
+            url: "http://www.cuona.gov.cn/"
           },
           {
             name: "浪卡子县",
-            url: ""
+            url: "http://www.langkazi.gov.cn/"
           }
         ]
       },
@@ -11701,47 +11701,47 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "色尼区",
-            url: ""
+            url: "http://www.nqsnq.gov.cn/"
           },
           {
             name: "嘉黎县",
-            url: ""
+            url: "http://www.nqjlx.gov.cn/"
           },
           {
             name: "比如县",
-            url: ""
+            url: "http://www.nqbrx.gov.cn/"
           },
           {
             name: "聂荣县",
-            url: ""
+            url: "http://www.nqnrx.gov.cn/"
           },
           {
             name: "安多县",
-            url: ""
+            url: "http://www.nqadx.gov.cn/"
           },
           {
             name: "申扎县",
-            url: ""
+            url: "http://www.nqszx.gov.cn/"
           },
           {
             name: "索县",
-            url: ""
+            url: "http://www.nqsx.gov.cn/"
           },
           {
             name: "班戈县",
-            url: ""
+            url: "http://www.nqbgx.gov.cn/"
           },
           {
             name: "巴青县",
-            url: ""
+            url: "http://www.nqbqx.gov.cn/"
           },
           {
             name: "尼玛县",
-            url: ""
+            url: "http://www.nqnmx.gov.cn/"
           },
           {
             name: "双湖县",
-            url: ""
+            url: "http://www.nqshx.gov.cn/"
           }
         ]
       },
