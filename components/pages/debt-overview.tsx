@@ -2,7 +2,6 @@ import { DebtDataItem } from "@/lib/types";
 import { AnnualIssuanceDataset } from "@/lib/types";
 import { SimpleBarChart } from "@/components/charts/simple-bar-chart";
 import { SimpleLineChart } from "@/components/charts/simple-line-chart";
-import { FiscalBudgetNav } from "@/components/pages/fiscal-budget-nav";
 
 export function DebtOverview({ items, annualIssuance }: { items: DebtDataItem[]; annualIssuance: AnnualIssuanceDataset }) {
   const issuance = items.filter((item) => item.metricType === "issuance");
@@ -152,8 +151,6 @@ export function DebtOverview({ items, annualIssuance }: { items: DebtDataItem[];
           </div>
         </div>
       </article>
-
-      <FiscalBudgetNav />
 
       <div className="flex flex-col gap-3">
         {items.map((item) => (

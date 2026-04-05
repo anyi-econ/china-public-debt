@@ -1,0 +1,13542 @@
+/**
+ * 政府官网导航数据
+ *
+ * 链接查找优先级：
+ * 1. 该地区正式政府门户网站（www.{region}.gov.cn 形式）
+ * 2. 省/市/县人民政府官方网站
+ * 3. 无法确认则留空（灰色显示）
+ *
+ * 注意区分：
+ * - 政府门户网站（本文件收录）
+ * - 财政局官网（见 fiscal-budget-links.ts）
+ * - 门户导航页、信息公开平台等不收录
+ *
+ * url 为空字符串表示暂未找到可验证的政府门户网站
+ */
+
+export interface GovWebsiteNode {
+  name: string;
+  url: string;
+  children?: GovWebsiteNode[];
+}
+
+export const GOV_WEBSITES: GovWebsiteNode[] = [
+  {
+    name: "北京市",
+    url: "",
+    children: [
+      {
+        name: "东城区",
+        url: ""
+      },
+      {
+        name: "西城区",
+        url: ""
+      },
+      {
+        name: "朝阳区",
+        url: ""
+      },
+      {
+        name: "海淀区",
+        url: ""
+      },
+      {
+        name: "丰台区",
+        url: ""
+      },
+      {
+        name: "石景山区",
+        url: ""
+      },
+      {
+        name: "门头沟区",
+        url: ""
+      },
+      {
+        name: "房山区",
+        url: ""
+      },
+      {
+        name: "通州区",
+        url: ""
+      },
+      {
+        name: "顺义区",
+        url: ""
+      },
+      {
+        name: "昌平区",
+        url: ""
+      },
+      {
+        name: "大兴区",
+        url: ""
+      },
+      {
+        name: "怀柔区",
+        url: ""
+      },
+      {
+        name: "平谷区",
+        url: ""
+      },
+      {
+        name: "密云区",
+        url: ""
+      },
+      {
+        name: "延庆区",
+        url: ""
+      }
+    ]
+  },
+  {
+    name: "天津市",
+    url: "",
+    children: [
+      {
+        name: "和平区",
+        url: ""
+      },
+      {
+        name: "河东区",
+        url: ""
+      },
+      {
+        name: "河西区",
+        url: ""
+      },
+      {
+        name: "南开区",
+        url: ""
+      },
+      {
+        name: "河北区",
+        url: ""
+      },
+      {
+        name: "红桥区",
+        url: ""
+      },
+      {
+        name: "东丽区",
+        url: ""
+      },
+      {
+        name: "西青区",
+        url: ""
+      },
+      {
+        name: "津南区",
+        url: ""
+      },
+      {
+        name: "北辰区",
+        url: ""
+      },
+      {
+        name: "武清区",
+        url: ""
+      },
+      {
+        name: "宝坻区",
+        url: ""
+      },
+      {
+        name: "滨海新区",
+        url: ""
+      },
+      {
+        name: "宁河区",
+        url: ""
+      },
+      {
+        name: "静海区",
+        url: ""
+      },
+      {
+        name: "蓟州区",
+        url: ""
+      }
+    ]
+  },
+  {
+    name: "上海市",
+    url: "",
+    children: [
+      {
+        name: "黄浦区",
+        url: ""
+      },
+      {
+        name: "徐汇区",
+        url: ""
+      },
+      {
+        name: "长宁区",
+        url: ""
+      },
+      {
+        name: "静安区",
+        url: ""
+      },
+      {
+        name: "普陀区",
+        url: ""
+      },
+      {
+        name: "虹口区",
+        url: ""
+      },
+      {
+        name: "杨浦区",
+        url: ""
+      },
+      {
+        name: "闵行区",
+        url: ""
+      },
+      {
+        name: "宝山区",
+        url: ""
+      },
+      {
+        name: "嘉定区",
+        url: ""
+      },
+      {
+        name: "浦东新区",
+        url: ""
+      },
+      {
+        name: "金山区",
+        url: ""
+      },
+      {
+        name: "松江区",
+        url: ""
+      },
+      {
+        name: "青浦区",
+        url: ""
+      },
+      {
+        name: "奉贤区",
+        url: ""
+      },
+      {
+        name: "崇明区",
+        url: ""
+      }
+    ]
+  },
+  {
+    name: "重庆市",
+    url: "",
+    children: [
+      {
+        name: "万州区",
+        url: ""
+      },
+      {
+        name: "涪陵区",
+        url: ""
+      },
+      {
+        name: "渝中区",
+        url: ""
+      },
+      {
+        name: "大渡口区",
+        url: ""
+      },
+      {
+        name: "江北区",
+        url: ""
+      },
+      {
+        name: "沙坪坝区",
+        url: ""
+      },
+      {
+        name: "九龙坡区",
+        url: ""
+      },
+      {
+        name: "南岸区",
+        url: ""
+      },
+      {
+        name: "北碚区",
+        url: ""
+      },
+      {
+        name: "綦江区",
+        url: ""
+      },
+      {
+        name: "大足区",
+        url: ""
+      },
+      {
+        name: "渝北区",
+        url: ""
+      },
+      {
+        name: "巴南区",
+        url: ""
+      },
+      {
+        name: "黔江区",
+        url: ""
+      },
+      {
+        name: "长寿区",
+        url: ""
+      },
+      {
+        name: "江津区",
+        url: ""
+      },
+      {
+        name: "合川区",
+        url: ""
+      },
+      {
+        name: "永川区",
+        url: ""
+      },
+      {
+        name: "南川区",
+        url: ""
+      },
+      {
+        name: "璧山区",
+        url: ""
+      },
+      {
+        name: "铜梁区",
+        url: ""
+      },
+      {
+        name: "潼南区",
+        url: ""
+      },
+      {
+        name: "荣昌区",
+        url: ""
+      },
+      {
+        name: "开州区",
+        url: ""
+      },
+      {
+        name: "梁平区",
+        url: ""
+      },
+      {
+        name: "武隆区",
+        url: ""
+      },
+      {
+        name: "城口县",
+        url: ""
+      },
+      {
+        name: "丰都县",
+        url: ""
+      },
+      {
+        name: "垫江县",
+        url: ""
+      },
+      {
+        name: "忠县",
+        url: ""
+      },
+      {
+        name: "云阳县",
+        url: ""
+      },
+      {
+        name: "奉节县",
+        url: ""
+      },
+      {
+        name: "巫山县",
+        url: ""
+      },
+      {
+        name: "巫溪县",
+        url: ""
+      },
+      {
+        name: "石柱土家族自治县",
+        url: ""
+      },
+      {
+        name: "秀山土家族苗族自治县",
+        url: ""
+      },
+      {
+        name: "酉阳土家族苗族自治县",
+        url: ""
+      },
+      {
+        name: "彭水苗族土家族自治县",
+        url: ""
+      }
+    ]
+  },
+  {
+    name: "河北省",
+    url: "",
+    children: [
+      {
+        name: "石家庄市",
+        url: "",
+        children: [
+          {
+            name: "长安区",
+            url: ""
+          },
+          {
+            name: "桥西区",
+            url: ""
+          },
+          {
+            name: "新华区",
+            url: ""
+          },
+          {
+            name: "井陉矿区",
+            url: ""
+          },
+          {
+            name: "裕华区",
+            url: ""
+          },
+          {
+            name: "藁城区",
+            url: ""
+          },
+          {
+            name: "鹿泉区",
+            url: ""
+          },
+          {
+            name: "栾城区",
+            url: ""
+          },
+          {
+            name: "井陉县",
+            url: ""
+          },
+          {
+            name: "正定县",
+            url: ""
+          },
+          {
+            name: "行唐县",
+            url: ""
+          },
+          {
+            name: "灵寿县",
+            url: ""
+          },
+          {
+            name: "高邑县",
+            url: ""
+          },
+          {
+            name: "深泽县",
+            url: ""
+          },
+          {
+            name: "赞皇县",
+            url: ""
+          },
+          {
+            name: "无极县",
+            url: ""
+          },
+          {
+            name: "平山县",
+            url: ""
+          },
+          {
+            name: "元氏县",
+            url: ""
+          },
+          {
+            name: "赵县",
+            url: ""
+          },
+          {
+            name: "辛集市",
+            url: ""
+          },
+          {
+            name: "晋州市",
+            url: ""
+          },
+          {
+            name: "新乐市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "唐山市",
+        url: "",
+        children: [
+          {
+            name: "路南区",
+            url: ""
+          },
+          {
+            name: "路北区",
+            url: ""
+          },
+          {
+            name: "古冶区",
+            url: ""
+          },
+          {
+            name: "开平区",
+            url: ""
+          },
+          {
+            name: "丰南区",
+            url: ""
+          },
+          {
+            name: "丰润区",
+            url: ""
+          },
+          {
+            name: "曹妃甸区",
+            url: ""
+          },
+          {
+            name: "滦南县",
+            url: ""
+          },
+          {
+            name: "乐亭县",
+            url: ""
+          },
+          {
+            name: "迁西县",
+            url: ""
+          },
+          {
+            name: "玉田县",
+            url: ""
+          },
+          {
+            name: "遵化市",
+            url: ""
+          },
+          {
+            name: "迁安市",
+            url: ""
+          },
+          {
+            name: "滦州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "秦皇岛市",
+        url: "",
+        children: [
+          {
+            name: "海港区",
+            url: ""
+          },
+          {
+            name: "山海关区",
+            url: ""
+          },
+          {
+            name: "北戴河区",
+            url: ""
+          },
+          {
+            name: "抚宁区",
+            url: ""
+          },
+          {
+            name: "青龙满族自治县",
+            url: ""
+          },
+          {
+            name: "昌黎县",
+            url: ""
+          },
+          {
+            name: "卢龙县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "邯郸市",
+        url: "",
+        children: [
+          {
+            name: "邯山区",
+            url: ""
+          },
+          {
+            name: "丛台区",
+            url: ""
+          },
+          {
+            name: "复兴区",
+            url: ""
+          },
+          {
+            name: "峰峰矿区",
+            url: ""
+          },
+          {
+            name: "肥乡区",
+            url: ""
+          },
+          {
+            name: "永年区",
+            url: ""
+          },
+          {
+            name: "临漳县",
+            url: ""
+          },
+          {
+            name: "成安县",
+            url: ""
+          },
+          {
+            name: "大名县",
+            url: ""
+          },
+          {
+            name: "涉县",
+            url: ""
+          },
+          {
+            name: "磁县",
+            url: ""
+          },
+          {
+            name: "邱县",
+            url: ""
+          },
+          {
+            name: "鸡泽县",
+            url: ""
+          },
+          {
+            name: "广平县",
+            url: ""
+          },
+          {
+            name: "馆陶县",
+            url: ""
+          },
+          {
+            name: "魏县",
+            url: ""
+          },
+          {
+            name: "曲周县",
+            url: ""
+          },
+          {
+            name: "武安市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "邢台市",
+        url: "",
+        children: [
+          {
+            name: "襄都区",
+            url: ""
+          },
+          {
+            name: "信都区",
+            url: ""
+          },
+          {
+            name: "任泽区",
+            url: ""
+          },
+          {
+            name: "南和区",
+            url: ""
+          },
+          {
+            name: "临城县",
+            url: ""
+          },
+          {
+            name: "内丘县",
+            url: ""
+          },
+          {
+            name: "柏乡县",
+            url: ""
+          },
+          {
+            name: "隆尧县",
+            url: ""
+          },
+          {
+            name: "宁晋县",
+            url: ""
+          },
+          {
+            name: "巨鹿县",
+            url: ""
+          },
+          {
+            name: "新河县",
+            url: ""
+          },
+          {
+            name: "广宗县",
+            url: ""
+          },
+          {
+            name: "平乡县",
+            url: ""
+          },
+          {
+            name: "威县",
+            url: ""
+          },
+          {
+            name: "清河县",
+            url: ""
+          },
+          {
+            name: "临西县",
+            url: ""
+          },
+          {
+            name: "南宫市",
+            url: ""
+          },
+          {
+            name: "沙河市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "保定市",
+        url: "",
+        children: [
+          {
+            name: "竞秀区",
+            url: ""
+          },
+          {
+            name: "莲池区",
+            url: ""
+          },
+          {
+            name: "满城区",
+            url: ""
+          },
+          {
+            name: "清苑区",
+            url: ""
+          },
+          {
+            name: "徐水区",
+            url: ""
+          },
+          {
+            name: "涞水县",
+            url: ""
+          },
+          {
+            name: "阜平县",
+            url: ""
+          },
+          {
+            name: "定兴县",
+            url: ""
+          },
+          {
+            name: "唐县",
+            url: ""
+          },
+          {
+            name: "高阳县",
+            url: ""
+          },
+          {
+            name: "容城县",
+            url: ""
+          },
+          {
+            name: "涞源县",
+            url: ""
+          },
+          {
+            name: "望都县",
+            url: ""
+          },
+          {
+            name: "安新县",
+            url: ""
+          },
+          {
+            name: "易县",
+            url: ""
+          },
+          {
+            name: "曲阳县",
+            url: ""
+          },
+          {
+            name: "蠡县",
+            url: ""
+          },
+          {
+            name: "顺平县",
+            url: ""
+          },
+          {
+            name: "博野县",
+            url: ""
+          },
+          {
+            name: "雄县",
+            url: ""
+          },
+          {
+            name: "涿州市",
+            url: ""
+          },
+          {
+            name: "定州市",
+            url: ""
+          },
+          {
+            name: "安国市",
+            url: ""
+          },
+          {
+            name: "高碑店市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "张家口市",
+        url: "",
+        children: [
+          {
+            name: "桥东区",
+            url: ""
+          },
+          {
+            name: "桥西区",
+            url: ""
+          },
+          {
+            name: "宣化区",
+            url: ""
+          },
+          {
+            name: "下花园区",
+            url: ""
+          },
+          {
+            name: "万全区",
+            url: ""
+          },
+          {
+            name: "崇礼区",
+            url: ""
+          },
+          {
+            name: "张北县",
+            url: ""
+          },
+          {
+            name: "康保县",
+            url: ""
+          },
+          {
+            name: "沽源县",
+            url: ""
+          },
+          {
+            name: "尚义县",
+            url: ""
+          },
+          {
+            name: "蔚县",
+            url: ""
+          },
+          {
+            name: "阳原县",
+            url: ""
+          },
+          {
+            name: "怀安县",
+            url: ""
+          },
+          {
+            name: "怀来县",
+            url: ""
+          },
+          {
+            name: "涿鹿县",
+            url: ""
+          },
+          {
+            name: "赤城县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "承德市",
+        url: "",
+        children: [
+          {
+            name: "双桥区",
+            url: ""
+          },
+          {
+            name: "双滦区",
+            url: ""
+          },
+          {
+            name: "鹰手营子矿区",
+            url: ""
+          },
+          {
+            name: "承德县",
+            url: ""
+          },
+          {
+            name: "兴隆县",
+            url: ""
+          },
+          {
+            name: "滦平县",
+            url: ""
+          },
+          {
+            name: "隆化县",
+            url: ""
+          },
+          {
+            name: "丰宁满族自治县",
+            url: ""
+          },
+          {
+            name: "宽城满族自治县",
+            url: ""
+          },
+          {
+            name: "围场满族蒙古族自治县",
+            url: ""
+          },
+          {
+            name: "平泉市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "沧州市",
+        url: "",
+        children: [
+          {
+            name: "新华区",
+            url: ""
+          },
+          {
+            name: "运河区",
+            url: ""
+          },
+          {
+            name: "沧县",
+            url: ""
+          },
+          {
+            name: "青县",
+            url: ""
+          },
+          {
+            name: "东光县",
+            url: ""
+          },
+          {
+            name: "海兴县",
+            url: ""
+          },
+          {
+            name: "盐山县",
+            url: ""
+          },
+          {
+            name: "肃宁县",
+            url: ""
+          },
+          {
+            name: "南皮县",
+            url: ""
+          },
+          {
+            name: "吴桥县",
+            url: ""
+          },
+          {
+            name: "献县",
+            url: ""
+          },
+          {
+            name: "孟村回族自治县",
+            url: ""
+          },
+          {
+            name: "泊头市",
+            url: ""
+          },
+          {
+            name: "任丘市",
+            url: ""
+          },
+          {
+            name: "黄骅市",
+            url: ""
+          },
+          {
+            name: "河间市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "廊坊市",
+        url: "",
+        children: [
+          {
+            name: "安次区",
+            url: ""
+          },
+          {
+            name: "广阳区",
+            url: ""
+          },
+          {
+            name: "固安县",
+            url: ""
+          },
+          {
+            name: "永清县",
+            url: ""
+          },
+          {
+            name: "香河县",
+            url: ""
+          },
+          {
+            name: "大城县",
+            url: ""
+          },
+          {
+            name: "文安县",
+            url: ""
+          },
+          {
+            name: "大厂回族自治县",
+            url: ""
+          },
+          {
+            name: "霸州市",
+            url: ""
+          },
+          {
+            name: "三河市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "衡水市",
+        url: "",
+        children: [
+          {
+            name: "桃城区",
+            url: ""
+          },
+          {
+            name: "冀州区",
+            url: ""
+          },
+          {
+            name: "枣强县",
+            url: ""
+          },
+          {
+            name: "武邑县",
+            url: ""
+          },
+          {
+            name: "武强县",
+            url: ""
+          },
+          {
+            name: "饶阳县",
+            url: ""
+          },
+          {
+            name: "安平县",
+            url: ""
+          },
+          {
+            name: "故城县",
+            url: ""
+          },
+          {
+            name: "景县",
+            url: ""
+          },
+          {
+            name: "阜城县",
+            url: ""
+          },
+          {
+            name: "深州市",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "山西省",
+    url: "",
+    children: [
+      {
+        name: "太原市",
+        url: "",
+        children: [
+          {
+            name: "小店区",
+            url: ""
+          },
+          {
+            name: "迎泽区",
+            url: ""
+          },
+          {
+            name: "杏花岭区",
+            url: ""
+          },
+          {
+            name: "尖草坪区",
+            url: ""
+          },
+          {
+            name: "万柏林区",
+            url: ""
+          },
+          {
+            name: "晋源区",
+            url: ""
+          },
+          {
+            name: "清徐县",
+            url: ""
+          },
+          {
+            name: "阳曲县",
+            url: ""
+          },
+          {
+            name: "娄烦县",
+            url: ""
+          },
+          {
+            name: "古交市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "大同市",
+        url: "",
+        children: [
+          {
+            name: "新荣区",
+            url: ""
+          },
+          {
+            name: "平城区",
+            url: ""
+          },
+          {
+            name: "云冈区",
+            url: ""
+          },
+          {
+            name: "云州区",
+            url: ""
+          },
+          {
+            name: "阳高县",
+            url: ""
+          },
+          {
+            name: "天镇县",
+            url: ""
+          },
+          {
+            name: "广灵县",
+            url: ""
+          },
+          {
+            name: "灵丘县",
+            url: ""
+          },
+          {
+            name: "浑源县",
+            url: ""
+          },
+          {
+            name: "左云县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "阳泉市",
+        url: "",
+        children: [
+          {
+            name: "城区",
+            url: ""
+          },
+          {
+            name: "矿区",
+            url: ""
+          },
+          {
+            name: "郊区",
+            url: ""
+          },
+          {
+            name: "平定县",
+            url: ""
+          },
+          {
+            name: "盂县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "长治市",
+        url: "",
+        children: [
+          {
+            name: "潞州区",
+            url: ""
+          },
+          {
+            name: "上党区",
+            url: ""
+          },
+          {
+            name: "屯留区",
+            url: ""
+          },
+          {
+            name: "潞城区",
+            url: ""
+          },
+          {
+            name: "襄垣县",
+            url: ""
+          },
+          {
+            name: "平顺县",
+            url: ""
+          },
+          {
+            name: "黎城县",
+            url: ""
+          },
+          {
+            name: "壶关县",
+            url: ""
+          },
+          {
+            name: "长子县",
+            url: ""
+          },
+          {
+            name: "武乡县",
+            url: ""
+          },
+          {
+            name: "沁县",
+            url: ""
+          },
+          {
+            name: "沁源县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "晋城市",
+        url: "",
+        children: [
+          {
+            name: "城区",
+            url: ""
+          },
+          {
+            name: "沁水县",
+            url: ""
+          },
+          {
+            name: "阳城县",
+            url: ""
+          },
+          {
+            name: "陵川县",
+            url: ""
+          },
+          {
+            name: "泽州县",
+            url: ""
+          },
+          {
+            name: "高平市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "朔州市",
+        url: "",
+        children: [
+          {
+            name: "朔城区",
+            url: ""
+          },
+          {
+            name: "平鲁区",
+            url: ""
+          },
+          {
+            name: "怀仁市",
+            url: ""
+          },
+          {
+            name: "山阴县",
+            url: ""
+          },
+          {
+            name: "应县",
+            url: ""
+          },
+          {
+            name: "右玉县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "晋中市",
+        url: "",
+        children: [
+          {
+            name: "榆次区",
+            url: ""
+          },
+          {
+            name: "太谷区",
+            url: ""
+          },
+          {
+            name: "榆社县",
+            url: ""
+          },
+          {
+            name: "左权县",
+            url: ""
+          },
+          {
+            name: "和顺县",
+            url: ""
+          },
+          {
+            name: "昔阳县",
+            url: ""
+          },
+          {
+            name: "寿阳县",
+            url: ""
+          },
+          {
+            name: "祁县",
+            url: ""
+          },
+          {
+            name: "平遥县",
+            url: ""
+          },
+          {
+            name: "灵石县",
+            url: ""
+          },
+          {
+            name: "介休市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "运城市",
+        url: "",
+        children: [
+          {
+            name: "盐湖区",
+            url: ""
+          },
+          {
+            name: "临猗县",
+            url: ""
+          },
+          {
+            name: "万荣县",
+            url: ""
+          },
+          {
+            name: "闻喜县",
+            url: ""
+          },
+          {
+            name: "稷山县",
+            url: ""
+          },
+          {
+            name: "新绛县",
+            url: ""
+          },
+          {
+            name: "绛县",
+            url: ""
+          },
+          {
+            name: "垣曲县",
+            url: ""
+          },
+          {
+            name: "夏县",
+            url: ""
+          },
+          {
+            name: "平陆县",
+            url: ""
+          },
+          {
+            name: "芮城县",
+            url: ""
+          },
+          {
+            name: "永济市",
+            url: ""
+          },
+          {
+            name: "河津市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "忻州市",
+        url: "",
+        children: [
+          {
+            name: "忻府区",
+            url: ""
+          },
+          {
+            name: "定襄县",
+            url: ""
+          },
+          {
+            name: "五台县",
+            url: ""
+          },
+          {
+            name: "代县",
+            url: ""
+          },
+          {
+            name: "繁峙县",
+            url: ""
+          },
+          {
+            name: "宁武县",
+            url: ""
+          },
+          {
+            name: "静乐县",
+            url: ""
+          },
+          {
+            name: "神池县",
+            url: ""
+          },
+          {
+            name: "五寨县",
+            url: ""
+          },
+          {
+            name: "岢岚县",
+            url: ""
+          },
+          {
+            name: "河曲县",
+            url: ""
+          },
+          {
+            name: "保德县",
+            url: ""
+          },
+          {
+            name: "偏关县",
+            url: ""
+          },
+          {
+            name: "原平市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "临汾市",
+        url: "",
+        children: [
+          {
+            name: "尧都区",
+            url: ""
+          },
+          {
+            name: "曲沃县",
+            url: ""
+          },
+          {
+            name: "翼城县",
+            url: ""
+          },
+          {
+            name: "襄汾县",
+            url: ""
+          },
+          {
+            name: "洪洞县",
+            url: ""
+          },
+          {
+            name: "古县",
+            url: ""
+          },
+          {
+            name: "安泽县",
+            url: ""
+          },
+          {
+            name: "浮山县",
+            url: ""
+          },
+          {
+            name: "吉县",
+            url: ""
+          },
+          {
+            name: "乡宁县",
+            url: ""
+          },
+          {
+            name: "大宁县",
+            url: ""
+          },
+          {
+            name: "隰县",
+            url: ""
+          },
+          {
+            name: "永和县",
+            url: ""
+          },
+          {
+            name: "蒲县",
+            url: ""
+          },
+          {
+            name: "汾西县",
+            url: ""
+          },
+          {
+            name: "侯马市",
+            url: ""
+          },
+          {
+            name: "霍州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "吕梁市",
+        url: "",
+        children: [
+          {
+            name: "离石区",
+            url: ""
+          },
+          {
+            name: "文水县",
+            url: ""
+          },
+          {
+            name: "交城县",
+            url: ""
+          },
+          {
+            name: "兴县",
+            url: ""
+          },
+          {
+            name: "临县",
+            url: ""
+          },
+          {
+            name: "柳林县",
+            url: ""
+          },
+          {
+            name: "石楼县",
+            url: ""
+          },
+          {
+            name: "岚县",
+            url: ""
+          },
+          {
+            name: "方山县",
+            url: ""
+          },
+          {
+            name: "中阳县",
+            url: ""
+          },
+          {
+            name: "交口县",
+            url: ""
+          },
+          {
+            name: "孝义市",
+            url: ""
+          },
+          {
+            name: "汾阳市",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "内蒙古自治区",
+    url: "",
+    children: [
+      {
+        name: "呼和浩特市",
+        url: "",
+        children: [
+          {
+            name: "新城区",
+            url: ""
+          },
+          {
+            name: "回民区",
+            url: ""
+          },
+          {
+            name: "玉泉区",
+            url: ""
+          },
+          {
+            name: "赛罕区",
+            url: ""
+          },
+          {
+            name: "土默特左旗",
+            url: ""
+          },
+          {
+            name: "托克托县",
+            url: ""
+          },
+          {
+            name: "和林格尔县",
+            url: ""
+          },
+          {
+            name: "清水河县",
+            url: ""
+          },
+          {
+            name: "武川县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "包头市",
+        url: "",
+        children: [
+          {
+            name: "东河区",
+            url: ""
+          },
+          {
+            name: "昆都仑区",
+            url: ""
+          },
+          {
+            name: "青山区",
+            url: ""
+          },
+          {
+            name: "石拐区",
+            url: ""
+          },
+          {
+            name: "白云鄂博矿区",
+            url: ""
+          },
+          {
+            name: "九原区",
+            url: ""
+          },
+          {
+            name: "土默特右旗",
+            url: ""
+          },
+          {
+            name: "固阳县",
+            url: ""
+          },
+          {
+            name: "达尔罕茂明安联合旗",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "乌海市",
+        url: "",
+        children: [
+          {
+            name: "海勃湾区",
+            url: ""
+          },
+          {
+            name: "海南区",
+            url: ""
+          },
+          {
+            name: "乌达区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "赤峰市",
+        url: "",
+        children: [
+          {
+            name: "红山区",
+            url: ""
+          },
+          {
+            name: "元宝山区",
+            url: ""
+          },
+          {
+            name: "松山区",
+            url: ""
+          },
+          {
+            name: "阿鲁科尔沁旗",
+            url: ""
+          },
+          {
+            name: "巴林左旗",
+            url: ""
+          },
+          {
+            name: "巴林右旗",
+            url: ""
+          },
+          {
+            name: "林西县",
+            url: ""
+          },
+          {
+            name: "克什克腾旗",
+            url: ""
+          },
+          {
+            name: "翁牛特旗",
+            url: ""
+          },
+          {
+            name: "喀喇沁旗",
+            url: ""
+          },
+          {
+            name: "宁城县",
+            url: ""
+          },
+          {
+            name: "敖汉旗",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "通辽市",
+        url: "",
+        children: [
+          {
+            name: "科尔沁区",
+            url: ""
+          },
+          {
+            name: "科尔沁左翼中旗",
+            url: ""
+          },
+          {
+            name: "科尔沁左翼后旗",
+            url: ""
+          },
+          {
+            name: "开鲁县",
+            url: ""
+          },
+          {
+            name: "库伦旗",
+            url: ""
+          },
+          {
+            name: "奈曼旗",
+            url: ""
+          },
+          {
+            name: "扎鲁特旗",
+            url: ""
+          },
+          {
+            name: "霍林郭勒市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "鄂尔多斯市",
+        url: "",
+        children: [
+          {
+            name: "东胜区",
+            url: ""
+          },
+          {
+            name: "康巴什区",
+            url: ""
+          },
+          {
+            name: "达拉特旗",
+            url: ""
+          },
+          {
+            name: "准格尔旗",
+            url: ""
+          },
+          {
+            name: "鄂托克前旗",
+            url: ""
+          },
+          {
+            name: "鄂托克旗",
+            url: ""
+          },
+          {
+            name: "杭锦旗",
+            url: ""
+          },
+          {
+            name: "乌审旗",
+            url: ""
+          },
+          {
+            name: "伊金霍洛旗",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "呼伦贝尔市",
+        url: "",
+        children: [
+          {
+            name: "海拉尔区",
+            url: ""
+          },
+          {
+            name: "扎赉诺尔区",
+            url: ""
+          },
+          {
+            name: "阿荣旗",
+            url: ""
+          },
+          {
+            name: "莫力达瓦达斡尔族自治旗",
+            url: ""
+          },
+          {
+            name: "鄂伦春自治旗",
+            url: ""
+          },
+          {
+            name: "鄂温克族自治旗",
+            url: ""
+          },
+          {
+            name: "陈巴尔虎旗",
+            url: ""
+          },
+          {
+            name: "新巴尔虎左旗",
+            url: ""
+          },
+          {
+            name: "新巴尔虎右旗",
+            url: ""
+          },
+          {
+            name: "满洲里市",
+            url: ""
+          },
+          {
+            name: "牙克石市",
+            url: ""
+          },
+          {
+            name: "扎兰屯市",
+            url: ""
+          },
+          {
+            name: "额尔古纳市",
+            url: ""
+          },
+          {
+            name: "根河市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "巴彦淖尔市",
+        url: "",
+        children: [
+          {
+            name: "临河区",
+            url: ""
+          },
+          {
+            name: "五原县",
+            url: ""
+          },
+          {
+            name: "磴口县",
+            url: ""
+          },
+          {
+            name: "乌拉特前旗",
+            url: ""
+          },
+          {
+            name: "乌拉特中旗",
+            url: ""
+          },
+          {
+            name: "乌拉特后旗",
+            url: ""
+          },
+          {
+            name: "杭锦后旗",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "乌兰察布市",
+        url: "",
+        children: [
+          {
+            name: "集宁区",
+            url: ""
+          },
+          {
+            name: "卓资县",
+            url: ""
+          },
+          {
+            name: "化德县",
+            url: ""
+          },
+          {
+            name: "商都县",
+            url: ""
+          },
+          {
+            name: "兴和县",
+            url: ""
+          },
+          {
+            name: "凉城县",
+            url: ""
+          },
+          {
+            name: "察哈尔右翼前旗",
+            url: ""
+          },
+          {
+            name: "察哈尔右翼中旗",
+            url: ""
+          },
+          {
+            name: "察哈尔右翼后旗",
+            url: ""
+          },
+          {
+            name: "四子王旗",
+            url: ""
+          },
+          {
+            name: "丰镇市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "兴安盟",
+        url: "",
+        children: [
+          {
+            name: "乌兰浩特市",
+            url: ""
+          },
+          {
+            name: "阿尔山市",
+            url: ""
+          },
+          {
+            name: "科尔沁右翼前旗",
+            url: ""
+          },
+          {
+            name: "科尔沁右翼中旗",
+            url: ""
+          },
+          {
+            name: "扎赉特旗",
+            url: ""
+          },
+          {
+            name: "突泉县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "锡林郭勒盟",
+        url: "",
+        children: [
+          {
+            name: "二连浩特市",
+            url: ""
+          },
+          {
+            name: "锡林浩特市",
+            url: ""
+          },
+          {
+            name: "阿巴嘎旗",
+            url: ""
+          },
+          {
+            name: "苏尼特左旗",
+            url: ""
+          },
+          {
+            name: "苏尼特右旗",
+            url: ""
+          },
+          {
+            name: "东乌珠穆沁旗",
+            url: ""
+          },
+          {
+            name: "西乌珠穆沁旗",
+            url: ""
+          },
+          {
+            name: "太仆寺旗",
+            url: ""
+          },
+          {
+            name: "镶黄旗",
+            url: ""
+          },
+          {
+            name: "正镶白旗",
+            url: ""
+          },
+          {
+            name: "正蓝旗",
+            url: ""
+          },
+          {
+            name: "多伦县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "阿拉善盟",
+        url: "",
+        children: [
+          {
+            name: "阿拉善左旗",
+            url: ""
+          },
+          {
+            name: "阿拉善右旗",
+            url: ""
+          },
+          {
+            name: "额济纳旗",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "辽宁省",
+    url: "",
+    children: [
+      {
+        name: "沈阳市",
+        url: "",
+        children: [
+          {
+            name: "和平区",
+            url: ""
+          },
+          {
+            name: "沈河区",
+            url: ""
+          },
+          {
+            name: "大东区",
+            url: ""
+          },
+          {
+            name: "皇姑区",
+            url: ""
+          },
+          {
+            name: "铁西区",
+            url: ""
+          },
+          {
+            name: "苏家屯区",
+            url: ""
+          },
+          {
+            name: "浑南区",
+            url: ""
+          },
+          {
+            name: "沈北新区",
+            url: ""
+          },
+          {
+            name: "于洪区",
+            url: ""
+          },
+          {
+            name: "辽中区",
+            url: ""
+          },
+          {
+            name: "康平县",
+            url: ""
+          },
+          {
+            name: "法库县",
+            url: ""
+          },
+          {
+            name: "新民市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "大连市",
+        url: "",
+        children: [
+          {
+            name: "中山区",
+            url: ""
+          },
+          {
+            name: "西岗区",
+            url: ""
+          },
+          {
+            name: "沙河口区",
+            url: ""
+          },
+          {
+            name: "甘井子区",
+            url: ""
+          },
+          {
+            name: "旅顺口区",
+            url: ""
+          },
+          {
+            name: "金州区",
+            url: ""
+          },
+          {
+            name: "普兰店区",
+            url: ""
+          },
+          {
+            name: "长海县",
+            url: ""
+          },
+          {
+            name: "瓦房店市",
+            url: ""
+          },
+          {
+            name: "庄河市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "鞍山市",
+        url: "",
+        children: [
+          {
+            name: "铁东区",
+            url: ""
+          },
+          {
+            name: "铁西区",
+            url: ""
+          },
+          {
+            name: "立山区",
+            url: ""
+          },
+          {
+            name: "千山区",
+            url: ""
+          },
+          {
+            name: "台安县",
+            url: ""
+          },
+          {
+            name: "岫岩满族自治县",
+            url: ""
+          },
+          {
+            name: "海城市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "抚顺市",
+        url: "",
+        children: [
+          {
+            name: "新抚区",
+            url: ""
+          },
+          {
+            name: "东洲区",
+            url: ""
+          },
+          {
+            name: "望花区",
+            url: ""
+          },
+          {
+            name: "顺城区",
+            url: ""
+          },
+          {
+            name: "抚顺县",
+            url: ""
+          },
+          {
+            name: "新宾满族自治县",
+            url: ""
+          },
+          {
+            name: "清原满族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "本溪市",
+        url: "",
+        children: [
+          {
+            name: "平山区",
+            url: ""
+          },
+          {
+            name: "溪湖区",
+            url: ""
+          },
+          {
+            name: "明山区",
+            url: ""
+          },
+          {
+            name: "南芬区",
+            url: ""
+          },
+          {
+            name: "本溪满族自治县",
+            url: ""
+          },
+          {
+            name: "桓仁满族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "丹东市",
+        url: "",
+        children: [
+          {
+            name: "元宝区",
+            url: ""
+          },
+          {
+            name: "振兴区",
+            url: ""
+          },
+          {
+            name: "振安区",
+            url: ""
+          },
+          {
+            name: "宽甸满族自治县",
+            url: ""
+          },
+          {
+            name: "东港市",
+            url: ""
+          },
+          {
+            name: "凤城市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "锦州市",
+        url: "",
+        children: [
+          {
+            name: "古塔区",
+            url: ""
+          },
+          {
+            name: "凌河区",
+            url: ""
+          },
+          {
+            name: "太和区",
+            url: ""
+          },
+          {
+            name: "义县",
+            url: ""
+          },
+          {
+            name: "黑山县",
+            url: ""
+          },
+          {
+            name: "北镇市",
+            url: ""
+          },
+          {
+            name: "凌海市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "营口市",
+        url: "",
+        children: [
+          {
+            name: "站前区",
+            url: ""
+          },
+          {
+            name: "西市区",
+            url: ""
+          },
+          {
+            name: "鲅鱼圈区",
+            url: ""
+          },
+          {
+            name: "老边区",
+            url: ""
+          },
+          {
+            name: "盖州市",
+            url: ""
+          },
+          {
+            name: "大石桥市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "阜新市",
+        url: "",
+        children: [
+          {
+            name: "海州区",
+            url: ""
+          },
+          {
+            name: "新邱区",
+            url: ""
+          },
+          {
+            name: "太平区",
+            url: ""
+          },
+          {
+            name: "清河门区",
+            url: ""
+          },
+          {
+            name: "细河区",
+            url: ""
+          },
+          {
+            name: "阜新蒙古族自治县",
+            url: ""
+          },
+          {
+            name: "彰武县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "辽阳市",
+        url: "",
+        children: [
+          {
+            name: "白塔区",
+            url: ""
+          },
+          {
+            name: "文圣区",
+            url: ""
+          },
+          {
+            name: "宏伟区",
+            url: ""
+          },
+          {
+            name: "弓长岭区",
+            url: ""
+          },
+          {
+            name: "太子河区",
+            url: ""
+          },
+          {
+            name: "辽阳县",
+            url: ""
+          },
+          {
+            name: "灯塔市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "盘锦市",
+        url: "",
+        children: [
+          {
+            name: "双台子区",
+            url: ""
+          },
+          {
+            name: "兴隆台区",
+            url: ""
+          },
+          {
+            name: "大洼区",
+            url: ""
+          },
+          {
+            name: "盘山县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "铁岭市",
+        url: "",
+        children: [
+          {
+            name: "银州区",
+            url: ""
+          },
+          {
+            name: "清河区",
+            url: ""
+          },
+          {
+            name: "铁岭县",
+            url: ""
+          },
+          {
+            name: "西丰县",
+            url: ""
+          },
+          {
+            name: "昌图县",
+            url: ""
+          },
+          {
+            name: "调兵山市",
+            url: ""
+          },
+          {
+            name: "开原市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "朝阳市",
+        url: "",
+        children: [
+          {
+            name: "双塔区",
+            url: ""
+          },
+          {
+            name: "龙城区",
+            url: ""
+          },
+          {
+            name: "朝阳县",
+            url: ""
+          },
+          {
+            name: "建平县",
+            url: ""
+          },
+          {
+            name: "喀喇沁左翼蒙古族自治县",
+            url: ""
+          },
+          {
+            name: "北票市",
+            url: ""
+          },
+          {
+            name: "凌源市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "葫芦岛市",
+        url: "",
+        children: [
+          {
+            name: "连山区",
+            url: ""
+          },
+          {
+            name: "龙港区",
+            url: ""
+          },
+          {
+            name: "南票区",
+            url: ""
+          },
+          {
+            name: "绥中县",
+            url: ""
+          },
+          {
+            name: "建昌县",
+            url: ""
+          },
+          {
+            name: "兴城市",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "吉林省",
+    url: "",
+    children: [
+      {
+        name: "长春市",
+        url: "",
+        children: [
+          {
+            name: "南关区",
+            url: ""
+          },
+          {
+            name: "宽城区",
+            url: ""
+          },
+          {
+            name: "朝阳区",
+            url: ""
+          },
+          {
+            name: "二道区",
+            url: ""
+          },
+          {
+            name: "绿园区",
+            url: ""
+          },
+          {
+            name: "双阳区",
+            url: ""
+          },
+          {
+            name: "九台区",
+            url: ""
+          },
+          {
+            name: "农安县",
+            url: ""
+          },
+          {
+            name: "榆树市",
+            url: ""
+          },
+          {
+            name: "德惠市",
+            url: ""
+          },
+          {
+            name: "公主岭市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "吉林市",
+        url: "",
+        children: [
+          {
+            name: "昌邑区",
+            url: ""
+          },
+          {
+            name: "龙潭区",
+            url: ""
+          },
+          {
+            name: "船营区",
+            url: ""
+          },
+          {
+            name: "丰满区",
+            url: ""
+          },
+          {
+            name: "永吉县",
+            url: ""
+          },
+          {
+            name: "蛟河市",
+            url: ""
+          },
+          {
+            name: "桦甸市",
+            url: ""
+          },
+          {
+            name: "舒兰市",
+            url: ""
+          },
+          {
+            name: "磐石市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "四平市",
+        url: "",
+        children: [
+          {
+            name: "铁西区",
+            url: ""
+          },
+          {
+            name: "铁东区",
+            url: ""
+          },
+          {
+            name: "梨树县",
+            url: ""
+          },
+          {
+            name: "伊通满族自治县",
+            url: ""
+          },
+          {
+            name: "公主岭市",
+            url: ""
+          },
+          {
+            name: "双辽市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "辽源市",
+        url: "",
+        children: [
+          {
+            name: "龙山区",
+            url: ""
+          },
+          {
+            name: "西安区",
+            url: ""
+          },
+          {
+            name: "东丰县",
+            url: ""
+          },
+          {
+            name: "东辽县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "通化市",
+        url: "",
+        children: [
+          {
+            name: "东昌区",
+            url: ""
+          },
+          {
+            name: "二道江区",
+            url: ""
+          },
+          {
+            name: "通化县",
+            url: ""
+          },
+          {
+            name: "辉南县",
+            url: ""
+          },
+          {
+            name: "柳河县",
+            url: ""
+          },
+          {
+            name: "梅河口市",
+            url: ""
+          },
+          {
+            name: "集安市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "白山市",
+        url: "",
+        children: [
+          {
+            name: "浑江区",
+            url: ""
+          },
+          {
+            name: "江源区",
+            url: ""
+          },
+          {
+            name: "抚松县",
+            url: ""
+          },
+          {
+            name: "靖宇县",
+            url: ""
+          },
+          {
+            name: "长白朝鲜族自治县",
+            url: ""
+          },
+          {
+            name: "临江市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "松原市",
+        url: "",
+        children: [
+          {
+            name: "宁江区",
+            url: ""
+          },
+          {
+            name: "前郭尔罗斯蒙古族自治县",
+            url: ""
+          },
+          {
+            name: "长岭县",
+            url: ""
+          },
+          {
+            name: "乾安县",
+            url: ""
+          },
+          {
+            name: "扶余市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "白城市",
+        url: "",
+        children: [
+          {
+            name: "洮北区",
+            url: ""
+          },
+          {
+            name: "镇赉县",
+            url: ""
+          },
+          {
+            name: "通榆县",
+            url: ""
+          },
+          {
+            name: "洮南市",
+            url: ""
+          },
+          {
+            name: "大安市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "延边朝鲜族自治州",
+        url: "",
+        children: [
+          {
+            name: "延吉市",
+            url: ""
+          },
+          {
+            name: "图们市",
+            url: ""
+          },
+          {
+            name: "敦化市",
+            url: ""
+          },
+          {
+            name: "珲春市",
+            url: ""
+          },
+          {
+            name: "龙井市",
+            url: ""
+          },
+          {
+            name: "和龙市",
+            url: ""
+          },
+          {
+            name: "汪清县",
+            url: ""
+          },
+          {
+            name: "安图县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "黑龙江省",
+    url: "",
+    children: [
+      {
+        name: "哈尔滨市",
+        url: "",
+        children: [
+          {
+            name: "道里区",
+            url: ""
+          },
+          {
+            name: "南岗区",
+            url: ""
+          },
+          {
+            name: "道外区",
+            url: ""
+          },
+          {
+            name: "平房区",
+            url: ""
+          },
+          {
+            name: "松北区",
+            url: ""
+          },
+          {
+            name: "香坊区",
+            url: ""
+          },
+          {
+            name: "呼兰区",
+            url: ""
+          },
+          {
+            name: "阿城区",
+            url: ""
+          },
+          {
+            name: "双城区",
+            url: ""
+          },
+          {
+            name: "依兰县",
+            url: ""
+          },
+          {
+            name: "方正县",
+            url: ""
+          },
+          {
+            name: "宾县",
+            url: ""
+          },
+          {
+            name: "巴彦县",
+            url: ""
+          },
+          {
+            name: "木兰县",
+            url: ""
+          },
+          {
+            name: "通河县",
+            url: ""
+          },
+          {
+            name: "延寿县",
+            url: ""
+          },
+          {
+            name: "尚志市",
+            url: ""
+          },
+          {
+            name: "五常市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "齐齐哈尔市",
+        url: "",
+        children: [
+          {
+            name: "龙沙区",
+            url: ""
+          },
+          {
+            name: "建华区",
+            url: ""
+          },
+          {
+            name: "铁锋区",
+            url: ""
+          },
+          {
+            name: "昂昂溪区",
+            url: ""
+          },
+          {
+            name: "富拉尔基区",
+            url: ""
+          },
+          {
+            name: "碾子山区",
+            url: ""
+          },
+          {
+            name: "梅里斯达斡尔族区",
+            url: ""
+          },
+          {
+            name: "龙江县",
+            url: ""
+          },
+          {
+            name: "依安县",
+            url: ""
+          },
+          {
+            name: "泰来县",
+            url: ""
+          },
+          {
+            name: "甘南县",
+            url: ""
+          },
+          {
+            name: "富裕县",
+            url: ""
+          },
+          {
+            name: "克山县",
+            url: ""
+          },
+          {
+            name: "克东县",
+            url: ""
+          },
+          {
+            name: "拜泉县",
+            url: ""
+          },
+          {
+            name: "讷河市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "鸡西市",
+        url: "",
+        children: [
+          {
+            name: "鸡冠区",
+            url: ""
+          },
+          {
+            name: "恒山区",
+            url: ""
+          },
+          {
+            name: "滴道区",
+            url: ""
+          },
+          {
+            name: "梨树区",
+            url: ""
+          },
+          {
+            name: "城子河区",
+            url: ""
+          },
+          {
+            name: "麻山区",
+            url: ""
+          },
+          {
+            name: "鸡东县",
+            url: ""
+          },
+          {
+            name: "虎林市",
+            url: ""
+          },
+          {
+            name: "密山市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "鹤岗市",
+        url: "",
+        children: [
+          {
+            name: "向阳区",
+            url: ""
+          },
+          {
+            name: "工农区",
+            url: ""
+          },
+          {
+            name: "南山区",
+            url: ""
+          },
+          {
+            name: "兴安区",
+            url: ""
+          },
+          {
+            name: "东山区",
+            url: ""
+          },
+          {
+            name: "兴山区",
+            url: ""
+          },
+          {
+            name: "萝北县",
+            url: ""
+          },
+          {
+            name: "绥滨县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "双鸭山市",
+        url: "",
+        children: [
+          {
+            name: "尖山区",
+            url: ""
+          },
+          {
+            name: "岭东区",
+            url: ""
+          },
+          {
+            name: "四方台区",
+            url: ""
+          },
+          {
+            name: "宝山区",
+            url: ""
+          },
+          {
+            name: "集贤县",
+            url: ""
+          },
+          {
+            name: "友谊县",
+            url: ""
+          },
+          {
+            name: "宝清县",
+            url: ""
+          },
+          {
+            name: "饶河县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "大庆市",
+        url: "",
+        children: [
+          {
+            name: "萨尔图区",
+            url: ""
+          },
+          {
+            name: "龙凤区",
+            url: ""
+          },
+          {
+            name: "让胡路区",
+            url: ""
+          },
+          {
+            name: "红岗区",
+            url: ""
+          },
+          {
+            name: "大同区",
+            url: ""
+          },
+          {
+            name: "肇州县",
+            url: ""
+          },
+          {
+            name: "肇源县",
+            url: ""
+          },
+          {
+            name: "林甸县",
+            url: ""
+          },
+          {
+            name: "杜尔伯特蒙古族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "伊春市",
+        url: "",
+        children: [
+          {
+            name: "伊美区",
+            url: ""
+          },
+          {
+            name: "乌翠区",
+            url: ""
+          },
+          {
+            name: "友好区",
+            url: ""
+          },
+          {
+            name: "金林区",
+            url: ""
+          },
+          {
+            name: "铁力市",
+            url: ""
+          },
+          {
+            name: "嘉荫县",
+            url: ""
+          },
+          {
+            name: "汤旺县",
+            url: ""
+          },
+          {
+            name: "丰林县",
+            url: ""
+          },
+          {
+            name: "大箐山县",
+            url: ""
+          },
+          {
+            name: "南岔县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "佳木斯市",
+        url: "",
+        children: [
+          {
+            name: "向阳区",
+            url: ""
+          },
+          {
+            name: "前进区",
+            url: ""
+          },
+          {
+            name: "东风区",
+            url: ""
+          },
+          {
+            name: "郊区",
+            url: ""
+          },
+          {
+            name: "桦南县",
+            url: ""
+          },
+          {
+            name: "桦川县",
+            url: ""
+          },
+          {
+            name: "汤原县",
+            url: ""
+          },
+          {
+            name: "同江市",
+            url: ""
+          },
+          {
+            name: "富锦市",
+            url: ""
+          },
+          {
+            name: "抚远市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "七台河市",
+        url: "",
+        children: [
+          {
+            name: "新兴区",
+            url: ""
+          },
+          {
+            name: "桃山区",
+            url: ""
+          },
+          {
+            name: "茄子河区",
+            url: ""
+          },
+          {
+            name: "勃利县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "牡丹江市",
+        url: "",
+        children: [
+          {
+            name: "东安区",
+            url: ""
+          },
+          {
+            name: "阳明区",
+            url: ""
+          },
+          {
+            name: "爱民区",
+            url: ""
+          },
+          {
+            name: "西安区",
+            url: ""
+          },
+          {
+            name: "林口县",
+            url: ""
+          },
+          {
+            name: "东宁市",
+            url: ""
+          },
+          {
+            name: "绥芬河市",
+            url: ""
+          },
+          {
+            name: "海林市",
+            url: ""
+          },
+          {
+            name: "宁安市",
+            url: ""
+          },
+          {
+            name: "穆棱市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "黑河市",
+        url: "",
+        children: [
+          {
+            name: "爱辉区",
+            url: ""
+          },
+          {
+            name: "逊克县",
+            url: ""
+          },
+          {
+            name: "孙吴县",
+            url: ""
+          },
+          {
+            name: "北安市",
+            url: ""
+          },
+          {
+            name: "五大连池市",
+            url: ""
+          },
+          {
+            name: "嫩江市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "绥化市",
+        url: "",
+        children: [
+          {
+            name: "北林区",
+            url: ""
+          },
+          {
+            name: "望奎县",
+            url: ""
+          },
+          {
+            name: "兰西县",
+            url: ""
+          },
+          {
+            name: "青冈县",
+            url: ""
+          },
+          {
+            name: "庆安县",
+            url: ""
+          },
+          {
+            name: "明水县",
+            url: ""
+          },
+          {
+            name: "绥棱县",
+            url: ""
+          },
+          {
+            name: "安达市",
+            url: ""
+          },
+          {
+            name: "肇东市",
+            url: ""
+          },
+          {
+            name: "海伦市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "大兴安岭地区",
+        url: "",
+        children: [
+          {
+            name: "加格达奇区",
+            url: ""
+          },
+          {
+            name: "松岭区",
+            url: ""
+          },
+          {
+            name: "新林区",
+            url: ""
+          },
+          {
+            name: "呼中区",
+            url: ""
+          },
+          {
+            name: "呼玛县",
+            url: ""
+          },
+          {
+            name: "塔河县",
+            url: ""
+          },
+          {
+            name: "漠河市",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "江苏省",
+    url: "",
+    children: [
+      {
+        name: "南京市",
+        url: "",
+        children: [
+          {
+            name: "玄武区",
+            url: ""
+          },
+          {
+            name: "秦淮区",
+            url: ""
+          },
+          {
+            name: "建邺区",
+            url: ""
+          },
+          {
+            name: "鼓楼区",
+            url: ""
+          },
+          {
+            name: "浦口区",
+            url: ""
+          },
+          {
+            name: "栖霞区",
+            url: ""
+          },
+          {
+            name: "雨花台区",
+            url: ""
+          },
+          {
+            name: "江宁区",
+            url: ""
+          },
+          {
+            name: "六合区",
+            url: ""
+          },
+          {
+            name: "溧水区",
+            url: ""
+          },
+          {
+            name: "高淳区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "无锡市",
+        url: "",
+        children: [
+          {
+            name: "锡山区",
+            url: ""
+          },
+          {
+            name: "惠山区",
+            url: ""
+          },
+          {
+            name: "滨湖区",
+            url: ""
+          },
+          {
+            name: "梁溪区",
+            url: ""
+          },
+          {
+            name: "新吴区",
+            url: ""
+          },
+          {
+            name: "江阴市",
+            url: ""
+          },
+          {
+            name: "宜兴市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "徐州市",
+        url: "",
+        children: [
+          {
+            name: "鼓楼区",
+            url: ""
+          },
+          {
+            name: "云龙区",
+            url: ""
+          },
+          {
+            name: "贾汪区",
+            url: ""
+          },
+          {
+            name: "泉山区",
+            url: ""
+          },
+          {
+            name: "铜山区",
+            url: ""
+          },
+          {
+            name: "丰县",
+            url: ""
+          },
+          {
+            name: "沛县",
+            url: ""
+          },
+          {
+            name: "睢宁县",
+            url: ""
+          },
+          {
+            name: "新沂市",
+            url: ""
+          },
+          {
+            name: "邳州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "常州市",
+        url: "",
+        children: [
+          {
+            name: "天宁区",
+            url: ""
+          },
+          {
+            name: "钟楼区",
+            url: ""
+          },
+          {
+            name: "新北区",
+            url: ""
+          },
+          {
+            name: "武进区",
+            url: ""
+          },
+          {
+            name: "金坛区",
+            url: ""
+          },
+          {
+            name: "溧阳市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "苏州市",
+        url: "",
+        children: [
+          {
+            name: "虎丘区",
+            url: ""
+          },
+          {
+            name: "吴中区",
+            url: ""
+          },
+          {
+            name: "相城区",
+            url: ""
+          },
+          {
+            name: "姑苏区",
+            url: ""
+          },
+          {
+            name: "吴江区",
+            url: ""
+          },
+          {
+            name: "常熟市",
+            url: ""
+          },
+          {
+            name: "张家港市",
+            url: ""
+          },
+          {
+            name: "昆山市",
+            url: ""
+          },
+          {
+            name: "太仓市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "南通市",
+        url: "",
+        children: [
+          {
+            name: "通州区",
+            url: ""
+          },
+          {
+            name: "崇川区",
+            url: ""
+          },
+          {
+            name: "海门区",
+            url: ""
+          },
+          {
+            name: "如东县",
+            url: ""
+          },
+          {
+            name: "启东市",
+            url: ""
+          },
+          {
+            name: "如皋市",
+            url: ""
+          },
+          {
+            name: "海安市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "连云港市",
+        url: "",
+        children: [
+          {
+            name: "连云区",
+            url: ""
+          },
+          {
+            name: "海州区",
+            url: ""
+          },
+          {
+            name: "赣榆区",
+            url: ""
+          },
+          {
+            name: "东海县",
+            url: ""
+          },
+          {
+            name: "灌云县",
+            url: ""
+          },
+          {
+            name: "灌南县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "淮安市",
+        url: "",
+        children: [
+          {
+            name: "淮安区",
+            url: ""
+          },
+          {
+            name: "淮阴区",
+            url: ""
+          },
+          {
+            name: "清江浦区",
+            url: ""
+          },
+          {
+            name: "洪泽区",
+            url: ""
+          },
+          {
+            name: "涟水县",
+            url: ""
+          },
+          {
+            name: "盱眙县",
+            url: ""
+          },
+          {
+            name: "金湖县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "盐城市",
+        url: "",
+        children: [
+          {
+            name: "亭湖区",
+            url: ""
+          },
+          {
+            name: "盐都区",
+            url: ""
+          },
+          {
+            name: "大丰区",
+            url: ""
+          },
+          {
+            name: "响水县",
+            url: ""
+          },
+          {
+            name: "滨海县",
+            url: ""
+          },
+          {
+            name: "阜宁县",
+            url: ""
+          },
+          {
+            name: "射阳县",
+            url: ""
+          },
+          {
+            name: "建湖县",
+            url: ""
+          },
+          {
+            name: "东台市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "扬州市",
+        url: "",
+        children: [
+          {
+            name: "广陵区",
+            url: ""
+          },
+          {
+            name: "邗江区",
+            url: ""
+          },
+          {
+            name: "江都区",
+            url: ""
+          },
+          {
+            name: "宝应县",
+            url: ""
+          },
+          {
+            name: "仪征市",
+            url: ""
+          },
+          {
+            name: "高邮市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "镇江市",
+        url: "",
+        children: [
+          {
+            name: "京口区",
+            url: ""
+          },
+          {
+            name: "润州区",
+            url: ""
+          },
+          {
+            name: "丹徒区",
+            url: ""
+          },
+          {
+            name: "丹阳市",
+            url: ""
+          },
+          {
+            name: "扬中市",
+            url: ""
+          },
+          {
+            name: "句容市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "泰州市",
+        url: "",
+        children: [
+          {
+            name: "海陵区",
+            url: ""
+          },
+          {
+            name: "高港区",
+            url: ""
+          },
+          {
+            name: "姜堰区",
+            url: ""
+          },
+          {
+            name: "兴化市",
+            url: ""
+          },
+          {
+            name: "靖江市",
+            url: ""
+          },
+          {
+            name: "泰兴市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "宿迁市",
+        url: "",
+        children: [
+          {
+            name: "宿城区",
+            url: ""
+          },
+          {
+            name: "宿豫区",
+            url: ""
+          },
+          {
+            name: "沭阳县",
+            url: ""
+          },
+          {
+            name: "泗阳县",
+            url: ""
+          },
+          {
+            name: "泗洪县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "浙江省",
+    url: "",
+    children: [
+      {
+        name: "杭州市",
+        url: "",
+        children: [
+          {
+            name: "上城区",
+            url: ""
+          },
+          {
+            name: "拱墅区",
+            url: ""
+          },
+          {
+            name: "西湖区",
+            url: ""
+          },
+          {
+            name: "滨江区",
+            url: ""
+          },
+          {
+            name: "萧山区",
+            url: ""
+          },
+          {
+            name: "余杭区",
+            url: ""
+          },
+          {
+            name: "临平区",
+            url: ""
+          },
+          {
+            name: "钱塘区",
+            url: ""
+          },
+          {
+            name: "富阳区",
+            url: ""
+          },
+          {
+            name: "临安区",
+            url: ""
+          },
+          {
+            name: "桐庐县",
+            url: ""
+          },
+          {
+            name: "淳安县",
+            url: ""
+          },
+          {
+            name: "建德市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "宁波市",
+        url: "",
+        children: [
+          {
+            name: "海曙区",
+            url: ""
+          },
+          {
+            name: "江北区",
+            url: ""
+          },
+          {
+            name: "北仑区",
+            url: ""
+          },
+          {
+            name: "镇海区",
+            url: ""
+          },
+          {
+            name: "鄞州区",
+            url: ""
+          },
+          {
+            name: "奉化区",
+            url: ""
+          },
+          {
+            name: "象山县",
+            url: ""
+          },
+          {
+            name: "宁海县",
+            url: ""
+          },
+          {
+            name: "余姚市",
+            url: ""
+          },
+          {
+            name: "慈溪市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "温州市",
+        url: "",
+        children: [
+          {
+            name: "鹿城区",
+            url: ""
+          },
+          {
+            name: "龙湾区",
+            url: ""
+          },
+          {
+            name: "瓯海区",
+            url: ""
+          },
+          {
+            name: "洞头区",
+            url: ""
+          },
+          {
+            name: "永嘉县",
+            url: ""
+          },
+          {
+            name: "平阳县",
+            url: ""
+          },
+          {
+            name: "苍南县",
+            url: ""
+          },
+          {
+            name: "文成县",
+            url: ""
+          },
+          {
+            name: "泰顺县",
+            url: ""
+          },
+          {
+            name: "瑞安市",
+            url: ""
+          },
+          {
+            name: "乐清市",
+            url: ""
+          },
+          {
+            name: "龙港市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "嘉兴市",
+        url: "",
+        children: [
+          {
+            name: "南湖区",
+            url: ""
+          },
+          {
+            name: "秀洲区",
+            url: ""
+          },
+          {
+            name: "嘉善县",
+            url: ""
+          },
+          {
+            name: "海盐县",
+            url: ""
+          },
+          {
+            name: "海宁市",
+            url: ""
+          },
+          {
+            name: "平湖市",
+            url: ""
+          },
+          {
+            name: "桐乡市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "湖州市",
+        url: "",
+        children: [
+          {
+            name: "吴兴区",
+            url: ""
+          },
+          {
+            name: "南浔区",
+            url: ""
+          },
+          {
+            name: "德清县",
+            url: ""
+          },
+          {
+            name: "长兴县",
+            url: ""
+          },
+          {
+            name: "安吉县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "绍兴市",
+        url: "",
+        children: [
+          {
+            name: "越城区",
+            url: ""
+          },
+          {
+            name: "柯桥区",
+            url: ""
+          },
+          {
+            name: "上虞区",
+            url: ""
+          },
+          {
+            name: "新昌县",
+            url: ""
+          },
+          {
+            name: "诸暨市",
+            url: ""
+          },
+          {
+            name: "嵊州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "金华市",
+        url: "",
+        children: [
+          {
+            name: "婺城区",
+            url: ""
+          },
+          {
+            name: "金东区",
+            url: ""
+          },
+          {
+            name: "武义县",
+            url: ""
+          },
+          {
+            name: "浦江县",
+            url: ""
+          },
+          {
+            name: "磐安县",
+            url: ""
+          },
+          {
+            name: "兰溪市",
+            url: ""
+          },
+          {
+            name: "义乌市",
+            url: ""
+          },
+          {
+            name: "东阳市",
+            url: ""
+          },
+          {
+            name: "永康市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "衢州市",
+        url: "",
+        children: [
+          {
+            name: "柯城区",
+            url: ""
+          },
+          {
+            name: "衢江区",
+            url: ""
+          },
+          {
+            name: "常山县",
+            url: ""
+          },
+          {
+            name: "开化县",
+            url: ""
+          },
+          {
+            name: "龙游县",
+            url: ""
+          },
+          {
+            name: "江山市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "舟山市",
+        url: "",
+        children: [
+          {
+            name: "定海区",
+            url: ""
+          },
+          {
+            name: "普陀区",
+            url: ""
+          },
+          {
+            name: "岱山县",
+            url: ""
+          },
+          {
+            name: "嵊泗县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "台州市",
+        url: "",
+        children: [
+          {
+            name: "椒江区",
+            url: ""
+          },
+          {
+            name: "黄岩区",
+            url: ""
+          },
+          {
+            name: "路桥区",
+            url: ""
+          },
+          {
+            name: "三门县",
+            url: ""
+          },
+          {
+            name: "天台县",
+            url: ""
+          },
+          {
+            name: "仙居县",
+            url: ""
+          },
+          {
+            name: "温岭市",
+            url: ""
+          },
+          {
+            name: "临海市",
+            url: ""
+          },
+          {
+            name: "玉环市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "丽水市",
+        url: "",
+        children: [
+          {
+            name: "莲都区",
+            url: ""
+          },
+          {
+            name: "青田县",
+            url: ""
+          },
+          {
+            name: "缙云县",
+            url: ""
+          },
+          {
+            name: "遂昌县",
+            url: ""
+          },
+          {
+            name: "松阳县",
+            url: ""
+          },
+          {
+            name: "云和县",
+            url: ""
+          },
+          {
+            name: "庆元县",
+            url: ""
+          },
+          {
+            name: "景宁畲族自治县",
+            url: ""
+          },
+          {
+            name: "龙泉市",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "安徽省",
+    url: "",
+    children: [
+      {
+        name: "合肥市",
+        url: "",
+        children: [
+          {
+            name: "瑶海区",
+            url: ""
+          },
+          {
+            name: "庐阳区",
+            url: ""
+          },
+          {
+            name: "蜀山区",
+            url: ""
+          },
+          {
+            name: "包河区",
+            url: ""
+          },
+          {
+            name: "长丰县",
+            url: ""
+          },
+          {
+            name: "肥东县",
+            url: ""
+          },
+          {
+            name: "肥西县",
+            url: ""
+          },
+          {
+            name: "庐江县",
+            url: ""
+          },
+          {
+            name: "巢湖市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "芜湖市",
+        url: "",
+        children: [
+          {
+            name: "镜湖区",
+            url: ""
+          },
+          {
+            name: "弋江区",
+            url: ""
+          },
+          {
+            name: "鸠江区",
+            url: ""
+          },
+          {
+            name: "湾沚区",
+            url: ""
+          },
+          {
+            name: "繁昌区",
+            url: ""
+          },
+          {
+            name: "南陵县",
+            url: ""
+          },
+          {
+            name: "无为市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "蚌埠市",
+        url: "",
+        children: [
+          {
+            name: "龙子湖区",
+            url: ""
+          },
+          {
+            name: "蚌山区",
+            url: ""
+          },
+          {
+            name: "禹会区",
+            url: ""
+          },
+          {
+            name: "淮上区",
+            url: ""
+          },
+          {
+            name: "怀远县",
+            url: ""
+          },
+          {
+            name: "五河县",
+            url: ""
+          },
+          {
+            name: "固镇县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "淮南市",
+        url: "",
+        children: [
+          {
+            name: "大通区",
+            url: ""
+          },
+          {
+            name: "田家庵区",
+            url: ""
+          },
+          {
+            name: "谢家集区",
+            url: ""
+          },
+          {
+            name: "八公山区",
+            url: ""
+          },
+          {
+            name: "潘集区",
+            url: ""
+          },
+          {
+            name: "凤台县",
+            url: ""
+          },
+          {
+            name: "寿县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "马鞍山市",
+        url: "",
+        children: [
+          {
+            name: "花山区",
+            url: ""
+          },
+          {
+            name: "雨山区",
+            url: ""
+          },
+          {
+            name: "博望区",
+            url: ""
+          },
+          {
+            name: "当涂县",
+            url: ""
+          },
+          {
+            name: "含山县",
+            url: ""
+          },
+          {
+            name: "和县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "淮北市",
+        url: "",
+        children: [
+          {
+            name: "杜集区",
+            url: ""
+          },
+          {
+            name: "相山区",
+            url: ""
+          },
+          {
+            name: "烈山区",
+            url: ""
+          },
+          {
+            name: "濉溪县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "铜陵市",
+        url: "",
+        children: [
+          {
+            name: "铜官区",
+            url: ""
+          },
+          {
+            name: "义安区",
+            url: ""
+          },
+          {
+            name: "郊区",
+            url: ""
+          },
+          {
+            name: "枞阳县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "安庆市",
+        url: "",
+        children: [
+          {
+            name: "迎江区",
+            url: ""
+          },
+          {
+            name: "大观区",
+            url: ""
+          },
+          {
+            name: "宜秀区",
+            url: ""
+          },
+          {
+            name: "怀宁县",
+            url: ""
+          },
+          {
+            name: "太湖县",
+            url: ""
+          },
+          {
+            name: "宿松县",
+            url: ""
+          },
+          {
+            name: "望江县",
+            url: ""
+          },
+          {
+            name: "岳西县",
+            url: ""
+          },
+          {
+            name: "桐城市",
+            url: ""
+          },
+          {
+            name: "潜山市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "黄山市",
+        url: "",
+        children: [
+          {
+            name: "屯溪区",
+            url: ""
+          },
+          {
+            name: "黄山区",
+            url: ""
+          },
+          {
+            name: "徽州区",
+            url: ""
+          },
+          {
+            name: "歙县",
+            url: ""
+          },
+          {
+            name: "休宁县",
+            url: ""
+          },
+          {
+            name: "黟县",
+            url: ""
+          },
+          {
+            name: "祁门县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "滁州市",
+        url: "",
+        children: [
+          {
+            name: "琅琊区",
+            url: ""
+          },
+          {
+            name: "南谯区",
+            url: ""
+          },
+          {
+            name: "来安县",
+            url: ""
+          },
+          {
+            name: "全椒县",
+            url: ""
+          },
+          {
+            name: "定远县",
+            url: ""
+          },
+          {
+            name: "凤阳县",
+            url: ""
+          },
+          {
+            name: "天长市",
+            url: ""
+          },
+          {
+            name: "明光市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "阜阳市",
+        url: "",
+        children: [
+          {
+            name: "颍州区",
+            url: ""
+          },
+          {
+            name: "颍东区",
+            url: ""
+          },
+          {
+            name: "颍泉区",
+            url: ""
+          },
+          {
+            name: "临泉县",
+            url: ""
+          },
+          {
+            name: "太和县",
+            url: ""
+          },
+          {
+            name: "阜南县",
+            url: ""
+          },
+          {
+            name: "颍上县",
+            url: ""
+          },
+          {
+            name: "界首市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "宿州市",
+        url: "",
+        children: [
+          {
+            name: "埇桥区",
+            url: ""
+          },
+          {
+            name: "砀山县",
+            url: ""
+          },
+          {
+            name: "萧县",
+            url: ""
+          },
+          {
+            name: "灵璧县",
+            url: ""
+          },
+          {
+            name: "泗县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "六安市",
+        url: "",
+        children: [
+          {
+            name: "金安区",
+            url: ""
+          },
+          {
+            name: "裕安区",
+            url: ""
+          },
+          {
+            name: "叶集区",
+            url: ""
+          },
+          {
+            name: "霍邱县",
+            url: ""
+          },
+          {
+            name: "舒城县",
+            url: ""
+          },
+          {
+            name: "金寨县",
+            url: ""
+          },
+          {
+            name: "霍山县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "亳州市",
+        url: "",
+        children: [
+          {
+            name: "谯城区",
+            url: ""
+          },
+          {
+            name: "涡阳县",
+            url: ""
+          },
+          {
+            name: "蒙城县",
+            url: ""
+          },
+          {
+            name: "利辛县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "池州市",
+        url: "",
+        children: [
+          {
+            name: "贵池区",
+            url: ""
+          },
+          {
+            name: "东至县",
+            url: ""
+          },
+          {
+            name: "石台县",
+            url: ""
+          },
+          {
+            name: "青阳县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "宣城市",
+        url: "",
+        children: [
+          {
+            name: "宣州区",
+            url: ""
+          },
+          {
+            name: "郎溪县",
+            url: ""
+          },
+          {
+            name: "泾县",
+            url: ""
+          },
+          {
+            name: "绩溪县",
+            url: ""
+          },
+          {
+            name: "旌德县",
+            url: ""
+          },
+          {
+            name: "宁国市",
+            url: ""
+          },
+          {
+            name: "广德市",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "福建省",
+    url: "",
+    children: [
+      {
+        name: "福州市",
+        url: "",
+        children: [
+          {
+            name: "鼓楼区",
+            url: ""
+          },
+          {
+            name: "台江区",
+            url: ""
+          },
+          {
+            name: "仓山区",
+            url: ""
+          },
+          {
+            name: "马尾区",
+            url: ""
+          },
+          {
+            name: "晋安区",
+            url: ""
+          },
+          {
+            name: "长乐区",
+            url: ""
+          },
+          {
+            name: "闽侯县",
+            url: ""
+          },
+          {
+            name: "连江县",
+            url: ""
+          },
+          {
+            name: "罗源县",
+            url: ""
+          },
+          {
+            name: "闽清县",
+            url: ""
+          },
+          {
+            name: "永泰县",
+            url: ""
+          },
+          {
+            name: "平潭县",
+            url: ""
+          },
+          {
+            name: "福清市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "厦门市",
+        url: "",
+        children: [
+          {
+            name: "思明区",
+            url: ""
+          },
+          {
+            name: "海沧区",
+            url: ""
+          },
+          {
+            name: "湖里区",
+            url: ""
+          },
+          {
+            name: "集美区",
+            url: ""
+          },
+          {
+            name: "同安区",
+            url: ""
+          },
+          {
+            name: "翔安区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "莆田市",
+        url: "",
+        children: [
+          {
+            name: "城厢区",
+            url: ""
+          },
+          {
+            name: "涵江区",
+            url: ""
+          },
+          {
+            name: "荔城区",
+            url: ""
+          },
+          {
+            name: "秀屿区",
+            url: ""
+          },
+          {
+            name: "仙游县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "三明市",
+        url: "",
+        children: [
+          {
+            name: "三元区",
+            url: ""
+          },
+          {
+            name: "沙县区",
+            url: ""
+          },
+          {
+            name: "明溪县",
+            url: ""
+          },
+          {
+            name: "清流县",
+            url: ""
+          },
+          {
+            name: "宁化县",
+            url: ""
+          },
+          {
+            name: "大田县",
+            url: ""
+          },
+          {
+            name: "尤溪县",
+            url: ""
+          },
+          {
+            name: "将乐县",
+            url: ""
+          },
+          {
+            name: "泰宁县",
+            url: ""
+          },
+          {
+            name: "建宁县",
+            url: ""
+          },
+          {
+            name: "永安市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "泉州市",
+        url: "",
+        children: [
+          {
+            name: "鲤城区",
+            url: ""
+          },
+          {
+            name: "丰泽区",
+            url: ""
+          },
+          {
+            name: "洛江区",
+            url: ""
+          },
+          {
+            name: "泉港区",
+            url: ""
+          },
+          {
+            name: "惠安县",
+            url: ""
+          },
+          {
+            name: "安溪县",
+            url: ""
+          },
+          {
+            name: "永春县",
+            url: ""
+          },
+          {
+            name: "德化县",
+            url: ""
+          },
+          {
+            name: "金门县",
+            url: ""
+          },
+          {
+            name: "石狮市",
+            url: ""
+          },
+          {
+            name: "晋江市",
+            url: ""
+          },
+          {
+            name: "南安市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "漳州市",
+        url: "",
+        children: [
+          {
+            name: "芗城区",
+            url: ""
+          },
+          {
+            name: "龙文区",
+            url: ""
+          },
+          {
+            name: "龙海区",
+            url: ""
+          },
+          {
+            name: "云霄县",
+            url: ""
+          },
+          {
+            name: "漳浦县",
+            url: ""
+          },
+          {
+            name: "诏安县",
+            url: ""
+          },
+          {
+            name: "长泰区",
+            url: ""
+          },
+          {
+            name: "东山县",
+            url: ""
+          },
+          {
+            name: "南靖县",
+            url: ""
+          },
+          {
+            name: "平和县",
+            url: ""
+          },
+          {
+            name: "华安县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "南平市",
+        url: "",
+        children: [
+          {
+            name: "延平区",
+            url: ""
+          },
+          {
+            name: "建阳区",
+            url: ""
+          },
+          {
+            name: "顺昌县",
+            url: ""
+          },
+          {
+            name: "浦城县",
+            url: ""
+          },
+          {
+            name: "光泽县",
+            url: ""
+          },
+          {
+            name: "松溪县",
+            url: ""
+          },
+          {
+            name: "政和县",
+            url: ""
+          },
+          {
+            name: "邵武市",
+            url: ""
+          },
+          {
+            name: "武夷山市",
+            url: ""
+          },
+          {
+            name: "建瓯市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "龙岩市",
+        url: "",
+        children: [
+          {
+            name: "新罗区",
+            url: ""
+          },
+          {
+            name: "永定区",
+            url: ""
+          },
+          {
+            name: "长汀县",
+            url: ""
+          },
+          {
+            name: "上杭县",
+            url: ""
+          },
+          {
+            name: "武平县",
+            url: ""
+          },
+          {
+            name: "连城县",
+            url: ""
+          },
+          {
+            name: "漳平市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "宁德市",
+        url: "",
+        children: [
+          {
+            name: "蕉城区",
+            url: ""
+          },
+          {
+            name: "霞浦县",
+            url: ""
+          },
+          {
+            name: "古田县",
+            url: ""
+          },
+          {
+            name: "屏南县",
+            url: ""
+          },
+          {
+            name: "寿宁县",
+            url: ""
+          },
+          {
+            name: "周宁县",
+            url: ""
+          },
+          {
+            name: "柘荣县",
+            url: ""
+          },
+          {
+            name: "福安市",
+            url: ""
+          },
+          {
+            name: "福鼎市",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "江西省",
+    url: "",
+    children: [
+      {
+        name: "南昌市",
+        url: "",
+        children: [
+          {
+            name: "东湖区",
+            url: ""
+          },
+          {
+            name: "西湖区",
+            url: ""
+          },
+          {
+            name: "青云谱区",
+            url: ""
+          },
+          {
+            name: "青山湖区",
+            url: ""
+          },
+          {
+            name: "新建区",
+            url: ""
+          },
+          {
+            name: "红谷滩区",
+            url: ""
+          },
+          {
+            name: "南昌县",
+            url: ""
+          },
+          {
+            name: "安义县",
+            url: ""
+          },
+          {
+            name: "进贤县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "景德镇市",
+        url: "",
+        children: [
+          {
+            name: "昌江区",
+            url: ""
+          },
+          {
+            name: "珠山区",
+            url: ""
+          },
+          {
+            name: "浮梁县",
+            url: ""
+          },
+          {
+            name: "乐平市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "萍乡市",
+        url: "",
+        children: [
+          {
+            name: "安源区",
+            url: ""
+          },
+          {
+            name: "湘东区",
+            url: ""
+          },
+          {
+            name: "莲花县",
+            url: ""
+          },
+          {
+            name: "上栗县",
+            url: ""
+          },
+          {
+            name: "芦溪县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "九江市",
+        url: "",
+        children: [
+          {
+            name: "濂溪区",
+            url: ""
+          },
+          {
+            name: "浔阳区",
+            url: ""
+          },
+          {
+            name: "柴桑区",
+            url: ""
+          },
+          {
+            name: "武宁县",
+            url: ""
+          },
+          {
+            name: "修水县",
+            url: ""
+          },
+          {
+            name: "永修县",
+            url: ""
+          },
+          {
+            name: "德安县",
+            url: ""
+          },
+          {
+            name: "都昌县",
+            url: ""
+          },
+          {
+            name: "湖口县",
+            url: ""
+          },
+          {
+            name: "彭泽县",
+            url: ""
+          },
+          {
+            name: "瑞昌市",
+            url: ""
+          },
+          {
+            name: "共青城市",
+            url: ""
+          },
+          {
+            name: "庐山市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "新余市",
+        url: "",
+        children: [
+          {
+            name: "渝水区",
+            url: ""
+          },
+          {
+            name: "分宜县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "鹰潭市",
+        url: "",
+        children: [
+          {
+            name: "月湖区",
+            url: ""
+          },
+          {
+            name: "余江区",
+            url: ""
+          },
+          {
+            name: "贵溪市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "赣州市",
+        url: "",
+        children: [
+          {
+            name: "章贡区",
+            url: ""
+          },
+          {
+            name: "南康区",
+            url: ""
+          },
+          {
+            name: "赣县区",
+            url: ""
+          },
+          {
+            name: "信丰县",
+            url: ""
+          },
+          {
+            name: "大余县",
+            url: ""
+          },
+          {
+            name: "上犹县",
+            url: ""
+          },
+          {
+            name: "崇义县",
+            url: ""
+          },
+          {
+            name: "安远县",
+            url: ""
+          },
+          {
+            name: "定南县",
+            url: ""
+          },
+          {
+            name: "全南县",
+            url: ""
+          },
+          {
+            name: "宁都县",
+            url: ""
+          },
+          {
+            name: "于都县",
+            url: ""
+          },
+          {
+            name: "兴国县",
+            url: ""
+          },
+          {
+            name: "会昌县",
+            url: ""
+          },
+          {
+            name: "寻乌县",
+            url: ""
+          },
+          {
+            name: "石城县",
+            url: ""
+          },
+          {
+            name: "瑞金市",
+            url: ""
+          },
+          {
+            name: "龙南市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "吉安市",
+        url: "",
+        children: [
+          {
+            name: "吉州区",
+            url: ""
+          },
+          {
+            name: "青原区",
+            url: ""
+          },
+          {
+            name: "吉安县",
+            url: ""
+          },
+          {
+            name: "吉水县",
+            url: ""
+          },
+          {
+            name: "峡江县",
+            url: ""
+          },
+          {
+            name: "新干县",
+            url: ""
+          },
+          {
+            name: "永丰县",
+            url: ""
+          },
+          {
+            name: "泰和县",
+            url: ""
+          },
+          {
+            name: "遂川县",
+            url: ""
+          },
+          {
+            name: "万安县",
+            url: ""
+          },
+          {
+            name: "安福县",
+            url: ""
+          },
+          {
+            name: "永新县",
+            url: ""
+          },
+          {
+            name: "井冈山市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "宜春市",
+        url: "",
+        children: [
+          {
+            name: "袁州区",
+            url: ""
+          },
+          {
+            name: "奉新县",
+            url: ""
+          },
+          {
+            name: "万载县",
+            url: ""
+          },
+          {
+            name: "上高县",
+            url: ""
+          },
+          {
+            name: "宜丰县",
+            url: ""
+          },
+          {
+            name: "靖安县",
+            url: ""
+          },
+          {
+            name: "铜鼓县",
+            url: ""
+          },
+          {
+            name: "丰城市",
+            url: ""
+          },
+          {
+            name: "樟树市",
+            url: ""
+          },
+          {
+            name: "高安市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "抚州市",
+        url: "",
+        children: [
+          {
+            name: "临川区",
+            url: ""
+          },
+          {
+            name: "东乡区",
+            url: ""
+          },
+          {
+            name: "南城县",
+            url: ""
+          },
+          {
+            name: "黎川县",
+            url: ""
+          },
+          {
+            name: "南丰县",
+            url: ""
+          },
+          {
+            name: "崇仁县",
+            url: ""
+          },
+          {
+            name: "乐安县",
+            url: ""
+          },
+          {
+            name: "宜黄县",
+            url: ""
+          },
+          {
+            name: "金溪县",
+            url: ""
+          },
+          {
+            name: "资溪县",
+            url: ""
+          },
+          {
+            name: "广昌县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "上饶市",
+        url: "",
+        children: [
+          {
+            name: "信州区",
+            url: ""
+          },
+          {
+            name: "广丰区",
+            url: ""
+          },
+          {
+            name: "广信区",
+            url: ""
+          },
+          {
+            name: "玉山县",
+            url: ""
+          },
+          {
+            name: "铅山县",
+            url: ""
+          },
+          {
+            name: "横峰县",
+            url: ""
+          },
+          {
+            name: "弋阳县",
+            url: ""
+          },
+          {
+            name: "余干县",
+            url: ""
+          },
+          {
+            name: "鄱阳县",
+            url: ""
+          },
+          {
+            name: "万年县",
+            url: ""
+          },
+          {
+            name: "婺源县",
+            url: ""
+          },
+          {
+            name: "德兴市",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "山东省",
+    url: "",
+    children: [
+      {
+        name: "济南市",
+        url: "",
+        children: [
+          {
+            name: "历下区",
+            url: ""
+          },
+          {
+            name: "市中区",
+            url: ""
+          },
+          {
+            name: "槐荫区",
+            url: ""
+          },
+          {
+            name: "天桥区",
+            url: ""
+          },
+          {
+            name: "历城区",
+            url: ""
+          },
+          {
+            name: "长清区",
+            url: ""
+          },
+          {
+            name: "章丘区",
+            url: ""
+          },
+          {
+            name: "济阳区",
+            url: ""
+          },
+          {
+            name: "莱芜区",
+            url: ""
+          },
+          {
+            name: "钢城区",
+            url: ""
+          },
+          {
+            name: "平阴县",
+            url: ""
+          },
+          {
+            name: "商河县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "青岛市",
+        url: "",
+        children: [
+          {
+            name: "市南区",
+            url: ""
+          },
+          {
+            name: "市北区",
+            url: ""
+          },
+          {
+            name: "黄岛区",
+            url: ""
+          },
+          {
+            name: "崂山区",
+            url: ""
+          },
+          {
+            name: "李沧区",
+            url: ""
+          },
+          {
+            name: "城阳区",
+            url: ""
+          },
+          {
+            name: "即墨区",
+            url: ""
+          },
+          {
+            name: "胶州市",
+            url: ""
+          },
+          {
+            name: "平度市",
+            url: ""
+          },
+          {
+            name: "莱西市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "淄博市",
+        url: "",
+        children: [
+          {
+            name: "淄川区",
+            url: ""
+          },
+          {
+            name: "张店区",
+            url: ""
+          },
+          {
+            name: "博山区",
+            url: ""
+          },
+          {
+            name: "临淄区",
+            url: ""
+          },
+          {
+            name: "周村区",
+            url: ""
+          },
+          {
+            name: "桓台县",
+            url: ""
+          },
+          {
+            name: "高青县",
+            url: ""
+          },
+          {
+            name: "沂源县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "枣庄市",
+        url: "",
+        children: [
+          {
+            name: "市中区",
+            url: ""
+          },
+          {
+            name: "薛城区",
+            url: ""
+          },
+          {
+            name: "峄城区",
+            url: ""
+          },
+          {
+            name: "台儿庄区",
+            url: ""
+          },
+          {
+            name: "山亭区",
+            url: ""
+          },
+          {
+            name: "滕州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "东营市",
+        url: "",
+        children: [
+          {
+            name: "东营区",
+            url: ""
+          },
+          {
+            name: "河口区",
+            url: ""
+          },
+          {
+            name: "垦利区",
+            url: ""
+          },
+          {
+            name: "利津县",
+            url: ""
+          },
+          {
+            name: "广饶县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "烟台市",
+        url: "",
+        children: [
+          {
+            name: "芝罘区",
+            url: ""
+          },
+          {
+            name: "福山区",
+            url: ""
+          },
+          {
+            name: "牟平区",
+            url: ""
+          },
+          {
+            name: "莱山区",
+            url: ""
+          },
+          {
+            name: "蓬莱区",
+            url: ""
+          },
+          {
+            name: "龙口市",
+            url: ""
+          },
+          {
+            name: "莱阳市",
+            url: ""
+          },
+          {
+            name: "莱州市",
+            url: ""
+          },
+          {
+            name: "招远市",
+            url: ""
+          },
+          {
+            name: "栖霞市",
+            url: ""
+          },
+          {
+            name: "海阳市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "潍坊市",
+        url: "",
+        children: [
+          {
+            name: "潍城区",
+            url: ""
+          },
+          {
+            name: "寒亭区",
+            url: ""
+          },
+          {
+            name: "坊子区",
+            url: ""
+          },
+          {
+            name: "奎文区",
+            url: ""
+          },
+          {
+            name: "临朐县",
+            url: ""
+          },
+          {
+            name: "昌乐县",
+            url: ""
+          },
+          {
+            name: "青州市",
+            url: ""
+          },
+          {
+            name: "诸城市",
+            url: ""
+          },
+          {
+            name: "寿光市",
+            url: ""
+          },
+          {
+            name: "安丘市",
+            url: ""
+          },
+          {
+            name: "高密市",
+            url: ""
+          },
+          {
+            name: "昌邑市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "济宁市",
+        url: "",
+        children: [
+          {
+            name: "任城区",
+            url: ""
+          },
+          {
+            name: "兖州区",
+            url: ""
+          },
+          {
+            name: "微山县",
+            url: ""
+          },
+          {
+            name: "鱼台县",
+            url: ""
+          },
+          {
+            name: "金乡县",
+            url: ""
+          },
+          {
+            name: "嘉祥县",
+            url: ""
+          },
+          {
+            name: "汶上县",
+            url: ""
+          },
+          {
+            name: "泗水县",
+            url: ""
+          },
+          {
+            name: "梁山县",
+            url: ""
+          },
+          {
+            name: "曲阜市",
+            url: ""
+          },
+          {
+            name: "邹城市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "泰安市",
+        url: "",
+        children: [
+          {
+            name: "泰山区",
+            url: ""
+          },
+          {
+            name: "岱岳区",
+            url: ""
+          },
+          {
+            name: "宁阳县",
+            url: ""
+          },
+          {
+            name: "东平县",
+            url: ""
+          },
+          {
+            name: "新泰市",
+            url: ""
+          },
+          {
+            name: "肥城市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "威海市",
+        url: "",
+        children: [
+          {
+            name: "环翠区",
+            url: ""
+          },
+          {
+            name: "文登区",
+            url: ""
+          },
+          {
+            name: "荣成市",
+            url: ""
+          },
+          {
+            name: "乳山市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "日照市",
+        url: "",
+        children: [
+          {
+            name: "东港区",
+            url: ""
+          },
+          {
+            name: "岚山区",
+            url: ""
+          },
+          {
+            name: "五莲县",
+            url: ""
+          },
+          {
+            name: "莒县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "临沂市",
+        url: "",
+        children: [
+          {
+            name: "兰山区",
+            url: ""
+          },
+          {
+            name: "罗庄区",
+            url: ""
+          },
+          {
+            name: "河东区",
+            url: ""
+          },
+          {
+            name: "沂南县",
+            url: ""
+          },
+          {
+            name: "郯城县",
+            url: ""
+          },
+          {
+            name: "沂水县",
+            url: ""
+          },
+          {
+            name: "兰陵县",
+            url: ""
+          },
+          {
+            name: "费县",
+            url: ""
+          },
+          {
+            name: "平邑县",
+            url: ""
+          },
+          {
+            name: "莒南县",
+            url: ""
+          },
+          {
+            name: "蒙阴县",
+            url: ""
+          },
+          {
+            name: "临沭县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "德州市",
+        url: "",
+        children: [
+          {
+            name: "德城区",
+            url: ""
+          },
+          {
+            name: "陵城区",
+            url: ""
+          },
+          {
+            name: "宁津县",
+            url: ""
+          },
+          {
+            name: "庆云县",
+            url: ""
+          },
+          {
+            name: "临邑县",
+            url: ""
+          },
+          {
+            name: "齐河县",
+            url: ""
+          },
+          {
+            name: "平原县",
+            url: ""
+          },
+          {
+            name: "夏津县",
+            url: ""
+          },
+          {
+            name: "武城县",
+            url: ""
+          },
+          {
+            name: "禹城市",
+            url: ""
+          },
+          {
+            name: "乐陵市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "聊城市",
+        url: "",
+        children: [
+          {
+            name: "东昌府区",
+            url: ""
+          },
+          {
+            name: "茌平区",
+            url: ""
+          },
+          {
+            name: "阳谷县",
+            url: ""
+          },
+          {
+            name: "莘县",
+            url: ""
+          },
+          {
+            name: "东阿县",
+            url: ""
+          },
+          {
+            name: "冠县",
+            url: ""
+          },
+          {
+            name: "高唐县",
+            url: ""
+          },
+          {
+            name: "临清市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "滨州市",
+        url: "",
+        children: [
+          {
+            name: "滨城区",
+            url: ""
+          },
+          {
+            name: "沾化区",
+            url: ""
+          },
+          {
+            name: "惠民县",
+            url: ""
+          },
+          {
+            name: "阳信县",
+            url: ""
+          },
+          {
+            name: "无棣县",
+            url: ""
+          },
+          {
+            name: "博兴县",
+            url: ""
+          },
+          {
+            name: "邹平市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "菏泽市",
+        url: "",
+        children: [
+          {
+            name: "牡丹区",
+            url: ""
+          },
+          {
+            name: "定陶区",
+            url: ""
+          },
+          {
+            name: "曹县",
+            url: ""
+          },
+          {
+            name: "单县",
+            url: ""
+          },
+          {
+            name: "成武县",
+            url: ""
+          },
+          {
+            name: "巨野县",
+            url: ""
+          },
+          {
+            name: "郓城县",
+            url: ""
+          },
+          {
+            name: "鄄城县",
+            url: ""
+          },
+          {
+            name: "东明县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "河南省",
+    url: "",
+    children: [
+      {
+        name: "郑州市",
+        url: "",
+        children: [
+          {
+            name: "中原区",
+            url: ""
+          },
+          {
+            name: "二七区",
+            url: ""
+          },
+          {
+            name: "管城回族区",
+            url: ""
+          },
+          {
+            name: "金水区",
+            url: ""
+          },
+          {
+            name: "上街区",
+            url: ""
+          },
+          {
+            name: "惠济区",
+            url: ""
+          },
+          {
+            name: "中牟县",
+            url: ""
+          },
+          {
+            name: "巩义市",
+            url: ""
+          },
+          {
+            name: "荥阳市",
+            url: ""
+          },
+          {
+            name: "新密市",
+            url: ""
+          },
+          {
+            name: "新郑市",
+            url: ""
+          },
+          {
+            name: "登封市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "开封市",
+        url: "",
+        children: [
+          {
+            name: "龙亭区",
+            url: ""
+          },
+          {
+            name: "顺河回族区",
+            url: ""
+          },
+          {
+            name: "鼓楼区",
+            url: ""
+          },
+          {
+            name: "禹王台区",
+            url: ""
+          },
+          {
+            name: "祥符区",
+            url: ""
+          },
+          {
+            name: "杞县",
+            url: ""
+          },
+          {
+            name: "通许县",
+            url: ""
+          },
+          {
+            name: "尉氏县",
+            url: ""
+          },
+          {
+            name: "兰考县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "洛阳市",
+        url: "",
+        children: [
+          {
+            name: "老城区",
+            url: ""
+          },
+          {
+            name: "西工区",
+            url: ""
+          },
+          {
+            name: "瀍河回族区",
+            url: ""
+          },
+          {
+            name: "涧西区",
+            url: ""
+          },
+          {
+            name: "洛龙区",
+            url: ""
+          },
+          {
+            name: "孟津区",
+            url: ""
+          },
+          {
+            name: "新安县",
+            url: ""
+          },
+          {
+            name: "栾川县",
+            url: ""
+          },
+          {
+            name: "嵩县",
+            url: ""
+          },
+          {
+            name: "汝阳县",
+            url: ""
+          },
+          {
+            name: "宜阳县",
+            url: ""
+          },
+          {
+            name: "洛宁县",
+            url: ""
+          },
+          {
+            name: "伊川县",
+            url: ""
+          },
+          {
+            name: "偃师区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "平顶山市",
+        url: "",
+        children: [
+          {
+            name: "新华区",
+            url: ""
+          },
+          {
+            name: "卫东区",
+            url: ""
+          },
+          {
+            name: "石龙区",
+            url: ""
+          },
+          {
+            name: "湛河区",
+            url: ""
+          },
+          {
+            name: "宝丰县",
+            url: ""
+          },
+          {
+            name: "叶县",
+            url: ""
+          },
+          {
+            name: "鲁山县",
+            url: ""
+          },
+          {
+            name: "郏县",
+            url: ""
+          },
+          {
+            name: "舞钢市",
+            url: ""
+          },
+          {
+            name: "汝州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "安阳市",
+        url: "",
+        children: [
+          {
+            name: "文峰区",
+            url: ""
+          },
+          {
+            name: "北关区",
+            url: ""
+          },
+          {
+            name: "殷都区",
+            url: ""
+          },
+          {
+            name: "龙安区",
+            url: ""
+          },
+          {
+            name: "安阳县",
+            url: ""
+          },
+          {
+            name: "汤阴县",
+            url: ""
+          },
+          {
+            name: "滑县",
+            url: ""
+          },
+          {
+            name: "内黄县",
+            url: ""
+          },
+          {
+            name: "林州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "鹤壁市",
+        url: "",
+        children: [
+          {
+            name: "鹤山区",
+            url: ""
+          },
+          {
+            name: "山城区",
+            url: ""
+          },
+          {
+            name: "淇滨区",
+            url: ""
+          },
+          {
+            name: "浚县",
+            url: ""
+          },
+          {
+            name: "淇县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "新乡市",
+        url: "",
+        children: [
+          {
+            name: "红旗区",
+            url: ""
+          },
+          {
+            name: "卫滨区",
+            url: ""
+          },
+          {
+            name: "凤泉区",
+            url: ""
+          },
+          {
+            name: "牧野区",
+            url: ""
+          },
+          {
+            name: "新乡县",
+            url: ""
+          },
+          {
+            name: "获嘉县",
+            url: ""
+          },
+          {
+            name: "原阳县",
+            url: ""
+          },
+          {
+            name: "延津县",
+            url: ""
+          },
+          {
+            name: "封丘县",
+            url: ""
+          },
+          {
+            name: "辉县市",
+            url: ""
+          },
+          {
+            name: "卫辉市",
+            url: ""
+          },
+          {
+            name: "长垣市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "焦作市",
+        url: "",
+        children: [
+          {
+            name: "解放区",
+            url: ""
+          },
+          {
+            name: "中站区",
+            url: ""
+          },
+          {
+            name: "马村区",
+            url: ""
+          },
+          {
+            name: "山阳区",
+            url: ""
+          },
+          {
+            name: "修武县",
+            url: ""
+          },
+          {
+            name: "博爱县",
+            url: ""
+          },
+          {
+            name: "武陟县",
+            url: ""
+          },
+          {
+            name: "温县",
+            url: ""
+          },
+          {
+            name: "沁阳市",
+            url: ""
+          },
+          {
+            name: "孟州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "濮阳市",
+        url: "",
+        children: [
+          {
+            name: "华龙区",
+            url: ""
+          },
+          {
+            name: "清丰县",
+            url: ""
+          },
+          {
+            name: "南乐县",
+            url: ""
+          },
+          {
+            name: "范县",
+            url: ""
+          },
+          {
+            name: "台前县",
+            url: ""
+          },
+          {
+            name: "濮阳县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "许昌市",
+        url: "",
+        children: [
+          {
+            name: "魏都区",
+            url: ""
+          },
+          {
+            name: "建安区",
+            url: ""
+          },
+          {
+            name: "鄢陵县",
+            url: ""
+          },
+          {
+            name: "襄城县",
+            url: ""
+          },
+          {
+            name: "禹州市",
+            url: ""
+          },
+          {
+            name: "长葛市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "漯河市",
+        url: "",
+        children: [
+          {
+            name: "源汇区",
+            url: ""
+          },
+          {
+            name: "郾城区",
+            url: ""
+          },
+          {
+            name: "召陵区",
+            url: ""
+          },
+          {
+            name: "舞阳县",
+            url: ""
+          },
+          {
+            name: "临颍县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "三门峡市",
+        url: "",
+        children: [
+          {
+            name: "湖滨区",
+            url: ""
+          },
+          {
+            name: "陕州区",
+            url: ""
+          },
+          {
+            name: "渑池县",
+            url: ""
+          },
+          {
+            name: "卢氏县",
+            url: ""
+          },
+          {
+            name: "义马市",
+            url: ""
+          },
+          {
+            name: "灵宝市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "南阳市",
+        url: "",
+        children: [
+          {
+            name: "宛城区",
+            url: ""
+          },
+          {
+            name: "卧龙区",
+            url: ""
+          },
+          {
+            name: "南召县",
+            url: ""
+          },
+          {
+            name: "方城县",
+            url: ""
+          },
+          {
+            name: "西峡县",
+            url: ""
+          },
+          {
+            name: "镇平县",
+            url: ""
+          },
+          {
+            name: "内乡县",
+            url: ""
+          },
+          {
+            name: "淅川县",
+            url: ""
+          },
+          {
+            name: "社旗县",
+            url: ""
+          },
+          {
+            name: "唐河县",
+            url: ""
+          },
+          {
+            name: "新野县",
+            url: ""
+          },
+          {
+            name: "桐柏县",
+            url: ""
+          },
+          {
+            name: "邓州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "商丘市",
+        url: "",
+        children: [
+          {
+            name: "梁园区",
+            url: ""
+          },
+          {
+            name: "睢阳区",
+            url: ""
+          },
+          {
+            name: "民权县",
+            url: ""
+          },
+          {
+            name: "睢县",
+            url: ""
+          },
+          {
+            name: "宁陵县",
+            url: ""
+          },
+          {
+            name: "柘城县",
+            url: ""
+          },
+          {
+            name: "虞城县",
+            url: ""
+          },
+          {
+            name: "夏邑县",
+            url: ""
+          },
+          {
+            name: "永城市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "信阳市",
+        url: "",
+        children: [
+          {
+            name: "浉河区",
+            url: ""
+          },
+          {
+            name: "平桥区",
+            url: ""
+          },
+          {
+            name: "罗山县",
+            url: ""
+          },
+          {
+            name: "光山县",
+            url: ""
+          },
+          {
+            name: "新县",
+            url: ""
+          },
+          {
+            name: "商城县",
+            url: ""
+          },
+          {
+            name: "固始县",
+            url: ""
+          },
+          {
+            name: "潢川县",
+            url: ""
+          },
+          {
+            name: "淮滨县",
+            url: ""
+          },
+          {
+            name: "息县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "周口市",
+        url: "",
+        children: [
+          {
+            name: "川汇区",
+            url: ""
+          },
+          {
+            name: "淮阳区",
+            url: ""
+          },
+          {
+            name: "扶沟县",
+            url: ""
+          },
+          {
+            name: "西华县",
+            url: ""
+          },
+          {
+            name: "商水县",
+            url: ""
+          },
+          {
+            name: "沈丘县",
+            url: ""
+          },
+          {
+            name: "郸城县",
+            url: ""
+          },
+          {
+            name: "太康县",
+            url: ""
+          },
+          {
+            name: "鹿邑县",
+            url: ""
+          },
+          {
+            name: "项城市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "驻马店市",
+        url: "",
+        children: [
+          {
+            name: "驿城区",
+            url: ""
+          },
+          {
+            name: "西平县",
+            url: ""
+          },
+          {
+            name: "上蔡县",
+            url: ""
+          },
+          {
+            name: "平舆县",
+            url: ""
+          },
+          {
+            name: "正阳县",
+            url: ""
+          },
+          {
+            name: "确山县",
+            url: ""
+          },
+          {
+            name: "泌阳县",
+            url: ""
+          },
+          {
+            name: "汝南县",
+            url: ""
+          },
+          {
+            name: "遂平县",
+            url: ""
+          },
+          {
+            name: "新蔡县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "济源示范区",
+        url: ""
+      }
+    ]
+  },
+  {
+    name: "湖北省",
+    url: "",
+    children: [
+      {
+        name: "武汉市",
+        url: "",
+        children: [
+          {
+            name: "江岸区",
+            url: ""
+          },
+          {
+            name: "江汉区",
+            url: ""
+          },
+          {
+            name: "硚口区",
+            url: ""
+          },
+          {
+            name: "汉阳区",
+            url: ""
+          },
+          {
+            name: "武昌区",
+            url: ""
+          },
+          {
+            name: "青山区",
+            url: ""
+          },
+          {
+            name: "洪山区",
+            url: ""
+          },
+          {
+            name: "东西湖区",
+            url: ""
+          },
+          {
+            name: "汉南区",
+            url: ""
+          },
+          {
+            name: "蔡甸区",
+            url: ""
+          },
+          {
+            name: "江夏区",
+            url: ""
+          },
+          {
+            name: "黄陂区",
+            url: ""
+          },
+          {
+            name: "新洲区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "黄石市",
+        url: "",
+        children: [
+          {
+            name: "黄石港区",
+            url: ""
+          },
+          {
+            name: "西塞山区",
+            url: ""
+          },
+          {
+            name: "下陆区",
+            url: ""
+          },
+          {
+            name: "铁山区",
+            url: ""
+          },
+          {
+            name: "阳新县",
+            url: ""
+          },
+          {
+            name: "大冶市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "十堰市",
+        url: "",
+        children: [
+          {
+            name: "茅箭区",
+            url: ""
+          },
+          {
+            name: "张湾区",
+            url: ""
+          },
+          {
+            name: "郧阳区",
+            url: ""
+          },
+          {
+            name: "郧西县",
+            url: ""
+          },
+          {
+            name: "竹山县",
+            url: ""
+          },
+          {
+            name: "竹溪县",
+            url: ""
+          },
+          {
+            name: "房县",
+            url: ""
+          },
+          {
+            name: "丹江口市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "宜昌市",
+        url: "",
+        children: [
+          {
+            name: "西陵区",
+            url: ""
+          },
+          {
+            name: "伍家岗区",
+            url: ""
+          },
+          {
+            name: "点军区",
+            url: ""
+          },
+          {
+            name: "猇亭区",
+            url: ""
+          },
+          {
+            name: "夷陵区",
+            url: ""
+          },
+          {
+            name: "远安县",
+            url: ""
+          },
+          {
+            name: "兴山县",
+            url: ""
+          },
+          {
+            name: "秭归县",
+            url: ""
+          },
+          {
+            name: "长阳土家族自治县",
+            url: ""
+          },
+          {
+            name: "五峰土家族自治县",
+            url: ""
+          },
+          {
+            name: "宜都市",
+            url: ""
+          },
+          {
+            name: "当阳市",
+            url: ""
+          },
+          {
+            name: "枝江市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "襄阳市",
+        url: "",
+        children: [
+          {
+            name: "襄城区",
+            url: ""
+          },
+          {
+            name: "樊城区",
+            url: ""
+          },
+          {
+            name: "襄州区",
+            url: ""
+          },
+          {
+            name: "南漳县",
+            url: ""
+          },
+          {
+            name: "谷城县",
+            url: ""
+          },
+          {
+            name: "保康县",
+            url: ""
+          },
+          {
+            name: "老河口市",
+            url: ""
+          },
+          {
+            name: "枣阳市",
+            url: ""
+          },
+          {
+            name: "宜城市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "鄂州市",
+        url: "",
+        children: [
+          {
+            name: "梁子湖区",
+            url: ""
+          },
+          {
+            name: "华容区",
+            url: ""
+          },
+          {
+            name: "鄂城区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "荆门市",
+        url: "",
+        children: [
+          {
+            name: "东宝区",
+            url: ""
+          },
+          {
+            name: "掇刀区",
+            url: ""
+          },
+          {
+            name: "沙洋县",
+            url: ""
+          },
+          {
+            name: "钟祥市",
+            url: ""
+          },
+          {
+            name: "京山市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "孝感市",
+        url: "",
+        children: [
+          {
+            name: "孝南区",
+            url: ""
+          },
+          {
+            name: "孝昌县",
+            url: ""
+          },
+          {
+            name: "大悟县",
+            url: ""
+          },
+          {
+            name: "云梦县",
+            url: ""
+          },
+          {
+            name: "应城市",
+            url: ""
+          },
+          {
+            name: "安陆市",
+            url: ""
+          },
+          {
+            name: "汉川市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "荆州市",
+        url: "",
+        children: [
+          {
+            name: "沙市区",
+            url: ""
+          },
+          {
+            name: "荆州区",
+            url: ""
+          },
+          {
+            name: "公安县",
+            url: ""
+          },
+          {
+            name: "江陵县",
+            url: ""
+          },
+          {
+            name: "松滋市",
+            url: ""
+          },
+          {
+            name: "石首市",
+            url: ""
+          },
+          {
+            name: "洪湖市",
+            url: ""
+          },
+          {
+            name: "监利市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "黄冈市",
+        url: "",
+        children: [
+          {
+            name: "黄州区",
+            url: ""
+          },
+          {
+            name: "团风县",
+            url: ""
+          },
+          {
+            name: "红安县",
+            url: ""
+          },
+          {
+            name: "麻城市",
+            url: ""
+          },
+          {
+            name: "罗田县",
+            url: ""
+          },
+          {
+            name: "英山县",
+            url: ""
+          },
+          {
+            name: "浠水县",
+            url: ""
+          },
+          {
+            name: "蕲春县",
+            url: ""
+          },
+          {
+            name: "武穴市",
+            url: ""
+          },
+          {
+            name: "黄梅县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "咸宁市",
+        url: "",
+        children: [
+          {
+            name: "咸安区",
+            url: ""
+          },
+          {
+            name: "嘉鱼县",
+            url: ""
+          },
+          {
+            name: "通城县",
+            url: ""
+          },
+          {
+            name: "崇阳县",
+            url: ""
+          },
+          {
+            name: "通山县",
+            url: ""
+          },
+          {
+            name: "赤壁市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "随州市",
+        url: "",
+        children: [
+          {
+            name: "曾都区",
+            url: ""
+          },
+          {
+            name: "随县",
+            url: ""
+          },
+          {
+            name: "广水市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "恩施土家族苗族自治州",
+        url: "",
+        children: [
+          {
+            name: "恩施市",
+            url: ""
+          },
+          {
+            name: "利川市",
+            url: ""
+          },
+          {
+            name: "建始县",
+            url: ""
+          },
+          {
+            name: "巴东县",
+            url: ""
+          },
+          {
+            name: "宣恩县",
+            url: ""
+          },
+          {
+            name: "咸丰县",
+            url: ""
+          },
+          {
+            name: "来凤县",
+            url: ""
+          },
+          {
+            name: "鹤峰县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "仙桃市",
+        url: ""
+      },
+      {
+        name: "潜江市",
+        url: ""
+      },
+      {
+        name: "天门市",
+        url: ""
+      },
+      {
+        name: "神农架林区",
+        url: ""
+      }
+    ]
+  },
+  {
+    name: "湖南省",
+    url: "",
+    children: [
+      {
+        name: "长沙市",
+        url: "",
+        children: [
+          {
+            name: "芙蓉区",
+            url: ""
+          },
+          {
+            name: "天心区",
+            url: ""
+          },
+          {
+            name: "岳麓区",
+            url: ""
+          },
+          {
+            name: "开福区",
+            url: ""
+          },
+          {
+            name: "雨花区",
+            url: ""
+          },
+          {
+            name: "望城区",
+            url: ""
+          },
+          {
+            name: "长沙县",
+            url: ""
+          },
+          {
+            name: "浏阳市",
+            url: ""
+          },
+          {
+            name: "宁乡市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "株洲市",
+        url: "",
+        children: [
+          {
+            name: "荷塘区",
+            url: ""
+          },
+          {
+            name: "芦淞区",
+            url: ""
+          },
+          {
+            name: "石峰区",
+            url: ""
+          },
+          {
+            name: "天元区",
+            url: ""
+          },
+          {
+            name: "渌口区",
+            url: ""
+          },
+          {
+            name: "醴陵市",
+            url: ""
+          },
+          {
+            name: "攸县",
+            url: ""
+          },
+          {
+            name: "茶陵县",
+            url: ""
+          },
+          {
+            name: "炎陵县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "湘潭市",
+        url: "",
+        children: [
+          {
+            name: "雨湖区",
+            url: ""
+          },
+          {
+            name: "岳塘区",
+            url: ""
+          },
+          {
+            name: "湘潭县",
+            url: ""
+          },
+          {
+            name: "湘乡市",
+            url: ""
+          },
+          {
+            name: "韶山市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "衡阳市",
+        url: "",
+        children: [
+          {
+            name: "珠晖区",
+            url: ""
+          },
+          {
+            name: "雁峰区",
+            url: ""
+          },
+          {
+            name: "石鼓区",
+            url: ""
+          },
+          {
+            name: "蒸湘区",
+            url: ""
+          },
+          {
+            name: "南岳区",
+            url: ""
+          },
+          {
+            name: "衡阳县",
+            url: ""
+          },
+          {
+            name: "衡南县",
+            url: ""
+          },
+          {
+            name: "衡山县",
+            url: ""
+          },
+          {
+            name: "衡东县",
+            url: ""
+          },
+          {
+            name: "祁东县",
+            url: ""
+          },
+          {
+            name: "耒阳市",
+            url: ""
+          },
+          {
+            name: "常宁市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "邵阳市",
+        url: "",
+        children: [
+          {
+            name: "双清区",
+            url: ""
+          },
+          {
+            name: "大祥区",
+            url: ""
+          },
+          {
+            name: "北塔区",
+            url: ""
+          },
+          {
+            name: "新邵县",
+            url: ""
+          },
+          {
+            name: "邵阳县",
+            url: ""
+          },
+          {
+            name: "隆回县",
+            url: ""
+          },
+          {
+            name: "洞口县",
+            url: ""
+          },
+          {
+            name: "绥宁县",
+            url: ""
+          },
+          {
+            name: "新宁县",
+            url: ""
+          },
+          {
+            name: "城步苗族自治县",
+            url: ""
+          },
+          {
+            name: "武冈市",
+            url: ""
+          },
+          {
+            name: "邵东市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "岳阳市",
+        url: "",
+        children: [
+          {
+            name: "岳阳楼区",
+            url: ""
+          },
+          {
+            name: "云溪区",
+            url: ""
+          },
+          {
+            name: "君山区",
+            url: ""
+          },
+          {
+            name: "岳阳县",
+            url: ""
+          },
+          {
+            name: "华容县",
+            url: ""
+          },
+          {
+            name: "湘阴县",
+            url: ""
+          },
+          {
+            name: "平江县",
+            url: ""
+          },
+          {
+            name: "汨罗市",
+            url: ""
+          },
+          {
+            name: "临湘市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "常德市",
+        url: "",
+        children: [
+          {
+            name: "武陵区",
+            url: ""
+          },
+          {
+            name: "鼎城区",
+            url: ""
+          },
+          {
+            name: "安乡县",
+            url: ""
+          },
+          {
+            name: "汉寿县",
+            url: ""
+          },
+          {
+            name: "澧县",
+            url: ""
+          },
+          {
+            name: "临澧县",
+            url: ""
+          },
+          {
+            name: "桃源县",
+            url: ""
+          },
+          {
+            name: "石门县",
+            url: ""
+          },
+          {
+            name: "津市市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "张家界市",
+        url: "",
+        children: [
+          {
+            name: "永定区",
+            url: ""
+          },
+          {
+            name: "武陵源区",
+            url: ""
+          },
+          {
+            name: "慈利县",
+            url: ""
+          },
+          {
+            name: "桑植县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "益阳市",
+        url: "",
+        children: [
+          {
+            name: "资阳区",
+            url: ""
+          },
+          {
+            name: "赫山区",
+            url: ""
+          },
+          {
+            name: "南县",
+            url: ""
+          },
+          {
+            name: "桃江县",
+            url: ""
+          },
+          {
+            name: "安化县",
+            url: ""
+          },
+          {
+            name: "沅江市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "郴州市",
+        url: "",
+        children: [
+          {
+            name: "北湖区",
+            url: ""
+          },
+          {
+            name: "苏仙区",
+            url: ""
+          },
+          {
+            name: "桂阳县",
+            url: ""
+          },
+          {
+            name: "宜章县",
+            url: ""
+          },
+          {
+            name: "永兴县",
+            url: ""
+          },
+          {
+            name: "嘉禾县",
+            url: ""
+          },
+          {
+            name: "临武县",
+            url: ""
+          },
+          {
+            name: "汝城县",
+            url: ""
+          },
+          {
+            name: "桂东县",
+            url: ""
+          },
+          {
+            name: "安仁县",
+            url: ""
+          },
+          {
+            name: "资兴市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "永州市",
+        url: "",
+        children: [
+          {
+            name: "零陵区",
+            url: ""
+          },
+          {
+            name: "冷水滩区",
+            url: ""
+          },
+          {
+            name: "东安县",
+            url: ""
+          },
+          {
+            name: "双牌县",
+            url: ""
+          },
+          {
+            name: "道县",
+            url: ""
+          },
+          {
+            name: "江永县",
+            url: ""
+          },
+          {
+            name: "宁远县",
+            url: ""
+          },
+          {
+            name: "蓝山县",
+            url: ""
+          },
+          {
+            name: "新田县",
+            url: ""
+          },
+          {
+            name: "江华瑶族自治县",
+            url: ""
+          },
+          {
+            name: "祁阳市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "怀化市",
+        url: "",
+        children: [
+          {
+            name: "鹤城区",
+            url: ""
+          },
+          {
+            name: "中方县",
+            url: ""
+          },
+          {
+            name: "沅陵县",
+            url: ""
+          },
+          {
+            name: "辰溪县",
+            url: ""
+          },
+          {
+            name: "溆浦县",
+            url: ""
+          },
+          {
+            name: "会同县",
+            url: ""
+          },
+          {
+            name: "麻阳苗族自治县",
+            url: ""
+          },
+          {
+            name: "新晃侗族自治县",
+            url: ""
+          },
+          {
+            name: "芷江侗族自治县",
+            url: ""
+          },
+          {
+            name: "靖州苗族侗族自治县",
+            url: ""
+          },
+          {
+            name: "通道侗族自治县",
+            url: ""
+          },
+          {
+            name: "洪江市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "娄底市",
+        url: "",
+        children: [
+          {
+            name: "娄星区",
+            url: ""
+          },
+          {
+            name: "双峰县",
+            url: ""
+          },
+          {
+            name: "新化县",
+            url: ""
+          },
+          {
+            name: "冷水江市",
+            url: ""
+          },
+          {
+            name: "涟源市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "湘西土家族苗族自治州",
+        url: "",
+        children: [
+          {
+            name: "吉首市",
+            url: ""
+          },
+          {
+            name: "泸溪县",
+            url: ""
+          },
+          {
+            name: "凤凰县",
+            url: ""
+          },
+          {
+            name: "花垣县",
+            url: ""
+          },
+          {
+            name: "保靖县",
+            url: ""
+          },
+          {
+            name: "古丈县",
+            url: ""
+          },
+          {
+            name: "永顺县",
+            url: ""
+          },
+          {
+            name: "龙山县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "广东省",
+    url: "",
+    children: [
+      {
+        name: "广州市",
+        url: "",
+        children: [
+          {
+            name: "荔湾区",
+            url: ""
+          },
+          {
+            name: "越秀区",
+            url: ""
+          },
+          {
+            name: "海珠区",
+            url: ""
+          },
+          {
+            name: "天河区",
+            url: ""
+          },
+          {
+            name: "白云区",
+            url: ""
+          },
+          {
+            name: "黄埔区",
+            url: ""
+          },
+          {
+            name: "花都区",
+            url: ""
+          },
+          {
+            name: "番禺区",
+            url: ""
+          },
+          {
+            name: "南沙区",
+            url: ""
+          },
+          {
+            name: "从化区",
+            url: ""
+          },
+          {
+            name: "增城区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "韶关市",
+        url: "",
+        children: [
+          {
+            name: "武江区",
+            url: ""
+          },
+          {
+            name: "浈江区",
+            url: ""
+          },
+          {
+            name: "曲江区",
+            url: ""
+          },
+          {
+            name: "始兴县",
+            url: ""
+          },
+          {
+            name: "仁化县",
+            url: ""
+          },
+          {
+            name: "翁源县",
+            url: ""
+          },
+          {
+            name: "乳源瑶族自治县",
+            url: ""
+          },
+          {
+            name: "新丰县",
+            url: ""
+          },
+          {
+            name: "乐昌市",
+            url: ""
+          },
+          {
+            name: "南雄市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "深圳市",
+        url: "",
+        children: [
+          {
+            name: "罗湖区",
+            url: ""
+          },
+          {
+            name: "福田区",
+            url: ""
+          },
+          {
+            name: "南山区",
+            url: ""
+          },
+          {
+            name: "宝安区",
+            url: ""
+          },
+          {
+            name: "龙岗区",
+            url: ""
+          },
+          {
+            name: "盐田区",
+            url: ""
+          },
+          {
+            name: "龙华区",
+            url: ""
+          },
+          {
+            name: "坪山区",
+            url: ""
+          },
+          {
+            name: "光明区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "珠海市",
+        url: "",
+        children: [
+          {
+            name: "香洲区",
+            url: ""
+          },
+          {
+            name: "斗门区",
+            url: ""
+          },
+          {
+            name: "金湾区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "汕头市",
+        url: "",
+        children: [
+          {
+            name: "龙湖区",
+            url: ""
+          },
+          {
+            name: "金平区",
+            url: ""
+          },
+          {
+            name: "濠江区",
+            url: ""
+          },
+          {
+            name: "潮阳区",
+            url: ""
+          },
+          {
+            name: "潮南区",
+            url: ""
+          },
+          {
+            name: "澄海区",
+            url: ""
+          },
+          {
+            name: "南澳县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "佛山市",
+        url: "",
+        children: [
+          {
+            name: "禅城区",
+            url: ""
+          },
+          {
+            name: "南海区",
+            url: ""
+          },
+          {
+            name: "顺德区",
+            url: ""
+          },
+          {
+            name: "三水区",
+            url: ""
+          },
+          {
+            name: "高明区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "江门市",
+        url: "",
+        children: [
+          {
+            name: "蓬江区",
+            url: ""
+          },
+          {
+            name: "江海区",
+            url: ""
+          },
+          {
+            name: "新会区",
+            url: ""
+          },
+          {
+            name: "台山市",
+            url: ""
+          },
+          {
+            name: "开平市",
+            url: ""
+          },
+          {
+            name: "鹤山市",
+            url: ""
+          },
+          {
+            name: "恩平市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "湛江市",
+        url: "",
+        children: [
+          {
+            name: "赤坎区",
+            url: ""
+          },
+          {
+            name: "霞山区",
+            url: ""
+          },
+          {
+            name: "坡头区",
+            url: ""
+          },
+          {
+            name: "麻章区",
+            url: ""
+          },
+          {
+            name: "遂溪县",
+            url: ""
+          },
+          {
+            name: "徐闻县",
+            url: ""
+          },
+          {
+            name: "廉江市",
+            url: ""
+          },
+          {
+            name: "雷州市",
+            url: ""
+          },
+          {
+            name: "吴川市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "茂名市",
+        url: "",
+        children: [
+          {
+            name: "茂南区",
+            url: ""
+          },
+          {
+            name: "电白区",
+            url: ""
+          },
+          {
+            name: "高州市",
+            url: ""
+          },
+          {
+            name: "化州市",
+            url: ""
+          },
+          {
+            name: "信宜市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "肇庆市",
+        url: "",
+        children: [
+          {
+            name: "端州区",
+            url: ""
+          },
+          {
+            name: "鼎湖区",
+            url: ""
+          },
+          {
+            name: "高要区",
+            url: ""
+          },
+          {
+            name: "广宁县",
+            url: ""
+          },
+          {
+            name: "怀集县",
+            url: ""
+          },
+          {
+            name: "封开县",
+            url: ""
+          },
+          {
+            name: "德庆县",
+            url: ""
+          },
+          {
+            name: "四会市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "惠州市",
+        url: "",
+        children: [
+          {
+            name: "惠城区",
+            url: ""
+          },
+          {
+            name: "惠阳区",
+            url: ""
+          },
+          {
+            name: "博罗县",
+            url: ""
+          },
+          {
+            name: "惠东县",
+            url: ""
+          },
+          {
+            name: "龙门县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "梅州市",
+        url: "",
+        children: [
+          {
+            name: "梅江区",
+            url: ""
+          },
+          {
+            name: "梅县区",
+            url: ""
+          },
+          {
+            name: "大埔县",
+            url: ""
+          },
+          {
+            name: "丰顺县",
+            url: ""
+          },
+          {
+            name: "五华县",
+            url: ""
+          },
+          {
+            name: "平远县",
+            url: ""
+          },
+          {
+            name: "蕉岭县",
+            url: ""
+          },
+          {
+            name: "兴宁市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "汕尾市",
+        url: "",
+        children: [
+          {
+            name: "城区",
+            url: ""
+          },
+          {
+            name: "海丰县",
+            url: ""
+          },
+          {
+            name: "陆丰市",
+            url: ""
+          },
+          {
+            name: "陆河县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "河源市",
+        url: "",
+        children: [
+          {
+            name: "源城区",
+            url: ""
+          },
+          {
+            name: "紫金县",
+            url: ""
+          },
+          {
+            name: "龙川县",
+            url: ""
+          },
+          {
+            name: "连平县",
+            url: ""
+          },
+          {
+            name: "和平县",
+            url: ""
+          },
+          {
+            name: "东源县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "阳江市",
+        url: "",
+        children: [
+          {
+            name: "江城区",
+            url: ""
+          },
+          {
+            name: "阳东区",
+            url: ""
+          },
+          {
+            name: "阳西县",
+            url: ""
+          },
+          {
+            name: "阳春市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "清远市",
+        url: "",
+        children: [
+          {
+            name: "清城区",
+            url: ""
+          },
+          {
+            name: "清新区",
+            url: ""
+          },
+          {
+            name: "佛冈县",
+            url: ""
+          },
+          {
+            name: "阳山县",
+            url: ""
+          },
+          {
+            name: "连山壮族瑶族自治县",
+            url: ""
+          },
+          {
+            name: "连南瑶族自治县",
+            url: ""
+          },
+          {
+            name: "英德市",
+            url: ""
+          },
+          {
+            name: "连州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "东莞市",
+        url: ""
+      },
+      {
+        name: "中山市",
+        url: ""
+      },
+      {
+        name: "潮州市",
+        url: "",
+        children: [
+          {
+            name: "湘桥区",
+            url: ""
+          },
+          {
+            name: "潮安区",
+            url: ""
+          },
+          {
+            name: "饶平县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "揭阳市",
+        url: "",
+        children: [
+          {
+            name: "榕城区",
+            url: ""
+          },
+          {
+            name: "揭东区",
+            url: ""
+          },
+          {
+            name: "揭西县",
+            url: ""
+          },
+          {
+            name: "惠来县",
+            url: ""
+          },
+          {
+            name: "普宁市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "云浮市",
+        url: "",
+        children: [
+          {
+            name: "云城区",
+            url: ""
+          },
+          {
+            name: "云安区",
+            url: ""
+          },
+          {
+            name: "新兴县",
+            url: ""
+          },
+          {
+            name: "郁南县",
+            url: ""
+          },
+          {
+            name: "罗定市",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "广西壮族自治区",
+    url: "",
+    children: [
+      {
+        name: "南宁市",
+        url: "",
+        children: [
+          {
+            name: "兴宁区",
+            url: ""
+          },
+          {
+            name: "青秀区",
+            url: ""
+          },
+          {
+            name: "江南区",
+            url: ""
+          },
+          {
+            name: "西乡塘区",
+            url: ""
+          },
+          {
+            name: "良庆区",
+            url: ""
+          },
+          {
+            name: "邕宁区",
+            url: ""
+          },
+          {
+            name: "武鸣区",
+            url: ""
+          },
+          {
+            name: "隆安县",
+            url: ""
+          },
+          {
+            name: "马山县",
+            url: ""
+          },
+          {
+            name: "上林县",
+            url: ""
+          },
+          {
+            name: "宾阳县",
+            url: ""
+          },
+          {
+            name: "横州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "柳州市",
+        url: "",
+        children: [
+          {
+            name: "城中区",
+            url: ""
+          },
+          {
+            name: "鱼峰区",
+            url: ""
+          },
+          {
+            name: "柳南区",
+            url: ""
+          },
+          {
+            name: "柳北区",
+            url: ""
+          },
+          {
+            name: "柳江区",
+            url: ""
+          },
+          {
+            name: "柳城县",
+            url: ""
+          },
+          {
+            name: "鹿寨县",
+            url: ""
+          },
+          {
+            name: "融安县",
+            url: ""
+          },
+          {
+            name: "融水苗族自治县",
+            url: ""
+          },
+          {
+            name: "三江侗族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "桂林市",
+        url: "",
+        children: [
+          {
+            name: "秀峰区",
+            url: ""
+          },
+          {
+            name: "叠彩区",
+            url: ""
+          },
+          {
+            name: "象山区",
+            url: ""
+          },
+          {
+            name: "七星区",
+            url: ""
+          },
+          {
+            name: "雁山区",
+            url: ""
+          },
+          {
+            name: "临桂区",
+            url: ""
+          },
+          {
+            name: "阳朔县",
+            url: ""
+          },
+          {
+            name: "灵川县",
+            url: ""
+          },
+          {
+            name: "全州县",
+            url: ""
+          },
+          {
+            name: "兴安县",
+            url: ""
+          },
+          {
+            name: "永福县",
+            url: ""
+          },
+          {
+            name: "灌阳县",
+            url: ""
+          },
+          {
+            name: "龙胜各族自治县",
+            url: ""
+          },
+          {
+            name: "资源县",
+            url: ""
+          },
+          {
+            name: "平乐县",
+            url: ""
+          },
+          {
+            name: "恭城瑶族自治县",
+            url: ""
+          },
+          {
+            name: "荔浦市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "梧州市",
+        url: "",
+        children: [
+          {
+            name: "万秀区",
+            url: ""
+          },
+          {
+            name: "长洲区",
+            url: ""
+          },
+          {
+            name: "龙圩区",
+            url: ""
+          },
+          {
+            name: "苍梧县",
+            url: ""
+          },
+          {
+            name: "藤县",
+            url: ""
+          },
+          {
+            name: "蒙山县",
+            url: ""
+          },
+          {
+            name: "岑溪市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "北海市",
+        url: "",
+        children: [
+          {
+            name: "海城区",
+            url: ""
+          },
+          {
+            name: "银海区",
+            url: ""
+          },
+          {
+            name: "铁山港区",
+            url: ""
+          },
+          {
+            name: "合浦县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "防城港市",
+        url: "",
+        children: [
+          {
+            name: "港口区",
+            url: ""
+          },
+          {
+            name: "防城区",
+            url: ""
+          },
+          {
+            name: "上思县",
+            url: ""
+          },
+          {
+            name: "东兴市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "钦州市",
+        url: "",
+        children: [
+          {
+            name: "钦南区",
+            url: ""
+          },
+          {
+            name: "钦北区",
+            url: ""
+          },
+          {
+            name: "灵山县",
+            url: ""
+          },
+          {
+            name: "浦北县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "贵港市",
+        url: "",
+        children: [
+          {
+            name: "港北区",
+            url: ""
+          },
+          {
+            name: "港南区",
+            url: ""
+          },
+          {
+            name: "覃塘区",
+            url: ""
+          },
+          {
+            name: "平南县",
+            url: ""
+          },
+          {
+            name: "桂平市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "玉林市",
+        url: "",
+        children: [
+          {
+            name: "玉州区",
+            url: ""
+          },
+          {
+            name: "福绵区",
+            url: ""
+          },
+          {
+            name: "容县",
+            url: ""
+          },
+          {
+            name: "陆川县",
+            url: ""
+          },
+          {
+            name: "博白县",
+            url: ""
+          },
+          {
+            name: "兴业县",
+            url: ""
+          },
+          {
+            name: "北流市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "百色市",
+        url: "",
+        children: [
+          {
+            name: "右江区",
+            url: ""
+          },
+          {
+            name: "田阳区",
+            url: ""
+          },
+          {
+            name: "田东县",
+            url: ""
+          },
+          {
+            name: "德保县",
+            url: ""
+          },
+          {
+            name: "那坡县",
+            url: ""
+          },
+          {
+            name: "凌云县",
+            url: ""
+          },
+          {
+            name: "乐业县",
+            url: ""
+          },
+          {
+            name: "田林县",
+            url: ""
+          },
+          {
+            name: "西林县",
+            url: ""
+          },
+          {
+            name: "隆林各族自治县",
+            url: ""
+          },
+          {
+            name: "靖西市",
+            url: ""
+          },
+          {
+            name: "平果市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "贺州市",
+        url: "",
+        children: [
+          {
+            name: "八步区",
+            url: ""
+          },
+          {
+            name: "平桂区",
+            url: ""
+          },
+          {
+            name: "昭平县",
+            url: ""
+          },
+          {
+            name: "钟山县",
+            url: ""
+          },
+          {
+            name: "富川瑶族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "河池市",
+        url: "",
+        children: [
+          {
+            name: "金城江区",
+            url: ""
+          },
+          {
+            name: "宜州区",
+            url: ""
+          },
+          {
+            name: "南丹县",
+            url: ""
+          },
+          {
+            name: "天峨县",
+            url: ""
+          },
+          {
+            name: "凤山县",
+            url: ""
+          },
+          {
+            name: "东兰县",
+            url: ""
+          },
+          {
+            name: "罗城仫佬族自治县",
+            url: ""
+          },
+          {
+            name: "环江毛南族自治县",
+            url: ""
+          },
+          {
+            name: "巴马瑶族自治县",
+            url: ""
+          },
+          {
+            name: "都安瑶族自治县",
+            url: ""
+          },
+          {
+            name: "大化瑶族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "来宾市",
+        url: "",
+        children: [
+          {
+            name: "兴宾区",
+            url: ""
+          },
+          {
+            name: "象州县",
+            url: ""
+          },
+          {
+            name: "武宣县",
+            url: ""
+          },
+          {
+            name: "忻城县",
+            url: ""
+          },
+          {
+            name: "金秀瑶族自治县",
+            url: ""
+          },
+          {
+            name: "合山市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "崇左市",
+        url: "",
+        children: [
+          {
+            name: "江州区",
+            url: ""
+          },
+          {
+            name: "扶绥县",
+            url: ""
+          },
+          {
+            name: "宁明县",
+            url: ""
+          },
+          {
+            name: "龙州县",
+            url: ""
+          },
+          {
+            name: "大新县",
+            url: ""
+          },
+          {
+            name: "天等县",
+            url: ""
+          },
+          {
+            name: "凭祥市",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "海南省",
+    url: "",
+    children: [
+      {
+        name: "海口市",
+        url: "",
+        children: [
+          {
+            name: "秀英区",
+            url: ""
+          },
+          {
+            name: "龙华区",
+            url: ""
+          },
+          {
+            name: "琼山区",
+            url: ""
+          },
+          {
+            name: "美兰区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "三亚市",
+        url: "",
+        children: [
+          {
+            name: "海棠区",
+            url: ""
+          },
+          {
+            name: "吉阳区",
+            url: ""
+          },
+          {
+            name: "天涯区",
+            url: ""
+          },
+          {
+            name: "崖州区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "三沙市",
+        url: ""
+      },
+      {
+        name: "儋州市",
+        url: ""
+      },
+      {
+        name: "五指山市",
+        url: ""
+      },
+      {
+        name: "文昌市",
+        url: ""
+      },
+      {
+        name: "琼海市",
+        url: ""
+      },
+      {
+        name: "万宁市",
+        url: ""
+      },
+      {
+        name: "东方市",
+        url: ""
+      },
+      {
+        name: "定安县",
+        url: ""
+      },
+      {
+        name: "屯昌县",
+        url: ""
+      },
+      {
+        name: "澄迈县",
+        url: ""
+      },
+      {
+        name: "临高县",
+        url: ""
+      },
+      {
+        name: "白沙黎族自治县",
+        url: ""
+      },
+      {
+        name: "昌江黎族自治县",
+        url: ""
+      },
+      {
+        name: "乐东黎族自治县",
+        url: ""
+      },
+      {
+        name: "陵水黎族自治县",
+        url: ""
+      },
+      {
+        name: "保亭黎族苗族自治县",
+        url: ""
+      },
+      {
+        name: "琼中黎族苗族自治县",
+        url: ""
+      }
+    ]
+  },
+  {
+    name: "四川省",
+    url: "",
+    children: [
+      {
+        name: "成都市",
+        url: "",
+        children: [
+          {
+            name: "锦江区",
+            url: ""
+          },
+          {
+            name: "青羊区",
+            url: ""
+          },
+          {
+            name: "金牛区",
+            url: ""
+          },
+          {
+            name: "武侯区",
+            url: ""
+          },
+          {
+            name: "成华区",
+            url: ""
+          },
+          {
+            name: "龙泉驿区",
+            url: ""
+          },
+          {
+            name: "青白江区",
+            url: ""
+          },
+          {
+            name: "新都区",
+            url: ""
+          },
+          {
+            name: "温江区",
+            url: ""
+          },
+          {
+            name: "双流区",
+            url: ""
+          },
+          {
+            name: "郫都区",
+            url: ""
+          },
+          {
+            name: "新津区",
+            url: ""
+          },
+          {
+            name: "都江堰市",
+            url: ""
+          },
+          {
+            name: "彭州市",
+            url: ""
+          },
+          {
+            name: "邛崃市",
+            url: ""
+          },
+          {
+            name: "崇州市",
+            url: ""
+          },
+          {
+            name: "简阳市",
+            url: ""
+          },
+          {
+            name: "金堂县",
+            url: ""
+          },
+          {
+            name: "大邑县",
+            url: ""
+          },
+          {
+            name: "蒲江县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "自贡市",
+        url: "",
+        children: [
+          {
+            name: "自流井区",
+            url: ""
+          },
+          {
+            name: "贡井区",
+            url: ""
+          },
+          {
+            name: "大安区",
+            url: ""
+          },
+          {
+            name: "沿滩区",
+            url: ""
+          },
+          {
+            name: "荣县",
+            url: ""
+          },
+          {
+            name: "富顺县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "攀枝花市",
+        url: "",
+        children: [
+          {
+            name: "东区",
+            url: ""
+          },
+          {
+            name: "西区",
+            url: ""
+          },
+          {
+            name: "仁和区",
+            url: ""
+          },
+          {
+            name: "米易县",
+            url: ""
+          },
+          {
+            name: "盐边县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "泸州市",
+        url: "",
+        children: [
+          {
+            name: "江阳区",
+            url: ""
+          },
+          {
+            name: "纳溪区",
+            url: ""
+          },
+          {
+            name: "龙马潭区",
+            url: ""
+          },
+          {
+            name: "泸县",
+            url: ""
+          },
+          {
+            name: "合江县",
+            url: ""
+          },
+          {
+            name: "叙永县",
+            url: ""
+          },
+          {
+            name: "古蔺县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "德阳市",
+        url: "",
+        children: [
+          {
+            name: "旌阳区",
+            url: ""
+          },
+          {
+            name: "罗江区",
+            url: ""
+          },
+          {
+            name: "广汉市",
+            url: ""
+          },
+          {
+            name: "什邡市",
+            url: ""
+          },
+          {
+            name: "绵竹市",
+            url: ""
+          },
+          {
+            name: "中江县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "绵阳市",
+        url: "",
+        children: [
+          {
+            name: "涪城区",
+            url: ""
+          },
+          {
+            name: "游仙区",
+            url: ""
+          },
+          {
+            name: "安州区",
+            url: ""
+          },
+          {
+            name: "江油市",
+            url: ""
+          },
+          {
+            name: "三台县",
+            url: ""
+          },
+          {
+            name: "盐亭县",
+            url: ""
+          },
+          {
+            name: "梓潼县",
+            url: ""
+          },
+          {
+            name: "北川羌族自治县",
+            url: ""
+          },
+          {
+            name: "平武县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "广元市",
+        url: "",
+        children: [
+          {
+            name: "利州区",
+            url: ""
+          },
+          {
+            name: "昭化区",
+            url: ""
+          },
+          {
+            name: "朝天区",
+            url: ""
+          },
+          {
+            name: "旺苍县",
+            url: ""
+          },
+          {
+            name: "青川县",
+            url: ""
+          },
+          {
+            name: "剑阁县",
+            url: ""
+          },
+          {
+            name: "苍溪县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "遂宁市",
+        url: "",
+        children: [
+          {
+            name: "船山区",
+            url: ""
+          },
+          {
+            name: "安居区",
+            url: ""
+          },
+          {
+            name: "蓬溪县",
+            url: ""
+          },
+          {
+            name: "大英县",
+            url: ""
+          },
+          {
+            name: "射洪市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "内江市",
+        url: "",
+        children: [
+          {
+            name: "市中区",
+            url: ""
+          },
+          {
+            name: "东兴区",
+            url: ""
+          },
+          {
+            name: "威远县",
+            url: ""
+          },
+          {
+            name: "资中县",
+            url: ""
+          },
+          {
+            name: "隆昌市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "乐山市",
+        url: "",
+        children: [
+          {
+            name: "市中区",
+            url: ""
+          },
+          {
+            name: "五通桥区",
+            url: ""
+          },
+          {
+            name: "沙湾区",
+            url: ""
+          },
+          {
+            name: "金口河区",
+            url: ""
+          },
+          {
+            name: "峨眉山市",
+            url: ""
+          },
+          {
+            name: "犍为县",
+            url: ""
+          },
+          {
+            name: "井研县",
+            url: ""
+          },
+          {
+            name: "夹江县",
+            url: ""
+          },
+          {
+            name: "沐川县",
+            url: ""
+          },
+          {
+            name: "峨边彝族自治县",
+            url: ""
+          },
+          {
+            name: "马边彝族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "南充市",
+        url: "",
+        children: [
+          {
+            name: "顺庆区",
+            url: ""
+          },
+          {
+            name: "高坪区",
+            url: ""
+          },
+          {
+            name: "嘉陵区",
+            url: ""
+          },
+          {
+            name: "南部县",
+            url: ""
+          },
+          {
+            name: "营山县",
+            url: ""
+          },
+          {
+            name: "蓬安县",
+            url: ""
+          },
+          {
+            name: "仪陇县",
+            url: ""
+          },
+          {
+            name: "西充县",
+            url: ""
+          },
+          {
+            name: "阆中市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "眉山市",
+        url: "",
+        children: [
+          {
+            name: "东坡区",
+            url: ""
+          },
+          {
+            name: "彭山区",
+            url: ""
+          },
+          {
+            name: "仁寿县",
+            url: ""
+          },
+          {
+            name: "洪雅县",
+            url: ""
+          },
+          {
+            name: "丹棱县",
+            url: ""
+          },
+          {
+            name: "青神县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "宜宾市",
+        url: "",
+        children: [
+          {
+            name: "翠屏区",
+            url: ""
+          },
+          {
+            name: "叙州区",
+            url: ""
+          },
+          {
+            name: "南溪区",
+            url: ""
+          },
+          {
+            name: "江安县",
+            url: ""
+          },
+          {
+            name: "长宁县",
+            url: ""
+          },
+          {
+            name: "高县",
+            url: ""
+          },
+          {
+            name: "筠连县",
+            url: ""
+          },
+          {
+            name: "珙县",
+            url: ""
+          },
+          {
+            name: "兴文县",
+            url: ""
+          },
+          {
+            name: "屏山县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "广安市",
+        url: "",
+        children: [
+          {
+            name: "广安区",
+            url: ""
+          },
+          {
+            name: "前锋区",
+            url: ""
+          },
+          {
+            name: "岳池县",
+            url: ""
+          },
+          {
+            name: "武胜县",
+            url: ""
+          },
+          {
+            name: "邻水县",
+            url: ""
+          },
+          {
+            name: "华蓥市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "达州市",
+        url: "",
+        children: [
+          {
+            name: "通川区",
+            url: ""
+          },
+          {
+            name: "达川区",
+            url: ""
+          },
+          {
+            name: "宣汉县",
+            url: ""
+          },
+          {
+            name: "开江县",
+            url: ""
+          },
+          {
+            name: "大竹县",
+            url: ""
+          },
+          {
+            name: "渠县",
+            url: ""
+          },
+          {
+            name: "万源市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "雅安市",
+        url: "",
+        children: [
+          {
+            name: "雨城区",
+            url: ""
+          },
+          {
+            name: "名山区",
+            url: ""
+          },
+          {
+            name: "荥经县",
+            url: ""
+          },
+          {
+            name: "汉源县",
+            url: ""
+          },
+          {
+            name: "石棉县",
+            url: ""
+          },
+          {
+            name: "天全县",
+            url: ""
+          },
+          {
+            name: "芦山县",
+            url: ""
+          },
+          {
+            name: "宝兴县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "巴中市",
+        url: "",
+        children: [
+          {
+            name: "巴州区",
+            url: ""
+          },
+          {
+            name: "恩阳区",
+            url: ""
+          },
+          {
+            name: "通江县",
+            url: ""
+          },
+          {
+            name: "南江县",
+            url: ""
+          },
+          {
+            name: "平昌县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "资阳市",
+        url: "",
+        children: [
+          {
+            name: "雁江区",
+            url: ""
+          },
+          {
+            name: "安岳县",
+            url: ""
+          },
+          {
+            name: "乐至县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "阿坝藏族羌族自治州",
+        url: "",
+        children: [
+          {
+            name: "马尔康市",
+            url: ""
+          },
+          {
+            name: "汶川县",
+            url: ""
+          },
+          {
+            name: "理县",
+            url: ""
+          },
+          {
+            name: "茂县",
+            url: ""
+          },
+          {
+            name: "松潘县",
+            url: ""
+          },
+          {
+            name: "九寨沟县",
+            url: ""
+          },
+          {
+            name: "金川县",
+            url: ""
+          },
+          {
+            name: "小金县",
+            url: ""
+          },
+          {
+            name: "黑水县",
+            url: ""
+          },
+          {
+            name: "壤塘县",
+            url: ""
+          },
+          {
+            name: "阿坝县",
+            url: ""
+          },
+          {
+            name: "若尔盖县",
+            url: ""
+          },
+          {
+            name: "红原县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "甘孜藏族自治州",
+        url: "",
+        children: [
+          {
+            name: "康定市",
+            url: ""
+          },
+          {
+            name: "泸定县",
+            url: ""
+          },
+          {
+            name: "丹巴县",
+            url: ""
+          },
+          {
+            name: "九龙县",
+            url: ""
+          },
+          {
+            name: "雅江县",
+            url: ""
+          },
+          {
+            name: "道孚县",
+            url: ""
+          },
+          {
+            name: "炉霍县",
+            url: ""
+          },
+          {
+            name: "甘孜县",
+            url: ""
+          },
+          {
+            name: "新龙县",
+            url: ""
+          },
+          {
+            name: "德格县",
+            url: ""
+          },
+          {
+            name: "白玉县",
+            url: ""
+          },
+          {
+            name: "石渠县",
+            url: ""
+          },
+          {
+            name: "色达县",
+            url: ""
+          },
+          {
+            name: "理塘县",
+            url: ""
+          },
+          {
+            name: "巴塘县",
+            url: ""
+          },
+          {
+            name: "乡城县",
+            url: ""
+          },
+          {
+            name: "稻城县",
+            url: ""
+          },
+          {
+            name: "得荣县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "凉山彝族自治州",
+        url: "",
+        children: [
+          {
+            name: "西昌市",
+            url: ""
+          },
+          {
+            name: "木里藏族自治县",
+            url: ""
+          },
+          {
+            name: "盐源县",
+            url: ""
+          },
+          {
+            name: "德昌县",
+            url: ""
+          },
+          {
+            name: "会理市",
+            url: ""
+          },
+          {
+            name: "会东县",
+            url: ""
+          },
+          {
+            name: "宁南县",
+            url: ""
+          },
+          {
+            name: "普格县",
+            url: ""
+          },
+          {
+            name: "布拖县",
+            url: ""
+          },
+          {
+            name: "金阳县",
+            url: ""
+          },
+          {
+            name: "昭觉县",
+            url: ""
+          },
+          {
+            name: "喜德县",
+            url: ""
+          },
+          {
+            name: "冕宁县",
+            url: ""
+          },
+          {
+            name: "越西县",
+            url: ""
+          },
+          {
+            name: "甘洛县",
+            url: ""
+          },
+          {
+            name: "美姑县",
+            url: ""
+          },
+          {
+            name: "雷波县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "贵州省",
+    url: "",
+    children: [
+      {
+        name: "贵阳市",
+        url: "",
+        children: [
+          {
+            name: "南明区",
+            url: ""
+          },
+          {
+            name: "云岩区",
+            url: ""
+          },
+          {
+            name: "花溪区",
+            url: ""
+          },
+          {
+            name: "乌当区",
+            url: ""
+          },
+          {
+            name: "白云区",
+            url: ""
+          },
+          {
+            name: "观山湖区",
+            url: ""
+          },
+          {
+            name: "开阳县",
+            url: ""
+          },
+          {
+            name: "息烽县",
+            url: ""
+          },
+          {
+            name: "修文县",
+            url: ""
+          },
+          {
+            name: "清镇市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "六盘水市",
+        url: "",
+        children: [
+          {
+            name: "钟山区",
+            url: ""
+          },
+          {
+            name: "六枝特区",
+            url: ""
+          },
+          {
+            name: "水城区",
+            url: ""
+          },
+          {
+            name: "盘州市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "遵义市",
+        url: "",
+        children: [
+          {
+            name: "红花岗区",
+            url: ""
+          },
+          {
+            name: "汇川区",
+            url: ""
+          },
+          {
+            name: "播州区",
+            url: ""
+          },
+          {
+            name: "桐梓县",
+            url: ""
+          },
+          {
+            name: "绥阳县",
+            url: ""
+          },
+          {
+            name: "正安县",
+            url: ""
+          },
+          {
+            name: "道真仡佬族苗族自治县",
+            url: ""
+          },
+          {
+            name: "务川仡佬族苗族自治县",
+            url: ""
+          },
+          {
+            name: "凤冈县",
+            url: ""
+          },
+          {
+            name: "湄潭县",
+            url: ""
+          },
+          {
+            name: "余庆县",
+            url: ""
+          },
+          {
+            name: "习水县",
+            url: ""
+          },
+          {
+            name: "赤水市",
+            url: ""
+          },
+          {
+            name: "仁怀市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "安顺市",
+        url: "",
+        children: [
+          {
+            name: "西秀区",
+            url: ""
+          },
+          {
+            name: "平坝区",
+            url: ""
+          },
+          {
+            name: "普定县",
+            url: ""
+          },
+          {
+            name: "镇宁布依族苗族自治县",
+            url: ""
+          },
+          {
+            name: "关岭布依族苗族自治县",
+            url: ""
+          },
+          {
+            name: "紫云苗族布依族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "毕节市",
+        url: "",
+        children: [
+          {
+            name: "七星关区",
+            url: ""
+          },
+          {
+            name: "大方县",
+            url: ""
+          },
+          {
+            name: "黔西市",
+            url: ""
+          },
+          {
+            name: "金沙县",
+            url: ""
+          },
+          {
+            name: "织金县",
+            url: ""
+          },
+          {
+            name: "纳雍县",
+            url: ""
+          },
+          {
+            name: "威宁彝族回族苗族自治县",
+            url: ""
+          },
+          {
+            name: "赫章县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "铜仁市",
+        url: "",
+        children: [
+          {
+            name: "碧江区",
+            url: ""
+          },
+          {
+            name: "万山区",
+            url: ""
+          },
+          {
+            name: "江口县",
+            url: ""
+          },
+          {
+            name: "玉屏侗族自治县",
+            url: ""
+          },
+          {
+            name: "石阡县",
+            url: ""
+          },
+          {
+            name: "思南县",
+            url: ""
+          },
+          {
+            name: "印江土家族苗族自治县",
+            url: ""
+          },
+          {
+            name: "德江县",
+            url: ""
+          },
+          {
+            name: "沿河土家族自治县",
+            url: ""
+          },
+          {
+            name: "松桃苗族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "黔西南布依族苗族自治州",
+        url: "",
+        children: [
+          {
+            name: "兴义市",
+            url: ""
+          },
+          {
+            name: "兴仁市",
+            url: ""
+          },
+          {
+            name: "普安县",
+            url: ""
+          },
+          {
+            name: "晴隆县",
+            url: ""
+          },
+          {
+            name: "贞丰县",
+            url: ""
+          },
+          {
+            name: "望谟县",
+            url: ""
+          },
+          {
+            name: "册亨县",
+            url: ""
+          },
+          {
+            name: "安龙县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "黔东南苗族侗族自治州",
+        url: "",
+        children: [
+          {
+            name: "凯里市",
+            url: ""
+          },
+          {
+            name: "黄平县",
+            url: ""
+          },
+          {
+            name: "施秉县",
+            url: ""
+          },
+          {
+            name: "三穗县",
+            url: ""
+          },
+          {
+            name: "镇远县",
+            url: ""
+          },
+          {
+            name: "岑巩县",
+            url: ""
+          },
+          {
+            name: "天柱县",
+            url: ""
+          },
+          {
+            name: "锦屏县",
+            url: ""
+          },
+          {
+            name: "剑河县",
+            url: ""
+          },
+          {
+            name: "台江县",
+            url: ""
+          },
+          {
+            name: "黎平县",
+            url: ""
+          },
+          {
+            name: "榕江县",
+            url: ""
+          },
+          {
+            name: "从江县",
+            url: ""
+          },
+          {
+            name: "雷山县",
+            url: ""
+          },
+          {
+            name: "麻江县",
+            url: ""
+          },
+          {
+            name: "丹寨县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "黔南布依族苗族自治州",
+        url: "",
+        children: [
+          {
+            name: "都匀市",
+            url: ""
+          },
+          {
+            name: "福泉市",
+            url: ""
+          },
+          {
+            name: "荔波县",
+            url: ""
+          },
+          {
+            name: "贵定县",
+            url: ""
+          },
+          {
+            name: "瓮安县",
+            url: ""
+          },
+          {
+            name: "独山县",
+            url: ""
+          },
+          {
+            name: "平塘县",
+            url: ""
+          },
+          {
+            name: "罗甸县",
+            url: ""
+          },
+          {
+            name: "长顺县",
+            url: ""
+          },
+          {
+            name: "龙里县",
+            url: ""
+          },
+          {
+            name: "惠水县",
+            url: ""
+          },
+          {
+            name: "三都水族自治县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "云南省",
+    url: "",
+    children: [
+      {
+        name: "昆明市",
+        url: "",
+        children: [
+          {
+            name: "五华区",
+            url: ""
+          },
+          {
+            name: "盘龙区",
+            url: ""
+          },
+          {
+            name: "官渡区",
+            url: ""
+          },
+          {
+            name: "西山区",
+            url: ""
+          },
+          {
+            name: "东川区",
+            url: ""
+          },
+          {
+            name: "呈贡区",
+            url: ""
+          },
+          {
+            name: "晋宁区",
+            url: ""
+          },
+          {
+            name: "富民县",
+            url: ""
+          },
+          {
+            name: "宜良县",
+            url: ""
+          },
+          {
+            name: "石林彝族自治县",
+            url: ""
+          },
+          {
+            name: "嵩明县",
+            url: ""
+          },
+          {
+            name: "禄劝彝族苗族自治县",
+            url: ""
+          },
+          {
+            name: "寻甸回族彝族自治县",
+            url: ""
+          },
+          {
+            name: "安宁市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "曲靖市",
+        url: "",
+        children: [
+          {
+            name: "麒麟区",
+            url: ""
+          },
+          {
+            name: "沾益区",
+            url: ""
+          },
+          {
+            name: "马龙区",
+            url: ""
+          },
+          {
+            name: "陆良县",
+            url: ""
+          },
+          {
+            name: "师宗县",
+            url: ""
+          },
+          {
+            name: "罗平县",
+            url: ""
+          },
+          {
+            name: "富源县",
+            url: ""
+          },
+          {
+            name: "会泽县",
+            url: ""
+          },
+          {
+            name: "宣威市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "玉溪市",
+        url: "",
+        children: [
+          {
+            name: "红塔区",
+            url: ""
+          },
+          {
+            name: "江川区",
+            url: ""
+          },
+          {
+            name: "通海县",
+            url: ""
+          },
+          {
+            name: "华宁县",
+            url: ""
+          },
+          {
+            name: "易门县",
+            url: ""
+          },
+          {
+            name: "峨山彝族自治县",
+            url: ""
+          },
+          {
+            name: "新平彝族傣族自治县",
+            url: ""
+          },
+          {
+            name: "元江哈尼族彝族傣族自治县",
+            url: ""
+          },
+          {
+            name: "澄江市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "保山市",
+        url: "",
+        children: [
+          {
+            name: "隆阳区",
+            url: ""
+          },
+          {
+            name: "施甸县",
+            url: ""
+          },
+          {
+            name: "龙陵县",
+            url: ""
+          },
+          {
+            name: "昌宁县",
+            url: ""
+          },
+          {
+            name: "腾冲市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "昭通市",
+        url: "",
+        children: [
+          {
+            name: "昭阳区",
+            url: ""
+          },
+          {
+            name: "鲁甸县",
+            url: ""
+          },
+          {
+            name: "巧家县",
+            url: ""
+          },
+          {
+            name: "盐津县",
+            url: ""
+          },
+          {
+            name: "大关县",
+            url: ""
+          },
+          {
+            name: "永善县",
+            url: ""
+          },
+          {
+            name: "绥江县",
+            url: ""
+          },
+          {
+            name: "镇雄县",
+            url: ""
+          },
+          {
+            name: "彝良县",
+            url: ""
+          },
+          {
+            name: "威信县",
+            url: ""
+          },
+          {
+            name: "水富市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "丽江市",
+        url: "",
+        children: [
+          {
+            name: "古城区",
+            url: ""
+          },
+          {
+            name: "玉龙纳西族自治县",
+            url: ""
+          },
+          {
+            name: "永胜县",
+            url: ""
+          },
+          {
+            name: "华坪县",
+            url: ""
+          },
+          {
+            name: "宁蒗彝族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "普洱市",
+        url: "",
+        children: [
+          {
+            name: "思茅区",
+            url: ""
+          },
+          {
+            name: "宁洱哈尼族彝族自治县",
+            url: ""
+          },
+          {
+            name: "墨江哈尼族自治县",
+            url: ""
+          },
+          {
+            name: "景东彝族自治县",
+            url: ""
+          },
+          {
+            name: "景谷傣族彝族自治县",
+            url: ""
+          },
+          {
+            name: "镇沅彝族哈尼族拉祜族自治县",
+            url: ""
+          },
+          {
+            name: "江城哈尼族彝族自治县",
+            url: ""
+          },
+          {
+            name: "孟连傣族拉祜族佤族自治县",
+            url: ""
+          },
+          {
+            name: "澜沧拉祜族自治县",
+            url: ""
+          },
+          {
+            name: "西盟佤族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "临沧市",
+        url: "",
+        children: [
+          {
+            name: "临翔区",
+            url: ""
+          },
+          {
+            name: "凤庆县",
+            url: ""
+          },
+          {
+            name: "云县",
+            url: ""
+          },
+          {
+            name: "永德县",
+            url: ""
+          },
+          {
+            name: "镇康县",
+            url: ""
+          },
+          {
+            name: "双江拉祜族佤族布朗族傣族自治县",
+            url: ""
+          },
+          {
+            name: "耿马傣族佤族自治县",
+            url: ""
+          },
+          {
+            name: "沧源佤族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "楚雄彝族自治州",
+        url: "",
+        children: [
+          {
+            name: "楚雄市",
+            url: ""
+          },
+          {
+            name: "双柏县",
+            url: ""
+          },
+          {
+            name: "牟定县",
+            url: ""
+          },
+          {
+            name: "南华县",
+            url: ""
+          },
+          {
+            name: "姚安县",
+            url: ""
+          },
+          {
+            name: "大姚县",
+            url: ""
+          },
+          {
+            name: "永仁县",
+            url: ""
+          },
+          {
+            name: "元谋县",
+            url: ""
+          },
+          {
+            name: "武定县",
+            url: ""
+          },
+          {
+            name: "禄丰市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "红河哈尼族彝族自治州",
+        url: "",
+        children: [
+          {
+            name: "个旧市",
+            url: ""
+          },
+          {
+            name: "开远市",
+            url: ""
+          },
+          {
+            name: "蒙自市",
+            url: ""
+          },
+          {
+            name: "弥勒市",
+            url: ""
+          },
+          {
+            name: "屏边苗族自治县",
+            url: ""
+          },
+          {
+            name: "建水县",
+            url: ""
+          },
+          {
+            name: "石屏县",
+            url: ""
+          },
+          {
+            name: "泸西县",
+            url: ""
+          },
+          {
+            name: "元阳县",
+            url: ""
+          },
+          {
+            name: "红河县",
+            url: ""
+          },
+          {
+            name: "金平苗族瑶族傣族自治县",
+            url: ""
+          },
+          {
+            name: "绿春县",
+            url: ""
+          },
+          {
+            name: "河口瑶族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "文山壮族苗族自治州",
+        url: "",
+        children: [
+          {
+            name: "文山市",
+            url: ""
+          },
+          {
+            name: "砚山县",
+            url: ""
+          },
+          {
+            name: "西畴县",
+            url: ""
+          },
+          {
+            name: "麻栗坡县",
+            url: ""
+          },
+          {
+            name: "马关县",
+            url: ""
+          },
+          {
+            name: "丘北县",
+            url: ""
+          },
+          {
+            name: "广南县",
+            url: ""
+          },
+          {
+            name: "富宁县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "西双版纳傣族自治州",
+        url: "",
+        children: [
+          {
+            name: "景洪市",
+            url: ""
+          },
+          {
+            name: "勐海县",
+            url: ""
+          },
+          {
+            name: "勐腊县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "大理白族自治州",
+        url: "",
+        children: [
+          {
+            name: "大理市",
+            url: ""
+          },
+          {
+            name: "漾濞彝族自治县",
+            url: ""
+          },
+          {
+            name: "祥云县",
+            url: ""
+          },
+          {
+            name: "宾川县",
+            url: ""
+          },
+          {
+            name: "弥渡县",
+            url: ""
+          },
+          {
+            name: "南涧彝族自治县",
+            url: ""
+          },
+          {
+            name: "巍山彝族回族自治县",
+            url: ""
+          },
+          {
+            name: "永平县",
+            url: ""
+          },
+          {
+            name: "云龙县",
+            url: ""
+          },
+          {
+            name: "洱源县",
+            url: ""
+          },
+          {
+            name: "剑川县",
+            url: ""
+          },
+          {
+            name: "鹤庆县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "德宏傣族景颇族自治州",
+        url: "",
+        children: [
+          {
+            name: "瑞丽市",
+            url: ""
+          },
+          {
+            name: "芒市",
+            url: ""
+          },
+          {
+            name: "梁河县",
+            url: ""
+          },
+          {
+            name: "盈江县",
+            url: ""
+          },
+          {
+            name: "陇川县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "怒江傈僳族自治州",
+        url: "",
+        children: [
+          {
+            name: "泸水市",
+            url: ""
+          },
+          {
+            name: "福贡县",
+            url: ""
+          },
+          {
+            name: "贡山独龙族怒族自治县",
+            url: ""
+          },
+          {
+            name: "兰坪白族普米族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "迪庆藏族自治州",
+        url: "",
+        children: [
+          {
+            name: "香格里拉市",
+            url: ""
+          },
+          {
+            name: "德钦县",
+            url: ""
+          },
+          {
+            name: "维西傈僳族自治县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "西藏自治区",
+    url: "",
+    children: [
+      {
+        name: "拉萨市",
+        url: "",
+        children: [
+          {
+            name: "城关区",
+            url: ""
+          },
+          {
+            name: "堆龙德庆区",
+            url: ""
+          },
+          {
+            name: "达孜区",
+            url: ""
+          },
+          {
+            name: "林周县",
+            url: ""
+          },
+          {
+            name: "当雄县",
+            url: ""
+          },
+          {
+            name: "尼木县",
+            url: ""
+          },
+          {
+            name: "曲水县",
+            url: ""
+          },
+          {
+            name: "墨竹工卡县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "日喀则市",
+        url: "",
+        children: [
+          {
+            name: "桑珠孜区",
+            url: ""
+          },
+          {
+            name: "南木林县",
+            url: ""
+          },
+          {
+            name: "江孜县",
+            url: ""
+          },
+          {
+            name: "定日县",
+            url: ""
+          },
+          {
+            name: "萨迦县",
+            url: ""
+          },
+          {
+            name: "拉孜县",
+            url: ""
+          },
+          {
+            name: "昂仁县",
+            url: ""
+          },
+          {
+            name: "谢通门县",
+            url: ""
+          },
+          {
+            name: "白朗县",
+            url: ""
+          },
+          {
+            name: "仁布县",
+            url: ""
+          },
+          {
+            name: "康马县",
+            url: ""
+          },
+          {
+            name: "定结县",
+            url: ""
+          },
+          {
+            name: "仲巴县",
+            url: ""
+          },
+          {
+            name: "亚东县",
+            url: ""
+          },
+          {
+            name: "吉隆县",
+            url: ""
+          },
+          {
+            name: "聂拉木县",
+            url: ""
+          },
+          {
+            name: "萨嘎县",
+            url: ""
+          },
+          {
+            name: "岗巴县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "昌都市",
+        url: "",
+        children: [
+          {
+            name: "卡若区",
+            url: ""
+          },
+          {
+            name: "江达县",
+            url: ""
+          },
+          {
+            name: "贡觉县",
+            url: ""
+          },
+          {
+            name: "类乌齐县",
+            url: ""
+          },
+          {
+            name: "丁青县",
+            url: ""
+          },
+          {
+            name: "察雅县",
+            url: ""
+          },
+          {
+            name: "八宿县",
+            url: ""
+          },
+          {
+            name: "左贡县",
+            url: ""
+          },
+          {
+            name: "芒康县",
+            url: ""
+          },
+          {
+            name: "洛隆县",
+            url: ""
+          },
+          {
+            name: "边坝县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "林芝市",
+        url: "",
+        children: [
+          {
+            name: "巴宜区",
+            url: ""
+          },
+          {
+            name: "工布江达县",
+            url: ""
+          },
+          {
+            name: "米林市",
+            url: ""
+          },
+          {
+            name: "墨脱县",
+            url: ""
+          },
+          {
+            name: "波密县",
+            url: ""
+          },
+          {
+            name: "察隅县",
+            url: ""
+          },
+          {
+            name: "朗县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "山南市",
+        url: "",
+        children: [
+          {
+            name: "乃东区",
+            url: ""
+          },
+          {
+            name: "扎囊县",
+            url: ""
+          },
+          {
+            name: "贡嘎县",
+            url: ""
+          },
+          {
+            name: "桑日县",
+            url: ""
+          },
+          {
+            name: "琼结县",
+            url: ""
+          },
+          {
+            name: "曲松县",
+            url: ""
+          },
+          {
+            name: "措美县",
+            url: ""
+          },
+          {
+            name: "洛扎县",
+            url: ""
+          },
+          {
+            name: "加查县",
+            url: ""
+          },
+          {
+            name: "隆子县",
+            url: ""
+          },
+          {
+            name: "错那市",
+            url: ""
+          },
+          {
+            name: "浪卡子县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "那曲市",
+        url: "",
+        children: [
+          {
+            name: "色尼区",
+            url: ""
+          },
+          {
+            name: "嘉黎县",
+            url: ""
+          },
+          {
+            name: "比如县",
+            url: ""
+          },
+          {
+            name: "聂荣县",
+            url: ""
+          },
+          {
+            name: "安多县",
+            url: ""
+          },
+          {
+            name: "申扎县",
+            url: ""
+          },
+          {
+            name: "索县",
+            url: ""
+          },
+          {
+            name: "班戈县",
+            url: ""
+          },
+          {
+            name: "巴青县",
+            url: ""
+          },
+          {
+            name: "尼玛县",
+            url: ""
+          },
+          {
+            name: "双湖县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "阿里地区",
+        url: "",
+        children: [
+          {
+            name: "普兰县",
+            url: ""
+          },
+          {
+            name: "札达县",
+            url: ""
+          },
+          {
+            name: "噶尔县",
+            url: ""
+          },
+          {
+            name: "日土县",
+            url: ""
+          },
+          {
+            name: "革吉县",
+            url: ""
+          },
+          {
+            name: "改则县",
+            url: ""
+          },
+          {
+            name: "措勤县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "陕西省",
+    url: "",
+    children: [
+      {
+        name: "西安市",
+        url: "",
+        children: [
+          {
+            name: "新城区",
+            url: ""
+          },
+          {
+            name: "碑林区",
+            url: ""
+          },
+          {
+            name: "莲湖区",
+            url: ""
+          },
+          {
+            name: "灞桥区",
+            url: ""
+          },
+          {
+            name: "未央区",
+            url: ""
+          },
+          {
+            name: "雁塔区",
+            url: ""
+          },
+          {
+            name: "阎良区",
+            url: ""
+          },
+          {
+            name: "临潼区",
+            url: ""
+          },
+          {
+            name: "长安区",
+            url: ""
+          },
+          {
+            name: "高陵区",
+            url: ""
+          },
+          {
+            name: "鄠邑区",
+            url: ""
+          },
+          {
+            name: "蓝田县",
+            url: ""
+          },
+          {
+            name: "周至县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "铜川市",
+        url: "",
+        children: [
+          {
+            name: "王益区",
+            url: ""
+          },
+          {
+            name: "印台区",
+            url: ""
+          },
+          {
+            name: "耀州区",
+            url: ""
+          },
+          {
+            name: "宜君县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "宝鸡市",
+        url: "",
+        children: [
+          {
+            name: "渭滨区",
+            url: ""
+          },
+          {
+            name: "金台区",
+            url: ""
+          },
+          {
+            name: "陈仓区",
+            url: ""
+          },
+          {
+            name: "凤翔区",
+            url: ""
+          },
+          {
+            name: "岐山县",
+            url: ""
+          },
+          {
+            name: "扶风县",
+            url: ""
+          },
+          {
+            name: "眉县",
+            url: ""
+          },
+          {
+            name: "陇县",
+            url: ""
+          },
+          {
+            name: "千阳县",
+            url: ""
+          },
+          {
+            name: "麟游县",
+            url: ""
+          },
+          {
+            name: "凤县",
+            url: ""
+          },
+          {
+            name: "太白县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "咸阳市",
+        url: "",
+        children: [
+          {
+            name: "秦都区",
+            url: ""
+          },
+          {
+            name: "渭城区",
+            url: ""
+          },
+          {
+            name: "兴平市",
+            url: ""
+          },
+          {
+            name: "武功县",
+            url: ""
+          },
+          {
+            name: "乾县",
+            url: ""
+          },
+          {
+            name: "礼泉县",
+            url: ""
+          },
+          {
+            name: "泾阳县",
+            url: ""
+          },
+          {
+            name: "三原县",
+            url: ""
+          },
+          {
+            name: "永寿县",
+            url: ""
+          },
+          {
+            name: "彬州市",
+            url: ""
+          },
+          {
+            name: "长武县",
+            url: ""
+          },
+          {
+            name: "旬邑县",
+            url: ""
+          },
+          {
+            name: "淳化县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "渭南市",
+        url: "",
+        children: [
+          {
+            name: "临渭区",
+            url: ""
+          },
+          {
+            name: "华州区",
+            url: ""
+          },
+          {
+            name: "潼关县",
+            url: ""
+          },
+          {
+            name: "大荔县",
+            url: ""
+          },
+          {
+            name: "合阳县",
+            url: ""
+          },
+          {
+            name: "澄城县",
+            url: ""
+          },
+          {
+            name: "蒲城县",
+            url: ""
+          },
+          {
+            name: "白水县",
+            url: ""
+          },
+          {
+            name: "富平县",
+            url: ""
+          },
+          {
+            name: "华阴市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "延安市",
+        url: "",
+        children: [
+          {
+            name: "宝塔区",
+            url: ""
+          },
+          {
+            name: "安塞区",
+            url: ""
+          },
+          {
+            name: "延长县",
+            url: ""
+          },
+          {
+            name: "延川县",
+            url: ""
+          },
+          {
+            name: "子长市",
+            url: ""
+          },
+          {
+            name: "志丹县",
+            url: ""
+          },
+          {
+            name: "吴起县",
+            url: ""
+          },
+          {
+            name: "甘泉县",
+            url: ""
+          },
+          {
+            name: "富县",
+            url: ""
+          },
+          {
+            name: "洛川县",
+            url: ""
+          },
+          {
+            name: "宜川县",
+            url: ""
+          },
+          {
+            name: "黄龙县",
+            url: ""
+          },
+          {
+            name: "黄陵县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "汉中市",
+        url: "",
+        children: [
+          {
+            name: "汉台区",
+            url: ""
+          },
+          {
+            name: "南郑区",
+            url: ""
+          },
+          {
+            name: "城固县",
+            url: ""
+          },
+          {
+            name: "洋县",
+            url: ""
+          },
+          {
+            name: "西乡县",
+            url: ""
+          },
+          {
+            name: "勉县",
+            url: ""
+          },
+          {
+            name: "宁强县",
+            url: ""
+          },
+          {
+            name: "略阳县",
+            url: ""
+          },
+          {
+            name: "镇巴县",
+            url: ""
+          },
+          {
+            name: "留坝县",
+            url: ""
+          },
+          {
+            name: "佛坪县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "榆林市",
+        url: "",
+        children: [
+          {
+            name: "榆阳区",
+            url: ""
+          },
+          {
+            name: "横山区",
+            url: ""
+          },
+          {
+            name: "府谷县",
+            url: ""
+          },
+          {
+            name: "靖边县",
+            url: ""
+          },
+          {
+            name: "定边县",
+            url: ""
+          },
+          {
+            name: "绥德县",
+            url: ""
+          },
+          {
+            name: "米脂县",
+            url: ""
+          },
+          {
+            name: "佳县",
+            url: ""
+          },
+          {
+            name: "吴堡县",
+            url: ""
+          },
+          {
+            name: "清涧县",
+            url: ""
+          },
+          {
+            name: "子洲县",
+            url: ""
+          },
+          {
+            name: "神木市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "安康市",
+        url: "",
+        children: [
+          {
+            name: "汉滨区",
+            url: ""
+          },
+          {
+            name: "汉阴县",
+            url: ""
+          },
+          {
+            name: "石泉县",
+            url: ""
+          },
+          {
+            name: "宁陕县",
+            url: ""
+          },
+          {
+            name: "紫阳县",
+            url: ""
+          },
+          {
+            name: "岚皋县",
+            url: ""
+          },
+          {
+            name: "平利县",
+            url: ""
+          },
+          {
+            name: "镇坪县",
+            url: ""
+          },
+          {
+            name: "旬阳市",
+            url: ""
+          },
+          {
+            name: "白河县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "商洛市",
+        url: "",
+        children: [
+          {
+            name: "商州区",
+            url: ""
+          },
+          {
+            name: "洛南县",
+            url: ""
+          },
+          {
+            name: "丹凤县",
+            url: ""
+          },
+          {
+            name: "商南县",
+            url: ""
+          },
+          {
+            name: "山阳县",
+            url: ""
+          },
+          {
+            name: "镇安县",
+            url: ""
+          },
+          {
+            name: "柞水县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "甘肃省",
+    url: "",
+    children: [
+      {
+        name: "兰州市",
+        url: "",
+        children: [
+          {
+            name: "城关区",
+            url: ""
+          },
+          {
+            name: "七里河区",
+            url: ""
+          },
+          {
+            name: "西固区",
+            url: ""
+          },
+          {
+            name: "安宁区",
+            url: ""
+          },
+          {
+            name: "红古区",
+            url: ""
+          },
+          {
+            name: "永登县",
+            url: ""
+          },
+          {
+            name: "皋兰县",
+            url: ""
+          },
+          {
+            name: "榆中县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "嘉峪关市",
+        url: ""
+      },
+      {
+        name: "金昌市",
+        url: "",
+        children: [
+          {
+            name: "金川区",
+            url: ""
+          },
+          {
+            name: "永昌县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "白银市",
+        url: "",
+        children: [
+          {
+            name: "白银区",
+            url: ""
+          },
+          {
+            name: "平川区",
+            url: ""
+          },
+          {
+            name: "靖远县",
+            url: ""
+          },
+          {
+            name: "会宁县",
+            url: ""
+          },
+          {
+            name: "景泰县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "天水市",
+        url: "",
+        children: [
+          {
+            name: "秦州区",
+            url: ""
+          },
+          {
+            name: "麦积区",
+            url: ""
+          },
+          {
+            name: "清水县",
+            url: ""
+          },
+          {
+            name: "秦安县",
+            url: ""
+          },
+          {
+            name: "甘谷县",
+            url: ""
+          },
+          {
+            name: "武山县",
+            url: ""
+          },
+          {
+            name: "张家川回族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "武威市",
+        url: "",
+        children: [
+          {
+            name: "凉州区",
+            url: ""
+          },
+          {
+            name: "民勤县",
+            url: ""
+          },
+          {
+            name: "古浪县",
+            url: ""
+          },
+          {
+            name: "天祝藏族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "张掖市",
+        url: "",
+        children: [
+          {
+            name: "甘州区",
+            url: ""
+          },
+          {
+            name: "肃南裕固族自治县",
+            url: ""
+          },
+          {
+            name: "民乐县",
+            url: ""
+          },
+          {
+            name: "临泽县",
+            url: ""
+          },
+          {
+            name: "高台县",
+            url: ""
+          },
+          {
+            name: "山丹县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "平凉市",
+        url: "",
+        children: [
+          {
+            name: "崆峒区",
+            url: ""
+          },
+          {
+            name: "泾川县",
+            url: ""
+          },
+          {
+            name: "灵台县",
+            url: ""
+          },
+          {
+            name: "崇信县",
+            url: ""
+          },
+          {
+            name: "庄浪县",
+            url: ""
+          },
+          {
+            name: "静宁县",
+            url: ""
+          },
+          {
+            name: "华亭市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "酒泉市",
+        url: "",
+        children: [
+          {
+            name: "肃州区",
+            url: ""
+          },
+          {
+            name: "金塔县",
+            url: ""
+          },
+          {
+            name: "瓜州县",
+            url: ""
+          },
+          {
+            name: "肃北蒙古族自治县",
+            url: ""
+          },
+          {
+            name: "阿克塞哈萨克族自治县",
+            url: ""
+          },
+          {
+            name: "玉门市",
+            url: ""
+          },
+          {
+            name: "敦煌市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "庆阳市",
+        url: "",
+        children: [
+          {
+            name: "西峰区",
+            url: ""
+          },
+          {
+            name: "庆城县",
+            url: ""
+          },
+          {
+            name: "环县",
+            url: ""
+          },
+          {
+            name: "华池县",
+            url: ""
+          },
+          {
+            name: "合水县",
+            url: ""
+          },
+          {
+            name: "正宁县",
+            url: ""
+          },
+          {
+            name: "宁县",
+            url: ""
+          },
+          {
+            name: "镇原县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "定西市",
+        url: "",
+        children: [
+          {
+            name: "安定区",
+            url: ""
+          },
+          {
+            name: "通渭县",
+            url: ""
+          },
+          {
+            name: "陇西县",
+            url: ""
+          },
+          {
+            name: "渭源县",
+            url: ""
+          },
+          {
+            name: "临洮县",
+            url: ""
+          },
+          {
+            name: "漳县",
+            url: ""
+          },
+          {
+            name: "岷县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "陇南市",
+        url: "",
+        children: [
+          {
+            name: "武都区",
+            url: ""
+          },
+          {
+            name: "成县",
+            url: ""
+          },
+          {
+            name: "文县",
+            url: ""
+          },
+          {
+            name: "宕昌县",
+            url: ""
+          },
+          {
+            name: "康县",
+            url: ""
+          },
+          {
+            name: "西和县",
+            url: ""
+          },
+          {
+            name: "礼县",
+            url: ""
+          },
+          {
+            name: "徽县",
+            url: ""
+          },
+          {
+            name: "两当县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "临夏回族自治州",
+        url: "",
+        children: [
+          {
+            name: "临夏市",
+            url: ""
+          },
+          {
+            name: "临夏县",
+            url: ""
+          },
+          {
+            name: "康乐县",
+            url: ""
+          },
+          {
+            name: "永靖县",
+            url: ""
+          },
+          {
+            name: "广河县",
+            url: ""
+          },
+          {
+            name: "和政县",
+            url: ""
+          },
+          {
+            name: "东乡族自治县",
+            url: ""
+          },
+          {
+            name: "积石山保安族东乡族撒拉族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "甘南藏族自治州",
+        url: "",
+        children: [
+          {
+            name: "合作市",
+            url: ""
+          },
+          {
+            name: "临潭县",
+            url: ""
+          },
+          {
+            name: "卓尼县",
+            url: ""
+          },
+          {
+            name: "舟曲县",
+            url: ""
+          },
+          {
+            name: "迭部县",
+            url: ""
+          },
+          {
+            name: "玛曲县",
+            url: ""
+          },
+          {
+            name: "碌曲县",
+            url: ""
+          },
+          {
+            name: "夏河县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "青海省",
+    url: "",
+    children: [
+      {
+        name: "西宁市",
+        url: "",
+        children: [
+          {
+            name: "城东区",
+            url: ""
+          },
+          {
+            name: "城中区",
+            url: ""
+          },
+          {
+            name: "城西区",
+            url: ""
+          },
+          {
+            name: "城北区",
+            url: ""
+          },
+          {
+            name: "湟中区",
+            url: ""
+          },
+          {
+            name: "大通回族土族自治县",
+            url: ""
+          },
+          {
+            name: "湟源县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "海东市",
+        url: "",
+        children: [
+          {
+            name: "乐都区",
+            url: ""
+          },
+          {
+            name: "平安区",
+            url: ""
+          },
+          {
+            name: "民和回族土族自治县",
+            url: ""
+          },
+          {
+            name: "互助土族自治县",
+            url: ""
+          },
+          {
+            name: "化隆回族自治县",
+            url: ""
+          },
+          {
+            name: "循化撒拉族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "海北藏族自治州",
+        url: "",
+        children: [
+          {
+            name: "门源回族自治县",
+            url: ""
+          },
+          {
+            name: "祁连县",
+            url: ""
+          },
+          {
+            name: "海晏县",
+            url: ""
+          },
+          {
+            name: "刚察县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "黄南藏族自治州",
+        url: "",
+        children: [
+          {
+            name: "同仁市",
+            url: ""
+          },
+          {
+            name: "尖扎县",
+            url: ""
+          },
+          {
+            name: "泽库县",
+            url: ""
+          },
+          {
+            name: "河南蒙古族自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "海南藏族自治州",
+        url: "",
+        children: [
+          {
+            name: "共和县",
+            url: ""
+          },
+          {
+            name: "同德县",
+            url: ""
+          },
+          {
+            name: "贵德县",
+            url: ""
+          },
+          {
+            name: "兴海县",
+            url: ""
+          },
+          {
+            name: "贵南县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "果洛藏族自治州",
+        url: "",
+        children: [
+          {
+            name: "玛沁县",
+            url: ""
+          },
+          {
+            name: "班玛县",
+            url: ""
+          },
+          {
+            name: "甘德县",
+            url: ""
+          },
+          {
+            name: "达日县",
+            url: ""
+          },
+          {
+            name: "久治县",
+            url: ""
+          },
+          {
+            name: "玛多县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "玉树藏族自治州",
+        url: "",
+        children: [
+          {
+            name: "玉树市",
+            url: ""
+          },
+          {
+            name: "杂多县",
+            url: ""
+          },
+          {
+            name: "称多县",
+            url: ""
+          },
+          {
+            name: "治多县",
+            url: ""
+          },
+          {
+            name: "囊谦县",
+            url: ""
+          },
+          {
+            name: "曲麻莱县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "海西蒙古族藏族自治州",
+        url: "",
+        children: [
+          {
+            name: "格尔木市",
+            url: ""
+          },
+          {
+            name: "德令哈市",
+            url: ""
+          },
+          {
+            name: "茫崖市",
+            url: ""
+          },
+          {
+            name: "乌兰县",
+            url: ""
+          },
+          {
+            name: "都兰县",
+            url: ""
+          },
+          {
+            name: "天峻县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "宁夏回族自治区",
+    url: "",
+    children: [
+      {
+        name: "银川市",
+        url: "",
+        children: [
+          {
+            name: "兴庆区",
+            url: ""
+          },
+          {
+            name: "西夏区",
+            url: ""
+          },
+          {
+            name: "金凤区",
+            url: ""
+          },
+          {
+            name: "永宁县",
+            url: ""
+          },
+          {
+            name: "贺兰县",
+            url: ""
+          },
+          {
+            name: "灵武市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "石嘴山市",
+        url: "",
+        children: [
+          {
+            name: "大武口区",
+            url: ""
+          },
+          {
+            name: "惠农区",
+            url: ""
+          },
+          {
+            name: "平罗县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "吴忠市",
+        url: "",
+        children: [
+          {
+            name: "利通区",
+            url: ""
+          },
+          {
+            name: "红寺堡区",
+            url: ""
+          },
+          {
+            name: "盐池县",
+            url: ""
+          },
+          {
+            name: "同心县",
+            url: ""
+          },
+          {
+            name: "青铜峡市",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "固原市",
+        url: "",
+        children: [
+          {
+            name: "原州区",
+            url: ""
+          },
+          {
+            name: "西吉县",
+            url: ""
+          },
+          {
+            name: "隆德县",
+            url: ""
+          },
+          {
+            name: "泾源县",
+            url: ""
+          },
+          {
+            name: "彭阳县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "中卫市",
+        url: "",
+        children: [
+          {
+            name: "沙坡头区",
+            url: ""
+          },
+          {
+            name: "中宁县",
+            url: ""
+          },
+          {
+            name: "海原县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "新疆维吾尔自治区",
+    url: "",
+    children: [
+      {
+        name: "乌鲁木齐市",
+        url: "",
+        children: [
+          {
+            name: "天山区",
+            url: ""
+          },
+          {
+            name: "沙依巴克区",
+            url: ""
+          },
+          {
+            name: "新市区",
+            url: ""
+          },
+          {
+            name: "水磨沟区",
+            url: ""
+          },
+          {
+            name: "头屯河区",
+            url: ""
+          },
+          {
+            name: "达坂城区",
+            url: ""
+          },
+          {
+            name: "米东区",
+            url: ""
+          },
+          {
+            name: "乌鲁木齐县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "克拉玛依市",
+        url: "",
+        children: [
+          {
+            name: "独山子区",
+            url: ""
+          },
+          {
+            name: "克拉玛依区",
+            url: ""
+          },
+          {
+            name: "白碱滩区",
+            url: ""
+          },
+          {
+            name: "乌尔禾区",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "吐鲁番市",
+        url: "",
+        children: [
+          {
+            name: "高昌区",
+            url: ""
+          },
+          {
+            name: "鄯善县",
+            url: ""
+          },
+          {
+            name: "托克逊县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "哈密市",
+        url: "",
+        children: [
+          {
+            name: "伊州区",
+            url: ""
+          },
+          {
+            name: "巴里坤哈萨克自治县",
+            url: ""
+          },
+          {
+            name: "伊吾县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "昌吉回族自治州",
+        url: "",
+        children: [
+          {
+            name: "昌吉市",
+            url: ""
+          },
+          {
+            name: "阜康市",
+            url: ""
+          },
+          {
+            name: "呼图壁县",
+            url: ""
+          },
+          {
+            name: "玛纳斯县",
+            url: ""
+          },
+          {
+            name: "奇台县",
+            url: ""
+          },
+          {
+            name: "吉木萨尔县",
+            url: ""
+          },
+          {
+            name: "木垒哈萨克自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "博尔塔拉蒙古自治州",
+        url: "",
+        children: [
+          {
+            name: "博乐市",
+            url: ""
+          },
+          {
+            name: "阿拉山口市",
+            url: ""
+          },
+          {
+            name: "精河县",
+            url: ""
+          },
+          {
+            name: "温泉县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "巴音郭楞蒙古自治州",
+        url: "",
+        children: [
+          {
+            name: "库尔勒市",
+            url: ""
+          },
+          {
+            name: "轮台县",
+            url: ""
+          },
+          {
+            name: "尉犁县",
+            url: ""
+          },
+          {
+            name: "若羌县",
+            url: ""
+          },
+          {
+            name: "且末县",
+            url: ""
+          },
+          {
+            name: "焉耆回族自治县",
+            url: ""
+          },
+          {
+            name: "和静县",
+            url: ""
+          },
+          {
+            name: "和硕县",
+            url: ""
+          },
+          {
+            name: "博湖县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "阿克苏地区",
+        url: "",
+        children: [
+          {
+            name: "阿克苏市",
+            url: ""
+          },
+          {
+            name: "库车市",
+            url: ""
+          },
+          {
+            name: "温宿县",
+            url: ""
+          },
+          {
+            name: "沙雅县",
+            url: ""
+          },
+          {
+            name: "新和县",
+            url: ""
+          },
+          {
+            name: "拜城县",
+            url: ""
+          },
+          {
+            name: "乌什县",
+            url: ""
+          },
+          {
+            name: "阿瓦提县",
+            url: ""
+          },
+          {
+            name: "柯坪县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "克孜勒苏柯尔克孜自治州",
+        url: "",
+        children: [
+          {
+            name: "阿图什市",
+            url: ""
+          },
+          {
+            name: "阿克陶县",
+            url: ""
+          },
+          {
+            name: "阿合奇县",
+            url: ""
+          },
+          {
+            name: "乌恰县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "喀什地区",
+        url: "",
+        children: [
+          {
+            name: "喀什市",
+            url: ""
+          },
+          {
+            name: "疏附县",
+            url: ""
+          },
+          {
+            name: "疏勒县",
+            url: ""
+          },
+          {
+            name: "英吉沙县",
+            url: ""
+          },
+          {
+            name: "泽普县",
+            url: ""
+          },
+          {
+            name: "莎车县",
+            url: ""
+          },
+          {
+            name: "叶城县",
+            url: ""
+          },
+          {
+            name: "麦盖提县",
+            url: ""
+          },
+          {
+            name: "岳普湖县",
+            url: ""
+          },
+          {
+            name: "伽师县",
+            url: ""
+          },
+          {
+            name: "巴楚县",
+            url: ""
+          },
+          {
+            name: "塔什库尔干塔吉克自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "和田地区",
+        url: "",
+        children: [
+          {
+            name: "和田市",
+            url: ""
+          },
+          {
+            name: "和田县",
+            url: ""
+          },
+          {
+            name: "墨玉县",
+            url: ""
+          },
+          {
+            name: "皮山县",
+            url: ""
+          },
+          {
+            name: "洛浦县",
+            url: ""
+          },
+          {
+            name: "策勒县",
+            url: ""
+          },
+          {
+            name: "于田县",
+            url: ""
+          },
+          {
+            name: "民丰县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "伊犁哈萨克自治州",
+        url: "",
+        children: [
+          {
+            name: "伊宁市",
+            url: ""
+          },
+          {
+            name: "奎屯市",
+            url: ""
+          },
+          {
+            name: "霍尔果斯市",
+            url: ""
+          },
+          {
+            name: "伊宁县",
+            url: ""
+          },
+          {
+            name: "察布查尔锡伯自治县",
+            url: ""
+          },
+          {
+            name: "霍城县",
+            url: ""
+          },
+          {
+            name: "巩留县",
+            url: ""
+          },
+          {
+            name: "新源县",
+            url: ""
+          },
+          {
+            name: "昭苏县",
+            url: ""
+          },
+          {
+            name: "特克斯县",
+            url: ""
+          },
+          {
+            name: "尼勒克县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "塔城地区",
+        url: "",
+        children: [
+          {
+            name: "塔城市",
+            url: ""
+          },
+          {
+            name: "乌苏市",
+            url: ""
+          },
+          {
+            name: "额敏县",
+            url: ""
+          },
+          {
+            name: "沙湾市",
+            url: ""
+          },
+          {
+            name: "托里县",
+            url: ""
+          },
+          {
+            name: "裕民县",
+            url: ""
+          },
+          {
+            name: "和布克赛尔蒙古自治县",
+            url: ""
+          }
+        ]
+      },
+      {
+        name: "阿勒泰地区",
+        url: "",
+        children: [
+          {
+            name: "阿勒泰市",
+            url: ""
+          },
+          {
+            name: "布尔津县",
+            url: ""
+          },
+          {
+            name: "富蕴县",
+            url: ""
+          },
+          {
+            name: "福海县",
+            url: ""
+          },
+          {
+            name: "哈巴河县",
+            url: ""
+          },
+          {
+            name: "青河县",
+            url: ""
+          },
+          {
+            name: "吉木乃县",
+            url: ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: "新疆生产建设兵团",
+    url: ""
+  },
+  {
+    name: "香港特别行政区",
+    url: ""
+  },
+  {
+    name: "澳门特别行政区",
+    url: ""
+  }
+];

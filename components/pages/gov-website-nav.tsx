@@ -1,16 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { FISCAL_REGIONS, type FiscalRegionNode } from "@/data/fiscal-budget-links";
+import { GOV_WEBSITES, type GovWebsiteNode } from "@/data/gov-website-links";
 
 const MUNICIPALITIES = new Set(["北京市", "天津市", "上海市", "重庆市"]);
 
-/** 统计全局覆盖率 */
-function countGlobalCoverage(nodes: FiscalRegionNode[]): { provinces: number; provincesTotal: number; cities: number; citiesTotal: number; counties: number; countiesTotal: number } {
+function countCoverage(nodes: GovWebsiteNode[]): { provinces: number; provincesTotal: number; cities: number; citiesTotal: number; counties: number; countiesTotal: number } {
   let provinces = 0, provincesTotal = 0, cities = 0, citiesTotal = 0, counties = 0, countiesTotal = 0;
   for (const prov of nodes) {
     provincesTotal++;
     if (prov.url) provinces++;
+    const isMuni = MUNICIPALITIES.has(prov.name);
     for (const city of prov.children ?? []) {
       citiesTotal++;
       if (city.url) cities++;
@@ -23,8 +23,7 @@ function countGlobalCoverage(nodes: FiscalRegionNode[]): { provinces: number; pr
   return { provinces, provincesTotal, cities, citiesTotal, counties, countiesTotal };
 }
 
-/** 统计节点下"有链接"的市/县数量 */
-function countCoverage(node: FiscalRegionNode): { cities: number; citiesTotal: number; counties: number; countiesTotal: number; isMunicipality: boolean } {
+function countNodeCoverage(node: GovWebsiteNode): { cities: number; citiesTotal: number; counties: number; countiesTotal: number; isMunicipality: boolean } {
   const children = node.children ?? [];
   const isMunicipality = MUNICIPALITIES.has(node.name);
   let cities = 0, citiesTotal = 0, counties = 0, countiesTotal = 0;
@@ -39,18 +38,17 @@ function countCoverage(node: FiscalRegionNode): { cities: number; citiesTotal: n
   return { cities, citiesTotal, counties, countiesTotal, isMunicipality };
 }
 
-/** 根据导航路径获取当前层级的标题和列表 */
 function resolveLevel(path: number[]): {
   label: string;
-  items: FiscalRegionNode[];
-  parent: FiscalRegionNode | null;
+  items: GovWebsiteNode[];
+  parent: GovWebsiteNode | null;
 } {
   if (path.length === 0) {
-    return { label: "省级地区", items: FISCAL_REGIONS, parent: null };
+    return { label: "省级地区", items: GOV_WEBSITES, parent: null };
   }
 
-  let current: FiscalRegionNode[] = FISCAL_REGIONS;
-  let node: FiscalRegionNode | null = null;
+  let current: GovWebsiteNode[] = GOV_WEBSITES;
+  let node: GovWebsiteNode | null = null;
 
   for (const idx of path) {
     node = current[idx];
@@ -58,10 +56,10 @@ function resolveLevel(path: number[]): {
   }
 
   if (!node) {
-    return { label: "省级地区", items: FISCAL_REGIONS, parent: null };
+    return { label: "省级地区", items: GOV_WEBSITES, parent: null };
   }
 
-  const isMuni = path.length >= 1 && MUNICIPALITIES.has(FISCAL_REGIONS[path[0]]?.name);
+  const isMuni = path.length >= 1 && MUNICIPALITIES.has(GOV_WEBSITES[path[0]]?.name);
   const levelName =
     path.length === 1
       ? isMuni ? "区 / 县" : "地级市 / 州"
@@ -81,7 +79,7 @@ function RegionItem({
   onDrill,
   showCoverage,
 }: {
-  node: FiscalRegionNode;
+  node: GovWebsiteNode;
   index: number;
   hasChildren: boolean;
   onDrill: (index: number) => void;
@@ -89,10 +87,9 @@ function RegionItem({
 }) {
   const hasUrl = node.url.length > 0;
 
-  // 覆盖率标注（仅省级）
   let coverageLabel: string | null = null;
   if (showCoverage && hasChildren) {
-    const { cities, citiesTotal, counties, countiesTotal, isMunicipality } = countCoverage(node);
+    const { cities, citiesTotal, counties, countiesTotal, isMunicipality } = countNodeCoverage(node);
     const parts: string[] = [];
     if (citiesTotal > 0) parts.push(`${isMunicipality ? "区" : "市"} ${cities}/${citiesTotal}`);
     if (countiesTotal > 0) parts.push(`县 ${counties}/${countiesTotal}`);
@@ -100,7 +97,6 @@ function RegionItem({
   }
 
   if (hasChildren) {
-    // 可下钻的地区按钮
     return (
       <button
         type="button"
@@ -123,7 +119,6 @@ function RegionItem({
   }
 
   if (hasUrl) {
-    // 叶子节点有链接
     return (
       <a
         href={node.url}
@@ -136,7 +131,6 @@ function RegionItem({
     );
   }
 
-  // 叶子节点无链接，灰色显示
   return (
     <span className="block rounded border border-dashed border-[var(--color-border)] bg-[var(--color-surface)] px-2 py-3 text-center text-[0.9rem] leading-tight text-[var(--color-muted)]">
       {node.name}
@@ -144,12 +138,10 @@ function RegionItem({
   );
 }
 
-export function FiscalBudgetNav() {
-  // 导航路径：空数组 = 省列表，[0] = 第0个省的地市列表，[0, 2] = 第0省第2市的区县列表
+export function GovWebsiteNav() {
   const [path, setPath] = useState<number[]>([]);
-
   const { label, items, parent } = resolveLevel(path);
-  const coverage = countGlobalCoverage(FISCAL_REGIONS);
+  const coverage = countCoverage(GOV_WEBSITES);
 
   const drillDown = (index: number) => setPath((prev) => [...prev, index]);
   const goBack = () => setPath((prev) => prev.slice(0, -1));
@@ -166,72 +158,70 @@ export function FiscalBudgetNav() {
           <p className="data-kicker">省级覆盖率</p>
           <h3 className="data-stat">{provRate}%</h3>
           <p className="data-substat">{coverage.provinces} / {coverage.provincesTotal} 个省级地区</p>
-          <p className="data-note">已收录的省级财政预决算公开入口。</p>
+          <p className="data-note">包括省、直辖市、自治区的政府门户网站。</p>
         </article>
         <article className="info-card p-5">
           <p className="data-kicker">市级覆盖率</p>
           <h3 className="data-stat">{cityRate}%</h3>
           <p className="data-substat">{coverage.cities} / {coverage.citiesTotal} 个地级市</p>
-          <p className="data-note">已收录的地级市财政预决算公开入口。</p>
+          <p className="data-note">包括地级市、自治州、地区行署的政府门户网站。</p>
         </article>
         <article className="info-card p-5">
           <p className="data-kicker">县级覆盖率</p>
           <h3 className="data-stat">{countyRate}%</h3>
           <p className="data-substat">{coverage.counties} / {coverage.countiesTotal} 个县级地区</p>
-          <p className="data-note">已收录的县级财政预决算公开入口。</p>
+          <p className="data-note">包括市辖区、县级市、县的政府门户网站。</p>
         </article>
       </div>
 
-    <article className="info-card p-4">
-      {/* 标题行 */}
-      <div className="mb-4 flex items-center justify-between gap-3">
-        <h3 className="section-title mb-0 border-b-0 pb-0">
-          财政预决算导航
-          <span className="section-sub">{label}</span>
-        </h3>
-        {path.length > 0 && (
-          <button
-            type="button"
-            className="rounded border border-[var(--color-border)] px-3 py-1 text-[0.82rem] text-[var(--color-link)] hover:bg-[var(--color-surface)]"
-            onClick={goBack}
+      {/* 导航区域 */}
+      <article className="info-card p-4">
+        <div className="mb-4 flex items-center justify-between gap-3">
+          <h3 className="section-title mb-0 border-b-0 pb-0">
+            政府官网导航
+            <span className="section-sub">{label}</span>
+          </h3>
+          {path.length > 0 && (
+            <button
+              type="button"
+              className="rounded border border-[var(--color-border)] px-3 py-1 text-[0.82rem] text-[var(--color-link)] hover:bg-[var(--color-surface)]"
+              onClick={goBack}
+            >
+              ← 返回上级
+            </button>
+          )}
+        </div>
+
+        {parent && parent.url && (
+          <a
+            href={parent.url}
+            target="_blank"
+            rel="noreferrer"
+            className="mb-3 block rounded border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2 text-[0.9rem] font-semibold hover:border-[var(--color-link)] hover:text-[var(--color-link)]"
           >
-            ← 返回上级
-          </button>
+            🏛 {parent.name} 政府门户
+          </a>
         )}
-      </div>
 
-      {/* 当前层级父节点链接 */}
-      {parent && parent.url && (
-        <a
-          href={parent.url}
-          target="_blank"
-          rel="noreferrer"
-          className="mb-3 block rounded border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2 text-[0.9rem] font-semibold hover:border-[var(--color-link)] hover:text-[var(--color-link)]"
-        >
-          📄 {parent.name} 预决算公开页
-        </a>
-      )}
-
-      {/* 地区网格 */}
-      {items.length > 0 ? (
-        <div className="grid grid-cols-5 gap-2">
-          {items.map((node, i) => (
-            <RegionItem
-              key={node.name}
-              node={node}
-              index={i}
-              hasChildren={(node.children?.length ?? 0) > 0}
-              onDrill={drillDown}
-              showCoverage={path.length === 0}
-            />
-          ))}
-        </div>
-      ) : (
-        <div className="rounded border border-dashed border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-6 text-center text-[0.86rem] text-[var(--color-muted)]">
-          暂无下级地区数据
-        </div>
-      )}
-    </article>
+        {items.length > 0 ? (
+          <div className="grid grid-cols-5 gap-2">
+            {items.map((node, i) => (
+              <RegionItem
+                key={node.name}
+                node={node}
+                index={i}
+                hasChildren={(node.children?.length ?? 0) > 0}
+                onDrill={drillDown}
+                showCoverage={path.length === 0}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="rounded border border-dashed border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-6 text-center text-[0.86rem] text-[var(--color-muted)]">
+            暂无下级地区数据
+          </div>
+        )}
+      </article>
     </div>
   );
 }
