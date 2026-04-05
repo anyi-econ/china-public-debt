@@ -205,21 +205,20 @@ export function FiscalBudgetNav() {
         <article className="info-card p-5">
           <p className="data-kicker">省级覆盖率</p>
           <h3 className="data-stat">{provRate}%</h3>
-          <p className="data-substat">{coverage.provinces} / {coverage.provincesTotal} 个省级地区</p>
-          <p className="data-note">已收录的省级财政预决算公开入口。</p>
-          <p className="text-[0.7rem] text-[var(--color-muted)]">统计不含港澳台</p>
+          <p className="data-substat">{coverage.provinces} / {coverage.provincesTotal} 个省区市</p>
+          <p className="data-note">统计不含港澳台。</p>
         </article>
         <article className="info-card p-5">
           <p className="data-kicker">市级覆盖率</p>
           <h3 className="data-stat">{cityRate}%</h3>
-          <p className="data-substat">{coverage.cities} / {coverage.citiesTotal} 个地级市</p>
-          <p className="data-note">已收录的地级市财政预决算公开入口。</p>
+          <p className="data-substat">{coverage.cities} / {coverage.citiesTotal} 个地市州</p>
+          <p className="data-note">统计不含港澳台。</p>
         </article>
         <article className="info-card p-5">
           <p className="data-kicker">县级覆盖率</p>
           <h3 className="data-stat">{countyRate}%</h3>
-          <p className="data-substat">{coverage.counties} / {coverage.countiesTotal} 个县级地区</p>
-          <p className="data-note">已收录的县级财政预决算公开入口。</p>
+          <p className="data-substat">{coverage.counties} / {coverage.countiesTotal} 个区县</p>
+          <p className="data-note">统计不含港澳台。</p>
         </article>
       </div>
 

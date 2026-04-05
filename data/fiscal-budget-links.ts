@@ -4991,11 +4991,6 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
 
   // ═══════ 特别行政区 ═══════
   {
-    name: "台湾省",
-    url: "",
-    children: [],
-  },
-  {
     name: "香港特别行政区",
     url: "https://www.budget.gov.hk/",
     children: [],
@@ -5003,6 +4998,11 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
   {
     name: "澳门特别行政区",
     url: "https://www.dsf.gov.mo/",
+    children: [],
+  },
+  {
+    name: "台湾省",
+    url: "",
     children: [],
   },
 ];

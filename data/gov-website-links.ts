@@ -13565,7 +13565,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "可克达拉市",
-            url: "http://www.btds.gov.cn/"
+            url: "http://www.cocodala.gov.cn/"
           },
           {
             name: "昆玉市",
@@ -13581,15 +13581,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "白杨市",
-            url: ""
+            url: "https://www.btdjs.gov.cn/"
           }
         ]
       }
     ]
-  },
-  {
-    name: "台湾省",
-    url: ""
   },
   {
     name: "香港特别行政区",
@@ -13598,5 +13594,9 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
   {
     name: "澳门特别行政区",
     url: "https://www.gov.mo/"
+  },
+  {
+    name: "台湾省",
+    url: ""
   }
 ];
