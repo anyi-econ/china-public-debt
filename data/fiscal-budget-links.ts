@@ -3431,7 +3431,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         url: "",
         children: [
           { name: "西沙区", url: "" },
-          { name: "东沙区", url: "" },
+          { name: "南沙区", url: "" },
         ],
       },
       { name: "儋州市", url: "" },
