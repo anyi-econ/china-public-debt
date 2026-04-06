@@ -1523,7 +1523,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         name: "合肥市",
         url: "https://www.hefei.gov.cn/zwgk/site/tpl/1541",
         children: [
-          { name: "瑶海区", url: "" },
+          { name: "瑶海区", url: "https://www.hfyaohai.gov.cn/public/column/13741?type=4&catId=7003401&action=list" },
           { name: "庐阳区", url: "" },
           { name: "蜀山区", url: "" },
           { name: "包河区", url: "" },
@@ -2999,7 +2999,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "南山区", url: "https://www.szns.gov.cn/nsqcz/gkmlpt/index" },
           { name: "宝安区", url: "https://www.baoan.gov.cn/xxgk/qt/gkml/czxx/ysjs/index.html" },
           { name: "龙岗区", url: "https://www.lg.gov.cn/xxgk/qt/gkml/czxx/ysjs/index.html" },
-          { name: "盐田区", url: "" },
+          { name: "盐田区", url: "https://www.yantian.gov.cn/xxgk/qt/gkml/czxx/ysjs/index.html" },
           { name: "龙华区", url: "https://www.szlhq.gov.cn/xxgk/qt/gkml/czxx/ysjs/index.html" },
           { name: "坪山区", url: "https://www.ps.gov.cn/xxgk/qt/gkml/czxx/ysjs/index.html" },
           { name: "光明区", url: "https://www.szgm.gov.cn/xxgk/qt/gkml/czxx/ysjs/index.html" },
