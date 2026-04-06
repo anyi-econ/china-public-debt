@@ -202,7 +202,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "邯山区", url: "http://www.hdhs.gov.cn/ztlm/czyjs/" },
           { name: "丛台区", url: "http://www.hdct.gov.cn/ztzl/czyjs/" },
           { name: "复兴区", url: "http://www.hdfx.gov.cn/ztzl/czyjs/" },
-          { name: "峰峰矿区", url: "" },
+          { name: "峰峰矿区", url: "http://www.ff.gov.cn/ztzl/czyjs/" },
           { name: "肥乡区", url: "" },
           { name: "永年区", url: "https://www.hdyn.gov.cn/ztzl/czyjs/" },
           { name: "临漳县", url: "http://www.linzhang.gov.cn/ztzl/czyjs/" },
@@ -716,7 +716,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "于洪区", url: "" },
           { name: "辽中区", url: "" },
           { name: "康平县", url: "" },
-          { name: "法库县", url: "" },
+          { name: "法库县", url: "http://faku.gov.cn/zfxxgk/fdzdgknr/czyjs/" },
           { name: "新民市", url: "" },
         ],
       },
@@ -738,7 +738,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "鞍山市",
-        url: "",
+        url: "http://www.anshan.gov.cn/asszf/zfxxgkml/fdzdgknr/ysjs/glist.html",
         children: [
           { name: "铁东区", url: "" },
           { name: "铁西区", url: "http://www.anshan.gov.cn/zwgk/fdzdgknr/czyjs/" },
@@ -862,7 +862,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "朝阳市",
-        url: "",
+        url: "https://www.chaoyang.gov.cn/cyszf/zwgk/zfxxgkpt/fdzdgknr/czxx/2025/bmyjs/ys/index.html",
         children: [
           { name: "双塔区", url: "https://zwfw.chaoyang.gov.cn:8213/cyyjs-zwdt/epointzwmhwz/pages/onething/default" },
           { name: "龙城区", url: "https://zwfw.chaoyang.gov.cn:8213/cyyjs-zwdt/epointzwmhwz/pages/onething/default" },
@@ -1078,7 +1078,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "鹤岗市",
-        url: "",
+        url: "https://www.hegang.gov.cn/hegang/szfyjs/zwgk_list.shtml",
         children: [
           { name: "向阳区", url: "" },
           { name: "工农区", url: "" },
@@ -1875,7 +1875,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
     children: [
 {
         name: "南昌市",
-        url: "",
+        url: "http://czj.nc.gov.cn/ncczj/zcyjszl/czyjszl.shtml",
         children: [
           { name: "东湖区", url: "https://dhq.nc.gov.cn/dhqrmzf/bmczyjs2/dhjust_list.shtml" },
           { name: "西湖区", url: "https://xhq.nc.gov.cn/xhqrmzf/bmczyjs2/dhjust_list.shtml" },
@@ -2324,7 +2324,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         name: "洛阳市",
         url: "https://cz.ly.gov.cn/",
         children: [
-          { name: "老城区", url: "" },
+          { name: "老城区", url: "https://www.lylc.gov.cn/zwgk/zdlyxxgk/czzj/" },
           { name: "西工区", url: "" },
           { name: "瀍河回族区", url: "" },
           { name: "涧西区", url: "" },
@@ -2334,7 +2334,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "栾川县", url: "" },
           { name: "嵩县", url: "" },
           { name: "汝阳县", url: "" },
-          { name: "宜阳县", url: "" },
+          { name: "宜阳县", url: "https://www.yyzfw.gov.cn/zwgk/zdly/czzj/" },
           { name: "洛宁县", url: "" },
           { name: "伊川县", url: "" },
           { name: "偃师区", url: "" },
@@ -2363,7 +2363,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "文峰区", url: "" },
           { name: "北关区", url: "" },
           { name: "殷都区", url: "" },
-          { name: "龙安区", url: "" },
+          { name: "龙安区", url: "https://www.longan.gov.cn/zwgk/zdlyxxgk/czzj/" },
           { name: "安阳县", url: "" },
           { name: "汤阴县", url: "" },
           { name: "滑县", url: "" },
@@ -2477,8 +2477,8 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "淅川县", url: "" },
           { name: "社旗县", url: "" },
           { name: "唐河县", url: "" },
-          { name: "新野县", url: "" },
-          { name: "桐柏县", url: "" },
+          { name: "新野县", url: "https://www.xinye.gov.cn/zwgk/zdlyxxgk/czzj/" },
+          { name: "桐柏县", url: "https://www.tongbai.gov.cn/zwgk/zdlyxxgk/czzj/" },
           { name: "邓州市", url: "" },
         ],
       },
@@ -2985,7 +2985,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "仁化县", url: "" },
           { name: "翁源县", url: "" },
           { name: "乳源瑶族自治县", url: "" },
-          { name: "新丰县", url: "" },
+          { name: "新丰县", url: "https://www.xinfeng.gov.cn/zwgk/czyjs/index.html" },
           { name: "乐昌市", url: "" },
           { name: "南雄市", url: "" },
         ],
@@ -3056,10 +3056,10 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         url: "https://www.zhanjiang.gov.cn/zdlyxxgk/czyjshsg/czyjs/index.html",
         children: [
           { name: "赤坎区", url: "https://www.gov.cn/zhengce/jiedu/jdzl/gxbcyjs/index.htm" },
-          { name: "霞山区", url: "" },
+          { name: "霞山区", url: "http://www.zjxs.gov.cn/zwgk/czxx/" },
           { name: "坡头区", url: "" },
           { name: "麻章区", url: "" },
-          { name: "遂溪县", url: "" },
+          { name: "遂溪县", url: "http://www.suixi.gov.cn/zwgk/czxx/" },
           { name: "徐闻县", url: "" },
           { name: "廉江市", url: "" },
           { name: "雷州市", url: "https://www.gov.cn/zhengce/jiedu/jdzl/gxbcyjs/index.htm" },
@@ -3158,7 +3158,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "阳山县", url: "" },
           { name: "连山壮族瑶族自治县", url: "" },
           { name: "连南瑶族自治县", url: "" },
-          { name: "英德市", url: "" },
+          { name: "英德市", url: "http://www.yingde.gov.cn/zwgk/czyjs/index.html" },
           { name: "连州市", url: "" },
         ],
       },
@@ -4095,7 +4095,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "西双版纳傣族自治州",
-        url: "",
+        url: "https://www.xsbn.gov.cn/czj/93677.news.list.dhtml",
         children: [
           { name: "景洪市", url: "" },
           { name: "勐海县", url: "" },
