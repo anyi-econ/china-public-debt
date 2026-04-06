@@ -2099,7 +2099,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         name: "枣庄市",
         url: "",
         children: [
-          { name: "市中区", url: "" },
+          { name: "市中区", url: "http://www.zzszq.gov.cn/" },
           { name: "薛城区", url: "http://www.xuecheng.gov.cn/" },
           { name: "峄城区", url: "http://www.ycq.gov.cn/" },
           { name: "台儿庄区", url: "http://www.tez.gov.cn/" },
@@ -3431,7 +3431,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         url: "",
         children: [
           { name: "西沙区", url: "" },
-          { name: "南沙区", url: "http://www.gzns.gov.cn/" },
+          { name: "南沙区", url: "" },
         ],
       },
       { name: "儋州市", url: "https://www.danzhou.gov.cn/danzhou/rdzt/czyjs/" },
