@@ -1365,7 +1365,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "滨江区", url: "http://www.hhtz.gov.cn/col/col1229055831/index.html" },
           { name: "萧山区", url: "https://www.xiaoshan.gov.cn/col/col1229461366/index.html" },
           { name: "余杭区", url: "https://www.yuhang.gov.cn/col/col1229190837/index.html" },
-          { name: "临平区", url: "" },
+          { name: "临平区", url: "https://www.linping.gov.cn/col/col1229617090/index.html" },
           { name: "钱塘区", url: "https://www.qiantang.gov.cn/col/col1229607514/index.html" },
           { name: "富阳区", url: "http://www.fuyang.gov.cn/col/col1229051935/index.html" },
           { name: "临安区", url: "https://www.linan.gov.cn/col/col1229691915/index.html" },
@@ -1450,7 +1450,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         children: [
           { name: "婺城区", url: "https://www.wuch.gov.cn/col/col1229567511/index.html" },
           { name: "金东区", url: "https://www.jindong.gov.cn/col/col1229365742/index.html" },
-          { name: "武义县", url: "" },
+          { name: "武义县", url: "https://www.zjwy.gov.cn/col/col1229423351/index.html" },
           { name: "浦江县", url: "https://www.pj.gov.cn/col/col1229285496/index.html" },
           { name: "磐安县", url: "https://www.panan.gov.cn/col/col1229170643/index.html" },
           { name: "兰溪市", url: "https://www.lanxi.gov.cn/col/col1229493549/index.html" },
@@ -3442,14 +3442,14 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       { name: "东方市", url: "http://dongfang.hainan.gov.cn/" },
       { name: "定安县", url: "https://dingan.hainan.gov.cn/" },
       { name: "屯昌县", url: "https://tunchang.hainan.gov.cn/" },
-      { name: "澄迈县", url: "" },
+      { name: "澄迈县", url: "http://chengmai.hainan.gov.cn/xxgk/zdxxgk/czxx/" },
       { name: "临高县", url: "http://lingao.hainan.gov.cn/" },
       { name: "白沙黎族自治县", url: "https://baisha.hainan.gov.cn/" },
-      { name: "昌江黎族自治县", url: "" },
+      { name: "昌江黎族自治县", url: "http://changjiang.hainan.gov.cn/xxgk/zdxxgk/czxx/" },
       { name: "乐东黎族自治县", url: "https://ledong.hainan.gov.cn/" },
       { name: "陵水黎族自治县", url: "https://lingshui.hainan.gov.cn/" },
       { name: "保亭黎族苗族自治县", url: "https://baoting.hainan.gov.cn/" },
-      { name: "琼中黎族苗族自治县", url: "" },
+      { name: "琼中黎族苗族自治县", url: "http://qiongzhong.hainan.gov.cn/xxgk/zdxxgk/czxx/" },
     ],
   },
 
@@ -3568,7 +3568,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "安居区", url: "http://www.scanju.gov.cn/web/ajq/cz2019" },
           { name: "蓬溪县", url: "http://www.pengxi.gov.cn/2020ys" },
           { name: "大英县", url: "http://www.daying.gov.cn/2020czxx" },
-          { name: "射洪市", url: "" },
+          { name: "射洪市", url: "https://www.shehong.gov.cn/zfxxgk/yjs/" },
         ],
       },
       {
@@ -4764,7 +4764,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "固原市",
-        url: "",
+        url: "http://www.nxgy.gov.cn/zwgk/zfxxgkml/czgk/",
         children: [
           { name: "原州区", url: "http://www.yzh.gov.cn/xxgk_13314/zfxxgkml/czzj/" },
           { name: "西吉县", url: "https://www.nxxj.gov.cn/xxgk_13648/zfxxgkml/czzjc/" },
@@ -4775,7 +4775,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "中卫市",
-        url: "",
+        url: "https://www.nxzw.gov.cn/zwgk/bmxxgkml/sczj/fdzdgknr_49463/ysjsxx_49468/",
         children: [
           { name: "沙坡头区", url: "https://www.spt.gov.cn/xxgk/zfxxgkml/czzj/" },
           { name: "中宁县", url: "https://www.znzf.gov.cn/xxgk/zfxxgkml/czyjs/" },
