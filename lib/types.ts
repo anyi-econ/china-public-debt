@@ -56,6 +56,17 @@ export interface AnnualIssuanceDataset {
   }>;
 }
 
+export interface AnnualBalanceDataset {
+  updatedAt: string;
+  source: {
+    name: string;
+    organization: string;
+    url: string;
+    note: string;
+  };
+  series: AnnualMetricSeries[];
+}
+
 export interface NewsItem {
   id: string;
   title: string;

@@ -1,0 +1,65 @@
+{
+  "updatedAt": "2026-04-06",
+  "source": {
+    "name": "中国地方政府债券信息公开平台",
+    "organization": "财政部",
+    "url": "https://www.celma.org.cn/ndsj/index.jhtml",
+    "note": "年度数据页 06 债务余额栏目，数据来源为财政部历年12月地方政府债券发行和债务余额情况公告。"
+  },
+  "series": [
+    {
+      "key": "total",
+      "metricId": "0601",
+      "label": "地方政府债务余额",
+      "unit": "亿元",
+      "values": [
+        { "year": 2015, "value": 160074.3 },
+        { "year": 2016, "value": 153164.01 },
+        { "year": 2017, "value": 164706 },
+        { "year": 2018, "value": 183862 },
+        { "year": 2019, "value": 213098 },
+        { "year": 2020, "value": 256615 },
+        { "year": 2021, "value": 304700 },
+        { "year": 2022, "value": 350618 },
+        { "year": 2023, "value": 407373 },
+        { "year": 2024, "value": 475371 }
+      ]
+    },
+    {
+      "key": "general",
+      "metricId": "060101",
+      "label": "一般债务余额",
+      "unit": "亿元",
+      "values": [
+        { "year": 2015, "value": 99272.4 },
+        { "year": 2016, "value": 97867.78 },
+        { "year": 2017, "value": 103322 },
+        { "year": 2018, "value": 109939 },
+        { "year": 2019, "value": 118671 },
+        { "year": 2020, "value": 127395 },
+        { "year": 2021, "value": 137709 },
+        { "year": 2022, "value": 143896 },
+        { "year": 2023, "value": 158688 },
+        { "year": 2024, "value": 167013 }
+      ]
+    },
+    {
+      "key": "special",
+      "metricId": "060102",
+      "label": "专项债务余额",
+      "unit": "亿元",
+      "values": [
+        { "year": 2015, "value": 60801.9 },
+        { "year": 2016, "value": 55296.23 },
+        { "year": 2017, "value": 61384 },
+        { "year": 2018, "value": 73923 },
+        { "year": 2019, "value": 94427 },
+        { "year": 2020, "value": 129220 },
+        { "year": 2021, "value": 166991 },
+        { "year": 2022, "value": 206722 },
+        { "year": 2023, "value": 248685 },
+        { "year": 2024, "value": 308358 }
+      ]
+    }
+  ]
+}
