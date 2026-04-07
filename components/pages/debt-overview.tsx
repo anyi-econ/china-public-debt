@@ -1,10 +1,14 @@
+"use client";
+
+import { useMemo, useState } from "react";
 import { DebtDataItem } from "@/lib/types";
 import { AnnualIssuanceDataset } from "@/lib/types";
 import { SimpleBarChart } from "@/components/charts/simple-bar-chart";
-import { SimpleLineChart } from "@/components/charts/simple-line-chart";
 import { MultiLineChart } from "@/components/charts/multi-line-chart";
 
 export function DebtOverview({ items, annualIssuance, annualBalance }: { items: DebtDataItem[]; annualIssuance: AnnualIssuanceDataset; annualBalance: AnnualIssuanceDataset }) {
+  const regionOptions = useMemo(() => annualIssuance.regions?.map((region) => region.name) ?? ["全国"], [annualIssuance.regions]);
+  const [selectedRegion, setSelectedRegion] = useState("全国");
   const issuance = items.filter((item) => item.metricType === "issuance");
   const balances = items.filter((item) => item.metricType === "balance");
   const latestBalance = balances[0];
@@ -20,9 +24,22 @@ export function DebtOverview({ items, annualIssuance, annualBalance }: { items: 
   const annualGrowth = latestAnnual && previousAnnual ? ((latestAnnual.value - previousAnnual.value) / previousAnnual.value) * 100 : 0;
   const specialShare = latestAnnual && latestSpecial ? (latestSpecial.value / latestAnnual.value) * 100 : 0;
 
-  const balanceSeriesList = annualBalance.series.map((s, i) => ({
-    series: s,
-    color: ["#8B0000", "#1B4965", "#8B6914"][i % 3],
+  const resolveSeries = (dataset: AnnualIssuanceDataset, regionName: string) => {
+    if (regionName === "全国") {
+      return dataset.series;
+    }
+
+    return dataset.regions?.find((region) => region.name === regionName)?.series ?? dataset.series;
+  };
+
+  const issuanceSeriesList = resolveSeries(annualIssuance, selectedRegion).map((series, index) => ({
+    series,
+    color: ["#8B0000", "#1B4965", "#8B6914"][index % 3],
+  }));
+
+  const balanceSeriesList = resolveSeries(annualBalance, selectedRegion).map((series, index) => ({
+    series,
+    color: ["#8B0000", "#1B4965", "#8B6914"][index % 3],
   }));
 
   const byMonth = Array.from(
@@ -46,21 +63,6 @@ export function DebtOverview({ items, annualIssuance, annualBalance }: { items: 
     value,
     tone: (index % 2 ? "secondary" : "primary") as "primary" | "secondary"
   }));
-
-  const annualLineData = totalSeries?.values.map((item) => ({ label: `${item.year}`, value: item.value })) ?? [];
-
-  const latestStructure = [
-    {
-      label: "一般债券",
-      value: latestGeneral?.value ?? 0,
-      tone: "secondary" as const
-    },
-    {
-      label: "专项债券",
-      value: latestSpecial?.value ?? 0,
-      tone: "primary" as const
-    }
-  ];
 
   return (
     <div className="space-y-8">
@@ -87,14 +89,41 @@ export function DebtOverview({ items, annualIssuance, annualBalance }: { items: 
         </article>
       </div>
 
+      <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-[#ebe6df] bg-[#fcfbf8] px-5 py-4">
+        <div>
+          <div className="text-xs uppercase tracking-[0.16em] text-[#8b8175]">Chart Filter</div>
+          <div className="mt-1 text-sm text-[#4f473f]">发行额趋势与债务余额趋势共享同一个地区筛选。</div>
+        </div>
+        <label className="flex items-center gap-2 text-sm text-[#6f665d]">
+          <span>地区</span>
+          <select
+            value={selectedRegion}
+            onChange={(event) => setSelectedRegion(event.target.value)}
+            className="rounded-full border border-[#d8d0c6] bg-white px-3 py-1.5 text-sm text-[#2a2622] outline-none transition focus:border-[#8B0000]"
+          >
+            {regionOptions.map((regionName) => (
+              <option key={regionName} value={regionName}>
+                {regionName}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+
       <div className="grid gap-4 lg:grid-cols-2">
         <article className="info-card p-4">
-          <h3 className="section-title">地方债务余额趋势</h3>
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+            <h3 className="section-title">地方债务余额趋势</h3>
+            <span className="text-sm text-[#6f665d]">当前地区：{selectedRegion}</span>
+          </div>
           <MultiLineChart seriesList={balanceSeriesList} unit="亿元" />
         </article>
         <article className="info-card p-4">
-          <h3 className="section-title">全国年度发行规模</h3>
-          <SimpleLineChart data={annualLineData} unit="亿元" />
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+            <h3 className="section-title">地方债券发行额趋势</h3>
+            <span className="text-sm text-[#6f665d]">当前地区：{selectedRegion}</span>
+          </div>
+          <MultiLineChart seriesList={issuanceSeriesList} unit="亿元" />
         </article>
       </div>
 

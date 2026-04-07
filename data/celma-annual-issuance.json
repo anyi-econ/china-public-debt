@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-04-01",
+  "updatedAt": "2026-04-07",
   "source": {
     "name": "中国地方政府债券信息公开平台",
     "organization": "财政部建设",
     "url": "https://www.celma.org.cn/ndsj/index.jhtml",
-    "note": "通过官方年度数据页对应接口 loadBondData.action 抓取全国年度发行额指标。"
+    "note": "通过官方年度数据页对应接口抓取全国及各省年度债券发行额指标。"
   },
   "series": [
     {
       "key": "total",
       "metricId": "0301",
-      "label": "全国地方政府债券发行额",
+      "label": "债券发行额",
       "unit": "亿元",
       "values": [
         {
@@ -58,7 +58,7 @@
     {
       "key": "general",
       "metricId": "030101",
-      "label": "全国一般债券发行额",
+      "label": "一般债券发行额",
       "unit": "亿元",
       "values": [
         {
@@ -106,7 +106,7 @@
     {
       "key": "special",
       "metricId": "030102",
-      "label": "全国专项债券发行额",
+      "label": "专项债券发行额",
       "unit": "亿元",
       "values": [
         {
@@ -148,6 +148,5120 @@
         {
           "year": 2024,
           "value": 77261
+        }
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "adCode": "87",
+      "name": "全国",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 38350.6
+            },
+            {
+              "year": 2016,
+              "value": 60458.4
+            },
+            {
+              "year": 2017,
+              "value": 43580.9
+            },
+            {
+              "year": 2018,
+              "value": 41651.7
+            },
+            {
+              "year": 2019,
+              "value": 43624.3
+            },
+            {
+              "year": 2020,
+              "value": 64438.1
+            },
+            {
+              "year": 2021,
+              "value": 74898.3
+            },
+            {
+              "year": 2022,
+              "value": 73675.8
+            },
+            {
+              "year": 2023,
+              "value": 93373.7
+            },
+            {
+              "year": 2024,
+              "value": 97935.9
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 28606.9
+            },
+            {
+              "year": 2016,
+              "value": 35339.8
+            },
+            {
+              "year": 2017,
+              "value": 23619.4
+            },
+            {
+              "year": 2018,
+              "value": 22192.2
+            },
+            {
+              "year": 2019,
+              "value": 17742
+            },
+            {
+              "year": 2020,
+              "value": 23033.7
+            },
+            {
+              "year": 2021,
+              "value": 25669.2
+            },
+            {
+              "year": 2022,
+              "value": 22359.8
+            },
+            {
+              "year": 2023,
+              "value": 33473.9
+            },
+            {
+              "year": 2024,
+              "value": 20674.9
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 9743.7
+            },
+            {
+              "year": 2016,
+              "value": 25118.6
+            },
+            {
+              "year": 2017,
+              "value": 19961.6
+            },
+            {
+              "year": 2018,
+              "value": 19459.5
+            },
+            {
+              "year": 2019,
+              "value": 25882.2
+            },
+            {
+              "year": 2020,
+              "value": 41404.5
+            },
+            {
+              "year": 2021,
+              "value": 49229.1
+            },
+            {
+              "year": 2022,
+              "value": 51316
+            },
+            {
+              "year": 2023,
+              "value": 59899.8
+            },
+            {
+              "year": 2024,
+              "value": 77261
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "11",
+      "name": "北京市",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1178
+            },
+            {
+              "year": 2016,
+              "value": 1166.4
+            },
+            {
+              "year": 2017,
+              "value": 1070
+            },
+            {
+              "year": 2018,
+              "value": 644.9
+            },
+            {
+              "year": 2019,
+              "value": 1401.5
+            },
+            {
+              "year": 2020,
+              "value": 1676.3
+            },
+            {
+              "year": 2021,
+              "value": 3293.5
+            },
+            {
+              "year": 2022,
+              "value": 2931.6
+            },
+            {
+              "year": 2023,
+              "value": 1712.5
+            },
+            {
+              "year": 2024,
+              "value": 2642
+            },
+            {
+              "year": 2025,
+              "value": 3581.2
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 734.2
+            },
+            {
+              "year": 2016,
+              "value": 601.6
+            },
+            {
+              "year": 2017,
+              "value": 361.7
+            },
+            {
+              "year": 2018,
+              "value": 328.9
+            },
+            {
+              "year": 2019,
+              "value": 270.2
+            },
+            {
+              "year": 2020,
+              "value": 416.5
+            },
+            {
+              "year": 2021,
+              "value": 462.3
+            },
+            {
+              "year": 2022,
+              "value": 288.5
+            },
+            {
+              "year": 2023,
+              "value": 373.6
+            },
+            {
+              "year": 2024,
+              "value": 561.5
+            },
+            {
+              "year": 2025,
+              "value": 654.4
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 443.8
+            },
+            {
+              "year": 2016,
+              "value": 564.8
+            },
+            {
+              "year": 2017,
+              "value": 708.3
+            },
+            {
+              "year": 2018,
+              "value": 315.9
+            },
+            {
+              "year": 2019,
+              "value": 1131.3
+            },
+            {
+              "year": 2020,
+              "value": 1259.8
+            },
+            {
+              "year": 2021,
+              "value": 2831.2
+            },
+            {
+              "year": 2022,
+              "value": 2643.1
+            },
+            {
+              "year": 2023,
+              "value": 1338.9
+            },
+            {
+              "year": 2024,
+              "value": 2080.5
+            },
+            {
+              "year": 2025,
+              "value": 2926.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "12",
+      "name": "天津市",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 565
+            },
+            {
+              "year": 2016,
+              "value": 1667
+            },
+            {
+              "year": 2017,
+              "value": 849
+            },
+            {
+              "year": 2018,
+              "value": 980.6
+            },
+            {
+              "year": 2019,
+              "value": 1171.7
+            },
+            {
+              "year": 2020,
+              "value": 1805.2
+            },
+            {
+              "year": 2021,
+              "value": 2255.8
+            },
+            {
+              "year": 2022,
+              "value": 1446.6
+            },
+            {
+              "year": 2023,
+              "value": 3612.1
+            },
+            {
+              "year": 2024,
+              "value": 3815.8
+            },
+            {
+              "year": 2025,
+              "value": 2415.2
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 318
+            },
+            {
+              "year": 2016,
+              "value": 663
+            },
+            {
+              "year": 2017,
+              "value": 252
+            },
+            {
+              "year": 2018,
+              "value": 189.3
+            },
+            {
+              "year": 2019,
+              "value": 231.7
+            },
+            {
+              "year": 2020,
+              "value": 404.6
+            },
+            {
+              "year": 2021,
+              "value": 489.4
+            },
+            {
+              "year": 2022,
+              "value": 291.7
+            },
+            {
+              "year": 2023,
+              "value": 1164.9
+            },
+            {
+              "year": 2024,
+              "value": 982.4
+            },
+            {
+              "year": 2025,
+              "value": 577.5
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 247
+            },
+            {
+              "year": 2016,
+              "value": 1004
+            },
+            {
+              "year": 2017,
+              "value": 597
+            },
+            {
+              "year": 2018,
+              "value": 791.2
+            },
+            {
+              "year": 2019,
+              "value": 940
+            },
+            {
+              "year": 2020,
+              "value": 1400.6
+            },
+            {
+              "year": 2021,
+              "value": 1766.4
+            },
+            {
+              "year": 2022,
+              "value": 1154.9
+            },
+            {
+              "year": 2023,
+              "value": 2447.3
+            },
+            {
+              "year": 2024,
+              "value": 2833.4
+            },
+            {
+              "year": 2025,
+              "value": 1837.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "13",
+      "name": "河北省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1420
+            },
+            {
+              "year": 2016,
+              "value": 2320.8
+            },
+            {
+              "year": 2017,
+              "value": 1527.7
+            },
+            {
+              "year": 2018,
+              "value": 2123.4
+            },
+            {
+              "year": 2019,
+              "value": 2220.4
+            },
+            {
+              "year": 2020,
+              "value": 2999.6
+            },
+            {
+              "year": 2021,
+              "value": 3288.6
+            },
+            {
+              "year": 2022,
+              "value": 3577.8
+            },
+            {
+              "year": 2023,
+              "value": 4201.7
+            },
+            {
+              "year": 2024,
+              "value": 3322.4
+            },
+            {
+              "year": 2025,
+              "value": 4094.2
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1231.7
+            },
+            {
+              "year": 2016,
+              "value": 1518
+            },
+            {
+              "year": 2017,
+              "value": 722.9
+            },
+            {
+              "year": 2018,
+              "value": 1172.1
+            },
+            {
+              "year": 2019,
+              "value": 943.4
+            },
+            {
+              "year": 2020,
+              "value": 1155.5
+            },
+            {
+              "year": 2021,
+              "value": 1131.4
+            },
+            {
+              "year": 2022,
+              "value": 984
+            },
+            {
+              "year": 2023,
+              "value": 1341.8
+            },
+            {
+              "year": 2024,
+              "value": 873.2
+            },
+            {
+              "year": 2025,
+              "value": 1022.2
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 188.3
+            },
+            {
+              "year": 2016,
+              "value": 802.7
+            },
+            {
+              "year": 2017,
+              "value": 804.8
+            },
+            {
+              "year": 2018,
+              "value": 951.3
+            },
+            {
+              "year": 2019,
+              "value": 1277
+            },
+            {
+              "year": 2020,
+              "value": 1844.1
+            },
+            {
+              "year": 2021,
+              "value": 2157.2
+            },
+            {
+              "year": 2022,
+              "value": 2593.7
+            },
+            {
+              "year": 2023,
+              "value": 2859.8
+            },
+            {
+              "year": 2024,
+              "value": 2449.2
+            },
+            {
+              "year": 2025,
+              "value": 3072
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "14",
+      "name": "山西省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 609.9
+            },
+            {
+              "year": 2016,
+              "value": 787.6
+            },
+            {
+              "year": 2017,
+              "value": 780.6
+            },
+            {
+              "year": 2018,
+              "value": 681.9
+            },
+            {
+              "year": 2019,
+              "value": 757
+            },
+            {
+              "year": 2020,
+              "value": 1408.6
+            },
+            {
+              "year": 2021,
+              "value": 1145.5
+            },
+            {
+              "year": 2022,
+              "value": 1348.7
+            },
+            {
+              "year": 2023,
+              "value": 1269.1
+            },
+            {
+              "year": 2024,
+              "value": 1700.9
+            },
+            {
+              "year": 2025,
+              "value": 1913.9
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 455.8
+            },
+            {
+              "year": 2016,
+              "value": 566.7
+            },
+            {
+              "year": 2017,
+              "value": 426
+            },
+            {
+              "year": 2018,
+              "value": 435.7
+            },
+            {
+              "year": 2019,
+              "value": 355.9
+            },
+            {
+              "year": 2020,
+              "value": 583.2
+            },
+            {
+              "year": 2021,
+              "value": 500.7
+            },
+            {
+              "year": 2022,
+              "value": 452.2
+            },
+            {
+              "year": 2023,
+              "value": 542.9
+            },
+            {
+              "year": 2024,
+              "value": 525.4
+            },
+            {
+              "year": 2025,
+              "value": 748.5
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 154.1
+            },
+            {
+              "year": 2016,
+              "value": 220.9
+            },
+            {
+              "year": 2017,
+              "value": 354.6
+            },
+            {
+              "year": 2018,
+              "value": 246.2
+            },
+            {
+              "year": 2019,
+              "value": 401.1
+            },
+            {
+              "year": 2020,
+              "value": 825.4
+            },
+            {
+              "year": 2021,
+              "value": 644.9
+            },
+            {
+              "year": 2022,
+              "value": 896.5
+            },
+            {
+              "year": 2023,
+              "value": 726.1
+            },
+            {
+              "year": 2024,
+              "value": 1175.5
+            },
+            {
+              "year": 2025,
+              "value": 1165.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "15",
+      "name": "内蒙古自治区",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1476.5
+            },
+            {
+              "year": 2016,
+              "value": 2502.3
+            },
+            {
+              "year": 2017,
+              "value": 1310.1
+            },
+            {
+              "year": 2018,
+              "value": 1144.3
+            },
+            {
+              "year": 2019,
+              "value": 1233.5
+            },
+            {
+              "year": 2020,
+              "value": 1847.3
+            },
+            {
+              "year": 2021,
+              "value": 1565.2
+            },
+            {
+              "year": 2022,
+              "value": 1381.8
+            },
+            {
+              "year": 2023,
+              "value": 2984
+            },
+            {
+              "year": 2024,
+              "value": 1862.6
+            },
+            {
+              "year": 2025,
+              "value": 2603.4
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1237.8
+            },
+            {
+              "year": 2016,
+              "value": 2181.6
+            },
+            {
+              "year": 2017,
+              "value": 950.7
+            },
+            {
+              "year": 2018,
+              "value": 924.2
+            },
+            {
+              "year": 2019,
+              "value": 791.8
+            },
+            {
+              "year": 2020,
+              "value": 1093.3
+            },
+            {
+              "year": 2021,
+              "value": 1081.1
+            },
+            {
+              "year": 2022,
+              "value": 891.2
+            },
+            {
+              "year": 2023,
+              "value": 2248.5
+            },
+            {
+              "year": 2024,
+              "value": 998.8
+            },
+            {
+              "year": 2025,
+              "value": 1481.8
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 238.7
+            },
+            {
+              "year": 2016,
+              "value": 320.6
+            },
+            {
+              "year": 2017,
+              "value": 359.4
+            },
+            {
+              "year": 2018,
+              "value": 220.1
+            },
+            {
+              "year": 2019,
+              "value": 441.7
+            },
+            {
+              "year": 2020,
+              "value": 754
+            },
+            {
+              "year": 2021,
+              "value": 484.2
+            },
+            {
+              "year": 2022,
+              "value": 490.6
+            },
+            {
+              "year": 2023,
+              "value": 735.5
+            },
+            {
+              "year": 2024,
+              "value": 863.8
+            },
+            {
+              "year": 2025,
+              "value": 1121.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "21",
+      "name": "辽宁省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1601.5
+            },
+            {
+              "year": 2016,
+              "value": 2393.2
+            },
+            {
+              "year": 2017,
+              "value": 1659.7
+            },
+            {
+              "year": 2018,
+              "value": 1158
+            },
+            {
+              "year": 2019,
+              "value": 1100.1
+            },
+            {
+              "year": 2020,
+              "value": 1239
+            },
+            {
+              "year": 2021,
+              "value": 1882.4
+            },
+            {
+              "year": 2022,
+              "value": 1557.1
+            },
+            {
+              "year": 2023,
+              "value": 2795.1
+            },
+            {
+              "year": 2024,
+              "value": 1820.2
+            },
+            {
+              "year": 2025,
+              "value": 2319.8
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1543.7
+            },
+            {
+              "year": 2016,
+              "value": 1642
+            },
+            {
+              "year": 2017,
+              "value": 1059
+            },
+            {
+              "year": 2018,
+              "value": 932.9
+            },
+            {
+              "year": 2019,
+              "value": 683.8
+            },
+            {
+              "year": 2020,
+              "value": 846.2
+            },
+            {
+              "year": 2021,
+              "value": 1103.6
+            },
+            {
+              "year": 2022,
+              "value": 866.4
+            },
+            {
+              "year": 2023,
+              "value": 1748.8
+            },
+            {
+              "year": 2024,
+              "value": 761.2
+            },
+            {
+              "year": 2025,
+              "value": 1041.3
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 57.8
+            },
+            {
+              "year": 2016,
+              "value": 751.2
+            },
+            {
+              "year": 2017,
+              "value": 600.6
+            },
+            {
+              "year": 2018,
+              "value": 225.2
+            },
+            {
+              "year": 2019,
+              "value": 416.3
+            },
+            {
+              "year": 2020,
+              "value": 392.8
+            },
+            {
+              "year": 2021,
+              "value": 778.8
+            },
+            {
+              "year": 2022,
+              "value": 690.6
+            },
+            {
+              "year": 2023,
+              "value": 1046.3
+            },
+            {
+              "year": 2024,
+              "value": 1059
+            },
+            {
+              "year": 2025,
+              "value": 1278.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "22",
+      "name": "吉林省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 765
+            },
+            {
+              "year": 2016,
+              "value": 910.2
+            },
+            {
+              "year": 2017,
+              "value": 1146.4
+            },
+            {
+              "year": 2018,
+              "value": 795.6
+            },
+            {
+              "year": 2019,
+              "value": 762.3
+            },
+            {
+              "year": 2020,
+              "value": 1383.9
+            },
+            {
+              "year": 2021,
+              "value": 1394
+            },
+            {
+              "year": 2022,
+              "value": 1525.1
+            },
+            {
+              "year": 2023,
+              "value": 2379
+            },
+            {
+              "year": 2024,
+              "value": 1633.5
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 549.5
+            },
+            {
+              "year": 2016,
+              "value": 637.6
+            },
+            {
+              "year": 2017,
+              "value": 851.5
+            },
+            {
+              "year": 2018,
+              "value": 519.3
+            },
+            {
+              "year": 2019,
+              "value": 382.3
+            },
+            {
+              "year": 2020,
+              "value": 679.5
+            },
+            {
+              "year": 2021,
+              "value": 487.4
+            },
+            {
+              "year": 2022,
+              "value": 604.9
+            },
+            {
+              "year": 2023,
+              "value": 1161.9
+            },
+            {
+              "year": 2024,
+              "value": 410.7
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 215.5
+            },
+            {
+              "year": 2016,
+              "value": 272.6
+            },
+            {
+              "year": 2017,
+              "value": 294.9
+            },
+            {
+              "year": 2018,
+              "value": 276.2
+            },
+            {
+              "year": 2019,
+              "value": 380
+            },
+            {
+              "year": 2020,
+              "value": 704.5
+            },
+            {
+              "year": 2021,
+              "value": 906.6
+            },
+            {
+              "year": 2022,
+              "value": 920.2
+            },
+            {
+              "year": 2023,
+              "value": 1217.1
+            },
+            {
+              "year": 2024,
+              "value": 1222.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "23",
+      "name": "黑龙江省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 792
+            },
+            {
+              "year": 2016,
+              "value": 1104.8
+            },
+            {
+              "year": 2017,
+              "value": 965.3
+            },
+            {
+              "year": 2018,
+              "value": 1238.5
+            },
+            {
+              "year": 2019,
+              "value": 905.3
+            },
+            {
+              "year": 2020,
+              "value": 1350.9
+            },
+            {
+              "year": 2021,
+              "value": 1387
+            },
+            {
+              "year": 2022,
+              "value": 1272.9
+            },
+            {
+              "year": 2023,
+              "value": 2102.8
+            },
+            {
+              "year": 2024,
+              "value": 1607.5
+            },
+            {
+              "year": 2025,
+              "value": 1773.3
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 727
+            },
+            {
+              "year": 2016,
+              "value": 791
+            },
+            {
+              "year": 2017,
+              "value": 750.5
+            },
+            {
+              "year": 2018,
+              "value": 944.8
+            },
+            {
+              "year": 2019,
+              "value": 628.3
+            },
+            {
+              "year": 2020,
+              "value": 815.5
+            },
+            {
+              "year": 2021,
+              "value": 780.5
+            },
+            {
+              "year": 2022,
+              "value": 736
+            },
+            {
+              "year": 2023,
+              "value": 1116.3
+            },
+            {
+              "year": 2024,
+              "value": 543.3
+            },
+            {
+              "year": 2025,
+              "value": 740.8
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 65
+            },
+            {
+              "year": 2016,
+              "value": 313.8
+            },
+            {
+              "year": 2017,
+              "value": 214.8
+            },
+            {
+              "year": 2018,
+              "value": 293.7
+            },
+            {
+              "year": 2019,
+              "value": 277
+            },
+            {
+              "year": 2020,
+              "value": 535.4
+            },
+            {
+              "year": 2021,
+              "value": 606.5
+            },
+            {
+              "year": 2022,
+              "value": 536.9
+            },
+            {
+              "year": 2023,
+              "value": 986.5
+            },
+            {
+              "year": 2024,
+              "value": 1064.2
+            },
+            {
+              "year": 2025,
+              "value": 1032.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "31",
+      "name": "上海市",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1212
+            },
+            {
+              "year": 2016,
+              "value": 2200
+            },
+            {
+              "year": 2017,
+              "value": 783.1
+            },
+            {
+              "year": 2018,
+              "value": 705.9
+            },
+            {
+              "year": 2019,
+              "value": 1267.5
+            },
+            {
+              "year": 2020,
+              "value": 1754.8
+            },
+            {
+              "year": 2021,
+              "value": 1211.1
+            },
+            {
+              "year": 2022,
+              "value": 1802.1
+            },
+            {
+              "year": 2023,
+              "value": 1119.6
+            },
+            {
+              "year": 2024,
+              "value": 1354
+            },
+            {
+              "year": 2025,
+              "value": 2413.1
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 801
+            },
+            {
+              "year": 2016,
+              "value": 1033
+            },
+            {
+              "year": 2017,
+              "value": 273.9
+            },
+            {
+              "year": 2018,
+              "value": 382.1
+            },
+            {
+              "year": 2019,
+              "value": 461.7
+            },
+            {
+              "year": 2020,
+              "value": 540.4
+            },
+            {
+              "year": 2021,
+              "value": 443.1
+            },
+            {
+              "year": 2022,
+              "value": 787.9
+            },
+            {
+              "year": 2023,
+              "value": 521.2
+            },
+            {
+              "year": 2024,
+              "value": 648.8
+            },
+            {
+              "year": 2025,
+              "value": 809.1
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 411
+            },
+            {
+              "year": 2016,
+              "value": 1167
+            },
+            {
+              "year": 2017,
+              "value": 509.2
+            },
+            {
+              "year": 2018,
+              "value": 323.8
+            },
+            {
+              "year": 2019,
+              "value": 805.8
+            },
+            {
+              "year": 2020,
+              "value": 1214.4
+            },
+            {
+              "year": 2021,
+              "value": 768
+            },
+            {
+              "year": 2022,
+              "value": 1014.2
+            },
+            {
+              "year": 2023,
+              "value": 598.4
+            },
+            {
+              "year": 2024,
+              "value": 705.2
+            },
+            {
+              "year": 2025,
+              "value": 1604
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "32",
+      "name": "江苏省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 3194
+            },
+            {
+              "year": 2016,
+              "value": 4511.7
+            },
+            {
+              "year": 2017,
+              "value": 2878.4
+            },
+            {
+              "year": 2018,
+              "value": 2681.9
+            },
+            {
+              "year": 2019,
+              "value": 2852.3
+            },
+            {
+              "year": 2020,
+              "value": 4181.2
+            },
+            {
+              "year": 2021,
+              "value": 3701.8
+            },
+            {
+              "year": 2022,
+              "value": 3813.6
+            },
+            {
+              "year": 2023,
+              "value": 4579.9
+            },
+            {
+              "year": 2024,
+              "value": 7206.7
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 2230.7
+            },
+            {
+              "year": 2016,
+              "value": 2328.9
+            },
+            {
+              "year": 2017,
+              "value": 1122
+            },
+            {
+              "year": 2018,
+              "value": 926.2
+            },
+            {
+              "year": 2019,
+              "value": 684.9
+            },
+            {
+              "year": 2020,
+              "value": 1222.7
+            },
+            {
+              "year": 2021,
+              "value": 1308
+            },
+            {
+              "year": 2022,
+              "value": 1353.3
+            },
+            {
+              "year": 2023,
+              "value": 1346.5
+            },
+            {
+              "year": 2024,
+              "value": 926
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 963.3
+            },
+            {
+              "year": 2016,
+              "value": 2182.8
+            },
+            {
+              "year": 2017,
+              "value": 1756.5
+            },
+            {
+              "year": 2018,
+              "value": 1755.7
+            },
+            {
+              "year": 2019,
+              "value": 2167.4
+            },
+            {
+              "year": 2020,
+              "value": 2958.5
+            },
+            {
+              "year": 2021,
+              "value": 2393.8
+            },
+            {
+              "year": 2022,
+              "value": 2460.4
+            },
+            {
+              "year": 2023,
+              "value": 3233.3
+            },
+            {
+              "year": 2024,
+              "value": 6280.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "33",
+      "name": "浙江省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 2243.6
+            },
+            {
+              "year": 2016,
+              "value": 3582.7
+            },
+            {
+              "year": 2017,
+              "value": 1559.3
+            },
+            {
+              "year": 2018,
+              "value": 1662
+            },
+            {
+              "year": 2019,
+              "value": 2018.3
+            },
+            {
+              "year": 2020,
+              "value": 2882.8
+            },
+            {
+              "year": 2021,
+              "value": 3639.4
+            },
+            {
+              "year": 2022,
+              "value": 3684
+            },
+            {
+              "year": 2023,
+              "value": 3938.6
+            },
+            {
+              "year": 2024,
+              "value": 4759.5
+            },
+            {
+              "year": 2025,
+              "value": 5053.4
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1404.8
+            },
+            {
+              "year": 2016,
+              "value": 1900.7
+            },
+            {
+              "year": 2017,
+              "value": 565
+            },
+            {
+              "year": 2018,
+              "value": 679.8
+            },
+            {
+              "year": 2019,
+              "value": 675.9
+            },
+            {
+              "year": 2020,
+              "value": 950
+            },
+            {
+              "year": 2021,
+              "value": 1109.1
+            },
+            {
+              "year": 2022,
+              "value": 893.1
+            },
+            {
+              "year": 2023,
+              "value": 998.3
+            },
+            {
+              "year": 2024,
+              "value": 654.9
+            },
+            {
+              "year": 2025,
+              "value": 811.9
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 838.8
+            },
+            {
+              "year": 2016,
+              "value": 1682
+            },
+            {
+              "year": 2017,
+              "value": 994.3
+            },
+            {
+              "year": 2018,
+              "value": 982.2
+            },
+            {
+              "year": 2019,
+              "value": 1342.3
+            },
+            {
+              "year": 2020,
+              "value": 1932.8
+            },
+            {
+              "year": 2021,
+              "value": 2530.3
+            },
+            {
+              "year": 2022,
+              "value": 2790.9
+            },
+            {
+              "year": 2023,
+              "value": 2940.3
+            },
+            {
+              "year": 2024,
+              "value": 4104.6
+            },
+            {
+              "year": 2025,
+              "value": 4241.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "34",
+      "name": "安徽省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1294
+            },
+            {
+              "year": 2016,
+              "value": 1687
+            },
+            {
+              "year": 2017,
+              "value": 1462
+            },
+            {
+              "year": 2018,
+              "value": 2247.9
+            },
+            {
+              "year": 2019,
+              "value": 1628
+            },
+            {
+              "year": 2020,
+              "value": 2329
+            },
+            {
+              "year": 2021,
+              "value": 2815
+            },
+            {
+              "year": 2022,
+              "value": 2694.5
+            },
+            {
+              "year": 2023,
+              "value": 4483.4
+            },
+            {
+              "year": 2024,
+              "value": 4093.4
+            },
+            {
+              "year": 2025,
+              "value": 3959.3
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1038
+            },
+            {
+              "year": 2016,
+              "value": 957
+            },
+            {
+              "year": 2017,
+              "value": 645
+            },
+            {
+              "year": 2018,
+              "value": 931.8
+            },
+            {
+              "year": 2019,
+              "value": 442
+            },
+            {
+              "year": 2020,
+              "value": 650.8
+            },
+            {
+              "year": 2021,
+              "value": 729.9
+            },
+            {
+              "year": 2022,
+              "value": 567.4
+            },
+            {
+              "year": 2023,
+              "value": 1057.8
+            },
+            {
+              "year": 2024,
+              "value": 355.3
+            },
+            {
+              "year": 2025,
+              "value": 760.4
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 256
+            },
+            {
+              "year": 2016,
+              "value": 730
+            },
+            {
+              "year": 2017,
+              "value": 817
+            },
+            {
+              "year": 2018,
+              "value": 1316.1
+            },
+            {
+              "year": 2019,
+              "value": 1186
+            },
+            {
+              "year": 2020,
+              "value": 1678.2
+            },
+            {
+              "year": 2021,
+              "value": 2085
+            },
+            {
+              "year": 2022,
+              "value": 2127.1
+            },
+            {
+              "year": 2023,
+              "value": 3425.6
+            },
+            {
+              "year": 2024,
+              "value": 3738
+            },
+            {
+              "year": 2025,
+              "value": 3198.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "35",
+      "name": "福建省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1259
+            },
+            {
+              "year": 2016,
+              "value": 1788.1
+            },
+            {
+              "year": 2017,
+              "value": 1442.5
+            },
+            {
+              "year": 2018,
+              "value": 894
+            },
+            {
+              "year": 2019,
+              "value": 963.8
+            },
+            {
+              "year": 2020,
+              "value": 1592.9
+            },
+            {
+              "year": 2021,
+              "value": 2190.5
+            },
+            {
+              "year": 2022,
+              "value": 2175.9
+            },
+            {
+              "year": 2023,
+              "value": 2402.6
+            },
+            {
+              "year": 2024,
+              "value": 2842.7
+            },
+            {
+              "year": 2025,
+              "value": 2736.7
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 530.7
+            },
+            {
+              "year": 2016,
+              "value": 886.5
+            },
+            {
+              "year": 2017,
+              "value": 870.5
+            },
+            {
+              "year": 2018,
+              "value": 282.6
+            },
+            {
+              "year": 2019,
+              "value": 287.8
+            },
+            {
+              "year": 2020,
+              "value": 374.8
+            },
+            {
+              "year": 2021,
+              "value": 546.7
+            },
+            {
+              "year": 2022,
+              "value": 480.3
+            },
+            {
+              "year": 2023,
+              "value": 579.2
+            },
+            {
+              "year": 2024,
+              "value": 453.2
+            },
+            {
+              "year": 2025,
+              "value": 408.9
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 728.3
+            },
+            {
+              "year": 2016,
+              "value": 901.5
+            },
+            {
+              "year": 2017,
+              "value": 572
+            },
+            {
+              "year": 2018,
+              "value": 611.4
+            },
+            {
+              "year": 2019,
+              "value": 676
+            },
+            {
+              "year": 2020,
+              "value": 1218.2
+            },
+            {
+              "year": 2021,
+              "value": 1643.8
+            },
+            {
+              "year": 2022,
+              "value": 1695.5
+            },
+            {
+              "year": 2023,
+              "value": 1823.4
+            },
+            {
+              "year": 2024,
+              "value": 2389.4
+            },
+            {
+              "year": 2025,
+              "value": 2327.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "36",
+      "name": "江西省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 978
+            },
+            {
+              "year": 2016,
+              "value": 1054.4
+            },
+            {
+              "year": 2017,
+              "value": 1215.7
+            },
+            {
+              "year": 2018,
+              "value": 1082.4
+            },
+            {
+              "year": 2019,
+              "value": 1171.6
+            },
+            {
+              "year": 2020,
+              "value": 2287.6
+            },
+            {
+              "year": 2021,
+              "value": 2290.7
+            },
+            {
+              "year": 2022,
+              "value": 2589.3
+            },
+            {
+              "year": 2023,
+              "value": 2729.4
+            },
+            {
+              "year": 2024,
+              "value": 3419.7
+            },
+            {
+              "year": 2025,
+              "value": 3051.1
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 942
+            },
+            {
+              "year": 2016,
+              "value": 647.7
+            },
+            {
+              "year": 2017,
+              "value": 538.2
+            },
+            {
+              "year": 2018,
+              "value": 531.5
+            },
+            {
+              "year": 2019,
+              "value": 420.3
+            },
+            {
+              "year": 2020,
+              "value": 681.5
+            },
+            {
+              "year": 2021,
+              "value": 662.8
+            },
+            {
+              "year": 2022,
+              "value": 745.4
+            },
+            {
+              "year": 2023,
+              "value": 650.5
+            },
+            {
+              "year": 2024,
+              "value": 635.2
+            },
+            {
+              "year": 2025,
+              "value": 750.4
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 36
+            },
+            {
+              "year": 2016,
+              "value": 406.6
+            },
+            {
+              "year": 2017,
+              "value": 677.4
+            },
+            {
+              "year": 2018,
+              "value": 550.9
+            },
+            {
+              "year": 2019,
+              "value": 751.3
+            },
+            {
+              "year": 2020,
+              "value": 1606.1
+            },
+            {
+              "year": 2021,
+              "value": 1627.9
+            },
+            {
+              "year": 2022,
+              "value": 1843.9
+            },
+            {
+              "year": 2023,
+              "value": 2078.9
+            },
+            {
+              "year": 2024,
+              "value": 2784.5
+            },
+            {
+              "year": 2025,
+              "value": 2300.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "37",
+      "name": "山东省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1994
+            },
+            {
+              "year": 2016,
+              "value": 3865.4
+            },
+            {
+              "year": 2017,
+              "value": 2231.6
+            },
+            {
+              "year": 2018,
+              "value": 2173
+            },
+            {
+              "year": 2019,
+              "value": 2328.4
+            },
+            {
+              "year": 2020,
+              "value": 3932.2
+            },
+            {
+              "year": 2021,
+              "value": 4910.2
+            },
+            {
+              "year": 2022,
+              "value": 4522.4
+            },
+            {
+              "year": 2023,
+              "value": 5514.1
+            },
+            {
+              "year": 2024,
+              "value": 6490
+            },
+            {
+              "year": 2025,
+              "value": 5533.9
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1691.7
+            },
+            {
+              "year": 2016,
+              "value": 2068.1
+            },
+            {
+              "year": 2017,
+              "value": 1141.7
+            },
+            {
+              "year": 2018,
+              "value": 923.3
+            },
+            {
+              "year": 2019,
+              "value": 610.1
+            },
+            {
+              "year": 2020,
+              "value": 1044.5
+            },
+            {
+              "year": 2021,
+              "value": 1328.8
+            },
+            {
+              "year": 2022,
+              "value": 892.5
+            },
+            {
+              "year": 2023,
+              "value": 1158.4
+            },
+            {
+              "year": 2024,
+              "value": 748.1
+            },
+            {
+              "year": 2025,
+              "value": 668.3
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 302.3
+            },
+            {
+              "year": 2016,
+              "value": 1797.3
+            },
+            {
+              "year": 2017,
+              "value": 1089.9
+            },
+            {
+              "year": 2018,
+              "value": 1249.7
+            },
+            {
+              "year": 2019,
+              "value": 1718.3
+            },
+            {
+              "year": 2020,
+              "value": 2887.7
+            },
+            {
+              "year": 2021,
+              "value": 3581.4
+            },
+            {
+              "year": 2022,
+              "value": 3629.9
+            },
+            {
+              "year": 2023,
+              "value": 4355.7
+            },
+            {
+              "year": 2024,
+              "value": 5742
+            },
+            {
+              "year": 2025,
+              "value": 4865.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "41",
+      "name": "河南省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1424.9
+            },
+            {
+              "year": 2016,
+              "value": 1903.9
+            },
+            {
+              "year": 2017,
+              "value": 1978.4
+            },
+            {
+              "year": 2018,
+              "value": 1325.9
+            },
+            {
+              "year": 2019,
+              "value": 1817.1
+            },
+            {
+              "year": 2020,
+              "value": 2728.4
+            },
+            {
+              "year": 2021,
+              "value": 3413.4
+            },
+            {
+              "year": 2022,
+              "value": 3999.6
+            },
+            {
+              "year": 2023,
+              "value": 4079
+            },
+            {
+              "year": 2024,
+              "value": 4749.1
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1053.8
+            },
+            {
+              "year": 2016,
+              "value": 1295.2
+            },
+            {
+              "year": 2017,
+              "value": 1082.6
+            },
+            {
+              "year": 2018,
+              "value": 651.9
+            },
+            {
+              "year": 2019,
+              "value": 747.4
+            },
+            {
+              "year": 2020,
+              "value": 951.6
+            },
+            {
+              "year": 2021,
+              "value": 1135.8
+            },
+            {
+              "year": 2022,
+              "value": 1099.4
+            },
+            {
+              "year": 2023,
+              "value": 1157.9
+            },
+            {
+              "year": 2024,
+              "value": 744.3
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 371.1
+            },
+            {
+              "year": 2016,
+              "value": 608.7
+            },
+            {
+              "year": 2017,
+              "value": 895.8
+            },
+            {
+              "year": 2018,
+              "value": 674
+            },
+            {
+              "year": 2019,
+              "value": 1069.7
+            },
+            {
+              "year": 2020,
+              "value": 1776.8
+            },
+            {
+              "year": 2021,
+              "value": 2277.5
+            },
+            {
+              "year": 2022,
+              "value": 2900.3
+            },
+            {
+              "year": 2023,
+              "value": 2921.1
+            },
+            {
+              "year": 2024,
+              "value": 4004.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "42",
+      "name": "湖北省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1483
+            },
+            {
+              "year": 2016,
+              "value": 2644
+            },
+            {
+              "year": 2017,
+              "value": 1223
+            },
+            {
+              "year": 2018,
+              "value": 1351.1
+            },
+            {
+              "year": 2019,
+              "value": 1987.1
+            },
+            {
+              "year": 2020,
+              "value": 2899.8
+            },
+            {
+              "year": 2021,
+              "value": 3010
+            },
+            {
+              "year": 2022,
+              "value": 2945.4
+            },
+            {
+              "year": 2023,
+              "value": 3156
+            },
+            {
+              "year": 2024,
+              "value": 4132.4
+            },
+            {
+              "year": 2025,
+              "value": 4493.2
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1149.7
+            },
+            {
+              "year": 2016,
+              "value": 1520.7
+            },
+            {
+              "year": 2017,
+              "value": 452.9
+            },
+            {
+              "year": 2018,
+              "value": 615.1
+            },
+            {
+              "year": 2019,
+              "value": 1012.1
+            },
+            {
+              "year": 2020,
+              "value": 1145.1
+            },
+            {
+              "year": 2021,
+              "value": 887.3
+            },
+            {
+              "year": 2022,
+              "value": 781.1
+            },
+            {
+              "year": 2023,
+              "value": 888.4
+            },
+            {
+              "year": 2024,
+              "value": 747.2
+            },
+            {
+              "year": 2025,
+              "value": 942.5
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 333.3
+            },
+            {
+              "year": 2016,
+              "value": 1123.3
+            },
+            {
+              "year": 2017,
+              "value": 770.1
+            },
+            {
+              "year": 2018,
+              "value": 736
+            },
+            {
+              "year": 2019,
+              "value": 975
+            },
+            {
+              "year": 2020,
+              "value": 1754.7
+            },
+            {
+              "year": 2021,
+              "value": 2122.7
+            },
+            {
+              "year": 2022,
+              "value": 2164.3
+            },
+            {
+              "year": 2023,
+              "value": 2267.7
+            },
+            {
+              "year": 2024,
+              "value": 3385.3
+            },
+            {
+              "year": 2025,
+              "value": 3550.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "43",
+      "name": "湖南省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1395
+            },
+            {
+              "year": 2016,
+              "value": 3488
+            },
+            {
+              "year": 2017,
+              "value": 1965.4
+            },
+            {
+              "year": 2018,
+              "value": 1993
+            },
+            {
+              "year": 2019,
+              "value": 2560.2
+            },
+            {
+              "year": 2020,
+              "value": 2550.2
+            },
+            {
+              "year": 2021,
+              "value": 2996.5
+            },
+            {
+              "year": 2022,
+              "value": 2807.1
+            },
+            {
+              "year": 2023,
+              "value": 4680.2
+            },
+            {
+              "year": 2024,
+              "value": 4252.8
+            },
+            {
+              "year": 2025,
+              "value": 4547.5
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1395
+            },
+            {
+              "year": 2016,
+              "value": 1932
+            },
+            {
+              "year": 2017,
+              "value": 1192.4
+            },
+            {
+              "year": 2018,
+              "value": 1096.2
+            },
+            {
+              "year": 2019,
+              "value": 1209.2
+            },
+            {
+              "year": 2020,
+              "value": 1016.5
+            },
+            {
+              "year": 2021,
+              "value": 1166.5
+            },
+            {
+              "year": 2022,
+              "value": 1029.7
+            },
+            {
+              "year": 2023,
+              "value": 1879.2
+            },
+            {
+              "year": 2024,
+              "value": 1024.1
+            },
+            {
+              "year": 2025,
+              "value": 1514
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 0
+            },
+            {
+              "year": 2016,
+              "value": 1556
+            },
+            {
+              "year": 2017,
+              "value": 773
+            },
+            {
+              "year": 2018,
+              "value": 896.8
+            },
+            {
+              "year": 2019,
+              "value": 1351
+            },
+            {
+              "year": 2020,
+              "value": 1533.7
+            },
+            {
+              "year": 2021,
+              "value": 1830
+            },
+            {
+              "year": 2022,
+              "value": 1777.4
+            },
+            {
+              "year": 2023,
+              "value": 2801
+            },
+            {
+              "year": 2024,
+              "value": 3228.7
+            },
+            {
+              "year": 2025,
+              "value": 3033.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "44",
+      "name": "广东省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1588
+            },
+            {
+              "year": 2016,
+              "value": 3500
+            },
+            {
+              "year": 2017,
+              "value": 1846
+            },
+            {
+              "year": 2018,
+              "value": 2481.3
+            },
+            {
+              "year": 2019,
+              "value": 2056.1
+            },
+            {
+              "year": 2020,
+              "value": 3639.2
+            },
+            {
+              "year": 2021,
+              "value": 6173.8
+            },
+            {
+              "year": 2022,
+              "value": 5285.7
+            },
+            {
+              "year": 2023,
+              "value": 6188.7
+            },
+            {
+              "year": 2024,
+              "value": 5834.1
+            },
+            {
+              "year": 2025,
+              "value": 6477.7
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1326
+            },
+            {
+              "year": 2016,
+              "value": 1589
+            },
+            {
+              "year": 2017,
+              "value": 777
+            },
+            {
+              "year": 2018,
+              "value": 1238.8
+            },
+            {
+              "year": 2019,
+              "value": 544.1
+            },
+            {
+              "year": 2020,
+              "value": 876.6
+            },
+            {
+              "year": 2021,
+              "value": 1755.1
+            },
+            {
+              "year": 2022,
+              "value": 930.9
+            },
+            {
+              "year": 2023,
+              "value": 1178.1
+            },
+            {
+              "year": 2024,
+              "value": 776.2
+            },
+            {
+              "year": 2025,
+              "value": 1293.3
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 262
+            },
+            {
+              "year": 2016,
+              "value": 1911
+            },
+            {
+              "year": 2017,
+              "value": 1068
+            },
+            {
+              "year": 2018,
+              "value": 1242.5
+            },
+            {
+              "year": 2019,
+              "value": 1512
+            },
+            {
+              "year": 2020,
+              "value": 2762.6
+            },
+            {
+              "year": 2021,
+              "value": 4418.7
+            },
+            {
+              "year": 2022,
+              "value": 4354.7
+            },
+            {
+              "year": 2023,
+              "value": 5010.6
+            },
+            {
+              "year": 2024,
+              "value": 5057.9
+            },
+            {
+              "year": 2025,
+              "value": 5184.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "45",
+      "name": "广西壮族自治区",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 922
+            },
+            {
+              "year": 2016,
+              "value": 1439.6
+            },
+            {
+              "year": 2017,
+              "value": 1716.6
+            },
+            {
+              "year": 2018,
+              "value": 1403.1
+            },
+            {
+              "year": 2019,
+              "value": 1033.4
+            },
+            {
+              "year": 2020,
+              "value": 1840.1
+            },
+            {
+              "year": 2021,
+              "value": 1622.4
+            },
+            {
+              "year": 2022,
+              "value": 1963.4
+            },
+            {
+              "year": 2023,
+              "value": 3207.2
+            },
+            {
+              "year": 2024,
+              "value": 2266
+            },
+            {
+              "year": 2025,
+              "value": 2253.1
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 890
+            },
+            {
+              "year": 2016,
+              "value": 766.6
+            },
+            {
+              "year": 2017,
+              "value": 936.8
+            },
+            {
+              "year": 2018,
+              "value": 849.9
+            },
+            {
+              "year": 2019,
+              "value": 481.4
+            },
+            {
+              "year": 2020,
+              "value": 816.7
+            },
+            {
+              "year": 2021,
+              "value": 591.5
+            },
+            {
+              "year": 2022,
+              "value": 825.6
+            },
+            {
+              "year": 2023,
+              "value": 1419.9
+            },
+            {
+              "year": 2024,
+              "value": 566.3
+            },
+            {
+              "year": 2025,
+              "value": 800.8
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 32
+            },
+            {
+              "year": 2016,
+              "value": 673
+            },
+            {
+              "year": 2017,
+              "value": 779.8
+            },
+            {
+              "year": 2018,
+              "value": 553.2
+            },
+            {
+              "year": 2019,
+              "value": 552
+            },
+            {
+              "year": 2020,
+              "value": 1023.4
+            },
+            {
+              "year": 2021,
+              "value": 1031
+            },
+            {
+              "year": 2022,
+              "value": 1137.8
+            },
+            {
+              "year": 2023,
+              "value": 1787.4
+            },
+            {
+              "year": 2024,
+              "value": 1699.8
+            },
+            {
+              "year": 2025,
+              "value": 1452.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "46",
+      "name": "海南省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 223
+            },
+            {
+              "year": 2016,
+              "value": 551.3
+            },
+            {
+              "year": 2017,
+              "value": 536.2
+            },
+            {
+              "year": 2018,
+              "value": 535.9
+            },
+            {
+              "year": 2019,
+              "value": 433.4
+            },
+            {
+              "year": 2020,
+              "value": 566.4
+            },
+            {
+              "year": 2021,
+              "value": 695.6
+            },
+            {
+              "year": 2022,
+              "value": 771.3
+            },
+            {
+              "year": 2023,
+              "value": 928.9
+            },
+            {
+              "year": 2024,
+              "value": 1292.9
+            },
+            {
+              "year": 2025,
+              "value": 1236.4
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 164.8
+            },
+            {
+              "year": 2016,
+              "value": 337.6
+            },
+            {
+              "year": 2017,
+              "value": 336.7
+            },
+            {
+              "year": 2018,
+              "value": 323.9
+            },
+            {
+              "year": 2019,
+              "value": 207.5
+            },
+            {
+              "year": 2020,
+              "value": 268.7
+            },
+            {
+              "year": 2021,
+              "value": 321.4
+            },
+            {
+              "year": 2022,
+              "value": 271.1
+            },
+            {
+              "year": 2023,
+              "value": 247.7
+            },
+            {
+              "year": 2024,
+              "value": 332
+            },
+            {
+              "year": 2025,
+              "value": 404.1
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 58.3
+            },
+            {
+              "year": 2016,
+              "value": 213.6
+            },
+            {
+              "year": 2017,
+              "value": 199.5
+            },
+            {
+              "year": 2018,
+              "value": 211.9
+            },
+            {
+              "year": 2019,
+              "value": 225.9
+            },
+            {
+              "year": 2020,
+              "value": 297.7
+            },
+            {
+              "year": 2021,
+              "value": 374.2
+            },
+            {
+              "year": 2022,
+              "value": 500.2
+            },
+            {
+              "year": 2023,
+              "value": 681.2
+            },
+            {
+              "year": 2024,
+              "value": 960.9
+            },
+            {
+              "year": 2025,
+              "value": 832.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "50",
+      "name": "重庆市",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 824
+            },
+            {
+              "year": 2016,
+              "value": 1570.3
+            },
+            {
+              "year": 2017,
+              "value": 1310
+            },
+            {
+              "year": 2018,
+              "value": 1014.4
+            },
+            {
+              "year": 2019,
+              "value": 1253.3
+            },
+            {
+              "year": 2020,
+              "value": 1696
+            },
+            {
+              "year": 2021,
+              "value": 2517.6
+            },
+            {
+              "year": 2022,
+              "value": 2116.8
+            },
+            {
+              "year": 2023,
+              "value": 2999.6
+            },
+            {
+              "year": 2024,
+              "value": 3318.8
+            },
+            {
+              "year": 2025,
+              "value": 3385.7
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 656.3
+            },
+            {
+              "year": 2016,
+              "value": 760.1
+            },
+            {
+              "year": 2017,
+              "value": 594.6
+            },
+            {
+              "year": 2018,
+              "value": 344.8
+            },
+            {
+              "year": 2019,
+              "value": 331
+            },
+            {
+              "year": 2020,
+              "value": 434
+            },
+            {
+              "year": 2021,
+              "value": 774.3
+            },
+            {
+              "year": 2022,
+              "value": 504.1
+            },
+            {
+              "year": 2023,
+              "value": 825.7
+            },
+            {
+              "year": 2024,
+              "value": 498.8
+            },
+            {
+              "year": 2025,
+              "value": 929.9
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 167.7
+            },
+            {
+              "year": 2016,
+              "value": 810.3
+            },
+            {
+              "year": 2017,
+              "value": 715.4
+            },
+            {
+              "year": 2018,
+              "value": 669.6
+            },
+            {
+              "year": 2019,
+              "value": 922.3
+            },
+            {
+              "year": 2020,
+              "value": 1262
+            },
+            {
+              "year": 2021,
+              "value": 1743.4
+            },
+            {
+              "year": 2022,
+              "value": 1612.7
+            },
+            {
+              "year": 2023,
+              "value": 2173.9
+            },
+            {
+              "year": 2024,
+              "value": 2820
+            },
+            {
+              "year": 2025,
+              "value": 2455.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "51",
+      "name": "四川省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1790
+            },
+            {
+              "year": 2016,
+              "value": 2890.6
+            },
+            {
+              "year": 2017,
+              "value": 2808.9
+            },
+            {
+              "year": 2018,
+              "value": 2183.8
+            },
+            {
+              "year": 2019,
+              "value": 2213.2
+            },
+            {
+              "year": 2020,
+              "value": 3543.3
+            },
+            {
+              "year": 2021,
+              "value": 3695
+            },
+            {
+              "year": 2022,
+              "value": 3873
+            },
+            {
+              "year": 2023,
+              "value": 4468.5
+            },
+            {
+              "year": 2024,
+              "value": 5079.2
+            },
+            {
+              "year": 2025,
+              "value": 5277.3
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1230
+            },
+            {
+              "year": 2016,
+              "value": 1624
+            },
+            {
+              "year": 2017,
+              "value": 1602.5
+            },
+            {
+              "year": 2018,
+              "value": 1231.3
+            },
+            {
+              "year": 2019,
+              "value": 978.1
+            },
+            {
+              "year": 2020,
+              "value": 1287
+            },
+            {
+              "year": 2021,
+              "value": 1281.3
+            },
+            {
+              "year": 2022,
+              "value": 1184.1
+            },
+            {
+              "year": 2023,
+              "value": 1417.2
+            },
+            {
+              "year": 2024,
+              "value": 1061.7
+            },
+            {
+              "year": 2025,
+              "value": 1349.9
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 560
+            },
+            {
+              "year": 2016,
+              "value": 1266.6
+            },
+            {
+              "year": 2017,
+              "value": 1206.4
+            },
+            {
+              "year": 2018,
+              "value": 952.5
+            },
+            {
+              "year": 2019,
+              "value": 1235.1
+            },
+            {
+              "year": 2020,
+              "value": 2256.3
+            },
+            {
+              "year": 2021,
+              "value": 2413.7
+            },
+            {
+              "year": 2022,
+              "value": 2688.9
+            },
+            {
+              "year": 2023,
+              "value": 3051.3
+            },
+            {
+              "year": 2024,
+              "value": 4017.5
+            },
+            {
+              "year": 2025,
+              "value": 3927.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "52",
+      "name": "贵州省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 2350
+            },
+            {
+              "year": 2016,
+              "value": 2589.7
+            },
+            {
+              "year": 2017,
+              "value": 2099
+            },
+            {
+              "year": 2018,
+              "value": 2145.2
+            },
+            {
+              "year": 2019,
+              "value": 1346.3
+            },
+            {
+              "year": 2020,
+              "value": 2522.6
+            },
+            {
+              "year": 2021,
+              "value": 2275.8
+            },
+            {
+              "year": 2022,
+              "value": 2082.2
+            },
+            {
+              "year": 2023,
+              "value": 4128.3
+            },
+            {
+              "year": 2024,
+              "value": 3570.6
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1456.1
+            },
+            {
+              "year": 2016,
+              "value": 1599.2
+            },
+            {
+              "year": 2017,
+              "value": 1150.8
+            },
+            {
+              "year": 2018,
+              "value": 1318.2
+            },
+            {
+              "year": 2019,
+              "value": 967.7
+            },
+            {
+              "year": 2020,
+              "value": 987.3
+            },
+            {
+              "year": 2021,
+              "value": 1045
+            },
+            {
+              "year": 2022,
+              "value": 1059.4
+            },
+            {
+              "year": 2023,
+              "value": 2584.8
+            },
+            {
+              "year": 2024,
+              "value": 1261.6
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 893.9
+            },
+            {
+              "year": 2016,
+              "value": 990.5
+            },
+            {
+              "year": 2017,
+              "value": 948.1
+            },
+            {
+              "year": 2018,
+              "value": 827
+            },
+            {
+              "year": 2019,
+              "value": 378.6
+            },
+            {
+              "year": 2020,
+              "value": 1535.3
+            },
+            {
+              "year": 2021,
+              "value": 1230.7
+            },
+            {
+              "year": 2022,
+              "value": 1022.8
+            },
+            {
+              "year": 2023,
+              "value": 1543.5
+            },
+            {
+              "year": 2024,
+              "value": 2309
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "53",
+      "name": "云南省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1567.4
+            },
+            {
+              "year": 2016,
+              "value": 2065.7
+            },
+            {
+              "year": 2017,
+              "value": 1929.9
+            },
+            {
+              "year": 2018,
+              "value": 1567.2
+            },
+            {
+              "year": 2019,
+              "value": 1488.5
+            },
+            {
+              "year": 2020,
+              "value": 2293.3
+            },
+            {
+              "year": 2021,
+              "value": 2282.3
+            },
+            {
+              "year": 2022,
+              "value": 2456.1
+            },
+            {
+              "year": 2023,
+              "value": 3702.4
+            },
+            {
+              "year": 2024,
+              "value": 3037
+            },
+            {
+              "year": 2025,
+              "value": 3340.4
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1001.4
+            },
+            {
+              "year": 2016,
+              "value": 1435.3
+            },
+            {
+              "year": 2017,
+              "value": 1505.1
+            },
+            {
+              "year": 2018,
+              "value": 923.8
+            },
+            {
+              "year": 2019,
+              "value": 734.2
+            },
+            {
+              "year": 2020,
+              "value": 638.4
+            },
+            {
+              "year": 2021,
+              "value": 751.5
+            },
+            {
+              "year": 2022,
+              "value": 1035.4
+            },
+            {
+              "year": 2023,
+              "value": 2063.9
+            },
+            {
+              "year": 2024,
+              "value": 897.4
+            },
+            {
+              "year": 2025,
+              "value": 1083.1
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 566
+            },
+            {
+              "year": 2016,
+              "value": 630.4
+            },
+            {
+              "year": 2017,
+              "value": 424.8
+            },
+            {
+              "year": 2018,
+              "value": 643.4
+            },
+            {
+              "year": 2019,
+              "value": 754.3
+            },
+            {
+              "year": 2020,
+              "value": 1654.9
+            },
+            {
+              "year": 2021,
+              "value": 1530.8
+            },
+            {
+              "year": 2022,
+              "value": 1420.8
+            },
+            {
+              "year": 2023,
+              "value": 1638.5
+            },
+            {
+              "year": 2024,
+              "value": 2139.6
+            },
+            {
+              "year": 2025,
+              "value": 2257.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "54",
+      "name": "西藏自治区",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 0
+            },
+            {
+              "year": 2016,
+              "value": 16
+            },
+            {
+              "year": 2017,
+              "value": 56
+            },
+            {
+              "year": 2018,
+              "value": 55
+            },
+            {
+              "year": 2019,
+              "value": 128
+            },
+            {
+              "year": 2020,
+              "value": 140
+            },
+            {
+              "year": 2021,
+              "value": 162.3
+            },
+            {
+              "year": 2022,
+              "value": 125.7
+            },
+            {
+              "year": 2023,
+              "value": 135.7
+            },
+            {
+              "year": 2024,
+              "value": 584.9
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 0
+            },
+            {
+              "year": 2016,
+              "value": 13
+            },
+            {
+              "year": 2017,
+              "value": 38
+            },
+            {
+              "year": 2018,
+              "value": 42.3
+            },
+            {
+              "year": 2019,
+              "value": 121
+            },
+            {
+              "year": 2020,
+              "value": 81
+            },
+            {
+              "year": 2021,
+              "value": 104.2
+            },
+            {
+              "year": 2022,
+              "value": 95
+            },
+            {
+              "year": 2023,
+              "value": 60
+            },
+            {
+              "year": 2024,
+              "value": 85
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 0
+            },
+            {
+              "year": 2016,
+              "value": 3
+            },
+            {
+              "year": 2017,
+              "value": 18
+            },
+            {
+              "year": 2018,
+              "value": 12.7
+            },
+            {
+              "year": 2019,
+              "value": 7
+            },
+            {
+              "year": 2020,
+              "value": 59
+            },
+            {
+              "year": 2021,
+              "value": 58.1
+            },
+            {
+              "year": 2022,
+              "value": 30.7
+            },
+            {
+              "year": 2023,
+              "value": 75.7
+            },
+            {
+              "year": 2024,
+              "value": 499.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "61",
+      "name": "陕西省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 1260
+            },
+            {
+              "year": 2016,
+              "value": 2031
+            },
+            {
+              "year": 2017,
+              "value": 1300.4
+            },
+            {
+              "year": 2018,
+              "value": 1303.5
+            },
+            {
+              "year": 2019,
+              "value": 1403.5
+            },
+            {
+              "year": 2020,
+              "value": 1532.8
+            },
+            {
+              "year": 2021,
+              "value": 2196.6
+            },
+            {
+              "year": 2022,
+              "value": 1934.1
+            },
+            {
+              "year": 2023,
+              "value": 2136.7
+            },
+            {
+              "year": 2024,
+              "value": 2336.4
+            },
+            {
+              "year": 2025,
+              "value": 2580.2
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 700
+            },
+            {
+              "year": 2016,
+              "value": 1183.3
+            },
+            {
+              "year": 2017,
+              "value": 783.4
+            },
+            {
+              "year": 2018,
+              "value": 681.3
+            },
+            {
+              "year": 2019,
+              "value": 718.4
+            },
+            {
+              "year": 2020,
+              "value": 715.3
+            },
+            {
+              "year": 2021,
+              "value": 940.6
+            },
+            {
+              "year": 2022,
+              "value": 641.5
+            },
+            {
+              "year": 2023,
+              "value": 792.7
+            },
+            {
+              "year": 2024,
+              "value": 630.7
+            },
+            {
+              "year": 2025,
+              "value": 772.7
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 560
+            },
+            {
+              "year": 2016,
+              "value": 847.7
+            },
+            {
+              "year": 2017,
+              "value": 517
+            },
+            {
+              "year": 2018,
+              "value": 622.3
+            },
+            {
+              "year": 2019,
+              "value": 685.1
+            },
+            {
+              "year": 2020,
+              "value": 817.4
+            },
+            {
+              "year": 2021,
+              "value": 1256
+            },
+            {
+              "year": 2022,
+              "value": 1292.6
+            },
+            {
+              "year": 2023,
+              "value": 1344
+            },
+            {
+              "year": 2024,
+              "value": 1705.7
+            },
+            {
+              "year": 2025,
+              "value": 1807.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "62",
+      "name": "甘肃省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 482.7
+            },
+            {
+              "year": 2016,
+              "value": 666.6
+            },
+            {
+              "year": 2017,
+              "value": 587.7
+            },
+            {
+              "year": 2018,
+              "value": 604.2
+            },
+            {
+              "year": 2019,
+              "value": 776.2
+            },
+            {
+              "year": 2020,
+              "value": 1123.4
+            },
+            {
+              "year": 2021,
+              "value": 1255.8
+            },
+            {
+              "year": 2022,
+              "value": 1497.2
+            },
+            {
+              "year": 2023,
+              "value": 1619.8
+            },
+            {
+              "year": 2024,
+              "value": 1479.6
+            },
+            {
+              "year": 2025,
+              "value": 1646.7
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 363.7
+            },
+            {
+              "year": 2016,
+              "value": 409.2
+            },
+            {
+              "year": 2017,
+              "value": 367.7
+            },
+            {
+              "year": 2018,
+              "value": 372.7
+            },
+            {
+              "year": 2019,
+              "value": 374.6
+            },
+            {
+              "year": 2020,
+              "value": 431
+            },
+            {
+              "year": 2021,
+              "value": 344.6
+            },
+            {
+              "year": 2022,
+              "value": 345.1
+            },
+            {
+              "year": 2023,
+              "value": 644.6
+            },
+            {
+              "year": 2024,
+              "value": 344
+            },
+            {
+              "year": 2025,
+              "value": 418.6
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 119
+            },
+            {
+              "year": 2016,
+              "value": 257.4
+            },
+            {
+              "year": 2017,
+              "value": 220
+            },
+            {
+              "year": 2018,
+              "value": 231.5
+            },
+            {
+              "year": 2019,
+              "value": 401.7
+            },
+            {
+              "year": 2020,
+              "value": 692.4
+            },
+            {
+              "year": 2021,
+              "value": 911.2
+            },
+            {
+              "year": 2022,
+              "value": 1152.1
+            },
+            {
+              "year": 2023,
+              "value": 975.2
+            },
+            {
+              "year": 2024,
+              "value": 1135.5
+            },
+            {
+              "year": 2025,
+              "value": 1228.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "63",
+      "name": "青海省",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 328
+            },
+            {
+              "year": 2016,
+              "value": 469
+            },
+            {
+              "year": 2017,
+              "value": 462.9
+            },
+            {
+              "year": 2018,
+              "value": 473.8
+            },
+            {
+              "year": 2019,
+              "value": 467
+            },
+            {
+              "year": 2020,
+              "value": 511.6
+            },
+            {
+              "year": 2021,
+              "value": 503.9
+            },
+            {
+              "year": 2022,
+              "value": 495
+            },
+            {
+              "year": 2023,
+              "value": 569.8
+            },
+            {
+              "year": 2024,
+              "value": 474.6
+            },
+            {
+              "year": 2025,
+              "value": 522.3
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 295
+            },
+            {
+              "year": 2016,
+              "value": 371.2
+            },
+            {
+              "year": 2017,
+              "value": 334.3
+            },
+            {
+              "year": 2018,
+              "value": 424.8
+            },
+            {
+              "year": 2019,
+              "value": 326
+            },
+            {
+              "year": 2020,
+              "value": 369.4
+            },
+            {
+              "year": 2021,
+              "value": 380.8
+            },
+            {
+              "year": 2022,
+              "value": 345.3
+            },
+            {
+              "year": 2023,
+              "value": 459.7
+            },
+            {
+              "year": 2024,
+              "value": 344.2
+            },
+            {
+              "year": 2025,
+              "value": 388.5
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 33
+            },
+            {
+              "year": 2016,
+              "value": 97.8
+            },
+            {
+              "year": 2017,
+              "value": 128.6
+            },
+            {
+              "year": 2018,
+              "value": 49
+            },
+            {
+              "year": 2019,
+              "value": 141
+            },
+            {
+              "year": 2020,
+              "value": 142.2
+            },
+            {
+              "year": 2021,
+              "value": 123
+            },
+            {
+              "year": 2022,
+              "value": 149.7
+            },
+            {
+              "year": 2023,
+              "value": 110.1
+            },
+            {
+              "year": 2024,
+              "value": 130.4
+            },
+            {
+              "year": 2025,
+              "value": 133.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "64",
+      "name": "宁夏回族自治区",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 289
+            },
+            {
+              "year": 2016,
+              "value": 366.7
+            },
+            {
+              "year": 2017,
+              "value": 318.2
+            },
+            {
+              "year": 2018,
+              "value": 405.8
+            },
+            {
+              "year": 2019,
+              "value": 374.9
+            },
+            {
+              "year": 2020,
+              "value": 315.6
+            },
+            {
+              "year": 2021,
+              "value": 259.4
+            },
+            {
+              "year": 2022,
+              "value": 257.8
+            },
+            {
+              "year": 2023,
+              "value": 462.9
+            },
+            {
+              "year": 2024,
+              "value": 461.1
+            },
+            {
+              "year": 2025,
+              "value": 708.4
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 218.9
+            },
+            {
+              "year": 2016,
+              "value": 264.5
+            },
+            {
+              "year": 2017,
+              "value": 260.8
+            },
+            {
+              "year": 2018,
+              "value": 296.2
+            },
+            {
+              "year": 2019,
+              "value": 201.8
+            },
+            {
+              "year": 2020,
+              "value": 248
+            },
+            {
+              "year": 2021,
+              "value": 229.7
+            },
+            {
+              "year": 2022,
+              "value": 204.8
+            },
+            {
+              "year": 2023,
+              "value": 353.3
+            },
+            {
+              "year": 2024,
+              "value": 228.4
+            },
+            {
+              "year": 2025,
+              "value": 259.2
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 70.1
+            },
+            {
+              "year": 2016,
+              "value": 102.2
+            },
+            {
+              "year": 2017,
+              "value": 57.4
+            },
+            {
+              "year": 2018,
+              "value": 109.6
+            },
+            {
+              "year": 2019,
+              "value": 173.1
+            },
+            {
+              "year": 2020,
+              "value": 67.6
+            },
+            {
+              "year": 2021,
+              "value": 29.7
+            },
+            {
+              "year": 2022,
+              "value": 53
+            },
+            {
+              "year": 2023,
+              "value": 109.7
+            },
+            {
+              "year": 2024,
+              "value": 232.7
+            },
+            {
+              "year": 2025,
+              "value": 449.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adCode": "65",
+      "name": "新疆维吾尔自治区",
+      "series": [
+        {
+          "key": "total",
+          "metricId": "0301",
+          "label": "债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 693
+            },
+            {
+              "year": 2016,
+              "value": 1055.2
+            },
+            {
+              "year": 2017,
+              "value": 1079.4
+            },
+            {
+              "year": 2018,
+              "value": 1012.8
+            },
+            {
+              "year": 2019,
+              "value": 1019.6
+            },
+            {
+              "year": 2020,
+              "value": 1461.3
+            },
+            {
+              "year": 2021,
+              "value": 1456.4
+            },
+            {
+              "year": 2022,
+              "value": 1714.6
+            },
+            {
+              "year": 2023,
+              "value": 1727.6
+            },
+            {
+              "year": 2024,
+              "value": 2341.2
+            },
+            {
+              "year": 2025,
+              "value": 2114.9
+            }
+          ]
+        },
+        {
+          "key": "general",
+          "metricId": "030101",
+          "label": "一般债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 580
+            },
+            {
+              "year": 2016,
+              "value": 815
+            },
+            {
+              "year": 2017,
+              "value": 903.8
+            },
+            {
+              "year": 2018,
+              "value": 651.5
+            },
+            {
+              "year": 2019,
+              "value": 512.6
+            },
+            {
+              "year": 2020,
+              "value": 650.4
+            },
+            {
+              "year": 2021,
+              "value": 589.7
+            },
+            {
+              "year": 2022,
+              "value": 541
+            },
+            {
+              "year": 2023,
+              "value": 556.6
+            },
+            {
+              "year": 2024,
+              "value": 460.4
+            },
+            {
+              "year": 2025,
+              "value": 389
+            }
+          ]
+        },
+        {
+          "key": "special",
+          "metricId": "030102",
+          "label": "专项债券发行额",
+          "unit": "亿元",
+          "values": [
+            {
+              "year": 2015,
+              "value": 113
+            },
+            {
+              "year": 2016,
+              "value": 240.2
+            },
+            {
+              "year": 2017,
+              "value": 175.6
+            },
+            {
+              "year": 2018,
+              "value": 361.3
+            },
+            {
+              "year": 2019,
+              "value": 507
+            },
+            {
+              "year": 2020,
+              "value": 810.9
+            },
+            {
+              "year": 2021,
+              "value": 866.7
+            },
+            {
+              "year": 2022,
+              "value": 1173.6
+            },
+            {
+              "year": 2023,
+              "value": 1171
+            },
+            {
+              "year": 2024,
+              "value": 1880.8
+            },
+            {
+              "year": 2025,
+              "value": 1726
+            }
+          ]
         }
       ]
     }

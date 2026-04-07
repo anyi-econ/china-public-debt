@@ -40,6 +40,12 @@ export interface AnnualMetricSeries {
   values: AnnualMetricPoint[];
 }
 
+export interface AnnualMetricRegion {
+  adCode: string;
+  name: string;
+  series: AnnualMetricSeries[];
+}
+
 export interface AnnualIssuanceDataset {
   updatedAt: string;
   source: {
@@ -49,6 +55,7 @@ export interface AnnualIssuanceDataset {
     note: string;
   };
   series: AnnualMetricSeries[];
+  regions?: AnnualMetricRegion[];
   links: Array<{
     title: string;
     url: string;
