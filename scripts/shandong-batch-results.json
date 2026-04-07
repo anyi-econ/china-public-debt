@@ -1,0 +1,314 @@
+[
+  {
+    "city": "DZ",
+    "county": "NJ",
+    "url": "http://www.sdningjin.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "DZ",
+    "county": "QY",
+    "url": "http://www.qingyun.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "DZ",
+    "county": "LYX",
+    "url": "http://www.linyixian.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "DZ",
+    "county": "QH",
+    "url": "http://www.qihe.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "DZ",
+    "county": "PY",
+    "url": "http://www.zgpingyuan.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "DZ",
+    "county": "XJ",
+    "url": "http://www.xiajin.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [
+      {
+        "href": "http://xiajin.czyjsgk.com:5000/"
+      }
+    ],
+    "pathHits": []
+  },
+  {
+    "city": "DZ",
+    "county": "WC",
+    "url": "http://www.wucheng.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "DZ",
+    "county": "YC",
+    "url": "http://www.yucheng.gov.cn",
+    "homeStatus": 0,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "DZ",
+    "county": "LL",
+    "url": "http://www.laoling.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "LC",
+    "county": "DCF",
+    "url": "http://www.dongchangfu.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "LC",
+    "county": "CP",
+    "url": "http://www.chiping.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "LC",
+    "county": "YGu",
+    "url": "http://www.yanggu.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "LC",
+    "county": "SX",
+    "url": "http://www.shenxian.gov.cn",
+    "homeStatus": 0,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "LC",
+    "county": "DA",
+    "url": "http://www.donge.gov.cn",
+    "homeStatus": 0,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "LC",
+    "county": "GX",
+    "url": "http://www.guanxian.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "LC",
+    "county": "GT",
+    "url": "http://www.gaotang.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "BZ",
+    "county": "BC",
+    "url": "http://www.bincheng.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [
+      {
+        "href": "http://bincheng.gov.cn/zfxxgk/web/#/page/czyjs"
+      }
+    ],
+    "pathHits": []
+  },
+  {
+    "city": "BZ",
+    "county": "ZH",
+    "url": "http://www.zhanhua.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "BZ",
+    "county": "HM",
+    "url": "http://www.huimin.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "BZ",
+    "county": "YXin",
+    "url": "http://www.yangxin.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "BZ",
+    "county": "WD",
+    "url": "http://www.wudi.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "BZ",
+    "county": "BX",
+    "url": "http://www.boxing.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "BZ",
+    "county": "ZP",
+    "url": "http://www.zouping.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "HZ",
+    "county": "MD",
+    "url": "http://www.mudan.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [
+      {
+        "href": "mdczxx/"
+      }
+    ],
+    "pathHits": []
+  },
+  {
+    "city": "HZ",
+    "county": "DT",
+    "url": "http://www.dingtao.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [
+      {
+        "href": "dtczxx/"
+      }
+    ],
+    "pathHits": []
+  },
+  {
+    "city": "HZ",
+    "county": "CaoX",
+    "url": "http://www.caoxian.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "HZ",
+    "county": "ShanX",
+    "url": "http://www.shanxian.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "HZ",
+    "county": "CW",
+    "url": "http://www.chengwu.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "HZ",
+    "county": "JY",
+    "url": "http://www.juye.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  },
+  {
+    "city": "HZ",
+    "county": "YunC",
+    "url": "http://www.yuncheng.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [
+      {
+        "href": "https://www.yuncheng.gov.cn/zwgk_1/zdly/czzj/mhlist.shtml"
+      }
+    ],
+    "pathHits": []
+  },
+  {
+    "city": "HZ",
+    "county": "JuanC",
+    "url": "http://www.juancheng.gov.cn",
+    "homeStatus": 200,
+    "homeRedirect": "",
+    "links": [
+      {
+        "href": "jcczxx/"
+      }
+    ],
+    "pathHits": []
+  },
+  {
+    "city": "HZ",
+    "county": "DM",
+    "url": "http://www.dongming.gov.cn",
+    "homeStatus": 0,
+    "homeRedirect": "",
+    "links": [],
+    "pathHits": []
+  }
+]

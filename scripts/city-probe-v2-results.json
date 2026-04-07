@@ -1,0 +1,276 @@
+{
+  "found": [
+    {
+      "name": "毕节市",
+      "prov": "贵州省",
+      "url": "https://www.bijie.gov.cn/zwgk/zfxxgk/fdzdgknr/czzj/",
+      "kwCount": 3
+    },
+    {
+      "name": "石嘴山市",
+      "prov": "宁夏回族自治区",
+      "url": "https://www.shizuishan.gov.cn/zwgk/zdlyxxgk/czzj/",
+      "kwCount": 3
+    }
+  ],
+  "partial": [],
+  "notFound": [
+    {
+      "name": "秦皇岛市",
+      "prov": "河北省",
+      "domains": [
+        "www.qhd.gov.cn"
+      ]
+    },
+    {
+      "name": "白山市",
+      "prov": "吉林省",
+      "domains": [
+        "www.cbs.gov.cn",
+        "www.jlbs.gov.cn"
+      ]
+    },
+    {
+      "name": "白城市",
+      "prov": "吉林省",
+      "domains": [
+        "www.jlbc.gov.cn"
+      ]
+    },
+    {
+      "name": "鸡西市",
+      "prov": "黑龙江省",
+      "domains": [
+        "www.jixi.gov.cn"
+      ]
+    },
+    {
+      "name": "鹤岗市",
+      "prov": "黑龙江省",
+      "domains": [
+        "www.hegang.gov.cn"
+      ]
+    },
+    {
+      "name": "双鸭山市",
+      "prov": "黑龙江省",
+      "domains": [
+        "www.shuangyashan.gov.cn"
+      ]
+    },
+    {
+      "name": "绥化市",
+      "prov": "黑龙江省",
+      "domains": [
+        "www.suihua.gov.cn"
+      ]
+    },
+    {
+      "name": "安庆市",
+      "prov": "安徽省",
+      "domains": [
+        "www.anqing.gov.cn"
+      ]
+    },
+    {
+      "name": "宿州市",
+      "prov": "安徽省",
+      "domains": [
+        "www.ahsz.gov.cn"
+      ]
+    },
+    {
+      "name": "九江市",
+      "prov": "江西省",
+      "domains": [
+        "www.jiujiang.gov.cn"
+      ]
+    },
+    {
+      "name": "宜春市",
+      "prov": "江西省",
+      "domains": [
+        "www.yichun.gov.cn"
+      ]
+    },
+    {
+      "name": "抚州市",
+      "prov": "江西省",
+      "domains": [
+        "www.jxfz.gov.cn"
+      ]
+    },
+    {
+      "name": "上饶市",
+      "prov": "江西省",
+      "domains": [
+        "www.zgsr.gov.cn"
+      ]
+    },
+    {
+      "name": "枣庄市",
+      "prov": "山东省",
+      "domains": [
+        "www.zaozhuang.gov.cn"
+      ]
+    },
+    {
+      "name": "东营市",
+      "prov": "山东省",
+      "domains": [
+        "www.dongying.gov.cn"
+      ]
+    },
+    {
+      "name": "菏泽市",
+      "prov": "山东省",
+      "domains": [
+        "www.heze.gov.cn"
+      ]
+    },
+    {
+      "name": "海口市",
+      "prov": "海南省",
+      "domains": [
+        "www.haikou.gov.cn"
+      ]
+    },
+    {
+      "name": "三亚市",
+      "prov": "海南省",
+      "domains": [
+        "www.sanya.gov.cn"
+      ]
+    },
+    {
+      "name": "黔南布依族苗族自治州",
+      "prov": "贵州省",
+      "domains": [
+        "www.qiannan.gov.cn"
+      ]
+    },
+    {
+      "name": "丽江市",
+      "prov": "云南省",
+      "domains": [
+        "www.lijiang.gov.cn"
+      ]
+    },
+    {
+      "name": "普洱市",
+      "prov": "云南省",
+      "domains": [
+        "www.puershi.gov.cn"
+      ]
+    },
+    {
+      "name": "红河哈尼族彝族自治州",
+      "prov": "云南省",
+      "domains": [
+        "www.hh.gov.cn"
+      ]
+    },
+    {
+      "name": "西双版纳傣族自治州",
+      "prov": "云南省",
+      "domains": [
+        "www.xsbn.gov.cn"
+      ]
+    },
+    {
+      "name": "大理白族自治州",
+      "prov": "云南省",
+      "domains": [
+        "www.dali.gov.cn"
+      ]
+    },
+    {
+      "name": "金昌市",
+      "prov": "甘肃省",
+      "domains": [
+        "www.jinchang.gov.cn"
+      ]
+    },
+    {
+      "name": "武威市",
+      "prov": "甘肃省",
+      "domains": [
+        "www.wuwei.gov.cn"
+      ]
+    },
+    {
+      "name": "陇南市",
+      "prov": "甘肃省",
+      "domains": [
+        "www.longnan.gov.cn"
+      ]
+    },
+    {
+      "name": "临夏回族自治州",
+      "prov": "甘肃省",
+      "domains": [
+        "www.linxia.gov.cn"
+      ]
+    },
+    {
+      "name": "甘南藏族自治州",
+      "prov": "甘肃省",
+      "domains": [
+        "www.gnzrmzf.gov.cn",
+        "www.gannan.gov.cn"
+      ]
+    },
+    {
+      "name": "海北藏族自治州",
+      "prov": "青海省",
+      "domains": [
+        "www.haibei.gov.cn"
+      ]
+    },
+    {
+      "name": "黄南藏族自治州",
+      "prov": "青海省",
+      "domains": [
+        "www.huangnan.gov.cn"
+      ]
+    },
+    {
+      "name": "海南藏族自治州",
+      "prov": "青海省",
+      "domains": [
+        "www.hainanzhou.gov.cn"
+      ]
+    },
+    {
+      "name": "果洛藏族自治州",
+      "prov": "青海省",
+      "domains": [
+        "www.guoluo.gov.cn",
+        "www.golog.gov.cn"
+      ]
+    },
+    {
+      "name": "吴忠市",
+      "prov": "宁夏回族自治区",
+      "domains": [
+        "www.wuzhong.gov.cn"
+      ]
+    },
+    {
+      "name": "固原市",
+      "prov": "宁夏回族自治区",
+      "domains": [
+        "www.guyuan.gov.cn",
+        "www.nxgy.gov.cn"
+      ]
+    },
+    {
+      "name": "中卫市",
+      "prov": "宁夏回族自治区",
+      "domains": [
+        "www.nxzw.gov.cn",
+        "www.zhongwei.gov.cn"
+      ]
+    }
+  ]
+}

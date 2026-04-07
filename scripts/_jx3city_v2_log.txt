@@ -1,0 +1,78 @@
+[鏄屾睙鍖篯 homepage: 200 (1166b)
+  No fiscal keywords found
+
+[娴鍘縘 homepage: 200 (1166b)
+  No fiscal keywords found
+
+[涔愬钩甯俔 homepage: FAIL getaddrinfo ENOTFOUND www.leping.gov.cn
+
+[婀樹笢鍖篯 homepage: 200 (1168b)
+  No fiscal keywords found
+
+[鑺︽邯鍘縘 homepage: 200 (1166b)
+  No fiscal keywords found
+
+[鑾茶姳鍘縘 homepage: 200 (1166b)
+  No fiscal keywords found
+
+[涓婃牀鍘縘 homepage: 200 (1166b)
+  No fiscal keywords found
+
+[娴旈槼鍖篯 homepage: 200 (61351b)
+  No fiscal keywords found
+
+[鏌存鍖篯 homepage: 200 (139267b)
+  No fiscal keywords found
+
+[姝﹀畞鍘縘 homepage: 200 (146065b)
+  No fiscal keywords found
+
+[淇按鍘縘 homepage: 200 (94649b)
+  TOP results:
+    鉁?http://www.xiushui.gov.cn/xxgk/ score=12 title="淇按鍘夸汉姘戞斂搴淿閮ㄩ棬涔￠晣淇℃伅鍏紑" (106280b)
+
+[姘镐慨鍘縘 homepage: 200 (120859b)
+  No fiscal keywords found
+
+[寰峰畨鍘縘 homepage: 200 (49638b)
+  TOP results:
+    鉁?http://www.dean.gov.cn/zwgk/czbg/czjs/ score=7 title="涓浗路寰峰畨娆㈣繋鎮紒" (21918b)
+    鉁?http://www.dean.gov.cn/zwgk/czbg/ score=2 title="涓浗路寰峰畨娆㈣繋鎮紒" (21805b)
+
+[閮芥槍鍘縘 homepage: 200 (98660b)
+  No fiscal keywords found
+
+[婀栧彛鍘縘 homepage: 200 (124507b)
+  No fiscal keywords found
+
+[褰辰鍘縘 homepage: 200 (61931b)
+  No fiscal keywords found
+
+[鐟炴槍甯俔 homepage: 200 (62952b)
+  No fiscal keywords found
+
+[鍏遍潚鍩庡競] homepage: 200 (137709b)
+  No fiscal keywords found
+
+
+=== SUMMARY ===
+鏅痉闀囧競 > 鏄屾睙鍖? OK NOT_FOUND
+鏅痉闀囧競 > 娴鍘? OK NOT_FOUND
+鏅痉闀囧競 > 涔愬钩甯? FAIL NOT_FOUND
+钀嶄埂甯?> 婀樹笢鍖? OK NOT_FOUND
+钀嶄埂甯?> 鑺︽邯鍘? OK NOT_FOUND
+钀嶄埂甯?> 鑾茶姳鍘? OK NOT_FOUND
+钀嶄埂甯?> 涓婃牀鍘? OK NOT_FOUND
+涔濇睙甯?> 娴旈槼鍖? OK NOT_FOUND
+涔濇睙甯?> 鏌存鍖? OK NOT_FOUND
+涔濇睙甯?> 姝﹀畞鍘? OK NOT_FOUND
+涔濇睙甯?> 淇按鍘? OK FOUND score=12 http://www.xiushui.gov.cn/xxgk/
+涔濇睙甯?> 姘镐慨鍘? OK NOT_FOUND
+涔濇睙甯?> 寰峰畨鍘? OK FOUND score=7 http://www.dean.gov.cn/zwgk/czbg/czjs/
+涔濇睙甯?> 閮芥槍鍘? OK NOT_FOUND
+涔濇睙甯?> 婀栧彛鍘? OK NOT_FOUND
+涔濇睙甯?> 褰辰鍘? OK NOT_FOUND
+涔濇睙甯?> 鐟炴槍甯? OK NOT_FOUND
+涔濇睙甯?> 鍏遍潚鍩庡競: OK NOT_FOUND
+
+Saved to scripts/_jx3city_v2_results.json

@@ -2,8 +2,9 @@ import { DebtDataItem } from "@/lib/types";
 import { AnnualIssuanceDataset } from "@/lib/types";
 import { SimpleBarChart } from "@/components/charts/simple-bar-chart";
 import { SimpleLineChart } from "@/components/charts/simple-line-chart";
+import { MultiLineChart } from "@/components/charts/multi-line-chart";
 
-export function DebtOverview({ items, annualIssuance }: { items: DebtDataItem[]; annualIssuance: AnnualIssuanceDataset }) {
+export function DebtOverview({ items, annualIssuance, annualBalance }: { items: DebtDataItem[]; annualIssuance: AnnualIssuanceDataset; annualBalance: AnnualIssuanceDataset }) {
   const issuance = items.filter((item) => item.metricType === "issuance");
   const balances = items.filter((item) => item.metricType === "balance");
   const latestBalance = balances[0];
@@ -18,6 +19,11 @@ export function DebtOverview({ items, annualIssuance }: { items: DebtDataItem[];
   const latestGeneral = generalSeries?.values.at(-1);
   const annualGrowth = latestAnnual && previousAnnual ? ((latestAnnual.value - previousAnnual.value) / previousAnnual.value) * 100 : 0;
   const specialShare = latestAnnual && latestSpecial ? (latestSpecial.value / latestAnnual.value) * 100 : 0;
+
+  const balanceSeriesList = annualBalance.series.map((s, i) => ({
+    series: s,
+    color: ["#8B0000", "#1B4965", "#8B6914"][i % 3],
+  }));
 
   const byMonth = Array.from(
     issuance.reduce((map, item) => {
@@ -58,26 +64,6 @@ export function DebtOverview({ items, annualIssuance }: { items: DebtDataItem[];
 
   return (
     <div className="space-y-8">
-      <div className="topic-overview">
-        <h3 className="section-title">
-          研究概览
-          <span className="section-sub">CELMA 年度数据 + 财政部月度统计</span>
-        </h3>
-        <div className="editorial-prose">
-          <p>
-            数据页当前以中国地方政府债券信息公开平台年度数据页为核心口径，优先展示全国地方政府债券年度发行规模，并用财政部债务管理司月度统计补足短期观察。
-          </p>
-          <p>
-            最新年度节点为 {latestAnnual?.year ?? "--"} 年，全国地方政府债券发行额为 {latestAnnual?.value.toLocaleString("zh-CN") ?? "--"} 亿元，
-            较 {previousAnnual?.year ?? "--"} 年{annualGrowth >= 0 ? "增加" : "减少"} {Math.abs(annualGrowth).toFixed(1)}%。
-          </p>
-          <p>
-            其中 {latestAnnual?.year ?? "--"} 年专项债券发行额为 {latestSpecial?.value.toLocaleString("zh-CN") ?? "--"} 亿元，占比约 {specialShare.toFixed(1)}%；月度样本期发行合计为{" "}
-            {monthlyTotal.toLocaleString("zh-CN")} 亿元，最新余额节点为 {latestBalance?.date ?? "--"}。
-          </p>
-        </div>
-      </div>
-
       <div className="grid gap-4 lg:grid-cols-3">
         <article className="info-card p-5">
           <p className="data-kicker">年度发行规模</p>
@@ -103,12 +89,12 @@ export function DebtOverview({ items, annualIssuance }: { items: DebtDataItem[];
 
       <div className="grid gap-4 lg:grid-cols-2">
         <article className="info-card p-4">
-          <h3 className="section-title">全国年度发行规模</h3>
-          <SimpleLineChart data={annualLineData} unit="亿元" />
+          <h3 className="section-title">地方债务余额趋势</h3>
+          <MultiLineChart seriesList={balanceSeriesList} unit="亿元" />
         </article>
         <article className="info-card p-4">
-          <h3 className="section-title">最新年度结构</h3>
-          <SimpleBarChart data={latestStructure} unit="亿元" />
+          <h3 className="section-title">全国年度发行规模</h3>
+          <SimpleLineChart data={annualLineData} unit="亿元" />
         </article>
       </div>
 

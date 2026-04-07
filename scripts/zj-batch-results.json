@@ -1,0 +1,265 @@
+[
+  {
+    "name": "绍兴市",
+    "parent": "绍兴市",
+    "status": "PATH_FOUND",
+    "url": "http://sxcs.sx.gov.cn",
+    "text": "市财政局",
+    "source": "https://www.sx.gov.cn/"
+  },
+  {
+    "name": "上城区",
+    "parent": "杭州市",
+    "status": "PATH_FOUND",
+    "url": "https://www.hzsc.gov.cn/col/col1229736712/art/2026/art_b63bb80f3d7945beb99b5676dcbfd9f4.html",
+    "text": "·区财政局顺利召开卫健系统优化预算执行专题培训会\n                                        [2026-03-31]",
+    "source": "https://www.hzsc.gov.cn/"
+  },
+  {
+    "name": "西湖区",
+    "parent": "杭州市",
+    "status": "COL_FOUND",
+    "url": "https://www.hzxh.gov.cn/col/col1229346540/index.html",
+    "text": "财政信息",
+    "source": "https://www.hzxh.gov.cn/xxgk/index.html"
+  },
+  {
+    "name": "临平区",
+    "parent": "杭州市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.linping.gov.cn",
+    "text": null
+  },
+  {
+    "name": "临安区",
+    "parent": "杭州市",
+    "status": "COL_FOUND",
+    "url": "https://www.linan.gov.cn/col/col1229691915/art/2025/art_203d5f4bcfd94dc1978e8967f668e7ef.html",
+    "text": "关于提请调整临安区2025年财政收支预算和批准2025年地方政府债务限额的报告\n      2025-12-01",
+    "source": "https://www.linan.gov.cn/"
+  },
+  {
+    "name": "淳安县",
+    "parent": "杭州市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.qdh.gov.cn",
+    "text": null
+  },
+  {
+    "name": "建德市",
+    "parent": "杭州市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.jiande.gov.cn",
+    "text": null
+  },
+  {
+    "name": "秀洲区",
+    "parent": "嘉兴市",
+    "status": "PATH_FOUND",
+    "url": "https://www.xiuzhou.gov.cn/col/col1229405645/index.html",
+    "text": "区财政局",
+    "source": "https://www.xiuzhou.gov.cn/"
+  },
+  {
+    "name": "嘉善县",
+    "parent": "嘉兴市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.jiashan.gov.cn",
+    "text": null
+  },
+  {
+    "name": "海盐县",
+    "parent": "嘉兴市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.haiyan.gov.cn",
+    "text": null
+  },
+  {
+    "name": "海宁市",
+    "parent": "嘉兴市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.haining.gov.cn",
+    "text": null
+  },
+  {
+    "name": "桐乡市",
+    "parent": "嘉兴市",
+    "status": "PATH_FOUND",
+    "url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/serviceChild?id=184&tabOption=LIFE_CYCLE&personType=2&siteCode=330483000000",
+    "text": "税收财政",
+    "source": "https://www.tx.gov.cn/"
+  },
+  {
+    "name": "吴兴区",
+    "parent": "湖州市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.wuxing.gov.cn",
+    "text": null
+  },
+  {
+    "name": "南浔区",
+    "parent": "湖州市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.nanxun.gov.cn",
+    "text": null
+  },
+  {
+    "name": "德清县",
+    "parent": "湖州市",
+    "status": "COL_FOUND",
+    "url": "http://www.deqing.gov.cn/col/col1229518653/index.html?number=A009",
+    "text": "财政信息",
+    "source": "https://www.deqing.gov.cn/"
+  },
+  {
+    "name": "长兴县",
+    "parent": "湖州市",
+    "status": "NO_DOMAIN",
+    "url": null
+  },
+  {
+    "name": "安吉县",
+    "parent": "湖州市",
+    "status": "PATH_FOUND",
+    "url": "https://www.anji.gov.cn/art/2024/1/2/art_1229518623_3956032.html",
+    "text": "安吉县财政局政府信息公开指南（2024年修订）",
+    "source": "https://www.anji.gov.cn/xxgk/index.html"
+  },
+  {
+    "name": "婺城区",
+    "parent": "金华市",
+    "status": "PATH_FOUND",
+    "url": "http://wucheng.gov.cn/n37855206/n72126380/9index.html",
+    "text": "财政资金直达基层",
+    "source": "http://www.wucheng.gov.cn/"
+  },
+  {
+    "name": "武义县",
+    "parent": "金华市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.zjwy.gov.cn",
+    "text": null
+  },
+  {
+    "name": "浦江县",
+    "parent": "金华市",
+    "status": "COL_FOUND",
+    "url": "https://www.pj.gov.cn/col/col1229285496/index.html",
+    "text": "财政预决算",
+    "source": "https://www.pj.gov.cn/"
+  },
+  {
+    "name": "磐安县",
+    "parent": "金华市",
+    "status": "COL_FOUND",
+    "url": "https://www.panan.gov.cn/col/col1229170643/index.html",
+    "text": "财政信息",
+    "source": "https://www.panan.gov.cn/"
+  },
+  {
+    "name": "兰溪市",
+    "parent": "金华市",
+    "status": "COL_FOUND",
+    "url": "http://www.lanxi.gov.cn/col/col1229493549/index.html",
+    "text": "财政资金直达基层",
+    "source": "http://www.lanxi.gov.cn/"
+  },
+  {
+    "name": "永康市",
+    "parent": "金华市",
+    "status": "PATH_FOUND",
+    "url": "https://www.yk.gov.cn/col/col1229163502/index.html",
+    "text": "永康市财政局",
+    "source": "https://www.yk.gov.cn/"
+  },
+  {
+    "name": "衢江区",
+    "parent": "衢州市",
+    "status": "NO_DOMAIN",
+    "url": null
+  },
+  {
+    "name": "常山县",
+    "parent": "衢州市",
+    "status": "NO_DOMAIN",
+    "url": null
+  },
+  {
+    "name": "定海区",
+    "parent": "舟山市",
+    "status": "PATH_FOUND",
+    "url": "http://zscz.zhoushan.gov.cn/",
+    "text": "市财政局",
+    "source": "https://www.dinghai.gov.cn/"
+  },
+  {
+    "name": "普陀区",
+    "parent": "舟山市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.putuo.gov.cn",
+    "text": null
+  },
+  {
+    "name": "岱山县",
+    "parent": "舟山市",
+    "status": "COL_FOUND",
+    "url": "http://www.daishan.gov.cn/col/col1229696157/index.html\n        ",
+    "text": "财政预决算",
+    "source": "https://www.daishan.gov.cn/"
+  },
+  {
+    "name": "嵊泗县",
+    "parent": "舟山市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.shengsi.gov.cn",
+    "text": null
+  },
+  {
+    "name": "黄岩区",
+    "parent": "台州市",
+    "status": "NO_DOMAIN",
+    "url": null
+  },
+  {
+    "name": "三门县",
+    "parent": "台州市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.sanmen.gov.cn",
+    "text": null
+  },
+  {
+    "name": "天台县",
+    "parent": "台州市",
+    "status": "NO_DOMAIN",
+    "url": null
+  },
+  {
+    "name": "仙居县",
+    "parent": "台州市",
+    "status": "NO_DOMAIN",
+    "url": null
+  },
+  {
+    "name": "温岭市",
+    "parent": "台州市",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.wl.gov.cn",
+    "text": null
+  },
+  {
+    "name": "临海市",
+    "parent": "台州市",
+    "status": "PATH_FOUND",
+    "url": "https://www.linhai.gov.cn/col/col1229438276/index.html",
+    "text": "市财政局（市国资办）",
+    "source": "https://www.linhai.gov.cn/"
+  },
+  {
+    "name": "莲都区",
+    "parent": "丽水市",
+    "status": "PATH_FOUND",
+    "url": "https://www.liandu.gov.cn/col/col1229390153/art/2026/art_8da808fffebb275d8a42e8afe8ad2a42.html",
+    "text": "《关于公布丽水市莲都区财政局行政规范性文件清理结果的通知》的...",
+    "source": "https://www.liandu.gov.cn/"
+  }
+]

@@ -1,0 +1,77 @@
+Searching for budget disclosure links on county government sites...
+
+❌ 绍兴市: Failed to fetch https://www.shaoxing.gov.cn/
+⚠️  丽水市: No direct budget link, but found 2 fiscal link(s):
+   → /col/col1229218392/art/2025/art_8f794d5462fe4fff9ee2aade409b82af.html
+   → https://www.lishui.gov.cn/col/col1229265128/index.html?df=/col/col1229322044/index.html
+✅ 西湖区: Found 3 budget link(s):
+   → 预算/决算: http://www.xihu.gov.cn/publicity/zdxxgz/zdlyxxgk/czyjssg
+   → 溪湖区住房和城乡建设局2026年度部门预算公开: http://www.xihu.gov.cn/publicity/zdxxgz/zdlyxxgk/czyjssg/bmys/zfbm/136942
+   → 辽宁省本溪市溪湖区人民代表大会常务委员会2024年度部门决算: http://www.xihu.gov.cn/publicity/zdxxgz/zdlyxxgk/czyjssg/bmjs/rdzxj/132947
+✅ 余杭区: Found 3 budget link(s):
+   → 财政预决算: https://www.yuhang.gov.cn/col/col1229190842/index.html
+   → col1532131: https://www.yuhang.gov.cn/col/col1532131/index.html
+   → col1229511683: https://www.yuhang.gov.cn/col/col1229511683/index.html
+❌ 临平区: No budget/fiscal links found (page size: 144167)
+✅ 临安区: Found 4 budget link(s):
+   → col1366280: https://www.linan.gov.cn/col/col1366280/index.html
+   → col1229658001: https://www.linan.gov.cn/col/col1229658001/index.html
+   → col1229657993: https://www.linan.gov.cn/col/col1229657993/index.html
+   → col1229658001: https://www.linan.gov.cn/col/col1229658001/index.html
+❌ 建德市: No budget/fiscal links found (page size: 43014)
+⚠️  秀洲区: No direct budget link, but found 1 fiscal link(s):
+   → /col/col1229405645/index.html
+❌ 嘉善县: No budget/fiscal links found (page size: 94803)
+❌ 海盐县: No budget/fiscal links found (page size: 88419)
+❌ 海宁市: No budget/fiscal links found (page size: 56415)
+❌ 桐乡市: No budget/fiscal links found (page size: 49342)
+❌ 吴兴区: No budget/fiscal links found (page size: 29999)
+❌ 南浔区: No budget/fiscal links found (page size: 56686)
+✅ 德清县: Found 2 budget link(s):
+   → col1229212609: https://www.deqing.gov.cn/col/col1229212609/index.html
+   → col1229518870: https://www.deqing.gov.cn/col/col1229518870/index.html
+❌ 长兴县: No budget/fiscal links found (page size: 142116)
+❌ 安吉县: No budget/fiscal links found (page size: 62962)
+❌ 婺城区: No budget/fiscal links found (page size: 49240)
+❌ 浦江县: No budget/fiscal links found (page size: 2384)
+✅ 磐安县: Found 16 budget link(s):
+   → 磐安县九和乡人民政府2026年度部门预算公开: https://www.panan.gov.cn/col/col1229421975/art/2026/art_395f2f45eb1a4bf8af41a6e69fde9d5a.html
+   → 磐安县窈川乡人民政府2026年部门预算公开: https://www.panan.gov.cn/col/col1229421878/art/2026/art_697bd19c394e4b95a43b78a92a1cacf1.html
+   → 磐安县窈川乡人民政府2026年部门预算公开: https://www.panan.gov.cn/col/col1229421878/art/2026/art_3b57af0653ec4e0b8a70ae6340791d82.html
+   → 磐安县人民医院2026年度单位预算: https://www.panan.gov.cn/col/col1229420190/art/2026/art_be0b8abc8a6b4cbdbe8d5a01fef4381d.html
+   → 磐安县妇幼保健院2026年度单位预算: https://www.panan.gov.cn/col/col1229420190/art/2026/art_bf5fdbbb7a9a4617a0d0c5baa17acdfa.html
+   → 磐安县中医院2026年度单位预算: https://www.panan.gov.cn/col/col1229420190/art/2026/art_b97f3e9c652b4bab88e63b05b620a6ff.html
+   → 磐安县疾病预防控制中心2026年度单位预算: https://www.panan.gov.cn/col/col1229420190/art/2026/art_81d21986d7d14d90a7211ff7ab248fe8.html
+   → 磐安县卫生健康局2026年度部门预算: https://www.panan.gov.cn/col/col1229420190/art/2026/art_c8915da5bdc0437b8ea84a127c74c204.html
+   → 磐安县卫生健康局（本级）2026年度单位预算: https://www.panan.gov.cn/col/col1229420190/art/2026/art_31b1696c3f47458196fc993340e3723f.html
+   → 中共磐安县委组织部2026年度部门预算公开: https://www.panan.gov.cn/col/col1229891782/art/2026/art_0155fe7c131b4d34a153d9512365b7e6.html
+   → 磐安县经济商务局2026年度预算: https://www.panan.gov.cn/col/col1229419762/art/2026/art_4e38ec3b5168415e99ed6b8f6f5b2ee2.html
+   → 磐安县社会保险事业管理中心2026年度单位预算...: https://www.panan.gov.cn/col/col1229419980/art/2026/art_acdf8b2c23234190b6124086877c2dc6.html
+   → 磐安县就业服务中心2026年度单位预算公开: https://www.panan.gov.cn/col/col1229419980/art/2026/art_6080f9956a1c48e18c127cc72eedf41b.html
+   → 磐安县人力资源和社会保障局2026年度部门预算...: https://www.panan.gov.cn/col/col1229419980/art/2026/art_a8a6271f00e24156850e61c8a53325bf.html
+   → col1229170874: https://www.panan.gov.cn/col/col1229170874/index.html
+   → col1229159405: https://www.panan.gov.cn/col/col1229159405/index.html
+✅ 兰溪市: Found 6 budget link(s):
+   → 兰溪深化零基预算改革管好用好“钱袋子”: http://www.lanxi.gov.cn/col/col1229195212/art/2026/art_557591f61d424262956211c944467053.html
+   → 关于兰溪市2026年水预算额度公开征求意见的公告: http://minyi.zjzwfw.gov.cn/dczjnewls/dczj/idea/topic_26641.html
+   → col1229677766: http://www.lanxi.gov.cn/col/col1229677766/index.html
+   → col1229195218: http://www.lanxi.gov.cn/col/col1229195218/index.html
+   → col1229399710: http://www.lanxi.gov.cn/col/col1229399710/index.html
+   → col1229196149: http://www.lanxi.gov.cn/col/col1229196149/index.html
+✅ 江山市: Found 2 budget link(s):
+   → 财政预决算: https://www.jiangshan.gov.cn/col/col1229616962/index.html?number=A05&combination=A05
+   → col1229615771: https://www.jiangshan.gov.cn/col/col1229615771/index.html
+⚠️  定海区: No direct budget link, but found 1 fiscal link(s):
+   → http://zscz.zhoushan.gov.cn/
+❌ 普陀区: Failed to fetch https://www.putuo.gov.cn/
+✅ 岱山县: Found 1 budget link(s):
+   → col1229396854: https://www.daishan.gov.cn/col/col1229396854/index.html
+❌ 嵊泗县: No budget/fiscal links found (page size: 57822)
+❌ 三门县: No budget/fiscal links found (page size: 43295)
+❌ 温岭市: No budget/fiscal links found (page size: 56597)
+⚠️  临海市: No direct budget link, but found 1 fiscal link(s):
+   → https://www.linhai.gov.cn/col/col1229438276/index.html
+⚠️  莲都区: No direct budget link, but found 1 fiscal link(s):
+   → /col/col1229390153/art/2026/art_8da808fffebb275d8a42e8afe8ad2a42.html
+
+Summary: 8 found, 22 not found out of 30

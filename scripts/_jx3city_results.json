@@ -1,0 +1,401 @@
+[
+  {
+    "city": "景德镇市",
+    "county": "昌江区",
+    "govUrl": "http://www.jdzcjq.gov.cn/",
+    "paths": [
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/",
+      "/zfxxgk/fdzdgknr/czyjs/",
+      "/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czzj/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "景德镇市",
+    "county": "浮梁县",
+    "govUrl": "https://fuliang.gov.cn/",
+    "paths": [
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zfxxgk/fdzdgknr/czyjs/",
+      "/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czzj/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "景德镇市",
+    "county": "乐平市",
+    "govUrl": "http://www.lepingshi.gov.cn/",
+    "paths": [
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zfxxgk/fdzdgknr/czyjs/",
+      "/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czzj/"
+    ],
+    "govStatus": "FAIL",
+    "fiscalUrl": "",
+    "fiscalStatus": "SKIP",
+    "notes": "homepage 0 getaddrinfo ENOTFOUND www.lepingshi.gov.cn"
+  },
+  {
+    "city": "萍乡市",
+    "county": "湘东区",
+    "govUrl": "http://www.jxxd.gov.cn/",
+    "paths": [
+      "/col/col2373/index.html",
+      "/col/col2374/index.html",
+      "/col/col2375/index.html",
+      "/col/col2181/index.html",
+      "/col/col2182/index.html",
+      "/col/col2183/index.html",
+      "/col/col2184/index.html",
+      "/col/col2185/index.html",
+      "/col/col2186/index.html",
+      "/col/col2187/index.html",
+      "/col/col2188/index.html",
+      "/col/col2189/index.html",
+      "/col/col2190/index.html",
+      "/col/col2191/index.html",
+      "/col/col2192/index.html",
+      "/col/col2193/index.html",
+      "/col/col2194/index.html",
+      "/col/col2195/index.html",
+      "/col/col2196/index.html",
+      "/col/col2197/index.html",
+      "/col/col2198/index.html",
+      "/col/col2199/index.html",
+      "/col/col2200/index.html"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "萍乡市",
+    "county": "莲花县",
+    "govUrl": "http://www.zglh.gov.cn/",
+    "paths": [
+      "/col/col2373/index.html",
+      "/col/col2374/index.html",
+      "/col/col2375/index.html",
+      "/col/col2241/index.html",
+      "/col/col2242/index.html",
+      "/col/col2243/index.html",
+      "/col/col2244/index.html",
+      "/col/col2245/index.html",
+      "/col/col2246/index.html",
+      "/col/col2247/index.html",
+      "/col/col2248/index.html",
+      "/col/col2249/index.html",
+      "/col/col2250/index.html",
+      "/col/col2251/index.html",
+      "/col/col2252/index.html",
+      "/col/col2253/index.html",
+      "/col/col2254/index.html",
+      "/col/col2255/index.html",
+      "/col/col2256/index.html",
+      "/col/col2257/index.html",
+      "/col/col2258/index.html",
+      "/col/col2259/index.html",
+      "/col/col2260/index.html"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "萍乡市",
+    "county": "上栗县",
+    "govUrl": "http://www.jxslx.gov.cn/",
+    "paths": [
+      "/col/col2373/index.html",
+      "/col/col2374/index.html",
+      "/col/col2375/index.html",
+      "/col/col2181/index.html",
+      "/col/col2182/index.html",
+      "/col/col2183/index.html",
+      "/col/col2184/index.html",
+      "/col/col2185/index.html",
+      "/col/col2186/index.html",
+      "/col/col2187/index.html",
+      "/col/col2188/index.html",
+      "/col/col2189/index.html",
+      "/col/col2190/index.html",
+      "/col/col2191/index.html",
+      "/col/col2192/index.html",
+      "/col/col2193/index.html",
+      "/col/col2194/index.html",
+      "/col/col2195/index.html",
+      "/col/col2196/index.html",
+      "/col/col2197/index.html",
+      "/col/col2198/index.html",
+      "/col/col2199/index.html",
+      "/col/col2200/index.html"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "萍乡市",
+    "county": "芦溪县",
+    "govUrl": "http://www.luxi.gov.cn/",
+    "paths": [
+      "/col/col2373/index.html",
+      "/col/col2374/index.html",
+      "/col/col2375/index.html",
+      "/col/col2181/index.html",
+      "/col/col2182/index.html",
+      "/col/col2183/index.html",
+      "/col/col2184/index.html",
+      "/col/col2185/index.html",
+      "/col/col2186/index.html",
+      "/col/col2187/index.html",
+      "/col/col2188/index.html",
+      "/col/col2189/index.html",
+      "/col/col2190/index.html",
+      "/col/col2191/index.html",
+      "/col/col2192/index.html",
+      "/col/col2193/index.html",
+      "/col/col2194/index.html",
+      "/col/col2195/index.html",
+      "/col/col2196/index.html",
+      "/col/col2197/index.html",
+      "/col/col2198/index.html",
+      "/col/col2199/index.html",
+      "/col/col2200/index.html"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "浔阳区",
+    "govUrl": "http://www.xunyang.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/2026n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czzj/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czyjs/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "柴桑区",
+    "govUrl": "https://www.chaisang.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/2026n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgk/fdzdgknr/zdlyxx/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/zdlyxx/czzj/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "武宁县",
+    "govUrl": "http://www.wuning.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "修水县",
+    "govUrl": "http://www.xiushui.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "永修县",
+    "govUrl": "http://www.yongxiu.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "德安县",
+    "govUrl": "http://www.dean.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "都昌县",
+    "govUrl": "http://www.duchang.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "湖口县",
+    "govUrl": "http://www.hukou.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "彭泽县",
+    "govUrl": "http://www.pengze.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "瑞昌市",
+    "govUrl": "http://www.ruichang.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "共青城市",
+    "govUrl": "http://www.gongqing.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  },
+  {
+    "city": "九江市",
+    "county": "庐山市",
+    "govUrl": "http://www.lushan.gov.cn/",
+    "paths": [
+      "/yjs/2025n/",
+      "/yjs/",
+      "/zwgk/czzj/",
+      "/zwgk/czyjsgk/",
+      "/zwgk/zfxxgk/fdzdgknr/czyjs/",
+      "/zwgk/zfxxgkzl/zfxxgkml/czxx/"
+    ],
+    "govStatus": "OK",
+    "fiscalUrl": "",
+    "fiscalStatus": "NOT_FOUND",
+    "notes": "no fiscal keywords found"
+  }
+]

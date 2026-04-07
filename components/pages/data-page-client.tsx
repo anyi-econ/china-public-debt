@@ -18,9 +18,11 @@ type TabKey = (typeof subTabs)[number]["key"];
 export function DataPageClient({
   items,
   annualIssuance,
+  annualBalance,
 }: {
   items: DebtDataItem[];
   annualIssuance: AnnualIssuanceDataset;
+  annualBalance: AnnualIssuanceDataset;
 }) {
   const [activeTab, setActiveTab] = useState<TabKey>("debt");
 
@@ -45,7 +47,7 @@ export function DataPageClient({
 
       {/* 内容区域 */}
       <div className="container-page topic-body">
-        {activeTab === "debt" && <DebtOverview items={items} annualIssuance={annualIssuance} />}
+        {activeTab === "debt" && <DebtOverview items={items} annualIssuance={annualIssuance} annualBalance={annualBalance} />}
         {activeTab === "fiscal" && <FiscalBudgetNav />}
         {activeTab === "gov" && <GovWebsiteNav />}
       </div>

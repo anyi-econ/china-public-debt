@@ -1,0 +1,1095 @@
+{
+  "辽宁省>沈阳市": {
+    "和平区": {
+      "line": 707,
+      "url": "http://zwfw.shenyang.gov.cn/syyjs-wt/lnzwfw/lnonething/pages/home",
+      "method": "M4+M3",
+      "domain": "www.shenyang.gov.cn"
+    },
+    "浑南区": {
+      "line": 713,
+      "url": "http://zwfw.shenyang.gov.cn/syyjs-wt/lnzwfw/lnonething/pages/home",
+      "method": "M4+M3",
+      "domain": "www.shenyang.gov.cn"
+    }
+  },
+  "辽宁省>大连市": {},
+  "辽宁省>鞍山市": {
+    "立山区": {
+      "line": 744,
+      "url": "http://www.anshan.gov.cn/zwgk/fdzdgknr/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.anshan.gov.cn"
+    },
+    "千山区": {
+      "line": 745,
+      "url": "http://www.anshan.gov.cn/zwgk/fdzdgknr/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.anshan.gov.cn"
+    },
+    "台安县": {
+      "line": 746,
+      "url": "http://www.anshan.gov.cn/zwgk/fdzdgknr/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.anshan.gov.cn"
+    },
+    "铁西区": {
+      "line": 743,
+      "url": "http://www.anshan.gov.cn/zwgk/fdzdgknr/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.anshan.gov.cn"
+    }
+  },
+  "吉林省>长春市": {
+    "宽城区": {
+      "line": 900,
+      "url": "http://www.jckc.gov.cn/",
+      "method": "M4",
+      "domain": "www.jckc.gov.cn"
+    },
+    "南关区": {
+      "line": 899,
+      "url": "http://nanguan.changchun.gov.cn/",
+      "method": "M4",
+      "domain": "nanguan.changchun.gov.cn"
+    },
+    "朝阳区": {
+      "line": 901,
+      "url": "http://chaoyang.changchun.gov.cn/",
+      "method": "M4",
+      "domain": "chaoyang.changchun.gov.cn"
+    },
+    "二道区": {
+      "line": 902,
+      "url": "http://erdao.changchun.gov.cn/",
+      "method": "M4",
+      "domain": "erdao.changchun.gov.cn"
+    },
+    "双阳区": {
+      "line": 904,
+      "url": "http://www.shuangyang.gov.cn/zwgk/zdly/czxxgk/zfyjs/",
+      "method": "M4+M3",
+      "domain": "www.shuangyang.gov.cn"
+    },
+    "绿园区": {
+      "line": 903,
+      "url": "http://www.luyuan.gov.cn/",
+      "method": "M4",
+      "domain": "www.luyuan.gov.cn"
+    },
+    "农安县": {
+      "line": 906,
+      "url": "http://www.nongan.gov.cn/",
+      "method": "M4",
+      "domain": "www.nongan.gov.cn"
+    },
+    "九台区": {
+      "line": 905,
+      "url": "http://www.jiutai.gov.cn/zwgk/zdly/czxx/",
+      "method": "M4+M3",
+      "domain": "www.jiutai.gov.cn"
+    },
+    "公主岭市": {
+      "line": 909,
+      "url": "http://www.gongzhuling.gov.cn/zw/yjsgk/",
+      "method": "M4+M3",
+      "domain": "www.gongzhuling.gov.cn"
+    },
+    "德惠市": {
+      "line": 908,
+      "url": "http://www.dehui.gov.cn/zwgk/zdly/czxx/sjczyjs/",
+      "method": "M4+M3",
+      "domain": "www.dehui.gov.cn"
+    },
+    "榆树市": {
+      "line": 907,
+      "url": "http://www.yushu.gov.cn/",
+      "method": "M4",
+      "domain": "www.yushu.gov.cn"
+    }
+  },
+  "黑龙江省>哈尔滨市": {
+    "道里区": {
+      "line": 1022,
+      "url": "http://www.hrbdl.gov.cn/",
+      "method": "M4",
+      "domain": "www.hrbdl.gov.cn"
+    },
+    "道外区": {
+      "line": 1024,
+      "url": "http://www.hrbdw.gov.cn/",
+      "method": "M4",
+      "domain": "www.hrbdw.gov.cn"
+    },
+    "松北区": {
+      "line": 1026,
+      "url": "http://www.songbei.gov.cn/",
+      "method": "M4",
+      "domain": "www.songbei.gov.cn"
+    },
+    "香坊区": {
+      "line": 1027,
+      "url": "http://www.hrbxf.gov.cn/",
+      "method": "M4",
+      "domain": "www.hrbxf.gov.cn"
+    },
+    "平房区": {
+      "line": 1025,
+      "url": "http://www.hrbpf.gov.cn/",
+      "method": "M4",
+      "domain": "www.hrbpf.gov.cn"
+    },
+    "南岗区": {
+      "line": 1023,
+      "url": "http://www.hrbng.gov.cn/hebngq/czxx/tzyxyj.shtml",
+      "method": "M4+M3",
+      "domain": "www.hrbng.gov.cn"
+    },
+    "双城区": {
+      "line": 1030,
+      "url": "http://www.hrbsc.gov.cn/",
+      "method": "M4",
+      "domain": "www.hrbsc.gov.cn"
+    },
+    "方正县": {
+      "line": 1032,
+      "url": "http://www.hrbfz.gov.cn/",
+      "method": "M4",
+      "domain": "www.hrbfz.gov.cn"
+    },
+    "阿城区": {
+      "line": 1029,
+      "url": "http://www.acheng.gov.cn/",
+      "method": "M4",
+      "domain": "www.acheng.gov.cn"
+    },
+    "呼兰区": {
+      "line": 1028,
+      "url": "http://www.hulan.gov.cn/hebhlq/czxx/tzyxyj.shtml",
+      "method": "M4+M3",
+      "domain": "www.hulan.gov.cn"
+    },
+    "依兰县": {
+      "line": 1031,
+      "url": "http://www.hrbyl.gov.cn/",
+      "method": "M4",
+      "domain": "www.hrbyl.gov.cn"
+    },
+    "通河县": {
+      "line": 1036,
+      "url": "http://www.hrbtonghe.gov.cn/",
+      "method": "M4",
+      "domain": "www.hrbtonghe.gov.cn"
+    },
+    "五常市": {
+      "line": 1039,
+      "url": "http://www.hljwch.gov.cn/hebwcs/czxx/lby_c.shtml",
+      "method": "M4+M3",
+      "domain": "www.hljwch.gov.cn"
+    },
+    "木兰县": {
+      "line": 1035,
+      "url": "https://www.zwfw.hlj.gov.cn/jmopenpub/jmopen_files/webapp/html5/hrb_pc_hrbgxbcyjs/index.html?ticket=c52f7fd8ee4e4ad59981c4f1325ef780#/",
+      "method": "M4+M3",
+      "domain": "www.mulan.gov.cn"
+    },
+    "尚志市": {
+      "line": 1038,
+      "url": "http://www.shangzhi.gov.cn/",
+      "method": "M4",
+      "domain": "www.shangzhi.gov.cn"
+    },
+    "延寿县": {
+      "line": 1037,
+      "url": "http://www.hrbyanshou.gov.cn/",
+      "method": "M4",
+      "domain": "www.hrbyanshou.gov.cn"
+    },
+    "巴彦县": {
+      "line": 1034,
+      "url": "http://www.bayan.gov.cn/hebbyx/czyjs/fdzdgknr.shtml",
+      "method": "M4+M3",
+      "domain": "www.bayan.gov.cn"
+    }
+  },
+  "辽宁省>抚顺市": {
+    "新抚区": {
+      "line": 755,
+      "url": "http://www.fsxf.gov.cn/",
+      "method": "M4",
+      "domain": "www.fsxf.gov.cn"
+    },
+    "新宾满族自治县": {
+      "line": 760,
+      "url": "http://www.xinbin.gov.cn/",
+      "method": "M4",
+      "domain": "www.xinbin.gov.cn"
+    },
+    "顺城区": {
+      "line": 758,
+      "url": "http://www.fssc.gov.cn/",
+      "method": "M4",
+      "domain": "www.fssc.gov.cn"
+    },
+    "抚顺县": {
+      "line": 759,
+      "url": "http://www.lnfsx.gov.cn/",
+      "method": "M4",
+      "domain": "www.lnfsx.gov.cn"
+    },
+    "东洲区": {
+      "line": 756,
+      "url": "http://www.fsdz.gov.cn/",
+      "method": "M4",
+      "domain": "www.fsdz.gov.cn"
+    },
+    "望花区": {
+      "line": 757,
+      "url": "https://www.fswh.gov.cn/",
+      "method": "M4",
+      "domain": "www.fswh.gov.cn"
+    },
+    "清原满族自治县": {
+      "line": 761,
+      "url": "http://www.qingyuan.gov.cn/yjsxx.asp?s=16",
+      "method": "M4+M3",
+      "domain": "www.qingyuan.gov.cn"
+    }
+  },
+  "吉林省>吉林市": {
+    "昌邑区": {
+      "line": 916,
+      "url": "http://www.jlscy.gov.cn/ztzl/cyqxyjszl/",
+      "method": "M4+M3",
+      "domain": "www.jlscy.gov.cn"
+    },
+    "蛟河市": {
+      "line": 921,
+      "url": "http://www.jiaohe.gov.cn/xxgk/czxx/",
+      "method": "M4+M3",
+      "domain": "www.jiaohe.gov.cn"
+    },
+    "龙潭区": {
+      "line": 917,
+      "url": "http://www.longtan.gov.cn/",
+      "method": "M4",
+      "domain": "www.longtan.gov.cn"
+    },
+    "船营区": {
+      "line": 918,
+      "url": "http://www.jlcy.gov.cn/",
+      "method": "M4",
+      "domain": "www.jlcy.gov.cn"
+    },
+    "永吉县": {
+      "line": 920,
+      "url": "http://www.jlyj.gov.cn/xxgk/yjsxx/",
+      "method": "M4+M3",
+      "domain": "www.jlyj.gov.cn"
+    },
+    "丰满区": {
+      "line": 919,
+      "url": "http://www.jlfm.gov.cn/",
+      "method": "M4",
+      "domain": "www.jlfm.gov.cn"
+    },
+    "桦甸市": {
+      "line": 922,
+      "url": "http://www.huadian.gov.cn/xxgk/czxx/",
+      "method": "M4+M3",
+      "domain": "www.huadian.gov.cn"
+    },
+    "舒兰市": {
+      "line": 923,
+      "url": "http://www.shulan.gov.cn/xxgk/czxx/",
+      "method": "M4+M3",
+      "domain": "www.shulan.gov.cn"
+    },
+    "磐石市": {
+      "line": 924,
+      "url": "http://www.panshi.gov.cn/xxgk/gxyjs/",
+      "method": "M4+M3",
+      "domain": "www.panshi.gov.cn"
+    }
+  },
+  "黑龙江省>齐齐哈尔市": {
+    "昂昂溪区": {
+      "line": 1049,
+      "url": "http://www.aax.gov.cn/",
+      "method": "M4",
+      "domain": "www.aax.gov.cn"
+    },
+    "碾子山区": {
+      "line": 1051,
+      "url": "http://www.nzs.gov.cn/",
+      "method": "M4",
+      "domain": "www.nzs.gov.cn"
+    },
+    "建华区": {
+      "line": 1047,
+      "url": "http://www.jhq.gov.cn/",
+      "method": "M4",
+      "domain": "www.jhq.gov.cn"
+    },
+    "富拉尔基区": {
+      "line": 1050,
+      "url": "http://www.flej.gov.cn/",
+      "method": "M4",
+      "domain": "www.flej.gov.cn"
+    },
+    "龙沙区": {
+      "line": 1046,
+      "url": "http://www.qqhrlsq.gov.cn/",
+      "method": "M4",
+      "domain": "www.qqhrlsq.gov.cn"
+    },
+    "铁锋区": {
+      "line": 1048,
+      "url": "http://www.tfqzf.gov.cn/",
+      "method": "M4",
+      "domain": "www.tfqzf.gov.cn"
+    },
+    "甘南县": {
+      "line": 1056,
+      "url": "http://www.gannan.gov.cn/gannan/xysyjsgn/list.shtml",
+      "method": "M4+M3",
+      "domain": "www.gannan.gov.cn"
+    },
+    "富裕县": {
+      "line": 1057,
+      "url": "http://www.fuyu.gov.cn/",
+      "method": "M4",
+      "domain": "www.fuyu.gov.cn"
+    },
+    "泰来县": {
+      "line": 1055,
+      "url": "http://www.tailai.gov.cn/",
+      "method": "M4",
+      "domain": "www.tailai.gov.cn"
+    },
+    "龙江县": {
+      "line": 1053,
+      "url": "http://www.ljxrmzfw.gov.cn/",
+      "method": "M4",
+      "domain": "www.ljxrmzfw.gov.cn"
+    },
+    "梅里斯达斡尔族区": {
+      "line": 1052,
+      "url": "http://www.mls.gov.cn/",
+      "method": "M4",
+      "domain": "www.mls.gov.cn"
+    },
+    "依安县": {
+      "line": 1054,
+      "url": "http://www.hljyian.gov.cn/",
+      "method": "M4",
+      "domain": "www.hljyian.gov.cn"
+    },
+    "拜泉县": {
+      "line": 1060,
+      "url": "http://www.baiquan.gov.cn/",
+      "method": "M4",
+      "domain": "www.baiquan.gov.cn"
+    },
+    "讷河市": {
+      "line": 1061,
+      "url": "http://www.nehe.gov.cn/",
+      "method": "M4",
+      "domain": "www.nehe.gov.cn"
+    },
+    "克东县": {
+      "line": 1059,
+      "url": "http://www.kedong.gov.cn/",
+      "method": "M4",
+      "domain": "www.kedong.gov.cn"
+    },
+    "克山县": {
+      "line": 1058,
+      "url": "http://www.keshan.gov.cn/keshan/xysyjs/list.shtml",
+      "method": "M4+M3",
+      "domain": "www.keshan.gov.cn"
+    }
+  },
+  "黑龙江省>鸡西市": {},
+  "黑龙江省>鹤岗市": {},
+  "黑龙江省>双鸭山市": {},
+  "吉林省>四平市": {
+    "铁东区": {
+      "line": 932,
+      "url": "http://tdq.siping.gov.cn/",
+      "method": "M4",
+      "domain": "tdq.siping.gov.cn"
+    },
+    "梨树县": {
+      "line": 933,
+      "url": "http://www.lishu.gov.cn/zw/zt/xysyjsgzzl/",
+      "method": "M4+M3",
+      "domain": "www.lishu.gov.cn"
+    },
+    "伊通满族自治县": {
+      "line": 934,
+      "url": "http://www.yitong.gov.cn/zw/czxx/",
+      "method": "M4+M3",
+      "domain": "www.yitong.gov.cn"
+    },
+    "双辽市": {
+      "line": 936,
+      "url": "http://www.shuangliao.gov.cn/",
+      "method": "M4",
+      "domain": "www.shuangliao.gov.cn"
+    },
+    "铁西区": {
+      "line": 931,
+      "url": "http://txq.siping.gov.cn/zw/zt/czzj/",
+      "method": "M4+M3",
+      "domain": "txq.siping.gov.cn"
+    }
+  },
+  "吉林省>辽源市": {
+    "东辽县": {
+      "line": 946,
+      "url": "http://www.dongliao.gov.cn/",
+      "method": "M4",
+      "domain": "www.dongliao.gov.cn"
+    },
+    "东丰县": {
+      "line": 945,
+      "url": "http://www.dongfeng.gov.cn/",
+      "method": "M4",
+      "domain": "www.dongfeng.gov.cn"
+    },
+    "龙山区": {
+      "line": 943,
+      "url": "http://www.jllyls.gov.cn/",
+      "method": "M4",
+      "domain": "www.jllyls.gov.cn"
+    },
+    "西安区": {
+      "line": 944,
+      "url": "http://www.lyxa.gov.cn/xxgk/zwgkzdlyxx/czxx/",
+      "method": "M4+M3",
+      "domain": "www.lyxa.gov.cn"
+    }
+  },
+  "黑龙江省>大庆市": {
+    "肇州县": {
+      "line": 1116,
+      "url": "http://www.zhaozhou.gov.cn/",
+      "method": "M4",
+      "domain": "www.zhaozhou.gov.cn"
+    },
+    "让胡路区": {
+      "line": 1113,
+      "url": "https://www.daqing.gov.cn/",
+      "method": "M4",
+      "domain": "www.daqing.gov.cn"
+    },
+    "红岗区": {
+      "line": 1114,
+      "url": "http://www.honggang.gov.cn/",
+      "method": "M4",
+      "domain": "www.honggang.gov.cn"
+    },
+    "龙凤区": {
+      "line": 1112,
+      "url": "http://www.dqlf.gov.cn/",
+      "method": "M4",
+      "domain": "www.dqlf.gov.cn"
+    },
+    "萨尔图区": {
+      "line": 1111,
+      "url": "http://www.saertu.gov.cn/",
+      "method": "M4",
+      "domain": "www.saertu.gov.cn"
+    },
+    "大同区": {
+      "line": 1115,
+      "url": "https://www.dqdt.gov.cn/datong/czyjs/open_list2.shtml",
+      "method": "M4+M3",
+      "domain": "www.dqdt.gov.cn"
+    },
+    "肇源县": {
+      "line": 1117,
+      "url": "http://www.zgzy.gov.cn/zhaoyuan/xysyjszt/list.shtml",
+      "method": "M4+M3",
+      "domain": "www.zgzy.gov.cn"
+    },
+    "林甸县": {
+      "line": 1118,
+      "url": "http://www.lindian.gov.cn/lindian/xysyjs/list0.shtml",
+      "method": "M4+M3",
+      "domain": "www.lindian.gov.cn"
+    }
+  },
+  "黑龙江省>伊春市": {},
+  "吉林省>通化市": {
+    "二道江区": {
+      "line": 954,
+      "url": "http://www.edj.gov.cn/zwgk/czxx/",
+      "method": "M4+M3",
+      "domain": "www.edj.gov.cn"
+    },
+    "东昌区": {
+      "line": 953,
+      "url": "http://www.dc.gov.cn/xxgk/czxx/",
+      "method": "M4+M3",
+      "domain": "www.dc.gov.cn"
+    },
+    "梅河口市": {
+      "line": 958,
+      "url": "http://www.mhk.gov.cn/xqxz/jcxxgk/czxx/",
+      "method": "M4+M3",
+      "domain": "www.mhk.gov.cn"
+    },
+    "辉南县": {
+      "line": 956,
+      "url": "http://www.huinanxian.gov.cn/",
+      "method": "M4",
+      "domain": "www.huinanxian.gov.cn"
+    },
+    "柳河县": {
+      "line": 957,
+      "url": "http://www.jllh.gov.cn/xxgk/zwgkdh/czxx/",
+      "method": "M4+M3",
+      "domain": "www.jllh.gov.cn"
+    },
+    "通化县": {
+      "line": 955,
+      "url": "http://www.tonghuaxian.gov.cn/",
+      "method": "M4",
+      "domain": "www.tonghuaxian.gov.cn"
+    },
+    "集安市": {
+      "line": 959,
+      "url": "http://www.jilinja.gov.cn/zwgk/czzj/",
+      "method": "M4+M3",
+      "domain": "www.jilinja.gov.cn"
+    }
+  },
+  "吉林省>白山市": {},
+  "吉林省>松原市": {},
+  "吉林省>白城市": {},
+  "辽宁省>本溪市": {
+    "平山区": {
+      "line": 768,
+      "url": "http://www.pingshan.gov.cn/publicity/qzfxx/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.pingshan.gov.cn"
+    },
+    "南芬区": {
+      "line": 771,
+      "url": "http://www.nanfen.gov.cn/publicity/qzfxx/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.nanfen.gov.cn"
+    },
+    "桓仁满族自治县": {
+      "line": 773,
+      "url": "http://www.hr.gov.cn/publicity/xzfxx/czyjs",
+      "method": "M4+M3",
+      "domain": "www.hr.gov.cn"
+    },
+    "溪湖区": {
+      "line": 769,
+      "url": "http://www.xihu.gov.cn/publicity/zdxxgz/zdlyxxgk/czyjssg",
+      "method": "M4+M3",
+      "domain": "www.xihu.gov.cn"
+    },
+    "明山区": {
+      "line": 770,
+      "url": "http://www.mingshan.gov.cn/",
+      "method": "M4",
+      "domain": "www.mingshan.gov.cn"
+    },
+    "本溪满族自治县": {
+      "line": 772,
+      "url": "http://www.bx.gov.cn/",
+      "method": "M4",
+      "domain": "www.bx.gov.cn"
+    }
+  },
+  "黑龙江省>佳木斯市": {
+    "前进区": {
+      "line": 1143,
+      "url": "https://www.jms.gov.cn/",
+      "method": "M4",
+      "domain": "www.jms.gov.cn"
+    },
+    "向阳区": {
+      "line": 1142,
+      "url": "https://www.xyq.gov.cn/",
+      "method": "M4",
+      "domain": "www.xyq.gov.cn"
+    },
+    "东风区": {
+      "line": 1144,
+      "url": "https://www.jmsdf.gov.cn/",
+      "method": "M4",
+      "domain": "www.jmsdf.gov.cn"
+    },
+    "郊区": {
+      "line": 1145,
+      "url": "https://www.jmsjqzf.gov.cn/",
+      "method": "M4",
+      "domain": "www.jmsjqzf.gov.cn"
+    },
+    "桦南县": {
+      "line": 1146,
+      "url": "https://www.huanan.gov.cn/",
+      "method": "M4",
+      "domain": "www.huanan.gov.cn"
+    },
+    "桦川县": {
+      "line": 1147,
+      "url": "https://www.jms.gov.cn/",
+      "method": "M4",
+      "domain": "www.jms.gov.cn"
+    },
+    "汤原县": {
+      "line": 1148,
+      "url": "https://www.tangyuan.gov.cn/",
+      "method": "M4",
+      "domain": "www.tangyuan.gov.cn"
+    },
+    "同江市": {
+      "line": 1149,
+      "url": "https://www.tongjiang.gov.cn/",
+      "method": "M4",
+      "domain": "www.tongjiang.gov.cn"
+    },
+    "富锦市": {
+      "line": 1150,
+      "url": "http://www.fujin.gov.cn/",
+      "method": "M4",
+      "domain": "www.fujin.gov.cn"
+    },
+    "抚远市": {
+      "line": 1151,
+      "url": "http://www.hljfy.gov.cn/",
+      "method": "M4",
+      "domain": "www.hljfy.gov.cn"
+    }
+  },
+  "吉林省>延边朝鲜族自治州": {
+    "延吉市": {
+      "line": 1000,
+      "url": "http://www.yanji.gov.cn/yjszfxxgkw/",
+      "method": "M4+M3",
+      "domain": "www.yanji.gov.cn"
+    },
+    "图们市": {
+      "line": 1001,
+      "url": "http://www.tumen.gov.cn/zw_2185/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.tumen.gov.cn"
+    },
+    "珲春市": {
+      "line": 1003,
+      "url": "http://www.yanbian.gov.cn/",
+      "method": "M4",
+      "domain": "www.yanbian.gov.cn"
+    },
+    "和龙市": {
+      "line": 1005,
+      "url": "http://www.helong.gov.cn/zw_2395/jcxxgk/yjsxxgk/",
+      "method": "M4+M3",
+      "domain": "www.helong.gov.cn"
+    },
+    "敦化市": {
+      "line": 1002,
+      "url": "http://www.dunhua.gov.cn/zw_2131/jcxxgk/yjsxxgk/",
+      "method": "M4+M3",
+      "domain": "www.dunhua.gov.cn"
+    },
+    "龙井市": {
+      "line": 1004,
+      "url": "http://www.longjing.gov.cn/zw/jcxxgk/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.longjing.gov.cn"
+    },
+    "汪清县": {
+      "line": 1006,
+      "url": "http://www.wangqing.gov.cn/",
+      "method": "M4",
+      "domain": "www.wangqing.gov.cn"
+    },
+    "安图县": {
+      "line": 1007,
+      "url": "http://www.antu.gov.cn/zw_2292/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.antu.gov.cn"
+    }
+  },
+  "辽宁省>丹东市": {
+    "振兴区": {
+      "line": 781,
+      "url": "https://www.dandong.gov.cn/",
+      "method": "M4",
+      "domain": "www.dandong.gov.cn"
+    },
+    "元宝区": {
+      "line": 780,
+      "url": "https://www.dandong.gov.cn/",
+      "method": "M4",
+      "domain": "www.dandong.gov.cn"
+    },
+    "东港市": {
+      "line": 784,
+      "url": "https://www.dandong.gov.cn/",
+      "method": "M4",
+      "domain": "www.dandong.gov.cn"
+    },
+    "凤城市": {
+      "line": 785,
+      "url": "https://www.dandong.gov.cn/",
+      "method": "M4",
+      "domain": "www.dandong.gov.cn"
+    }
+  },
+  "黑龙江省>七台河市": {
+    "勃利县": {
+      "line": 1161,
+      "url": "http://www.hljboli.gov.cn/",
+      "method": "M4",
+      "domain": "www.hljboli.gov.cn"
+    },
+    "茄子河区": {
+      "line": 1160,
+      "url": "http://www.hljqzh.gov.cn/",
+      "method": "M4",
+      "domain": "www.hljqzh.gov.cn"
+    },
+    "新兴区": {
+      "line": 1158,
+      "url": "http://www.hljxinxing.gov.cn/",
+      "method": "M4",
+      "domain": "www.hljxinxing.gov.cn"
+    },
+    "桃山区": {
+      "line": 1159,
+      "url": "http://www.hljtsq.gov.cn/",
+      "method": "M4",
+      "domain": "www.hljtsq.gov.cn"
+    }
+  },
+  "辽宁省>锦州市": {
+    "黑山县": {
+      "line": 796,
+      "url": "http://www.heishan.gov.cn/",
+      "method": "M4",
+      "domain": "www.heishan.gov.cn"
+    },
+    "古塔区": {
+      "line": 792,
+      "url": "http://www.jzgtq.gov.cn/zdly/czxx.htm",
+      "method": "M4+M3",
+      "domain": "www.jzgtq.gov.cn"
+    },
+    "北镇市": {
+      "line": 797,
+      "url": "https://www.bzs.gov.cn/",
+      "method": "M4",
+      "domain": "www.bzs.gov.cn"
+    },
+    "太和区": {
+      "line": 794,
+      "url": "http://www.jzth.gov.cn/",
+      "method": "M4",
+      "domain": "www.jzth.gov.cn"
+    },
+    "凌河区": {
+      "line": 793,
+      "url": "https://www.jzlhqzf.gov.cn/",
+      "method": "M4",
+      "domain": "www.jzlhqzf.gov.cn"
+    },
+    "凌海市": {
+      "line": 798,
+      "url": "http://www.lnlh.gov.cn/xxgk/fdzdgknr/czxx.htm",
+      "method": "M4+M3",
+      "domain": "www.lnlh.gov.cn"
+    }
+  },
+  "黑龙江省>牡丹江市": {
+    "爱民区": {
+      "line": 1170,
+      "url": "https://www.aimin.gov.cn/",
+      "method": "M4",
+      "domain": "www.aimin.gov.cn"
+    },
+    "东安区": {
+      "line": 1168,
+      "url": "https://www.donganqu.gov.cn/",
+      "method": "M4",
+      "domain": "www.donganqu.gov.cn"
+    },
+    "西安区": {
+      "line": 1171,
+      "url": "https://www.mdjxa.gov.cn/",
+      "method": "M4",
+      "domain": "www.mdjxa.gov.cn"
+    },
+    "林口县": {
+      "line": 1172,
+      "url": "https://www.linkou.gov.cn/",
+      "method": "M4",
+      "domain": "www.linkou.gov.cn"
+    },
+    "阳明区": {
+      "line": 1169,
+      "url": "https://www.yangming.gov.cn/",
+      "method": "M4",
+      "domain": "www.yangming.gov.cn"
+    },
+    "东宁市": {
+      "line": 1173,
+      "url": "https://www.dongning.gov.cn/",
+      "method": "M4",
+      "domain": "www.dongning.gov.cn"
+    },
+    "穆棱市": {
+      "line": 1177,
+      "url": "https://www.muling.gov.cn/",
+      "method": "M4",
+      "domain": "www.muling.gov.cn"
+    },
+    "绥芬河市": {
+      "line": 1174,
+      "url": "https://www.suifenhe.gov.cn/",
+      "method": "M4",
+      "domain": "www.suifenhe.gov.cn"
+    },
+    "海林市": {
+      "line": 1175,
+      "url": "http://www.mdj.gov.cn/",
+      "method": "M4",
+      "domain": "www.mdj.gov.cn"
+    },
+    "宁安市": {
+      "line": 1176,
+      "url": "https://www.ningan.gov.cn/",
+      "method": "M4",
+      "domain": "www.ningan.gov.cn"
+    }
+  },
+  "辽宁省>营口市": {
+    "站前区": {
+      "line": 805,
+      "url": "http://www.yingkou.gov.cn/",
+      "method": "M4",
+      "domain": "www.yingkou.gov.cn"
+    },
+    "大石桥市": {
+      "line": 810,
+      "url": "http://www.yingkou.gov.cn/",
+      "method": "M4",
+      "domain": "www.yingkou.gov.cn"
+    }
+  },
+  "辽宁省>阜新市": {},
+  "辽宁省>辽阳市": {
+    "宏伟区": {
+      "line": 832,
+      "url": "http://www.liaoyang.gov.cn/",
+      "method": "M4",
+      "domain": "www.liaoyang.gov.cn"
+    },
+    "白塔区": {
+      "line": 830,
+      "url": "http://www.liaoyang.gov.cn/",
+      "method": "M4",
+      "domain": "www.liaoyang.gov.cn"
+    },
+    "辽阳县": {
+      "line": 835,
+      "url": "http://www.liaoyang.gov.cn/",
+      "method": "M4",
+      "domain": "www.liaoyang.gov.cn"
+    }
+  },
+  "辽宁省>盘锦市": {},
+  "黑龙江省>黑河市": {
+    "逊克县": {
+      "line": 1185,
+      "url": "https://www.heihe.gov.cn/",
+      "method": "M4",
+      "domain": "www.heihe.gov.cn"
+    },
+    "五大连池市": {
+      "line": 1188,
+      "url": "https://www.heihe.gov.cn/",
+      "method": "M4",
+      "domain": "www.heihe.gov.cn"
+    },
+    "嫩江市": {
+      "line": 1189,
+      "url": "https://www.nenjiang.gov.cn/",
+      "method": "M4",
+      "domain": "www.nenjiang.gov.cn"
+    },
+    "北安市": {
+      "line": 1187,
+      "url": "http://www.hljba.gov.cn/",
+      "method": "M4",
+      "domain": "www.hljba.gov.cn"
+    },
+    "爱辉区": {
+      "line": 1184,
+      "url": "http://www.aihui.gov.cn/",
+      "method": "M4",
+      "domain": "www.aihui.gov.cn"
+    },
+    "孙吴县": {
+      "line": 1186,
+      "url": "http://www.hljsunwu.gov.cn/",
+      "method": "M4",
+      "domain": "www.hljsunwu.gov.cn"
+    }
+  },
+  "黑龙江省>绥化市": {},
+  "辽宁省>铁岭市": {
+    "银州区": {
+      "line": 853,
+      "url": "http://www.tlyz.gov.cn/zwgk/czxx/",
+      "method": "M4+M3",
+      "domain": "www.tlyz.gov.cn"
+    },
+    "西丰县": {
+      "line": 856,
+      "url": "http://www.lntlxf.gov.cn/",
+      "method": "M4",
+      "domain": "www.lntlxf.gov.cn"
+    },
+    "昌图县": {
+      "line": 857,
+      "url": "http://www.changtu.gov.cn/zwgk/zdlyxxgk/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.changtu.gov.cn"
+    },
+    "清河区": {
+      "line": 854,
+      "url": "http://www.tlqh.gov.cn/",
+      "method": "M4",
+      "domain": "www.tlqh.gov.cn"
+    },
+    "铁岭县": {
+      "line": 855,
+      "url": "http://www.tielingxian.gov.cn/",
+      "method": "M4",
+      "domain": "www.tielingxian.gov.cn"
+    },
+    "调兵山市": {
+      "line": 858,
+      "url": "http://www.lndbss.gov.cn/",
+      "method": "M4",
+      "domain": "www.lndbss.gov.cn"
+    },
+    "开原市": {
+      "line": 859,
+      "url": "http://www.lnky.gov.cn/",
+      "method": "M4",
+      "domain": "www.lnky.gov.cn"
+    }
+  },
+  "黑龙江省>大兴安岭地区": {
+    "呼中区": {
+      "line": 1215,
+      "url": "http://www.huzhong.gov.cn/",
+      "method": "M4",
+      "domain": "www.huzhong.gov.cn"
+    },
+    "松岭区": {
+      "line": 1213,
+      "url": "http://www.songling.gov.cn/",
+      "method": "M4",
+      "domain": "www.songling.gov.cn"
+    },
+    "加格达奇区": {
+      "line": 1212,
+      "url": "http://www.jgdq.gov.cn/",
+      "method": "M4",
+      "domain": "www.jgdq.gov.cn"
+    },
+    "塔河县": {
+      "line": 1217,
+      "url": "http://www.dxalth.gov.cn/",
+      "method": "M4",
+      "domain": "www.dxalth.gov.cn"
+    },
+    "呼玛县": {
+      "line": 1216,
+      "url": "http://www.huma.gov.cn/",
+      "method": "M4",
+      "domain": "www.huma.gov.cn"
+    },
+    "新林区": {
+      "line": 1214,
+      "url": "http://www.dxalxl.gov.cn/",
+      "method": "M4",
+      "domain": "www.dxalxl.gov.cn"
+    },
+    "漠河市": {
+      "line": 1218,
+      "url": "http://www.mohe.gov.cn/",
+      "method": "M4",
+      "domain": "www.mohe.gov.cn"
+    }
+  },
+  "辽宁省>朝阳市": {
+    "北票市": {
+      "line": 871,
+      "url": "https://zwfw.chaoyang.gov.cn:8213/cyyjs-zwdt/epointzwmhwz/pages/onething/default",
+      "method": "M4+M3",
+      "domain": "www.chaoyang.gov.cn"
+    },
+    "龙城区": {
+      "line": 867,
+      "url": "https://zwfw.chaoyang.gov.cn:8213/cyyjs-zwdt/epointzwmhwz/pages/onething/default",
+      "method": "M4+M3",
+      "domain": "www.chaoyang.gov.cn"
+    },
+    "建平县": {
+      "line": 869,
+      "url": "https://zwfw.chaoyang.gov.cn:8213/cyyjs-zwdt/epointzwmhwz/pages/onething/default",
+      "method": "M4+M3",
+      "domain": "www.chaoyang.gov.cn"
+    },
+    "双塔区": {
+      "line": 866,
+      "url": "https://zwfw.chaoyang.gov.cn:8213/cyyjs-zwdt/epointzwmhwz/pages/onething/default",
+      "method": "M4+M3",
+      "domain": "www.chaoyang.gov.cn"
+    },
+    "朝阳县": {
+      "line": 868,
+      "url": "https://zwfw.chaoyang.gov.cn:8213/cyyjs-zwdt/epointzwmhwz/pages/onething/default",
+      "method": "M4+M3",
+      "domain": "www.chaoyang.gov.cn"
+    },
+    "凌源市": {
+      "line": 872,
+      "url": "https://zwfw.chaoyang.gov.cn:8213/cyyjs-zwdt/epointzwmhwz/pages/onething/default",
+      "method": "M4+M3",
+      "domain": "www.chaoyang.gov.cn"
+    }
+  },
+  "辽宁省>葫芦岛市": {
+    "连山区": {
+      "line": 879,
+      "url": "https://www.hld.gov.cn/xwdt/rdzl/rdzt/yjsycb/",
+      "method": "M4+M3",
+      "domain": "www.hld.gov.cn"
+    },
+    "建昌县": {
+      "line": 883,
+      "url": "https://www.hld.gov.cn/xwdt/rdzl/rdzt/yjsycb/",
+      "method": "M4+M3",
+      "domain": "www.hld.gov.cn"
+    },
+    "龙港区": {
+      "line": 880,
+      "url": "https://www.hld.gov.cn/xwdt/rdzl/rdzt/yjsycb/",
+      "method": "M4+M3",
+      "domain": "www.hld.gov.cn"
+    }
+  }
+}

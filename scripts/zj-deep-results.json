@@ -1,0 +1,253 @@
+[
+  {
+    "name": "长兴县",
+    "parent": "湖州市",
+    "domain": "www.zjcx.gov.cn",
+    "status": "NUM_FOUND",
+    "url": "https://www.zjcx.gov.cn//www.zjcx.gov.cn/col/col1229518369/index.html?number=D001",
+    "text": "",
+    "source": "https://www.zjcx.gov.cn/"
+  },
+  {
+    "name": "衢江区",
+    "parent": "衢州市",
+    "domain": "www.qjq.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.qjq.gov.cn",
+    "text": null
+  },
+  {
+    "name": "常山县",
+    "parent": "衢州市",
+    "domain": "www.zjcs.gov.cn",
+    "status": "COL_FOUND",
+    "url": "https://www.zjcs.gov.cn//www.zjcs.gov.cn/col/col1229090578/index.html",
+    "text": "财政信息",
+    "source": "https://www.zjcs.gov.cn/"
+  },
+  {
+    "name": "黄岩区",
+    "parent": "台州市",
+    "domain": "www.zjhy.gov.cn",
+    "status": "COL_FOUND",
+    "url": "https://www.zjhy.gov.cn/col/col1229511129/index.html",
+    "text": "财政资金...",
+    "source": "https://www.zjhy.gov.cn/"
+  },
+  {
+    "name": "天台县",
+    "parent": "台州市",
+    "domain": "www.zjtt.gov.cn",
+    "status": "NUM_DISCOVERED",
+    "url": "https://www.zjtt.gov.cn/col/col1229799134/index.html?number=D001-A001",
+    "text": "number=D001-A001",
+    "source": "col1229799134"
+  },
+  {
+    "name": "仙居县",
+    "parent": "台州市",
+    "domain": "www.zjxj.gov.cn",
+    "status": "COL_FOUND",
+    "url": "http://www.zjxj.gov.cn/col/col1229311259/index.html",
+    "text": "财政信息",
+    "source": "http://www.zjxj.gov.cn/"
+  },
+  {
+    "name": "婺城区",
+    "parent": "金华市",
+    "domain": "www.wuch.gov.cn",
+    "status": "COL_FOUND",
+    "url": "https://www.wuch.gov.cn/col/col1229567511/index.html",
+    "text": "财政预决算",
+    "source": "https://www.wuch.gov.cn/"
+  },
+  {
+    "name": "绍兴市",
+    "parent": "绍兴市",
+    "domain": "www.sx.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.sx.gov.cn",
+    "text": null
+  },
+  {
+    "name": "上城区",
+    "parent": "杭州市",
+    "domain": "www.hzsc.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.hzsc.gov.cn",
+    "text": null
+  },
+  {
+    "name": "临平区",
+    "parent": "杭州市",
+    "domain": "www.linping.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.linping.gov.cn",
+    "text": null
+  },
+  {
+    "name": "临安区",
+    "parent": "杭州市",
+    "domain": "www.linan.gov.cn",
+    "status": "COL_FOUND",
+    "url": "https://www.linan.gov.cn/col/col1229691915/art/2025/art_203d5f4bcfd94dc1978e8967f668e7ef.html",
+    "text": "关于提请调整临安区2025年财政收支预算和批准2025年地方政府债务限额的报告\n      2025-12-01",
+    "source": "https://www.linan.gov.cn/"
+  },
+  {
+    "name": "建德市",
+    "parent": "杭州市",
+    "domain": "www.jiande.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.jiande.gov.cn",
+    "text": null
+  },
+  {
+    "name": "秀洲区",
+    "parent": "嘉兴市",
+    "domain": "www.xiuzhou.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.xiuzhou.gov.cn",
+    "text": null
+  },
+  {
+    "name": "嘉善县",
+    "parent": "嘉兴市",
+    "domain": "www.jiashan.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.jiashan.gov.cn",
+    "text": null
+  },
+  {
+    "name": "海盐县",
+    "parent": "嘉兴市",
+    "domain": "www.haiyan.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.haiyan.gov.cn",
+    "text": null
+  },
+  {
+    "name": "海宁市",
+    "parent": "嘉兴市",
+    "domain": "www.haining.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.haining.gov.cn",
+    "text": null
+  },
+  {
+    "name": "桐乡市",
+    "parent": "嘉兴市",
+    "domain": "www.tx.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.tx.gov.cn",
+    "text": null
+  },
+  {
+    "name": "吴兴区",
+    "parent": "湖州市",
+    "domain": "www.wuxing.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.wuxing.gov.cn",
+    "text": null
+  },
+  {
+    "name": "南浔区",
+    "parent": "湖州市",
+    "domain": "www.nanxun.gov.cn",
+    "status": "NUM_FOUND",
+    "url": "http://www.nanxun.gov.cn/col/col1229518457/index.html?number=D001",
+    "text": "会议决策",
+    "source": "https://www.nanxun.gov.cn/col/col1229211227/index.html"
+  },
+  {
+    "name": "安吉县",
+    "parent": "湖州市",
+    "domain": "www.anji.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.anji.gov.cn",
+    "text": null
+  },
+  {
+    "name": "武义县",
+    "parent": "金华市",
+    "domain": "www.zjwy.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.zjwy.gov.cn",
+    "text": null
+  },
+  {
+    "name": "兰溪市",
+    "parent": "金华市",
+    "domain": "www.lanxi.gov.cn",
+    "status": "COL_FOUND",
+    "url": "http://www.lanxi.gov.cn/col/col1229493549/index.html",
+    "text": "财政资金直达基层",
+    "source": "http://www.lanxi.gov.cn/"
+  },
+  {
+    "name": "永康市",
+    "parent": "金华市",
+    "domain": "www.yk.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.yk.gov.cn",
+    "text": null
+  },
+  {
+    "name": "定海区",
+    "parent": "舟山市",
+    "domain": "www.dinghai.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.dinghai.gov.cn",
+    "text": null
+  },
+  {
+    "name": "普陀区",
+    "parent": "舟山市",
+    "domain": "www.putuo.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.putuo.gov.cn",
+    "text": null
+  },
+  {
+    "name": "嵊泗县",
+    "parent": "舟山市",
+    "domain": "www.shengsi.gov.cn",
+    "status": "NUM_DISCOVERED",
+    "url": "https://www.shengsi.gov.cn/col/col1454127/index.html?number=D001-A001",
+    "text": "number=D001-A001",
+    "source": "col1454127"
+  },
+  {
+    "name": "三门县",
+    "parent": "台州市",
+    "domain": "www.sanmen.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.sanmen.gov.cn",
+    "text": null
+  },
+  {
+    "name": "温岭市",
+    "parent": "台州市",
+    "domain": "www.wl.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.wl.gov.cn",
+    "text": null
+  },
+  {
+    "name": "临海市",
+    "parent": "台州市",
+    "domain": "www.linhai.gov.cn",
+    "status": "DOMAIN_ONLY",
+    "url": "https://www.linhai.gov.cn",
+    "text": null
+  },
+  {
+    "name": "莲都区",
+    "parent": "丽水市",
+    "domain": "www.liandu.gov.cn",
+    "status": "NUM_DISCOVERED",
+    "url": "https://www.liandu.gov.cn/col/col1229430187/index.html?number=D001-A001",
+    "text": "number=D001-A001",
+    "source": "col1229430187"
+  }
+]

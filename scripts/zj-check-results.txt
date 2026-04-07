@@ -1,0 +1,47 @@
+=== Finding missing city fiscal bureau URLs ===
+
+❌ 绍兴市: no fiscal bureau found
+❌ 丽水市: no fiscal bureau found
+
+=== Checking county government domains ===
+
+❌ 上城区: www.shangcheng.gov.cn unreachable
+✅ 西湖区: http://www.xihu.gov.cn/ (budget: true)
+❌ 滨江区: www.binjiang.gov.cn unreachable
+✅ 余杭区: https://www.yuhang.gov.cn/ (budget: false)
+✅ 临平区: https://www.linping.gov.cn/ (budget: false)
+✅ 临安区: https://www.linan.gov.cn/ (budget: false)
+❌ 淳安县: www.chunan.gov.cn unreachable
+✅ 建德市: https://www.jiande.gov.cn/ (budget: false)
+✅ 秀洲区: https://www.xiuzhou.gov.cn/ (budget: false)
+✅ 嘉善县: https://www.jiashan.gov.cn/ (budget: false)
+✅ 海盐县: https://www.haiyan.gov.cn/ (budget: false)
+✅ 海宁市: https://www.haining.gov.cn/ (redirect)
+✅ 桐乡市: https://www.tx.gov.cn/ (budget: false)
+✅ 吴兴区: https://www.wuxing.gov.cn/ (budget: false)
+✅ 南浔区: https://www.nanxun.gov.cn/ (budget: false)
+✅ 德清县: https://www.deqing.gov.cn/ (budget: false)
+✅ 长兴县: https://www.zjcx.gov.cn/ (budget: false)
+✅ 安吉县: https://www.anji.gov.cn/ (budget: false)
+✅ 婺城区: http://www.wucheng.gov.cn/ (budget: false)
+✅ 武义县: http://www.hengshui.gov.cn/ (redirect)
+✅ 浦江县: https://www.pujiang.gov.cn/ (redirect)
+✅ 磐安县: https://www.panan.gov.cn/ (budget: false)
+✅ 兰溪市: http://www.lanxi.gov.cn/ (budget: false)
+❌ 永康市: www.yongkang.gov.cn unreachable
+❌ 衢江区: www.qujiang.gov.cn unreachable
+❌ 常山县: www.changshan.gov.cn unreachable
+✅ 江山市: https://www.jiangshan.gov.cn/ (budget: false)
+✅ 定海区: https://www.dinghai.gov.cn/ (budget: false)
+✅ 普陀区: https://www.putuo.gov.cn/ (budget: false)
+✅ 岱山县: https://www.daishan.gov.cn/ (budget: false)
+✅ 嵊泗县: https://www.shengsi.gov.cn/ (budget: false)
+❌ 黄岩区: www.huangyan.gov.cn unreachable
+✅ 三门县: https://www.sanmen.gov.cn/ (budget: false)
+❌ 天台县: www.tt.gov.cn unreachable
+❌ 仙居县: www.xianju.gov.cn unreachable
+✅ 温岭市: https://www.wl.gov.cn/ (budget: false)
+✅ 临海市: https://www.linhai.gov.cn/ (budget: false)
+✅ 莲都区: https://www.liandu.gov.cn/ (budget: true)
+
+Reachable: 29/38

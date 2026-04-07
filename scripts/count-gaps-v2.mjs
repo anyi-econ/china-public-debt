@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const d = fs.readFileSync('data/fiscal-budget-links.ts', 'utf8');
+const s = d.indexOf('河北省');
+const e = d.indexOf('山西省');
+const h = d.slice(s, e);
+const re = /name:\s*"([^"]+)",\s*url:\s*""/g;
+let m;
+const gaps = [];
+while ((m = re.exec(h)) !== null) gaps.push(m[1]);
+console.log('Remaining gaps:', gaps.length);
+gaps.forEach(g => console.log(' ', g));

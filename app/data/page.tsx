@@ -1,11 +1,12 @@
 import { PageIntro } from "@/components/layout/page-intro";
 import { SiteShell } from "@/components/layout/site-shell";
 import { DataPageClient } from "@/components/pages/data-page-client";
-import { getAnnualIssuanceDataset, getDebtData } from "@/lib/data";
+import { getAnnualIssuanceDataset, getAnnualBalanceDataset, getDebtData } from "@/lib/data";
 
 export default function DataPage() {
   const items = getDebtData();
   const annualIssuance = getAnnualIssuanceDataset();
+  const annualBalance = getAnnualBalanceDataset();
 
   return (
     <SiteShell currentPath="/data">
@@ -16,7 +17,7 @@ export default function DataPage() {
         meta={`年度发行序列 ${annualIssuance.series[0]?.values.length ?? 0} 年 · 月度记录 ${items.length} 条`}
       />
 
-      <DataPageClient items={items} annualIssuance={annualIssuance} />
+      <DataPageClient items={items} annualIssuance={annualIssuance} annualBalance={annualBalance} />
     </SiteShell>
   );
 }

@@ -1,0 +1,150 @@
+[
+  {
+    "city": "景德镇市",
+    "county": "昌江区",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "景德镇市",
+    "county": "浮梁县",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "景德镇市",
+    "county": "乐平市",
+    "govStatus": "FAIL",
+    "results": []
+  },
+  {
+    "city": "萍乡市",
+    "county": "湘东区",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "萍乡市",
+    "county": "芦溪县",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "萍乡市",
+    "county": "莲花县",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "萍乡市",
+    "county": "上栗县",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "九江市",
+    "county": "浔阳区",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "九江市",
+    "county": "柴桑区",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "九江市",
+    "county": "武宁县",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "九江市",
+    "county": "修水县",
+    "govStatus": "OK",
+    "results": [
+      {
+        "url": "http://www.xiushui.gov.cn/xxgk/",
+        "status": 200,
+        "score": 12,
+        "title": "修水县人民政府_部门乡镇信息公开",
+        "bodyLen": 106280
+      }
+    ],
+    "homeLinks": []
+  },
+  {
+    "city": "九江市",
+    "county": "永修县",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "九江市",
+    "county": "德安县",
+    "govStatus": "OK",
+    "results": [
+      {
+        "url": "http://www.dean.gov.cn/zwgk/czbg/czjs/",
+        "status": 200,
+        "score": 7,
+        "title": "中国·德安欢迎您！",
+        "bodyLen": 21918
+      },
+      {
+        "url": "http://www.dean.gov.cn/zwgk/czbg/",
+        "status": 200,
+        "score": 2,
+        "title": "中国·德安欢迎您！",
+        "bodyLen": 21805
+      }
+    ],
+    "homeLinks": []
+  },
+  {
+    "city": "九江市",
+    "county": "都昌县",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "九江市",
+    "county": "湖口县",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "九江市",
+    "county": "彭泽县",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "九江市",
+    "county": "瑞昌市",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  },
+  {
+    "city": "九江市",
+    "county": "共青城市",
+    "govStatus": "OK",
+    "results": [],
+    "homeLinks": []
+  }
+]

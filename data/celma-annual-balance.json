@@ -1,0 +1,72 @@
+{
+  "updatedAt": "2026-04-07",
+  "source": {
+    "name": "中国地方政府债券信息公开平台",
+    "organization": "财政部建设",
+    "url": "https://www.celma.org.cn/ndsj/index.jhtml",
+    "note": "通过官方年度数据页对应接口 loadBondData.action 抓取全国年度债务余额指标（06 债务余额）。"
+  },
+  "series": [
+    {
+      "key": "total",
+      "metricId": "0601",
+      "label": "全国地方政府债务余额",
+      "unit": "亿元",
+      "values": [
+        { "year": 2015, "value": 147568.4 },
+        { "year": 2016, "value": 153557.6 },
+        { "year": 2017, "value": 165099.8 },
+        { "year": 2018, "value": 184618.7 },
+        { "year": 2019, "value": 213097.8 },
+        { "year": 2020, "value": 256610.8 },
+        { "year": 2021, "value": 304700.5 },
+        { "year": 2022, "value": 350652.9 },
+        { "year": 2023, "value": 407370.3 },
+        { "year": 2024, "value": 475401.3 }
+      ]
+    },
+    {
+      "key": "general",
+      "metricId": "060101",
+      "label": "全国一般债务余额",
+      "unit": "亿元",
+      "values": [
+        { "year": 2015, "value": 92619.0 },
+        { "year": 2016, "value": 98312.9 },
+        { "year": 2017, "value": 103631.8 },
+        { "year": 2018, "value": 110484.5 },
+        { "year": 2019, "value": 118670.8 },
+        { "year": 2020, "value": 127393.4 },
+        { "year": 2021, "value": 137706.8 },
+        { "year": 2022, "value": 143961.7 },
+        { "year": 2023, "value": 158685.2 },
+        { "year": 2024, "value": 167043.5 }
+      ]
+    },
+    {
+      "key": "special",
+      "metricId": "060102",
+      "label": "全国专项债务余额",
+      "unit": "亿元",
+      "values": [
+        { "year": 2015, "value": 54949.3 },
+        { "year": 2016, "value": 55244.7 },
+        { "year": 2017, "value": 61468.0 },
+        { "year": 2018, "value": 74134.2 },
+        { "year": 2019, "value": 94427.0 },
+        { "year": 2020, "value": 129217.4 },
+        { "year": 2021, "value": 166993.7 },
+        { "year": 2022, "value": 206691.2 },
+        { "year": 2023, "value": 248685.1 },
+        { "year": 2024, "value": 308357.8 }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "title": "年度数据：全国地方政府债务余额",
+      "url": "https://www.celma.org.cn/ndsj/index.jhtml",
+      "description": "官方年度数据页，对应指标 ID 0601、060101、060102。"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+[鏅痉闀囧競>鏄屾睙鍖篯 homepage: 200 (1166b)
+=> 鏅痉闀囧競>鏄屾睙鍖? NOT_FOUND (none)
+
+[鏅痉闀囧競>娴鍘縘 homepage: 200 (1166b)
+=> 鏅痉闀囧競>娴鍘? NOT_FOUND (none)
+
+[鏅痉闀囧競>涔愬钩甯俔 homepage: 0 ERR:getaddrinfo ENOTFOUND www.lepingshi.gov.cn (0b)
+=> 鏅痉闀囧競>涔愬钩甯? SKIP (none)
+
+[钀嶄埂甯?婀樹笢鍖篯 homepage: 200 (1166b)
+=> 钀嶄埂甯?婀樹笢鍖? NOT_FOUND (none)
+
+[钀嶄埂甯?鑾茶姳鍘縘 homepage: 200 (1166b)
+=> 钀嶄埂甯?鑾茶姳鍘? NOT_FOUND (none)
+
+[钀嶄埂甯?涓婃牀鍘縘 homepage: 200 (1166b)
+=> 钀嶄埂甯?涓婃牀鍘? NOT_FOUND (none)
+
+[钀嶄埂甯?鑺︽邯鍘縘 homepage: 200 (1166b)
+=> 钀嶄埂甯?鑺︽邯鍘? NOT_FOUND (none)
+
+[涔濇睙甯?娴旈槼鍖篯 homepage: 200 (61351b)
+=> 涔濇睙甯?娴旈槼鍖? NOT_FOUND (none)
+
+[涔濇睙甯?鏌存鍖篯 homepage: 200 (139267b)
+=> 涔濇睙甯?鏌存鍖? NOT_FOUND (none)
+
+[涔濇睙甯?姝﹀畞鍘縘 homepage: 200 (146057b)
+=> 涔濇睙甯?姝﹀畞鍘? NOT_FOUND (none)
+
+[涔濇睙甯?淇按鍘縘 homepage: 200 (94652b)
+=> 涔濇睙甯?淇按鍘? NOT_FOUND (none)
+
+[涔濇睙甯?姘镐慨鍘縘 homepage: 200 (120866b)
+=> 涔濇睙甯?姘镐慨鍘? NOT_FOUND (none)
+
+[涔濇睙甯?寰峰畨鍘縘 homepage: 200 (49639b)
+=> 涔濇睙甯?寰峰畨鍘? NOT_FOUND (none)
+
+[涔濇睙甯?閮芥槍鍘縘 homepage: 200 (98666b)
+=> 涔濇睙甯?閮芥槍鍘? NOT_FOUND (none)
+
+[涔濇睙甯?婀栧彛鍘縘 homepage: 200 (124509b)
+=> 涔濇睙甯?婀栧彛鍘? NOT_FOUND (none)
+
+[涔濇睙甯?褰辰鍘縘 homepage: 200 (61935b)
+=> 涔濇睙甯?褰辰鍘? NOT_FOUND (none)
+
+[涔濇睙甯?鐟炴槍甯俔 homepage: 200 (62952b)
+=> 涔濇睙甯?鐟炴槍甯? NOT_FOUND (none)
+
+[涔濇睙甯?鍏遍潚鍩庡競] homepage: 200 (137707b)
+=> 涔濇睙甯?鍏遍潚鍩庡競: NOT_FOUND (none)
+
+[涔濇睙甯?搴愬北甯俔 homepage: 200 (116497b)
+  Found 6 fiscal links on homepage:
+    2026骞村簮灞卞競鏀垮簻棰勭畻鍏紑: ./bmxzxxgk/bumeng/czj_195013/fdzdgknr_195019/sbjczyjs_198981/202603/t20260326_7210129.html
+    2024骞存斂搴滃喅绠楀叕寮€: ./zwgk_194695/zfxxgkzl_194696/fdzdgknr_194705/czzjly/sbjczyjs/202510/t20251015_7031525.html
+    鍏充簬搴愬北甯?025骞撮儴闂ㄩ绠楀叕寮€鐨勭敵璇? ./zwgk_194695/zfxxgkzl_194696/fdzdgknr_194705/czzjly/sbjczyjs/202507/t20250722_6977645.html
+    2025骞村簮灞卞競鏀垮簻棰勭畻鍏紑: ./bmxzxxgk/bumeng/czj_195013/fdzdgknr_195019/sbjczyjs_198981/t_7093589.html
+    2025骞村簮灞卞競鏀垮簻棰勭畻鍏紑: ./zwgk_194695/zfxxgkzl_194696/fdzdgknr_194705/czzjly/sbjczyjs/202503/t20250321_6876607.html
+    2023骞村簮灞卞競甯傜骇鏀垮簻鍐崇畻鍏紑: ./zwgk_194695/zfxxgkzl_194696/fdzdgknr_194705/czzjly/sbjczyjs/202410/t20241010_6730048.html
+=> 涔濇睙甯?搴愬北甯? NOT_FOUND (none)
+
+
+=== SUMMARY ===
+鏅痉闀囧競 > 鏄屾睙鍖? NOT_FOUND  no fiscal keywords found
+鏅痉闀囧競 > 娴鍘? NOT_FOUND  no fiscal keywords found
+鏅痉闀囧競 > 涔愬钩甯? SKIP  homepage 0 getaddrinfo ENOTFOUND www.lepingshi.gov.cn
+钀嶄埂甯?> 婀樹笢鍖? NOT_FOUND  no fiscal keywords found
+钀嶄埂甯?> 鑾茶姳鍘? NOT_FOUND  no fiscal keywords found
+钀嶄埂甯?> 涓婃牀鍘? NOT_FOUND  no fiscal keywords found
+钀嶄埂甯?> 鑺︽邯鍘? NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 娴旈槼鍖? NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 鏌存鍖? NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 姝﹀畞鍘? NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 淇按鍘? NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 姘镐慨鍘? NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 寰峰畨鍘? NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 閮芥槍鍘? NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 婀栧彛鍘? NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 褰辰鍘? NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 鐟炴槍甯? NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 鍏遍潚鍩庡競: NOT_FOUND  no fiscal keywords found
+涔濇睙甯?> 搴愬北甯? NOT_FOUND  no fiscal keywords found
+
+Results saved to scripts/_jx3city_results.json

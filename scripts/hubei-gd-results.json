@@ -1,0 +1,761 @@
+{
+  "广东省>广州市": {
+    "越秀区": {
+      "line": 2965,
+      "url": "http://www.yuexiu.gov.cn/",
+      "method": "M4",
+      "domain": "www.yuexiu.gov.cn"
+    },
+    "荔湾区": {
+      "line": 2964,
+      "url": "https://zwfw.gzonline.gov.cn/gzyjszt/#/",
+      "method": "M4+M3",
+      "domain": "www.lw.gov.cn"
+    },
+    "黄埔区": {
+      "line": 2969,
+      "url": "http://www.hp.gov.cn/zwgk/czzj/",
+      "method": "M4+M3",
+      "domain": "www.hp.gov.cn"
+    },
+    "海珠区": {
+      "line": 2966,
+      "url": "https://www.haizhu.gov.cn/zwgk/zdlyxxgk/czzj/qbjczzj/index.html",
+      "method": "M4+M3",
+      "domain": "www.haizhu.gov.cn"
+    },
+    "天河区": {
+      "line": 2967,
+      "url": "http://www.thnet.gov.cn/",
+      "method": "M4",
+      "domain": "www.thnet.gov.cn"
+    },
+    "白云区": {
+      "line": 2968,
+      "url": "http://www.by.gov.cn/",
+      "method": "M4",
+      "domain": "www.by.gov.cn"
+    },
+    "番禺区": {
+      "line": 2971,
+      "url": "https://www.gz.gov.cn/zwgk/zdly/czzj/",
+      "method": "M4+M3",
+      "domain": "www.gz.gov.cn"
+    },
+    "从化区": {
+      "line": 2973,
+      "url": "http://www.conghua.gov.cn/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.conghua.gov.cn"
+    },
+    "南沙区": {
+      "line": 2972,
+      "url": "http://www.gzns.gov.cn/",
+      "method": "M4",
+      "domain": "www.gzns.gov.cn"
+    },
+    "花都区": {
+      "line": 2970,
+      "url": "http://www.huadu.gov.cn/zdlyxxgk/czzj/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.huadu.gov.cn"
+    },
+    "增城区": {
+      "line": 2974,
+      "url": "http://www.zc.gov.cn/gk/shgysyjsly/index.html",
+      "method": "M4+M3",
+      "domain": "www.zc.gov.cn"
+    }
+  },
+  "广东省>韶关市": {},
+  "湖北省>武汉市": {
+    "汉阳区": {
+      "line": 2564,
+      "url": "https://www.hanyang.gov.cn/qjsyjsfw/ggzlzf/",
+      "method": "M4+M3",
+      "domain": "www.hanyang.gov.cn"
+    },
+    "青山区": {
+      "line": 2566,
+      "url": "https://www.qingshan.gov.cn/zfxxgk/fdzdgknr/gysyjs/sthj/",
+      "method": "M4+M3",
+      "domain": "www.qingshan.gov.cn"
+    },
+    "武昌区": {
+      "line": 2565,
+      "url": "https://www.wuchang.gov.cn/",
+      "method": "M4",
+      "domain": "www.wuchang.gov.cn"
+    },
+    "硚口区": {
+      "line": 2563,
+      "url": "https://www.qiaokou.gov.cn/xxgk/jbxxgk/gysyjs/aqsc/",
+      "method": "M4+M3",
+      "domain": "www.qiaokou.gov.cn"
+    },
+    "江汉区": {
+      "line": 2562,
+      "url": "https://www.jianghan.gov.cn/",
+      "method": "M4",
+      "domain": "www.jianghan.gov.cn"
+    },
+    "江岸区": {
+      "line": 2561,
+      "url": "https://www.jiangan.gov.cn/jaxxw/zfxxgk/fdzdgk/czzjxx_41391/qsbmyjsjsgjfyjsxxgk/",
+      "method": "M4+M3",
+      "domain": "www.jiangan.gov.cn"
+    },
+    "蔡甸区": {
+      "line": 2570,
+      "url": "https://www.caidian.gov.cn/zwgk/xxgkml/czxx/zxzj/",
+      "method": "M4+M3",
+      "domain": "www.caidian.gov.cn"
+    },
+    "江夏区": {
+      "line": 2571,
+      "url": "https://www.jiangxia.gov.cn/",
+      "method": "M4",
+      "domain": "www.jiangxia.gov.cn"
+    },
+    "黄陂区": {
+      "line": 2572,
+      "url": "https://www.huangpi.gov.cn/",
+      "method": "M4",
+      "domain": "www.huangpi.gov.cn"
+    },
+    "洪山区": {
+      "line": 2567,
+      "url": "https://www.wuhan.gov.cn/bsfw/gxbcyjs/index.shtml",
+      "method": "M4+M3",
+      "domain": "www.wuhan.gov.cn"
+    },
+    "新洲区": {
+      "line": 2573,
+      "url": "https://www.whxinzhou.gov.cn/bmfw_29/qjsyjsfw/gzfzt/",
+      "method": "M4+M3",
+      "domain": "www.whxinzhou.gov.cn"
+    }
+  },
+  "湖北省>黄石市": {
+    "大冶市": {
+      "line": 2585,
+      "url": "http://www.huangshi.gov.cn/xxxgk/fdzdgknr/2020czzj/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.huangshi.gov.cn"
+    }
+  },
+  "广东省>深圳市": {
+    "光明区": {
+      "line": 3005,
+      "url": "https://www.sz.gov.cn/",
+      "method": "M4",
+      "domain": "www.sz.gov.cn"
+    }
+  },
+  "广东省>珠海市": {
+    "斗门区": {
+      "line": 3013,
+      "url": "https://www.zhuhai.gov.cn/xw/ztjj/zhszdlyxxgkzl/czysjshsgjfgk/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.zhuhai.gov.cn"
+    },
+    "香洲区": {
+      "line": 3012,
+      "url": "http://www.zhxz.gov.cn/",
+      "method": "M4",
+      "domain": "www.zhxz.gov.cn"
+    },
+    "金湾区": {
+      "line": 3014,
+      "url": "https://www.jinwan.gov.cn/jinwan/zwgk/zdlyxxgk/yjshsgjfgk/index.html",
+      "method": "M4+M3",
+      "domain": "www.jinwan.gov.cn"
+    }
+  },
+  "湖北省>十堰市": {
+    "茅箭区": {
+      "line": 2592,
+      "url": "http://maojian.shiyan.gov.cn/xxgk/fdzdgk/czzj/",
+      "method": "M4+M3",
+      "domain": "maojian.shiyan.gov.cn"
+    },
+    "张湾区": {
+      "line": 2593,
+      "url": "http://www.zhangwan.gov.cn/xxgk/fdzdgk/czzj/",
+      "method": "M4+M3",
+      "domain": "www.zhangwan.gov.cn"
+    },
+    "竹山县": {
+      "line": 2596,
+      "url": "http://czj.shiyan.gov.cn/sczj/sfgwgkml/czzj_920/czzxzj/",
+      "method": "M4+M3",
+      "domain": "czj.shiyan.gov.cn"
+    },
+    "郧西县": {
+      "line": 2595,
+      "url": "http://czj.shiyan.gov.cn/sczj/sfgwgkml/czzj_920/czzxzj/",
+      "method": "M4+M3",
+      "domain": "czj.shiyan.gov.cn"
+    },
+    "竹溪县": {
+      "line": 2597,
+      "url": "http://czj.shiyan.gov.cn/sczj/sfgwgkml/czzj_920/czzxzj/",
+      "method": "M4+M3",
+      "domain": "czj.shiyan.gov.cn"
+    },
+    "郧阳区": {
+      "line": 2594,
+      "url": "http://yunyang.shiyan.gov.cn/xxgkxi/fdzdgk/czzj/",
+      "method": "M4+M3",
+      "domain": "yunyang.shiyan.gov.cn"
+    },
+    "房县": {
+      "line": 2598,
+      "url": "http://www.fangxian.gov.cn/",
+      "method": "M4",
+      "domain": "www.fangxian.gov.cn"
+    },
+    "丹江口市": {
+      "line": 2599,
+      "url": "http://czj.shiyan.gov.cn/sczj/sfgwgkml/czzj_920/czzxzj/",
+      "method": "M4+M3",
+      "domain": "czj.shiyan.gov.cn"
+    }
+  },
+  "广东省>汕头市": {
+    "濠江区": {
+      "line": 3023,
+      "url": "https://www.gov.cn/zhengce/jiedu/jdzl/gxbcyjs/index.htm",
+      "method": "M4+M3",
+      "domain": "www.haojiang.gov.cn"
+    },
+    "龙湖区": {
+      "line": 3021,
+      "url": "https://www.gdlonghu.gov.cn/lh/zwgk/czyjs/index.html",
+      "method": "M4+M3",
+      "domain": "www.gdlonghu.gov.cn"
+    },
+    "澄海区": {
+      "line": 3026,
+      "url": "http://www.chenghai.gov.cn/ch/zdlyxxgk/czysjshsgjfgk/bmyjs/index.html",
+      "method": "M4+M3",
+      "domain": "www.chenghai.gov.cn"
+    },
+    "金平区": {
+      "line": 3022,
+      "url": "https://www.shantou.gov.cn/cnst/zwgk/jcxxgk/czyjsx/index.html",
+      "method": "M4+M3",
+      "domain": "www.shantou.gov.cn"
+    },
+    "潮阳区": {
+      "line": 3024,
+      "url": "https://www.shantou.gov.cn/cnst/zwgk/jcxxgk/czyjsx/index.html",
+      "method": "M4+M3",
+      "domain": "www.shantou.gov.cn"
+    },
+    "潮南区": {
+      "line": 3025,
+      "url": "http://www.chaonan.gov.cn/",
+      "method": "M4",
+      "domain": "www.chaonan.gov.cn"
+    },
+    "南澳县": {
+      "line": 3027,
+      "url": "https://www.shantou.gov.cn/cnst/zwgk/jcxxgk/czyjsx/index.html",
+      "method": "M4+M3",
+      "domain": "www.shantou.gov.cn"
+    }
+  },
+  "广东省>佛山市": {
+    "三水区": {
+      "line": 3037,
+      "url": "https://www.foshan.gov.cn/zwgk/zdly/czxx/",
+      "method": "M4+M3",
+      "domain": "www.foshan.gov.cn"
+    },
+    "顺德区": {
+      "line": 3036,
+      "url": "https://www.foshan.gov.cn/zwgk/zdly/czxx/",
+      "method": "M4+M3",
+      "domain": "www.foshan.gov.cn"
+    },
+    "高明区": {
+      "line": 3038,
+      "url": "https://www.foshan.gov.cn/zwgk/zdly/czxx/",
+      "method": "M4+M3",
+      "domain": "www.foshan.gov.cn"
+    },
+    "南海区": {
+      "line": 3035,
+      "url": "https://www.foshan.gov.cn/zwgk/zdly/czxx/",
+      "method": "M4+M3",
+      "domain": "www.foshan.gov.cn"
+    },
+    "禅城区": {
+      "line": 3034,
+      "url": "https://www.foshan.gov.cn/zwgk/zdly/czxx/",
+      "method": "M4+M3",
+      "domain": "www.foshan.gov.cn"
+    }
+  },
+  "湖北省>宜昌市": {
+    "伍家岗区": {
+      "line": 2607,
+      "url": "http://www.ycwjg.gov.cn/",
+      "method": "M4",
+      "domain": "www.ycwjg.gov.cn"
+    },
+    "点军区": {
+      "line": 2608,
+      "url": "http://www.dianjun.gov.cn/",
+      "method": "M4",
+      "domain": "www.dianjun.gov.cn"
+    },
+    "夷陵区": {
+      "line": 2610,
+      "url": "http://www.yiling.gov.cn/",
+      "method": "M4",
+      "domain": "www.yiling.gov.cn"
+    },
+    "猇亭区": {
+      "line": 2609,
+      "url": "http://www.yichang.gov.cn/",
+      "method": "M4",
+      "domain": "www.yichang.gov.cn"
+    },
+    "西陵区": {
+      "line": 2606,
+      "url": "http://www.ycxl.gov.cn/",
+      "method": "M4",
+      "domain": "www.ycxl.gov.cn"
+    },
+    "远安县": {
+      "line": 2611,
+      "url": "http://www.yuanan.gov.cn/",
+      "method": "M4",
+      "domain": "www.yuanan.gov.cn"
+    },
+    "兴山县": {
+      "line": 2612,
+      "url": "http://www.xingshan.gov.cn/",
+      "method": "M4",
+      "domain": "www.xingshan.gov.cn"
+    },
+    "当阳市": {
+      "line": 2617,
+      "url": "http://www.dangyang.gov.cn/",
+      "method": "M4",
+      "domain": "www.dangyang.gov.cn"
+    },
+    "秭归县": {
+      "line": 2613,
+      "url": "http://www.hbzg.gov.cn/",
+      "method": "M4",
+      "domain": "www.hbzg.gov.cn"
+    },
+    "长阳土家族自治县": {
+      "line": 2614,
+      "url": "http://www.changyang.gov.cn/",
+      "method": "M4",
+      "domain": "www.changyang.gov.cn"
+    },
+    "宜都市": {
+      "line": 2616,
+      "url": "http://www.yidu.gov.cn/",
+      "method": "M4",
+      "domain": "www.yidu.gov.cn"
+    },
+    "五峰土家族自治县": {
+      "line": 2615,
+      "url": "http://www.hbwf.gov.cn/",
+      "method": "M4",
+      "domain": "www.hbwf.gov.cn"
+    },
+    "枝江市": {
+      "line": 2618,
+      "url": "http://www.yichang.gov.cn/",
+      "method": "M4",
+      "domain": "www.yichang.gov.cn"
+    }
+  },
+  "湖北省>襄阳市": {
+    "枣阳市": {
+      "line": 2632,
+      "url": "http://czj.xiangyang.gov.cn/zwgk/gkml/czzj/",
+      "method": "M4+M3",
+      "domain": "czj.xiangyang.gov.cn"
+    },
+    "宜城市": {
+      "line": 2633,
+      "url": "http://czj.xiangyang.gov.cn/zwgk/gkml/czzj/",
+      "method": "M4+M3",
+      "domain": "czj.xiangyang.gov.cn"
+    }
+  },
+  "广东省>湛江市": {
+    "赤坎区": {
+      "line": 3058,
+      "url": "https://www.gov.cn/zhengce/jiedu/jdzl/gxbcyjs/index.htm",
+      "method": "M4+M3",
+      "domain": "www.zhanjiang.gov.cn"
+    },
+    "雷州市": {
+      "line": 3065,
+      "url": "https://www.gov.cn/zhengce/jiedu/jdzl/gxbcyjs/index.htm",
+      "method": "M4+M3",
+      "domain": "www.zhanjiang.gov.cn"
+    }
+  },
+  "广东省>肇庆市": {},
+  "广东省>惠州市": {},
+  "广东省>梅州市": {},
+  "湖北省>鄂州市": {},
+  "广东省>汕尾市": {
+    "陆河县": {
+      "line": 3126,
+      "url": "http://www.luhe.gov.cn/",
+      "method": "M4",
+      "domain": "www.luhe.gov.cn"
+    },
+    "陆丰市": {
+      "line": 3125,
+      "url": "http://www.shanwei.gov.cn/",
+      "method": "M4",
+      "domain": "www.shanwei.gov.cn"
+    },
+    "海丰县": {
+      "line": 3124,
+      "url": "http://www.gdhf.gov.cn/",
+      "method": "M4",
+      "domain": "www.gdhf.gov.cn"
+    },
+    "城区": {
+      "line": 3123,
+      "url": "http://www.shanwei.gov.cn/",
+      "method": "M4",
+      "domain": "www.shanwei.gov.cn"
+    }
+  },
+  "广东省>河源市": {
+    "源城区": {
+      "line": 3133,
+      "url": "http://www.heyuan.gov.cn/zwgk/czyjs/index.html",
+      "method": "M4+M3",
+      "domain": "www.heyuan.gov.cn"
+    },
+    "东源县": {
+      "line": 3138,
+      "url": "http://www.heyuan.gov.cn/zwgk/czyjs/index.html",
+      "method": "M4+M3",
+      "domain": "www.heyuan.gov.cn"
+    },
+    "龙川县": {
+      "line": 3135,
+      "url": "http://www.heyuan.gov.cn/zwgk/czyjs/index.html",
+      "method": "M4+M3",
+      "domain": "www.heyuan.gov.cn"
+    }
+  },
+  "湖北省>荆门市": {
+    "京山市": {
+      "line": 2653,
+      "url": "http://www.jingmen.gov.cn/",
+      "method": "M4",
+      "domain": "www.jingmen.gov.cn"
+    },
+    "沙洋县": {
+      "line": 2651,
+      "url": "http://www.hubei.gov.cn/zhuanti/2021zt/gxbcyjs/index.shtml",
+      "method": "M4+M3",
+      "domain": "zwfw.hubei.gov.cn"
+    },
+    "东宝区": {
+      "line": 2649,
+      "url": "http://www.hubei.gov.cn/zhuanti/2021zt/gxbcyjs/index.shtml",
+      "method": "M4+M3",
+      "domain": "zwfw.hubei.gov.cn"
+    },
+    "掇刀区": {
+      "line": 2650,
+      "url": "http://www.hubei.gov.cn/zhuanti/2021zt/gxbcyjs/index.shtml",
+      "method": "M4+M3",
+      "domain": "zwfw.hubei.gov.cn"
+    },
+    "钟祥市": {
+      "line": 2652,
+      "url": "http://www.hubei.gov.cn/zhuanti/2021zt/gxbcyjs/index.shtml",
+      "method": "M4+M3",
+      "domain": "zwfw.hubei.gov.cn"
+    }
+  },
+  "广东省>阳江市": {
+    "阳春市": {
+      "line": 3148,
+      "url": "http://www.yangjiang.gov.cn/",
+      "method": "M4",
+      "domain": "www.yangjiang.gov.cn"
+    },
+    "阳西县": {
+      "line": 3147,
+      "url": "http://www.yangjiang.gov.cn/",
+      "method": "M4",
+      "domain": "www.yangjiang.gov.cn"
+    },
+    "阳东区": {
+      "line": 3146,
+      "url": "http://www.yangjiang.gov.cn/",
+      "method": "M4",
+      "domain": "www.yangjiang.gov.cn"
+    }
+  },
+  "广东省>清远市": {},
+  "湖北省>孝感市": {
+    "云梦县": {
+      "line": 2663,
+      "url": "http://www.yunmeng.gov.cn/",
+      "method": "M4",
+      "domain": "www.yunmeng.gov.cn"
+    },
+    "大悟县": {
+      "line": 2662,
+      "url": "http://www.hbdawu.gov.cn/c/dwx/czzj.jhtml",
+      "method": "M4+M3",
+      "domain": "www.hbdawu.gov.cn"
+    },
+    "安陆市": {
+      "line": 2665,
+      "url": "https://www.xiaogan.gov.cn/fw/gxbcyjs/",
+      "method": "M4+M3",
+      "domain": "www.xiaogan.gov.cn"
+    },
+    "应城市": {
+      "line": 2664,
+      "url": "http://www.yingcheng.gov.cn/",
+      "method": "M4",
+      "domain": "www.yingcheng.gov.cn"
+    },
+    "孝南区": {
+      "line": 2660,
+      "url": "https://www.xiaogan.gov.cn/fw/gxbcyjs/",
+      "method": "M4+M3",
+      "domain": "www.xiaogan.gov.cn"
+    },
+    "孝昌县": {
+      "line": 2661,
+      "url": "https://www.xiaogan.gov.cn/fw/gxbcyjs/",
+      "method": "M4+M3",
+      "domain": "www.xiaogan.gov.cn"
+    },
+    "汉川市": {
+      "line": 2666,
+      "url": "http://www.hanchuan.gov.cn/",
+      "method": "M4",
+      "domain": "www.hanchuan.gov.cn"
+    }
+  },
+  "广东省>潮州市": {
+    "湘桥区": {
+      "line": 3171,
+      "url": "http://www.xiangqiao.gov.cn/zwgk/czxx/",
+      "method": "M4+M3",
+      "domain": "www.xiangqiao.gov.cn"
+    },
+    "潮安区": {
+      "line": 3172,
+      "url": "https://www.gov.cn/zhengce/jiedu/jdzl/gxbcyjs/index.htm",
+      "method": "M4+M3",
+      "domain": "www.chaoan.gov.cn"
+    },
+    "饶平县": {
+      "line": 3173,
+      "url": "http://www.raoping.gov.cn/zwgk/czxx/",
+      "method": "M4+M3",
+      "domain": "www.raoping.gov.cn"
+    }
+  },
+  "广东省>揭阳市": {
+    "榕城区": {
+      "line": 3180,
+      "url": "http://www.jieyang.gov.cn/",
+      "method": "M4",
+      "domain": "www.jieyang.gov.cn"
+    },
+    "揭西县": {
+      "line": 3182,
+      "url": "http://www.jiexi.gov.cn/zdlyxxgk/czysjshsgjfgk/czzjzdjc/index.html",
+      "method": "M4+M3",
+      "domain": "www.jiexi.gov.cn"
+    },
+    "普宁市": {
+      "line": 3184,
+      "url": "http://www.jieyang.gov.cn/",
+      "method": "M4",
+      "domain": "www.jieyang.gov.cn"
+    },
+    "揭东区": {
+      "line": 3181,
+      "url": "http://www.jieyang.gov.cn/",
+      "method": "M4",
+      "domain": "www.jieyang.gov.cn"
+    },
+    "惠来县": {
+      "line": 3183,
+      "url": "http://www.huilai.gov.cn/zwgk/czyjs/index.html",
+      "method": "M4+M3",
+      "domain": "www.huilai.gov.cn"
+    }
+  },
+  "湖北省>荆州市": {
+    "沙市区": {
+      "line": 2673,
+      "url": "http://zwgk.shashi.gov.cn/special_yjs_xsq_index.shtml?column_id=39465",
+      "method": "M4+M3",
+      "domain": "www.shashi.gov.cn"
+    },
+    "石首市": {
+      "line": 2678,
+      "url": "http://zwgk.shishou.gov.cn/list_children_yjs.shtml?column_id=39470",
+      "method": "M4+M3",
+      "domain": "www.shishou.gov.cn"
+    },
+    "公安县": {
+      "line": 2675,
+      "url": "http://www.gongan.gov.cn/",
+      "method": "M4",
+      "domain": "www.gongan.gov.cn"
+    },
+    "江陵县": {
+      "line": 2676,
+      "url": "http://www.jiangling.gov.cn/",
+      "method": "M4",
+      "domain": "www.jiangling.gov.cn"
+    },
+    "松滋市": {
+      "line": 2677,
+      "url": "http://www.hbsz.gov.cn/",
+      "method": "M4",
+      "domain": "www.hbsz.gov.cn"
+    },
+    "荆州区": {
+      "line": 2674,
+      "url": "http://www.jingzhouqu.gov.cn/ztzl/gxbcyjs/index.shtml",
+      "method": "M4+M3",
+      "domain": "www.jingzhouqu.gov.cn"
+    },
+    "监利市": {
+      "line": 2680,
+      "url": "http://zwgk.jianli.gov.cn/list_children_yjs.shtml?column_id=39471",
+      "method": "M4+M3",
+      "domain": "www.jianli.gov.cn"
+    },
+    "洪湖市": {
+      "line": 2679,
+      "url": "http://zwgk.honghu.gov.cn/list_children_yjs.shtml?column_id=39468",
+      "method": "M4+M3",
+      "domain": "www.honghu.gov.cn"
+    }
+  },
+  "湖北省>咸宁市": {},
+  "广东省>云浮市": {
+    "新兴县": {
+      "line": 3193,
+      "url": "https://www.yunfu.gov.cn/zwgk/czxx/",
+      "method": "M4+M3",
+      "domain": "www.yunfu.gov.cn"
+    },
+    "郁南县": {
+      "line": 3194,
+      "url": "https://www.yunfu.gov.cn/zwgk/czxx/",
+      "method": "M4+M3",
+      "domain": "www.yunfu.gov.cn"
+    },
+    "罗定市": {
+      "line": 3195,
+      "url": "http://www.luoding.gov.cn/",
+      "method": "M4",
+      "domain": "www.luoding.gov.cn"
+    },
+    "云城区": {
+      "line": 3191,
+      "url": "http://www.yfyunchengqu.gov.cn/",
+      "method": "M4",
+      "domain": "www.yfyunchengqu.gov.cn"
+    },
+    "云安区": {
+      "line": 3192,
+      "url": "http://www.yunan.gov.cn/",
+      "method": "M4",
+      "domain": "www.yunan.gov.cn"
+    }
+  },
+  "湖北省>随州市": {
+    "广水市": {
+      "line": 2717,
+      "url": "http://www.guangshui.gov.cn/zwgk/xxgkml/czzj/",
+      "method": "M4+M3",
+      "domain": "www.guangshui.gov.cn"
+    },
+    "曾都区": {
+      "line": 2715,
+      "url": "http://www.suizhou.gov.cn/zwgk/xxgk/czzj/czyjs/",
+      "method": "M4+M3",
+      "domain": "www.suizhou.gov.cn"
+    },
+    "随县": {
+      "line": 2716,
+      "url": "http://yjs.zgsuixian.gov.cn:30105/",
+      "method": "M4+M3",
+      "domain": "www.zgsuixian.gov.cn"
+    }
+  },
+  "湖北省>恩施土家族苗族自治州": {
+    "宣恩县": {
+      "line": 2728,
+      "url": "http://www.xe.gov.cn/xxgk/gkml/gysyjs/",
+      "method": "M4+M3",
+      "domain": "www.xe.gov.cn"
+    },
+    "咸丰县": {
+      "line": 2729,
+      "url": "http://czj.enshi.gov.cn/",
+      "method": "M4",
+      "domain": "czj.enshi.gov.cn"
+    },
+    "利川市": {
+      "line": 2725,
+      "url": "http://www.lichuan.gov.cn/",
+      "method": "M4",
+      "domain": "www.lichuan.gov.cn"
+    },
+    "巴东县": {
+      "line": 2727,
+      "url": "http://www.hbbd.gov.cn/xxgk/gkml/czzjc/hmhnczbtzj/",
+      "method": "M4+M3",
+      "domain": "www.hbbd.gov.cn"
+    },
+    "建始县": {
+      "line": 2726,
+      "url": "http://www.hbjs.gov.cn/",
+      "method": "M4",
+      "domain": "www.hbjs.gov.cn"
+    },
+    "恩施市": {
+      "line": 2724,
+      "url": "http://www.enshi.gov.cn/zc/xxgkml/czzj/czyjs2021/",
+      "method": "M4+M3",
+      "domain": "www.enshi.gov.cn"
+    },
+    "来凤县": {
+      "line": 2730,
+      "url": "http://czj.enshi.gov.cn/",
+      "method": "M4",
+      "domain": "czj.enshi.gov.cn"
+    },
+    "鹤峰县": {
+      "line": 2731,
+      "url": "http://www.enshi.gov.cn/zc/xxgkml/czzj/czyjs2021/",
+      "method": "M4+M3",
+      "domain": "www.enshi.gov.cn"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import bundle from "@/data/bundle.json";
 import annualIssuance from "@/data/celma-annual-issuance.json";
+import annualBalance from "@/data/celma-annual-balance.json";
 import sourceCatalog from "@/data/source-catalog.json";
 import reports from "@/data/reports.json";
 import type {
@@ -17,6 +18,7 @@ import { sortByDateDesc } from "@/lib/utils";
 
 const appData = bundle as AppDataBundle;
 const issuanceData = annualIssuance as AnnualIssuanceDataset;
+const balanceData = annualBalance as AnnualIssuanceDataset;
 const sourceRegistry = sourceCatalog as SourceCatalogItem[];
 const briefArchive = reports as MonthlyBrief[];
 
@@ -34,6 +36,10 @@ export function getDebtData(): DebtDataItem[] {
 
 export function getAnnualIssuanceDataset() {
   return issuanceData;
+}
+
+export function getAnnualBalanceDataset() {
+  return balanceData;
 }
 
 export function getNews(): NewsItem[] {

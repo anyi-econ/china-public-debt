@@ -1,0 +1,1226 @@
+[
+  {
+    "city": "济南市",
+    "county": "市中区",
+    "portal": "https://jncc.jinan.gov.cn/",
+    "result": {
+      "url": "https://jncc.jinan.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "青岛市",
+    "county": "市南区",
+    "portal": "http://www.qdsn.gov.cn/",
+    "result": {
+      "url": "http://www.qdsn.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.qdsn.gov.cn/zwgk_8/czxx_8/index.shtml",
+          "text": "财政信息",
+          "source": "text-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "青岛市",
+    "county": "市北区",
+    "portal": "http://www.qingdaoshibei.gov.cn/",
+    "result": {
+      "url": "http://www.qingdaoshibei.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "青岛市",
+    "county": "黄岛区",
+    "portal": "http://www.huangdao.gov.cn/",
+    "result": {
+      "url": "https://www.xihaian.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "青岛市",
+    "county": "崂山区",
+    "portal": "http://www.qdlaoshan.gov.cn/",
+    "result": null
+  },
+  {
+    "city": "青岛市",
+    "county": "李沧区",
+    "portal": "http://www.qdlc.gov.cn/",
+    "result": {
+      "url": "http://www.qdlc.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.qdlc.gov.cn/czzl_10/index.shtml",
+          "text": "财政预决算专栏",
+          "source": "text-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "青岛市",
+    "county": "城阳区",
+    "portal": "http://www.chengyang.gov.cn/",
+    "result": {
+      "url": "http://www.chengyang.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "青岛市",
+    "county": "即墨区",
+    "portal": "http://www.jimo.gov.cn/",
+    "result": {
+      "url": "http://www.jimo.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.jimo.gov.cn/zwzt/czxx/",
+          "text": "(url-pattern)",
+          "source": "url-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "青岛市",
+    "county": "胶州市",
+    "portal": "http://www.jiaozhou.gov.cn/",
+    "result": {
+      "url": "http://www.jiaozhou.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.jiaozhou.gov.cn/ztzl/czxx/",
+          "text": "(url-pattern)",
+          "source": "url-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "青岛市",
+    "county": "平度市",
+    "portal": "http://www.pingdu.gov.cn/",
+    "result": {
+      "url": "http://www.pingdu.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "青岛市",
+    "county": "莱西市",
+    "portal": "http://www.laixi.gov.cn/",
+    "result": {
+      "url": "http://www.laixi.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "枣庄市",
+    "county": "市中区",
+    "portal": "http://www.neijiangshizhongqu.gov.cn/",
+    "result": {
+      "url": "https://www.neijiangshizhongqu.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "枣庄市",
+    "county": "薛城区",
+    "portal": "http://www.xuecheng.gov.cn/",
+    "result": {
+      "url": "http://www.xuecheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.xuecheng.gov.cn/zwgk/zwgkzt/czyjs/",
+          "text": "财政预决算",
+          "source": "text-match"
+        },
+        {
+          "href": "http://www.xuecheng.gov.cn/zwgk/zwgkzt/czyjs/",
+          "text": "(url-pattern)",
+          "source": "url-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "枣庄市",
+    "county": "峄城区",
+    "portal": "http://www.ycq.gov.cn/",
+    "result": {
+      "url": "http://www.ycq.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.ycq.gov.cn/zwgk/gkzt/czyjsgkpt/",
+          "text": "财政信息",
+          "source": "text-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "枣庄市",
+    "county": "台儿庄区",
+    "portal": "http://www.tez.gov.cn/",
+    "result": {
+      "url": "http://www.tez.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.tez.gov.cn/index_5609.html?ClassInfoId=5992",
+          "text": "财政预决算",
+          "source": "text-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "枣庄市",
+    "county": "山亭区",
+    "portal": "http://www.shanting.gov.cn/",
+    "result": {
+      "url": "http://www.shanting.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "枣庄市",
+    "county": "滕州市",
+    "portal": "http://www.tengzhou.gov.cn/",
+    "result": {
+      "url": "http://www.tengzhou.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "东营市",
+    "county": "东营区",
+    "portal": "http://www.dyq.gov.cn/",
+    "result": {
+      "url": "http://www.dyq.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "东营市",
+    "county": "河口区",
+    "portal": "http://www.hekou.gov.cn/",
+    "result": {
+      "url": "http://www.hekou.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "东营市",
+    "county": "垦利区",
+    "portal": "http://www.kenli.gov.cn/",
+    "result": {
+      "url": "http://www.kenli.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "东营市",
+    "county": "利津县",
+    "portal": "http://www.lijin.gov.cn/",
+    "result": {
+      "url": "http://www.lijin.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "东营市",
+    "county": "广饶县",
+    "portal": "http://www.guangrao.gov.cn/",
+    "result": {
+      "url": "http://www.guangrao.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "烟台市",
+    "county": "莱山区",
+    "portal": "https://www.ytlaishan.gov.cn/",
+    "result": {
+      "url": "https://www.ytlaishan.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "烟台市",
+    "county": "栖霞市",
+    "portal": "https://www.qixia.gov.cn/",
+    "result": null
+  },
+  {
+    "city": "潍坊市",
+    "county": "潍城区",
+    "portal": "http://www.weicheng.gov.cn/",
+    "result": {
+      "url": "http://www.weicheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "潍坊市",
+    "county": "寒亭区",
+    "portal": "http://www.hanting.gov.cn/",
+    "result": {
+      "url": "http://www.hanting.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "潍坊市",
+    "county": "坊子区",
+    "portal": "http://www.fangzi.gov.cn/",
+    "result": {
+      "url": "http://www.fangzi.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "潍坊市",
+    "county": "奎文区",
+    "portal": "http://www.kuiwen.gov.cn/",
+    "result": {
+      "url": "https://www.kuiwen.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "潍坊市",
+    "county": "临朐县",
+    "portal": "http://www.linqu.gov.cn/",
+    "result": {
+      "url": "http://www.linqu.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.linqu.gov.cn/xxgk/czyjs/",
+          "text": "财政预决算",
+          "source": "text-match"
+        },
+        {
+          "href": "http://www.linqu.gov.cn/xxgk/czyjs/",
+          "text": "(url-pattern)",
+          "source": "url-match"
+        },
+        {
+          "href": "http://www.linqu.gov.cn/rdzt/czyjs/",
+          "text": "(url-pattern)",
+          "source": "url-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "潍坊市",
+    "county": "昌乐县",
+    "portal": "http://www.changle.gov.cn/",
+    "result": {
+      "url": "http://www.changle.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "潍坊市",
+    "county": "青州市",
+    "portal": "http://www.qingzhou.gov.cn/",
+    "result": {
+      "url": "http://www.qingzhou.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "潍坊市",
+    "county": "诸城市",
+    "portal": "http://www.zhucheng.gov.cn/",
+    "result": {
+      "url": "http://www.zhucheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.zhucheng.gov.cn/ztzl/czyjs/",
+          "text": "财政预决算公开",
+          "source": "text-match"
+        },
+        {
+          "href": "http://www.zhucheng.gov.cn/ztzl/czyjs/",
+          "text": "(url-pattern)",
+          "source": "url-match"
+        },
+        {
+          "href": "http://www.zhucheng.gov.cn/ztzl/czyjs/",
+          "text": "(url-pattern)",
+          "source": "url-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "潍坊市",
+    "county": "寿光市",
+    "portal": "http://www.shouguang.gov.cn/",
+    "result": {
+      "url": "https://www.shouguang.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "潍坊市",
+    "county": "安丘市",
+    "portal": "http://www.anqiu.gov.cn/",
+    "result": {
+      "url": "http://www.anqiu.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "潍坊市",
+    "county": "高密市",
+    "portal": "http://www.gaomi.gov.cn/",
+    "result": {
+      "url": "http://www.gaomi.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "潍坊市",
+    "county": "昌邑市",
+    "portal": "http://www.changyi.gov.cn/",
+    "result": {
+      "url": "http://www.changyi.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "济宁市",
+    "county": "任城区",
+    "portal": "http://jirczwfw.sd.gov.cn/",
+    "result": {
+      "url": "http://jirczwfw.sd.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "济宁市",
+    "county": "兖州区",
+    "portal": "http://www.yanzhou.gov.cn/",
+    "result": {
+      "url": "http://www.yanzhou.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "济宁市",
+    "county": "微山县",
+    "portal": "http://jiwszwfw.sd.gov.cn/",
+    "result": {
+      "url": "http://jiwszwfw.sd.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "济宁市",
+    "county": "鱼台县",
+    "portal": "http://jiytzwfw.sd.gov.cn/",
+    "result": {
+      "url": "http://jiytzwfw.sd.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "济宁市",
+    "county": "金乡县",
+    "portal": "http://www.jinxiang.gov.cn/",
+    "result": null
+  },
+  {
+    "city": "济宁市",
+    "county": "嘉祥县",
+    "portal": "http://www.jiaxiang.gov.cn/",
+    "result": null
+  },
+  {
+    "city": "济宁市",
+    "county": "汶上县",
+    "portal": "http://www.wenshang.gov.cn/",
+    "result": {
+      "url": "http://www.wenshang.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "济宁市",
+    "county": "泗水县",
+    "portal": "http://www.sishui.gov.cn/",
+    "result": {
+      "url": "http://www.sishui.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "济宁市",
+    "county": "梁山县",
+    "portal": "http://www.liangshan.gov.cn/",
+    "result": {
+      "url": "http://www.liangshan.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "济宁市",
+    "county": "曲阜市",
+    "portal": "http://www.qufu.gov.cn/",
+    "result": null
+  },
+  {
+    "city": "济宁市",
+    "county": "邹城市",
+    "portal": "http://www.zoucheng.gov.cn/",
+    "result": {
+      "url": "http://www.zoucheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "泰安市",
+    "county": "泰山区",
+    "portal": "http://www.sdtaishan.gov.cn/",
+    "result": {
+      "url": "http://www.sdtaishan.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "泰安市",
+    "county": "岱岳区",
+    "portal": "http://www.daiyue.gov.cn/",
+    "result": {
+      "url": "http://www.daiyue.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.daiyue.gov.cn/art/2026/4/1/art_181205_10377511.html",
+          "text": "2026年1-3月份财政收支简报",
+          "source": "text-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "泰安市",
+    "county": "宁阳县",
+    "portal": "http://www.ny.gov.cn/",
+    "result": {
+      "url": "http://www.ny.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "泰安市",
+    "county": "东平县",
+    "portal": "http://www.dongping.gov.cn/",
+    "result": {
+      "url": "http://www.dongping.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "泰安市",
+    "county": "新泰市",
+    "portal": "http://www.xintai.gov.cn/",
+    "result": {
+      "url": "http://www.xintai.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "泰安市",
+    "county": "肥城市",
+    "portal": "http://www.feicheng.gov.cn/",
+    "result": {
+      "url": "http://www.feicheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "威海市",
+    "county": "环翠区",
+    "portal": "http://www.huancui.gov.cn/",
+    "result": {
+      "url": "http://www.huancui.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "威海市",
+    "county": "荣成市",
+    "portal": "http://www.rongcheng.gov.cn/",
+    "result": {
+      "url": "http://www.rongcheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "威海市",
+    "county": "乳山市",
+    "portal": "http://www.rushan.gov.cn/",
+    "result": {
+      "url": "http://www.rushan.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "日照市",
+    "county": "东港区",
+    "portal": "http://www.rzdg.gov.cn/",
+    "result": null
+  },
+  {
+    "city": "日照市",
+    "county": "岚山区",
+    "portal": "http://www.rzlanshan.gov.cn/",
+    "result": {
+      "url": "http://www.rzlanshan.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "日照市",
+    "county": "五莲县",
+    "portal": "http://www.wulian.gov.cn/",
+    "result": {
+      "url": "http://www.wulian.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "日照市",
+    "county": "莒县",
+    "portal": "http://www.juxian.gov.cn/",
+    "result": {
+      "url": "http://www.juxian.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "临沂市",
+    "county": "河东区",
+    "portal": "http://www.hedong.gov.cn/",
+    "result": {
+      "url": "http://www.hedong.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "临沂市",
+    "county": "沂南县",
+    "portal": "http://www.yinan.gov.cn/",
+    "result": {
+      "url": "http://www.yinan.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "临沂市",
+    "county": "郯城县",
+    "portal": "http://www.tancheng.gov.cn/",
+    "result": {
+      "url": "http://www.tancheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "临沂市",
+    "county": "兰陵县",
+    "portal": "http://www.lanling.gov.cn/",
+    "result": {
+      "url": "http://www.lanling.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "临沂市",
+    "county": "费县",
+    "portal": "http://www.feixian.gov.cn/",
+    "result": {
+      "url": "http://www.feixian.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "临沂市",
+    "county": "临沭县",
+    "portal": "http://www.linshu.gov.cn/",
+    "result": {
+      "url": "http://www.linshu.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "德州市",
+    "county": "德城区",
+    "portal": "http://www.decheng.gov.cn/",
+    "result": {
+      "url": "http://www.decheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "德州市",
+    "county": "陵城区",
+    "portal": "http://www.dzlc.gov.cn/",
+    "result": {
+      "url": "http://www.dzlc.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "德州市",
+    "county": "宁津县",
+    "portal": "http://sdningjin.gov.cn/",
+    "result": {
+      "url": "http://sdningjin.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "德州市",
+    "county": "庆云县",
+    "portal": "http://www.qingyun.gov.cn/",
+    "result": {
+      "url": "http://www.qingyun.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "德州市",
+    "county": "临邑县",
+    "portal": "http://www.linyixian.gov.cn/",
+    "result": {
+      "url": "http://www.linyixian.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "德州市",
+    "county": "齐河县",
+    "portal": "http://www.qihe.gov.cn/",
+    "result": {
+      "url": "http://www.qihe.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "德州市",
+    "county": "平原县",
+    "portal": "http://www.zgpingyuan.gov.cn/",
+    "result": {
+      "url": "http://www.zgpingyuan.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "德州市",
+    "county": "夏津县",
+    "portal": "http://www.xiajin.gov.cn/",
+    "result": {
+      "url": "http://www.xiajin.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://xiajin.czyjsgk.com:5000/",
+          "text": "预算公开平台",
+          "source": "text-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "德州市",
+    "county": "武城县",
+    "portal": "http://www.wucheng.gov.cn/",
+    "result": {
+      "url": "http://www.wucheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "德州市",
+    "county": "禹城市",
+    "portal": "http://www.yucheng.gov.cn/",
+    "result": null
+  },
+  {
+    "city": "德州市",
+    "county": "乐陵市",
+    "portal": "http://www.laoling.gov.cn/",
+    "result": {
+      "url": "http://www.laoling.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "聊城市",
+    "county": "东昌府区",
+    "portal": "http://www.dongchangfu.gov.cn/",
+    "result": {
+      "url": "http://www.dongchangfu.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.dongchangfu.gov.cn/site_dcfqczjk/channel_kf_dcfqczjk_64e5be0dd54d26276cffd3c8/doc_69b750d046063d182bb2d1e4.html",
+          "text": "(channel-match)",
+          "source": "channel-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "聊城市",
+    "county": "茌平区",
+    "portal": "http://www.chiping.gov.cn/",
+    "result": {
+      "url": "http://www.chiping.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [
+        {
+          "href": "http://www.chiping.gov.cn/site_cpqczjc/channel_x_4563_10489/doc_66c68d5887a367ceec0d6a9f.html",
+          "text": "(channel-match)",
+          "source": "channel-match"
+        }
+      ]
+    }
+  },
+  {
+    "city": "聊城市",
+    "county": "阳谷县",
+    "portal": "http://www.yanggu.gov.cn/",
+    "result": {
+      "url": "http://www.yanggu.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "聊城市",
+    "county": "莘县",
+    "portal": "http://www.shenxian.gov.cn/",
+    "result": null
+  },
+  {
+    "city": "聊城市",
+    "county": "东阿县",
+    "portal": "http://www.donge.gov.cn/",
+    "result": null
+  },
+  {
+    "city": "聊城市",
+    "county": "冠县",
+    "portal": "http://www.guanxian.gov.cn/",
+    "result": {
+      "url": "http://www.guanxian.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "聊城市",
+    "county": "高唐县",
+    "portal": "http://www.gaotang.gov.cn/",
+    "result": {
+      "url": "http://www.gaotang.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "滨州市",
+    "county": "滨城区",
+    "portal": "http://www.bincheng.gov.cn/",
+    "result": {
+      "url": "http://www.bincheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "滨州市",
+    "county": "沾化区",
+    "portal": "http://www.zhanhua.gov.cn/",
+    "result": {
+      "url": "http://www.zhanhua.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "滨州市",
+    "county": "惠民县",
+    "portal": "http://www.huimin.gov.cn/",
+    "result": {
+      "url": "http://www.huimin.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "滨州市",
+    "county": "阳信县",
+    "portal": "http://www.yangxin.gov.cn/",
+    "result": {
+      "url": "http://www.yangxin.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "滨州市",
+    "county": "无棣县",
+    "portal": "http://www.wudi.gov.cn/",
+    "result": {
+      "url": "http://www.wudi.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "滨州市",
+    "county": "博兴县",
+    "portal": "http://www.boxing.gov.cn/",
+    "result": null
+  },
+  {
+    "city": "滨州市",
+    "county": "邹平市",
+    "portal": "http://www.zouping.gov.cn/",
+    "result": {
+      "url": "http://www.zouping.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "菏泽市",
+    "county": "牡丹区",
+    "portal": "http://www.mudan.gov.cn/",
+    "result": {
+      "url": "http://www.mudan.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "菏泽市",
+    "county": "定陶区",
+    "portal": "http://www.dingtao.gov.cn/",
+    "result": {
+      "url": "http://www.dingtao.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "菏泽市",
+    "county": "曹县",
+    "portal": "http://www.caoxian.gov.cn/",
+    "result": {
+      "url": "http://www.caoxian.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "菏泽市",
+    "county": "单县",
+    "portal": "http://www.shanxian.gov.cn/",
+    "result": {
+      "url": "http://www.shanxian.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "菏泽市",
+    "county": "成武县",
+    "portal": "http://www.chengwu.gov.cn/",
+    "result": {
+      "url": "http://www.chengwu.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "菏泽市",
+    "county": "巨野县",
+    "portal": "http://www.juye.gov.cn/",
+    "result": {
+      "url": "http://www.juye.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "菏泽市",
+    "county": "郓城县",
+    "portal": "http://www.yuncheng.gov.cn/",
+    "result": {
+      "url": "http://www.yuncheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "菏泽市",
+    "county": "鄄城县",
+    "portal": "http://www.juancheng.gov.cn/",
+    "result": {
+      "url": "http://www.juancheng.gov.cn/",
+      "status": 200,
+      "ok": true,
+      "results": [],
+      "noFiscalLinks": true
+    }
+  },
+  {
+    "city": "菏泽市",
+    "county": "东明县",
+    "portal": "http://www.dongming.gov.cn/",
+    "result": null
+  }
+]

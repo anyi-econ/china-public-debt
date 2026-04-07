@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="SiteName" content="广东省人民政府门户网站">
+<meta name="SiteDomain" content="www.gd.gov.cn">
+<meta name="SiteIDCode" content="4400000131">
+<meta name="ColumnName" content="财政信息">
+<meta name="ColumnDescription" content="财政信息栏目内容包含广东省地方财政收支信息、市级部门预算信息、市级部门决算信息、预算报告、决算报告、专项资金管理使用情况报告等。">
+<meta name="ColumnKeywords" content="省级财政预决算、部门财政预决算、地市财政预决算、审计工作报告">
+<meta name="ColumnType" content="财政信息">
+<meta name="Keywords" content="广东省人民政府门户网站,政府,GOV,我有话对省长说,广东要闻,政务服务,在线访谈,广东,政策,政策解读,公报,文件,常务会,政府权责清单,文件解读,督查,新闻发布会,走进广东,数据开放,民生,政府工作报告,权责清单,重点领域,公示公告" />
+<meta name="description" content="广东省人民政府门户网站由广东省人民政府办公厅主办，南方新闻网、数字广东网络建设有限公司承办。" />
+<title>财政信息&nbsp;&nbsp;广东省人民政府门户网站</title>
+<link type="text/css" rel="stylesheet" href="/css/style_test_0823.css">
+<base target="_blank">
+<script>(function(u){if((u.indexOf("iP")>-1||u.indexOf("Android")>-1)&&document.location.href!="http://www.gd.gov.cn/zwgk/czxx/mindex.html"){document.location.href="http://www.gd.gov.cn/zwgk/czxx/mindex.html"}})(window.navigator.userAgent);</script>
+    <link type="text/css" rel="stylesheet" href="css/dczl_style.css">
+    <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css">
+    <script src="js/idangerous.swiper.min.js"></script>
+</head>
+<body>
+<div style="opacity:0;text-indent:-9999px;width:0;height:0;overflow:hidden">
+<a tabindex="1" aria-label="欢迎访问广东省人民政府门户网站，请用 alt 加右键开启智能盲道功能，按 alt 加 4打开导航区，按 tab 键切换读取导航区元素；按 alt 加 5 打开视窗区，按 tab 键切换读取视窗区元素；按 alt 加 6 打开交互区，按 tab 键切换读取交互区元素；按 alt 加 7 打开服务区，按 tab 键切换读取服务区元素；按 alt 加 L 开启或关闭语音阅读声音；按 shift 加上方向键开启或关闭大字幕；按 alt 加问号打开智能盲道帮助页面；按 alt 加 q 键退出智能盲道；按 alt 加 9 退出无障碍服务。" target="_self"
+role="alert" id="wza-intro"></a>
+</div>
+<script>
+	// tab 切换
+	window.$bindArrow = function (obj) {
+    var $tabs = $(obj.tabs)
+    var $tabsPanel = $(obj.tabsPanel)
+    var $index = obj.initPos || 0
+    $tabs.bind(
+    {
+        keydown: function(ev){
+            var LEFT_ARROW = 37;
+            var UP_ARROW = 38;
+            var RIGHT_ARROW = 39;
+            var DOWN_ARROW = 40;
+
+            var k = ev.which || ev.keyCode;
+
+            if (k >= LEFT_ARROW && k <= DOWN_ARROW){
+                if (k == LEFT_ARROW || k == UP_ARROW){
+                    if ($index > 0) {
+                        $index--;
+                    }
+                    else {
+                        $index = $tabs.length - 1;
+                    }
+                }
+                else if (k == RIGHT_ARROW || k == DOWN_ARROW){
+                    if ($index < ($tabs.length - 1)){
+                        $index++;
+                    }
+                    else {
+                        $index = 0;
+                    }
+                }
+                // $($tabs.get($index)).click();
+                setFocus($index)
+                ev.preventDefault();
+            }
+        },
+        // click: function(ev){
+        // 	$index = $.inArray(this, $tabs.get())
+        // 	setFocus($index)
+        // }
+    })
+
+    $tabsPanel.bind({
+        keydown: function(ev) {
+            var ESC = 27
+            var k = ev.which || ev.keyCode;
+            if (k === ESC) {
+                $(obj.tabs + '[tabindex=0]').focus()
+                ev.preventDefault();
+                ev.stopPropagation();
+            }
+        }
+    })
+
+    //初始化
+    init()
+
+    function setChildNode($index) {
+        $tabs.find(obj.childNode).attr(
+        {
+            tabindex: '-1',
+            'aria-selected': 'false'
+        })
+
+        $($tabs.get($index)).find(obj.childNode).attr(
+        {
+            tabindex: '0',
+            'aria-selected': 'true'
+        })
+    }
+
+    function init() {
+        var initCount =  0;
+        if (obj.childNode) {
+            setChildNode(initCount)
+        }
+        $tabs.attr(
+        {
+            tabindex: '-1',
+            'aria-selected': 'false'
+        }).removeClass(obj.active)
+
+        $($tabs.get($index)).attr(
+        {
+            tabindex: '0',
+            'aria-selected': 'true'
+        }).addClass(obj.active)
+    }
+
+    function initTree(p, cb) {
+        
+        for (var i = 0; i < p.children.length; i++) {
+            // 遍历第一级子元素
+            var child = p.children[i];
+            if(cb){
+                cb(child);
+            }
+            // 递归
+            initTree(child);
+        }
+    }
+    
+    function setFocus($index) {
+        $tabs.attr(
+        {
+            tabindex: '-1',
+            'aria-selected': 'false'
+        }).removeClass(obj.active)
+
+        $($tabs.get($index)).attr(
+        {
+            tabindex: '0',
+            'aria-selected': 'true'
+        }).addClass(obj.active).focus()
+        // 控制区块显隐方式
+        if(obj.type === 'display'){
+            $tabsPanel.hide()
+
+            $($tabsPanel.get($index)).show()
+        }else if(obj.type === 'animate'){
+            // do something
+
+            // $tabsPanel.each(function(){
+            // 	initTree(this, function(ele){
+            // 		$(ele).attr({
+            // 			tabindex: '-1',
+            // 		});
+            // 	})
+            // });
+
+            // initTree($($tabsPanel.get($index)), function(ele){
+            // 	$(ele).attr({
+            // 		tabindex: '0',
+            // 	});
+            // })
+            $tabsPanel.attr(
+            {
+                tabindex: '-1',
+            });
+            $($tabsPanel.get($index)).attr(
+            {
+                tabindex: '0',
+            });
+        }
+        if (obj.childNode) {
+            setChildNode($index)
+        }
+    }
+}
+
+	// select 切换
+	window.$bindSelect = function(obj) {  
+		var $selectedItem = $(obj.selectedItem)
+		var $menus = $(obj.menus)
+		var $index = 0     
+		$selectedItem.attr(
+			{
+				tabindex: '0',
+				role: 'menu'
+			})
+		$menus.attr(
+			{
+				role: 'menuitem'
+			})
+		$selectedItem.bind(
+			{
+				keydown: function(ev, inx) {
+					var SPACE = 32
+					var ESC = 27  
+					var ENTER = 13        
+					var k = ev.which || ev.keyCode;
+					if (k == SPACE || k == ENTER) {
+						if(ev.preventDefault){
+							ev.preventDefault();
+						}else{
+							window.event.returnValue = false;
+						}
+						setFocus(ev)
+					}
+					if (k == ESC) {
+						setClose(ev)
+					}
+
+				}
+			})
+
+		function setClose(ev) {
+			var target = $(ev.target)
+			var selectedItem = target.closest(obj.selectedItem)
+			var panel = selectedItem.find(obj.menus)
+			panel.hide()
+			selectedItem.focus()
+		}
+
+		function setFocus(ev) {
+			var panel = $(ev.target).find(obj.menus)
+			$menus.hide()
+			panel.show()
+		}
+	}
+</script>
+<style>
+.czxx-er h1{font:22px/40px "Microsoft YaHei";color:#2e6da1;padding-top:10px;font-weight:bold;}
+.yujues{width:1198px;height:348px;overflow:hidden;border:1px solid #c9c9c9;margin:10px 0 30px;}
+.yjs{width:570px;margin:0 0 0 15px;}
+.yjs.right,.bmyjs.right{margin:0 15px 0 0;}
+.yjs .itm,.bmyjs .itm{background:#fff;font-weight:bold;width:auto;overflow:hidden;color: #2e6da1;border-bottom: 6px solid #2e6da1;margin:5px 0 0;background:#fff;}
+.yjs .itm a:hover,.bmyjs .itm:hover{text-decoration:none;}
+.yjs ul,.yjs li,.bmyjs ul,.bmyjs li{width:100%;list-style:none;overflow:hidden;}
+.yjs ul,.bmyjs ul{margin:20px 0 0;}
+.yjs li,.bmyjs li{line-height:40px;}
+.yjs li .dot,.bmyjs li .dot{width:6px;height:6px;background-color:#bebebe;float:left;margin:18px 14px 0 0;}
+.yjs li .til,.bmyjs li .til{width:400px;overflow:hidden;float:left;text-overflow:ellipsis;white-space:nowrap;}
+.yjs li a,.bmyjs li a{font-size:18px;color:#444;}
+.yjs li .time,.bmyjs li .time{font-size:16px;color:#8d8d8d;float: right;}
+
+.menu ul{
+	 height:356px;
+	 overflow-x:hidden;
+     overflow-y:auto;
+	    }
+		
+.menu1{width:1080px;height:356px;overflow:hidden;border:1px solid #c9c9c9;margin:0 0 15px 0;}
+
+.menu{
+		width: 114px;
+		float: left;
+		cursor: pointer;
+		margin-top:10px;
+		
+	}
+	
+.menu ul li{
+		width:106px;height:38px;background:#95b5ce;text-align:center;color:#fff;line-height:40px;margin:0 0 15px 0;
+	}
+	
+.menu ul li a{font-size:18px;font-weight:bold;}
+
+.menu ul li a.selected{display:block;background:#2f6ea2;color:#fff;width:106px;height:38px;line-height:40px;}
+	
+.menu ul li a:hover{text-decoration:none;}
+
+.content1{margin-top:10px;}
+
+.content1 .menu1 .tab {
+		display: none;
+	}
+
+.content1 .menu1 .active{
+		display: block;
+	}
+
+.bmyjs{width:515px;margin:0 0 0 15px;}
+    
+   
+.viewList .tilSet{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #444;
+    height:51px;
+    cursor: pointer;}
+
+.viewList{width:1200px;overflow:hidden;margin:20px 0 0 0;}
+.viewList ul{margin:20px 30px 0 0;}
+.viewList ul li{margin:0;}
+.viewList .itm{width:auto;font-weight:bold;background:#fff;}
+.viewList .dishizd{width:1220px;}
+.viewList .dishizd li{float:left;width:100px;height:38px;background:#2f6ea2;list-style:none;text-align:center;font:18px/36px "Microsoft YaHei";margin:0 10px 10px 0;color:#fff;}
+.viewList .dishizd li a{color:#fff;}
+.tilSet .more{color:#777;font-size:16px;float:right;padding-top:20px;}
+.tilSet .more:hover{text-decoration:none;}
+.copyright .con{width:1200px;}
+</style>
+<script>
+    /**
+         * 判断是否是pc设备
+         */
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone","SymbianOS", "Windows Phone", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        if(window.screen.width>=768){
+            flag = true;
+        }
+        return flag;
+    }
+    function GetQueryString(name)
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+    var footUrl = window.location.href;
+    //console.log(footUrl.split("/");
+    var tempArr = footUrl.split("/");
+    var endUrl = tempArr[tempArr.length-1];
+    if(endUrl=="mobile.html"){
+        tempArr.splice(-1,1);    
+    }else if(endUrl.indexOf("index")<0 && endUrl.indexOf("post")<0){
+        tempArr[tempArr.length-1] = "mindex.html";
+    }else{
+        tempArr[tempArr.length-1] = "m"+tempArr[tempArr.length-1];
+    }
+    var newUrl="";
+    for(var i=0;i<tempArr.length;i++){
+        newUrl += tempArr[i] +"/";
+    }
+    newUrl = newUrl.substr(0,newUrl.length-1);
+    var _jump = GetQueryString("jump")?GetQueryString("jump"):true;
+    // if(!IsPC()&&!(_jump=="false")){
+    //     window.location.href= newUrl;
+    // }
+</script>
+
+<script>(function(u){if((u.indexOf("iP")>-1||u.indexOf("Android")>-1)&&document.location.href!="http://www.gd.gov.cn/zwgk/czxx/mindex.html"){document.location.href="http://www.gd.gov.cn/zwgk/czxx/mindex.html"}})(window.navigator.userAgent);</script> 
+<link type="text/css" rel="stylesheet" href="/publicTemplete/header.css">
+<script src="/footAsset/jquery.js"></script>
+<style>
+    .headerTop {
+        height:52px;
+        linne-height:52px;
+    }
+    .headerTop .content {
+        line-height: 52px;
+    }
+    .headerTop .content .slh{
+        cursor:pointer; 
+        background:#dd0900;
+        font-weight:bold;
+        margin-top:11px;
+        float:left;
+        font-size:16px;
+        display: inline-block;
+        width:96px;
+        text-align:center;
+        line-height:30px;
+        height:30px;
+        border-radius:6px;
+    }
+    .headerTop .content .slh i{
+        background:url("/publicTemplete/slh.png") no-repeat;
+        width: 17px;
+        height: 18px;
+        vertical-align: -4px;
+        display:inline-block;
+        margin-right:6px;
+    }
+    .head .headCon .dh .btn{
+        width:172px;
+    }
+    .head .headCon .dh .zzllms{
+        background:#f17d00;
+        color:#fffff;
+        text-align:center;
+        font-weight:bold;
+        font-size:22px;
+        cursor:pointer;
+        line-height:36px;
+        height:36px;
+        border-radius:6px;
+        margin-top:12px;
+        padding:0 10px;
+    }
+</style>
+<div class="headerTop">
+    <div class="content clearfix">
+        <div class="right" aria-label="您已进入工具栏服务区" altdes="服务区">
+            <a id="slh" class="slh" title="长者助手"><i></i>长者助手</a>
+            <a target="_blank" href="//service.gd.gov.cn/todos"><img src="/ggtp/login.png" alt="个人中心" title="个人中心">个人中心</a>
+            <a target="_blank" href="https://www.gd.gov.cn/znjqr"><img src="/ggtp/robot.png" alt="智能机器人" title="智能机器人">智能机器人</a> 
+            <a id="wza" style="cursor:pointer;" tabindex="0" aria-label="按 alt 加 4 打开导航区，按 tab 键切换读取导航区元素；按 alt 加 5 打开视窗区，按 tab 键切换读取视窗区元素；按 alt 加 6 打开交互区，按 tab 键切换读取交互区元素；按 alt 加 7 打开服务区，按 tab 键切换读取服务区元素；按 alt 加 L 开启或关闭语音阅读声音；按 shift 加上方向键开启或关闭大字幕；按 alt 加问号打开智能盲道帮助页面；按 alt 加 q 键退出智能盲道；按 alt 加 9 退出无障碍服务。"><img src="/ggtp/wza.png" alt="无障碍" title="无障碍">无障碍</a>
+            <div class="phone">
+                <img src="/ggtp/phone.png" alt="手机版" title="手机版">手机版
+                <div class="sjbewm"><img src="/publicTemplete/sjbewm.jpg"  alt="手机版二维码" title="手机版二维码"></div>
+            </div> 
+            <div class="fjchange"><script type="text/javascript" src="/publicTemplete/languagechange.js"></script></div>
+            <div class="ipv"><img src="/defres/ipv.png" alt="网站支持ipv6" title="网站支持ipv6"> </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".headerTop .content .phone").on("mouseover", function () {
+           $(".headerTop .content .phone .sjbewm").show();
+        });
+        $(".headerTop .content .phone").on("mouseleave", function () {
+           $(".headerTop .content .phone .sjbewm").hide();
+        });
+    });
+</script>
+<div class="head"> 
+    <div class="headCon">
+        <div class="search" wzades="输入关键词可对网站内容进行搜索">
+            <form class="form-wrapper cf" action="https://search.gd.gov.cn/search/all/2" onsubmit="checkKey()" aria-label="您已进入全站搜索交互区，本区域包含1个文本输入框和1个提交按钮" altdes="交互区" role="form">
+                <input type="text" name="keywords" autocomplete="off" aria-label="文本输入框：请输入关键词" altdes>
+                <input type="hidden" name="c" value="index">
+                <input type="hidden" name="a" value="all">
+                <button type="submit" aria-label="提交按钮：按回车键选中选项" role="button"></button>
+            </form>
+        </div>
+        <script>
+            $(".search input[name=keywords]").val("请输入要搜索的内容");
+        	$(".search input[name=keywords]").on("focus",function(){
+                 if($(".search input[ name=keywords]").val()=="请输入要搜索的内容"){
+                	$(".search input[name=keywords]").val("");
+                 }
+            });
+            $(".search input[name=keywords]").on("blur",function(){
+                if($.trim($(".search input[ name=keywords]").val()).length<=0){
+                    $(".search input[name=keywords]").val("请输入要搜索的内容");
+                }
+            });
+            
+            function checkKey(){
+            	if($(".search input[ name=keywords]").val()=="请输入要搜索的内容"){
+                	$(".search input[name=keywords]").val("");
+                }
+            }
+        </script>
+        <div class="dh" wzades="提供网站首页及要闻动态、政务公开、政务服务、互动交流、走进广东等栏目入口">
+            <div style="float:left;" aria-label="您已进入首页及一级栏目导航区" altdes="导航区" tabindex="0">
+                <div class="sy btn">
+                    <a href="https://www.gd.gov.cn"><img src="/images/dh.png" alt="首页" title="首页"></a>
+                </div>
+                                    <div class="btn yaowendongtai">               
+                        <a href="http://www.gd.gov.cn/gdywdt/index.html">要闻动态</a>
+                    </div>
+                                                <div class="btn zhengwugongkai">
+                    <a href="http://www.gd.gov.cn/zwgk/index.html" >政务公开</a>
+                </div>
+                                <div class="btn">  
+                    <a href="https://www.gdzwfw.gov.cn/" >政务服务</a>
+                </div>
+                                <div class="btn hudongjiaoliu">
+                    <a href="http://www.gd.gov.cn/hdjl/index.html" >互动交流</a>
+                </div>
+                                                <div class="btn zoujinguangdong">
+                    <a href="http://www.gd.gov.cn/zjgd/index.html" >走进广东</a>
+                </div>
+                            </div>
+            <div class="zzllms right" aria-label="您已进入长者浏览模式工具服务区" altdes="服务区" target="_self" tabindex="0">长者浏览模式</div>
+        </div>
+    </div>
+</div>
+<script>window.NFCMS_SITE_ID=2;window.NFCMS_PUB_TYPE="page";window.NFCMS_PAGE_ID="1458";</script><script src="//statistics.gd.gov.cn/scripts/s.js?t=1775214827" async></script>
+<script src="//service.gd.gov.cn/wza/wza.js?app=www-gd"></script>
+<script>
+    // IE8 兼容配置
+    window.onload = function() {
+        cnillWzaInstance.startInit("/footAsset/cnill_polyfill.swf");
+
+        // 当tab键聚焦至无障碍按钮时，按回车键可直接打开智能盲道模式
+        cnillWzaInstance.setOption({
+            domId: 'wza' 
+        });
+    }
+    document.getElementById("wza").onclick = function() {
+        // 执行实例的init方法
+        cnillWzaInstance.init(); // cnillWzaInstance为全局变量
+    }
+</script>
+<script src="https://slhsrv.southcn.com/wza/slh.js?app=www-gd"></script>
+<script>
+    // 适老化
+    document.getElementById("slh").onclick = function() {
+        // 执行实例的init方法
+        slhInstance.init();  // cnillWzaInstance为全局变量
+    }
+
+    $(function () {
+        const regex = /(http:\/\/www.gd.gov.cn)(.*)/gm;
+        const regex1 = /(https:\/\/www.gd.gov.cn)(.*)/gm;
+        const str = location.href;
+        let m, group1, group2;
+        $(".zzllms").on("click", function () {    
+            if(str.indexOf("http://www.gd.gov.cn")>=0){
+                while ((m = regex.exec(str)) !== null) {
+                    if (m.index === regex.lastIndex) {
+                        regex.lastIndex++;
+                    }
+
+                    m.forEach(function(match, groupIndex){
+                        if (groupIndex == 1) {
+                            group1 = match;
+                        } else if (groupIndex == 2) {
+                            group2 = match;
+                        }
+                    });
+                }
+                location.href = group1 + '/zzllms' + group2;
+            }else if(str.indexOf("https://www.gd.gov.cn")>=0){
+                while ((m = regex1.exec(str)) !== null) {
+                    if (m.index === regex1.lastIndex) {
+                        regex1.lastIndex++;
+                    }
+
+                    m.forEach(function(match, groupIndex){
+                        if (groupIndex == 1) {
+                            group1 = match;
+                        } else if (groupIndex == 2) {
+                            group2 = match;
+                        }
+                    });
+                }
+                location.href = group1 + '/zzllms' + group2;
+            }
+        });
+        
+    });
+</script>
+<div class="con">
+    <div class="pos" aria-label="您已进入页面访问路径导航区" altdes="导航区" tabindex="0">
+		<a href="http://www.gd.gov.cn/">首页</a>&nbsp;&gt;&nbsp;<a href="http://www.gd.gov.cn/zwgk/">政务公开</a>&nbsp;&gt;&nbsp;<a href="http://www.gd.gov.cn/zwgk/czxx/">财政信息</a>
+    </div>
+	<div tabindex="0">
+		<div class="czxx-er" wzades="省级财政预决算" aria-label="您已进入省级财政预决算视窗区" altdes="视窗区">
+			<h1 tabindex="0">省级财政预决算</h1>
+			<div class="yujues">
+				<div class="yjs left" wzades="省级财政预算">
+					<div class="tilSet">
+												<div class="itm">
+							<a href="http://www.gd.gov.cn/zwgk/czxx/sjczyjs/ys/index.html" target="_blank">省级财政预算</a>             
+						</div>                  
+						<a href="http://www.gd.gov.cn/zwgk/czxx/sjczyjs/ys/index.html" class="more">更多</a>                  
+											</div>
+					<ul>
+						<li>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/sjczyjs/ys/content/post_4858875.html">广东省2025年预算执行情况和2026年预算草案的报告</a></span>
+							<span class="time">2026-02-24</span>
+							<div class="clear"></div>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/596/596797/4789564.pdf">广东省人民政府关于2025年省级财政第二次预算调整方案的报告</a></span>
+							<span class="time">2025-10-27</span>
+							<div class="clear"></div>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/583/583194/4730888.pdf">广东省人民政府关于2025年省级财政预算调整方案的报告</a></span>
+							<span class="time">2025-06-20</span>
+							<div class="clear"></div>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/sjczyjs/ys/content/post_4664737.html">广东省2024年预算执行情况和2025年预算草案的报告</a></span>
+							<span class="time">2025-02-07</span>
+							<div class="clear"></div>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/564/564986/4526320.pdf">广东省人民政府关于2024年省级财政第二次预算调整方案的报告</a></span>
+							<span class="time">2024-11-18</span>
+							<div class="clear"></div>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/556/556892/4478026.pdf">广东省人民政府关于2024年省级财政预算调整方案的报告</a></span>
+							<span class="time">2024-08-15</span>
+							<div class="clear"></div>
+												</li>
+					</ul>
+				</div>
+				<div class="yjs right" wzades="省级财政决算">
+					<div class="tilSet">
+						       
+						<div class="itm">
+							<a href="http://www.gd.gov.cn/zwgk/czxx/sjczyjs/js/index.html" target="_blank">省级财政决算</a>             
+						</div>                   
+						<a href="http://www.gd.gov.cn/zwgk/czxx/sjczyjs/js/index.html" class="more">更多</a>                           
+											</div>
+					<ul>
+						<li>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/589/589351/4760613.pdf">广东省人民政府关于我省2024年省级决算草案的报告</a></span>
+							<span class="time">2025-08-19</span>
+							<div class="clear"></div>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/556/556891/4478024.pdf">广东省人民政府关于我省2023年省级决算草案的报告</a></span>
+							<span class="time">2024-08-15</span>
+							<div class="clear"></div>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/528/528873/4235965.pdf">关于我省2022年省级决算草案的报告</a></span>
+							<span class="time">2023-08-15</span>
+							<div class="clear"></div>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/496/496934/3995332.pdf">广东省2021年省级决算草案（报表）</a></span>
+							<span class="time">2022-08-17</span>
+							<div class="clear"></div>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/496/496933/3995327.pdf">广东省人民政府关于我省2021年省级决算草案的报告</a></span>
+							<span class="time">2022-08-17</span>
+							<div class="clear"></div>
+													<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/441/441861/3493419.pdf">关于广东省2020年省级决算草案的报告</a></span>
+							<span class="time">2021-08-20</span>
+							<div class="clear"></div>
+												</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div> 
+		</div>
+		<div class="czxx-er" wzades="部门财政预决算" aria-label="您已进入部门财政预决算视窗区，请按上、下、左、右方向键切换栏目，按tab键切换栏目下的动态，定位动态后按回车键打开动态链接" altdes="视窗区">
+			<h1 tabindex="0">部门财政预决算</h1>
+			<div class="menu">
+				<ul class="ulmenu1 timeLine" role="tablist">
+					<li><a class="selected" href="#tab1" onclick="return false" role="tab">2026</a></li>
+					<li><a onclick="return false" role="tab">2025</a></li>
+					<li><a onclick="return false" role="tab">2024</a></li>
+					<li><a href="#" onclick="return false" role="tab">2023</a></li>
+					<li><a href="#" onclick="return false" role="tab">2022</a></li>
+					<li><a href="#" onclick="return false" role="tab">2021</a></li>
+					<li><a href="#" onclick="return false" role="tab">2020</a></li>
+					<li><a href="#" onclick="return false" role="tab">2019</a></li>
+					<li><a href="#" onclick="return false" role="tab">2018</a></li>
+					<li><a href="#" onclick="return false" role="tab">2017</a></li>
+					<li><a href="#" onclick="return false" role="tab">2016</a></li>
+					<li><a href="#" onclick="return false" role="tab">2015</a></li>
+					<li><a href="#" onclick="return false" role="tab">2014</a></li>
+					<li><a href="#" onclick="return false" role="tab">2013</a></li>
+					<li><a href="#" onclick="return false" role="tab">2012</a></li>
+					<li><a href="#" onclick="return false" role="tab">2011</a></li>
+					<li><a href="#" onclick="return false" role="tab">2010</a></li>
+				</ul>
+			</div>
+			<div class="content1">
+				<div class="menu1 menu_tab right">
+				<!--2026年-->
+				<div class="tab active tab-panel-1" role="tabpanel">
+					<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2026yjs/2026ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+						<li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/606/606359/4855215.pdf">省委办公厅2026年部门预算</a></span>
+							<span class="time">2026-02-10</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/606/606358/4855214.pdf">省委办公厅（本级）2026年部门预算</a></span>
+							<span class="time">2026-02-10</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2026yjs/2026ys/content/post_4855470.html">省政府办公厅2026年部门预算</a></span>
+							<span class="time">2026-02-10</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2026yjs/2026ys/content/post_4859179.html">省政府办公厅（本级）2026年部门预算</a></span>
+							<span class="time">2026-02-24</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/608/608193/4863927.pdf">中共广东省委社会工作部2026年部门预算</a></span>
+							<span class="time">2026-03-06</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/608/608084/4863917.pdf">广东省志愿服务促进中心2026年部门预算</a></span>
+							<span class="time">2026-03-06</span>
+							</li>
+																			
+						</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--2025年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+					<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2025yjs/2025ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+						<li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/573/573125/4671040.pdf">省委办公厅2025年部门预算</a></span>
+							<span class="time">2025-02-21</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/573/573757/4672823.pdf">省委办公厅（本级）2025年部门预算</a></span>
+							<span class="time">2025-02-26</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2025yjs/2025ys/content/post_4671039.html">省政府办公厅2025年部门预算</a></span>
+							<span class="time">2025-02-21</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2025yjs/2025ys/content/post_4676761.html">省政府办公厅（本级）2025年部门预算</a></span>
+							<span class="time">2025-03-06</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/574/574731/4678654.pdf">广东省人民政府驻北京办事处2025年部门预算</a></span>
+							<span class="time">2025-03-10</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/574/574219/4675367.pdf">广东省人民政府驻上海办事处2025年部门预算</a></span>
+							<span class="time">2025-03-03</span>
+							</li>
+																			
+						</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--2024年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+					<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2024yjs/2024ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+						<li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/542/542449/4359862.pdf">省委办公厅2024年部门预算</a></span>
+							<span class="time">2024-02-05</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/543/543803/4381187.pdf">省委办公厅（本级）2024年部门预算</a></span>
+							<span class="time">2024-02-26</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2024yjs/2024ys/content/post_4361951.html">省政府办公厅2024年部门预算</a></span>
+							<span class="time">2024-02-08</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2024yjs/2024ys/content/post_4368530.html">省政府办公厅（本级）2024年部门预算</a></span>
+							<span class="time">2024-02-22</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/543/543802/4381189.pdf">广东省接待办公室2024年部门预算</a></span>
+							<span class="time">2024-02-26</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/543/543801/4381190.pdf">广东省接待办公室（本级）2024年部门预算</a></span>
+							<span class="time">2024-02-26</span>
+							</li>
+																			
+						</li>
+						</ul>
+					</div>
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+															<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2024yjs/2024js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/589/589766/4761936.pdf">省委办公厅2024年部门决算</a></span>
+								<span class="time">2025-08-21</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/591/591209/4765629.pdf">省委办公厅（本级）2024年部门决算</a></span>
+								<span class="time">2025-08-29</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/589/589767/4761937.pdf">省委办公厅2024年度部门整体支出绩效自评报告</a></span>
+								<span class="time">2025-08-21</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2024yjs/2024js/content/post_4761621.html">省政府办公厅2024年部门决算</a></span>
+								<span class="time">2025-08-21</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2024yjs/2024js/content/post_4761623.html">省政府办公厅（本级）2024年部门决算</a></span>
+								<span class="time">2025-08-21</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2024yjs/2024js/content/post_4774633.html">省政府办公厅2024年度部门整体支出绩效自评报告</a></span>
+								<span class="time">2025-09-18</span>
+								</li>
+													</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--2023年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+					<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2023yjs/2023ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+						<li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/513/513327/4094447.pdf">省委办公厅2023年部门预算</a></span>
+							<span class="time">2023-02-14</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2023yjs/2023ys/content/post_4094139.html">省政府办公厅2023年部门预算</a></span>
+							<span class="time">2023-02-14</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/513/513240/4094134.pdf">省委政研室2023年部门预算</a></span>
+							<span class="time">2023-02-14</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/514/514335/4099770.pdf">广东省人民政府驻北京办事处2023年部门预算</a></span>
+							<span class="time">2023-02-24</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/514/514263/4099470.pdf">广东省接待办公室2023年部门预算</a></span>
+							<span class="time">2023-02-23</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/514/514118/4098460.pdf">广东省人民政府驻上海办事处2023年部门预算</a></span>
+							<span class="time">2023-02-22</span>
+							</li>
+																			
+						</li>
+						</ul>
+					</div>
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+															<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2023yjs/2023js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/557/557461/4480766.pdf">省委办公厅2023年部门决算</a></span>
+								<span class="time">2024-08-21</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/558/558721/4485848.pdf">省委办公厅（本级）2023年部门决算</a></span>
+								<span class="time">2024-08-30</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/556/556579/4476604.pdf">省委办公厅2023年度部门整体支出绩效自评报告</a></span>
+								<span class="time">2024-08-12</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2023yjs/2023js/content/post_4480572.html">省政府办公厅2023年部门决算</a></span>
+								<span class="time">2024-08-21</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2023yjs/2023js/content/post_4480571.html">省政府办公厅（本级）2023年部门决算</a></span>
+								<span class="time">2024-08-21</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2023yjs/2023js/content/post_4476648.html">省政府办公厅2023年度部门整体支出绩效自评报告</a></span>
+								<span class="time">2024-08-12</span>
+								</li>
+													</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--2022年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+					<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2022yjs/2022ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+						<li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/482/482152/3817950.pdf">省委办公厅2022年部门预算</a></span>
+							<span class="time">2022-02-22</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2022yjs/2022ys/content/post_3818242.html">省政府办公厅2022年部门预算</a></span>
+							<span class="time">2022-02-22</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/483/483922/3880927.pdf">广东省育才幼儿院一院2022年部门预算</a></span>
+							<span class="time">2022-03-10</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/483/483884/3876591.pdf">广东省人民政府驻北京办事处2022年部门预算</a></span>
+							<span class="time">2022-03-09</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/483/483691/3847677.pdf">广东省人民政府机关门诊部2022年部门预算</a></span>
+							<span class="time">2022-03-07</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/483/483363/3840916.pdf">广东省接待办公室2022年部门预算</a></span>
+							<span class="time">2022-03-03</span>
+							</li>
+																			
+						</li>
+						</ul>
+					</div>
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+															<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2022yjs/2022js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/529/529921/4242566.pdf">省委办公厅2022年部门决算</a></span>
+								<span class="time">2023-08-25</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/531/531207/4250765.pdf">省委办公厅（本级）2022年部门决算</a></span>
+								<span class="time">2023-09-08</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/529/529920/4242565.pdf">省委办公厅2022年度部门整体支出绩效自评报告</a></span>
+								<span class="time">2023-08-25</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2022yjs/2022js/content/post_4242508.html">省政府办公厅2022年部门决算</a></span>
+								<span class="time">2023-08-25</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2022yjs/2022js/content/post_4272757.html">省政府办公厅2022年整体支出绩效自评报告</a></span>
+								<span class="time">2023-10-27</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2022yjs/2022js/content/post_4250177.html">省政府办公厅（本级）2022年部门决算</a></span>
+								<span class="time">2023-09-07</span>
+								</li>
+													</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--2021年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+					<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2021/bmys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+						<li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/413/413137/3224199.pdf">省委办公厅2021年部门预算</a></span>
+							<span class="time">2021-02-08</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2021/bmys/content/post_3224046.html">省政府办公厅2021年部门预算</a></span>
+							<span class="time">2021-02-08</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/413/413105/3224048.pdf">省委政研室2021年部门预算</a></span>
+							<span class="time">2021-02-08</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/413/413750/3227558.pdf">广东省人民政府驻上海办事处2021年部门预算</a></span>
+							<span class="time">2021-02-19</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/414/414153/3230648.pdf">广东省人民政府接待办公室2021年部门预算</a></span>
+							<span class="time">2021-02-25</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/414/414084/3230338.pdf">广东省育才幼儿院二院2021年部门预算</a></span>
+							<span class="time">2021-02-24</span>
+							</li>
+																			
+						</li>
+						</ul>
+					</div>
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+															<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2021/bmjs/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/498/498059/3998498.pdf">省委办公厅2021年部门决算</a></span>
+								<span class="time">2022-08-22</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/498/498060/3998502.pdf">省委办公厅2021年度部门整体支出绩效自评报告</a></span>
+								<span class="time">2022-08-22</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2021/bmjs/content/post_4037614.html">省政府办公厅2021年整体支出绩效自评报告</a></span>
+								<span class="time">2022-10-31</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2021/bmjs/content/post_4006911.html">省政府办公厅（本级）2021年部门决算</a></span>
+								<span class="time">2022-09-03</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2021/bmjs/content/post_3997740.html">省政府办公厅2021年部门决算</a></span>
+								<span class="time">2022-08-19</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/501/501981/4012971.pdf">广东松园宾馆2021年部门决算</a></span>
+								<span class="time">2022-09-15</span>
+								</li>
+													</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--2020年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+						<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2020/ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+						<li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/省委办公厅2020年部门预算公开.pdf">省委办公厅2020年部门预算</a></span>
+							<span class="time">2020-02-18</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2020/ys/content/post_2900287.html">省政府办公厅2020年部门预算</a></span>
+							<span class="time">2020-02-18</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/省委政研室2020年部门预算公开.pdf">省委政研室2020年部门预算</a></span>
+							<span class="time">2020-02-14</span>
+							</li>
+																			
+						</li>
+						</ul>
+					</div>
+
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+															<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2020/js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/441/441822/3493335.pdf">省委办公厅2020年部门决算</a></span>
+								<span class="time">2021-08-20</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/472/472126/3595201.pdf">省委办公厅2020年度部门整体支出绩效自评报告</a></span>
+								<span class="time">2021-10-29</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2020/js/content/post_3493375.html">省政府办公厅2020年部门决算</a></span>
+								<span class="time">2021-08-20</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2020/js/content/post_3503023.html">省政府办公厅（本级）2020年部门决算</a></span>
+								<span class="time">2021-09-03</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2020/js/content/post_3583211.html">省政府办公厅2020年整体支出绩效自评报告</a></span>
+								<span class="time">2021-10-22</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/469/469316/3578570.pdf">省委政研室2020年度整体支出绩效自评报告</a></span>
+								<span class="time">2021-10-18</span>
+								</li>
+													</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+				<!--2019年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+						<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2019/ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+						<li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/2019swb.pdf">省委办公厅2019年部门预算</a></span>
+							<span class="time">2019-02-28</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2019/ys/content/post_2203379.html">省政府办公厅2019年部门预算</a></span>
+							<span class="time">2019-02-28</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/2019zys.pdf">省委政研室2019年部门预算</a></span>
+							<span class="time">2019-02-27</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/435/435121/3367989.pdf">省政务服务数据管理局2019年部门预算</a></span>
+							<span class="time">2019-02-28</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/%E7%9C%81%E6%94%BF%E5%BA%9C%E5%8F%91%E5%B1%95%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%832019%E5%B9%B4%E9%83%A8%E9%97%A8%E9%A2%84%E7%AE%97%E5%85%AC%E5%BC%80.pdf">省政府发展研究中心2019年部门预算</a></span>
+							<span class="time">2019-02-28</span>
+							</li>
+																			
+						</li>
+						</ul>
+					</div>
+
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+															<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2019/bmjs/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/399/399510/3069125.pdf">省委办公厅2019年部门决算</a></span>
+								<span class="time">2020-08-21</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/399/399511/3069126.pdf">省委办公厅2019年整体绩效自评报告</a></span>
+								<span class="time">2020-08-21</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2019/bmjs/content/post_3070246.html">省政府办公厅2019年部门决算</a></span>
+								<span class="time">2020-08-21</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/399/399709/3070231.pdf">省政府办公厅2019年整体支出使用绩效自评报告</a></span>
+								<span class="time">2020-08-21</span>
+								</li>
+															<li>
+								<span class="dot"></span>
+								<span class="til"><a href="http://www.gd.gov.cn/attachment/0/399/399568/3069385.pdf">省委政研室2019年部门决算</a></span>
+								<span class="time">2020-08-21</span>
+								</li>
+													</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+				<!--2018年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+						<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2018/ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+						<li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/省委办公厅2018年部门预算公开.pdf">省委办公厅2018年部门预算公开</a></span>
+							<span class="time">2018-02-27</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/省人大常委会办公厅2018年部门预算公开.pdf">省人大常委会办公厅2018年部门预算公开</a></span>
+							<span class="time">2018-02-27</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/省政府办公厅2018年部门预算公开.pdf">省政府办公厅2018年部门预算公开</a></span>
+							<span class="time">2018-02-27</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/省发展和改革委员会2018年部门预算公开.pdf">省发展和改革委员会2018年部门预算公开</a></span>
+							<span class="time">2018-02-27</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/省经济和信息化委员会2018年部门预算公开.pdf">省经济和信息化委员会2018年部门预算公开</a></span>
+							<span class="time">2018-02-27</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/省民族宗教事务委员会2018年部门预算公开.pdf">省民族宗教事务委员会2018年部门预算公开</a></span>
+							<span class="time">2018-02-27</span>
+							</li>
+																			
+						</li>
+						</ul>
+					</div>
+
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+															<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2018/bmjs/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/385/385025/2588057.pdf">省委办公厅2018年部门决算</a></span>
+							<span class="time">2019-08-22</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2018/bmjs/content/post_2588064.html">省政府办公厅2018年部门决算</a></span>
+							<span class="time">2019-08-22</span>
+							</li>
+													<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/attachment/0/372/372931/2587416.pdf">省委政策研究室2018年部门决算</a></span>
+							<span class="time">2019-08-21</span>
+							</li>
+												</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+				<!--2017年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+						<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2017/ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2017/ys/content/post_75880.html">省委办公厅2017年部门预算</a></span>
+							<span class="time">2017-02-24</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/20171201.pdf">省府办公厅2017年部门预算</a></span>
+							<span class="time">2017-02-24</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2017/ys/content/post_75879.html">省委政策研究室2017年部门预算</a></span>
+							<span class="time">2017-02-24</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://drc.gd.gov.cn/gkmlpt/content/1/1059/post_1059841.html">省发展改革委2017年部门预算</a></span>
+							<span class="time">2017-02-25</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://gdii.gd.gov.cn/gkmlpt/content/1/1079/post_1079421.html#952">省经济和信息化委2017年部门预算</a></span>
+							<span class="time">2017-02-24</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://sft.gd.gov.cn/sfw/gov_gk/czya/content/post_1134582.html">省司法厅2017年部门预算</a></span>
+							<span class="time">2017-02-25</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2017/js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/%E7%9C%81%E5%A7%94%E5%8A%9E%E5%85%AC%E5%8E%852017%E5%B9%B4%E5%86%B3%E7%AE%97.pdf">省委办公厅2017年部门决算报告</a></span>
+							<span class="time">2018-08-24</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/%E7%9C%81%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%852017%E5%B9%B4%E5%86%B3%E7%AE%97%E6%8A%A5%E5%91%8A.pdf">省府办公厅2017年部门决算</a></span>
+							<span class="time">2018-08-24</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/%E7%9C%81%E5%A7%94%E6%94%BF%E7%A0%94%E5%AE%A42017%E5%B9%B4%E5%86%B3%E7%AE%97%E6%8A%A5%E5%91%8A.pdf">省委政策研究室2017年部门决算报告</a></span>
+							<span class="time">2018-08-24</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/sfgw.pdf">广东省发展和改革委员会2017年部门决算报告</a></span>
+							<span class="time">2018-08-24</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/sjyt.pdf">广东省教育厅2017年部门决算报告</a></span>
+							<span class="time">2018-08-24</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/skjt.pdf">广东省科学技术厅2017年部门决算报告</a></span>
+							<span class="time">2018-08-24</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>				
+				<!--2016年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+						<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2016/ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2016/ys/content/post_75054.html">省委办公厅2016年部门预算</a></span>
+							<span class="time">2017-01-05</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/20160219.pdf">省府办公厅2016年部门预算</a></span>
+							<span class="time">2016-11-22</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2016/ys/content/post_74155.html">中共广东省委政策研究室2016年部门预算</a></span>
+							<span class="time">2016-11-22</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://drc.gd.gov.cn/gkmlpt/content/1/1059/post_1059109.html">省发改委2016年部门预算</a></span>
+							<span class="time">2016-11-22</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://gdii.gd.gov.cn/gkmlpt/content/1/1078/post_1078918.html#952">省经信委2016年部门预算</a></span>
+							<span class="time">2016-11-22</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://czt.gd.gov.cn/bmyjs/content/post_175613.html">省财政厅2016年部门预算</a></span>
+							<span class="time">2016-11-22</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2016/js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2016/js/content/post_79580.html">省委办公厅2016年部门决算</a></span>
+							<span class="time">2017-08-29</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/20170803001.pdf">省府办公厅2016年部门决算</a></span>
+							<span class="time">2017-08-24</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2016/js/content/post_79481.html">省委政策研究室2016年部门决算</a></span>
+							<span class="time">2017-08-24</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://drc.gd.gov.cn/gkmlpt/content/1/1060/post_1060236.html">省发改委2016年部门决算</a></span>
+							<span class="time">2017-09-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://gdii.gd.gov.cn/gkmlpt/content/1/1079/post_1079888.html">省经信委2016年部门决算</a></span>
+							<span class="time">2017-09-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/省财政厅2016年部门决算.pdf">省财政厅2016年部门决算</a></span>
+							<span class="time">2017-09-26</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>			
+				<!--2015年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+						<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2015/ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2015/ys/content/post_73072.html">省委办公厅2015年部门预算</a></span>
+							<span class="time">2016-10-25</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2015/ys/content/post_70005.html">省委政策研究室2015年预算公开</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://smzt.gd.gov.cn/gkmlpt/content/2/2157/post_2157273.html">省民政厅2015年部门预算</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://dfz.gd.gov.cn/gkmlpt/content/1/1110/post_1110840.html">省地方志办2015年部门预算</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://gdyjzx.gd.gov.cn/gkmlpt/content/0/665/post_665493.html">省发展研究中心2015年部门预算</a></span>
+							<span class="time">2018-04-04</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/省财政厅2015年部门预算.pdf">省财政厅2015年部门预算</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2015/js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2015/js/content/post_73074.html">省委办公厅2015年部门决算</a></span>
+							<span class="time">2016-10-25</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2015/js/content/post_70023.html">省府办公厅2015年部门决算</a></span>
+							<span class="time">2016-09-01</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="https://www.gdszx.gov.cn/tzgg/yjs/content/post_18119.html">省政协办公厅2015年部门决算</a></span>
+							<span class="time">2022-07-13</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2015/js/content/post_70022.html">省委政策研究室2015年部门决算</a></span>
+							<span class="time">2016-09-01</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://drc.gd.gov.cn/gkmlpt/content/1/1059/post_1059733.html">省发展改革委2015年部门决算</a></span>
+							<span class="time">2017-01-10</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://gdjyj.gd.gov.cn/gkmlpt/content/2/2657/post_2657076.html#2357">省监狱局2015年部门决算</a></span>
+							<span class="time">2017-01-12</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>				
+				<!--2014年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+						<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2014/ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/广东省财政厅2014年部门预算.pdf">广东省财政厅2014年部门预算</a></span>
+							<span class="time">2017-12-06</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://drc.gd.gov.cn/gkmlpt/content/1/1058/post_1058014.html">2014年广东省发展和改革委员会部门预算基本情况说明</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://zfcxjst.gd.gov.cn/xxgk/czyjs/content/post_1362931.html">广东省住房和城乡建设厅2014年部门预算信息公开</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://mzzjw.gd.gov.cn/gkmlpt/content/0/647/post_647333.html">广东省民族宗教委2014年度部门预算</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://td.gd.gov.cn/gkmlpt/content/1/1290/post_1290139.html">2014年广东省交通运输厅机关部门预算基本情况说明</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://dara.gd.gov.cn/gkmlpt/content/1/1463/post_1463170.html">广东省农业厅2014年部门预算基本情况</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2014/js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2014/js/content/post_73075.html">省委办公厅2014年部门决算</a></span>
+							<span class="time">2016-10-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2014/js/content/post_69977.html">省府办公厅2014年部门决算</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2014/js/content/post_69976.html">省委政策研究室2014年部门决算</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2014/js/content/post_69975.html">省发展改革委2014年度部门决算</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://gdii.gd.gov.cn/gkmlpt/content/1/1079/post_1079096.html#952">省经济和信息化委员会2014年部门决算基本情况说明（含委属单位）</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/2014年度广东省财政厅部门决算.pdf">2014年度广东省财政厅部门决算</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>		
+				<!--2013年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+						<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2013/ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://drc.gd.gov.cn/gkmlpt/content/1/1058/post_1058013.html">广东省发展改革委2013年部门预算公开</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://mzzjw.gd.gov.cn/gkmlpt/content/0/647/post_647308.html">2013年度广东省民族宗教事务委员会部门预算</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/2013年度广东省财政厅预算.pdf">2013年度广东省财政厅预算</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://zfcxjst.gd.gov.cn/xxgk/czyjs/content/post_1359539.html">广东省住房和城乡建设厅2013年部门预算信息公开</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://td.gd.gov.cn/zwgk_n/zfxxgk/channel5/content/post_2634030.html">2013年广东省交通运输厅机关部门预算基本情况说明</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.fzb.gd.gov.cn/publicfiles/business/htmlfiles/gdsfzb/s224/201303/9364.html">广东省人民政府法制办公室2013年财政预算总表</a></span>
+							<span class="time">2016-08-26</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2013/js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/广东省财政厅2013年部门决算.pdf">广东省财政厅2013年部门决算</a></span>
+							<span class="time">2017-12-06</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="https://www.gdass.org/MessageInfo_3240.shtml">2013年度广东省社会科学院决算情况</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.fzb.gd.gov.cn/publicfiles/business/htmlfiles/gdsfzb/s224/201408/12008.html">2013年度省法制办部门决算基本情况说明</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://stats.gd.gov.cn/yjs10137/content/post_1426006.html">广东省统计局2013年省级部门决算</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://lyj.gd.gov.cn/government/budget/content/post_1882283.html">2013年度广东省林业厅机关及75个下属单位部门决算及“三公经费”财政拨款支出情况</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://dara.gd.gov.cn/gkmlpt/content/1/1462/post_1462739.html#1610">2013年度广东省农业厅部门决算和“三公”经费公开</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>				
+				<!--2012年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+						<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2012/ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://drc.gd.gov.cn/gkmlpt/content/1/1057/post_1057609.html">广东省发展和改革委员会2012年部门收支预算总表</a></span>
+							<span class="time">2016-08-25</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://smzt.gd.gov.cn/gkmlpt/content/2/2156/post_2156259.html">广东省民政厅2012年部门收支预算总表</a></span>
+							<span class="time">2016-08-25</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/cz2012.pdf">广东省财政厅《2012年部门收支预算总表》和《2012年部门财政拨款支出预算表》</a></span>
+							<span class="time">2016-08-25</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://dara.gd.gov.cn/gkmlpt/content/1/1462/post_1462661.html#1611">广东省农业厅2012年部门收支预算总表</a></span>
+							<span class="time">2016-08-25</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2012/js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://drc.gd.gov.cn/gkmlpt/content/1/1057/post_1057607.html">2012年广东省发展改革委部门决算基本情况说明</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://mzzjw.gd.gov.cn/gkmlpt/content/0/647/post_647307.html">2012年度广东省民族宗教事务委员会部门决算</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://smzt.gd.gov.cn/gkmlpt/content/2/2156/post_2156378.html">2012年省民政厅及直属单位部门决算基本情况说明</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/2012年度广东省财政厅决算.pdf">2012年度广东省财政厅决算</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://zfcxjst.gd.gov.cn/gkmlpt/content/1/1450/post_1450458.html">2012年广东省住房和城乡建设厅部门决算公开</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.fzb.gd.gov.cn/publicfiles/business/htmlfiles/gdsfzb/s224/201309/10405.html">2012年度广东省法制办部门决算基本情况说明</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>					
+				<!--2011年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+						<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政预算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2011/ys/index.html" class="more">更多</a> 
+													</div>
+									
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://drc.gd.gov.cn/gkmlpt/content/1/1056/post_1056412.html">广东省发展和改革委员会2011年部门收支预算总表</a></span>
+							<span class="time">2016-08-25</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/cz2011.pdf">广东省财政厅《2011年部门收支预算总表》和《2011年部门财政拨款支出预算表》</a></span>
+							<span class="time">2016-08-25</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://zfcxjst.gd.gov.cn/gkmlpt/content/1/1447/post_1447823.html">广东省住房和城乡建设厅2011年部门预算基本情况说明</a></span>
+							<span class="time">2016-08-25</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://td.gd.gov.cn/zwgk_n/zfxxgk/channel5/content/post_2634035.html">广东省交通运输厅2011年部门预算</a></span>
+							<span class="time">2016-08-25</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://dara.gd.gov.cn/gkmlpt/content/1/1462/post_1462662.html#1611">广东省农业厅2011年部门收支预算总表</a></span>
+							<span class="time">2016-08-25</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.qb.gd.gov.cn/gggs/content/post_48177.html">广东省人民政府侨务办公室2011年部门预算信息公开说明</a></span>
+							<span class="time">2016-08-25</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="bmyjs right">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2011/js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://smzt.gd.gov.cn/gkmlpt/content/2/2155/post_2155828.html">2011年省民政厅及直属单位部门决算基本情况说明</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.gd.gov.cn/wzfj/2011年度广东省财政厅决算公开.pdf">2011年度广东省财政厅决算公开</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://stats.gd.gov.cn/yjs10137/content/post_1426002.html">广东省统计局2011年省级部门决算</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://td.gd.gov.cn/zwgk_n/zfxxgk/channel5/content/post_2634033.html">2011年广东省交通运输厅部门决算基本情况说明</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>				
+				<!--2010年-->
+				<div class="tab tab-panel-1" role="tabpanel">
+
+					<div class="bmyjs left">
+						<div class="tilSet">
+							<div class="itm">部门财政决算</div>
+														<a href="http://www.gd.gov.cn/zwgk/czxx/bmczyjs/2010/js/index.html" class="more">更多</a> 
+													</div>
+					
+						<ul>
+														<li>
+							<span class="dot"></span>
+							<span class="til"><a href="http://www.fzb.gd.gov.cn/publicfiles/business/htmlfiles/gdsfzb/s224/201109/6727.html">广东省人民政府法制办公室2010年财政决算总表</a></span>
+							<span class="time">2016-08-30</span>
+							</li>
+													</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>       
+			</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<div class="viewList" wzades="地市财政预决算" aria-label="您已进入地市财政预决算链接导航区" altdes="导航区">
+			<div class="tilSet">
+				<div class="itm active" tabindex="0">地市财政预决算</div>
+			</div>
+
+			<ul class="dishizd">
+								<li><a href="http://www.gz.gov.cn/zwgk/zdly/czzj/czyjs/">广州</a></li>
+								<li><a href="http://www.sz.gov.cn/cn/xxgk/zfxxgj/zjxx/szfczyjs/">深圳</a></li>
+								<li><a href="http://www.zhuhai.gov.cn/xw/ztjj/zhszdlyxxgkzl/czysjshsgjfgk/czyjs/">珠海</a></li>
+								<li><a href="https://www.shantou.gov.cn/cnst/zdly/czyjshsgjfgk/czyjs/">汕头</a></li>
+								<li><a href="http://www.foshan.gov.cn/zwgk/zdly/czxx/czyjs/index.html">佛山</a></li>
+								<li><a href="https://www.sg.gov.cn/zw/zdlyxxgk/czyjshsgjf/">韶关</a></li>
+								<li><a href="http://www.heyuan.gov.cn/zwgk/zdlyxx/czyjshsgjf/index.html">河源</a></li>
+								<li><a href="https://www.meizhou.gov.cn/zwgk/zdlyxxgkzl/czxx/index.html">梅州</a></li>
+								<li><a href="http://www.huizhou.gov.cn/zdlyxxgk/czyjshsgjf/index.html">惠州</a></li>
+								<li><a href="http://www.shanwei.gov.cn/shanwei/swzdly/sgjf/index.html">汕尾</a></li>
+								<li><a href="http://www.dg.gov.cn/zdlyxx_yjspt.html">东莞</a></li>
+								<li><a href="http://www.zs.gov.cn/zwgk/czxx/czyjs/">中山</a></li>
+								<li><a href="http://www.jiangmen.gov.cn/newzwgk/czgk/index.html">江门</a></li>
+								<li><a href="http://www.yangjiang.gov.cn/yj/zwgk/zdlyxxgk/czzj/czyjs/index.html">阳江</a></li>
+								<li><a href="https://www.zhanjiang.gov.cn/zdlyxxgk/czyjshsg/czyjs/index.html">湛江</a></li>
+								<li><a href="http://www.maoming.gov.cn/zwgk/zwzl/zdlyxxgkzl/czysjshsgjfgk/index.html">茂名</a></li>
+								<li><a href="http://www.zhaoqing.gov.cn/zfxxgklm/czj/zdlyxxgk/czyjs/">肇庆</a></li>
+								<li><a href="http://www.gdqy.gov.cn/gdqy/newxxgk/czxx/sjyjs/index.html">清远</a></li>
+								<li><a href="http://www.chaozhou.gov.cn/zwgk/zdlyxxgk/czyjs/zcys/">潮州</a></li>
+								<li><a href="http://www.jieyang.gov.cn/zwgk/jcxxgk/czxx/sjcz/sjczys/index.html">揭阳</a></li>
+								<li><a href="https://www.yunfu.gov.cn/zwgk/czxx/czyjs/index.html">云浮</a></li>
+							</ul>
+		</div>
+		<div class="viewList" wzades="审计工作报告" aria-label="您已进入审计工作报告视窗区" altdes="视窗区">
+			<div class="tilSet">
+				<div class="itm active" tabindex="0">审计工作报告</div>
+										<a href="http://www.gd.gov.cn/zwgk/czxx/sjgzbg/index.html" class="more">更多</a> 
+							</div>
+			<ul style="margin-bottom:30px;margin-right:0;">
+									<li style="width:1200px;">
+						<span class="dot"></span>
+						<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/sjgzbg/content/post_4751932.html" style="font-size:18px;line-height:40px;">广东省人民政府关于2024年度省级预算执行和其他财政收支的审计工作报告</a></span>
+						<span class="time">2025-07-31</span>
+					</li>
+									<li style="width:1200px;">
+						<span class="dot"></span>
+						<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/sjgzbg/content/post_4751933.html" style="font-size:18px;line-height:40px;">发挥审计独特监督作用<br/>全力保障中国式现代化广东实践取得新成效<br/>——对2024年度省级预算执行和其他财政收支审计工作报告的解读</a></span>
+						<span class="time">2025-07-31</span>
+					</li>
+									<li style="width:1200px;">
+						<span class="dot"></span>
+						<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/sjgzbg/content/post_4466425.html" style="font-size:18px;line-height:40px;">广东省人民政府关于2023年度省级预算执行和其他财政收支的审计工作报告</a></span>
+						<span class="time">2024-07-31</span>
+					</li>
+									<li style="width:1200px;">
+						<span class="dot"></span>
+						<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/sjgzbg/content/post_4466429.html" style="font-size:18px;line-height:40px;">一图读懂丨广东省人民政府关于2023年度省级预算执行和其他财政收支的审计工作报告</a></span>
+						<span class="time">2024-07-31</span>
+					</li>
+									<li style="width:1200px;">
+						<span class="dot"></span>
+						<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/sjgzbg/content/post_4225411.html" style="font-size:18px;line-height:40px;">广东省人民政府关于2022年度省级预算执行和其他财政收支的审计工作报告</a></span>
+						<span class="time">2023-07-27</span>
+					</li>
+									<li style="width:1200px;">
+						<span class="dot"></span>
+						<span class="til"><a href="http://www.gd.gov.cn/zwgk/czxx/sjgzbg/content/post_4225398.html" style="font-size:18px;line-height:40px;">一图读懂丨广东省人民政府关于2022年度省级预算执行和其他财政收支的审计工作报告</a></span>
+						<span class="time">2023-07-27</span>
+					</li>
+							</ul>
+		</div>
+	</div>
+</div>
+<link type="text/css" rel="stylesheet" href="/publicTemplete/foot.css">
+<link type="text/css" rel="stylesheet" href="/footAsset/cusSelect.css">
+<div class="foot">
+    <div class="Links" wzades="提供各级政府机构网站链接" aria-label="您已进入友情链接导航区" altdes="导航区">
+        <div class="linkCon clearfix">
+            <div class="left clearfix">
+                <div class="button left" tabindex="0" aria-label="您已进入中国政府网链接导航区"><a href="http://www.gov.cn/">中国政府网</a></div>
+                <span class="shus"></span>
+            </div>
+            <div tabindex="0" class="left" aria-label="您已进入政府网站友情链接导航区，本区域包含国务院部门网站、地方政府网站、驻港澳机构网站、省直单位网站、地级以上市网站链接。">
+                                    <div class="cusSelects" aria-label="国务院部门网站">
+                        <a href="http://www.gd.gov.cn/yw/gwybm/index.html">国务院部门网站</a>
+                    </div>
+                                <span class="shus"></span>
+                                    <div class="cusSelects" aria-label="地方政府网站">
+                        <a href="http://www.gd.gov.cn/yw/sqs/index.html">地方政府网站</a>
+                    </div>
+                                <span class="shus"></span>
+                                    <div class="cusSelects" aria-label="驻港澳机构网站">
+                        <a href="http://www.gd.gov.cn/yw/zgajg/index.html">驻港澳机构网站</a>
+                    </div>
+                                <span class="shus"></span>
+                                    <div class="cusSelects" aria-label="省直单位网站">
+                        <a href="http://www.gd.gov.cn/yw/szfjg/index.html">省直单位网站</a>
+                    </div>
+                                <span class="shus"></span>
+                                    <div class="cusSelects" aria-label="地级以上市网站">
+                        <a href="http://www.gd.gov.cn/yw/ds/index.html">地级以上市网站</a>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <div wzades="网站信息">
+        <div class="info">
+            <div class="info-itm zficon">
+                <div class="jiucuo" aria-label="您已进入我为政府网站找错平台视窗区" tabindex="0" altdes="视窗区">
+                    <script id="_jiucuo_" sitecode='4400000131' src='https://zfwzgl.www.gov.cn/exposure/jiucuo.js'></script>
+                </div>
+                <div class="ideConac" aria-label="您已进入党政机关网站标识视窗区" tabindex="0" altdes="视窗区">
+                    <script type="text/javascript">
+                        document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='https://dcs.conac.cn/js/20/000/0000/60151380/CA200000000601513800001.js' type='text/javascript'%3E%3C/script%3E"));
+                    </script>
+                </div>
+                <div class="footWza" aria-label="您已进入适老化无障碍服务标识视窗区" tabindex="0" altdes="视窗区"><img src="/footAsset/foot_wza.png" title="适老化无障碍服务" alt="适老化无障碍服务"></div>
+            </div>
+            <div class="info-itm  wzinfo" aria-label="您已进入网站信息视窗区" altdes="视窗区">
+                <div class="wzinfo-itm active">网站信息</div>
+                <div class="wzinfo-itm">
+                                            <a target="_blank" href="http://www.gd.gov.cn/yw/content/post_100915.html">关于本网</a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a target="_blank" href="http://www.gd.gov.cn/yw/content/post_2169593.html">网站声明</a>
+                                    </div>
+                <div class="wzinfo-itm">
+                                            <a target="_blank" href="http://www.gd.gov.cn/yw/content/post_104984.html">网站地图</a>
+                                    </div>
+            </div>
+
+            <div class="info-itm  wzinfo" aria-label="您已进入网站联系方式视窗区" altdes="视窗区">
+                <div class="wzinfo-itm active" >联系我们</div>
+                <div class="wzinfo-itm">
+                    <p style="padding-top: 0px;line-height: 32px;" tabindex="0">020-83135078</p>
+                    <p style="font-size: 12px; color: #777;padding-top: 0px;line-height: 32px;" tabindex="0">仅受理网站建设维护相关事宜</p>
+                </div>
+                <div class="wzinfo-itm" tabindex="0">service@gd.gov.cn</div>
+            </div>
+
+            <div class="info-itm  wzinfo xmtjz" aria-label="您已进入新媒体矩阵视窗区" altdes="视窗区">
+                <div class="wzinfo-itm active" style="cursor:auto;">新媒体矩阵</div>
+                <div class="wzinfo-itm clearfix">
+                    <div class="code code1 left" tabindex="0">
+                        <img src="/publicTemplete/icon_qr.jpg" title="网站官方微信" alt="网站官方微信">
+                        网站官方微信
+                    </div>
+                    <div class="code right"><a style="display:block;" href="https://weibo.com/gdszfw"><img src="/publicTemplete/weibo.png" title="网站官方微博" alt="网站官方微博">网站官方微博</a> </div>
+                </div>
+                <div class="wzinfo-itm clearfix">
+                    <div class="code code2 left" style="display:inline-block;width: 47%;" tabindex="0"> 
+                        <img src="/publicTemplete/icon_qr.jpg" title="粤省事小程序" alt="粤省事小程序">
+                        粤省事小程序
+                    </div>
+                    <div class="code code3 right" tabindex="0">
+                        <img src="/publicTemplete/icon_qr.jpg" title="粤商通APP" alt="粤商通APP">
+                        粤商通APP
+                    </div>
+                </div>
+            </div>
+            <div class="QrCode qr_1 hide">
+                <img src="/publicTemplete/qrCode_1.png" title="网站官方微信" alt="网站官方微信">
+            </div>
+            <div class="QrCode qr_2 hide">
+                <img src="/publicTemplete/qrCode_2.png" title="粤省事小程序" alt="粤省事小程序">
+            </div>
+            <div class="QrCode qr_3 hide">
+                <img src="/publicTemplete/yst.jpg" title="粤商通APP" alt="粤商通APP">
+            </div>
+        </div>
+        <div class="copyright" aria-label="您已进入网站标识视窗区" altdes="视窗区">
+            <div class="con">
+                <span tabindex="0">主办：&nbsp;&nbsp;&nbsp;广东省人民政府办公厅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span tabindex="0">承办：&nbsp;&nbsp;&nbsp;南方新闻网&nbsp;&nbsp;&nbsp;数字广东网络建设有限公司</span>
+                <div class="right">
+                    <p tabindex="0">版权所有：广东省人民政府门户网站</p>
+                    <p>
+                        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010402001160"><img src="/publicTemplete/icon_ga.png" style="width:20px; height:20px; display:inline-block;vertical-align: -6px;" alt="粤公网安备 44010402001160号" title="粤公网安备 44010402001160号"/></a>
+                        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010402001160">粤公网安备 44010402001160号</a>
+                    </p>
+                    <p><a href="https://beian.miit.gov.cn">粤ICP备05070829号</a>&nbsp;&nbsp;&nbsp;<span tabindex="0">网站标识码4400000131</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filter"></div>
+    <div class="aTips" style="display:none;">
+        <div class="text">您访问的链接即将离开“广东省人民政府门户网站”，是否继续？</div>
+        <div class="layui-layer-btn">
+            <div class="layui-layer-btn1">放弃</div>
+            <div date-url="" class="layui-layer-btn0"><img alt="继续访问" title="继续访问" style="width:20px;height:20px;float:left;margin: 3px 5px 0 -8px;" src="/ggtp/loading.gif">继续访问
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/footAsset/cusSelect.js"></script>
+<script src="/publicTemplete/footJs.js"></script>
+<script>
+    $("#_span_jiucuo img").attr("title","政府网站找错").attr("alt","政府网站找错");
+    $("#imgConac").attr("title","党政机关").attr("alt","党政机关");
+</script>
+<script>
+// 下拉改造
+window.$bindSelect({
+    menus: ".cusOpSet",
+    selectedItem: ".cusSelect"
+})
+</script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/pc.js"></script>
+<script>
+	window.$bindArrow({
+		type: 'display',
+		// 切换控制页头
+		tabs: '.ulmenu1 li a',
+		// 切换内容区块
+		tabsPanel: '.tab-panel-1',
+		// 子节点如果存在a、button，需写上
+		// childNode: 'a',
+		// 切换当前触发效果，比如高亮
+		active: 'selected'
+	})
+</script>  
+</body>
+</html>

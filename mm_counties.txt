@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>区、县级市、三大平台财政预决算 茂名市人民政府门户网站</title> 
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="SiteName" content="茂名市人民政府门户网站">
+<meta name="SiteDomain" content="www.maoming.gov.cn">
+<meta name="SiteIDCode" content="4409000029">
+<meta name="ColumnName" content="区、县级市、三大平台财政预决算">
+<meta name="ColumnDescription" content="发布区、县级市、三大平台财政预决算内容。">
+<meta name="ColumnKeywords" content="区、县级市、三大平台财政预决算">
+<meta name="ColumnType" content="其他">
+<link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/2.7.4/skins/default/aliplayer-min.css" />
+<script charset="utf-8" type="text/javascript" src="//g.alicdn.com/de/prismplayer/2.7.4/aliplayer-min.js"></script>
+<script type="text/javascript" src="/global/audio.min.js"></script>
+<link href="/global/audiojs.css" rel="stylesheet" type="text/css">
+<meta name="Keywords" content="茂名市人民政府门户网站,茂名市市长,政府,GOV,热点要闻,政务服务,领导信箱,业务咨询,市政府文件,政策解读,政府公报,市政府常务会议,政府工作报告,权责清单,重点领域,通知公告" />
+<meta name="description" content="茂名市人民政府门户政府网由茂名市人民政府办公室主办。" />
+<script>window.NFCMS_SITE_ID=668001;window.NFCMS_PUB_TYPE="cat";window.NFCMS_CAT_ID="9510";</script><script src="//statistics.gd.gov.cn/scripts/s.js?t=1767517688" async></script>
+
+     
+     <link href="/global2023/common.css" rel="stylesheet" type="text/css"> 
+     <link href="/global2023/cloumn-list.css" rel="stylesheet" type="text/css"> 
+     <script src="/global/jquery.js"></script> 
+     <script src="/statics/jquery.SuperSlide.2.1.1.js"></script>   
+     
+     <style>
+          .list_banner{margin-bottom: 5px;}
+     </style>
+     <script>(function(u){if((u.indexOf("iP")>-1||u.indexOf("Android")>-1)&&document.location.href!="http://www.maoming.gov.cn/zwgk/zwzl/zdlyxxgkzl/czysjshsgjfgk/czyjus/qx/mindex.html"){document.location.href="http://www.maoming.gov.cn/zwgk/zwzl/zdlyxxgkzl/czysjshsgjfgk/czyjus/qx/mindex.html"}})(window.navigator.userAgent);</script>
+</head>
+<body>
+
+<!-- header Start -->
+<!-- <link href="https://www.gov.cn/images/trs_FZYouHK_512B.css" rel="stylesheet" type="text/css">
+<link href="/font/trs_FZZHUNYSK.css" rel="stylesheet" type="text/css">
+
+<link href="/font/govwf_fz_6917850_1398739767.css" type="text/css">
+<link href="/font/govwf_fz_6917853_1398739767.css" rel="stylesheet" type="text/css"> -->
+<script defer async type="text/javascript" src="//gov.govwza.cn/dist/aria.js?appid=30758c1093392492ad3dc0fec2dbf773" charset="utf-8"></script>
+<div class="header">
+    <div class="container">
+         <div class="tblj clearfix">
+              <div class="tblj_l">
+                   <ul>
+                        <li><a href="javascript:;" onclick="top.aria.oldFixedStart()" for="ariaslh" target="_self">关怀版</a></li>
+                        <li><a href="javascript:;" onclick="top.aria.start()" for="wza" target="_self">无障碍</a></li>
+                        <li><a href="http://www.maoming.gov.cn/znjqr">智能问答</a></li>
+                        <li><h4>官方微信</h4>
+                        <div class="drop">
+                             <img src="/global2023/a-weixin.jpg" title="官方微信二维码" alt="官方微信二维码">
+                        </div>
+                        </li>
+                        <li class="last"><img src="/global2023/header2023_small_logo.png" title="好心茂名" alt="好心茂名"></li>
+                   </ul>
+              </div>
+              <div class="tblj_r">
+                   <div class="ipv6">网站支持IPV6</div>
+              </div>
+         </div>
+         <div class="headerbox clearfix">
+              <div class="logo">
+                   <img src="/global2023/header2023_logo.png" title="茂名市人民政府" alt="茂名市人民政府">
+              </div>
+              <div class="search">
+                   <form class="form-wrapper cf" action="http://search.gd.gov.cn/search/all/668001/">
+                        <input type="text" placeholder="" name="keywords" class="stxt">
+                        <input type="hidden" name="c" value="index">
+                        <input type="hidden" name="a" value="all">
+                        <button type="submit" class="ssbtn"></button>
+                   </form>
+              </div>
+         </div>
+         <div class="mainnav">
+              <ul class="clearfix">
+                   <li><a href="http://www.maoming.gov.cn" title="首页">首页</a></li>
+                   <li><a href="http://www.maoming.gov.cn/ywdt/index.html" title="要闻动态">要闻动态</a></li>                   <li><a href="http://www.maoming.gov.cn/zwgk/index.html" title="政务公开">政务公开</a></li>                   <li><a href="https://www.gdzwfw.gov.cn/?region=440900" title="政务服务" target="_blank">政务服务</a></li>
+                   <li><a href="http://www.maoming.gov.cn/hdjlpt" title="互动交流">互动交流</a></li>
+                   <li class="last"><a href="http://www.maoming.gov.cn/ml/index.html" title="走进茂名">走进茂名</a></li>              </ul>
+         </div>
+    </div>
+</div>
+<!-- header End -->
+<!-- main Start -->
+<div class="container">
+     <div class="crumb">当前位置：<a href="http://www.maoming.gov.cn/">首页</a>&nbsp;&gt;&nbsp;<a href="http://www.maoming.gov.cn/zwgk/">政务公开</a>&nbsp;&gt;&nbsp;<a href="http://www.maoming.gov.cn/zwgk/zwzl/zdlyxxgkzl/">重点领域信息公开专栏</a>&nbsp;&gt;&nbsp;<a href="http://www.maoming.gov.cn/zwgk/zwzl/zdlyxxgkzl/czysjshsgjfgk/">财政资金信息公开</a>&nbsp;&gt;&nbsp;<a href="http://www.maoming.gov.cn/zwgk/zwzl/zdlyxxgkzl/czysjshsgjfgk/czyjus/">财政预决算</a>&nbsp;&gt;&nbsp;<a href="http://www.maoming.gov.cn/zwgk/zwzl/zdlyxxgkzl/czysjshsgjfgk/czyjus/qx/">区、县级市、三大平台财政预决算</a></div>
+     <div class="qxld-list">
+          <ul class="clearfix">
+                               
+               <li class="xx1">
+                    <a class="tszt" href="http://www.gaozhou.gov.cn/zdlyxxgk/czzj/czyjs/index.html" title="高州市预决算公开平台" target="_blank">高州市预决算公开平台</a>
+               </li>
+               
+               <li class="xx2">
+                    <a class="tszt" href="http://www.huazhou.gov.cn/zdlyxxgk/czysjshsgjf/czyjs/index.html" title="化州市预决算公开平台" target="_blank">化州市预决算公开平台</a>
+               </li>
+               
+               <li class="xx3">
+                    <a class="tszt" href="http://www.maonan.gov.cn/zwgk/czys/index.html" title="茂南区预决算公开平台" target="_blank">茂南区预决算公开平台</a>
+               </li>
+               
+               <li class="xx4">
+                    <a class="tszt" href="http://www.dianbai.gov.cn/zwgk/zdlyxxgk/czzjxx/czyjs/" title="电白区预决算公开平台" target="_blank">电白区预决算公开平台</a>
+               </li>
+               
+               <li class="xx5">
+                    <a class="tszt" href="http://www.xinyi.gov.cn/zdly/czysjshsgjf/czyjs/" title="信宜市预决算公开平台" target="_blank">信宜市预决算公开平台</a>
+               </li>
+               
+               <li class="xx6">
+                    <a class="tszt" href="http://www.sdb.gov.cn/zdlyxxgkzl/czyjshsgjfgk/" title="茂名新城预决算公开平台" target="_blank">茂名新城预决算公开平台</a>
+               </li>
+               
+               <li class="xx7">
+                    <a class="tszt" href="http://www.mmht.gov.cn/zdlyxxgkzl/czyjshsgjf/czyjs/index.html" title="高新技术产业开发区预决算公开平台" target="_blank">高新技术产业开发区预决算公开平台</a>
+               </li>
+               
+               <li class="xx8">
+                    <a class="tszt" href="http://www.mgs.gov.cn/bhzdlyxxgkzl/czyjssg/index.html" title="滨海新区预决算公开平台" target="_blank">滨海新区预决算公开平台</a>
+               </li>
+                        </ul>
+     </div>
+</div>
+<!-- main End -->  
+   <!-- footer Start -->
+  <div class="footer">
+    <div class="container">
+         <div class="footer-box1 clearfix">
+              <div class="footer-box1-l">
+                 <img src="/global2023/index2023_r40_c3_s1.png" title="茂名市人民政府" alt="茂名市人民政府">
+              </div>
+              <div class="footer-box1-r">
+                   <ul class="clearfix">
+                       <li class="gzwm">关注我们</li>
+                       <li class="wx"><h4>微信</h4>
+                           <div class="drop">
+                                <img src="/global2023/wzgfwx.jpg" title="微信二维码" alt="微信二维码">
+                           </div>
+                       </li>
+                       <li class="yss"><h4>粤省事小程序</h4>
+                           <div class="drop">
+                                <img src="/global2023/yssApp.jpg" title="粤省事小程序二维码" alt="粤省事小程序二维码">
+                           </div>
+                       </li>
+                       <li class="yst"><h4>粤商通APP</h4>
+                           <div class="drop">
+                                <img src="/global2023/ystApp.jpg" title="粤商通APP二维码" alt="粤商通APP二维码">
+                           </div>
+                       </li>
+                   </ul>
+              </div>
+         </div>
+         <div class="footer-box2 clearfix">
+              <div class="dbleft">
+                   <div class="dblj">
+                        <ul class="clearfix">
+                                                    <li class="first"><a href="http://www.maoming.gov.cn/yw/mzsm/content/post_78631.html" title="网站声明" target="_blank">网站声明</a></li>
+                                                                             <li><a href="http://www.maoming.gov.cn/yw/lxwm/content/post_685040.html" title="联系我们" target="_blank">联系我们</a></li>
+                                                                             <li class="last"><a href="http://www.maoming.gov.cn/wzxx/wzdt/index.html" title="网站地图" target="_blank">网站地图</a></li>
+                                                 </ul>
+                   </div>
+                   <div class="copyright">
+                      <p>主办：茂名市人民政府办公室　承办：茂名市信息中心</p>
+                      <p>内容及技术支持：南方新闻网　版权所有：茂名市人民政府门户网站</p>
+                      <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44090202000001" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                           <img src="/global2023/footer_ygab_icon.png" style="float:left;" title="粤公网安备 44090202000001号" alt="粤公网安备 44090202000001号">粤公网安备 44090202000001号</a>　
+                         <a href="http://beian.miit.gov.cn/">粤ICP备2021064213号</a>　网站标识码：4409000029
+                      </p>
+                   </div>
+              </div>
+              <div class="dbright">
+                   <div class="dbicon">
+                        <ul class="clearfix">
+                           <li class="dzjg">
+                                <script type = 'text/javascript' > document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript  src='https://dcs.conac.cn/js/20/316/0000/60451979/CA203160000604519790001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+                           </li>
+                           <li class="wzzc"><script id="_jiucuo_" sitecode='4409000029' src='https://zfwzgl.www.gov.cn/exposure/jiucuo.js'></script></li>
+                           <li class="slhwza"><img src="/global2023/footer_slh_icon.png" title="适老化无障碍服务" alt="适老化无障碍服务"></li>
+                        </ul>
+                   </div>
+              </div>
+         </div>
+    </div>
+    
+    </div>
+    <script>
+         try{
+	var str = $(".crumb").text(); 
+	var str1 = str.split(">")[1];
+	if($.trim(str1)!=''){
+	  $(".mainnav ul li").each(function(){
+		if($(this).text().search($.trim(str1))>-1){
+			$(this).addClass("current").siblings().removeClass("current");
+		}
+	  });
+	}else{}
+}catch(e){}
+    </script>
+   <!-- footer End -->
+</body>
+</html>

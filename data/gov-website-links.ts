@@ -5963,7 +5963,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "市中区",
-            url: "http://www.neijiangshizhongqu.gov.cn/"
+            url: "http://www.zzszq.gov.cn/"
           },
           {
             name: "薛城区",
@@ -8623,7 +8623,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "德庆县",
-            url: "http://www.deqing.gov.cn/"
+            url: "http://www.zqdq.gov.cn/"
           },
           {
             name: "四会市",
