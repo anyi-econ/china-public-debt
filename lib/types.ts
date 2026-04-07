@@ -63,6 +63,39 @@ export interface AnnualIssuanceDataset {
   }>;
 }
 
+export type CelmaPolicyCategoryLevel1 = "债券市场动态" | "政策法规" | "政策解读";
+export type CelmaPolicyCategoryLevel2 = "重大事项" | "预决算公开";
+
+export interface CelmaPolicyDynamicItem {
+  id: string;
+  title: string;
+  url: string;
+  date: string | null;
+  source: string;
+  category_level1: CelmaPolicyCategoryLevel1;
+  category_level2: CelmaPolicyCategoryLevel2 | null;
+  summary?: string | null;
+  snippet?: string | null;
+}
+
+export interface CelmaPolicyDynamicsDataset {
+  updatedAt: string;
+  source: {
+    name: string;
+    organization: string;
+    url: string;
+    note: string;
+  };
+  coverage: Array<{
+    category_level1: CelmaPolicyCategoryLevel1;
+    category_level2: CelmaPolicyCategoryLevel2 | null;
+    path: string;
+    totalPages: number;
+    totalItems: number;
+  }>;
+  items: CelmaPolicyDynamicItem[];
+}
+
 export interface NewsItem {
   id: string;
   title: string;

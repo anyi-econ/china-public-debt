@@ -1,11 +1,13 @@
 import bundle from "@/data/bundle.json";
 import annualIssuance from "@/data/celma-annual-issuance.json";
 import annualBalance from "@/data/celma-annual-balance.json";
+import celmaPolicyDynamics from "@/data/celma-policy-dynamics.json";
 import sourceCatalog from "@/data/source-catalog.json";
 import reports from "@/data/reports.json";
 import type {
   AppDataBundle,
   AnnualIssuanceDataset,
+  CelmaPolicyDynamicsDataset,
   DebtDataItem,
   MonthlyBrief,
   NewsItem,
@@ -19,6 +21,7 @@ import { sortByDateDesc } from "@/lib/utils";
 const appData = bundle as AppDataBundle;
 const issuanceData = annualIssuance as AnnualIssuanceDataset;
 const balanceData = annualBalance as AnnualIssuanceDataset;
+const celmaPolicyData = celmaPolicyDynamics as CelmaPolicyDynamicsDataset;
 const sourceRegistry = sourceCatalog as SourceCatalogItem[];
 const briefArchive = reports as MonthlyBrief[];
 
@@ -40,6 +43,14 @@ export function getAnnualIssuanceDataset() {
 
 export function getAnnualBalanceDataset() {
   return balanceData;
+}
+
+export function getCelmaPolicyDynamicsDataset() {
+  return celmaPolicyData;
+}
+
+export function getCelmaPolicyDynamics() {
+  return [...celmaPolicyData.items].sort((a, b) => (b.date ?? "").localeCompare(a.date ?? "") || a.title.localeCompare(b.title, "zh-CN"));
 }
 
 export function getNews(): NewsItem[] {

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import type { PolicyItem, GovSearchItem } from "@/lib/types";
+import type { CelmaPolicyDynamicItem, GovSearchItem } from "@/lib/types";
 import { PoliciesClient } from "@/components/pages/policies-client";
 import { GovSearch } from "@/components/pages/gov-search";
 import { SectionCard } from "@/components/ui/section-card";
@@ -18,7 +18,7 @@ export function PoliciesPageClient({
   policyItems,
   govSearchItems,
 }: {
-  policyItems: PolicyItem[];
+  policyItems: CelmaPolicyDynamicItem[];
   govSearchItems: GovSearchItem[];
 }) {
   const [activeTab, setActiveTab] = useState<TabKey>("bond-policy");
@@ -45,7 +45,7 @@ export function PoliciesPageClient({
       {/* 内容区域 */}
       <div className="container-page topic-body">
         {activeTab === "bond-policy" && (
-          <SectionCard title="政策样本库" description="按关键词和分类检索">
+          <SectionCard title="债券政策动态" description="CELMA 债券市场动态、政策法规、政策解读限定抓取">
             <PoliciesClient items={policyItems} />
           </SectionCard>
         )}

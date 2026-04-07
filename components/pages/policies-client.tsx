@@ -1,91 +1,226 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { PolicyItem } from "@/lib/types";
-import { uniqueValues } from "@/lib/utils";
+import type { CelmaPolicyCategoryLevel1, CelmaPolicyCategoryLevel2, CelmaPolicyDynamicItem } from "@/lib/types";
 import { SearchFilter } from "@/components/filters/search-filter";
 import { SelectFilter } from "@/components/filters/select-filter";
 import { EmptyState } from "@/components/ui/empty-state";
 
-export function PoliciesClient({ items }: { items: PolicyItem[] }) {
-  const [query, setQuery] = useState("");
-  const [category, setCategory] = useState("");
-  const [month, setMonth] = useState("");
-  const [openId, setOpenId] = useState(items[0]?.id ?? "");
+const LEVEL1_OPTIONS: CelmaPolicyCategoryLevel1[] = ["债券市场动态", "政策法规", "政策解读"];
+const LEVEL2_OPTIONS: CelmaPolicyCategoryLevel2[] = ["重大事项", "预决算公开"];
+const PAGE_SIZE_OPTIONS = [20, 50, 100];
 
-  const categories = useMemo(() => uniqueValues(items.map((item) => item.category)), [items]);
-  const months = useMemo(() => uniqueValues(items.map((item) => item.date.slice(0, 7))).reverse(), [items]);
+const CATEGORY_COLORS: Record<CelmaPolicyCategoryLevel1, string> = {
+  "债券市场动态": "#8B0000",
+  "政策法规": "#2E7D32",
+  "政策解读": "#1B4965",
+};
+
+export function PoliciesClient({ items }: { items: CelmaPolicyDynamicItem[] }) {
+  const [query, setQuery] = useState("");
+  const [categoryLevel1, setCategoryLevel1] = useState("");
+  const [categoryLevel2, setCategoryLevel2] = useState("");
+  const [pageSize, setPageSize] = useState(20);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const filtered = useMemo(() => {
     return items.filter((item) => {
-      const haystack = [item.title, item.source, item.summary, ...item.tags].join(" ").toLowerCase();
-      return (!query || haystack.includes(query.toLowerCase())) && (!category || item.category === category) && (!month || item.date.startsWith(month));
+      const haystack = [item.title, item.source, item.summary ?? "", item.snippet ?? "", item.category_level1, item.category_level2 ?? ""]
+        .join(" ")
+        .toLowerCase();
+
+      if (query && !haystack.includes(query.toLowerCase())) {
+        return false;
+      }
+
+      if (categoryLevel1 && item.category_level1 !== categoryLevel1) {
+        return false;
+      }
+
+      if (categoryLevel1 === "债券市场动态" && categoryLevel2 && item.category_level2 !== categoryLevel2) {
+        return false;
+      }
+
+      return true;
     });
-  }, [items, query, category, month]);
+  }, [items, query, categoryLevel1, categoryLevel2]);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+  const safePage = Math.min(currentPage, totalPages);
+  const pageItems = useMemo(() => filtered.slice((safePage - 1) * pageSize, safePage * pageSize), [filtered, safePage, pageSize]);
+
+  function resetPage() {
+    setCurrentPage(1);
+  }
+
+  function clearFilters() {
+    setQuery("");
+    setCategoryLevel1("");
+    setCategoryLevel2("");
+    setCurrentPage(1);
+  }
+
+  function handleLevel1Change(value: string) {
+    setCategoryLevel1(value);
+    if (value !== "债券市场动态") {
+      setCategoryLevel2("");
+    }
+    resetPage();
+  }
+
+  const hasFilters = query || categoryLevel1 || categoryLevel2;
 
   if (filtered.length === 0) {
     return (
-      <>
-        <div className="lit-toolbar">
-          <div className="lit-filters">
-            <SearchFilter value={query} onChange={setQuery} placeholder="搜索政策标题、来源、标签或摘要" />
-            <SelectFilter value={category} onChange={setCategory} options={categories} allLabel="全部分类" />
-            <SelectFilter value={month} onChange={setMonth} options={months} allLabel="全部时间" />
+      <div className="gov-search-container">
+        <div className="gov-search-header">
+          <h2 className="section-title">
+            债券政策动态
+            <span className="section-sub">限定抓取 CELMA 三个栏目，支持两层类型筛选</span>
+          </h2>
+          <div className="muted" style={{ marginTop: "0.3rem" }}>
+            共 {items.length} 条记录 · 当前无匹配结果
           </div>
         </div>
-        <EmptyState message="当前筛选条件下暂无政策数据。" />
-      </>
+
+        <div className="gov-search-bar">
+          <SearchFilter value={query} onChange={(value) => { setQuery(value); resetPage(); }} placeholder="搜索标题、来源或栏目关键词" />
+        </div>
+
+        <div className="gov-filter-area">
+          <div className="gov-filter-row">
+            <label className="gov-filter-label">类型筛选</label>
+            <SelectFilter value={categoryLevel1} onChange={handleLevel1Change} options={[...LEVEL1_OPTIONS]} allLabel="全部一级类型" />
+            {categoryLevel1 === "债券市场动态" ? (
+              <SelectFilter value={categoryLevel2} onChange={(value) => { setCategoryLevel2(value); resetPage(); }} options={[...LEVEL2_OPTIONS]} allLabel="全部二级类型" />
+            ) : null}
+          </div>
+          {hasFilters ? (
+            <div className="gov-filter-row">
+              <button type="button" className="gov-clear-btn" onClick={clearFilters}>
+                清除全部筛选
+              </button>
+            </div>
+          ) : null}
+        </div>
+
+        <EmptyState message="当前筛选条件下暂无债券政策动态。" />
+      </div>
     );
   }
 
   return (
-    <>
-      <div className="lit-toolbar">
-        <div className="lit-filters">
-          <SearchFilter value={query} onChange={setQuery} placeholder="搜索政策标题、来源、标签或摘要" />
-          <SelectFilter value={category} onChange={setCategory} options={categories} allLabel="全部分类" />
-          <SelectFilter value={month} onChange={setMonth} options={months} allLabel="全部时间" />
+    <div className="gov-search-container">
+      <div className="gov-search-header">
+        <h2 className="section-title">
+          债券政策动态
+          <span className="section-sub">来源限定为中国地方政府债券信息公开平台 CELMA</span>
+        </h2>
+        <div className="muted" style={{ marginTop: "0.3rem" }}>
+          共 {items.length} 条记录 · 一级分类 3 项，其中债券市场动态仅保留重大事项与预决算公开
         </div>
-        <div className="muted">共 {filtered.length} 条，支持按时间筛选</div>
+      </div>
+
+      <div className="gov-search-bar">
+        <SearchFilter value={query} onChange={(value) => { setQuery(value); resetPage(); }} placeholder="搜索标题、来源或栏目关键词" />
+      </div>
+
+      <div className="gov-filter-area">
+        <div className="gov-filter-row">
+          <label className="gov-filter-label">一级类型</label>
+          <SelectFilter value={categoryLevel1} onChange={handleLevel1Change} options={[...LEVEL1_OPTIONS]} allLabel="全部一级类型" />
+          {categoryLevel1 === "债券市场动态" ? (
+            <SelectFilter value={categoryLevel2} onChange={(value) => { setCategoryLevel2(value); resetPage(); }} options={[...LEVEL2_OPTIONS]} allLabel="全部二级类型" />
+          ) : null}
+        </div>
+        {hasFilters ? (
+          <div className="gov-filter-row">
+            <button type="button" className="gov-clear-btn" onClick={clearFilters}>
+              清除全部筛选
+            </button>
+          </div>
+        ) : null}
+      </div>
+
+      <div className="gov-result-toolbar">
+        <span className="gov-result-count">找到 {filtered.length} 条结果{hasFilters ? "（已筛选）" : ""}</span>
+        <div className="gov-toolbar-right">
+          <label className="gov-page-size-label">
+            每页
+            <select
+              className="filter-shell gov-page-size-select"
+              value={pageSize}
+              onChange={(event) => {
+                setPageSize(Number(event.target.value));
+                setCurrentPage(1);
+              }}
+            >
+              {PAGE_SIZE_OPTIONS.map((option) => (
+                <option key={option} value={option}>{option} 条</option>
+              ))}
+            </select>
+          </label>
+        </div>
       </div>
 
       <div className="flex flex-col gap-3">
-        {filtered.map((item) => {
-          const expanded = openId === item.id;
-          return (
-            <article key={item.id} className={`event-card ${expanded ? "expanded" : ""}`}>
-              <button type="button" className="event-card-header" onClick={() => setOpenId(expanded ? "" : item.id)}>
-                <span className="event-date">{item.date.slice(5)}</span>
-                <span className="event-type-tag" style={{ background: "#8B0000", color: "#fff" }}>
-                  {item.category}
-                </span>
-                <span className="event-title">{item.title}</span>
-                <span className="event-toggle">›</span>
-              </button>
+        {pageItems.map((item) => (
+          <article key={item.id} className="event-card expanded">
+            <div className="event-card-header cursor-default">
+              <span className="event-date">{item.date ?? "--"}</span>
+              <span className="event-type-tag" style={{ background: CATEGORY_COLORS[item.category_level1], color: "#fff" }}>
+                {item.category_level1}
+              </span>
+              <span className="event-title">{item.title}</span>
+            </div>
 
-              <div className="event-card-body">
-                <div className="event-card-content">
-                  <div className="event-summary">{item.summary}</div>
-                  <div className="event-metrics">
-                    <span className="metric-badge">{item.source}</span>
-                    {item.tags.map((tag) => (
-                      <span key={tag} className="metric-badge">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="event-sources">
-                    <span>原文：</span>
-                    <a href={item.url} target="_blank" rel="noreferrer">
-                      {item.source} ↗
-                    </a>
-                  </div>
+            <div className="event-card-body" style={{ maxHeight: "320px" }}>
+              <div className="event-card-content">
+                <div className="event-summary">{item.summary ?? item.snippet ?? "当前抓取保留列表页元数据，正文摘要暂未展开。"}</div>
+                <div className="event-metrics">
+                  <span className="metric-badge">{item.source}</span>
+                  {item.category_level2 ? <span className="gov-badge gov-badge-policy">{item.category_level2}</span> : null}
+                </div>
+                <div className="event-sources">
+                  <span>原文：</span>
+                  <a href={item.url} target="_blank" rel="noreferrer">
+                    打开原文 ↗
+                  </a>
                 </div>
               </div>
-            </article>
-          );
-        })}
+            </div>
+          </article>
+        ))}
       </div>
-    </>
+
+      {totalPages > 1 ? (
+        <nav className="gov-pagination" aria-label="分页导航">
+          <button type="button" className="gov-page-btn" disabled={safePage <= 1} onClick={() => setCurrentPage(safePage - 1)}>
+            ‹ 上一页
+          </button>
+          {Array.from({ length: totalPages }, (_, index) => index + 1)
+            .filter((page) => page === 1 || page === totalPages || Math.abs(page - safePage) <= 2)
+            .reduce<(number | "...")[]>((pages, page, index, source) => {
+              if (index > 0 && page - source[index - 1] > 1) {
+                pages.push("...");
+              }
+              pages.push(page);
+              return pages;
+            }, [])
+            .map((page, index) =>
+              page === "..." ? (
+                <span key={`ellipsis-${index}`} className="gov-page-ellipsis">…</span>
+              ) : (
+                <button key={page} type="button" className={`gov-page-btn${page === safePage ? " active" : ""}`} onClick={() => setCurrentPage(page as number)}>
+                  {page}
+                </button>
+              )
+            )}
+          <button type="button" className="gov-page-btn" disabled={safePage >= totalPages} onClick={() => setCurrentPage(safePage + 1)}>
+            下一页 ›
+          </button>
+        </nav>
+      ) : null}
+    </div>
   );
 }

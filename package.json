@@ -10,6 +10,7 @@
     "api": "node server/api.mjs",
     "lint": "tsc --noEmit",
     "fetch:celma": "node scripts/fetch-celma-annual.mjs",
+    "fetch:celma-policy": "node scripts/fetch-celma-policy-dynamics.mjs",
     "update:weekly": "node scripts/update.mjs weekly",
     "update:monthly": "node scripts/update.mjs monthly",
     "import:url": "node scripts/import-url.mjs"
