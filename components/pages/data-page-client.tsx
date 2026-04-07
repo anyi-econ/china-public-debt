@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import type { DebtDataItem, AnnualIssuanceDataset } from "@/lib/types";
+import type { AnnualIssuanceDataset } from "@/lib/types";
 import { DebtOverview } from "@/components/pages/debt-overview";
 import { FiscalBudgetNav } from "@/components/pages/fiscal-budget-nav";
 import { GovWebsiteNav } from "@/components/pages/gov-website-nav";
@@ -16,11 +16,9 @@ const subTabs = [
 type TabKey = (typeof subTabs)[number]["key"];
 
 export function DataPageClient({
-  items,
   annualIssuance,
   annualBalance,
 }: {
-  items: DebtDataItem[];
   annualIssuance: AnnualIssuanceDataset;
   annualBalance: AnnualIssuanceDataset;
 }) {
@@ -47,7 +45,7 @@ export function DataPageClient({
 
       {/* 内容区域 */}
       <div className="container-page topic-body">
-        {activeTab === "debt" && <DebtOverview items={items} annualIssuance={annualIssuance} annualBalance={annualBalance} />}
+        {activeTab === "debt" && <DebtOverview annualIssuance={annualIssuance} annualBalance={annualBalance} />}
         {activeTab === "fiscal" && <FiscalBudgetNav />}
         {activeTab === "gov" && <GovWebsiteNav />}
       </div>

@@ -108,6 +108,13 @@ export function MultiLineChart({
     : snapshot;
 
   const showTooltip = snapshotYear != null && tooltip.visible;
+  const activeX = activeYear ? lines[0]?.points.find((point) => point.label === activeYear)?.x ?? null : null;
+  const activePoint =
+    activeYear && activeSeriesKey
+      ? lines
+          .find((line) => line.key === activeSeriesKey)
+          ?.points.find((point) => point.label === activeYear && point.defined && point.value != null) ?? null
+      : null;
 
   function updateTooltipPosition(event: React.MouseEvent<SVGElement | SVGRectElement | SVGCircleElement | SVGPathElement>) {
     const rect = containerRef.current?.getBoundingClientRect();
@@ -171,6 +178,35 @@ export function MultiLineChart({
             />
           );
         })}
+
+        {activeX != null ? (
+          <line
+            x1={activeX}
+            y1={padding.top}
+            x2={activeX}
+            y2={height - padding.bottom}
+            stroke="#8B0000"
+            strokeWidth="1.5"
+            strokeDasharray="6 6"
+            opacity="0.6"
+          />
+        ) : null}
+
+        {activePoint ? (
+          <>
+            <line
+              x1={padding.left}
+              y1={activePoint.y}
+              x2={width - padding.right}
+              y2={activePoint.y}
+              stroke={lines.find((line) => line.key === activeSeriesKey)?.color ?? "#8B0000"}
+              strokeWidth="1.5"
+              strokeDasharray="4 6"
+              opacity="0.45"
+            />
+            <circle cx={activePoint.x} cy={activePoint.y} r="10" fill="none" stroke={lines.find((line) => line.key === activeSeriesKey)?.color ?? "#8B0000"} strokeWidth="2" opacity="0.35" />
+          </>
+        ) : null}
 
         {lines.map((line) => {
           const isSeriesActive = activeSeriesKey === line.key;
