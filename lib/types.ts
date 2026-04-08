@@ -66,6 +66,17 @@ export interface AnnualIssuanceDataset {
 export type CelmaPolicyCategoryLevel1 = "债券市场动态" | "政策法规" | "政策解读";
 export type CelmaPolicyCategoryLevel2 = "重大事项" | "预决算公开";
 
+export type CelmaMajorEventTopic = "资金用途调整" | "跟踪评级" | "发行与披露" | "项目变更" | "偿还与置换" | "其他";
+
+export interface CelmaPolicyAttachment {
+  url: string;
+  display_name: string;
+  local_file_name: string | null;
+  local_file_path: string | null;
+  download_status: "success" | "failed";
+  error: string | null;
+}
+
 export interface CelmaPolicyDynamicItem {
   id: string;
   title: string;
@@ -74,6 +85,12 @@ export interface CelmaPolicyDynamicItem {
   source: string;
   category_level1: CelmaPolicyCategoryLevel1;
   category_level2: CelmaPolicyCategoryLevel2 | null;
+  region: string | null;
+  region_normalized: string | null;
+  topic: CelmaMajorEventTopic | null;
+  attachments: CelmaPolicyAttachment[];
+  attachment_count: number;
+  local_attachment_folder: string | null;
   summary?: string | null;
   snippet?: string | null;
 }

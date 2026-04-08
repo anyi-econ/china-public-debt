@@ -7,3 +7,6 @@ dist
 coverage
 npm-debug.log*
 tsconfig.tsbuildinfo
+
+# CELMA major event attachments (large binary files, not tracked)
+data/celma-major-events-attachments/
