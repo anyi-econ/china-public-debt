@@ -66,7 +66,7 @@ export interface AnnualIssuanceDataset {
 export type CelmaPolicyCategoryLevel1 = "债券市场动态" | "政策法规" | "政策解读";
 export type CelmaPolicyCategoryLevel2 = "重大事项" | "预决算公开";
 
-export type CelmaMajorEventTopic = "资金用途调整" | "跟踪评级" | "发行与披露" | "项目变更" | "偿还与置换" | "其他";
+export type CelmaMajorEventTopic = "资金用途调整" | "跟踪评级" | "发行与披露" | "项目变更" | "偿还与置换" | "信息披露与更正" | "债务限额" | "隐性债务" | "预决算与财政数据" | "人事变动" | "其他";
 
 export interface CelmaPolicyAttachment {
   url: string;

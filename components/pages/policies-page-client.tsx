@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import type { CelmaPolicyDynamicItem, GovSearchItem } from "@/lib/types";
 import { PoliciesClient } from "@/components/pages/policies-client";
 import { GovSearch } from "@/components/pages/gov-search";
-import { SectionCard } from "@/components/ui/section-card";
 
 const subTabs = [
   { key: "bond-policy", label: "债券政策动态", dot: "#8B0000" },
@@ -45,9 +44,7 @@ export function PoliciesPageClient({
       {/* 内容区域 */}
       <div className="container-page topic-body">
         {activeTab === "bond-policy" && (
-          <SectionCard title="债券政策动态" description="CELMA 债券市场动态、政策法规、政策解读限定抓取">
-            <PoliciesClient items={policyItems} />
-          </SectionCard>
+          <PoliciesClient items={policyItems} />
         )}
         {activeTab === "gov-search" && (
           <GovSearch items={govSearchItems} />

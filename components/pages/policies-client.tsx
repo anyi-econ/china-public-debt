@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import type { CelmaMajorEventTopic, CelmaPolicyCategoryLevel1, CelmaPolicyCategoryLevel2, CelmaPolicyDynamicItem } from "@/lib/types";
 import { SearchFilter } from "@/components/filters/search-filter";
 import { SelectFilter } from "@/components/filters/select-filter";
@@ -22,6 +22,11 @@ const TOPIC_COLORS: Record<CelmaMajorEventTopic, string> = {
   "发行与披露": "#8B6914",
   "项目变更": "#6A4C93",
   "偿还与置换": "#C04000",
+  "信息披露与更正": "#2E7D32",
+  "债务限额": "#0D47A1",
+  "隐性债务": "#B71C1C",
+  "预决算与财政数据": "#4E342E",
+  "人事变动": "#37474F",
   "其他": "#5F6B76",
 };
 
@@ -35,6 +40,28 @@ export function PoliciesClient({ items }: { items: CelmaPolicyDynamicItem[] }) {
   const [dateTo, setDateTo] = useState("");
   const [pageSize, setPageSize] = useState(20);
   const [currentPage, setCurrentPage] = useState(1);
+
+  /* ── 展开状态 ── */
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
+  const [expandMode, setExpandMode] = useState<"default" | "all" | "none">("default");
+
+  const isExpanded = useCallback(
+    (id: string) => {
+      if (expandMode === "all") return true;
+      if (expandMode === "none") return false;
+      return expandedIds.has(id);
+    },
+    [expandMode, expandedIds],
+  );
+
+  const toggleExpand = useCallback((id: string) => {
+    setExpandMode("default");
+    setExpandedIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      return next;
+    });
+  }, []);
 
   const typeScopedItems = useMemo(() => {
     return items.filter((item) => {
@@ -148,63 +175,13 @@ export function PoliciesClient({ items }: { items: CelmaPolicyDynamicItem[] }) {
 
   const hasFilters = query || categoryLevel1 || categoryLevel2 || region || topic || dateFrom || dateTo;
 
-  if (filtered.length === 0) {
-    return (
-      <div className="gov-search-container">
-        <div className="gov-search-header">
-          <h2 className="section-title">
-            债券政策动态
-            <span className="section-sub">限定抓取 CELMA 三个栏目，支持两层类型筛选</span>
-          </h2>
-          <div className="muted" style={{ marginTop: "0.3rem" }}>
-            共 {items.length} 条记录 · 当前无匹配结果
-          </div>
-        </div>
-
-        <div className="gov-search-bar">
-          <SearchFilter value={query} onChange={(value) => { setQuery(value); resetPage(); }} placeholder="搜索标题、来源或栏目关键词" />
-        </div>
-
-        <div className="gov-filter-area">
-          <div className="gov-filter-row">
-            <label className="gov-filter-label">类型筛选</label>
-            <SelectFilter value={categoryLevel1} onChange={handleLevel1Change} options={[...LEVEL1_OPTIONS]} allLabel="全部一级类型" />
-            {categoryLevel1 === "债券市场动态" ? (
-              <SelectFilter value={categoryLevel2} onChange={(value) => { setCategoryLevel2(value); resetPage(); }} options={[...LEVEL2_OPTIONS]} allLabel="全部二级类型" />
-            ) : <SelectFilter value="" onChange={() => {}} options={[]} allLabel="全部二级类型" />}
-          </div>
-          <div className="gov-filter-row">
-            <label className="gov-filter-label">地区筛选</label>
-            <SelectFilter value={region} onChange={(value) => { setRegion(value); resetPage(); }} options={regionOptions} allLabel="全部地区" />
-          </div>
-          <div className="gov-filter-row">
-            <label className="gov-filter-label">主题筛选</label>
-            <SelectFilter value={topic} onChange={(value) => { setTopic(value); resetPage(); }} options={topicOptions} allLabel="全部主题" />
-          </div>
-          <div className="gov-filter-row">
-            <label className="gov-filter-label">时间范围</label>
-            <input type="date" value={dateFrom} onChange={(event) => { setDateFrom(event.target.value); resetPage(); }} className="filter-shell" placeholder="起始日期" />
-            <span className="gov-filter-sep">至</span>
-            <input type="date" value={dateTo} onChange={(event) => { setDateTo(event.target.value); resetPage(); }} className="filter-shell" placeholder="截止日期" />
-          </div>
-          {hasFilters ? (
-            <div className="gov-filter-row">
-              <button type="button" className="gov-clear-btn" onClick={clearFilters}>
-                清除全部筛选
-              </button>
-            </div>
-          ) : null}
-        </div>
-
-        <EmptyState message="当前筛选条件下暂无债券政策动态。" />
-      </div>
-    );
-  }
-
   return (
     <div className="gov-search-container">
       <div className="gov-search-header">
-        <h2 className="section-title">债券政策动态</h2>
+        <h2 className="section-title">
+          债券政策动态
+          <span className="section-sub">限定抓取 CELMA 三个栏目，支持两层类型筛选</span>
+        </h2>
         <div className="muted" style={{ marginTop: "0.3rem" }}>
           共 {items.length} 条记录 · 一级分类 3 项，其中债券市场动态仅保留重大事项与预决算公开
         </div>
@@ -245,9 +222,34 @@ export function PoliciesClient({ items }: { items: CelmaPolicyDynamicItem[] }) {
         ) : null}
       </div>
 
+      {/* 结果计数 + 每页条数 + 全局展开/收起 */}
       <div className="gov-result-toolbar">
-        <span className="gov-result-count">找到 {filtered.length} 条结果{hasFilters ? "（已筛选）" : ""}</span>
+        <span className="gov-result-count">
+          {filtered.length === 0
+            ? "无匹配结果"
+            : `找到 ${filtered.length} 条结果${hasFilters ? "（已筛选）" : ""}`}
+        </span>
         <div className="gov-toolbar-right">
+          {/* 全部展开 / 全部收起 */}
+          {filtered.length > 0 && (
+            <span className="gov-expand-toggle">
+              <button
+                type="button"
+                className={`gov-toggle-btn${expandMode === "all" ? " active" : ""}`}
+                onClick={() => setExpandMode("all")}
+              >
+                全部展开
+              </button>
+              <span className="gov-filter-sep">/</span>
+              <button
+                type="button"
+                className={`gov-toggle-btn${expandMode === "none" ? " active" : ""}`}
+                onClick={() => setExpandMode("none")}
+              >
+                全部收起
+              </button>
+            </span>
+          )}
           <label className="gov-page-size-label">
             每页
             <select
@@ -266,18 +268,30 @@ export function PoliciesClient({ items }: { items: CelmaPolicyDynamicItem[] }) {
         </div>
       </div>
 
+      {/* 结果列表或空状态 */}
+      {filtered.length === 0 ? (
+        <EmptyState message={hasFilters ? "当前筛选条件下暂无匹配结果，请调整筛选条件。" : "暂无债券政策动态数据。"} />
+      ) : (
+        <>
       <div className="flex flex-col gap-3">
-        {pageItems.map((item) => (
-          <article key={item.id} className="event-card expanded">
-            <div className="event-card-header cursor-default">
+        {pageItems.map((item) => {
+          const expanded = isExpanded(item.id);
+          return (
+          <article key={item.id} className={`event-card${expanded ? " expanded" : ""}`}>
+            <button
+              type="button"
+              className="event-card-header"
+              onClick={() => toggleExpand(item.id)}
+            >
               <span className="event-date">{item.date ?? "--"}</span>
               <span className="event-type-tag" style={{ background: CATEGORY_COLORS[item.category_level1], color: "#fff" }}>
                 {item.category_level1}
               </span>
               <span className="event-title">{item.title}</span>
-            </div>
+              <span className="event-toggle">›</span>
+            </button>
 
-            <div className="event-card-body" style={{ maxHeight: "320px" }}>
+            <div className="event-card-body">
               <div className="event-card-content">
                 <div className="event-summary">{item.summary ?? item.snippet ?? "当前抓取保留列表页元数据，正文摘要暂未展开。"}</div>
                 <div className="event-metrics">
@@ -308,7 +322,8 @@ export function PoliciesClient({ items }: { items: CelmaPolicyDynamicItem[] }) {
               </div>
             </div>
           </article>
-        ))}
+          );
+        })}
       </div>
 
       {totalPages > 1 ? (
@@ -339,6 +354,8 @@ export function PoliciesClient({ items }: { items: CelmaPolicyDynamicItem[] }) {
           </button>
         </nav>
       ) : null}
+        </>
+      )}
     </div>
   );
 }

@@ -1,0 +1,81 @@
+[1/38] 纰ф睙鍖?..
+[2/38] 涓囧北鍖?..
+[3/38] 鐭抽槨鍘?..
+[4/38] 鎬濆崡鍘?..
+[5/38] 娌挎渤鍦熷鏃忚嚜娌诲幙...
+[6/38] 璐炰赴鍘?..
+[7/38] 鏅撮殕鍘?..
+[8/38] 鏈涜盁鍘?..
+  -> PAGE_OK_NO_FISCAL http://www.trws.gov.cn/zwgk/zdlygk/czzj/
+[9/38] 鍐屼酣鍘?..
+  -> PAGE_OK_NO_FISCAL https://www.bjq.gov.cn/zwgk/zdlyxx/czzj/
+[10/38] 瀹夐緳鍘?..
+  -> UNREACHABLE_ENOTFOUND 
+[11/38] 鍑噷甯?..
+  -> UNREACHABLE_ENOTFOUND 
+[12/38] 榛勫钩鍘?..
+  -> UNREACHABLE_ENOTFOUND 
+[13/38] 鏂界鍘?..
+  -> UNREACHABLE_ENOTFOUND 
+[14/38] 涓夌鍘?..
+  -> PAGE_OK_NO_FISCAL http://www.kaili.gov.cn/zwgk/zdlygk/czzj/
+[15/38] 闀囪繙鍘?..
+  -> HTTP_404 
+[16/38] 宀戝珐鍘?..
+  -> UNREACHABLE_ENOTFOUND 
+[17/38] 澶╂煴鍘?..
+  -> UNREACHABLE_ENOTFOUND 
+[18/38] 閿﹀睆鍘?..
+  -> HTTP_404 
+[19/38] 鍓戞渤鍘?..
+  -> PAGE_OK_NO_FISCAL https://www.qdnhp.gov.cn/xxgk/zdxxgk/czzj/
+[20/38] 鍙版睙鍘?..
+  -> PAGE_OK_NO_FISCAL https://www.tianzhu.gov.cn/zwgk/zdlygk/czzj_5861029/
+[21/38] 榛庡钩鍘?..
+  -> HTTP_404 
+[22/38] 姒曟睙鍘?..
+  -> HTTP_404 
+[23/38] 浠庢睙鍘?..
+  -> PAGE_OK_NO_FISCAL https://www.gztaijiang.gov.cn/zwgk/zdlyxx/czzj/
+[24/38] 闆峰北鍘?..
+  -> UNREACHABLE_ENOTFOUND 
+[25/38] 楹绘睙鍘?..
+  -> PAGE_OK_NO_FISCAL http://www.congjiang.gov.cn/zwgk/zdlygk/czzj/
+[26/38] 涓瑰鍘?..
+  -> HTTP_404 
+[27/38] 閮藉寑甯?..
+  -> HTTP_404 
+[28/38] 绂忔硥甯?..
+  -> HTTP_302 
+[29/38] 鑽旀尝鍘?..
+  -> PAGE_OK_NO_FISCAL https://www.qdndz.gov.cn/zwgk/zdlygk/czzj/
+[30/38] 璐靛畾鍘?..
+  -> UNREACHABLE_ENOTFOUND 
+[31/38] 鐙北鍘?..
+  -> PAGE_OK_NO_FISCAL https://www.duyun.gov.cn/zwgk/zdlygk/czzj/
+[32/38] 鐡畨鍘?..
+  -> HTTP_404 
+[33/38] 骞冲鍘?..
+  -> HTTP_302 
+[34/38] 榫欓噷鍘?..
+  -> HTTP_404 
+[35/38] 缃楃敻鍘?..
+  -> UNREACHABLE_ENOTFOUND 
+[36/38] 鎯犳按鍘?..
+  -> HTTP_302 
+[37/38] 闀块『鍘?..
+  -> UNREACHABLE_ENOTFOUND 
+[38/38] 涓夐兘姘存棌鑷不鍘?..
+  -> UNREACHABLE_ENOTFOUND 
+  -> UNREACHABLE_ENOTFOUND 
+  -> HTTP_404 
+  -> HTTP_302 
+  -> HTTP_302 
+  -> HTTP_302 
+  -> HTTP_503 
+Warning: Detected unsettled top-level await at file:///D:/Research/202603-%E8%87%AA%E5%8A%A8%E5%8C%96%E5%80%BA%E5%8A%A1%E6%8A%A5%E5%91%8A/scripts/_gz_validate.mjs:223
+await Promise.all(Array.from({length: 8}, worker));
+^
+
+
+

@@ -61,12 +61,17 @@ const REGION_CANDIDATES = [
 ].sort((left, right) => right.length - left.length);
 
 const TOPIC_RULES = [
-  ["资金用途调整", /调整(?:部分|新增)?(?:地方)?政府?(?:专项)?债券资金用途|用途调整|调整.*用途|债券用途/],
-  ["跟踪评级", /跟踪评级|评级报告|信用评级/],
-  ["发行与披露", /发行.*通知|发行.*有关事项|承销团|信息披露文件|披露文件|募集说明书|法律意见书|财务评价报告|实施方案|公开表|存续期公开表/],
-  ["项目变更", /重大事项变更|项目变更|变更情况/],
-  ["偿还与置换", /提前偿还|置换|再融资/],
-  ["其他", /.*/],
+  // 顺序重要：先匹配具体的，再匹配宽泛的
+  ["资金用途调整", /调整(?:部分|新增)?(?:地方)?政府?(?:专项)?债券(?:资金)?用途|用途调整|调整.*用途|债券用途|资金用途|一案两书|一案二书|调整.*专项债券|调整.*债券项目|调整.*用作.*资本金|资金调整|调整使用情况/],
+  ["跟踪评级", /跟踪评级|评级报告|信用评级|评级公告/],
+  ["偿还与置换", /提前偿还|偿还.*债券|置换.*债券|再融资.*债券|还本.*调整|还本金额/],
+  ["项目变更", /重大事项(?:调整|变更)|项目变更|变更情况|变更.*披露|变更为.*债券/],
+  ["发行与披露", /发行.*(?:通知|公告|结果|有关事项)|承销团|信息披露文件|披露文件|募集说明书|法律意见书|财务评价报告|实施方案|存续期公开|存续期信息|簿记建档|发债|自行发债|发行的新增.*债券|招标|柜台业务/],
+  ["信息披露与更正", /更正|更正声明|信息的公告|收款账户/],
+  ["债务限额", /债务限额/],
+  ["隐性债务", /隐性债务|违法违规融资|问责.*案例/],
+  ["预决算与财政数据", /经济.*(?:财政|数据)|财政.*(?:经济|数据)|预算.*收支|公共预算/],
+  ["人事变动", /董事.*变动|总经理.*变动|人事.*变动/],
 ];
 
 const SECTIONS = [
@@ -346,9 +351,17 @@ function extractRegionFromText(text) {
   return { region: "全国", region_normalized: "全国" };
 }
 
-function determineTopic(title) {
+function determineTopic(title, attachmentNames = []) {
+  // First try matching on title alone
   for (const [topic, pattern] of TOPIC_RULES) {
     if (pattern.test(title)) {
+      return topic;
+    }
+  }
+  // Then try matching on combined title + attachment names
+  const combined = title + " " + attachmentNames.join(" ");
+  for (const [topic, pattern] of TOPIC_RULES) {
+    if (pattern.test(combined)) {
       return topic;
     }
   }
@@ -616,13 +629,16 @@ async function enrichMajorEvents(items, existingItemsByUrl) {
     await mkdir(folderPath, { recursive: true });
 
     item.local_attachment_folder = folderRelativePath;
-    item.topic = determineTopic(item.title);
 
     try {
       const detailHtml = await fetchText(item.url);
       const rootText = cleanText(load(detailHtml).root().text());
       const context = extractDetailContext(rootText, item.title);
-      const regionInfo = extractRegionFromText(`${item.title} ${context}`);
+      // Extract region from title first; fall back to detail context only if title gives no result
+      const titleRegion = extractRegionFromText(item.title);
+      const regionInfo = titleRegion.region !== "全国"
+        ? titleRegion
+        : extractRegionFromText(`${item.title} ${context}`);
       item.region = regionInfo.region;
       item.region_normalized = regionInfo.region_normalized;
 
@@ -636,6 +652,10 @@ async function enrichMajorEvents(items, existingItemsByUrl) {
           result,
         };
       });
+
+      // Determine topic using both title and attachment names
+      const attNames = uniqueAttachments.map(a => a.display_name || "");
+      item.topic = determineTopic(item.title, attNames);
       const logEntries = downloadedAttachments.map(({ attachment, result }) => ({
           title: item.title,
           page_url: item.url,
@@ -666,6 +686,7 @@ async function enrichMajorEvents(items, existingItemsByUrl) {
       return logEntries;
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
+      item.topic = item.topic || determineTopic(item.title);
       item.attachments = [];
       item.attachment_count = 0;
       item.summary = `${item.region_normalized ?? "全国"} · ${item.topic} · 附件解析失败`;
