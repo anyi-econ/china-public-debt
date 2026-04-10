@@ -176,6 +176,22 @@ Step 4: 确认无误后写入数据
 | HTTP 502/503/504 | 2 次 | 等待 10 秒 |
 | 空白页 / 骨架页 | 2 次 | 可能是 JS 未加载完 |
 | SSL 错误 | 1 次 HTTPS + 1 次 HTTP | — |
+| **WAF/CDN 拦截 (422/521/403)** | **1 次 HTTP + 1 次 fetch_webpage** | **见下方 WAF 专节** |
+
+### WAF/CDN 封锁场景
+
+部分地区（如赣州市）使用统一安全网关，HTTP 探测全部返回 422/521/403 + 极短 body（< 500 bytes）。
+
+**识别特征：**
+- HTTP 状态码 422、521、403 且 body < 500 bytes
+- 同一地级市下多个县统一出现同一异常状态码
+- 首页可达但子路径全部返回异常
+
+**应对策略：**
+1. **不要反复 HTTP probing** — WAF 场景下所有路径探测都会失败
+2. **必须使用 `fetch_webpage`** — 浏览器渲染可绕过多数 WAF 质询
+3. 如果 `fetch_webpage` 也失败，在 `docs/fiscal-site-log.md` 中标记为 `WAF-blocked`
+4. 同市多县同一 WAF 时，只需测试 1-2 个县确认 fetch_webpage 是否有效，再决定是否批量处理
 
 ### 不可直接判定"不存在"的情况
 
@@ -183,6 +199,7 @@ Step 4: 确认无误后写入数据
 - 502/503 → 服务器临时故障
 - 空 body → JS 渲染站点，需用 `fetch_webpage`
 - 返回非常短的 HTML（< 500 字节） → 可能是错误页残片
+- **422/521 → WAF 拦截，非页面不存在，须用 fetch_webpage 验证**
 
 ### 宁缺勿错原则
 
@@ -303,3 +320,46 @@ Step 4: 确认无误后写入数据
 4. **URL 格式**：完整含协议，如 `https://www.xxx.gov.cn/zwgk/czyjs/`
 5. **TypeScript 编译**：更新后运行 `get_errors` 确认无语法错误
 6. **Git 提交**：`feat({省名}): verify gov portals + add N county fiscal budget URLs`
+
+---
+
+## 结论记录：docs/fiscal-site-log.md
+
+对每个省份的查找工作，必须在 `docs/fiscal-site-log.md` 中记录结论，避免重复劳动。
+
+### 记录时机
+
+- 每完成一个地级市的全部区县处理后，立即记录
+- 每次 commit 前检查 log 是否已更新
+
+### 记录格式
+
+```markdown
+## {省名}
+
+### {市名}（处理日期：YYYY-MM-DD）
+
+| 区县 | 状态 | 说明 |
+|------|------|------|
+| XX区 | ✅ confirmed | URL: ... |
+| XX县 | ❌ gov-dns-fail | 域名不解析，已尝试 gov-site-finder 修复，仍无法找到 |
+| XX县 | ❌ WAF-blocked | 同市统一 WAF，fetch_webpage 也失败 |
+| XX县 | ❌ no-fiscal-link | 官网可达，首页+2层深入均无预决算链接 |
+| XX县 | ⚠️ unconfirmed | 502 暂不可达，待后续重试 |
+```
+
+### 状态码含义
+
+| 状态 | 含义 | 是否需要重试 |
+|------|------|-------------|
+| ✅ confirmed | 已找到并写入 | 否 |
+| ❌ gov-dns-fail | 域名不解析且修复失败 | 换日期/换网络重试 |
+| ❌ WAF-blocked | WAF 拦截，fetch_webpage 也失败 | 换日期重试 |
+| ❌ no-fiscal-link | 官网可达但无预决算栏目 | 一般不重试 |
+| ⚠️ unconfirmed | 暂时故障（502/超时） | 是，换日期重试 |
+
+### 用途
+
+- **避免重复探测**：下次处理同省时先读 log，跳过已确认/已排除的县
+- **追踪进度**：快速了解每个省的完成度和阻塞点
+- **知识传递**：记录 CMS 模式、WAF 规律等，便于后续复用
