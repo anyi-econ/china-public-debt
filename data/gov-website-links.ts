@@ -10435,15 +10435,15 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "乌当区",
-            url: "http://www.wudang.gov.cn/"
+            url: "https://www.gzwd.gov.cn/"
           },
           {
             name: "白云区",
-            url: "http://www.baiyun.gov.cn/"
+            url: "https://www.gzbaiyun.gov.cn/"
           },
           {
             name: "观山湖区",
-            url: "http://www.gsh.gov.cn/"
+            url: "https://www.guanshanhu.gov.cn/"
           },
           {
             name: "开阳县",
