@@ -136,3 +136,167 @@
 - **四平市**: 铁东区 主站 `tdq.siping.gov.cn` 的政务信息公开专栏有独立的预算/决算栏目，与铁西区网站结构不同
 - **通化市**: 通化县 的财政信息已从旧门户停更（2018），新数据在信息公开平台但受限
 - **5/5 全部找到**: 所有吉林省缺口均已补齐
+
+---
+
+## 贵州省
+
+### 贵阳市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 乌当区 | ✅ | 域名迁移 `udq.gov.cn`→`gzwd.gov.cn`，`/zwgk/zdlyxx/czzj/czysjsgjf/` — 含2026部门预算 |
+| 白云区 | ✅ | 域名迁移 `byq.gov.cn`→`gzbaiyun.gov.cn`，`/zwgk/zdlyxx/czzj/czysjsgjf/` |
+| 观山湖区 | ✅ | 域名迁移 `gsh.gov.cn`→`guanshanhu.gov.cn`，`/zwgk/zdlyxx/czzj/czysjsgjf/` |
+
+### 遵义市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 汇川区 | ✅ | 域名迁移→`zyhc.gov.cn`，`/zwgk/zdlygk/czzj/czyjsjsgjf/` — 1553条，含2026部门预算 |
+| 桐梓县 | ✅ | `gztongzi.gov.cn`，`/zwgk/zfxxgk/fdzdgknr/czzj/czyjs_5621094/` — 含财政预决算+收支情况+三公经费子栏目 |
+| 习水县 | ✅ | `gzxishui.gov.cn`，`/zwgk/zdlyxx/czzj/czysjsgjf/` |
+| 余庆县 | ✅ | `zgyq.gov.cn`，`/zwgk/zdlyxx/czzj/czyjsjsgjf/` — 341条，含2026部门预算 |
+| 仁怀市 | ✅ | `renhuai.gov.cn`，`/zwgk/zdlyxx/czzj/czysjsgjf/` |
+| 赤水市 | ✅ | `gzchishui.gov.cn`，`/zwgk/zfxxgkml/czxx/czysbg/` — 含2025市级预算/部门预算，另有决算 `/czjsbg/` |
+
+### 毕节市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 黔西市 | ✅ | `gzqianxi.gov.cn`，`/zwgk2022/zdly/czxx/sgjf/` — 侧栏含市政府预决算/乡镇预决算/部门预决算 |
+
+### 铜仁市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 碧江区 | ✅ | 域名迁移 `bijiang.gov.cn`→`bjq.gov.cn`，`/zwgk/zdlyxx/czzj/czysjsgjf/` — 1635条 |
+| 万山区 | ✅ | `gzwanshan.gov.cn`，`/zwgk/zdlyxx/czzj/czysjsgjf/` |
+| 沿河土家族自治县 | ✅ | `yanhe.gov.cn`，`/zwgk/zdlyxx/czzj/czyjsjsgjf/` |
+
+### 黔西南布依族苗族自治州
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 晴隆县 | ✅ | 域名迁移 `ql.qxn.gov.cn`→`gzql.gov.cn`，`/zfbm/qlxczj/zfxxgk_5790691/fdzdgknr_5790694/czyjs_5906923/` — 2207条，通过财政局信息公开入口 |
+| 望谟县 | ✅ | 域名迁移→`gzwm.gov.cn`，`/xxgk/xxgkml/zdlyxx/czzj_5857488/czyjsjsgjf/` — 含完整子分类（政府/党委/人大/群团/政府部门/乡镇/教育/医疗/其他） |
+
+### 贵州省经验总结
+- **域名大迁移**: 贵州省 2022-2024 间大量县区迁移域名（乌当→gzwd、白云→gzbaiyun、观山湖→guanshanhu、汇川→zyhc、碧江→bjq、晴隆→gzql、望谟→gzwm），旧域名失效
+- **CMS 统一度高**: 多数县区使用贵州多彩博虹科技统一建站，路径模式为 `/zwgk/zdlyxx/czzj/czysjsgjf/` 或 `/czyjsjsgjf/`
+- **例外站点**: 桐梓走 `/zfxxgk/fdzdgknr/` 路径，赤水走 `/zfxxgkml/czxx/` 路径，黔西走 `/zwgk2022/zdly/czxx/` 路径，晴隆走财政局部门入口
+- **JS 渲染**: 多数站点内容需 JS 渲染，直接 HTTP 请求返回空页面，但 fetch_webpage 可成功提取
+- **15/15 全部找到**: 所有贵州省缺口均已补齐
+
+---
+
+## 辽宁省
+
+### 沈阳市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 沈河区 | ✅ | `shenhe.gov.cn`，`/dzgk/zwgk/fdzdgknr/ysjs/` |
+| 大东区 | ✅ | 域名 `sydd.gov.cn`（非 dd.gov.cn），`/zwgk/fdzdgknr/ysjs/` |
+| 皇姑区 | ✅ | 域名 `syhg.gov.cn`，`/xxgk/zwgk/fdzdgknr/czyjs/` — 路径不同于其他区 |
+| 铁西区 | ✅ | `tiexi.gov.cn`，`/zwxxgk/fdzdgknr/ysjs/` |
+| 苏家屯区 | ✅ | `sjtq.gov.cn`，`/zwgk/fdzdgknr/ysjs/` |
+| 沈北新区 | ✅ | 域名 `nsy.gov.cn`，`/zwgk/fdzdgknr/ysjs/` |
+| 于洪区 | ✅ | 域名 `syyh.gov.cn`，`/zwgk/fdzdgknr/ysjs/` |
+| 辽中区 | ✅ | `liaozhong.gov.cn`，`/zwgk/fdzdgknr/ysjs/` |
+| 康平县 | ✅ | `kangping.gov.cn`，`/zwgk/fdzdgknr/ysjs/` |
+| 新民市 | ✅ | `xinmin.gov.cn`，`/zwgk/fdzdgknr/ysjs/` |
+
+### 大连市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 中山区 | ✅ | 集中平台 `dl.gov.cn`，`/col/col8081/index.html` |
+| 西岗区 | ✅ | 集中平台，`/col/col8082/index.html` |
+| 沙河口区 | ✅ | 集中平台，`/col/col8083/index.html` |
+| 甘井子区 | ✅ | 集中平台，`/col/col8084/index.html` |
+| 旅顺口区 | ✅ | 集中平台，`/col/col8085/index.html` |
+| 金州区 | ✅ | 集中平台，`/col/col8090/index.html` — 标为"金普新区" |
+| 普兰店区 | ✅ | 集中平台，`/col/col8086/index.html` |
+| 长海县 | ✅ | 集中平台，`/col/col8089/index.html` |
+| 瓦房店市 | ✅ | 集中平台，`/col/col8087/index.html` |
+| 庄河市 | ✅ | 集中平台，`/col/col8088/index.html` |
+
+### 抚顺市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 新抚区 | ✅ | 集中平台 `czj.fushun.gov.cn`，`/fsczbgs/zwgk/qxyjsgkzl/` — 市财政局统一"区县预决算公开专栏" |
+| 东洲区 | ✅ | 同上 |
+| 望花区 | ✅ | 同上 |
+| 顺城区 | ✅ | 同上 |
+| 抚顺县 | ✅ | 同上 |
+
+### 丹东市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 元宝区 | ✅ | epoint CMS，`yuanbao.gov.cn`，`/ybqzf/zfxxgk/fdzdgknr/ysjs/index.html` |
+| 振兴区 | ✅ | epoint CMS，`zhenxing.gov.cn`，`/zxqzf/zfxxgk/fdzdgknr/ysjs/index.html` |
+| 振安区 | ✅ | epoint CMS，`zaq.gov.cn`，`/zaqzf/zfxxgk/fdzdgknr/ysjs/index.html` |
+| 宽甸满族自治县 | ✅ | epoint CMS，`lnkd.gov.cn`，`/kdxzf/zfxxgk/fdzdgknr/ysjs/index.html` |
+| 东港市 | ✅ | epoint CMS，`donggang.gov.cn`，`/dgszf/zfxxgk/fdzdgknr/ysjs/index.html` |
+| 凤城市 | ✅ | epoint CMS，`lnfc.gov.cn`，`/fcszf/zfxxgk/fdzdgknr/ysjs/index.html` |
+
+### 锦州市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 太和区 | ✅ | `jzthq.gov.cn`，`/zwgk/fdzdgknr/ys_js.htm` — JS渲染重 |
+| 义县 | ✅ | `lnyx.gov.cn`，`/xxgk/fdzdgknr/ys_js.htm` |
+| 黑山县 | ✅ | `heishan.gov.cn`，`/zwgk/fdzdgknr/ys_js.htm` |
+| 北镇市 | ✅ | `beizhen.gov.cn`，`/zwgk/fdzdgknr/ys_js.htm` |
+
+### 辽宁省经验总结
+- **沈阳市**: 各区独立建站，域名不直观（大东→sydd、皇姑→syhg、于洪→syyh、沈北→nsy），多数走 `/zwgk/fdzdgknr/ysjs/` 路径
+- **大连市**: 全市集中式平台 `dl.gov.cn/col/col{id}/index.html`，10个区市县各有独立栏目ID
+- **抚顺市**: 市财政局集中公开 `czj.fushun.gov.cn`，5区县共用同一个"区县预决算公开专栏"
+- **丹东市**: 统一 epoint CMS，路径模式 `/{sitecode}/zfxxgk/fdzdgknr/ysjs/index.html`
+- **锦州市**: 统一 `/fdzdgknr/ys_js.htm` 路径，JS渲染重
+- **35/35 全部找到**: 所有辽宁省缺口均已补齐
+
+---
+
+## 云南省（昆明/曲靖/玉溪/保山 4市23县）
+
+### 曲靖市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 麒麟区 | ❌ ENOTFOUND | `qjqilin.gov.cn` DNS无法解析，备选域名也不通 |
+| 沾益区 | ✅ | `http://www.zhanyi.gov.cn/pub/special/203.html` — 华海信息CMS，"财政预决算报告"+"各部门财政预决算公开"，2026数据在列 |
+| 陆良县 | ❌ ENOTFOUND | `luliang.gov.cn` DNS无法解析 |
+| 师宗县 | ❌ JS渲染 | `ynsz.gov.cn` 域名可达(200)，但全站JS渲染，所有fiscal路径404，华海信息CMS但URL结构不明 |
+| 罗平县 | ✅ | `http://www.luoping.gov.cn/public/special/czys.html` — 华海信息CMS，"预算信息公开"49页，nav还有`jsxxgk.html`(决算) |
+| 富源县 | ❌ ENOTFOUND | `fuyuan.gov.cn` DNS无法解析 |
+| 会泽县 | ✅ | `http://www.huize.gov.cn/huize/public/special/61.html` — 华海信息CMS变体(含/huize/前缀)，预算/决算，86页2026部门预算 |
+| 宣威市 | ❌ ENOTFOUND | `xuanwei.gov.cn` DNS无法解析 |
+
+### 昆明市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 官渡区 | ❌ ENOTFOUND | `guandu.gov.cn` DNS无法解析，备选`guandu.km.gov.cn`也不通 |
+| 西山区 | ❌ ENOTFOUND | `kmxs.gov.cn` DNS无法解析 |
+| 禄劝彝族苗族自治县 | ❌ DNS/TIMEOUT | `luquan.gov.cn` DNS临时失败(EAI_AGAIN) |
+| 寻甸回族彝族自治县 | ❌ ENOTFOUND | `xundian.gov.cn` DNS无法解析 |
+
+### 玉溪市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 江川区 | ❌ CMS | `ynjc.gov.cn` 可达，玉溪CMS(yxgovfront)，`/czyjs/` 403 Forbidden，CMS通道页(channelId)JS渲染无法提取 |
+| 通海县 | ❌ CMS | `tonghai.gov.cn` 可达，同上玉溪CMS，`/thxzfxxgk/czyjs/` 403，channelId=23836的财政局页只显示指南 |
+| 易门县 | ❌ ENOTFOUND | `yimen.gov.cn` DNS无法解析 |
+| 峨山彝族自治县 | ❌ ENOTFOUND | `eshan.gov.cn` DNS无法解析 |
+| 新平彝族傣族自治县 | ⚠️ 域名错误 | `xp.gov.cn` 实为湖南溆浦县，非云南新平！需修正gov-website-links.ts |
+| 元江哈尼族彝族傣族自治县 | ❌ CMS | `yjx.gov.cn` 可达，同上玉溪CMS，channelId=19183财政局页只显示指南 |
+| 澄江市 | ❌ ENOTFOUND | `chengjiang.gov.cn` DNS无法解析 |
+
+### 保山市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 隆阳区 | ❌ 404 | `longyang.gov.cn` HTTP→HTTPS重定向后所有fiscal路径404(zwgk/zwgk1/zwgk2/bmgkml/zfxxgkpt均不通) |
+| 施甸县 | ❌ 404/JS | `shidian.gov.cn` 可达但JS渲染，fiscal路径全部404或ECONNRESET |
+| 龙陵县 | ❌ ECONNRESET | `longling.gov.cn` 连接频繁重置，首页偶尔可达但全站不稳定 |
+| 昌宁县 | ✅ | `https://www.yncn.gov.cn/zfxxgkpt/fdzdgknr/czxx/czyjs.htm` — 与腾冲同系CMS但路径略异(无zwgk1前缀)，4726条2026预算 |
+
+### 小结
+- **4/23 确认**: 沾益区、罗平县、会泽县、昌宁县
+- **11/23 ENOTFOUND**: 域名DNS完全无法解析(官渡、西山、禄劝、寻甸、麒麟、陆良、富源、宣威、易门、峨山、澄江)
+- **3/23 玉溪CMS**: 站点可达但fiscal内容在JS渲染的CMS频道中(通海、元江、江川)
+- **4/23 站点问题**: 404/JS渲染/连接重置(师宗、隆阳、施甸、龙陵)
+- **1/23 域名错误**: 新平(xp.gov.cn≠新平)
+- 网络环境后期全面超时，影响了ENOTFOUND县的搜索引擎验证
