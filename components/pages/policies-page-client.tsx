@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import type { CelmaPolicyDynamicItem, GovSearchItem } from "@/lib/types";
+import type { CelmaBondIssuanceItem, CelmaPolicyDynamicItem, GovSearchItem } from "@/lib/types";
 import { PoliciesClient } from "@/components/pages/policies-client";
 import { GovSearch } from "@/components/pages/gov-search";
+import { BondIssuanceClient } from "@/components/pages/bond-issuance-client";
 
 const subTabs = [
   { key: "bond-policy", label: "债券政策动态", dot: "#8B0000" },
+  { key: "bond-issuance", label: "债券发行动态", dot: "#1B4965" },
   { key: "gov-search", label: "政府官网信息检索接口", dot: "#2E7D32" },
 ] as const;
 
@@ -16,9 +18,11 @@ type TabKey = (typeof subTabs)[number]["key"];
 export function PoliciesPageClient({
   policyItems,
   govSearchItems,
+  bondIssuanceItems,
 }: {
   policyItems: CelmaPolicyDynamicItem[];
   govSearchItems: GovSearchItem[];
+  bondIssuanceItems: CelmaBondIssuanceItem[];
 }) {
   const [activeTab, setActiveTab] = useState<TabKey>("bond-policy");
 
@@ -45,6 +49,9 @@ export function PoliciesPageClient({
       <div className="container-page topic-body">
         {activeTab === "bond-policy" && (
           <PoliciesClient items={policyItems} />
+        )}
+        {activeTab === "bond-issuance" && (
+          <BondIssuanceClient items={bondIssuanceItems} />
         )}
         {activeTab === "gov-search" && (
           <GovSearch items={govSearchItems} />

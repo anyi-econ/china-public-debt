@@ -2,11 +2,13 @@ import bundle from "@/data/bundle.json";
 import annualIssuance from "@/data/celma-annual-issuance.json";
 import annualBalance from "@/data/celma-annual-balance.json";
 import celmaPolicyDynamics from "@/data/celma-policy-dynamics.json";
+import celmaBondIssuance from "@/data/celma-bond-issuance.json";
 import sourceCatalog from "@/data/source-catalog.json";
 import reports from "@/data/reports.json";
 import type {
   AppDataBundle,
   AnnualIssuanceDataset,
+  CelmaBondIssuanceDataset,
   CelmaPolicyDynamicsDataset,
   DebtDataItem,
   MonthlyBrief,
@@ -22,6 +24,7 @@ const appData = bundle as AppDataBundle;
 const issuanceData = annualIssuance as AnnualIssuanceDataset;
 const balanceData = annualBalance as AnnualIssuanceDataset;
 const celmaPolicyData = celmaPolicyDynamics as CelmaPolicyDynamicsDataset;
+const bondIssuanceData = celmaBondIssuance as CelmaBondIssuanceDataset;
 const sourceRegistry = sourceCatalog as SourceCatalogItem[];
 const briefArchive = reports as MonthlyBrief[];
 
@@ -51,6 +54,14 @@ export function getCelmaPolicyDynamicsDataset() {
 
 export function getCelmaPolicyDynamics() {
   return [...celmaPolicyData.items].sort((a, b) => (b.date ?? "").localeCompare(a.date ?? "") || a.title.localeCompare(b.title, "zh-CN"));
+}
+
+export function getCelmaBondIssuanceDataset() {
+  return bondIssuanceData;
+}
+
+export function getCelmaBondIssuance() {
+  return [...bondIssuanceData.items].sort((a, b) => (b.date ?? "").localeCompare(a.date ?? "") || a.title.localeCompare(b.title, "zh-CN"));
 }
 
 export function getNews(): NewsItem[] {

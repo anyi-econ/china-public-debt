@@ -113,6 +113,39 @@ export interface CelmaPolicyDynamicsDataset {
   items: CelmaPolicyDynamicItem[];
 }
 
+/* ── 债券发行动态 ── */
+export type CelmaBondIssuanceCategory = "发行安排" | "发行前公告" | "发行结果";
+
+export interface CelmaBondIssuanceItem {
+  id: string;
+  title: string;
+  url: string;
+  date: string | null;
+  source: string;
+  category: CelmaBondIssuanceCategory;
+  region: string | null;
+  attachment_count: number;
+  attachments: CelmaPolicyAttachment[];
+}
+
+export interface CelmaBondIssuanceDataset {
+  updatedAt: string;
+  source: {
+    name: string;
+    organization: string;
+    url: string;
+    note: string;
+  };
+  coverage: Array<{
+    category: CelmaBondIssuanceCategory;
+    channelId: number;
+    totalPages: number;
+    totalItems: number;
+    actualItems: number;
+  }>;
+  items: CelmaBondIssuanceItem[];
+}
+
 export interface NewsItem {
   id: string;
   title: string;
