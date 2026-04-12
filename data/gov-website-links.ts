@@ -5829,7 +5829,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "市中区",
-            url: "https://jncc.jinan.gov.cn/"
+            url: "http://www.shizhong.gov.cn/"
           },
           {
             name: "槐荫区",
@@ -5891,7 +5891,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "崂山区",
-            url: "http://www.qdlaoshan.gov.cn/"
+            url: "http://www.laoshan.gov.cn/"
           },
           {
             name: "李沧区",
@@ -6055,7 +6055,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "栖霞市",
-            url: "https://www.qixia.gov.cn/"
+            url: "https://www.sdqixia.gov.cn/"
           },
           {
             name: "海阳市",
@@ -6225,7 +6225,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "东港区",
-            url: "http://www.rzdg.gov.cn/"
+            url: "http://www.rzdonggang.gov.cn/"
           },
           {
             name: "岚山区",

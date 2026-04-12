@@ -300,3 +300,62 @@
 - **4/23 站点问题**: 404/JS渲染/连接重置(师宗、隆阳、施甸、龙陵)
 - **1/23 域名错误**: 新平(xp.gov.cn≠新平)
 - 网络环境后期全面超时，影响了ENOTFOUND县的搜索引擎验证
+
+---
+
+## 山东省（18县区）
+
+### 济南市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 市中区 | ✅ | gov URL 修正 `jncc.jinan.gov.cn`→`shizhong.gov.cn`(原URL为住建局)，`/gongkai/channel_6389a15037599182826341d0/` 区级政府财政预决算 |
+| 济阳区 | ✅ | `jiyang.gov.cn` — `/gongkai/channel_6389ae3e3759918282645274/` |
+
+### 青岛市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 崂山区 | ✅ | gov URL 修正 `qdlaoshan.gov.cn`→`laoshan.gov.cn`，`/zt/czxx/zfyjs/` |
+| 即墨区 | ✅ | `jimo.gov.cn` — `/zwzt/czxx/czyjs/` |
+| 胶州市 | ✅ | `jiaozhou.gov.cn` — `/ztzl/czxx/` |
+
+### 烟台市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 栖霞市 | ✅ | gov URL 修正 `qixia.gov.cn`→`sdqixia.gov.cn`，`/col/col42614/index.html` |
+
+### 潍坊市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 昌乐县 | ✅ | `changle.gov.cn` — `/CLXXXGK/XXGK/czyjszt/` |
+| 青州市 | ✅ | `qingzhou.gov.cn` — `/zwgk/view/zwgk/zdlyxxgk/czxx2.0.html` |
+| 高密市 | ✅ | `gaomi.gov.cn` — `/xxgk/zwzt/gmczyjs/` |
+| 昌邑市 | ✅ | `changyi.gov.cn` — `/CYSXXGK/SCZJ/?classinfoid=16148` |
+
+### 济宁市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 金乡县 | ✅ | `jinxiang.gov.cn` — `/col/col73931/index.html` 财政预决算公开平台，Baidu redirect 确认 |
+| 嘉祥县 | ✅ | `jiaxiang.gov.cn` — `/col/col25801/index.html` 财政预算决算，Baidu redirect 确认 |
+| 泗水县 | ✅ | `sishui.gov.cn` — `/col/col27277/index.html` |
+| 曲阜市 | ✅ | `qufu.gov.cn` — `/col/col15257/index.html` 财政信息，Baidu redirect 确认 |
+
+### 泰安市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 岱岳区 | ✅ | `daiyue.gov.cn` — `/col/col335362/index.html` |
+| 新泰市 | ✅ | `xintai.gov.cn` — `/col/col202219/index.html` |
+
+### 东营市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 河口区 | ✅ | `hekou.gov.cn` — `/col/col70392/index.html` |
+
+### 日照市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 东港区 | ✅ | gov URL 修正 `rzdg.gov.cn`→`rzdonggang.gov.cn`，`/col/col252936/index.html` 财政预决算专栏 |
+
+### 小结
+- **18/18 全部确认** ✅
+- 修正 4 个 gov URL：市中区(非住建局)、崂山区(qdlaoshan→laoshan)、栖霞市(qixia→sdqixia)、东港区(rzdg→rzdonggang)
+- 济宁市 3 县(金乡/嘉祥/曲阜) fetch_webpage 无法直接获取，通过 Baidu redirect 确认
