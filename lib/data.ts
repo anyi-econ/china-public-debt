@@ -3,12 +3,15 @@ import annualIssuance from "@/data/celma-annual-issuance.json";
 import annualBalance from "@/data/celma-annual-balance.json";
 import celmaPolicyDynamics from "@/data/celma-policy-dynamics.json";
 import celmaBondIssuance from "@/data/celma-bond-issuance.json";
+import chinabondBondIssuance from "@/data/chinabond-bond-issuance.json";
 import sourceCatalog from "@/data/source-catalog.json";
 import reports from "@/data/reports.json";
+import weeklyReports from "@/data/weekly-reports.json";
 import type {
   AppDataBundle,
   AnnualIssuanceDataset,
   CelmaBondIssuanceDataset,
+  CelmaBondIssuanceItem,
   CelmaPolicyDynamicsDataset,
   DebtDataItem,
   MonthlyBrief,
@@ -16,7 +19,8 @@ import type {
   PaperItem,
   PolicyItem,
   SourceCatalogItem,
-  UpdateLogItem
+  UpdateLogItem,
+  WeeklyReport
 } from "@/lib/types";
 import { sortByDateDesc } from "@/lib/utils";
 
@@ -25,8 +29,10 @@ const issuanceData = annualIssuance as AnnualIssuanceDataset;
 const balanceData = annualBalance as AnnualIssuanceDataset;
 const celmaPolicyData = celmaPolicyDynamics as CelmaPolicyDynamicsDataset;
 const bondIssuanceData = celmaBondIssuance as CelmaBondIssuanceDataset;
+const chinabondIssuanceData = chinabondBondIssuance as { items: CelmaBondIssuanceItem[] };
 const sourceRegistry = sourceCatalog as SourceCatalogItem[];
 const briefArchive = reports as MonthlyBrief[];
+const weeklyArchive = weeklyReports as WeeklyReport[];
 
 export function getAppData() {
   return appData;
@@ -61,7 +67,8 @@ export function getCelmaBondIssuanceDataset() {
 }
 
 export function getCelmaBondIssuance() {
-  return [...bondIssuanceData.items].sort((a, b) => (b.date ?? "").localeCompare(a.date ?? "") || a.title.localeCompare(b.title, "zh-CN"));
+  return [...bondIssuanceData.items, ...(chinabondIssuanceData.items ?? [])]
+    .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? "") || a.title.localeCompare(b.title, "zh-CN"));
 }
 
 export function getNews(): NewsItem[] {
@@ -86,6 +93,14 @@ export function getLatestBrief() {
 
 export function getBriefByMonth(month: string) {
   return getBriefs().find((item) => item.month === month) ?? null;
+}
+
+export function getWeeklyReports(): WeeklyReport[] {
+  return [...weeklyArchive].sort((a, b) => b.weekStart.localeCompare(a.weekStart));
+}
+
+export function getLatestWeeklyReport() {
+  return getWeeklyReports()[0] ?? null;
 }
 
 export function getSourceRegistry() {

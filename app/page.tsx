@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Route } from "next";
-import { getAppData, getDashboardStats, getDebtData, getNews, getPapers, getPolicies, getRecentUpdates } from "@/lib/data";
+import { getAppData, getDashboardStats, getLatestWeeklyReport, getRecentUpdates } from "@/lib/data";
 import { formatDate } from "@/lib/utils";
 import { SiteShell } from "@/components/layout/site-shell";
 
@@ -41,30 +41,11 @@ const topicCards: Array<{
   }
 ];
 
-type SectionRoute = "/policies" | "/data" | "/news" | "/papers";
-
-const sectionEntries: Array<{ href: SectionRoute; label: string; color: string }> = [
-  { href: "/policies", label: "政策列表", color: "#8B0000" },
-  { href: "/data", label: "数据可视化", color: "#1B4965" },
-  { href: "/news", label: "新闻列表", color: "#2E7D32" },
-  { href: "/papers", label: "文献研究", color: "#5C6BC0" }
-];
-
 export default function HomePage() {
   const data = getAppData();
   const stats = getDashboardStats();
-  const policies = getPolicies();
-  const debt = getDebtData();
-  const news = getNews();
-  const papers = getPapers();
   const updates = getRecentUpdates();
-
-  const sectionData: Record<SectionRoute, Array<{ date: string; title: string }>> = {
-    "/policies": policies.map((item) => ({ date: item.date.slice(5), title: item.title })),
-    "/data": debt.map((item) => ({ date: item.date.slice(5), title: `${item.bondType}：${item.value.toLocaleString("zh-CN")}${item.unit}` })),
-    "/news": news.map((item) => ({ date: item.date.slice(5), title: item.title })),
-    "/papers": papers.map((item) => ({ date: String(item.year), title: item.title }))
-  };
+  const weeklyReport = getLatestWeeklyReport();
 
   return (
     <SiteShell currentPath="/">
@@ -105,79 +86,52 @@ export default function HomePage() {
 
       <section className="container-page home-grid">
         <div className="home-topics">
-          <h2 className="section-title">
-            议题追踪
-            <span className="section-sub">已核验来源</span>
-          </h2>
-
-          <div className="topic-cards">
-            {sectionEntries.map((entry) => (
-              <Link key={entry.href} href={entry.href as Route} className="topic-entry-card">
-                <div className="topic-entry-header">
-                  <span className="topic-entry-label" style={{ color: entry.color }}>
-                    {entry.label}
-                  </span>
-                  <span className="topic-entry-name">{entry.label}</span>
-                  <span className="topic-entry-count">{sectionData[entry.href].length}</span>
-                </div>
-
-                <ul className="topic-entry-preview">
-                  {sectionData[entry.href].slice(0, 3).map((item) => (
-                    <li key={`${entry.href}-${item.date}-${item.title}`}>
-                      <span className="preview-date">{item.date}</span>
-                      <span className="preview-title">{item.title}</span>
-                    </li>
+          {weeklyReport ? (
+            <div className="topic-overview">
+              <h2 className="section-title">
+                本周周报
+                <span className="section-sub">{weeklyReport.weekStart.replace(/-/g, ".")}—{weeklyReport.weekEnd.replace(/-/g, ".")}</span>
+              </h2>
+              <div className="editorial-prose">
+                <p>
+                  <strong>{weeklyReport.title}</strong>
+                </p>
+                <p>{weeklyReport.summary}</p>
+                {weeklyReport.highlights.map((item) => (
+                  <p key={item}>— {item}</p>
+                ))}
+                <div className="mt-4" style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+                  {weeklyReport.regions.map((r) => (
+                    <span key={r.name} className="metric-badge">
+                      {r.name} {r.amount.toLocaleString("zh-CN")} 亿元（{r.count} 只）
+                    </span>
                   ))}
-                </ul>
-              </Link>
-            ))}
-          </div>
-
-          <Link href="/briefs" className="t5-entry-link" style={{ ["--topic-color" as never]: "#455A64" }}>
-            <span className="t5-entry-name">月度简报归档</span>
-            <span className="t5-entry-count">{updates.length} 条更新</span>
-            <span className="t5-entry-arrow">→</span>
-          </Link>
-
-          <div className="topic-overview mt-6">
-            <h3 className="section-title">
-              本期观察
-              <span className="section-sub">{data.observation.month}</span>
-            </h3>
-            <div className="editorial-prose">
-              <p>
-                <strong>{data.observation.title}</strong>
-              </p>
-              <p>{data.observation.summary}</p>
-              {data.observation.bullets.map((bullet) => (
-                <p key={bullet}>— {bullet}</p>
-              ))}
+                </div>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="topic-overview">
+              <h3 className="section-title">
+                本周周报
+                <span className="section-sub">{data.observation.month}</span>
+              </h3>
+              <div className="editorial-prose">
+                <p>
+                  <strong>{data.observation.title}</strong>
+                </p>
+                <p>{data.observation.summary}</p>
+                {data.observation.bullets.map((bullet) => (
+                  <p key={bullet}>— {bullet}</p>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         <aside className="home-sidebar">
-          <h2 className="section-title">最新文献</h2>
+          <h2 className="section-title">最新更新</h2>
           <ul className="sidebar-papers">
-            {papers.slice(0, 4).map((paper) => (
-              <li key={paper.id} className="sidebar-paper-item">
-                <span className="sidebar-paper-meta">
-                  {paper.year} · {paper.source}
-                </span>
-                <a href={paper.url} target="_blank" rel="noreferrer" className="sidebar-paper-title-text">
-                  {paper.title}
-                </a>
-                <span className="sidebar-paper-authors-text">{paper.authors.join("；")}</span>
-                <p className="sidebar-paper-note">{paper.abstract}</p>
-              </li>
-            ))}
-          </ul>
-
-          <h2 className="section-title" style={{ marginTop: "1.5rem" }}>
-            最新更新
-          </h2>
-          <ul className="sidebar-papers">
-            {updates.slice(0, 4).map((item) => (
+            {updates.slice(0, 6).map((item) => (
               <li key={item.id} className="sidebar-paper-item">
                 <span className="sidebar-paper-meta">
                   {formatDate(item.date)} · {item.type}
@@ -188,10 +142,6 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-
-          <Link href="/papers" className="view-all-link">
-            全部文献 →
-          </Link>
         </aside>
       </section>
     </SiteShell>

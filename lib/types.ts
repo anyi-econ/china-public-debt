@@ -293,6 +293,29 @@ export interface SourceCatalogItem {
 }
 
 /* ── 政府官网信息检索数据结构 ── */
+
+export interface WeeklyReportRegion {
+  name: string;
+  amount: number;
+  count: number;
+}
+
+export interface WeeklyReport {
+  id: string;
+  weekStart: string;
+  weekEnd: string;
+  title: string;
+  totalBonds: number;
+  totalAmount: number;
+  unit: string;
+  summary: string;
+  highlights: string[];
+  regions: WeeklyReportRegion[];
+  docxPath: string;
+  pdfPath: string;
+}
+
+/* ── 政府官网信息检索数据结构 ── */
 export type ContentScope = "本地" | "上级" | "外地" | "全国";
 export type GovDocType = "领导活动" | "政策文件" | "社会新闻" | "其他";
 export type LeaderRole = "书记" | "市长" | "其他领导" | "无";
