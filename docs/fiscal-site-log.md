@@ -359,3 +359,64 @@
 - **18/18 全部确认** ✅
 - 修正 4 个 gov URL：市中区(非住建局)、崂山区(qdlaoshan→laoshan)、栖霞市(qixia→sdqixia)、东港区(rzdg→rzdonggang)
 - 济宁市 3 县(金乡/嘉祥/曲阜) fetch_webpage 无法直接获取，通过 Baidu redirect 确认
+
+---
+
+## 河南省（21县区）
+
+### 安阳市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 北关区 | ✅ | `beiguan.gov.cn` — `/zwgk/zfgzjg/bgqczj/czyjsly/` 财政预决算领域 |
+| 滑县 | ✅ | gov URL 修正 `huaxian.gov.cn`→`hnhx.gov.cn`，`caizhengju.hnhx.gov.cn/hxczj/eynbmyjs/` 财政预决算公开平台 |
+| 内黄县 | ✅ | `neihuang.gov.cn` — `/.../fdzdgknr/czzj/index.html` 财政资金 |
+
+### 新乡市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 卫滨区 | ✅ | `wbq.gov.cn` — `/htmls/740v1618_caizhengyujuesuan/list-1.html` |
+| 凤泉区 | ✅ | `fengquan.gov.cn` — `/cover-89052j34/89052j34_caizhengyujuesuan` |
+| 牧野区 | ✅ | `xxmyq.gov.cn` — `/sitesources/myqzf/page_pc/xxgk/zdlyxxgk/czzj/czyjs/` |
+| 新乡县 | ✅ | gov URL 修正 `xinxiang.gov.cn`→`xinxiangxian.gov.cn`，`/htmls/d6p434r11_caizhengyujuesuan/list-1.html` |
+| 延津县 | ✅ | `yanjin.gov.cn` — `/news/53.html` 预决算公开专题专栏 |
+| 卫辉市 | ✅ | `weihui.gov.cn` — `/portal/zfxxgk/.../czzj/` 财政资金 |
+| 长垣市 | ✅ | `changyuan.gov.cn` — `/sitesources/cyxrmzf/page_pc/xxgk/zdlyxxgk/czzj/` |
+
+### 焦作市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 解放区 | ✅ | `jfq.gov.cn` — `/news/161` JS-rendered |
+| 山阳区 | ✅ | `syq.gov.cn` — `/xxgk/zfxxgkml/czyjsbg/` 财政预决算报告 |
+
+### 濮阳市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 清丰县 | ✅ | `qingfeng.gov.cn` — `/class.asp?class=1150` 财政预决算 151条 |
+| 范县 | ✅ | gov URL 修正 `puyang.gov.cn`→`fanxian.gov.cn`，`/index.aspx?lanmuid=76&sublanmuid=973` |
+
+### 许昌市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 禹州市 | ✅ | `yuzhou.gov.cn` — `/jcxx/czyjsly/` 财政预决算领域 |
+
+### 商丘市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 睢阳区 | ✅ | `suiyangqu.gov.cn` — `/zwgk/fdzdgknr/czxx26syqrmzf` |
+
+### 周口市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 西华县 | ✅ | `xihua.gov.cn` — `/sitesources/xhxrmzf/page_pc/ztzl/czyjs/` |
+| 沈丘县 | ✅ | `shenqiu.gov.cn` — `/xj.asp` 预决算公开平台 |
+| 鹿邑县 | ✅ | gov URL 修正 `zhoukou.gov.cn`→`luyi.gov.cn`，`/portal/zwgk/jczwgk/czyjs/czyjs/` Baidu 确认 |
+
+### 驻马店市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 平舆县 | ✅ | `pingyu.gov.cn` — `/ztzl/jczwgkbzhgfh/ztzlgkly/czyjsly/` |
+| 汝南县 | ✅ | `runan.gov.cn` — `/zwgk/zfxxgk/fdzdgknr/ysjs/` 政府预决算+部门预决算 |
+
+### 小结
+- **21/21 全部确认** ✅
+- 修正 5 个 gov URL：滑县(huaxian→hnhx)、新乡县(xinxiang→xinxiangxian)、范县(puyang→fanxian)、鹿邑县(zhoukou→luyi)、(滑县 huaxian→hnhx)

@@ -6699,7 +6699,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "滑县",
-            url: "https://www.huaxian.gov.cn/"
+            url: "https://www.hnhx.gov.cn/"
           },
           {
             name: "内黄县",
@@ -6759,7 +6759,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "新乡县",
-            url: "http://www.xinxiang.gov.cn/"
+            url: "http://www.xinxiangxian.gov.cn/"
           },
           {
             name: "获嘉县",
@@ -6855,7 +6855,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "范县",
-            url: "https://www.puyang.gov.cn/"
+            url: "http://www.fanxian.gov.cn/"
           },
           {
             name: "台前县",
@@ -7137,7 +7137,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "鹿邑县",
-            url: "http://www.zhoukou.gov.cn/"
+            url: "https://www.luyi.gov.cn/"
           },
           {
             name: "项城市",
