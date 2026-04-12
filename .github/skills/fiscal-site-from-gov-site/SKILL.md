@@ -216,9 +216,11 @@ Step 4: 确认无误后写入数据
 为提高效率，按以下策略组织工作：
 
 1. **按地级市拆分任务**：同一地级市下的区县共享相似的官网结构和 CMS 模板
-2. **使用 subagent 并行处理**：
+2. **⚡ 使用 subagent 真并行处理**：
    - 大市（≥5 个区县）：单独分配一个 subagent
    - 小市（< 5 个区县）：可合并 2-3 个市到一个 subagent
+   - **关键：将 3-4 个 subagent 的 `runSubagent` 调用放在同一个 `<function_calls>` block 中，这样它们会真正同时运行（而非先后串行）**
+   - 每轮并行 subagent 完成后，主 agent 汇总结果、处理 gov-suspicious 项，再发下一轮
 3. **subagent 产出**：每个区县的结果分为三类：
    - ✅ **confirmed**：官网正确 + 找到真实预决算栏目页 → 含具体 URL
    - ⚠️ **gov-suspicious**：官网可疑，需主 agent 用 `gov-site-finder` 修复
@@ -230,34 +232,49 @@ Step 4: 确认无误后写入数据
 
 ### subagent 提示词模板
 
-给 subagent 的提示词应包含：
+给 subagent 的提示词 **必须** 包含以下内容。不要依赖 subagent 自行读取 SKILL.md——将核心规则内联到 prompt 中：
+
 ```
 你是一个谨慎的政府网站研究助理。任务是为 {市名} 下辖的 N 个区县查找财政预决算公开链接。
 
-对每个区县：
-1. 先用 fetch_webpage 访问其政府官网 {URL}，检查：
-   - 页面是否可达
-   - 标题/内容是否包含该区县名称
-   - 是否是政府门户主站（非财政局/部门子站）
-   如有任何可疑，标记为 gov-suspicious 并说明原因
+## 核心规则（必须遵守）
+- 宁缺勿错：找不到就留空，绝不写入无法验证的 URL
+- DNS 失败 ≠ "不存在"：遇到 DNS 失败，必须标记 gov-suspicious 交回主 agent 修复
+- 不要反复重试同一个失败策略：超过 2 次同类失败就换方法或标记 unconfirmed
 
-2. 官网确认正确后，在首页 HTML 中搜索预决算相关链接：
-   - 搜索关键词：预算、决算、预决算、财政预决算、财政信息、财政资金
-   - 如首页无结果，找"政务公开"/"信息公开"入口页再搜索一层
+## Step 1: 校验政府官网（绝不跳过）
+对每个区县，先用 fetch_webpage 访问其政府官网 {URL}，检查：
+- 页面是否可达（DNS 解析、HTTP 连接、非空响应）
+- 标题/内容是否包含该区县名称
+- 是否是政府门户主站（非财政局/部门子站/旧域名）
 
-3. 找到候选链接后用 fetch_webpage 访问验证：
-   - 页面标题必须明确标注"预决算"或同义词
-   - 页面有实际预算/决算文件列表
-   - 排除：首页、财政局首页、政务公开首页、单篇文章
-   通过验证标记为 confirmed
+⚠️ 以下情形必须标记 gov-suspicious 并说明原因，不得继续后续步骤：
+- DNS 不解析 / 连接超时（2次以上）
+- 打开后地名不匹配（标题是A市但应该是B县）
+- 是财政局站 / 部门子站 / 旧域名跳转到其他站
+- 页面结构不像政府门户（无导航、空白页、骨架页）
 
-4. 如果多次尝试超时/502/空白，标记为 fiscal-unconfirmed
-
+## Step 2: 从官网导航到预决算栏目
+官网确认正确后，在首页 HTML 中搜索预决算相关链接：
+- 搜索关键词：预算、决算、预决算、财政预决算、财政信息、财政资金
+- 如首页无结果，找"政务公开"/"信息公开"入口页再搜索一层（限深入 2 层）
 同市内发现有效路径模式后，优先在其他区县尝试相同模式。
 
-返回结果格式（JSON 数组）：
+## Step 3: 验证候选页面
+找到候选链接后用 fetch_webpage 访问验证：
+- 页面标题必须明确标注"预决算"或同义词
+- 页面有实际预算/决算文件列表
+- 排除：首页、财政局首页、政务公开首页、单篇文章
+通过验证标记为 confirmed
+
+## Step 4: 写入数据
+确认为真页面后，用 replace_string_in_file 将 URL 写入 data/fiscal-budget-links.ts。
+只写入 confirmed 的 URL，不写入 unconfirmed 的。
+
+## 输出格式
+返回结果（JSON 数组）：
 {county, govUrl, govStatus, fiscalUrl, fiscalStatus, notes}
-- govStatus: "ok" | "suspicious"
+- govStatus: "ok" | "suspicious"（suspicious 时必须说明原因）
 - fiscalStatus: "confirmed" | "unconfirmed" | "not-found"
 ```
 
