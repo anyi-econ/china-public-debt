@@ -1,0 +1,1099 @@
+{
+  "updatedAt": "2026-04-12",
+  "source": {
+    "name": "地方政府债券信息披露门户 / chinabond",
+    "organization": "中央国债登记结算有限责任公司",
+    "url": "https://www.chinabond.com.cn/dfz/#/information/index?name=%E5%8F%91%E8%A1%8C%E5%89%8D%E6%8A%AB%E9%9C%B2",
+    "note": "抓取 cbiw/lgb/infoListByPath 的 xxplwj_fxqpl（发行前披露）列表，筛选 2026-04-06 及以后记录，并下载详情中的 files 附件。原始列表与详情 JSON 均保存至 raw 目录。"
+  },
+  "coverage": [
+    {
+      "category": "发行前公告",
+      "channelName": "xxplwj_fxqpl",
+      "totalItems": 2395,
+      "totalPages": 80,
+      "fetchedItems": 2395,
+      "filteredSince": "2026-04-06",
+      "actualItems": 11
+    }
+  ],
+  "items": [
+    {
+      "id": "chinabond-pre-issuance-854989110",
+      "title": "2026年湖北省政府专项债券（十六至二十一期）和再融资专项债券（七至八期）信息披露文件",
+      "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/t20260410_854989110.json",
+      "date": "2026-04-10",
+      "source": "地方政府债券信息披露门户 / chinabond",
+      "category": "发行前公告",
+      "region": "湖北省",
+      "attachment_count": 0,
+      "attachments": [],
+      "detail_error": "fetch failed"
+    },
+    {
+      "id": "chinabond-pre-issuance-854987852",
+      "title": "2026年4月16日陕西省地方政府债券发行相关披露文件",
+      "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/t20260409_854987852.json",
+      "date": "2026-04-09",
+      "source": "地方政府债券信息披露门户 / chinabond",
+      "category": "发行前公告",
+      "region": "陕西省",
+      "attachment_count": 6,
+      "attachments": [
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409724093734751.pdf",
+          "display_name": "陕西省财政厅关于发行2026年陕西省地方政府再融资一般债券(二期)有关事项的通知.pdf",
+          "local_file_name": "陕西省财政厅关于发行2026年陕西省地方政府再融资一般债券(二期)有关事项的通知.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年4月16日陕西省地方政府债券发行相关披露文件/陕西省财政厅关于发行2026年陕西省地方政府再融资一般债券(二期)有关事项的通知.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409724093914361.pdf",
+          "display_name": "陕西省财政厅关于发行2026年陕西省地方政府再融资专项债券(四期)有关事项的通知.pdf",
+          "local_file_name": "陕西省财政厅关于发行2026年陕西省地方政府再融资专项债券(四期)有关事项的通知.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年4月16日陕西省地方政府债券发行相关披露文件/陕西省财政厅关于发行2026年陕西省地方政府再融资专项债券(四期)有关事项的通知.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409724094083743.pdf",
+          "display_name": "2026年陕西省地方政府再融资一般债券（二期）信用评级报告.pdf",
+          "local_file_name": "2026年陕西省地方政府再融资一般债券（二期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年4月16日陕西省地方政府债券发行相关披露文件/2026年陕西省地方政府再融资一般债券（二期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409724094235692.pdf",
+          "display_name": "2026年陕西省地方政府再融资专项债券（四期）信用评级报告.pdf",
+          "local_file_name": "2026年陕西省地方政府再融资专项债券（四期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年4月16日陕西省地方政府债券发行相关披露文件/2026年陕西省地方政府再融资专项债券（四期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409724094384374.pdf",
+          "display_name": "2026年陕西省地方政府再融资一般债券（二期）信息披露文件.pdf",
+          "local_file_name": "2026年陕西省地方政府再融资一般债券（二期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年4月16日陕西省地方政府债券发行相关披露文件/2026年陕西省地方政府再融资一般债券（二期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409724094500316.pdf",
+          "display_name": "2026年陕西省地方政府再融资专项债券（四期）信息披露文件.pdf",
+          "local_file_name": "2026年陕西省地方政府再融资专项债券（四期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年4月16日陕西省地方政府债券发行相关披露文件/2026年陕西省地方政府再融资专项债券（四期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        }
+      ],
+      "raw_detail_path": "data/chinabond-pre-issuance-attachments/raw/details/chinabond-pre-issuance-854987852.json",
+      "detail_channel": "发行前披露",
+      "detail_title": "2026年4月16日陕西省地方政府债券发行相关披露文件",
+      "previous_attachments_count": 6
+    },
+    {
+      "id": "chinabond-pre-issuance-854987854",
+      "title": "2026年广东省政府专项债券（二十二期～二十三期）信息披露材料",
+      "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/t20260409_854987854.json",
+      "date": "2026-04-09",
+      "source": "地方政府债券信息披露门户 / chinabond",
+      "category": "发行前公告",
+      "region": "广东省",
+      "attachment_count": 35,
+      "attachments": [
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744675717028.pdf",
+          "display_name": "广东省财政厅关于2026年广东省政府专项债券（二十二期～二十三期）发行有关事宜的通知.pdf",
+          "local_file_name": "广东省财政厅关于2026年广东省政府专项债券（二十二期～二十三期）发行有关事宜的通知.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年广东省政府专项债券（二十二期～二十三期）信息披露材料/广东省财政厅关于2026年广东省政府专项债券（二十二期～二十三期）发行有关事宜的通知.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744675854352.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-00省本级.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744683007720.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-00省本级.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744694629296.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-01广州.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744700697453.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-01广州.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744704796960.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-03珠海.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744709940925.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-03珠海.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744712217760.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-04汕头.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744715680127.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-05佛山.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744718347682.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-06韶关.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744721688853.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-06韶关.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744722430327.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-07河源.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744724357082.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-08梅州.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744727559011.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-08梅州.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744728954185.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-09惠州.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744736200949.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-09惠州.zip",
+          "local_file_name": "2026年广东省政府专项债券（二十三期）-09惠州.zip",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年广东省政府专项债券（二十二期～二十三期）信息披露材料/2026年广东省政府专项债券（二十三期）-09惠州.zip",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744736610817.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-11东莞1.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744767839554.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-11东莞2.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744819870573.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-11东莞.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744851640703.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-12中山.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744888539122.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-13江门.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744899407919.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-14阳江.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744901655257.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-15湛江.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744904583796.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-15湛江.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744907521741.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-16茂名.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744911848098.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-16茂名.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744912925325.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-17肇庆.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744926349980.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期）-18清远.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744941193008.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-18清远.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744954784086.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-19潮州.zip",
+          "local_file_name": "2026年广东省政府专项债券（二十三期）-19潮州.zip",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年广东省政府专项债券（二十二期～二十三期）信息披露材料/2026年广东省政府专项债券（二十三期）-19潮州.zip",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744955613299.zip",
+          "display_name": "2026年广东省政府专项债券（二十三期）-21云浮.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744958660249.pdf",
+          "display_name": "2026年广东省政府专项债券（二十二期）信用评级报告.pdf",
+          "local_file_name": "2026年广东省政府专项债券（二十二期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年广东省政府专项债券（二十二期～二十三期）信息披露材料/2026年广东省政府专项债券（二十二期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744958856864.pdf",
+          "display_name": "2026年广东省政府专项债券（二十三期）信用评级报告.pdf",
+          "local_file_name": "2026年广东省政府专项债券（二十三期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年广东省政府专项债券（二十二期～二十三期）信息披露材料/2026年广东省政府专项债券（二十三期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744959019495.zip",
+          "display_name": "2026年广东省政府专项债券（二十二期～二十三期）信息披露模板.zip",
+          "local_file_name": "2026年广东省政府专项债券（二十二期～二十三期）信息披露模板.zip",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年广东省政府专项债券（二十二期～二十三期）信息披露材料/2026年广东省政府专项债券（二十二期～二十三期）信息披露模板.zip",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409744959204599.pdf",
+          "display_name": "2026年广东省政府专项债券（二十二期～二十三期）信息披露文件.pdf",
+          "local_file_name": "2026年广东省政府专项债券（二十二期～二十三期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年广东省政府专项债券（二十二期～二十三期）信息披露材料/2026年广东省政府专项债券（二十二期～二十三期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        }
+      ],
+      "raw_detail_path": "data/chinabond-pre-issuance-attachments/raw/details/chinabond-pre-issuance-854987854.json",
+      "detail_channel": "发行前披露",
+      "detail_title": "2026年广东省政府专项债券（二十二期～二十三期）信息披露材料",
+      "previous_attachments_count": 35
+    },
+    {
+      "id": "chinabond-pre-issuance-854987836",
+      "title": "2026年辽宁省地方政府再融资一般债券（四期）信息披露文件",
+      "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/t20260409_854987836.json",
+      "date": "2026-04-09",
+      "source": "地方政府债券信息披露门户 / chinabond",
+      "category": "发行前公告",
+      "region": "辽宁省",
+      "attachment_count": 0,
+      "attachments": [],
+      "detail_error": "fetch failed"
+    },
+    {
+      "id": "chinabond-pre-issuance-854987835",
+      "title": "2026年辽宁省地方政府再融资专项债券（四期）信息披露文件",
+      "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/t20260409_854987835.json",
+      "date": "2026-04-09",
+      "source": "地方政府债券信息披露门户 / chinabond",
+      "category": "发行前公告",
+      "region": "辽宁省",
+      "attachment_count": 3,
+      "attachments": [
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409642351820429.pdf",
+          "display_name": "辽宁省财政厅关于发行2026年辽宁省地方政府再融资专项债券（四期）有关事项的通知.pdf",
+          "local_file_name": "辽宁省财政厅关于发行2026年辽宁省地方政府再融资专项债券（四期）有关事项的通知.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年辽宁省地方政府再融资专项债券（四期）信息披露文件/辽宁省财政厅关于发行2026年辽宁省地方政府再融资专项债券（四期）有关事项的通知.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409642351944249.pdf",
+          "display_name": "2026年辽宁省地方政府再融资专项债券（四期）信用评级报告.pdf",
+          "local_file_name": "2026年辽宁省地方政府再融资专项债券（四期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年辽宁省地方政府再融资专项债券（四期）信息披露文件/2026年辽宁省地方政府再融资专项债券（四期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409642352095827.pdf",
+          "display_name": "2026年辽宁省地方政府再融资专项债券（四期）信息披露文件.pdf",
+          "local_file_name": "2026年辽宁省地方政府再融资专项债券（四期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年辽宁省地方政府再融资专项债券（四期）信息披露文件/2026年辽宁省地方政府再融资专项债券（四期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        }
+      ],
+      "raw_detail_path": "data/chinabond-pre-issuance-attachments/raw/details/chinabond-pre-issuance-854987835.json",
+      "detail_channel": "发行前披露",
+      "detail_title": "2026年辽宁省地方政府再融资专项债券（四期）信息披露文件",
+      "previous_attachments_count": 3
+    },
+    {
+      "id": "chinabond-pre-issuance-854987834",
+      "title": "2026年辽宁省地方政府再融资专项债券（五期）信息披露文件",
+      "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/t20260409_854987834.json",
+      "date": "2026-04-09",
+      "source": "地方政府债券信息披露门户 / chinabond",
+      "category": "发行前公告",
+      "region": "辽宁省",
+      "attachment_count": 3,
+      "attachments": [
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409642304834621.pdf",
+          "display_name": "辽宁省财政厅关于发行2026年辽宁省地方政府再融资专项债券（五期）有关事项的通知.pdf",
+          "local_file_name": "辽宁省财政厅关于发行2026年辽宁省地方政府再融资专项债券（五期）有关事项的通知.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年辽宁省地方政府再融资专项债券（五期）信息披露文件/辽宁省财政厅关于发行2026年辽宁省地方政府再融资专项债券（五期）有关事项的通知.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409642304954321.pdf",
+          "display_name": "2026年辽宁省地方政府再融资专项债券（五期）信用评级报告.pdf",
+          "local_file_name": "2026年辽宁省地方政府再融资专项债券（五期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年辽宁省地方政府再融资专项债券（五期）信息披露文件/2026年辽宁省地方政府再融资专项债券（五期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409642305098128.pdf",
+          "display_name": "2026年辽宁省地方政府再融资专项债券（五期）信息披露文件.pdf",
+          "local_file_name": "2026年辽宁省地方政府再融资专项债券（五期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_2026年辽宁省地方政府再融资专项债券（五期）信息披露文件/2026年辽宁省地方政府再融资专项债券（五期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        }
+      ],
+      "raw_detail_path": "data/chinabond-pre-issuance-attachments/raw/details/chinabond-pre-issuance-854987834.json",
+      "detail_channel": "发行前披露",
+      "detail_title": "2026年辽宁省地方政府再融资专项债券（五期）信息披露文件",
+      "previous_attachments_count": 3
+    },
+    {
+      "id": "chinabond-pre-issuance-854986378",
+      "title": "关于发行2026年青岛市政府一般债券（三期）有关事项的通知",
+      "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/t20260409_854986378.json",
+      "date": "2026-04-09",
+      "source": "地方政府债券信息披露门户 / chinabond",
+      "category": "发行前公告",
+      "region": "青岛市",
+      "attachment_count": 3,
+      "attachments": [
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546730177178.pdf",
+          "display_name": "关于发行2026年青岛市政府一般债券（三期）有关事项的通知.pdf",
+          "local_file_name": "关于发行2026年青岛市政府一般债券（三期）有关事项的通知.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府一般债券（三期）有关事项的通知/关于发行2026年青岛市政府一般债券（三期）有关事项的通知.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546730332355.pdf",
+          "display_name": "东方金诚债评字【2026】0105号2026年青岛市政府一般债券（三期）信用评级报告.pdf",
+          "local_file_name": "东方金诚债评字【2026】0105号2026年青岛市政府一般债券（三期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府一般债券（三期）有关事项的通知/东方金诚债评字【2026】0105号2026年青岛市政府一般债券（三期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546730489923.pdf",
+          "display_name": "2026年青岛市政府一般债券（三期）信息披露文件.pdf",
+          "local_file_name": "2026年青岛市政府一般债券（三期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府一般债券（三期）有关事项的通知/2026年青岛市政府一般债券（三期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        }
+      ],
+      "raw_detail_path": "data/chinabond-pre-issuance-attachments/raw/details/chinabond-pre-issuance-854986378.json",
+      "detail_channel": "发行前披露",
+      "detail_title": "关于发行2026年青岛市政府一般债券（三期）有关事项的通知",
+      "previous_attachments_count": 3
+    },
+    {
+      "id": "chinabond-pre-issuance-854986377",
+      "title": "关于发行2026年青岛市政府再融资专项债券（九至十期）有关事项的通知",
+      "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/t20260409_854986377.json",
+      "date": "2026-04-09",
+      "source": "地方政府债券信息披露门户 / chinabond",
+      "category": "发行前公告",
+      "region": "青岛市",
+      "attachment_count": 3,
+      "attachments": [
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546711897496.pdf",
+          "display_name": "关于发行2026年青岛市政府再融资专项债券（九至十期）有关事项的通知.pdf",
+          "local_file_name": "关于发行2026年青岛市政府再融资专项债券（九至十期）有关事项的通知.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府再融资专项债券（九至十期）有关事项的通知/关于发行2026年青岛市政府再融资专项债券（九至十期）有关事项的通知.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546712058217.pdf",
+          "display_name": "东方金诚债评字【2026】0106号2026年青岛市政府再融资专项债券（九至十期）信用评级报告.pdf",
+          "local_file_name": "东方金诚债评字【2026】0106号2026年青岛市政府再融资专项债券（九至十期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府再融资专项债券（九至十期）有关事项的通知/东方金诚债评字【2026】0106号2026年青岛市政府再融资专项债券（九至十期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546712199373.pdf",
+          "display_name": "2026年青岛市政府再融资专项债券（九至十期）信息披露文件.pdf",
+          "local_file_name": "2026年青岛市政府再融资专项债券（九至十期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府再融资专项债券（九至十期）有关事项的通知/2026年青岛市政府再融资专项债券（九至十期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        }
+      ],
+      "raw_detail_path": "data/chinabond-pre-issuance-attachments/raw/details/chinabond-pre-issuance-854986377.json",
+      "detail_channel": "发行前披露",
+      "detail_title": "关于发行2026年青岛市政府再融资专项债券（九至十期）有关事项的通知",
+      "previous_attachments_count": 3
+    },
+    {
+      "id": "chinabond-pre-issuance-854986379",
+      "title": "关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知",
+      "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/t20260409_854986379.json",
+      "date": "2026-04-09",
+      "source": "地方政府债券信息披露门户 / chinabond",
+      "category": "发行前公告",
+      "region": "青岛市",
+      "attachment_count": 11,
+      "attachments": [
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546924175718.pdf",
+          "display_name": "关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知.pdf",
+          "local_file_name": "关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知/关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546924346750.zip",
+          "display_name": "17期.zip",
+          "local_file_name": "17期.zip",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知/17期.zip",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546924988682.zip",
+          "display_name": "18期.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546926585392.zip",
+          "display_name": "19期.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546933442120.zip",
+          "display_name": "20期.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546935163051.pdf",
+          "display_name": "东方金诚债评字【2026】0107号2026年青岛市政府专项债券（十七至二十期）信用评级报告.pdf",
+          "local_file_name": "东方金诚债评字【2026】0107号2026年青岛市政府专项债券（十七至二十期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知/东方金诚债评字【2026】0107号2026年青岛市政府专项债券（十七至二十期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546935301382.pdf",
+          "display_name": "2026年青岛市政府专项债券（十七期）.pdf",
+          "local_file_name": "2026年青岛市政府专项债券（十七期）.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知/2026年青岛市政府专项债券（十七期）.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546935415922.pdf",
+          "display_name": "2026年青岛市政府专项债券（十八期）.pdf",
+          "local_file_name": "2026年青岛市政府专项债券（十八期）.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知/2026年青岛市政府专项债券（十八期）.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546935614477.pdf",
+          "display_name": "2026年青岛市政府专项债券（十九期）.pdf",
+          "local_file_name": "2026年青岛市政府专项债券（十九期）.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知/2026年青岛市政府专项债券（十九期）.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546935727427.pdf",
+          "display_name": "2026年青岛市政府专项债券（二十期）.pdf",
+          "local_file_name": "2026年青岛市政府专项债券（二十期）.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知/2026年青岛市政府专项债券（二十期）.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260409546935829846.pdf",
+          "display_name": "2026年青岛市政府专项债券（十七至二十期）信息披露文件.pdf",
+          "local_file_name": "2026年青岛市政府专项债券（十七至二十期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260409_关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知/2026年青岛市政府专项债券（十七至二十期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        }
+      ],
+      "raw_detail_path": "data/chinabond-pre-issuance-attachments/raw/details/chinabond-pre-issuance-854986379.json",
+      "detail_channel": "发行前披露",
+      "detail_title": "关于发行2026年青岛市政府专项债券（十七至二十期）有关事项的通知",
+      "previous_attachments_count": 11
+    },
+    {
+      "id": "chinabond-pre-issuance-854981479",
+      "title": "2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件",
+      "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/t20260407_854981479.json",
+      "date": "2026-04-07",
+      "source": "地方政府债券信息披露门户 / chinabond",
+      "category": "发行前公告",
+      "region": "山东省",
+      "attachment_count": 33,
+      "attachments": [
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731145859743.pdf",
+          "display_name": "山东省财政厅关于发行2026年山东省政府专项债券（十八期—二十三期）有关事项的通知（鲁财库[2026]15号）.pdf",
+          "local_file_name": "山东省财政厅关于发行2026年山东省政府专项债券（十八期—二十三期）有关事项的通知（鲁财库[2026]15号）.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/山东省财政厅关于发行2026年山东省政府专项债券（十八期—二十三期）有关事项的通知（鲁财库[2026]15号）.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731146028529.pdf",
+          "display_name": "山东省财政厅关于发行2026年山东省政府一般债券（一期）有关事项的通知（鲁财库[2026]16号）.pdf",
+          "local_file_name": "山东省财政厅关于发行2026年山东省政府一般债券（一期）有关事项的通知（鲁财库[2026]16号）.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/山东省财政厅关于发行2026年山东省政府一般债券（一期）有关事项的通知（鲁财库[2026]16号）.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731146182911.pdf",
+          "display_name": "山东省财政厅关于发行2026年山东省地方政府再融资一般债券（三期）有关事项的通知（鲁财库[2026]17号）.pdf",
+          "local_file_name": "山东省财政厅关于发行2026年山东省地方政府再融资一般债券（三期）有关事项的通知（鲁财库[2026]17号）.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/山东省财政厅关于发行2026年山东省地方政府再融资一般债券（三期）有关事项的通知（鲁财库[2026]17号）.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731146335368.pdf",
+          "display_name": "山东省财政厅关于发行2026年山东省地方政府再融资专项债券（十五期—十八期）有关事项的通知（鲁财库[2026]18号）.pdf",
+          "local_file_name": "山东省财政厅关于发行2026年山东省地方政府再融资专项债券（十五期—十八期）有关事项的通知（鲁财库[2026]18号）.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/山东省财政厅关于发行2026年山东省地方政府再融资专项债券（十五期—十八期）有关事项的通知（鲁财库[2026]18号）.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731146481919.rar",
+          "display_name": "省本级专项债项目一案两书.rar",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731148854615.zip",
+          "display_name": "淄博市专项债项目一案两书.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731150770696.rar",
+          "display_name": "枣庄市专项债项目一案两书.rar",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731151423354.rar",
+          "display_name": "烟台市专项债项目一案两书.rar",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731160554235.rar",
+          "display_name": "潍坊市专项债项目一案两书.rar",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731162281473.rar",
+          "display_name": "济宁市专项债项目一案两书.rar",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731167684982.zip",
+          "display_name": "泰安市专项债项目一案两书.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731171945889.rar",
+          "display_name": "威海市专项债项目一案两书.rar",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731173382137.zip",
+          "display_name": "日照市专项债项目一案两书.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731176899726.rar",
+          "display_name": "临沂市专项债项目一案两书.rar",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731180227164.zip",
+          "display_name": "德州市专项债项目一案两书.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731185174540.rar",
+          "display_name": "聊城市专项债项目一案两书.rar",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731190333272.zip",
+          "display_name": "滨州市专项债项目一案两书.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731191359493.zip",
+          "display_name": "菏泽市专项债项目一案两书.zip",
+          "local_file_name": null,
+          "local_file_path": null,
+          "download_status": "failed",
+          "error": "fetch failed",
+          "app_desc": "一案两书"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731193266594.pdf",
+          "display_name": "2026年山东省政府专项债券（十八至二十三期）信用评级报告.pdf",
+          "local_file_name": "2026年山东省政府专项债券（十八至二十三期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省政府专项债券（十八至二十三期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731193525304.pdf",
+          "display_name": "2026年山东省政府一般债券（一期）信用评级报告.pdf",
+          "local_file_name": "2026年山东省政府一般债券（一期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省政府一般债券（一期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731193784954.pdf",
+          "display_name": "2026年山东省地方政府再融资一般债券（三期）信用评级报告.pdf",
+          "local_file_name": "2026年山东省地方政府再融资一般债券（三期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省地方政府再融资一般债券（三期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731194038329.pdf",
+          "display_name": "2026年山东省地方政府再融资专项债券（十五至十八期）信用评级报告.pdf",
+          "local_file_name": "2026年山东省地方政府再融资专项债券（十五至十八期）信用评级报告.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省地方政府再融资专项债券（十五至十八期）信用评级报告.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731194262651.pdf",
+          "display_name": "2026年山东省政府专项债券（十八期）项目信息披露模板.pdf",
+          "local_file_name": "2026年山东省政府专项债券（十八期）项目信息披露模板.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省政府专项债券（十八期）项目信息披露模板.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731194401097.pdf",
+          "display_name": "2026年山东省政府专项债券（十九期）项目信息披露模板.pdf",
+          "local_file_name": "2026年山东省政府专项债券（十九期）项目信息披露模板.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省政府专项债券（十九期）项目信息披露模板.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731194538569.pdf",
+          "display_name": "2026年山东省政府专项债券（二十期）项目信息披露模板.pdf",
+          "local_file_name": "2026年山东省政府专项债券（二十期）项目信息披露模板.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省政府专项债券（二十期）项目信息披露模板.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731194677246.pdf",
+          "display_name": "2026年山东省政府专项债券（二十一期）项目信息披露模板.pdf",
+          "local_file_name": "2026年山东省政府专项债券（二十一期）项目信息披露模板.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省政府专项债券（二十一期）项目信息披露模板.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731194780314.pdf",
+          "display_name": "2026年山东省政府专项债券（二十二期）项目信息披露模板.pdf",
+          "local_file_name": "2026年山东省政府专项债券（二十二期）项目信息披露模板.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省政府专项债券（二十二期）项目信息披露模板.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731194897401.pdf",
+          "display_name": "2026年山东省政府专项债券（十八至二十三期）信息披露文件.pdf",
+          "local_file_name": "2026年山东省政府专项债券（十八至二十三期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省政府专项债券（十八至二十三期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731195009939.pdf",
+          "display_name": "2026年山东省政府专项债券（十八至二十三期）募投项目情况汇总表.pdf",
+          "local_file_name": "2026年山东省政府专项债券（十八至二十三期）募投项目情况汇总表.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省政府专项债券（十八至二十三期）募投项目情况汇总表.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731195116812.pdf",
+          "display_name": "2026年山东省政府一般债券（一期）信息披露文件.pdf",
+          "local_file_name": "2026年山东省政府一般债券（一期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省政府一般债券（一期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731195221510.pdf",
+          "display_name": "2026年山东省政府一般债券（一期）募投项目情况汇总表.pdf",
+          "local_file_name": "2026年山东省政府一般债券（一期）募投项目情况汇总表.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省政府一般债券（一期）募投项目情况汇总表.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731195318558.pdf",
+          "display_name": "2026年山东省地方政府再融资一般债券（三期）信息披露文件.pdf",
+          "local_file_name": "2026年山东省地方政府再融资一般债券（三期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省地方政府再融资一般债券（三期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407731195427213.pdf",
+          "display_name": "2026年山东省地方政府再融资专项债券（十五至十八期）信息披露文件.pdf",
+          "local_file_name": "2026年山东省地方政府再融资专项债券（十五至十八期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件/2026年山东省地方政府再融资专项债券（十五至十八期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        }
+      ],
+      "raw_detail_path": "data/chinabond-pre-issuance-attachments/raw/details/chinabond-pre-issuance-854981479.json",
+      "detail_channel": "发行前披露",
+      "detail_title": "2026年山东省政府专项债券（十八至二十三期）、一般债券（一期）、再融资一般债券（三期）、再融资专项债券（十五至十八期）发行信息披露文件",
+      "previous_attachments_count": 33
+    },
+    {
+      "id": "chinabond-pre-issuance-854981457",
+      "title": "2026年云南省地方政府再融资专项债券（三至五期）发行信息披露",
+      "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/t20260407_854981457.json",
+      "date": "2026-04-07",
+      "source": "地方政府债券信息披露门户 / chinabond",
+      "category": "发行前公告",
+      "region": "云南省",
+      "attachment_count": 4,
+      "attachments": [
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407619813181339.pdf",
+          "display_name": "云南省财政厅关于发行2026年云南省地方政府再融资专项债券（三至五期）有关事项的通知（云财债〔2026〕33号）.pdf",
+          "local_file_name": "云南省财政厅关于发行2026年云南省地方政府再融资专项债券（三至五期）有关事项的通知（云财债〔2026〕33号）.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年云南省地方政府再融资专项债券（三至五期）发行信息披露/云南省财政厅关于发行2026年云南省地方政府再融资专项债券（三至五期）有关事项的通知（云财债〔2026〕33号）.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "发行通知"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407619813374447.zip",
+          "display_name": "2026年云南省地方政府再融资专项债券（三至五期）信用评级报告.zip",
+          "local_file_name": "2026年云南省地方政府再融资专项债券（三至五期）信用评级报告.zip",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年云南省地方政府再融资专项债券（三至五期）发行信息披露/2026年云南省地方政府再融资专项债券（三至五期）信用评级报告.zip",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "评级报告"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407619813721285.pdf",
+          "display_name": "2026年云南省地方政府再融资专项债券（三至五期）概况表.pdf",
+          "local_file_name": "2026年云南省地方政府再融资专项债券（三至五期）概况表.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年云南省地方政府再融资专项债券（三至五期）发行信息披露/2026年云南省地方政府再融资专项债券（三至五期）概况表.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        },
+        {
+          "url": "https://www.chinabond.com.cn/xxpl/ywzc_fxyfxdh/fxyfxdh_zqzl/zkzl_dfzxxpl/zdfzxxpl_xxplwj/xxplwj_fxqpl/202604/P020260407619813835262.pdf",
+          "display_name": "2026年云南省地方政府再融资专项债券（三至五期）信息披露文件 .pdf",
+          "local_file_name": "2026年云南省地方政府再融资专项债券（三至五期）信息披露文件.pdf",
+          "local_file_path": "data/chinabond-pre-issuance-attachments/raw/events/20260407_2026年云南省地方政府再融资专项债券（三至五期）发行信息披露/2026年云南省地方政府再融资专项债券（三至五期）信息披露文件.pdf",
+          "download_status": "success",
+          "error": null,
+          "app_desc": "其他文件"
+        }
+      ],
+      "raw_detail_path": "data/chinabond-pre-issuance-attachments/raw/details/chinabond-pre-issuance-854981457.json",
+      "detail_channel": "发行前披露",
+      "detail_title": "2026年云南省地方政府再融资专项债券（三至五期）发行信息披露",
+      "previous_attachments_count": 4
+    }
+  ]
+}
