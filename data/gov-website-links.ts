@@ -11829,7 +11829,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "长安区",
-            url: "http://www.changan.gov.cn/"
+            url: "http://www.changanqu.gov.cn/"
           },
           {
             name: "高陵区",
@@ -11997,7 +11997,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "华州区",
-            url: "http://www.hzq.gov.cn/"
+            url: "https://www.hzqu.gov.cn/"
           },
           {
             name: "潼关县",
@@ -12133,7 +12133,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "镇巴县",
-            url: "http://www.zhenba.gov.cn/"
+            url: "http://www.zb.gov.cn/"
           },
           {
             name: "留坝县",
@@ -12159,7 +12159,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "府谷县",
-            url: "https://www.fugu.gov.cn/"
+            url: "https://www.fg.gov.cn/"
           },
           {
             name: "靖边县",
@@ -12329,7 +12329,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
       },
       {
         name: "金昌市",
-        url: "https://www.jc.gov.cn/",
+        url: "https://www.jcs.gov.cn/",
         children: [
           {
             name: "金川区",

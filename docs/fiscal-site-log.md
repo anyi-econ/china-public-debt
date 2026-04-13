@@ -687,3 +687,117 @@
 - 定西 7 县统一 col/col 模式
 - 陇南 9 县统一 CMS column 系统
 - 酒泉 7 县统一 shtml 模式
+
+---
+
+## 陕西省（89县区）
+
+### 西安市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 雁塔区 | ✅ | `yanta.gov.cn` — `/xxgk/zdxxgk/czzjjg/qzfczyjs/1.html` |
+| 阎良区 | ✅ | `yanliang.gov.cn` — `/xxgk/zhgk/czzj/qjzfczyjszhqkgk/1.html` |
+| 长安区 | ✅ | `changanqu.gov.cn` — gov URL 修正（原 changan.gov.cn） |
+| 鄠邑区 | ✅ | `xahy.gov.cn` — gov URL 修正（原 huyi.gov.cn） |
+| 蓝田县 | ✅ | `lantian.gov.cn` — `/zwgk/czzj/xzfczyjsjsgjf/1.html` |
+| 周至县 | ✅ | `zhouzhi.gov.cn` — `/xxgk/fdzdgknr/czxx/xczyjs/1.html` |
+
+### 铜川市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 王益区 | ✅ | `tcwy.gov.cn` — resources/site/151 模式 |
+| 印台区 | ✅ | `yintai.gov.cn` — resources/site/152 模式 |
+| 耀州区 | ✅ | `yaozhou.gov.cn` — resources/site/153 模式 |
+| 宜君县 | ✅ | `yijun.gov.cn` — `news_list.rt?channlId=5578` |
+
+### 宝鸡市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 渭滨区 | ✅ | `weibin.gov.cn` — col系统 `/col15477/col15482/col15503/` |
+| 金台区 | ✅ | `jintai.gov.cn` — col系统 |
+| 陈仓区 | ✅ | `chencang.gov.cn` — col系统 |
+| 凤翔区 | ✅ | `fengxiang.gov.cn` — col系统 |
+| 岐山县 | ✅ | `qishan.gov.cn` — col系统 |
+| 扶风县 | ✅ | `fufeng.gov.cn` — col系统 |
+| 眉县 | ✅ | `meixian.gov.cn` — col系统（4层） |
+| 陇县 | ✅ | `longxian.gov.cn` — col系统 |
+| 千阳县 | ✅ | `qianyang.gov.cn` — col系统 |
+| 麟游县 | ✅ | `linyou.gov.cn` — col系统 |
+| 凤县 | ✅ | `sxfx.gov.cn` — col系统 |
+| 太白县 | ✅ | `taibai.gov.cn` — col系统 |
+
+### 咸阳市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 秦都区 | ✅ | `snqindu.gov.cn` — `/zfxxgk/fdzdgknr/czzj/zfyjsjsgjf/` |
+| 渭城区 | ✅ | `weic.gov.cn` — `/zfxxgk/fdzdgknr/zdly/czxx/` |
+| 兴平市 | ✅ | `snxingping.gov.cn` — gov URL 修正（原 xingping.gov.cn） |
+| 武功县 | ✅ | `wugong.gov.cn` — gov URL 修正（原 sxwg.gov.cn） |
+| 乾县 | ✅ | `snqianxian.gov.cn` — `/zfxxgk/fdzdgknr/czgk/` |
+| 礼泉县 | ✅ | `liquan.gov.cn` — `/zfxxgk/fdzdgknr/czzj/` |
+| 三原县 | ✅ | `snsanyuan.gov.cn` — `/zfxxgk/fdzdgknr/zdlyxxgk/czxx/` |
+| 长武县 | ✅ | `changwu.gov.cn` — `/zfxxgk/fdzdgk/zdly/czxx/` |
+| 旬邑县 | ✅ | `snxunyi.gov.cn` — 含编号路径 `czzj_21562/xjyjsjsgjf_21563/` |
+| 淳化县 | ✅ | `snchunhua.gov.cn` — `/zfxxgk/fdzdgknr/czgk/` |
+| 杨陵区 | ✅ | `ylq.gov.cn` — `/zfxxgk/zdlygk/czxx/1.html` |
+
+### 渭南市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 临渭区 | ✅ | `linwei.gov.cn` — `/zfxxgk/fdzdgknr/czxx/czyjs/1.html` |
+| 华州区 | ✅ | `hzqu.gov.cn` — gov URL 修正（原 hzq.gov.cn） |
+| 潼关县 | ✅ | `tongguan.gov.cn` — 统一路径模式 |
+| 大荔县 | ✅ | `dalisn.gov.cn` — 统一路径模式 |
+| 合阳县 | ✅ | `heyang.gov.cn` — `/xjczyjs/1.html` |
+| 澄城县 | ✅ | `chengcheng.gov.cn` — `/xjczyjs/` |
+| 蒲城县 | ✅ | `pucheng.gov.cn` — `/xjczyjs/` |
+| 白水县 | ✅ | `baishui.gov.cn` — `/jczfgk/czgk/czysjs/` |
+| 富平县 | ✅ | `fuping.gov.cn` — `/xjczyjs/1.html` |
+| 华阴市 | ✅ | `huayin.gov.cn` — `/zfxxgk/zdxx/czxx/zfyjs/1.html` |
+| 韩城市 | ❌ | `hancheng.gov.cn` ECONNRESET，搜索引擎无法找到集中公开页面 |
+
+### 延安市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 宝塔区 | ✅ | 统一城市门户 `yanan.gov.cn/gk/fdzdgknr/czxx/czyjs/xq/1.html` |
+| 安塞区 | ✅ | 同上 |
+| 延长县 | ✅ | 同上 |
+| 延川县 | ✅ | 同上 |
+| 子长市 | ✅ | 同上 |
+| 志丹县 | ✅ | 同上 |
+| 吴起县 | ✅ | 同上 |
+| 甘泉县 | ✅ | 同上 |
+| 富县 | ✅ | 同上 |
+| 洛川县 | ✅ | 同上 |
+| 宜川县 | ✅ | 同上 |
+| 黄龙县 | ✅ | 同上 |
+| 黄陵县 | ✅ | 同上 |
+
+### 汉中市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 镇巴县 | ✅ | `zb.gov.cn` — gov URL 修正（原 zhenba.gov.cn） |
+
+### 榆林市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 横山区 | ✅ | `hszf.gov.cn` — `/xxgk/fdzdgknr/czxx/` |
+| 府谷县 | ✅ | `fg.gov.cn` — gov URL 修正（原 fugu.gov.cn） |
+| 米脂县 | ✅ | `mizhi.gov.cn` — `/zwgk/fdzdgknr/yjsgk/` |
+
+### 安康市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 石泉县 | ✅ | `shiquan.gov.cn` — `/Node-76760.html` |
+
+### 商洛市
+全部 7 县已在前轮补齐（商州区/洛南县/丹凤县/商南县/山阳县/镇安县/柞水县）
+
+### 小结
+- **88/89 确认** ✅，1 个失败（韩城市 ECONNRESET）
+- 修正 7 个 gov URL（长安区/鄠邑区/华州区/镇巴县/府谷县/兴平市/武功县）
+- 宝鸡 12 县全部使用 col/col 系统（与市级 CMS 一致）
+- 铜川 3 县统一 resources/site/{N} 模式
+- 延安 13 县统一使用城市门户集中公开（`/xq/` 路径区分县区级）
+- 汉中 shtml 系统、安康 Node/category 系统、商洛 .htm 系统各自统一
+- 补充 3 个市级链接（金昌市/陇南市/枣庄市）
