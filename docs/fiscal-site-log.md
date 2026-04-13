@@ -692,6 +692,76 @@
 
 ## 陕西省（89县区）
 
+---
+
+## 湖北省（23县区）
+
+### 武汉市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 武昌区 | ✅ | `wuchang.gov.cn/zwgk_37/fdzdgknr/czxx/czyjs/` |
+| 江汉区 | ❌ | JS渲染，无法验证实际内容 |
+| 江夏区 | ✅ | `jiangxia.gov.cn/xxgk_22343/xxgkml_22349/cwgk_22359/` |
+| 黄陂区 | ✅ | `huangpi.gov.cn/fbjd_33/xxgkml/czzj/czyjs_mh/` |
+
+### 黄石市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 西塞山区 | ❌ | 所有 /czzj/ 路径 404 |
+| 铁山区 | ❌ | 所有 /czzj/ 路径 404；铁山+经开合站 |
+
+### 十堰市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 房县 | ✅ | 市级统一 `czj.shiyan.gov.cn/sczj/sfgwgkml/czzj_920/czzxzj/`，同郧西/竹山/竹溪/丹江口 |
+
+### 荆门市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 京山市 | ✅ | `jingshan.gov.cn/col/col2014/index.html`；gov修正 jingmen→jingshan |
+
+### 襄阳市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 樊城区 | ✅ | `fc.gov.cn/gk/xxgkml/czzj/czyjs/xysfcqczj/` |
+| 襄州区 | ✅ | `xz.xiangyang.gov.cn/zwgk/fdzdgknr/czzj/czyjs/`；gov修正 zgxy→xyxz |
+| 南漳县 | ✅ | `hbnz.gov.cn/ysgk/` |
+
+### 鄂州市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 梁子湖区 | ❌ | czyjs.ezhou.gov.cn 502不可达 |
+| 华容区 | ❌ | 同上 |
+| 鄂城区 | ❌ | 同上 |
+
+### 孝感市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 云梦县 | ❌ | yunmeng.gov.cn 500 错误 |
+| 应城市 | ❌ | 未找到独立预决算页面 |
+| 汉川市 | ✅ | `hanchuan.gov.cn/2025nysxxgk.jhtml` 年度预算信息公开 |
+
+### 荆州市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 公安县 | ✅ | `zwgk.gongan.gov.cn/list.shtml?column_id=32153` |
+| 江陵县 | ✅ | 荆州统一 `zwgk.jingzhou.gov.cn/ysqgk_county.shtml?id=9` |
+| 松滋市 | ✅ | 荆州统一 `zwgk.jingzhou.gov.cn/ysqgk_county.shtml?id=7` |
+
+### 咸宁市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 崇阳县 | ✅ | `chongyang.gov.cn/xxgk/xxgkml/czzjxx/` JS渲染但兄弟模式匹配 |
+| 通山县 | ✅ | `tongshan.gov.cn/xxgk/xxgkml/czzj/` 完全匹配咸安/通城/赤壁兄弟 |
+
+### 恩施州
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 利川市 | ✅ | `lichuan.gov.cn/xxgk/gkml/czzj/` JS渲染但路径合理 |
+| 建始县 | ❌ | 所有路径 404 |
+
+**汇总**: 15/23 已填，8 缺失（江汉区、西塞山区、铁山区、梁子湖区、华容区、鄂城区、云梦县、应城市、建始县）
+
 ### 西安市
 | 县区 | 状态 | 备注 |
 |------|------|------|

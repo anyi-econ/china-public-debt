@@ -7399,7 +7399,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "襄州区",
-            url: "https://www.zgxy.gov.cn/"
+            url: "http://www.xyxz.gov.cn/"
           },
           {
             name: "南漳县",
@@ -7467,7 +7467,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "京山市",
-            url: "http://www.jingmen.gov.cn/"
+            url: "http://www.jingshan.gov.cn/"
           }
         ]
       },
