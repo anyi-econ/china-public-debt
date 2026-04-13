@@ -12299,15 +12299,15 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "西固区",
-            url: "https://www.lzxigu.gov.cn/"
+            url: "https://www.xigu.gov.cn/"
           },
           {
             name: "安宁区",
-            url: "http://www.lzan.gov.cn/"
+            url: "https://www.lzanning.gov.cn/"
           },
           {
             name: "红古区",
-            url: "http://www.lzhonggu.gov.cn/"
+            url: "https://www.honggu.gov.cn/"
           },
           {
             name: "永登县",
@@ -12319,7 +12319,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "榆中县",
-            url: "http://www.yuzhong.gov.cn/"
+            url: "https://www.lzyuzhong.gov.cn/"
           }
         ]
       },
@@ -12551,11 +12551,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "宁县",
-            url: "http://www.gsnx.gov.cn/"
+            url: "https://www.ningxian.gov.cn/"
           },
           {
             name: "镇原县",
-            url: "http://www.gszhenyuan.gov.cn/"
+            url: "https://www.gszy.gov.cn/"
           }
         ]
       },
@@ -12649,15 +12649,15 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "康乐县",
-            url: "https://www.kangle.gov.cn/"
+            url: "https://www.gskanglexian.gov.cn/"
           },
           {
             name: "永靖县",
-            url: "https://www.yongjing.gov.cn/"
+            url: "https://www.gsyongjing.gov.cn/"
           },
           {
             name: "广河县",
-            url: "https://www.guanghe.gov.cn/"
+            url: "https://www.ghx.gov.cn/"
           },
           {
             name: "和政县",
@@ -12665,11 +12665,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "东乡族自治县",
-            url: "https://www.dongxiang.gov.cn/"
+            url: "https://www.dxzzzx.gov.cn/"
           },
           {
             name: "积石山保安族东乡族撒拉族自治县",
-            url: "https://www.jishishan.gov.cn/"
+            url: "https://www.jss.gov.cn/"
           }
         ]
       },
@@ -12691,11 +12691,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "舟曲县",
-            url: "http://www.zhouqu.gov.cn/"
+            url: "http://www.zqx.gov.cn/"
           },
           {
             name: "迭部县",
-            url: "http://www.diebu.gov.cn/"
+            url: "http://www.tewo.gov.cn/"
           },
           {
             name: "玛曲县",

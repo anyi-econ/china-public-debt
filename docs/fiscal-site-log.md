@@ -548,3 +548,142 @@
 - **25/32 确认** ✅，7 未找到（城西区/城北区/湟中区站点不可达、乐都区500、民和县CMS未知、循化CDN拦截、河南蒙古族自治县WAF）
 - 修正 5 个 gov URL：化隆(hualong→hualongxian)、玉树市(yss→yushushi)、杂多(qhzaduo→zaduo)、称多(qhcd→chengduo)、曲麻莱(qml→qumalai)
 - 果洛 6 县统一路径 `/zwgk/fdzdgknr/ysjs/`
+
+---
+
+## 甘肃省（75县区）
+
+### 兰州市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 城关区 | ✅ | `lzcgq.gov.cn` — `/col/col21424/index.html` |
+| 七里河区 | ✅ | `qilihe.gov.cn` — `/col/col1709/index.html` |
+| 西固区 | ✅ | `xigu.gov.cn` — `/col/col13313/index.html`，gov URL 修正 |
+| 安宁区 | ✅ | `lzanning.gov.cn` — `/col/col12024/index.html`，gov URL 修正 |
+| 红古区 | ✅ | `honggu.gov.cn` — `/col/col6661/index.html`，gov URL 修正 |
+| 永登县 | ✅ | `yongdeng.gov.cn` — `/col/col9741/index.html` |
+| 皋兰县 | ✅ | `gaolan.gov.cn` — `/col/col22621/index.html` |
+| 榆中县 | ✅ | `lzyuzhong.gov.cn` — `/col/col21502/index.html`，gov URL 修正 |
+
+### 金昌市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 金川区 | ✅ | `jinchuan.gov.cn` — `/zfxxgk/fdzdgknr/ysjs/index.html` |
+| 永昌县 | ✅ | `yongchang.gov.cn` — `/zwgk/fdzdgk/xysjs/index.html` |
+
+### 白银市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 白银区 | ✅ | `baiyinqu.gov.cn` — `/FDZDGKNR/ysjs/index.html` |
+| 平川区 | ✅ | `bypc.gov.cn` — `/zfxxgk/fdzdgknr/ysjs/index.html` |
+| 靖远县 | ✅ | `jingyuan.gov.cn` — 财政局路径 |
+| 会宁县 | ✅ | `huining.gov.cn` — 财政局路径 |
+| 景泰县 | ✅ | `jingtai.gov.cn` — `/zfxxgk/fdzdgknr/ysjs/index.html` |
+
+### 天水市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 秦州区 | ✅ | `qinzhouqu.gov.cn` — `/zfxxgk/fdnrzdgk/czxx.htm` |
+| 麦积区 | ✅ | `maiji.gov.cn` — `/zfxxgk/fdzdgknr1/czxx.htm` |
+| 清水县 | ✅ | `qingshui.gov.cn` — `/zfxxgk/fdzdgknr/czxx.htm` |
+| 秦安县 | ✅ | `qinan.gov.cn` — `/zfxxgk/fdzdgknr/czxx.htm` |
+| 甘谷县 | ✅ | `gangu.gov.cn` — `/zfxxgk/fdzdgknr/czxx.htm` |
+| 武山县 | ✅ | `wushan.gov.cn` — `/zfxxgk/fdzdgknr/ysjs/ysgk.htm` |
+| 张家川回族自治县 | ✅ | `zjc.gov.cn` — `/zfxxgk/fdzdgknr/czxx.htm` |
+
+### 武威市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 凉州区 | ✅ | `gsliangzhou.gov.cn` — `/col/col2930/index.html` |
+| 民勤县 | ✅ | `minqin.gov.cn` — `/col/col30289/index.html` |
+| 古浪县 | ✅ | `gulang.gov.cn` — `/col/col30299/index.html` |
+| 天祝藏族自治县 | ✅ | `gstianzhu.gov.cn` — `/col/col30281/index.html` |
+
+### 张掖市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 甘州区 | ✅ | `gsgz.gov.cn` — `/gzzfxxgk/fdzdgknr/czyjs/` |
+| 肃南裕固族自治县 | ✅ | `gssn.gov.cn` — `/zfxgk/fdzdgknr/jczwgkbzml/czyjs_6942/` |
+| 民乐县 | ✅ | `gsml.gov.cn` — `/zfxxgk/fdzdgknr/jczwgkbzml/czyjs/` |
+| 临泽县 | ✅ | `gslz.gov.cn` — `/zfxxgk/fdzdgknr/jczwgkly/czyjs/` |
+| 高台县 | ✅ | `gaotai.gov.cn` — `/zfxxgk/fdzdgknr/sgjfjyjs/` |
+| 山丹县 | ✅ | `shandan.gov.cn` — `/zfxxgk/fdzdgknr/jczwgkbzml/czyjs/` |
+
+### 酒泉市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 肃州区 | ✅ | `jqsz.gov.cn` — 独立 CMS xxgk_jcsdlist |
+| 金塔县 | ✅ | `jtxzf.gov.cn` — xxgk_caizhj_zwgk |
+| 瓜州县 | ✅ | `guazhou.gov.cn` — xxgj_ysjs |
+| 肃北蒙古族自治县 | ✅ | `subei.gov.cn` — xxgk_jcsdlist |
+| 阿克塞哈萨克族自治县 | ✅ | `akesai.gov.cn` — xxgk_jcsdlylist |
+| 玉门市 | ✅ | `yumen.gov.cn` — xxgk_jcsd |
+| 敦煌市 | ✅ | `dunhuang.gov.cn` — zfxxgk_jcsdlyzwgk |
+
+### 庆阳市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 西峰区 | ✅ | `gsxf.gov.cn` — `/xxgk/fdzdgknr/czgk/czyjs` |
+| 庆城县 | ✅ | `chinaqingcheng.gov.cn` — `/zwgk/xxgkml/ysjs` |
+| 环县 | ✅ | `huanxian.gov.cn` — `/zwgk/fdzdgknr/ysjs/` |
+| 华池县 | ✅ | `hcx.gov.cn` — `/xxgk/fdzdgknr/ysjs` |
+| 合水县 | ✅ | `hsxzf.gov.cn` — `/xxgk/fdzdgknr/czgk` |
+| 正宁县 | ✅ | `zninfo.gov.cn` — `/zwgk/fdzdgknr/czzj/` |
+| 宁县 | ✅ | `ningxian.gov.cn` — `/zwgk/fdzdgknr/czgk`，gov URL 修正 |
+| 镇原县 | ✅ | `gszy.gov.cn` — `/xxgk/fdzdgknr/ysjy`，gov URL 修正 |
+
+### 定西市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 安定区 | ✅ | `anding.gov.cn` — `/col/col13654/index.html` |
+| 通渭县 | ✅ | `tongwei.gov.cn` — `/col/col7037/index.html` |
+| 陇西县 | ✅ | `cnlongxi.gov.cn` — `/col/col10716/index.html` |
+| 渭源县 | ✅ | `cnwy.gov.cn` — `/col/col15484/index.html` |
+| 临洮县 | ✅ | `lintao.gov.cn` — `/col/col6989/index.html` |
+| 漳县 | ✅ | `zhangxian.gov.cn` — `/col/col15649/index.html` |
+| 岷县 | ✅ | `minxian.gov.cn` — `/col/col5337/index.html` |
+
+### 陇南市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 武都区 | ✅ | `gslnwd.gov.cn` — 统一 CMS column 系统 |
+| 成县 | ✅ | `gscx.gov.cn` — 统一 CMS column 系统 |
+| 文县 | ✅ | `lnwx.gov.cn` — 统一 CMS column 系统 |
+| 宕昌县 | ✅ | `tanchang.gov.cn` — 统一 CMS column 系统 |
+| 康县 | ✅ | `gskx.gov.cn` — 统一 CMS column 系统 |
+| 西和县 | ✅ | `xihe.gov.cn` — 统一 CMS column 系统 |
+| 礼县 | ✅ | `gslx.gov.cn` — 统一 CMS column 系统 |
+| 徽县 | ✅ | `gshxzf.gov.cn` — 统一 CMS column 系统 |
+| 两当县 | ✅ | `ldxzf.gov.cn` — 统一 CMS column 系统 |
+
+### 临夏回族自治州
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 临夏市 | ✅ | `lxs.gov.cn` — `/zwgk/fdzdgknr/ysjs/` |
+| 临夏县 | ✅ | `linxiaxian.gov.cn` — `/lxx/zwgk/fdzdgknr/YSJS/index.html` |
+| 康乐县 | ✅ | `gskanglexian.gov.cn` — gov URL 修正 |
+| 永靖县 | ✅ | `gsyongjing.gov.cn` — gov URL 修正 |
+| 广河县 | ✅ | `ghx.gov.cn` — gov URL 修正 |
+| 和政县 | ✅ | `hezheng.gov.cn` — `/zfxxgk/fdzdgknr/ysjs/` |
+| 东乡族自治县 | ✅ | `dxzzzx.gov.cn` — gov URL 修正 |
+| 积石山保安族东乡族撒拉族自治县 | ✅ | `jss.gov.cn` — gov URL 修正 |
+
+### 甘南藏族自治州
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 合作市 | ✅ | `hezuo.gov.cn` — `/zfxxgk1/fdzdgknr1/ys_js.htm` |
+| 临潭县 | ✅ | `lintan.gov.cn` — `/zfxxgk/fdzdgknr/ysjs.htm` |
+| 卓尼县 | ✅ | `zhuoni.gov.cn` — `/zwgk/fdzdgknr/czxx/czyjs.htm` |
+| 舟曲县 | ✅ | `zqx.gov.cn` — gov URL 修正 |
+| 迭部县 | ✅ | `tewo.gov.cn` — gov URL 修正 |
+| 玛曲县 | ✅ | `maqu.gov.cn` — `/zfxxgk/zdmsxx1/ysjs.htm` |
+| 碌曲县 | ✅ | `luqu.gov.cn` — `/zfxxgk/fdzdgknr/czgk.htm` |
+| 夏河县 | ✅ | `xiahe.gov.cn` — `/zfxxgk/fdzdgknr/ysjs1.htm` |
+
+### 小结
+- **75/75 全部确认** ✅
+- 修正多个 gov URL（兰州4区、庆阳2县、临夏5县、甘南2县等）
+- 天水 7 县统一 `.htm` 后缀模式
+- 定西 7 县统一 col/col 模式
+- 陇南 9 县统一 CMS column 系统
+- 酒泉 7 县统一 shtml 模式
