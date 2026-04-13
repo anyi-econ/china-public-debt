@@ -11503,11 +11503,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "定日县",
-            url: "http://www.dingri.gov.cn/"
+            url: "http://www.drx.gov.cn/"
           },
           {
             name: "萨迦县",
-            url: "http://www.sajia.gov.cn/"
+            url: "http://www.sj.gov.cn/"
           },
           {
             name: "拉孜县",
@@ -11515,7 +11515,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "昂仁县",
-            url: "http://www.angren.gov.cn/"
+            url: "http://www.arx.gov.cn/"
           },
           {
             name: "谢通门县",
@@ -11523,7 +11523,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "白朗县",
-            url: "http://www.bailang.gov.cn/"
+            url: "http://www.blx.gov.cn/"
           },
           {
             name: "仁布县",
@@ -11535,7 +11535,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "定结县",
-            url: "http://www.xzdj.gov.cn/"
+            url: "http://www.djx.gov.cn/"
           },
           {
             name: "仲巴县",
@@ -11543,7 +11543,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "亚东县",
-            url: "http://www.xzyadong.gov.cn/"
+            url: "http://www.ydx.gov.cn/"
           },
           {
             name: "吉隆县",
@@ -11551,15 +11551,15 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "聂拉木县",
-            url: "http://www.xznlm.gov.cn/"
+            url: "http://www.nlmx.gov.cn/"
           },
           {
             name: "萨嘎县",
-            url: "http://www.xzsaga.gov.cn/"
+            url: "http://www.sgx.gov.cn/"
           },
           {
             name: "岗巴县",
-            url: "http://www.gangba.gov.cn/"
+            url: "http://www.gbx.gov.cn/"
           }
         ]
       },

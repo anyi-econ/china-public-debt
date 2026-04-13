@@ -420,3 +420,62 @@
 ### 小结
 - **21/21 全部确认** ✅
 - 修正 5 个 gov URL：滑县(huaxian→hnhx)、新乡县(xinxiang→xinxiangxian)、范县(puyang→fanxian)、鹿邑县(zhoukou→luyi)、(滑县 huaxian→hnhx)
+
+---
+
+## 西藏自治区（30县区）
+
+### 拉萨市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 城关区 | ✅ | `cgq.gov.cn/cgqrmzf/czzj/czzj.shtml` 同拉萨CMS模式 |
+| 堆龙德庆区 | ✅ | `dldqq.gov.cn/dldqqrmzf/czzj/czzj.shtml` |
+| 达孜区 | ❌ | SSO/Sogou确认有196条但无法确定栏目路径 |
+
+### 日喀则市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 定日县 | ✅ | gov修正 `dingri→drx`，`drx.gov.cn/public-policy.thtml?id=14291` |
+| 萨迦县 | ✅ | gov修正 `sajia→sj`，`sj.gov.cn/public-policy.thtml?id=11971` |
+| 昂仁县 | ✅ | gov修正 `angren→arx`，`arx.gov.cn/public-policy.thtml?id=11755` |
+| 白朗县 | ✅ | gov修正 `bailang→blx`，`blx.gov.cn/public-policy.thtml?id=11551` |
+| 定结县 | ✅ | gov修正 `xzdj→djx`，`djx.gov.cn/public-policy.thtml?id=12175` |
+| 亚东县 | ✅ | gov修正 `xzyadong→ydx`，`ydx.gov.cn/public-policy.thtml?id=11440` |
+| 聂拉木县 | ✅ | gov修正 `xznlm→nlmx`，`nlmx.gov.cn/public-policy.thtml?id=11661` |
+| 萨嘎县 | ✅ | gov修正 `xzsaga→sgx`，`sgx.gov.cn/public-policy.thtml?id=12489` |
+| 岗巴县 | ✅ | gov修正 `gangba→gbx`，`gbx.gov.cn/public-policy.thtml?id=12387` |
+
+### 昌都市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 卡若区 | ✅ | `karuo.changdu.gov.cn/.../c101758/zfxxgk_gknrz.shtml` 379条 |
+| 江达县 | ✅ | `jiangda.changdu.gov.cn/.../c102085/` 60条 |
+| 贡觉县 | ✅ | `gongjue.changdu.gov.cn/.../c101805/` 423条 |
+| 类乌齐县 | ✅ | `leiwuqi.changdu.gov.cn/.../c102131/` 99条 |
+| 丁青县 | ✅ | `dingqing.changdu.gov.cn/.../c101664/` 80条 |
+| 察雅县 | ✅ | `chaya.changdu.gov.cn/.../c101993/` 28条 |
+| 八宿县 | ✅ | `basu.changdu.gov.cn/.../c101947/` 12条 |
+| 左贡县 | ✅ | `zuogong.changdu.gov.cn/.../c101853/` 281条 |
+| 芒康县 | ✅ | `mangkang.changdu.gov.cn/.../c101900/` 63条 |
+| 洛隆县 | ✅ | `luolong.changdu.gov.cn/.../c101711/` 42条 |
+| 边坝县 | ✅ | `bianba.changdu.gov.cn/.../c102039/` 62条 |
+
+### 林芝市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 巴宜区 | ✅ | `bayiqu.gov.cn/byq/c105978/zfxxgk_czzj.shtml` |
+| 工布江达县 | ✅ | `gongbujiangda.gov.cn/gbjd/c106049/zfxxgk_czzj.shtml` |
+| 米林市 | ✅ | `milin.gov.cn/mlx/c106091/czzj.shtml` |
+| 墨脱县 | ✅ | `motuo.gov.cn/mtx/c101915/czzj.shtml` |
+| 波密县 | ✅ | `bomi.gov.cn/bmx/c100235/czzj.shtml` |
+| 朗县 | ✅ | `langxian.gov.cn/lx/zwgk/czzj.shtml` |
+
+### 阿里地区
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 措勤县 | ❌ | gov可达但所有财政路径404 |
+
+### 小结
+- **28/30 确认** ✅，2 未找到（达孜区 SSO阻塞、措勤县 404）
+- 修正 9 个日喀则 gov URL（原域名均为全拼，实际为缩写）
+- 昌都 11 县共享统一 CMS，column ID 递增规律
