@@ -762,6 +762,187 @@
 
 **汇总**: 15/23 已填，8 缺失（江汉区、西塞山区、铁山区、梁子湖区、华容区、鄂城区、云梦县、应城市、建始县）
 
+---
+
+## 湖南省（113县区）
+
+### 长沙市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 芙蓉区 | ❌ | 全站JS渲染，10+路径均404 |
+| 天心区 | ✅ | `tianxin.gov.cn/redianzhuanti/czyjsgkzl72/` |
+| 岳麓区 | ✅ | `yuelu.gov.cn/rdzt/1757362/jsgkzty/` |
+| 开福区 | ✅ | `kaifu.gov.cn/ztpd/czyjsgkzl/` |
+| 雨花区 | ✅ | `yuhua.gov.cn/zwgk97/rdzt/czyjsgkzl/` |
+| 望城区 | ✅ | `wangcheng.gov.cn/xxgk_343/qzfxxgkml/.../wcqczyjsgk/` |
+| 长沙县 | 🟡 | `csx.gov.cn/zwgk/zfxxgkml/rdzt/czyjsgkzl/` JS |
+| 浏阳市 | ✅ | `liuyang.gov.cn/fzlm_1/ztzl/zwzt/lyczyjsgk7/` |
+| 宁乡市 | 🟡 | `ningxiang.gov.cn/ztpd/czyjsgkzl/` JS |
+
+### 株洲市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 荷塘区 | ❌ | SPA catch-all，无法区分 |
+| 芦淞区 | ✅ | `lusong.gov.cn/c218/index.html` |
+| 石峰区 | ❌ | SPA catch-all |
+| 天元区 | ❌ | SPA catch-all |
+| 渌口区 | ✅ | `lukou.gov.cn/c24888` 预决算公开管理平台 |
+| 醴陵市 | ❌ | SPA catch-all |
+| 攸县 | ❌ | SPA catch-all |
+| 茶陵县 | ✅ | `chaling.gov.cn/c22438/` 专题专栏 |
+
+### 湘潭市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 雨湖区 | ❌ | 未找到 |
+| 岳塘区 | ❌ | SPA |
+| 湘潭县 | ✅ | `xtx.gov.cn/6571/6572/index.htm` |
+| 湘乡市 | ✅ | `xxs.gov.cn/1876/24430/29779/index.htm` |
+| 韶山市 | ✅ | `shaoshan.gov.cn/11698/21105/index.htm` |
+
+### 衡阳市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 雁峰区 | 🟡 | `hyyfq.gov.cn/zwgk/qzfxxgk/czzj/index.html` JS |
+| 石鼓区 | 🟡 | `hysgq.gov.cn/xxgk/czxx/` JS |
+| 蒸湘区 | 🟡 | `zhengxiang.gov.cn/zwgk/bmxzxxgk/qczj/czxx/` JS |
+| 南岳区 | ✅ | `nanyue.gov.cn/nyczj/czysgk/index.html` |
+| 衡阳县 | 🟡 | `hyx.gov.cn/zwgk/fdzdgknr/czyjs/` JS |
+| 衡南县 | ✅ | `hengnan.gov.cn/zwgk/ztzl/hnxczysgk/` |
+| 衡山县 | 🟡 | `hengshan.gov.cn/xxgk/fdzdgknr/czxx/` JS |
+| 祁东县 | 🟡 | `qdx.gov.cn/xxgk/czzj/` JS |
+| 耒阳市 | 🟡 | `leiyang.gov.cn/ztzl/zdgksxml/bm/sczj/` 目录式 |
+| 常宁市 | 🟡 | `changning.gov.cn/zwgk/qzfxxgk/czzj/index.html` JS |
+
+### 邵阳市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 双清区 | ❌ | 全站502 |
+| 大祥区 | ❌ | 全站502 |
+| 新邵县 | ❌ | 全站502 |
+| 邵阳县 | 🟡 | `shaoyangxian.gov.cn/shaoyangxian/syxczyjs/list_czyjs.shtml` JS |
+| 隆回县 | ✅ | `longhui.gov.cn/longhui/lhxczyjs/list_czyjs.shtml` |
+| 洞口县 | ✅ | `dongkou.gov.cn/dongkou/czyjs/list.shtml` |
+| 绥宁县 | ✅ | `hnsn.gov.cn/hnsn/czxxsn/list.shtml` |
+| 新宁县 | 🟡 | `xinning.gov.cn/xinning/xnxczyjs/list_czyjs.shtml` JS |
+| 城步苗族自治县 | ✅ | `chengbu.gov.cn/chengbu/czzj/class_Simple.shtml` |
+| 武冈市 | ✅ | `wugang.gov.cn/wugang/czxx/list.shtml` |
+| 邵东市 | ✅ | `shaodong.gov.cn/shaodong/czszjyjsgk/listygd21.shtml` |
+
+### 岳阳市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 岳阳楼区 | ❌ | 全站JS无法定位 |
+| 云溪区 | 🟡 | `yunxiqu.gov.cn/38965/42325/index.htm` JS |
+| 君山区 | ❌ | JS全站 |
+| 岳阳县 | ✅ | `yyx.gov.cn/37584/.../40254/index.htm` |
+| 华容县 | ❌ | JS全站+404 |
+| 湘阴县 | ❌ | JS全站+404 |
+| 平江县 | ✅ | `pingjiang.gov.cn/35048/.../36291/default.htm` |
+| 汨罗市 | ❌ | 所有路径404 |
+| 临湘市 | 🟡 | `linxiang.gov.cn/24733/.../30553/default.htm` JS |
+
+### 常德市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 武陵区 | ✅ | 湖南 PowerEasy CMS `wuling.gov.cn/zwgk/public/column/...` |
+| 鼎城区 | ✅ | 同上 `dingcheng.gov.cn/zwgk/public/column/...` |
+| 安乡县 | ✅ | 同上 |
+| 汉寿县 | ✅ | 同上 |
+| 澧县 | ✅ | 同上 (域名 li-xian.gov.cn) |
+| 临澧县 | ✅ | 同上 |
+| 桃源县 | ✅ | `taoyuan.gov.cn/zwdt/szzl/dqzt/bjyjs/` 独立预决算专栏 |
+| 石门县 | ✅ | CMS |
+| 津市市 | ✅ | CMS |
+
+### 张家界市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 永定区 | ✅ | 省级预决算平台 `175.6.60.107:29081/portal/allOpen/...` |
+| 武陵源区 | ❌ | DNS解析失败 |
+| 慈利县 | ✅ | `cili.gov.cn/c3388/index.html` |
+| 桑植县 | 🟡 | `sangzhi.gov.cn/c2394/index.html` 财政信息栏 |
+
+### 益阳市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 资阳区 | ❌ | JS下拉菜单无法展开 |
+| 赫山区 | ✅ | `hnhs.gov.cn/27128/27140/27327/index.htm` |
+| 南县 | ✅ | `nanxian.gov.cn/14890/36191/index.htm` |
+| 桃江县 | ✅ | `taojiang.gov.cn/24398/.../39040/index.htm` |
+| 安化县 | ✅ | `anhua.gov.cn/199/2808/.../2820/default.htm` |
+| 沅江市 | ✅ | `yuanjiang.gov.cn/21144/21155/index.htm` |
+
+### 郴州市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 北湖区 | ❌ | JS/WAF 无法确定URL |
+| 苏仙区 | ❌ | WAF 412 |
+| 桂阳县 | ❌ | WAF 412 |
+| 宜章县 | ❌ | JS |
+| 永兴县 | ❌ | JS |
+| 嘉禾县 | ❌ | JS |
+| 临武县 | ❌ | JS |
+| 汝城县 | ❌ | 未找到独立域名 |
+| 桂东县 | ❌ | JS |
+| 安仁县 | ❌ | JS |
+| 资兴市 | ✅ | `zixing.gov.cn/zwgk/ztbd/zfydzl/czzj/default.htm` |
+
+### 永州市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 零陵区 | ✅ | `cnll.gov.cn/cnll/yjsgk/czyjs.shtml` |
+| 东安县 | ✅ | `da.gov.cn/da/czxx/list.shtml`；gov修正 hnda→da |
+| 双牌县 | ✅ | `sp.gov.cn/sp/czxx/list.shtml`；gov修正 shuangpai→sp |
+| 道县 | ✅ | `dx.gov.cn/dx/zwgk/dxxbzwgklist.shtml?catecode=czxx`；gov修正 daoxian→dx |
+| 新田县 | ✅ | `xt.gov.cn/xt/czxx/list.shtml`；gov修正 xintian→xt |
+| 江华瑶族自治县 | ✅ | `jh.gov.cn/jh/czxx/list.shtml`；gov修正 jianghua→jh |
+
+### 怀化市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 鹤城区 | ✅ | `hechengqu.gov.cn/hechengqu/c132683/2021jczwgk_gkly.shtml` |
+| 中方县 | ✅ | `zhongfang.gov.cn/zhongfang/c104621/zfxxgkMultiList.shtml` |
+| 沅陵县 | ✅ | `yuanling.gov.cn/yuanling/c108873/zfxxgkMultiList.shtml` |
+| 辰溪县 | ✅ | `chenxi.gov.cn/chenxi/c113842/zfxxgkList.shtml` |
+| 溆浦县 | ❌ | DNS解析失败 |
+| 会同县 | ✅ | `huitong.gov.cn/huitong/c117594/zfxxgkMultiList.shtml` |
+| 麻阳苗族自治县 | ✅ | `mayang.gov.cn/mayang/c105503/zfxxgkMultiList.shtml` |
+| 新晃侗族自治县 | ✅ | `xinhuang.gov.cn/xinhuang/c137784/list2021.shtml` |
+| 芷江侗族自治县 | ❌ | DNS解析失败 |
+| 靖州苗族侗族自治县 | ✅ | `jzx.gov.cn/jzx/c116375/zfxxgkMultiList.shtml` |
+| 通道侗族自治县 | ✅ | `tongdao.gov.cn/tongdao/c133065/2021jczwgk_gkly.shtml` |
+| 洪江市 | ❌ | DNS解析失败 |
+
+### 娄底市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 娄星区 | ✅ | `louxing.gov.cn/louxing/c100026/.../czzj_bm.shtml` |
+| 双峰县 | ✅ | `hnsf.gov.cn/hnsf/sfxczzjgk/xhxczzjzl.shtml` |
+| 新化县 | ✅ | `xinhua.gov.cn/xinhua/xhxczjgk/xhxczzjzl.shtml` |
+| 冷水江市 | ✅ | `lsj.gov.cn/lsj/zwgk/zfxxgk/szfxxgkml/czzj/xxgks_lists.shtml` |
+| 涟源市 | ✅ | `lianyuan.gov.cn/lianyuan/zwgk/xxgk_zfxxgkml/010/xxgkfdnr.shtml` |
+
+### 湘西州
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 吉首市 | 🟡 | `jishou.gov.cn/zwgk/xzfxxgkml/czxx/zfyjs/` WAF |
+| 泸溪县 | 🟡 | `lxx.gov.cn/zwgk/qzfxxgkml/czxx/` WAF |
+| 凤凰县 | 🟡 | `fhzf.gov.cn/zwgk_49798/fdzdgknr/czxx_49813/` WAF；gov修正 fhx→fhzf |
+| 花垣县 | 🟡 | `huayuan.gov.cn/zwgk_23240/xzfxxgkml_23243/jcxxgk/czyjs/` WAF |
+| 保靖县 | 🟡 | `bjzf.gov.cn/zwgk/xzfxxgkml/czxx/` WAF；gov修正 baojing→bjzf |
+| 古丈县 | 🟡 | `guzhang.gov.cn/zwgk/xzfxxgkml/czxx/` WAF |
+| 永顺县 | 🟡 | `ysx.gov.cn/zwgk/bmxx/zfbm/czj/` WAF；gov修正 yongshun→ysx |
+| 龙山县 | 🟡 | `xxls.gov.cn/zwgk/xzfxxgkml/czxx/` WAF；gov修正 longshan→xxls |
+
+**汇总**: 82/113 已填，31 缺失
+- Gov修正 9 处：永州5（东安/双牌/道县/新田/江华）+ 湘西4（凤凰/保靖/永顺/龙山）
+- 常德9县统一 PowerEasy CMS catId 系统
+- 永州6县统一 `/{slug}/czxx/list.shtml` 模式
+- 怀化9县统一 `/{slug}/c{id}/zfxxgkMultiList.shtml` 模式
+- 湘西8县全部 WAF 412 拦截，URL来自百度索引
+- 郴州10县全部 JS/WAF 无法确定路径
+
 ### 西安市
 | 县区 | 状态 | 备注 |
 |------|------|------|

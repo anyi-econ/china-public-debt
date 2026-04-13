@@ -8115,15 +8115,15 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "东安县",
-            url: "http://www.hnda.gov.cn/"
+            url: "http://www.da.gov.cn/"
           },
           {
             name: "双牌县",
-            url: "http://www.shuangpai.gov.cn/"
+            url: "http://www.sp.gov.cn/"
           },
           {
             name: "道县",
-            url: "http://www.daoxian.gov.cn/"
+            url: "http://www.dx.gov.cn/"
           },
           {
             name: "江永县",
@@ -8139,11 +8139,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "新田县",
-            url: "http://www.xintian.gov.cn/"
+            url: "http://www.xt.gov.cn/"
           },
           {
             name: "江华瑶族自治县",
-            url: "http://www.jianghua.gov.cn/"
+            url: "http://www.jh.gov.cn/"
           },
           {
             name: "祁阳市",
@@ -8245,7 +8245,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "凤凰县",
-            url: "http://www.fhx.gov.cn/"
+            url: "http://www.fhzf.gov.cn/"
           },
           {
             name: "花垣县",
@@ -8253,7 +8253,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "保靖县",
-            url: "http://www.baojing.gov.cn/"
+            url: "http://www.bjzf.gov.cn/"
           },
           {
             name: "古丈县",
@@ -8261,11 +8261,11 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "永顺县",
-            url: "http://www.yongshun.gov.cn/"
+            url: "http://www.ysx.gov.cn/"
           },
           {
             name: "龙山县",
-            url: "http://www.longshan.gov.cn/"
+            url: "http://www.xxls.gov.cn/"
           }
         ]
       }
