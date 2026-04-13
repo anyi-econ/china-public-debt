@@ -12773,7 +12773,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "化隆回族自治县",
-            url: "http://www.hualong.gov.cn/"
+            url: "http://www.hualongxian.gov.cn/"
           },
           {
             name: "循化撒拉族自治县",
@@ -12887,15 +12887,15 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
         children: [
           {
             name: "玉树市",
-            url: "http://www.yss.gov.cn/"
+            url: "https://www.yushushi.gov.cn/"
           },
           {
             name: "杂多县",
-            url: "http://www.qhzaduo.gov.cn/"
+            url: "http://www.zaduo.gov.cn/"
           },
           {
             name: "称多县",
-            url: "http://www.qhcd.gov.cn/"
+            url: "http://www.chengduo.gov.cn/"
           },
           {
             name: "治多县",
@@ -12907,7 +12907,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "曲麻莱县",
-            url: "http://www.qml.gov.cn/"
+            url: "https://www.qumalai.gov.cn/"
           }
         ]
       },

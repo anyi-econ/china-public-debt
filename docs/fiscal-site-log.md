@@ -479,3 +479,72 @@
 - **28/30 确认** ✅，2 未找到（达孜区 SSO阻塞、措勤县 404）
 - 修正 9 个日喀则 gov URL（原域名均为全拼，实际为缩写）
 - 昌都 11 县共享统一 CMS，column ID 递增规律
+
+---
+
+## 青海省（32县区）
+
+### 西宁市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 城东区 | ✅ | `xncd.gov.cn/html/public/czysjs.html` |
+| 城中区 | ✅ | `xncz.gov.cn/zwgk/fdzdgknr1/czzj/czxx.htm` |
+| 城西区 | ❌ | 站点所有路径返回 Not Found |
+| 城北区 | ❌ | 站点完全无法抓取 |
+| 湟中区 | ❌ | 站点完全无法抓取 |
+| 湟源县 | ✅ | ThinkPHP模式 `category&id=56` |
+
+### 海东市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 乐都区 | ❌ | 子页面500错误 |
+| 平安区 | ✅ | `pinganqu.gov.cn/public/czyjs/index.html` |
+| 民和回族土族自治县 | ❌ | ASP.NET CMS lmid未知 |
+| 化隆回族自治县 | ✅ | gov修正 `hualong→hualongxian`，`hualongxian.gov.cn/html/10577/Item.html` |
+| 循化撒拉族自治县 | ❌ | CDN防机器人保护 |
+
+### 海北藏族自治州
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 门源回族自治县 | ✅ | `menyuan.gov.cn/public/column/6617041` publicsite CMS |
+| 祁连县 | ✅ | `qilian.gov.cn/public/column/6617001` |
+| 海晏县 | ✅ | `haiyanxian.gov.cn/public/column/6617021` |
+| 刚察县 | ✅ | `gangcha.gov.cn/html/5602/Item.html` |
+
+### 黄南藏族自治州
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 河南蒙古族自治县 | ❌ | WAF阻塞，百度未收录 |
+
+### 果洛藏族自治州
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 玛沁县 | ✅ | `maqin.gov.cn/zwgk/fdzdgknr/czgk/` |
+| 班玛县 | ✅ | `banma.gov.cn/zwgk/fdzdgknr/ysjs/` |
+| 甘德县 | ✅ | `gande.gov.cn/zwgk/fdzdgknr/ysjs/` |
+| 达日县 | ✅ | `dari.gov.cn/zwgk/fdzdgknr/ysjs/` |
+| 久治县 | ✅ | `jiuzhixian.gov.cn/zwgk/fdzdgknr/ysjs/` |
+| 玛多县 | ✅ | `maduo.gov.cn/zwgk/fdzdgknr/ysjs/` |
+
+### 玉树藏族自治州
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 玉树市 | ✅ | gov修正 `yss→yushushi`，`yushushi.gov.cn/html/3367/Item.html` |
+| 杂多县 | ✅ | gov修正 `qhzaduo→zaduo`，`zaduo.gov.cn/xxgk/List_zlm.aspx?lmid=2820` |
+| 称多县 | ✅ | gov修正 `qhcd→chengduo`，`chengduo.gov.cn/...?lmid=1717` |
+| 治多县 | ✅ | `zhiduo.gov.cn/...?lmid=1642` |
+| 曲麻莱县 | ✅ | gov修正 `qml→qumalai`，`qumalai.gov.cn/html/2827/Item.html` |
+
+### 海西蒙古族藏族自治州
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 德令哈市 | ✅ | `delingha.gov.cn/zfxxgl/fdzdgknr/yshjs/n21/ys.htm` |
+| 茫崖市 | ✅ | `mangya.gov.cn/zfxxgk/fdzdgknr/zdly/ys_js.htm` |
+| 乌兰县 | ✅ | `wulanxian.gov.cn/gk/fdzdgknr/ysjs.htm` |
+| 都兰县 | ✅ | `dulan.gov.cn/zfxxgk/fdzdgknr/yjs.htm` |
+| 天峻县 | ✅ | `tianjun.gov.cn/zfxxgk/fdzdgknr/ys_js.htm` |
+
+### 小结
+- **25/32 确认** ✅，7 未找到（城西区/城北区/湟中区站点不可达、乐都区500、民和县CMS未知、循化CDN拦截、河南蒙古族自治县WAF）
+- 修正 5 个 gov URL：化隆(hualong→hualongxian)、玉树市(yss→yushushi)、杂多(qhzaduo→zaduo)、称多(qhcd→chengduo)、曲麻莱(qml→qumalai)
+- 果洛 6 县统一路径 `/zwgk/fdzdgknr/ysjs/`
