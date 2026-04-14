@@ -1149,3 +1149,80 @@
 - **留空 9 个**：韩城市(SPA)、迁西县(JS渲染)、勃利县(无栏目)、嫩江市(CMS不共享)、兰西县(模式不匹配)、金门县(台湾管辖)、昌江区(WAF)、弋阳县(WAF)、措勤县(无栏目)
 - **gov 修正 4 处**：兰西县、涵江区、秀屿区、东山县
 - **URL 修正 1 处**：乐亭县
+
+---
+
+## 批量补全轮二（湖北/海南/青海/新疆）
+
+### 湖北省
+
+#### 武汉市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 江汉区 | ✅ | `jianghan.gov.cn/qzfgzbm/qrmzfbgs/fdzdgknr/czzj/` |
+
+#### 黄石市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 西塞山区 | ✅ | `xisaishan.gov.cn/xxgk/fdzdgknr/czyjs/zfbjczyjsgk/` |
+| 铁山区 | ✅ | `hsdz.gov.cn/xxgk/fdzdgknr/yjsgk/czyjs/` |
+
+#### 鄂州市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 梁子湖区 | ✅ | `liangzh.gov.cn/lzhxxgk/xxgkml/?itemid=3363` |
+| 华容区 | ✅ | `hbhr.gov.cn/hrqxxgk/xxgkml/czgk/zfyjs/` |
+| 鄂城区 | ✅ | `echeng.gov.cn/ecqxxgk/xxgkml/czgk1/bmyjs/` |
+
+#### 孝感市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 云梦县 | ✅ | `yunmeng.gov.cn/c/ymx/czzj.jhtml` 与兄弟 大悟县 同 jhtml 模式 |
+| 应城市 | ✅ | `yingcheng.gov.cn/c/ycs/czzj.jhtml` 与兄弟 大悟县 同 jhtml 模式 |
+
+#### 恩施土家族苗族自治州
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 建始县 | ✅ | `hbjs.gov.cn/xxgk/dfbmptlj/xz/xczj/FDZDGKNR/czgk/` |
+
+### 海南省
+
+#### 海口市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 秀英区 | ✅ | `xyqzf.haikou.gov.cn/hksxyqzf/czzj/lists.shtml` 区级财政资金页 |
+| 龙华区 | ❌ | 无集中预决算页面，财政信息分散在各部门子目录 `lhqzf.haikou.gov.cn/xxgk/lhqzf/{dept}/fdzdgknr/czgk_*/` |
+| 琼山区 | ✅ | `qsqzf.haikou.gov.cn/hksqsqzf/czgk/list_s.shtml` 含预算/决算/绩效评价 |
+| 美兰区 | ✅ | `mlqzf.haikou.gov.cn/xgk/czxx/czyjs/index.shtml` 财政预决算2635条目录 |
+
+#### 三沙市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 西沙区 | ❌ N/A | 无独立政府网站 |
+| 南沙区 | ❌ N/A | 无独立政府网站 |
+
+#### 省直辖
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 定安县 | ✅ | `dingan.hainan.gov.cn/dingan/zdly/czxx/` |
+| 白沙黎族自治县 | ✅ | `baisha.hainan.gov.cn/baisha/xxgkall.html?ClassInfoId=1902` 与兄弟县同模式 |
+
+### 青海省
+
+#### 海东市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 乐都区 | ✅ | `ledu.gov.cn/html/public/caizheng.html` |
+| 民和回族土族自治县 | ✅ | `minhe.gov.cn/xxgk/List_zlm.aspx?lmid=9044` |
+
+### 新疆维吾尔自治区（兵团城市）
+
+#### 新疆生产建设兵团
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 北屯市 | ✅ | `bts.gov.cn/zwgk/fdzdgknr/czgk/` |
+
+### 第二轮汇总
+- **已填 17 个**：湖北全部9个 + 海南5个（秀英区/琼山区/美兰区/定安县/白沙） + 青海2个（乐都区/民和县） + 新疆1个（北屯市）
+- **留空 5 个**：龙华区(无集中页面)、西沙区(无政府网站)、南沙区(无政府网站)、三沙暂无独立运营的区级网站
+- **待处理**：青海余3个(城西区/城北区/湟中区/循化县/河南蒙古族自治县) + 新疆余5个兵团城市
