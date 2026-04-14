@@ -1555,7 +1555,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "蚌山区", url: "http://www.bengshan.gov.cn/xxgk/czzj/index.html" },
           { name: "禹会区", url: "" },
           { name: "淮上区", url: "" },
-          { name: "怀远县", url: "" },
+            { name: "怀远县", url: "https://www.bengbu.gov.cn/zfxxgk/site/tpl/7741" },
           { name: "五河县", url: "https://www.wuhe.gov.cn/zwgk/czyjsjsgjf/index.html" },
           { name: "固镇县", url: "" },
         ],
@@ -1645,7 +1645,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "定远县", url: "" },
           { name: "凤阳县", url: "" },
           { name: "天长市", url: "" },
-          { name: "明光市", url: "" },
+            { name: "明光市", url: "https://www.mingguang.gov.cn/zwgk/czyjssgjfxxgk/index.html" },
         ],
       },
       {
@@ -3953,7 +3953,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "沾益区", url: "http://www.zhanyi.gov.cn/pub/special/203.html" },
           { name: "马龙区", url: "https://www.malong.gov.cn/gov/public/info/xczxxxgk.html" },
           { name: "陆良县", url: "" },
-          { name: "师宗县", url: "" },
+            { name: "师宗县", url: "https://www.ynsz.gov.cn/shizong/public/special/70.html" },
           { name: "罗平县", url: "http://www.luoping.gov.cn/public/special/czys.html" },
           { name: "富源县", url: "" },
           { name: "会泽县", url: "http://www.huize.gov.cn/huize/public/special/61.html" },
@@ -3966,7 +3966,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         children: [
           { name: "红塔区", url: "http://www.hongta.gov.cn/czyjs/" },
           { name: "江川区", url: "" },
-          { name: "通海县", url: "" },
+            { name: "通海县", url: "https://www.tonghai.gov.cn/yxgovfront/newDepartmentContentds.jspx?path=thxzfxxgk&channelId=6871&pageNo=1" },
           { name: "华宁县", url: "http://www.huaning.gov.cn/czyjs/" },
           { name: "易门县", url: "" },
           { name: "峨山彝族自治县", url: "" },
@@ -3981,7 +3981,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         children: [
           { name: "隆阳区", url: "" },
           { name: "施甸县", url: "" },
-          { name: "龙陵县", url: "" },
+            { name: "龙陵县", url: "https://www.longling.gov.cn/zwgk/zfxxgkpt/fdzdgknr/czxx/czyjs.htm" },
           { name: "昌宁县", url: "https://www.yncn.gov.cn/zfxxgkpt/fdzdgknr/czxx/czyjs.htm" },
           { name: "腾冲市", url: "https://www.tengchong.gov.cn/zwgk1/zfxxgkpt/fdzdgknr/czxx/czyjs.htm" },
         ],
@@ -4084,7 +4084,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         url: "https://www.ws.gov.cn/zwgk/czzj/",
         children: [
           { name: "文山市", url: "https://www.ynwss.gov.cn/wssrmzf/czyjs/pc/list.html" },
-          { name: "砚山县", url: "" },
+            { name: "砚山县", url: "http://www.yanshan.gov.cn/ysxrmzf/czyjs/pc/list.html" },
           { name: "西畴县", url: "" },
           { name: "麻栗坡县", url: "" },
           { name: "马关县", url: "" },

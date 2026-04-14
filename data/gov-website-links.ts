@@ -10955,7 +10955,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "易门县",
-            url: "http://www.ym.yuxi.gov.cn/"
+              url: "https://www.ym.gov.cn/"
           },
           {
             name: "峨山彝族自治县",
@@ -10963,7 +10963,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "新平彝族傣族自治县",
-            url: "https://www.xp.gov.cn/"
+              url: "https://www.xinping.gov.cn/"
           },
           {
             name: "元江哈尼族彝族傣族自治县",
@@ -10971,7 +10971,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "澄江市",
-            url: "http://www.cj.yuxi.gov.cn/"
+              url: "https://www.yncj.gov.cn/"
           }
         ]
       },
