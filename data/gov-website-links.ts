@@ -10959,7 +10959,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "峨山彝族自治县",
-            url: "http://www.es.yuxi.gov.cn/"
+            url: "https://www.yxes.gov.cn/"
           },
           {
             name: "新平彝族傣族自治县",

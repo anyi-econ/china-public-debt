@@ -1510,3 +1510,38 @@
 ### 第六轮汇总
 - **安徽再填 2 个**：怀远县、明光市
 - **明确排除 3 个弱候选**：禹会区(目录隐藏)、裕安区(误入政策文件)、定远县(Forbidden)
+
+---
+
+## 批量补全轮七（云南玉溪二次深挖）
+
+### 云南省
+
+#### 玉溪市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 江川区 | ✅ | `ynjc.gov.cn/yxgovfront/newDepartmentContentds.jspx?path=jcqzfxxgk&channelId=4013&pageNo=1`；由江川区政府信息公开索引提取财政局 `channelId=4013`，落地页为“江川区财政局”信息公开页，指南明确公开“财政预算、决算信息”“行政事业性收费”“政府采购”，列表页含大量区级部门预算公开 |
+| 易门县 | ✅ | `ym.gov.cn/yxgovfront/newDepartmentContentds.jspx?path=ymxzfxxgk&channelId=8100&pageNo=1`；易门县财政局信息公开内容页显式列出“预决算公开”“预算执行情况”“政府集中采购”“行政事业性收费”等财政栏目 |
+| 元江哈尼族彝族傣族自治县 | ✅ | `yjx.gov.cn/yxgovfront/newDepartmentContentds.jspx?path=yjxzfxxgk&channelId=19188&pageNo=1`；由元江县财政局指南跳转到“法定主动公开内容”，页面直接列出“2026年预算公开”“地方财政预算执行情况和预算草案报告”“2024年度部门决算”“直达资金支出情况”等财政内容 |
+
+### 第七轮汇总
+- **云南再填 3 个**：江川区、易门县、元江哈尼族彝族傣族自治县
+- **验证方法**：均先确认官方县区政府门户，再从政府信息公开索引提取财政局公开页，核验预算/决算类栏目或条目后写入
+
+---
+
+## 批量补全轮八（云南玉溪继续）
+
+### 云南省
+
+#### 玉溪市
+| 县区 | 状态 | 备注 |
+|------|------|------|
+| 新平彝族傣族自治县 | ✅ | `xinping.gov.cn/yxgovfront/newDepartmentContentds.jspx?path=xpxzfxxgk&channelId=12641&pageNo=1`；由县政府信息公开索引提取财政局 `channelId=12641`，页面标题即“县级财政预决算”，列表含大量 2026 年部门预算公开条目 |
+| 澄江市 | ✅ | `yncj.gov.cn/yxgovfront/newDepartmentContentds.jspx?path=cjxzfxxgk&channelId=16078&pageNo=1`；澄江市财政局指南明确写明该栏目为对外发布渠道，页面显式列出“预决算公开”“行政事业性收费”“财政资金直达基层”“政府采购”等栏目 |
+| 峨山彝族自治县 | 🔧 gov修正 / ❌ 暂留空 | `es.yuxi.gov.cn` 已失效，改为 `yxes.gov.cn`；已确认 `https://www.yxes.gov.cn/yxgovfront/newShowContentPage.jspx?path=esxzfxxgk&channelId=8899` 为峨山县财政局公开指南，但当前抓到的公开页仅明确显示“重点领域信息公开专栏 / 行政事业性收费 / 财政资金直达基层 / 政府采购”，未直接见到“预算/决算/预决算”关键词，按“宁缺勿错”暂不写入 fiscal |
+
+### 第八轮汇总
+- **云南再填 2 个**：新平彝族傣族自治县、澄江市
+- **gov 修正 1 处**：峨山彝族自治县 `es.yuxi.gov.cn` → `yxes.gov.cn`
+- **继续留空 1 个强候选**：峨山彝族自治县，因财政页未直接出现预算/决算关键词
