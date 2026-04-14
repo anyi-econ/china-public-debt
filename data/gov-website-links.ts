@@ -3465,7 +3465,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "兰西县",
-            url: "http://www.lanxi.gov.cn/"
+            url: "https://www.hljlanxi.gov.cn/"
           },
           {
             name: "青冈县",
@@ -5049,7 +5049,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "涵江区",
-            url: "http://www.hanjiang.gov.cn/"
+            url: "https://www.pthj.gov.cn/"
           },
           {
             name: "荔城区",
@@ -5057,7 +5057,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "秀屿区",
-            url: "http://www.xiuyu.gov.cn/"
+            url: "http://www.ptxy.gov.cn/"
           },
           {
             name: "仙游县",
@@ -5203,7 +5203,7 @@ export const GOV_WEBSITES: GovWebsiteNode[] = [
           },
           {
             name: "东山县",
-            url: "http://www.dongshan.gov.cn/"
+            url: "http://www.dongshandao.gov.cn/"
           },
           {
             name: "南靖县",
