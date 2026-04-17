@@ -174,7 +174,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "曹妃甸区", url: "https://www.caofeidian.gov.cn/caofeidian/czyjss/index.html" },
           { name: "滦南县", url: "https://www.luannan.gov.cn/OpennessContent/showList/2/205/page_1.html" },
           { name: "乐亭县", url: "https://www.laoting.gov.cn/laoting/czyjsgk/index.html" },
-          { name: "迁西县", url: "" },
+          { name: "迁西县", url: "https://www.qianxi.gov.cn/qianxi/zw_qxczjsxbjjs/index.html" },
           { name: "玉田县", url: "https://www.yutian.gov.cn/yutian/ytczxx/index.html" },
           { name: "遵化市", url: "http://www.zunhua.gov.cn/zunhua/zhcaizhengju/" },
           { name: "迁安市", url: "http://www.qianan.gov.cn/__sys_block__/czyjs.html" },
