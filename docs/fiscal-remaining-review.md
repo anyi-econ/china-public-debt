@@ -1,15 +1,15 @@
 # 预决算公开链接 — 剩余缺失清单
 
-> 更新时间：2026-04-18
-> 剩余缺失 **30 条**（上轮 83 → 40 → 本轮 30，累计填补 48 条 + 排除 5 条特殊体制）
-> 本轮使用 Playwright 无头浏览器穿透 JS/SPA/WAF 抓取，再用 fetch_webpage 复核
+> 更新时间：2026-04-18  
+> 剩余缺失 **19 条**（上轮 83 → 40 → 30 → 本轮 19，累计填补 59 条 + 排除 5 条特殊体制）  
+> 本轮使用 Playwright 无头浏览器穿透 JS/SPA/WAF 抓取，再用 fetch_webpage 复核  
 > 按省份缺失数从多到少排列
 
 > **特殊体制说明**：三沙市、西沙区、南沙区、金门县、台湾省因特殊行政体制，未公开财政预决算信息，不纳入缺失统计。
 
 ---
 
-## 本轮已找到并写入的 URL（48 条）
+## 本轮已找到并写入的 URL（59 条）
 
 <details><summary>点击展开完整列表</summary>
 
@@ -63,12 +63,23 @@
 | 青海 | 黄南州 | （州级URL） | huangnan.gov.cn/html/channels/30.html |
 | 青海 | 黄南州 | 河南蒙古族自治县 | henanxian.gov.cn/html/channels/10.html |
 | 青海 | 果洛州 | （州级URL） | guoluo.gov.cn/zwgk/fdzdgknr/ysjs/ |
+| 黑龙江 | 七台河 | 勃利县 | hljboli.gov.cn/hljboli/c100453/zfxxgklby.shtml |
+| 黑龙江 | 绥化 | 兰西县 | hljlanxi.gov.cn/lx/c100420/zfxxgklby.shtml |
+| 江西 | 上饶 | 弋阳县 | jxyy.gov.cn/jxyy/cjxx/yyzwgk_xxgklists.shtml |
+| 湖南 | 郴州 | 北湖区 | czbeihu.gov.cn/zwgk/10236/10245/default.htm |
+| 湖南 | 郴州 | 永兴县 | yxx.gov.cn/gzdt/rdzt/53916/index.htm |
+| 广东 | 韶关 | 乐昌市 | lechang.gov.cn/xwzx/ztbd/lcsczyjsxxgk/lcsczys/ |
+| 海南 | 海口 | 龙华区 | lhqzf.haikou.gov.cn/xxgk/zfxxgkzl/cwgk/ |
+| 云南 | 普洱 | 江城县 | jcx.gov.cn/zwgk/xxgk1/fdzdgknr/zdlyxxgk/czyjs.htm |
+| 云南 | 文山 | 丘北县 | ynqb.gov.cn/qbxrmzf/czyjs/pc/list.html |
+| 云南 | 大理 | 巍山县 | dlweishan.gov.cn/wsxrmzf/c106885/pc/list.html |
+| 云南 | 德宏 | 陇川县 | dhlc.gov.cn/czj/Web/... |
 
 </details>
 
 ---
 
-## 仍缺失的 30 条
+## 仍缺失的 19 条
 
 ### 一、安徽省（10 条）
 
@@ -96,55 +107,19 @@
 | — | 新星市 | 🚫 特殊 | btnsss.gov.cn | 新设市，暂无公开 |
 | — | 白杨市 | 🚫 特殊 | btdjs.gov.cn | 新设市，暂无公开 |
 
-### 三、云南省（4 条）
-
-| 市/州 | 县区 | 状态 | 官网 | 备注 |
-|--------|------|------|------|------|
-| 普洱 | 江城哈尼族彝族自治县 | ⚠️ 待复核 | jcx.gov.cn | Playwright 找到链接但 URL 路径 (czzjzdjc) 疑似财政资金直达基层 |
-| 文山 | 丘北县 | ⚠️ 待复核 | ynqb.gov.cn | Playwright 仅找到搜索结果页，非索引页 |
-| 大理 | 巍山彝族回族自治县 | 🔍 未找到 | dlweishan.gov.cn | Playwright 仅找到单篇政策文档 |
-| 德宏 | 陇川县 | 🔍 未找到 | dhlc.gov.cn | Playwright 仅找到单篇文档，需寻找索引页 |
-
-### 四、海南省（1 条）
+### 三、广东省（1 条）
 
 | 市 | 县区 | 状态 | 官网 | 备注 |
 |------|------|------|------|------|
-| 海口 | 龙华区 | 🔍 未找到 | lhqzf.haikou.gov.cn | Playwright 仅找到单篇项目文档 |
-
-### 五、黑龙江省（2 条）
-
-| 市 | 县区 | 状态 | 官网 | 备注 |
-|------|------|------|------|------|
-| 七台河 | 勃利县 | 🔍 未找到 | hljboli.gov.cn | Playwright 未定位到栏目 |
-| 绥化 | 兰西县 | 🔒 无法访问 | hljlanxi.gov.cn | 不可达 |
-
-### 六、湖南省（2 条）
-
-| 市 | 县区 | 状态 | 官网 | 备注 |
-|------|------|------|------|------|
-| 郴州 | 北湖区 | 🔍 未找到 | wap.beihu.gov.cn | WAP 版官网，Playwright 未找到财政入口 |
-| 郴州 | 永兴县 | 🔍 未找到 | yongxing.gov.cn | Playwright 未找到财政入口 |
-
-### 七、广东省（2 条）
-
-| 市 | 县区 | 状态 | 官网 | 备注 |
-|------|------|------|------|------|
-| 韶关 | 乐昌市 | ⚠️ 待复核 | lechang.gov.cn | Playwright 找到特定年份链接，非索引页 |
 | 肇庆 | 四会市 | 🔍 未找到 | sihui.gov.cn | Playwright 误匹配中央预决算公开平台，非本地页面 |
 
-### 八、江西省（1 条）
-
-| 市 | 县区 | 状态 | 官网 | 备注 |
-|------|------|------|------|------|
-| 上饶 | 弋阳县 | 🔒 WAF | jxyy.gov.cn | 403/"请稍候"拦截 |
-
-### 九、西藏自治区（1 条）
+### 四、西藏自治区（1 条）
 
 | 市 | 县区 | 状态 | 官网 | 备注 |
 |------|------|------|------|------|
 | 阿里 | 措勤县 | 🚫 特殊 | cuoqinxian.gov.cn | 边境县，信息化程度低 |
 
-### 十、陕西省（1 条）
+### 五、陕西省（1 条）
 
 | 市 | 县区 | 状态 | 官网 | 备注 |
 |------|------|------|------|------|
