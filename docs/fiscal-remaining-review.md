@@ -1,7 +1,7 @@
 # 预决算公开链接 — 剩余缺失清单
 
 > 更新时间：2026-04-18  
-> 剩余缺失 **19 条**（上轮 83 → 40 → 30 → 本轮 19，累计填补 59 条 + 排除 5 条特殊体制）  
+> 剩余缺失 **8 条**（上轮 83 → 40 → 30 → 19 → 本轮 8，累计填补 70 条 + 排除 5 条特殊体制）  
 > 本轮使用 Playwright 无头浏览器穿透 JS/SPA/WAF 抓取，再用 fetch_webpage 复核  
 > 按省份缺失数从多到少排列
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 本轮已找到并写入的 URL（59 条）
+## 本轮已找到并写入的 URL（70 条）
 
 <details><summary>点击展开完整列表</summary>
 
@@ -74,29 +74,25 @@
 | 云南 | 文山 | 丘北县 | ynqb.gov.cn/qbxrmzf/czyjs/pc/list.html |
 | 云南 | 大理 | 巍山县 | dlweishan.gov.cn/wsxrmzf/c106885/pc/list.html |
 | 云南 | 德宏 | 陇川县 | dhlc.gov.cn/czj/Web/... |
+| 安徽 | 合肥 | 庐阳区 | ahhfly.gov.cn/public/column/13761 |
+| 安徽 | 合肥 | 蜀山区 | hfss.gov.cn/public/column/13751 |
+| 安徽 | 合肥 | 包河区 | baohe.gov.cn/public/column/13771 |
+| 安徽 | 合肥 | 长丰县 | changfeng.gov.cn/public/column/13711 |
+| 安徽 | 合肥 | 肥东县 | feidong.gov.cn/public/column/13691 |
+| 安徽 | 合肥 | 肥西县 | ahfeixi.gov.cn/public/column/13701 |
+| 安徽 | 合肥 | 庐江县 | lj.gov.cn/public/column/13721 |
+| 安徽 | 合肥 | 巢湖市 | chaohu.gov.cn/public/column/13731 |
+| 安徽 | 滁州 | 天长市 | tianchang.gov.cn/public/column/161054628 |
+| 安徽 | 六安 | 裕安区 | yuan.gov.cn/public/column/6596381 |
+| 广东 | 肇庆 | 四会市 | sihui.gov.cn/gkmlpt/index#529 |
 
 </details>
 
 ---
 
-## 仍缺失的 19 条
+## 仍缺失的 8 条
 
-### 一、安徽省（10 条）
-
-| 市 | 县区 | 状态 | 官网 | 备注 |
-|------|------|------|------|------|
-| 合肥 | 庐阳区 | 🔒 WAF | ahhfly.gov.cn | 521 拦截，Playwright 也无法穿透 |
-| 合肥 | 蜀山区 | 🔒 WAF | hfss.gov.cn | 521 拦截 |
-| 合肥 | 包河区 | 🔒 WAF | baohe.gov.cn | 521 拦截 |
-| 合肥 | 长丰县 | 🔒 WAF | changfeng.gov.cn | 521 拦截 |
-| 合肥 | 肥东县 | 🔒 WAF | feidong.gov.cn | 521 拦截 |
-| 合肥 | 肥西县 | 🔒 WAF | ahfeixi.gov.cn | 521 拦截 |
-| 合肥 | 庐江县 | 🔒 WAF | lj.gov.cn | 521 拦截 |
-| 合肥 | 巢湖市 | 🔒 WAF | chaohu.gov.cn | 521 拦截 |
-| 滁州 | 天长市 | 🔍 未找到 | tianchang.gov.cn | Playwright 找到单篇文档，无索引页 |
-| 六安 | 裕安区 | 🔍 未找到 | yuan.gov.cn | Playwright 误匹配六安市财政局，非裕安区 |
-
-### 二、新疆兵团（6 条）
+### 一、新疆兵团（6 条）
 
 | 师 | 县区 | 状态 | 官网 | 备注 |
 |------|------|------|------|------|
@@ -107,19 +103,13 @@
 | — | 新星市 | 🚫 特殊 | btnsss.gov.cn | 新设市，暂无公开 |
 | — | 白杨市 | 🚫 特殊 | btdjs.gov.cn | 新设市，暂无公开 |
 
-### 三、广东省（1 条）
-
-| 市 | 县区 | 状态 | 官网 | 备注 |
-|------|------|------|------|------|
-| 肇庆 | 四会市 | 🔍 未找到 | sihui.gov.cn | Playwright 误匹配中央预决算公开平台，非本地页面 |
-
-### 四、西藏自治区（1 条）
+### 二、西藏自治区（1 条）
 
 | 市 | 县区 | 状态 | 官网 | 备注 |
 |------|------|------|------|------|
 | 阿里 | 措勤县 | 🚫 特殊 | cuoqinxian.gov.cn | 边境县，信息化程度低 |
 
-### 五、陕西省（1 条）
+### 三、陕西省（1 条）
 
 | 市 | 县区 | 状态 | 官网 | 备注 |
 |------|------|------|------|------|
