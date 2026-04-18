@@ -4635,7 +4635,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
         children: [
           { name: "城东区", url: "http://www.xncd.gov.cn/html/public/czysjs.html" },
           { name: "城中区", url: "https://xncz.gov.cn/zwgk/fdzdgknr1/czzj/czxx.htm" },
-          { name: "城西区", url: "" },
+          { name: "城西区", url: "https://www.xncx.gov.cn/ZhengWuGongKaiZhuYe?type=%E8%B4%A2%E6%94%BF%E4%BF%A1%E6%81%AF" },
           { name: "城北区", url: "https://www.xncb.gov.cn/html/public/ysjs.html" },
           { name: "湟中区", url: "https://www.huangzhong.gov.cn/html/public/czysjs.html" },
           { name: "大通回族土族自治县", url: "https://www.datong.gov.cn/index.php?s=news&c=category&id=79" },
@@ -4651,7 +4651,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
           { name: "民和回族土族自治县", url: "https://www.minhe.gov.cn/xxgk/List_zlm.aspx?lmid=9044" },
           { name: "互助土族自治县", url: "http://www.huzhu.gov.cn/zfxxgk/fdzdgknr/czgk.htm" },
           { name: "化隆回族自治县", url: "https://www.hualongxian.gov.cn/html/10577/Item.html" },
-          { name: "循化撒拉族自治县", url: "" },
+          { name: "循化撒拉族自治县", url: "http://www.xunhua.gov.cn/xxgk/List_wj.aspx?lmid=12777" },
         ],
       },
       {
@@ -4666,12 +4666,12 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "黄南藏族自治州",
-        url: "",
+        url: "http://www.huangnan.gov.cn/html/channels/30.html",
         children: [
           { name: "同仁市", url: "http://www.hntongren.gov.cn/html/5563/List.html" },
           { name: "尖扎县", url: "http://www.jianzha.gov.cn/html/5461/list.html" },
           { name: "泽库县", url: "http://www.zeku.gov.cn/contents/category/99" },
-          { name: "河南蒙古族自治县", url: "" },
+          { name: "河南蒙古族自治县", url: "http://www.henanxian.gov.cn/html/channels/10.html" },
         ],
       },
       {
@@ -4687,7 +4687,7 @@ export const FISCAL_REGIONS: FiscalRegionNode[] = [
       },
       {
         name: "果洛藏族自治州",
-        url: "",
+        url: "https://www.guoluo.gov.cn/zwgk/fdzdgknr/ysjs/",
         children: [
           { name: "玛沁县", url: "https://www.maqin.gov.cn/zwgk/fdzdgknr/czgk/" },
           { name: "班玛县", url: "https://www.banma.gov.cn/zwgk/fdzdgknr/ysjs/" },
