@@ -8,5 +8,24 @@ coverage
 npm-debug.log*
 tsconfig.tsbuildinfo
 
-# CELMA major event attachments (large binary files, not tracked)
+# Temp build/debug outputs
+build_clean.txt
+build_log.txt
+build_output.txt
+build_output2.txt
+temp_rebuild_log.txt
+tsc_errors.txt
+tsc_out.txt
+*.log
+merged_*.xlsx
+
+# Attachment directories (large binary files, offline use only)
+data/celma-issuance-plan-attachments/
 data/celma-major-events-attachments/
+data/celma-pre-issuance-attachments/
+data/chinabond-pre-issuance-attachments/
+
+# Data files not used by web frontend
+data/crawl-index.json
+data/chinabond-list.json
+data/gov-website-links.xlsx
