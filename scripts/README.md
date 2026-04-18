@@ -15,54 +15,81 @@ flowchart TD
         FP[fetch-celma-policy-dynamics.mjs] --> CPD[(celma-policy-dynamics.json)]
         FP --> CMEA[(celma-major-events-attachments/)]
         FBI[fetch-celma-bond-issuance.mjs] --> CBI[(celma-bond-issuance.json)]
-        FALL[fetch-celma-all.mjs] -.->|调用| FB & FBI & FP
+        FALL[fetch-celma-all.mjs]
     end
+
+    FALL -.->|调用| FB
+    FALL -.->|调用| FBI
+    FALL -.->|调用| FP
 
     subgraph Chinabond["Chinabond 数据抓取"]
         FCL[fetch-chinabond-list.mjs] --> CL[(chinabond-list.json)]
     end
 
     subgraph Download["附件下载"]
-        CBI --> DIP[download-issuance-plan-attachments.mjs] --> CIPA[(celma-issuance-plan-attachments/)]
-        CBI --> DBP[download-bond-pre-issuance-attachments.mjs] --> CPRA[(celma-pre-issuance-attachments/)]
-        CL --> DCP[download-chinabond-pre-issuance-attachments.mjs] --> CNPA[(chinabond-pre-issuance-attachments/)]
+        DIP[download-issuance-plan-attachments.mjs] --> CIPA[(celma-issuance-plan-attachments/)]
+        DBP[download-bond-pre-issuance-attachments.mjs] --> CPRA[(celma-pre-issuance-attachments/)]
+        DCP[download-chinabond-pre-issuance-attachments.mjs] --> CNPA[(chinabond-pre-issuance-attachments/)]
     end
+
+    CBI --> DIP
+    CBI --> DBP
+    CL --> DCP
 
     subgraph Tag["标签修复"]
-        CPD --> FIX[fix-region-tags.mjs] --> CPD
-        CPD --> RET[retag-topics.mjs] --> CPD
-        CPD --> RGN[regen-csv.mjs] --> DLOG[(download-log.csv)]
+        FIX[fix-region-tags.mjs]
+        RET[retag-topics.mjs]
+        RGN[regen-csv.mjs] --> DLOG[(download-log.csv)]
     end
 
+    CPD --> FIX
+    CPD --> RET
+    CPD --> RGN
+
     subgraph Pipeline["PDF 表格提取流水线"]
-        CPD --> CLF[classify_tables.py] --> CR[(classify_results.json)]
+        CLF[classify_tables.py] --> CR[(classify_results.json)]
         CR -->|textual| EPT[extract_pdf_tables.py] --> ET[(extracted_textual/*.xlsx)]
         CR -->|scanned| ESO[extract_scanned_ocr.py] --> ES[(extracted_scanned/*.xlsx)]
         CR -->|scanned| EST[extract_scanned_tables.py] --> ES
         ES -->|poor/partial| VSS[vision_supplement_scanned.py] --> ESV[(extracted_scanned_vision/*.xlsx)]
-        ESV -->|errors| RVE[retry_vision_errors.py] --> ESV
+        ESV -->|errors| RVE[retry_vision_errors.py] --> ESV2[(vision 修复结果)]
         CR --> VRM[vision_repair_merged_cells.py] --> EVR[(extracted_vision_repair/*.xlsx)]
     end
 
+    CPD --> CLF
+
     subgraph Merge["表格合并"]
-        CR -->|excel| MP1[merge_phase1_excel.py] --> MRG[(merged_用途调整表.xlsx)]
-        ET --> MP2[merge_phase2_pdf.py] --> MRG
-        ET & ES & ESV --> MFE["merge_from_extracted_tables.py (v1/v2)"] --> MRG
+        MP1[merge_phase1_excel.py] --> MRG[(merged_用途调整表.xlsx)]
+        MP2[merge_phase2_pdf.py] --> MRG
+        MFE["merge_from_extracted_tables.py v1/v2"] --> MRG
     end
+
+    CR -->|excel| MP1
+    ET --> MP2
+    ET --> MFE
+    ES --> MFE
+    ESV --> MFE
 
     subgraph Orchestrate["流水线编排"]
-        RTP[run_table_pipeline.ps1] -.->|调用| EPT & EST & MFE
-        SMP[sample_tables.py] -.->|调试用| CR
+        RTP[run_table_pipeline.ps1]
+        SMP[sample_tables.py]
     end
 
+    RTP -.->|调用| EPT
+    RTP -.->|调用| EST
+    RTP -.->|调用| MFE
+    SMP -.->|调试用| CR
+
     subgraph Report["报告生成"]
-        CL --> GWR[generate_weekly_report.py] --> DOCX[(周报 .docx/.pdf)]
+        GWR[generate_weekly_report.py] --> DOCX[(周报 .docx/.pdf)]
         SC[(source-catalog.json)] --> UPD[update.mjs]
         BD[(bundle.json)] --> UPD
         RP[(reports.json)] --> UPD
-        UPD --> BD & RP
-        IMP[import-url.mjs] --> BD
+        UPD --> BD2[(更新 bundle + reports)]
+        IMP[import-url.mjs] --> BD3[(追加 bundle.json)]
     end
+
+    CL --> GWR
 ```
 
 ---
