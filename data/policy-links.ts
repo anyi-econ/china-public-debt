@@ -9,13 +9,13 @@
  * 3. 市级优先政府门户下的综合政策入口，其次才使用单一部门文件
  * 4. 不使用单篇文件、废止库、短期专题页
  *
- * url 为空表示暂未核验。详见 `docs/local-policy-site-log.md`。
+ * url 为空表示暂未核验。详见 `docs/policy-site-log.md`。
  */
 
 import { buildRegionTree, type RegionUrlMap } from "./region-link-builder";
 import type { RegionLinkNode } from "@/components/pages/region-link-nav";
 
-export const LOCAL_POLICY_URL_MAP: RegionUrlMap = {
+export const POLICY_URL_MAP: RegionUrlMap = {
   // ═══════ 已人工核验（v1 种子）═══════
   // —— 省级（直辖市/省/自治区）——
   // 北京市："找政策"（可检索，按 prompt 优先级高于普通文件列表）
@@ -43,6 +43,9 @@ export const LOCAL_POLICY_URL_MAP: RegionUrlMap = {
   "云南省": "https://www.yn.gov.cn/zwgk/zcwj/",                               // 政策文件
   "宁夏回族自治区": "https://www.nx.gov.cn/zwgk/qzfwj/",                      // 区政府文件
   "新疆维吾尔自治区": "https://www.xinjiang.gov.cn/xinjiang/zfl/zfxxgk_zhengce_list.shtml", // 政策
+  // —— v4 扩充（省级：直辖市 + 福建）——
+  "上海市": "https://www.shanghai.gov.cn/nw11494/index.html",                 // 市政府信息公开目录（含市政府规章/文件/规划纲要等）
+  "福建省": "https://www.fujian.gov.cn/zwgk/zxwj/szfwj/",                     // 省政府文件
   // —— v3 扩充（省会/副省级城市）——
   "江西省/南昌市": "https://www.nc.gov.cn/ncszf/gfxwjtyfbpt/zcwjk.shtml",     // 政策文件库
   "湖北省/武汉市": "https://www.wuhan.gov.cn/zwgk/?channelid=26315",          // 政策
@@ -51,8 +54,10 @@ export const LOCAL_POLICY_URL_MAP: RegionUrlMap = {
   "宁夏回族自治区/银川市": "https://www.yinchuan.gov.cn/xxgk/zcwj/xzgfxwj/",  // 规范性文件
   "新疆维吾尔自治区/乌鲁木齐市": "https://www.wlmq.gov.cn/wlmqs/c119064/zfxxgk_list.shtml", // 政府文件
   "辽宁省/沈阳市": "https://www.shenyang.gov.cn/zwgk/zcwj/zfwj/",             // 政府文件
+  // —— v4 扩充（省会/市级）——
+  "福建省/福州市": "http://www.fuzhou.gov.cn/zwgk/zxwj/szfwj/",               // 市政府文件
   // ═══════ 其余地区因动态渲染/访问限制暂未稳定核验，留空待后续补充 ═══════
-  // 详见 docs/local-policy-site-log.md
+  // 详见 docs/policy-site-log.md
 };
 
-export const LOCAL_POLICY_REGIONS: RegionLinkNode[] = buildRegionTree(LOCAL_POLICY_URL_MAP);
+export const POLICY_REGIONS: RegionLinkNode[] = buildRegionTree(POLICY_URL_MAP);

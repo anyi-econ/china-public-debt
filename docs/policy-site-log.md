@@ -1,7 +1,7 @@
 # 地区政策导航 — 查找日志
 
-> 数据文件：[data/local-policy-links.ts](../data/local-policy-links.ts)
-> 前端组件：[components/pages/local-policy-nav.tsx](../components/pages/local-policy-nav.tsx) → [components/pages/region-link-nav.tsx](../components/pages/region-link-nav.tsx)
+> 数据文件：[data/policy-links.ts](../data/policy-links.ts)
+> 前端组件：[components/pages/policy-nav.tsx](../components/pages/policy-nav.tsx) → [components/pages/region-link-nav.tsx](../components/pages/region-link-nav.tsx)
 > 挂载位置：`/policies` 页面子菜单 "地区政策导航"
 
 ## 1. 栏目定义与筛选标准
@@ -103,7 +103,7 @@
 ## 9. 后续扩展建议
 
 - 先覆盖 31 省 + 省会 + 副省级市三层，优先使用可检索平台。
-- 建议在 `scripts/website_management/` 下新增 `local-policy-probe.mjs`，按省批处理。
+- 建议在 `scripts/website_management/` 下新增 `policy-probe.mjs`，按省批处理。
 - 批量结果必须人工抽样 ≥ 10%。
 
 ## 10. v2 扩充（省级政策入口批量核验）
@@ -172,3 +172,44 @@ v1 + v2 共收录 9 条政策入口（北京、上海黄浦、广州、深圳、
 | 类别 | v2 合计 | v3 新增 | 当前合计 |
 |---|---|---|---|
 | 地区政策 | 9 | 13 | **22** |
+
+## 12. v4 扩充（聚焦"政府信息公开 > 政策 > 行政规范性文件"路径）
+
+本轮按用户明示目标：遵循 `政府信息公开 → 政策 → 行政规范性文件` 官方路径。
+优先采用省/市政府门户下该路径的可访问列表页。方法：先尝试 4 个并行 subagent + fetch_webpage 定向核验已知模式（`/zfxxgk/…/xzgfxwj/`、`/zwgk/zcwj/szfwj/`、`/zwgk/zxwj/szfwj/` 等）；WAF/JS 渲染失败则留空。
+
+### 12.1 本轮新增确认
+
+| 路径 | 入口名 | URL | 来源 |
+|---|---|---|---|
+| 上海市 | 市政府信息公开目录（含市政府规章/文件/规划纲要） | `https://www.shanghai.gov.cn/nw11494/index.html` | 政务公开→政府信息公开目录，fetch_webpage 确认含 `市政府规章`、`市级预算和执行情况` 等二级栏目 |
+| 福建省 | 省政府文件 | `https://www.fujian.gov.cn/zwgk/zxwj/szfwj/` | 政务公开→最新文件→省政府文件，fetch_webpage 正常返回 |
+| 福建省/福州市 | 市政府文件 | `http://www.fuzhou.gov.cn/zwgk/zxwj/szfwj/` | 与省级同构 URL，subagent 核验通过 |
+
+### 12.2 未采用的候选（SKILL §3 过滤）
+
+- 济南市 `https://www.jinan.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/index`：API 端点，非面向用户的栏目页。
+- 贵阳市 `http://www.gy.gov.cn/zwgk/szfwj/index.html`：页面已被撤稿/删除（404）。
+- 海口市 `http://www.haikou.gov.cn/xxgk/szfwj/`：被"安全狗"防火墙拦截，无法作为稳定入口。
+- 南京市 `http://www.nanjing.gov.cn/zdgk/zcwj/szfwj/`：返回 404。
+- 昆明市 `http://www.km.gov.cn/c/2018-09-26/2639729.shtml`：单篇文章而非列表。
+
+### 12.3 v4 仍未能稳定核验（留待 Playwright / 第三方镜像）
+
+**省级**（15）：天津、河北、山西、内蒙古、浙江、安徽、江西（仅 v3 市级有）、山东、河南、湖北（仅 v3 市级有）、广西、四川、贵州、陕西（仅 v3 市级有）、甘肃、青海、西藏（仅 v3 市级有）。
+
+**省会/副省级市**（17）：石家庄、太原、呼和浩特、长春、哈尔滨、杭州、南京、合肥、济南、郑州、长沙、南宁、海口、成都、贵阳、昆明、兰州、西宁、厦门。
+
+均确认为 JS 单页应用或 WAF/防火墙拦截（HTTP 403/404 或 `Failed to extract meaningful content`）。
+
+### 12.4 覆盖率变化
+
+| 类别 | v3 合计 | v4 新增 | 当前合计 |
+|---|---|---|---|
+| 地区政策 | 22 | 3 | **25** |
+
+### 12.5 下一步
+
+- 使用 Playwright（`webapp-testing` 技能）按省批量访问 §12.3 中的门户，等待 JS 渲染后提取 `政策文件/规范性文件/行政规范性文件` 栏目 URL。
+- 优先级：省级 > 省会 > 副省级市 > 其他地级市。
+- 批处理脚本建议位置：`scripts/website_management/policy-probe.mjs`。
