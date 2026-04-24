@@ -6,11 +6,15 @@ import type { CelmaBondIssuanceItem, CelmaPolicyDynamicItem, GovSearchItem } fro
 import { PoliciesClient } from "@/components/pages/policies-client";
 import { GovSearch } from "@/components/pages/gov-search";
 import { BondIssuanceClient } from "@/components/pages/bond-issuance-client";
+import { LocalPolicyNav } from "@/components/pages/local-policy-nav";
+import { ProBusinessPolicyNav } from "@/components/pages/pro-business-policy-nav";
 
 const subTabs = [
   { key: "bond-policy", label: "债券政策动态", dot: "#8B0000" },
   { key: "bond-issuance", label: "债券发行动态", dot: "#1B4965" },
   { key: "gov-search", label: "政府官网信息检索接口", dot: "#2E7D32" },
+  { key: "local-policy", label: "地区政策导航", dot: "#8B6914" },
+  { key: "pro-business", label: "惠企政策导航", dot: "#4B0082" },
 ] as const;
 
 type TabKey = (typeof subTabs)[number]["key"];
@@ -56,6 +60,8 @@ export function PoliciesPageClient({
         {activeTab === "gov-search" && (
           <GovSearch items={govSearchItems} />
         )}
+        {activeTab === "local-policy" && <LocalPolicyNav />}
+        {activeTab === "pro-business" && <ProBusinessPolicyNav />}
       </div>
     </>
   );
