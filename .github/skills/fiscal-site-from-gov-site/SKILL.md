@@ -11,8 +11,8 @@ description: "Based on government portal websites (政府官网), verify each co
 
 ## Quick Reference
 
-- **Gov portals data**: `data/gov-website-links.ts`
-- **Fiscal data**: `data/fiscal-budget-links.ts`
+- **Gov portals data**: `data/website-gov.ts`
+- **Fiscal data**: `data/website-budget.ts`
 - **Gov portal repair skill**: `gov-site-finder` (SKILL.md)
 - **Fiscal methods catalog**: `fiscal-site-finder` (SKILL.md)
 
@@ -37,7 +37,7 @@ Step 4: 确认无误后写入数据
 
 ### 必检项目
 
-对每个区县的 `gov-website-links.ts` 中记录的 URL，执行以下检查：
+对每个区县的 `website-gov.ts` 中记录的 URL，执行以下检查：
 
 1. **可达性**: `fetch_webpage` 或 HTTP HEAD/GET 访问，至少尝试 2 次
 2. **地名匹配**: 页面 `<title>` 或 `<h1>` 中必须包含该区县名称（去掉"市/县/区"后缀也算）
@@ -68,7 +68,7 @@ Step 4: 确认无误后写入数据
 官网可疑时：
 1. 读取 `gov-site-finder` skill（如未读取）
 2. 按 `gov-site-finder` 的 G2 方法，从市级门户找该县的正确官网
-3. 更新 `gov-website-links.ts`
+3. 更新 `website-gov.ts`
 4. 用新 URL 重新执行 Step 1 直到通过
 
 ---
@@ -158,7 +158,7 @@ Step 4: 确认无误后写入数据
 ## Step 4: 写入数据
 
 确认是真页面后：
-1. 更新 `data/fiscal-budget-links.ts` 中对应区县的 `url` 字段
+1. 更新 `data/website-budget.ts` 中对应区县的 `url` 字段
 2. 使用完整 URL（含协议）
 3. 保留 URL 的原始大小写和参数
 
@@ -268,7 +268,7 @@ Step 4: 确认无误后写入数据
 通过验证标记为 confirmed
 
 ## Step 4: 写入数据
-确认为真页面后，用 replace_string_in_file 将 URL 写入 data/fiscal-budget-links.ts。
+确认为真页面后，用 replace_string_in_file 将 URL 写入 data/website-budget.ts。
 只写入 confirmed 的 URL，不写入 unconfirmed 的。
 
 ## 输出格式
@@ -294,8 +294,8 @@ Step 4: 确认无误后写入数据
 
 ### 数据更新顺序
 
-1. 先修复 `gov-website-links.ts`（政府官网）
-2. 再更新 `fiscal-budget-links.ts`（预决算链接）
+1. 先修复 `website-gov.ts`（政府官网）
+2. 再更新 `website-budget.ts`（预决算链接）
 3. 两个文件分开 commit 或合并 commit 均可
 
 ---
@@ -305,7 +305,7 @@ Step 4: 确认无误后写入数据
 ### 写入数据文件
 
 ```typescript
-// data/fiscal-budget-links.ts
+// data/website-budget.ts
 { name: "县/区名", url: "https://www.xxx.gov.cn/zwgk/czyjs/" }
 ```
 

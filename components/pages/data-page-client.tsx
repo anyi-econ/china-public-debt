@@ -4,8 +4,8 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import type { AnnualIssuanceDataset } from "@/lib/types";
 import { DebtOverview } from "@/components/pages/debt-overview";
-import { FiscalBudgetNav } from "@/components/pages/fiscal-budget-nav";
-import { GovWebsiteNav } from "@/components/pages/gov-website-nav";
+import { FiscalBudgetNav } from "@/components/pages/website-budget-nav";
+import { GovWebsiteNav } from "@/components/pages/website-gov-nav";
 
 const subTabs = [
   { key: "debt", label: "债务数据可视化", dot: "#1B4965" },

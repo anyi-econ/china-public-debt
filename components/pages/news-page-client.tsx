@@ -4,7 +4,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import type { NewsItem } from "@/lib/types";
 import { NewsClient } from "@/components/pages/news-client";
-import { NewsSiteNav } from "@/components/pages/news-site-nav";
+import { NewsSiteNav } from "@/components/pages/website-news-nav";
 import { SectionCard } from "@/components/ui/section-card";
 
 const subTabs = [

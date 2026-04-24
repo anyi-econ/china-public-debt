@@ -6,8 +6,8 @@ import type { CelmaBondIssuanceItem, CelmaPolicyDynamicItem, GovSearchItem } fro
 import { PoliciesClient } from "@/components/pages/policies-client";
 import { GovSearch } from "@/components/pages/gov-search";
 import { BondIssuanceClient } from "@/components/pages/bond-issuance-client";
-import { PolicyNav } from "@/components/pages/policy-nav";
-import { ProBusinessPolicyNav } from "@/components/pages/pro-business-policy-nav";
+import { PolicyNav } from "@/components/pages/website-policy-nav";
+import { ProBusinessPolicyNav } from "@/components/pages/website-indutrial-nav";
 
 const subTabs = [
   { key: "bond-policy", label: "债券政策动态", dot: "#8B0000" },

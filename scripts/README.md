@@ -3,6 +3,40 @@
 > 本目录包含数据抓取、表格提取、报告生成等核心脚本（29 个）。  
 > 一次性探测/修补脚本已在 `46c121c` 中清理。
 
+## 目录结构
+
+```
+scripts/
+├── update.mjs                  # 核心编排（月度/周度更新）
+├── import-url.mjs              # 手动导入 URL
+├── README.md
+├── data_management/            # 数据收集、下载、提取、合并
+│   ├── fetch-celma-*.mjs       # CELMA 数据抓取（6 个）
+│   ├── fetch-chinabond-list.mjs
+│   ├── download-*.mjs          # 附件下载（3 个）
+│   ├── classify_tables.py      # PDF 表格提取流水线（8 个）
+│   ├── extract_*.py
+│   ├── vision_*.py
+│   ├── retry_vision_errors.py
+│   ├── sample_tables.py
+│   ├── merge_*.py              # 表格合并（4 个）
+│   ├── run_table_pipeline.ps1  # 流水线编排
+│   ├── fix-region-tags.mjs     # 标签修复与工具（3 个）
+│   ├── retag-topics.mjs
+│   └── regen-csv.mjs
+├── report_generation/          # 周报生成
+│   └── generate_weekly_report.py
+└── website_management/         # 链接诊断
+    ├── run-diagnosis.mjs       # 编排器
+    ├── parse-budget.ts
+    ├── layer1-batch-fetch.mjs
+    ├── layer2-supplement.mjs
+    ├── layer3-playwright.mjs
+    ├── export-xlsx.mjs
+    ├── generate-report.mjs
+    └── diagnosis-utils.mjs
+```
+
 ---
 
 ## 依赖关系图
@@ -108,19 +142,19 @@ flowchart TD
 | 脚本 | 功能 | 输入 | 输出 | 调用方式 |
 |------|------|------|------|----------|
 | **fetch-celma-annual.mjs** | 抓取 CELMA 全国年度发行额（一般/专项） | CELMA API (指标 0301) | `celma-annual-issuance.json` | `npm run fetch:celma` |
-| **fetch-celma-balance.mjs** | 抓取 CELMA 全国年度债务余额 | CELMA API (指标 06) | `celma-annual-balance.json` | `node scripts/fetch-celma-balance.mjs` |
-| **fetch-celma-bond-issuance.mjs** | 爬取 CELMA 债券栏目（发行安排/发行前公告/发行结果）列表与详情 | CELMA 网站 (channels 192-194) | `celma-bond-issuance.json` | `node scripts/fetch-celma-bond-issuance.mjs` |
+| **fetch-celma-balance.mjs** | 抓取 CELMA 全国年度债务余额 | CELMA API (指标 06) | `celma-annual-balance.json` | `node scripts/data_management/fetch-celma-balance.mjs` |
+| **fetch-celma-bond-issuance.mjs** | 爬取 CELMA 债券栏目（发行安排/发行前公告/发行结果）列表与详情 | CELMA 网站 (channels 192-194) | `celma-bond-issuance.json` | `node scripts/data_management/fetch-celma-bond-issuance.mjs` |
 | **fetch-celma-policy-dynamics.mjs** | 爬取"债券市场动态"栏目（政策动态/重大事项），含附件下载和智能标签 | CELMA 网站多栏目 | `celma-policy-dynamics.json`, `celma-major-events-attachments/` | `npm run fetch:celma-policy` |
-| **fetch-celma-all.mjs** | 一次性调用上述多个 fetch 脚本 | — | 更新所有 `celma-*.json` | `node scripts/fetch-celma-all.mjs` |
-| **fetch-chinabond-list.mjs** | 从 Chinabond 抓取地方债综合查询列表与详情 | Chinabond API | `chinabond-list.json` | `node scripts/fetch-chinabond-list.mjs [--all\|--since=YYYY-MM-DD]` |
+| **fetch-celma-all.mjs** | 一次性调用上述多个 fetch 脚本 | — | 更新所有 `celma-*.json` | `node scripts/data_management/fetch-celma-all.mjs` |
+| **fetch-chinabond-list.mjs** | 从 Chinabond 抓取地方债综合查询列表与详情 | Chinabond API | `chinabond-list.json` | `node scripts/data_management/fetch-chinabond-list.mjs [--all\|--since=YYYY-MM-DD]` |
 
 ### 三、附件下载（3 个）
 
 | 脚本 | 功能 | 输入 | 输出 | 调用方式 |
 |------|------|------|------|----------|
-| **download-issuance-plan-attachments.mjs** | 下载 CELMA"发行安排"页面的 PDF 附件 | `celma-bond-issuance.json` | `celma-issuance-plan-attachments/` | `node scripts/download-issuance-plan-attachments.mjs` |
-| **download-bond-pre-issuance-attachments.mjs** | 下载 CELMA"发行前公告"页面的附件 | `celma-bond-issuance.json` | `celma-pre-issuance-attachments/` | `node scripts/download-bond-pre-issuance-attachments.mjs` |
-| **download-chinabond-pre-issuance-attachments.mjs** | 下载 Chinabond 发行前披露附件 | `chinabond-list.json` | `chinabond-pre-issuance-attachments/` | `node scripts/download-chinabond-pre-issuance-attachments.mjs` |
+| **download-issuance-plan-attachments.mjs** | 下载 CELMA"发行安排"页面的 PDF 附件 | `celma-bond-issuance.json` | `celma-issuance-plan-attachments/` | `node scripts/data_management/download-issuance-plan-attachments.mjs` |
+| **download-bond-pre-issuance-attachments.mjs** | 下载 CELMA"发行前公告"页面的附件 | `celma-bond-issuance.json` | `celma-pre-issuance-attachments/` | `node scripts/data_management/download-bond-pre-issuance-attachments.mjs` |
+| **download-chinabond-pre-issuance-attachments.mjs** | 下载 Chinabond 发行前披露附件 | `chinabond-list.json` | `chinabond-pre-issuance-attachments/` | `node scripts/data_management/download-chinabond-pre-issuance-attachments.mjs` |
 
 ### 四、PDF 表格提取流水线（8 个）
 
@@ -128,43 +162,105 @@ flowchart TD
 
 | 脚本 | 功能 | 输入 | 输出 | 调用方式 |
 |------|------|------|------|----------|
-| **classify_tables.py** | 分类附件为 textual/scanned/excel/other | `celma-policy-dynamics.json` + 附件目录 | `classify_results.json` | `python scripts/classify_tables.py` |
-| **extract_pdf_tables.py** | pdfplumber 提取文本型 PDF 表格 | classify_results → textual PDF 列表 | `extracted_textual/*.xlsx` | `python scripts/extract_pdf_tables.py [--force] [--limit N]` |
-| **extract_scanned_ocr.py** | Tesseract OCR 提取扫描型 PDF（基线） | classify_results → scanned PDF 列表 | `extracted_scanned/*.xlsx` + quality 评分 | `python scripts/extract_scanned_ocr.py [--force] [--limit N]` |
-| **extract_scanned_tables.py** | OCR + Vision 组合提取扫描型 PDF | classify_results → scanned PDF 列表 | `extracted_scanned/*.xlsx` | `python scripts/extract_scanned_tables.py [--vision-only]` |
-| **vision_supplement_scanned.py** | 对 OCR 质量差的页面调用 Vision 兜底 | `extracted_scanned/*.xlsx` + quality flag | `extracted_scanned_vision/*.xlsx` | `python scripts/vision_supplement_scanned.py [--only-poor]` |
-| **retry_vision_errors.py** | 重试 Vision 提取失败的页面 | `extracted_scanned_vision/*.xlsx` 中的 error sheets | 更新同目录 xlsx | `python scripts/retry_vision_errors.py [--limit N]` |
-| **vision_repair_merged_cells.py** | 对低质量文件用增强 prompt 的 Vision 重新提取 | classify_results + extracted xlsx + 原始文件 | `extracted_vision_repair/*.xlsx` | `python scripts/vision_repair_merged_cells.py [--phase textual\|scanned]` |
-| **sample_tables.py** | 抽样显示表格前 5 行（调试用） | classify_results → 表格文件 | 控制台输出 | `python scripts/sample_tables.py` |
+| **classify_tables.py** | 分类附件为 textual/scanned/excel/other | `celma-policy-dynamics.json` + 附件目录 | `classify_results.json` | `python scripts/data_management/classify_tables.py` |
+| **extract_pdf_tables.py** | pdfplumber 提取文本型 PDF 表格 | classify_results → textual PDF 列表 | `extracted_textual/*.xlsx` | `python scripts/data_management/extract_pdf_tables.py [--force] [--limit N]` |
+| **extract_scanned_ocr.py** | Tesseract OCR 提取扫描型 PDF（基线） | classify_results → scanned PDF 列表 | `extracted_scanned/*.xlsx` + quality 评分 | `python scripts/data_management/extract_scanned_ocr.py [--force] [--limit N]` |
+| **extract_scanned_tables.py** | OCR + Vision 组合提取扫描型 PDF | classify_results → scanned PDF 列表 | `extracted_scanned/*.xlsx` | `python scripts/data_management/extract_scanned_tables.py [--vision-only]` |
+| **vision_supplement_scanned.py** | 对 OCR 质量差的页面调用 Vision 兜底 | `extracted_scanned/*.xlsx` + quality flag | `extracted_scanned_vision/*.xlsx` | `python scripts/data_management/vision_supplement_scanned.py [--only-poor]` |
+| **retry_vision_errors.py** | 重试 Vision 提取失败的页面 | `extracted_scanned_vision/*.xlsx` 中的 error sheets | 更新同目录 xlsx | `python scripts/data_management/retry_vision_errors.py [--limit N]` |
+| **vision_repair_merged_cells.py** | 对低质量文件用增强 prompt 的 Vision 重新提取 | classify_results + extracted xlsx + 原始文件 | `extracted_vision_repair/*.xlsx` | `python scripts/data_management/vision_repair_merged_cells.py [--phase textual\|scanned]` |
+| **sample_tables.py** | 抽样显示表格前 5 行（调试用） | classify_results → 表格文件 | 控制台输出 | `python scripts/data_management/sample_tables.py` |
 
 ### 五、表格合并（4 个）
 
 | 脚本 | 功能 | 输入 | 输出 | 调用方式 |
 |------|------|------|------|----------|
-| **merge_phase1_excel.py** | 从原始 Excel 附件合并为标准 31 列格式 | classify_results → excel 列表 | `merged_用途调整表.xlsx` | `python scripts/merge_phase1_excel.py` |
-| **merge_phase2_pdf.py** | 将文本型 PDF 提取结果追加到合并表 | `merged_用途调整表.xlsx` + `extracted_textual/` | 更新 `merged_用途调整表.xlsx` | `python scripts/merge_phase2_pdf.py` |
-| **merge_from_extracted_tables_v1.py** | 一次性位置对齐合并（旧版） | `extracted_textual/` + classify_results | `merged_用途调整表_v1.xlsx` | `python scripts/merge_from_extracted_tables_v1.py` |
-| **merge_from_extracted_tables.py** (v2) | 语义列对齐合并（改进版，支持 Vision 结果） | `extracted_textual/` + `extracted_scanned/` + `extracted_scanned_vision/` | `merged_用途调整表.xlsx` | `python scripts/merge_from_extracted_tables.py [--include-scanned] [--include-vision]` |
+| **merge_phase1_excel.py** | 从原始 Excel 附件合并为标准 31 列格式 | classify_results → excel 列表 | `merged_用途调整表.xlsx` | `python scripts/data_management/merge_phase1_excel.py` |
+| **merge_phase2_pdf.py** | 将文本型 PDF 提取结果追加到合并表 | `merged_用途调整表.xlsx` + `extracted_textual/` | 更新 `merged_用途调整表.xlsx` | `python scripts/data_management/merge_phase2_pdf.py` |
+| **merge_from_extracted_tables_v1.py** | 一次性位置对齐合并（旧版） | `extracted_textual/` + classify_results | `merged_用途调整表_v1.xlsx` | `python scripts/data_management/merge_from_extracted_tables_v1.py` |
+| **merge_from_extracted_tables.py** (v2) | 语义列对齐合并（改进版，支持 Vision 结果） | `extracted_textual/` + `extracted_scanned/` + `extracted_scanned_vision/` | `merged_用途调整表.xlsx` | `python scripts/data_management/merge_from_extracted_tables.py [--include-scanned] [--include-vision]` |
 
 ### 六、标签修复与工具（3 个）
 
 | 脚本 | 功能 | 输入 | 输出 | 调用方式 |
 |------|------|------|------|----------|
-| **fix-region-tags.mjs** | 修复 policy-dynamics 中错误的省份标签 | `celma-policy-dynamics.json` | 更新同文件 | `node scripts/fix-region-tags.mjs` |
-| **retag-topics.mjs** | 重新分类"重大事项"条目主题 | `celma-policy-dynamics.json` | 更新同文件 | `node scripts/retag-topics.mjs` |
-| **regen-csv.mjs** | 从 JSON 重建 download-log.csv | `celma-policy-dynamics.json` | `download-log.csv` | `node scripts/regen-csv.mjs` |
+| **fix-region-tags.mjs** | 修复 policy-dynamics 中错误的省份标签 | `celma-policy-dynamics.json` | 更新同文件 | `node scripts/data_management/fix-region-tags.mjs` |
+| **retag-topics.mjs** | 重新分类"重大事项"条目主题 | `celma-policy-dynamics.json` | 更新同文件 | `node scripts/data_management/retag-topics.mjs` |
+| **regen-csv.mjs** | 从 JSON 重建 download-log.csv | `celma-policy-dynamics.json` | `download-log.csv` | `node scripts/data_management/regen-csv.mjs` |
 
 ### 七、流水线编排（1 个）
 
 | 脚本 | 功能 | 输入 | 输出 | 调用方式 |
 |------|------|------|------|----------|
-| **run_table_pipeline.ps1** | 按顺序执行 extract → merge 全流程 | — | `merged_用途调整表.xlsx` | `powershell scripts/run_table_pipeline.ps1 [-IncludeScanned] [-Force]` |
+| **run_table_pipeline.ps1** | 按顺序执行 extract → merge 全流程 | — | `merged_用途调整表.xlsx` | `powershell scripts/data_management/run_table_pipeline.ps1 [-IncludeScanned] [-Force]` |
 
 ### 八、周报生成（1 个）
 
 | 脚本 | 功能 | 输入 | 输出 | 调用方式 |
 |------|------|------|------|----------|
-| **generate_weekly_report.py** | 根据 chinabond 数据生成周报 Word/PDF | `chinabond-list.json` | `docs/债券发行周报.docx/.pdf` | `python scripts/generate_weekly_report.py` |
+| **generate_weekly_report.py** | 根据 chinabond 数据生成周报 Word/PDF | `chinabond-list.json` | `docs/债券发行周报.docx/.pdf` | `python scripts/report_generation/generate_weekly_report.py` |
+
+---
+
+### 九、链接诊断（website_management/）
+
+> **本目录是诊断层，不是优化层。** 只做链接状态核查和结构化判断，不修改、不删除、不替换原有链接。
+
+#### 用途
+
+对 `data/website-budget.ts` 中的全部地方财政预决算链接做结构化核查，判断每条链接的页面可用性、地区匹配性、页面类型等，输出诊断结果供人工复核和后续优化。
+
+#### 执行策略
+
+采用三层诊断流程：**批处理优先 → fetch 补抓 → Playwright 兜底**。
+
+#### 脚本分工
+
+| 脚本 | 功能 | 说明 |
+|------|------|------|
+| **parse-budget.ts** | 解析 TS 文件为扁平化 JSON | 步骤 0，输出 `diagnosis-data.json` |
+| **layer1-batch-fetch.mjs** | 第 1 层：批量 HTTP 抓取 + 初步分析 | 并发 15 路，提取标题/正文/面包屑，应用规则判断 |
+| **layer2-supplement.mjs** | 第 2 层：增强抓取补判 | 对第 1 层无法稳定判断的页面做 meta-refresh/iframe/编码 增强 |
+| **layer3-playwright.mjs** | 第 3 层：Playwright 浏览器渲染兜底 | 对仍需渲染的 JS 页面做浏览器抓取和少量交互 |
+| **export-xlsx.mjs** | 导出 Excel 结果 | 输出 `data/website-budget.xlsx` |
+| **generate-report.mjs** | 生成诊断报告 | 输出 `docs/website-budget-diagnosis.md` |
+| **diagnosis-utils.mjs** | 共用工具模块 | 关键词词典、分析函数、诊断规则 |
+| **run-diagnosis.mjs** | 编排器 | 依次调用上述脚本 |
+
+#### 输入输出
+
+| 类型 | 文件 |
+|------|------|
+| 输入 | `data/website-budget.ts` |
+| 主结果 | `data/website-budget.xlsx` |
+| 诊断报告 | `docs/website-budget-diagnosis.md` |
+| 中间数据 | `scripts/website_management/diagnosis-data.json` |
+
+#### 运行方式
+
+```bash
+# 完整流程（解析 → 三层诊断 → Excel + 报告）
+node scripts/website_management/run-diagnosis.mjs
+
+# 跳过已完成的层（支持断点续跑）
+node scripts/website_management/run-diagnosis.mjs --skip-parse --skip-layer1
+
+# 仅重新导出（已有 diagnosis-data.json 时）
+node scripts/website_management/run-diagnosis.mjs --only-export
+
+# 也可单独运行各步骤
+npx tsx scripts/website_management/parse-budget.ts
+node scripts/website_management/layer1-batch-fetch.mjs
+node scripts/website_management/layer2-supplement.mjs
+node scripts/website_management/layer3-playwright.mjs
+node scripts/website_management/export-xlsx.mjs
+node scripts/website_management/generate-report.mjs
+```
+
+#### 运行结果
+
+1. `data/website-budget.xlsx` — 全量诊断结果表（带条件着色，含统计概览 Sheet）
+2. `docs/website-budget-diagnosis.md` — 诊断报告（统计分布 + 问题地区名单 + 简要观察）
 
 ---
 

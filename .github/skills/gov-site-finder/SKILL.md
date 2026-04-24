@@ -1,17 +1,17 @@
 ---
 name: gov-site-finder
-description: "Find Chinese province/city/county official government portal websites (政府门户网站) and populate data/gov-website-links.ts. USE WHEN: user asks to find government portal URLs, add city/county government websites, supplement gov portal data, or mentions 政府门户/政府官网/人民政府网站 in the context of this project. Also use when checking whether existing government portal URLs are still valid."
+description: "Find Chinese province/city/county official government portal websites (政府门户网站) and populate data/website-gov.ts. USE WHEN: user asks to find government portal URLs, add city/county government websites, supplement gov portal data, or mentions 政府门户/政府官网/人民政府网站 in the context of this project. Also use when checking whether existing government portal URLs are still valid."
 ---
 
 # Government Portal Site Finder
 
-Locate official government portal websites (政府门户网站/人民政府官网) for Chinese provinces, prefecture-level cities, counties, and districts. Populate results into `data/gov-website-links.ts`.
+Locate official government portal websites (政府门户网站/人民政府官网) for Chinese provinces, prefecture-level cities, counties, and districts. Populate results into `data/website-gov.ts`.
 
 > **This skill is for government portals only.** For fiscal budget disclosure pages (财政预决算公开), use the `fiscal-site-finder` skill instead. Do NOT extract portal URLs by backtracking from fiscal bureau URLs — those are different sites.
 
 ## Quick Reference
 
-- **Data file**: `data/gov-website-links.ts` — TypeScript, hierarchical province → city → county
+- **Data file**: `data/website-gov.ts` — TypeScript, hierarchical province → city → county
 - **Interface**: `GovWebsiteNode { name: string; url: string; children?: GovWebsiteNode[] }`
 - **Export**: `GOV_WEBSITES: GovWebsiteNode[]`
 - **Stats script**: `scripts/extract-gov-urls.mjs` (initial population from fiscal domains)
@@ -254,7 +254,7 @@ URL rules:
 ## Workflow Completion
 
 After updating the data file:
-1. `get_errors` on `data/gov-website-links.ts` — TypeScript must compile
+1. `get_errors` on `data/website-gov.ts` — TypeScript must compile
 2. `npx next build` must succeed
 3. Spot-check 3–5 URLs via `fetch_webpage` or HEAD check
 4. Git commit: `feat(gov-portals): add N city/county government portal URLs for {province}`
@@ -271,4 +271,4 @@ When filling in URLs for an entire province:
 
 **Rate limiting**: When using `fetch_webpage`, space requests. Process one city at a time to avoid overwhelming servers.
 
-**Progress tracking**: Use the county count in the UI (gov-website-nav.tsx displays coverage stats) to measure progress after each commit.
+**Progress tracking**: Use the county count in the UI (website-gov-nav.tsx displays coverage stats) to measure progress after each commit.

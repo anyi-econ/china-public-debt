@@ -1,15 +1,15 @@
 ---
 name: fiscal-site-finder
-description: "Find Chinese city/county government fiscal budget disclosure (预决算公开) websites and populate data/fiscal-budget-links.ts. USE WHEN: user asks to find fiscal budget URLs, add city/county links, supplement provincial data, or mentions 预决算公开/财政预算/预算决算/财政局 in the context of this project. Also use when checking whether existing URLs are still valid."
+description: "Find Chinese city/county government fiscal budget disclosure (预决算公开) websites and populate data/website-budget.ts. USE WHEN: user asks to find fiscal budget URLs, add city/county links, supplement provincial data, or mentions 预决算公开/财政预算/预算决算/财政局 in the context of this project. Also use when checking whether existing URLs are still valid."
 ---
 
 # Fiscal Budget Site Finder
 
-Locate fiscal budget disclosure (预决算公开) pages for Chinese prefecture-level cities, counties, and districts. Populate results into `data/fiscal-budget-links.ts`.
+Locate fiscal budget disclosure (预决算公开) pages for Chinese prefecture-level cities, counties, and districts. Populate results into `data/website-budget.ts`.
 
 ## Quick Reference
 
-- **Data file**: `data/fiscal-budget-links.ts` — TypeScript, hierarchical province → city → county
+- **Data file**: `data/website-budget.ts` — TypeScript, hierarchical province → city → county
 - **Experience log**: `references/experience-log.md` — per-province notes, domain quirks, CMS patterns
 - **Script templates**: `scripts/batch-validate-v3.mjs` (city), `scripts/hebei-discover.mjs` (county)
 - **Stats**: `scripts/province-stats.mjs`, `scripts/count-gaps.mjs`
@@ -166,7 +166,7 @@ County pinyin domains frequently collide across provinces. **Always verify page 
 ## Workflow Completion
 
 After updating the data file:
-1. `get_errors` on `data/fiscal-budget-links.ts` — TypeScript must compile
+1. `get_errors` on `data/website-budget.ts` — TypeScript must compile
 2. Spot-check 2-3 URLs (especially any from domain guessing)
 3. Git commit with descriptive message: `feat(省名): add N county fiscal budget URLs`
 

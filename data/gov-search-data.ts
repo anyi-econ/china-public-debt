@@ -1,7 +1,7 @@
 /**
  * 政府官网信息检索数据
  *
- * 数据来源：基于 gov-website-links.ts 中的真实政府门户网站信息生成
+ * 数据来源：基于 website-gov.ts 中的真实政府门户网站信息生成
  * 每条记录对应一个真实的政府门户网站入口，URL 均来自已验证的政府官网
  *
  * 后续扩展方向：
@@ -11,7 +11,7 @@
  */
 
 import type { GovSearchItem, ContentScope, GovDocType, LeaderRole, PolicySubType } from "@/lib/types";
-import { GOV_WEBSITES, type GovWebsiteNode } from "@/data/gov-website-links";
+import { GOV_WEBSITES, type GovWebsiteNode } from "@/data/website-gov";
 
 /** 示例主题标签池 */
 const TOPIC_POOL = [
