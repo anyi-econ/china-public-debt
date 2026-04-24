@@ -32,7 +32,25 @@ export const PRO_BUSINESS_URL_MAP: RegionUrlMap = {
   "上海市/黄浦区": "https://zzcx.shhuangpu.gov.cn/?z9X4StVDmQw6=1777009092213#/",
   // 广州市：优化营商环境专题
   "广东省/广州市": "https://www.gz.gov.cn/ysgz/index.html",
-  // ═══════ 其余 31省 + 27省会门户因动态渲染/访问限制暂未稳定核验，留空待后续补充 ═══════
+  // —— v3 扩充（省级）——
+  // 吉林省：优化营商环境专题
+  "吉林省": "http://www.jl.gov.cn/szfzt/jlyhyshjjxs/index.html",
+  // 黑龙江省：惠企利民政策问答专题
+  "黑龙江省": "https://www.hlj.gov.cn/hlj/hqlmzcwd1118/zl_hqlmzc.shtml",
+  // 湖南省：优化营商环境专栏
+  "湖南省": "http://www.hunan.gov.cn/topic/yhyshj/index.html",
+  // 广东省：粤企政策通（独立惠企政策平台）
+  "广东省": "https://sqzc.gd.gov.cn/",
+  // 西藏自治区：助企纾困专区（政务服务平台）
+  "西藏自治区": "https://www.xzzwfw.gov.cn/helpEnterprises.shtml",
+  // —— v3 扩充（省会/副省级城市）——
+  // 南昌：优化营商环境专题
+  "江西省/南昌市": "http://www.nc.gov.cn/yshj/index.shtml",
+  // 济南：优化营商环境专题
+  "山东省/济南市": "https://www.jinan.gov.cn/col/col1761/2025nzt/yhyshj/index.html",
+  // 西安：西安政策通（独立政策平台，整合营商环境信息）
+  "陕西省/西安市": "https://zwfw.xa.gov.cn/policy-web-new/#/",
+  // ═══════ 其余地区因动态渲染/访问限制暂未稳定核验，留空待后续补充 ═══════
   // 详见 docs/pro-business-policy-site-log.md
 };
 

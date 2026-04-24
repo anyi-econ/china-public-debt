@@ -154,3 +154,39 @@
 ### 11.4 覆盖率说明
 
 截至本版本，v1 + v2 共收录 10 条省级/地市级要闻栏目链接（北京、上海、重庆、辽宁、吉林、黑龙江、江苏 + 上海黄浦、广州、深圳）。覆盖 31 省级行政区的 7 个 + 27 省会中的 2 个（广州/深圳为副省级）。其余节点均以空字符串形式保留在数据中，前端显示灰色"待补充"提示，不影响其他页面功能。
+## 12. v3 扩充（基于 subagent 并行核验）
+
+采用 `fiscal-site-from-gov-site` skill 的分组并行模式，调用 4 个 subagent 并行在四大地理区排查 58 个门户（只用 fetch_webpage，避免无意义的 HTTP 探测）。
+
+### 12.1 本轮新增确认
+
+| 路径 | 栏目 | URL |
+|---|---|---|
+| 广东省 | 要闻动态 | `http://www.gd.gov.cn/gdywdt/index.html` |
+| 湖南省 | 湖南要闻 | `https://www.hunan.gov.cn/hnszf/hnyw/hnyw.html` |
+| 海南省 | 要闻动态 | `https://www.hainan.gov.cn/hainan/ywdt/xw.shtml` |
+| 云南省 | 云南要闻 | `https://www.yn.gov.cn/ywdt/ynyw/` |
+| 西藏自治区 | 要闻 | `https://www.xizang.gov.cn/xwzx_406/` |
+| 宁夏回族自治区 | 宁夏要闻 | `https://www.nx.gov.cn/zwxx_11337/nxyw/` |
+| 新疆维吾尔自治区 | 新疆要闻 | `https://www.xinjiang.gov.cn/xinjiang/xjyw/common_list.shtml` |
+| 江西省/南昌市 | 今日南昌 | `https://www.nc.gov.cn/ncszf/jrnc/2021_nav_list.shtml` |
+| 山东省/济南市 | 时政要闻 | `https://www.jinan.gov.cn/col/col23/szyw/index.html` |
+| 河南省/郑州市 | 新闻中心 | `https://www.zhengzhou.gov.cn/news1/index.jhtml` |
+| 湖北省/武汉市 | 武汉要闻 | `https://www.wuhan.gov.cn/sy/whyw/` |
+| 陕西省/西安市 | 西安要闻 | `https://www.xa.gov.cn/xw/xayw/1.html` |
+| 宁夏回族自治区/银川市 | 政务要闻 | `https://www.yinchuan.gov.cn/xwzx/zwyw/` |
+| 新疆维吾尔自治区/乌鲁木齐市 | 乌鲁木齐要闻 | `https://www.wlmq.gov.cn/wlmqs/c119052/common_list.shtml` |
+| 辽宁省/沈阳市 | 政务要闻（党政动态） | `https://www.shenyang.gov.cn/zwgk/zwdt/zwyw/` |
+
+### 12.2 v3 本轮未通过核验（留空待补充）
+
+- 省级：天津、河北、山西、内蒙古、浙江、安徽、福建、江西、山东、河南、湖北、广西、四川、贵州、陕西、甘肃、青海
+  - 大多数返回 JS 渲染空页或 403/Forbidden。
+- 省会：石家庄、太原、呼和浩特、长春、哈尔滨、南京、杭州、合肥、福州、长沙、南宁、海口、成都、贵阳、昭明、拉萨（只有“市委市政府动态”，不符合要闻定义，亦留空）、兰州、西宁
+  - 门户以 JS 单页应用或 CDN WAF 为主。
+
+### 12.3 覆盖率变化
+
+| 类别 | v2 合计 | v3 新增 | 当前合计 |
+|---|---|---|---|
+| 地区要闻 | 10 | 15 | **25** |

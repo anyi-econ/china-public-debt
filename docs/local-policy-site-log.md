@@ -135,3 +135,40 @@
 ### 10.4 覆盖率说明
 
 v1 + v2 共收录 9 条政策入口（北京、上海黄浦、广州、深圳、重庆、辽宁、吉林、黑龙江、江苏）。其余节点均以空字符串保留，前端显示为灰色"待补充"。
+## 11. v3 扩充（subagent 并行核验）
+
+### 11.1 本轮新增确认
+
+| 路径 | 入口名 | URL |
+|---|---|---|
+| 广东省 | 省政府文件库 | `http://www.gd.gov.cn/zwgk/wjk/` |
+| 湖南省 | 文件库（省政府文件） | `https://www.hunan.gov.cn/hnszf/xxgk/wjk/szfwj/wjk_glrb.html` |
+| 海南省 | 省政府政策文件 | `https://www.hainan.gov.cn/hainan/zfwj/szfzcwj.shtml` |
+| 云南省 | 政策文件 | `https://www.yn.gov.cn/zwgk/zcwj/` |
+| 宁夏回族自治区 | 区政府文件 | `https://www.nx.gov.cn/zwgk/qzfwj/` |
+| 新疆维吾尔自治区 | 政策 | `https://www.xinjiang.gov.cn/xinjiang/zfl/zfxxgk_zhengce_list.shtml` |
+| 江西省/南昌市 | 政策文件库 | `https://www.nc.gov.cn/ncszf/gfxwjtyfbpt/zcwjk.shtml` |
+| 湖北省/武汉市 | 政策 | `https://www.wuhan.gov.cn/zwgk/?channelid=26315` |
+| 西藏自治区/拉萨市 | 文件资料 | `https://www.lasa.gov.cn/lasa/wjzl/common_list.shtml` |
+| 陕西省/西安市 | 政策法规 | `https://www.xa.gov.cn/gk/zcfg/` |
+| 宁夏回族自治区/银川市 | 规范性文件 | `https://www.yinchuan.gov.cn/xxgk/zcwj/xzgfxwj/` |
+| 新疆维吾尔自治区/乌鲁木齐市 | 政府文件 | `https://www.wlmq.gov.cn/wlmqs/c119064/zfxxgk_list.shtml` |
+| 辽宁省/沈阳市 | 政府文件 | `https://www.shenyang.gov.cn/zwgk/zcwj/zfwj/` |
+
+### 11.2 未采用的 subagent 返回项
+
+- 济南市：`https://www.jinan.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/index` — 形象上是 API 端点而非面向用户的栏目页，暂不采用。
+- 郑州市：`http://public.zhengzhou.gov.cn/` — 政府信息公开平台首页，范围过宽，未采用。
+- 西藏自治区：`https://www.xizang.gov.cn/zwgk/` — 政务公开总页而非政策文件库，未采用。
+
+### 11.3 v3 未能核验的门户
+
+省级：天津、河北、山西、内蒙古、浙江、安徽、福建、江西、山东、河南、湖北、广西、四川、贵州、陕西、甘肃、青海。
+省会：石家庄、太原、呼和浩特、长春、哈尔滨、南京、杭州、合肥、福州、长沙、南宁、海口、成都、贵阳、昭明、兰州、西宁。
+均为 JS 渲染/WAF 拦截，留待后续 Playwright 补充。
+
+### 11.4 覆盖率变化
+
+| 类别 | v2 合计 | v3 新增 | 当前合计 |
+|---|---|---|---|
+| 地区政策 | 9 | 13 | **22** |

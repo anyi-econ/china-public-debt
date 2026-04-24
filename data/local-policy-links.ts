@@ -36,7 +36,22 @@ export const LOCAL_POLICY_URL_MAP: RegionUrlMap = {
   "广东省/广州市": "https://www.gz.gov.cn/gzzcwjk/index.html",
   // 深圳市规范性文件查询
   "广东省/深圳市": "https://www.sz.gov.cn/szsrmzfxxgk/zc/gfxwj/szfgfxwj/",
-  // ═══════ 其余 31省 + 27省会门户因动态渲染/访问限制暂未稳定核验，留空待后续补充 ═══════
+  // —— v3 扩充（省级）——
+  "广东省": "http://www.gd.gov.cn/zwgk/wjk/",                                 // 省政府文件库
+  "湖南省": "https://www.hunan.gov.cn/hnszf/xxgk/wjk/szfwj/wjk_glrb.html",    // 文件库—省政府文件
+  "海南省": "https://www.hainan.gov.cn/hainan/zfwj/szfzcwj.shtml",            // 省政府政策文件
+  "云南省": "https://www.yn.gov.cn/zwgk/zcwj/",                               // 政策文件
+  "宁夏回族自治区": "https://www.nx.gov.cn/zwgk/qzfwj/",                      // 区政府文件
+  "新疆维吾尔自治区": "https://www.xinjiang.gov.cn/xinjiang/zfl/zfxxgk_zhengce_list.shtml", // 政策
+  // —— v3 扩充（省会/副省级城市）——
+  "江西省/南昌市": "https://www.nc.gov.cn/ncszf/gfxwjtyfbpt/zcwjk.shtml",     // 政策文件库
+  "湖北省/武汉市": "https://www.wuhan.gov.cn/zwgk/?channelid=26315",          // 政策
+  "西藏自治区/拉萨市": "https://www.lasa.gov.cn/lasa/wjzl/common_list.shtml", // 文件资料
+  "陕西省/西安市": "https://www.xa.gov.cn/gk/zcfg/",                          // 政策法规
+  "宁夏回族自治区/银川市": "https://www.yinchuan.gov.cn/xxgk/zcwj/xzgfxwj/",  // 规范性文件
+  "新疆维吾尔自治区/乌鲁木齐市": "https://www.wlmq.gov.cn/wlmqs/c119064/zfxxgk_list.shtml", // 政府文件
+  "辽宁省/沈阳市": "https://www.shenyang.gov.cn/zwgk/zcwj/zfwj/",             // 政府文件
+  // ═══════ 其余地区因动态渲染/访问限制暂未稳定核验，留空待后续补充 ═══════
   // 详见 docs/local-policy-site-log.md
 };
 

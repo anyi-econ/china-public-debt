@@ -32,7 +32,24 @@ export const NEWS_SITE_URL_MAP: RegionUrlMap = {
   "上海市/黄浦区": "https://www.shhuangpu.gov.cn/xw/001001/news_important.html", // 黄浦要闻
   "广东省/广州市": "https://www.gz.gov.cn/xw/gzyw/index.html",                // 广州要闻
   "广东省/深圳市": "https://www.sz.gov.cn/cn/xxgk/yw/index.html",             // 深圳要闻
-  // ═══════ 其余 31省 + 27省会门户因动态渲染/访问限制暂未稳定核验，留空待后续补充 ═══════
+  // —— v3 扩充（省级）——
+  "广东省": "http://www.gd.gov.cn/gdywdt/index.html",                         // 要闻动态
+  "湖南省": "https://www.hunan.gov.cn/hnszf/hnyw/hnyw.html",                  // 湖南要闻
+  "海南省": "https://www.hainan.gov.cn/hainan/ywdt/xw.shtml",                 // 要闻动态
+  "云南省": "https://www.yn.gov.cn/ywdt/ynyw/",                               // 云南要闻
+  "西藏自治区": "https://www.xizang.gov.cn/xwzx_406/",                        // 要闻
+  "宁夏回族自治区": "https://www.nx.gov.cn/zwxx_11337/nxyw/",                 // 宁夏要闻
+  "新疆维吾尔自治区": "https://www.xinjiang.gov.cn/xinjiang/xjyw/common_list.shtml", // 新疆要闻
+  // —— v3 扩充（省会/副省级城市）——
+  "江西省/南昌市": "https://www.nc.gov.cn/ncszf/jrnc/2021_nav_list.shtml",    // 今日南昌
+  "山东省/济南市": "https://www.jinan.gov.cn/col/col23/szyw/index.html",      // 时政要闻
+  "河南省/郑州市": "https://www.zhengzhou.gov.cn/news1/index.jhtml",          // 新闻中心
+  "湖北省/武汉市": "https://www.wuhan.gov.cn/sy/whyw/",                       // 武汉要闻
+  "陕西省/西安市": "https://www.xa.gov.cn/xw/xayw/1.html",                    // 西安要闻
+  "宁夏回族自治区/银川市": "https://www.yinchuan.gov.cn/xwzx/zwyw/",          // 政务要闻
+  "新疆维吾尔自治区/乌鲁木齐市": "https://www.wlmq.gov.cn/wlmqs/c119052/common_list.shtml", // 乌鲁木齐要闻
+  "辽宁省/沈阳市": "https://www.shenyang.gov.cn/zwgk/zwdt/zwyw/",             // 政务要闻
+  // ═══════ 其余地区因动态渲染/访问限制暂未稳定核验，留空待后续补充 ═══════
   // 详见 docs/news-site-log.md
 };
 
