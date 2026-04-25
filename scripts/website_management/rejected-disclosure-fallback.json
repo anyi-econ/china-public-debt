@@ -1,0 +1,128 @@
+[
+  {
+    "result": {
+      "key": "安徽省/蚌埠市/怀远县",
+      "govUrl": "https://www.ahhy.gov.cn/",
+      "picked": {
+        "url": "https://www.ahhy.gov.cn/zfxxgk/public/column/29621?type=2&publicType=gkzn",
+        "text": "政府信息公开",
+        "score": 102,
+        "source": "anchor",
+        "validated": true
+      }
+    },
+    "rejectReason": "narrow-disclosure-path"
+  },
+  {
+    "result": {
+      "key": "安徽省/蚌埠市/龙子湖区",
+      "govUrl": "https://www.bblzh.gov.cn/",
+      "picked": {
+        "url": "https://www.bblzh.gov.cn/zfxxgk/public/column/29571?type=2&publicType=gkzn",
+        "text": "政府信息公开",
+        "score": 102,
+        "source": "anchor",
+        "validated": true
+      }
+    },
+    "rejectReason": "narrow-disclosure-path"
+  },
+  {
+    "result": {
+      "key": "安徽省/宣城市/广德市",
+      "govUrl": "https://www.guangde.gov.cn/",
+      "picked": {
+        "url": "https://www.guangde.gov.cn/OpennessFinance/",
+        "text": "财政预决算三公经费 政府信息公开",
+        "score": 72,
+        "source": "anchor",
+        "validated": true
+      }
+    },
+    "rejectReason": "narrow-disclosure-text"
+  },
+  {
+    "result": {
+      "key": "河南省/新乡市/新乡县",
+      "govUrl": "http://www.xinxiangxian.gov.cn/",
+      "picked": {
+        "url": "http://www.xinxiangxian.gov.cn/htmls/30mc64uz_fadingzhudonggongkaineirong/list-1.html",
+        "text": "--> 法定主动公开内容",
+        "score": 75,
+        "source": "anchor",
+        "validated": true
+      }
+    },
+    "rejectReason": "narrow-disclosure-path"
+  },
+  {
+    "result": {
+      "key": "黑龙江省/鸡西市",
+      "govUrl": "https://www.jixi.gov.cn/",
+      "picked": {
+        "url": "https://www.jixi.gov.cn/jixi/c100117/common_zfxxgk.shtml?tab=gkzn",
+        "text": "政府信息公开",
+        "score": 90,
+        "source": "anchor",
+        "validated": true
+      }
+    },
+    "rejectReason": "narrow-disclosure-path"
+  },
+  {
+    "result": {
+      "key": "吉林省/延边朝鲜族自治州/延吉市",
+      "govUrl": "http://www.yanji.gov.cn/",
+      "picked": {
+        "url": "http://www.yanji.gov.cn/yjszfxxgkw/",
+        "text": "政府信息公开",
+        "score": 90,
+        "source": "anchor",
+        "validated": true
+      }
+    },
+    "rejectReason": "narrow-disclosure-path"
+  },
+  {
+    "result": {
+      "key": "山东省/临沂市",
+      "govUrl": "https://www.linyi.gov.cn/",
+      "picked": {
+        "url": "https://www.linyi.gov.cn/typt.htm",
+        "text": "法定公开内容",
+        "score": 75,
+        "source": "anchor",
+        "validated": true
+      }
+    },
+    "rejectReason": "not-disclosure-route"
+  },
+  {
+    "result": {
+      "key": "西藏自治区/拉萨市/城关区",
+      "govUrl": "https://www.cgq.gov.cn/",
+      "picked": {
+        "url": "https://www.cgq.gov.cn/cgqrmzf/zwgk/zwgk.shtml",
+        "text": "政务公开",
+        "score": 92,
+        "source": "anchor",
+        "validated": true
+      }
+    },
+    "rejectReason": "narrow-disclosure-path"
+  },
+  {
+    "result": {
+      "key": "新疆维吾尔自治区/乌鲁木齐市/米东区",
+      "govUrl": "http://www.xjmd.gov.cn/",
+      "picked": {
+        "url": "http://www.xjmd.gov.cn/info/content.jsp?node_id=GKrm&info_id=7895&tm_id=68&q=xxgkzn",
+        "text": "政府信息公开",
+        "score": 90,
+        "source": "anchor",
+        "validated": true
+      }
+    },
+    "rejectReason": "narrow-disclosure-path"
+  }
+]

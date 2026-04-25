@@ -24,6 +24,27 @@ try {
   );
   for (const r of pw) if (r && r.key) probeByKey.set(r.key, r);
 } catch {}
+try {
+  const disclosure = JSON.parse(
+    fs.readFileSync('scripts/website_management/policy-disclosure-fallback-results.json', 'utf8'),
+  );
+  for (const r of disclosure) {
+    if (!r || !r.key) continue;
+    probeByKey.set(r.key, {
+      key: r.key,
+      provUrl: r.govUrl,
+      reason: r.reason || (r.picked ? 'disclosure-fallback-picked' : 'disclosure-fallback-rejected'),
+      picked: r.picked
+        ? {
+            url: r.picked.url,
+            text: r.picked.text,
+            score: r.picked.score,
+            listLooks: Boolean(r.picked.validated),
+          }
+        : undefined,
+    });
+  }
+} catch {}
 
 const depth = (k) => k.split('/').length;
 const levelLabel = (d) => (d === 1 ? '省级' : d === 2 ? '市级' : '县区');
@@ -45,6 +66,14 @@ function classifyEntry(c) {
     };
   }
   if (/手工补录/.test(c)) return { source: 'manual-v7', mode: 'manual', note: c };
+  if (/disclosure fallback/.test(c)) {
+    const m = /score=(\d+)/.exec(c);
+    return {
+      source: 'disclosure-fallback',
+      mode: 'fallback',
+      note: m ? `政务公开兜底，分数=${m[1]} ${c}` : c,
+    };
+  }
   if (/pw\)/.test(c)) {
     const m = /score=(\d+)/.exec(c);
     return { source: 'auto-pw', mode: 'playwright', note: m ? `分数=${m[1]} ${c}` : c };

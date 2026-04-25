@@ -1,494 +1,95 @@
-# 地区政策导航 — 查找日志
-
-> 数据文件：[data/website-policy.ts](../data/website-policy.ts)
-> 前端组件：[components/pages/website-policy-nav.tsx](../components/pages/website-policy-nav.tsx) → [components/pages/website-region-nav.tsx](../components/pages/website-region-nav.tsx)
-> 挂载位置：`/policies` 页面子菜单 "地区政策导航"
-
-## 1. 栏目定义与筛选标准
-
-收录目标：各级政府门户中**代表本地政策文件入口**的稳定栏目页，优先可检索/可筛选入口。
-
-### 1.1 可接受栏目名称
-- 政策文件、政策文件库、政策法规
-- 行政规范性文件、规范性文件、规范性文件库、规范性文件查询
-- 政府文件、政府公文
-- 找政策、政策查询、政策服务、政策库、政策检索、政策图谱
-
-### 1.2 层级约束
-- 省级：省政府门户下的政策文件入口（不用省属厅局单独入口）。
-- 市级：市政府门户下的政策入口；若市级同时存在**政策文件列表**和**找政策/政策检索/政策库**两种入口，**优先可检索入口**（按 prompt 明确要求）。
-  - 例：北京应用 "找政策" `zhengce/zcdh` 而非 "政策文件" `zhengce/zhengcefagui`。
-  - 例：广州应用 "政策文件库" `gzzcwjk` 而非 "规范性文件统一发布" `gfxwj`。
-- 区县级：本区县政府门户下的政策入口；若该区县统一接入上级平台（如北京市"找政策"可按区县筛选），也可用上级平台作为入口，前提是默认过滤为本区县。
-
-### 1.3 不收录
-- 单篇文件、废止文件库
-- 短期"学习资料汇编"专题
-- 部门单独的规范性文件列表（除非该区仅此一入口）
-
-## 2. 已验证种子样例（v1 首期）
-
-| 路径 | 入口名 | URL | 备注 |
-|---|---|---|---|
-| 北京市 | 找政策 | `https://www.beijing.gov.cn/zhengce/zcdh?token=4260&adx=&asmzq=&type=1` | prompt 指定优先"找政策"而非普通"政策文件" |
-| 上海市/黄浦区 | 行政规范性文件 | `https://www.shhuangpu.gov.cn/zw/.../specification.html` | prompt 原示例 |
-| 广东省/广州市 | 政策文件库 | `https://www.gz.gov.cn/gzzcwjk/index.html` | 支持主题/文号/发文机关检索 |
-| 广东省/深圳市 | 规范性文件查询 | `https://www.sz.gov.cn/szsrmzfxxgk/zc/gfxwj/szfgfxwj/` | 深圳市信息公开内规范性文件库 |
-
-## 3. 代表性 20 地区待复核清单
-
-| # | 类型 | 地区 | 推测路径 |
-|---|---|---|---|
-| 1 | 直辖市 | 北京市 ✓ | 已核验 |
-| 2 | 直辖市 | 上海市 | 上海"一网通办"政策库 `zwdt.sh.gov.cn` 或市政府 `zhengce.sh.gov.cn`，待确认 |
-| 3 | 直辖市 | 天津市 | 通常 `tj.gov.cn/zwgk/zcfg/` |
-| 4 | 直辖市 | 重庆市 | `cq.gov.cn/zwgk/zcwjk/` 政策文件库 |
-| 5 | 直辖市下区 | 上海市/黄浦区 ✓ | 已核验 |
-| 6 | 副省级 | 广东省/广州市 ✓ | 已核验 |
-| 7 | 副省级 | 广东省/深圳市 ✓ | 已核验 |
-| 8 | 地级市下区 | 广东省/深圳市/福田区 | 福田政策库 / 规范性文件 |
-| 9 | 副省级 | 江苏省/苏州市 | 苏州政策文件库 |
-| 10 | 省会 | 浙江省/杭州市 | `hangzhou.gov.cn/col/` 规范性文件 |
-| 11 | 副省级 | 山东省/青岛市 | 青岛政策文件库 |
-| 12 | 省会 | 四川省/成都市 | 成都政府门户政策文件 |
-| 13 | 省会 | 湖北省/武汉市 | 武汉规范性文件 |
-| 14 | 省会 | 陕西省/西安市 | 西安政策文件 |
-| 15 | 省会 | 河南省/郑州市 | 郑州规范性文件 |
-| 16 | 省会 | 云南省/昆明市 | 昆明政策法规 |
-| 17 | 副省级 | 福建省/厦门市 | 厦门政策文件库 |
-| 18 | 县级市 | 江苏省/苏州市/昆山市 | 昆山规范性文件 |
-| 19 | 县级市 | 浙江省/金华市/义乌市 | 义乌政策文件 |
-| 20 | 省会 | 江苏省/南京市 | 南京政策文件库 |
-
-## 4. 难点类型
-
-1. **可检索 vs 列表并存**：很多城市同时存在"政策文件"（简单列表）和"找政策/政策库"（全文检索）。必须选择可检索者。
-2. **规范性文件 vs 政策文件**：严格意义下规范性文件只是一类，而"政策文件"含义更广。门户命名不统一——有的地方"规范性文件"是最全的政策入口，有的地方则单独一类。需要按实际栏目内容判断。
-3. **JS 单页应用**：北京"找政策"是前端框架；广州"政策文件库"依靠 AJAX 列表。这类入口只能用浏览器访问，fetch 拿到的是壳。
-4. **跳到第三方平台**：部分区县的政策入口跳到省级平台（广东省"粤省事""粤商通"），需判断是否按本区县过滤。
-5. **过期栏目**：不少市级门户改版后旧 URL 仍留，但不再更新。须通过首页链接溯源确认。
-
-## 5. 优先级判定
-
-1. 可检索、可按主题/文号/发文机关筛选的政策平台 >
-2. 政府门户一级导航下的"政策文件 / 规范性文件"列表 >
-3. 法制办 / 司法局 / 办公厅 的规范性文件子栏目 >
-4. （下策）以通知公告或政务公开信息公开目录替代。
-
-## 6. 候选备忘
-
-- 北京市：
-  - `https://www.beijing.gov.cn/zhengce/zhengcefagui/index.html` — 政策文件列表。**未采用原因**：不可检索，按 prompt 优先"找政策"。
-  - `https://www.beijing.gov.cn/zhengce/gfxwj/` — 行政规范性文件库。**未采用原因**：覆盖窄于"找政策"。
-- 广州市：
-  - `https://www.gz.gov.cn/gfxwj` — 规范性文件统一发布。**未采用原因**：与 `gzzcwjk` 相比仅为子集且不支持主题检索。
-  - `https://www.gz.gov.cn/gkmlpt/search?type=policySearch` — 规章库 + 搜索。**未采用原因**：仅规章，范围小于政策文件库。
-- 深圳市：
-  - `https://www.sz.gov.cn/cn/xxgk/zfxxgj/zfwj/index.html` — 政府文件列表。**未采用原因**：按 prompt 优先可检索入口。
-
-## 7. 查找方法
-
-- 静态 fetch 首页，正则匹配 `政策|规范性|法规|文件库|找政策`。
-- 检查站点地图。
-- 通过 `site:{domain} 找政策` Google 搜索兜底（人工验证）。
-- JS 渲染入口：Playwright。
-- 批量仅在同省政策库结构高度一致时使用。
-
-## 8. 验证结果
-
-- Typecheck：`npm run lint` 通过。
-- 构建：Next.js 构建通过。
-- 前端：`/policies` → "地区政策导航" 子菜单正常下钻，已核验地区蓝色可点击，未核验地区灰色虚线。
+# 地区政策公开入口补录日志
 
-## 9. 后续扩展建议
+> 结构化明细（每条 URL、来源、失败原因、候选 URL、分数、`listLooks`）已迁移到 [data/website-policy.xlsx](../data/website-policy.xlsx)。本文件只保留 xlsx 难以表达的判断口径、阶段结论和后续策略。
 
-- 先覆盖 31 省 + 省会 + 副省级市三层，优先使用可检索平台。
-- 建议在 `scripts/website_management/` 下新增 `policy-probe.mjs`，按省批处理。
-- 批量结果必须人工抽样 ≥ 10%。
+## 0. 当前覆盖概览（v9）
 
-## 10. v2 扩充（省级政策入口批量核验）
+截至 v9，`POLICY_URL_MAP` 覆盖 **2128** 条：
 
-本轮尝试通过 `fetch_webpage` 访问 31 个省级门户首页提取政策文件/规范性文件/可检索政策库入口。
+| 维度 | 已覆盖 | 总数 | 说明 |
+| --- | ---: | ---: | --- |
+| 省级 | 30 | 31 | 仅青海省仍未稳定确认 |
+| 省会城市 | 26 | 27 | 仅成都市仍受首页/WAF/动态路由影响 |
+| 地级市 | 321 | 439 | 约 73% |
+| 县区 | 1777 | 2742 | 约 65% |
+| 总计 | 2128 | 3209 | 约 66% |
 
-### 10.1 本次新增 / 确认
+当前仍缺 **1081** 条；这些缺口不是单一问题，而是不同类型政府门户的信息公开组织方式差异造成的。
 
-| 路径 | 入口名 | URL | 源 |
-|---|---|---|---|
-| 重庆市 | 省级政府文件 | `https://www.cq.gov.cn/zwgk/zfxxgkml/szfwj/` | 政府信息公开目录→市政府文件 |
-| 辽宁省 | 省政府政策文件库 | `https://www.ln.gov.cn/web/lnszcwjk/index.shtml` | 首页"政策文件库"一级入口，可检索 |
-| 吉林省 | 政策信息 | `https://www.jl.gov.cn/zcxx/` | 首页"政策信息"一级栏目 |
-| 黑龙江省 | 文件库（可检索） | `https://www.hlj.gov.cn/hlj/c108371/zfxxgk_search.shtml` | 政务公开版块"文件库"检索页 |
-| 江苏省 | 最新文件 | `https://www.jiangsu.gov.cn/col/col84242/index.html` | 首页"最新文件"栏目（省政府/办公厅发文），可按时间倒序 |
+## 1. 政策公开入口的主要类型
 
-> 说明：吉林省同时存在 `http://xxgk.jl.gov.cn/szf/gzk/`（省政府规章库），但规章库范围小于"政策信息"，按本文 §5 优先级判定采用后者。
+### 1.1 A 类：可检索政策库 / 文件库（最优）
 
-### 10.2 本轮无法稳定抓取、需人工复核的省级门户
+典型名称：`政策文件库`、`找政策`、`政策检索`、`规范性文件库`、`政府文件库`。
 
-- 天津市 / 河北省 / 山西省 / 浙江省 / 福建省 / 江西省 / 山东省（JS 渲染）
-- 内蒙古自治区 / 安徽省 / 河南省（Forbidden）
-- 其余 湖北 / 湖南 / 广东 / 广西 / 海南 / 四川 / 贵州 / 云南 / 西藏 / 陕西 / 甘肃 / 青海 / 宁夏 / 新疆 本轮未抓取
+特点：通常有筛选、搜索或统一发布列表，是最稳定、最适合研究使用的入口。优先级最高。
 
-### 10.3 省会城市
+### 1.2 B 类：政策文件 / 政府文件列表
 
-省会城市层（除广州/深圳外 27 个）本轮未批量抓取，延后到下一阶段。前端对应节点显示灰色"待补充"。
+典型名称：`政策文件`、`政府文件`、`省政府文件`、`市政府文件`、`行政规范性文件`、`政策法规`。
 
-### 10.4 覆盖率说明
+特点：不是完整政策库，但能直接列出本级政策文件。若 A 类不存在，采用 B 类。
 
-v1 + v2 共收录 9 条政策入口（北京、上海黄浦、广州、深圳、重庆、辽宁、吉林、黑龙江、江苏）。其余节点均以空字符串保留，前端显示为灰色"待补充"。
-## 11. v3 扩充（subagent 并行核验）
+### 1.3 C 类：政府信息公开目录中的政策栏目
 
-### 11.1 本轮新增确认
+典型路径：`zfxxgk`、`xxgk`、`zwgk`、`openness`、`public/column`。
 
-| 路径 | 入口名 | URL |
-|---|---|---|
-| 广东省 | 省政府文件库 | `http://www.gd.gov.cn/zwgk/wjk/` |
-| 湖南省 | 文件库（省政府文件） | `https://www.hunan.gov.cn/hnszf/xxgk/wjk/szfwj/wjk_glrb.html` |
-| 海南省 | 省政府政策文件 | `https://www.hainan.gov.cn/hainan/zfwj/szfzcwj.shtml` |
-| 云南省 | 政策文件 | `https://www.yn.gov.cn/zwgk/zcwj/` |
-| 宁夏回族自治区 | 区政府文件 | `https://www.nx.gov.cn/zwgk/qzfwj/` |
-| 新疆维吾尔自治区 | 政策 | `https://www.xinjiang.gov.cn/xinjiang/zfl/zfxxgk_zhengce_list.shtml` |
-| 江西省/南昌市 | 政策文件库 | `https://www.nc.gov.cn/ncszf/gfxwjtyfbpt/zcwjk.shtml` |
-| 湖北省/武汉市 | 政策 | `https://www.wuhan.gov.cn/zwgk/?channelid=26315` |
-| 西藏自治区/拉萨市 | 文件资料 | `https://www.lasa.gov.cn/lasa/wjzl/common_list.shtml` |
-| 陕西省/西安市 | 政策法规 | `https://www.xa.gov.cn/gk/zcfg/` |
-| 宁夏回族自治区/银川市 | 规范性文件 | `https://www.yinchuan.gov.cn/xxgk/zcwj/xzgfxwj/` |
-| 新疆维吾尔自治区/乌鲁木齐市 | 政府文件 | `https://www.wlmq.gov.cn/wlmqs/c119064/zfxxgk_list.shtml` |
-| 辽宁省/沈阳市 | 政府文件 | `https://www.shenyang.gov.cn/zwgk/zcwj/zfwj/` |
+特点：政策文件没有单独一级路由，而是挂在“政务公开 / 政府信息公开 / 法定主动公开内容”体系下。若能定位到政策子栏目，则写政策子栏目；若点击后由前端动态加载政策内容、没有稳定子路由，则 v9 允许填写上一级“政务公开 / 政府信息公开”入口。
 
-### 11.2 未采用的 subagent 返回项
+### 1.4 D 类：母级复用 / 共享政策库
 
-- 济南市：`https://www.jinan.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/index` — 形象上是 API 端点而非面向用户的栏目页，暂不采用。
-- 郑州市：`http://public.zhengzhou.gov.cn/` — 政府信息公开平台首页，范围过宽，未采用。
-- 西藏自治区：`https://www.xizang.gov.cn/zwgk/` — 政务公开总页而非政策文件库，未采用。
+一些县区首页明确把“政策文件库”链回市级或省级统一平台。此时本级没有独立库，但用户从县区入口点击到母级政策库是官方路径。v8 起允许写入母级已收录 URL，并在注释中标记 `shared from "母级 key"`。
 
-### 11.3 v3 未能核验的门户
+### 1.5 E 类：手工补录 / WAF 站点
 
-省级：天津、河北、山西、内蒙古、浙江、安徽、福建、江西、山东、河南、湖北、广西、四川、贵州、陕西、甘肃、青海。
-省会：石家庄、太原、呼和浩特、长春、哈尔滨、南京、杭州、合肥、福州、长沙、南宁、海口、成都、贵阳、昭明、兰州、西宁。
-均为 JS 渲染/WAF 拦截，留待后续 Playwright 补充。
+湖北、甘肃等省级入口曾被 HTTP probe/WAF 拒抓，但人工确认存在稳定入口。此类以“手工补录”标记，保留来源说明。
 
-### 11.4 覆盖率变化
+## 2. 找不到的主要原因
 
-| 类别 | v2 合计 | v3 新增 | 当前合计 |
-|---|---|---|---|
-| 地区政策 | 9 | 13 | **22** |
+剩余缺口大致分为以下几类：
 
-## 12. v4 扩充（聚焦"政府信息公开 > 政策 > 行政规范性文件"路径）
+1. **首页不暴露政策或公开入口**：首页 HTML 与 Playwright 渲染后仍没有可识别的 `政策` / `政务公开` 锚点；常见于极简门户或导航完全由异步接口注入的站点。
+2. **WAF / UA 拦截**：省、市、县门户能在浏览器访问，但脚本请求或 headless browser 仍被拦截。此类不能简单判定不存在。
+3. **只有窄页，不是目录页**：候选命中“公开指南”“年度报告”“依申请公开”“财政预决算”“政府采购”“单篇文章”等。v9 之后明确排除这些窄页，避免把非政策公开入口写入地图。
+4. **旧 CMS / 跳首页 / 空壳页面**：候选 URL 看似为 `zwgk` / `xxgk`，但实际跳首页、空页面或 404。
+5. **跨域但不可验证为母级复用**：候选跳到外部平台或中央/省级泛入口，且没有明确对应的已收录母级 URL，因此不自动写入。
 
-本轮按用户明示目标：遵循 `政府信息公开 → 政策 → 行政规范性文件` 官方路径。
-优先采用省/市政府门户下该路径的可访问列表页。方法：先尝试 4 个并行 subagent + fetch_webpage 定向核验已知模式（`/zfxxgk/…/xzgfxwj/`、`/zwgk/zcwj/szfwj/`、`/zwgk/zxwj/szfwj/` 等）；WAF/JS 渲染失败则留空。
+## 3. 方法演进
 
-### 12.1 本轮新增确认
+### v6：静态探测 + listLooks
 
-| 路径 | 入口名 | URL | 来源 |
-|---|---|---|---|
-| 上海市 | 市政府信息公开目录（含市政府规章/文件/规划纲要） | `https://www.shanghai.gov.cn/nw11494/index.html` | 政务公开→政府信息公开目录，fetch_webpage 确认含 `市政府规章`、`市级预算和执行情况` 等二级栏目 |
-| 福建省 | 省政府文件 | `https://www.fujian.gov.cn/zwgk/zxwj/szfwj/` | 政务公开→最新文件→省政府文件，fetch_webpage 正常返回 |
-| 福建省/福州市 | 市政府文件 | `http://www.fuzhou.gov.cn/zwgk/zxwj/szfwj/` | 与省级同构 URL，subagent 核验通过 |
+初始自动探测要求 `score >= 55` 且页面像列表页（日期数量或“共 N 条”）。该策略保守但漏掉大量 JS 渲染列表页。
 
-### 12.2 未采用的候选（SKILL §3 过滤）
+### v7：放宽强关键词候选
 
-- 济南市 `https://www.jinan.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/index`：API 端点，非面向用户的栏目页。
-- 贵阳市 `http://www.gy.gov.cn/zwgk/szfwj/index.html`：页面已被撤稿/删除（404）。
-- 海口市 `http://www.haikou.gov.cn/xxgk/szfwj/`：被"安全狗"防火墙拦截，无法作为稳定入口。
-- 南京市 `http://www.nanjing.gov.cn/zdgk/zcwj/szfwj/`：返回 404。
-- 昆明市 `http://www.km.gov.cn/c/2018-09-26/2639729.shtml`：单篇文章而非列表。
+对 `score >= 80` 或命中典型政策路径（`zcwj`、`gfxwj`、`policycontent` 等）的候选放宽 `listLooks` 要求，覆盖提升到 1283 条。
 
-### 12.3 v4 仍未能稳定核验（留待 Playwright / 第三方镜像）
+### v8：跨域复用 + Playwright
 
-**省级**（15）：天津、河北、山西、内蒙古、浙江、安徽、江西（仅 v3 市级有）、山东、河南、湖北（仅 v3 市级有）、广西、四川、贵州、陕西（仅 v3 市级有）、甘肃、青海、西藏（仅 v3 市级有）。
+加入两类策略：
 
-**省会/副省级市**（17）：石家庄、太原、呼和浩特、长春、哈尔滨、杭州、南京、合肥、济南、郑州、长沙、南宁、海口、成都、贵阳、昆明、兰州、西宁、厦门。
+- 子级明确链回母级政策库时复用母级 URL；
+- 对 SPA/WAF 可疑站点用 Playwright 渲染后再抽取链接。
 
-均确认为 JS 单页应用或 WAF/防火墙拦截（HTTP 403/404 或 `Failed to extract meaningful content`）。
+覆盖提升到 1578 条。Playwright 对纯 SPA 有帮助，但对“首页根本不暴露政策入口”的站点收益有限。
 
-### 12.4 覆盖率变化
+### v9：政务公开兜底
 
-| 类别 | v3 合计 | v4 新增 | 当前合计 |
-|---|---|---|---|
-| 地区政策 | 22 | 3 | **25** |
+根据人工判断口径：若本级没有单独政策公开路由，且政策内容由“政务公开 / 政府信息公开”页面点击后动态加载，可填写该政务公开路由。v9 因此引入 `probe-disclosure-fallback.ts`，接受稳定的 `zwgk` / `zfxxgk` / `xxgk` / `openness` / `public` 路由，同时排除公开指南、年度报告、依申请公开、财政预决算、政府采购和单篇文章等窄页。
 
-### 12.5 下一步
+v9 新增约 550 条，覆盖提升到 2128 条。
 
-- 使用 Playwright（`webapp-testing` 技能）按省批量访问 §12.3 中的门户，等待 JS 渲染后提取 `政策文件/规范性文件/行政规范性文件` 栏目 URL。
-- 优先级：省级 > 省会 > 副省级市 > 其他地级市。
-- 批处理脚本建议位置：`scripts/website_management/policy-probe.mjs`。
-## 13. v5 扩充（基于政府官网下钻 + 5 路并行 subagent）
+## 4. 文件与命令
 
-本轮按新建 skill `policy-site-from-gov-site` 流程：从已核验的政府门户出发，逐站定位政策栏目；将剩余 35 个目标分成 5 组分发并行 subagent，每组 6-8 个区域。
+- 主数据：[data/website-policy.ts](../data/website-policy.ts)
+- 结构化说明：[data/website-policy.xlsx](../data/website-policy.xlsx)
+- 当前缺口：[missing-policy.json](../missing-policy.json)
+- 兜底探测：`npx tsx scripts/website_management/probe-disclosure-fallback.ts`
+- 兜底结果重滤：`npx tsx scripts/website_management/emit-disclosure-fallback.ts`
+- xlsx 重建：`node scripts/website_management/build-policy-xlsx.mjs`
 
-### 13.1 本轮新增确认（26 个）
+## 5. 后续策略
 
-#### 省级（11 个）
-
-| 路径 | Tier | 入口名 | URL |
-|---|---|---|---|
-| 天津市 | A | 政策文件库 | https://www.tj.gov.cn/zwgk/zcwjk/ |
-| 河北省 | B | 政策（政府文件） | https://www.hebei.gov.cn/columns/49f13cc2-db03-4d0c-b4fe-2f3f659d3b6e/index.html |
-| 山西省 | A | 山西省政策文件省级服务平台 | https://www.shanxi.gov.cn/zcwjk/ |
-| 浙江省 | B | 法规文件 | https://www.zj.gov.cn/col/col1544911/index.html |
-| 安徽省 | A | 我要找政策 | https://www.ah.gov.cn/site/tpl/4931?activeId=6784771 |
-| 江西省 | A | 省级规章规范性文件发布平台 | http://xzgfxwjk.jiangxi.gov.cn/ |
-| 河南省 | B | 省政府令 | https://www.henan.gov.cn/zwgk/fgwj/szfl/ |
-| 广西壮族自治区 | B | 政府文件 | http://www.gxzf.gov.cn/zfwj/ |
-| 西藏自治区 | B | 政府文件 | https://www.xizang.gov.cn/zwgk/xxfb/zfwj/ |
-| 贵州省 | A | 政策文件库 | https://www.guizhou.gov.cn/ztzl/zcwjk/ |
-| 陕西省 | A | 省政府政策文件库 | https://www.shaanxi.gov.cn/zfxxgk/zcwjk/ |
-
-#### 省会 / 副省级（15 个）
-
-| 路径 | Tier | 入口名 | URL |
-|---|---|---|---|
-| 河北省/石家庄市 | A | 政策文件库 | https://www.sjz.gov.cn/columns/3ec31d57-6be5-4350-ad03-6e5801a534eb/index.html |
-| 山西省/太原市 | B | 规范性文件 | https://www.taiyuan.gov.cn/gfxwj2.html |
-| 内蒙古自治区/呼和浩特市 | B | 政府文件 | http://www.huhhot.gov.cn/zfxxgknew/fdzdgknr/?gk=3&cid=15493 |
-| 黑龙江省/哈尔滨市 | A | 政策文件库 | https://www.harbin.gov.cn/haerbin/zcwjk/heb_zcwjk.shtml |
-| 江苏省/南京市 | A | 行政规范性文件库 | https://www.nanjing.gov.cn/xxgkn/szgfxwj/index.html |
-| 浙江省/杭州市 | A | 杭州市规范性文件数据库 | http://www.hangzhou.gov.cn/col/col1229417972/index.html |
-| 安徽省/合肥市 | A | 市级政策文件库 | https://www.hefei.gov.cn/zwgk/publicColumn/hfszcwjk/index.html |
-| 山东省/济南市 | B | 政府规章 | https://www.jinan.gov.cn/col/col85285/index.html |
-| 河南省/郑州市 | C | 政府文件（信息公开平台目录） | https://public.zhengzhou.gov.cn/?a=dir&h=1&p=D0104X |
-| 湖南省/长沙市 | A | 行政规范性文件库 | http://www.changsha.gov.cn/zfxxgk/zfwjk/srmzf/ |
-| 广西壮族自治区/南宁市 | B | 政府文件 | https://www.nanning.gov.cn/zwgk/fdzdgknr/zcwj/zfwj/ |
-| 海南省/海口市 | B | 政策文件 | http://www.haikou.gov.cn/xxgk/szfbjxxgk/zcfg/ |
-| 云南省/昆明市 | B | 政策文件 | https://www.km.gov.cn/zfxxgk/zcwj/ |
-| 甘肃省/兰州市 | B | 政策文件 | https://www.lanzhou.gov.cn/col/col15333/index.html |
-| 青海省/西宁市 | B | 市政府文件 | https://www.xining.gov.cn/zwgk/fdzdgknr/zcwj/szfwj_35/ |
-
-### 13.2 未采用候选
-
-| 区域 | 候选 URL | 排除原因 |
-|---|---|---|
-| 山东省/济南市 | https://www.jinan.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/index | API 端点（沿用 v4 排除原则） |
-| 内蒙古自治区 | https://www.nmg.gov.cn/nmg_zcwjk/ | JS 渲染 fetch_webpage 无法验证内容 |
-| 四川省 | https://www.sc.gov.cn/10462/scszcwjkss/scszcwjkss.shtml | 主页有该入口，但点开返回 403 (WAF) |
-
-### 13.3 仍未能稳定核验
-
-**省级（5）**：山东、湖北、四川、甘肃、青海、内蒙古 —— 均为 WAF / JS 渲染，`fetch_webpage` 仅返回壳。
-
-**省会（3）**：吉林省/长春市、四川省/成都市、贵州省/贵阳市 —— `fetch_webpage` 返回壳或 WAF 拦截。贵阳的候选 `/zwgk/zfxxgks/.../szfgfxwj/` 找到但内容未能确认。
-
-这些地区已在新 skill 的 §经验法则 中累计为 "WAF / JS 渲染高发地区"，下一阶段建议改用 Playwright 实际加载。
-
-### 13.4 覆盖率变化
-
-| 类别 | v4 | v5 新增 | 当前合计 |
-|---|---|---|---|
-| 地区政策 | 25 | 26 | **51** |
-
-### 13.5 经验沉淀（已写入 `policy-site-from-gov-site/SKILL.md`）
-
-- **CMS 模式按省镜像**：浙江系一律 `col/col<id>/index.html`；安徽系 `/site/tpl/...?activeId=...`、合肥同源 `publicColumn`。
-- **省名常带子域名**：江西省级规范性文件库实际位于子域 `xzgfxwjk.jiangxi.gov.cn`。一级首页找不到时应在 HTML 里搜 `*.gov.cn` 子域。
-- **"政策" vs "政府令"**：河南省门户唯一稳定的政策入口是 `省政府令`（`/zwgk/fgwj/szfl/`），范围窄于 "政策文件"，仍属 Tier B 可接受。
-- **Tier A 不必都是 "找政策"**：哈尔滨/南京/杭州/合肥/石家庄/陕西的政策入口名各不同（"政策文件库""规范性文件库""规范性文件数据库"），只要有检索框 + 列表 + 标题命中同义集合即算 Tier A。
-- **郑州的 `public.zhengzhou.gov.cn` 例外**：政府信息公开平台一般过宽，但郑州主门户已将政策入口直接挂在该子站，且子站 URL 可带参数 `?a=dir&p=D0104X` 直接跳到"政府文件"目录，因此可作为 Tier C 接受。
-
-## 14. v6 扩充（probe-policy.ts 自动探测全量三级地区）
-
-为完成"省/市/县"三级覆盖，本轮放弃 subagent + fetch_webpage 的人工逐站方案，
-改写 `scripts/website_management/probe-policy.ts` 自动批量探测：
-
-```
-website-gov.ts → 抽取所有未覆盖区域（3158 个） →
-  fetch 政府门户首页 → 解析所有 <a href> + 文本 →
-  关键词打分（政策文件库 100 / 规范性文件 80 / 政府文件 60 / ...）→
-  对得分最高的候选再 fetch → 列表页特征校验（≥5 个日期 / "共 N 条"）→
-  同源 host 过滤（候选 host 必须等于或为门户 host 的 *.gov.cn 子域）→
-  写入 policy-probe-results.json
-```
-
-二阶段过滤脚本 `emit-policy-entries.ts`：
-
-- 必要条件：score ≥ 55、listLooks=true、同源 host、不属 /detail/ 单文页、
-  锚文本无 《》/通知/批复/解读 等单篇标题特征、长度 ≤12。
-- 满足上述条件的写入 `accepted.ts.txt`，其余写入 `rejected.md` 备查。
-
-### 14.1 探测规模
-
-| 指标 | 值 |
-|---|---|
-| 待覆盖（输入）| 3158（省 6 + 市 413 + 县 2739）|
-| 主页可达 | 2166 |
-| 主页不可达 / 抓取失败 | 992 |
-| 至少抓到候选 | 2166 |
-| 命中关键词且为列表页 | 2244 |
-| 通过 host / 单文 / 锚文本过滤 | **631** |
-| 低置信（lowConf）| 1486 |
-| 拒绝（无候选 / 不可达）| 1041 |
-
-### 14.2 覆盖率变化
-
-| 类别 | v5 | v6 新增 | 当前 / 合计（GOV_WEBSITES 中有 URL 的项）|
-|---|---|---|---|
-| 省 / 直辖市 / 自治区 | 25 | 0 | **25 / 31** |
-| 地级市 / 直辖市辖区 | 27 | 77 | **104 / 439** |
-| 县 / 区 / 县级市 / 旗 | 0 | 553 | **553 / 2742** |
-| 总计 | 51 | 631 | **682 / 3212** |
-
-省级仍为 6 个 WAF / JS-渲染省份未通过自动探测：山东、湖北、四川、甘肃、青海、内蒙古。
-
-### 14.3 v6 入口清单
-
-省略详细表（共 631 条），见 `data/website-policy.ts` 末段 `// —— v6 扩充 ——` 区块；
-脚本中间产物保留在 `scripts/website_management/accepted.ts.txt` 与 `rejected.md`。
-按入口类型粗分：
-
-| 类型（按打分关键词）| 数量 |
-|---|---|
-| 政策文件库（score=100）| 约 80 |
-| 规范性文件 / 行政规范性文件（score=80）| 约 240 |
-| 政府文件 / 县政府文件 / 市政府文件（score=60）| 约 120 |
-| 政策文件（score=55）| 约 190 |
-
-### 14.4 已知局限
-
-- **置信度区间宽**：score=55 的"政策文件"链接命中率合格但不一定是最权威主入口。
-  例如有些区/县 落在二级"信息公开 / 政策文件"中转列表，而该区另有更深的"政策
-  文件库"主入口未被启发式选中。后续如做精化，应优先从 `rejected.md` 与
-  `policy-probe-results.json` 中得分 80~100 但因 listLooks=false 被剔除的候选里
-  人工挑回。
-- **JS 渲染 / WAF 站点**：列表页内容由 JS 异步注入的政府门户（典型如 nmg.gov.cn、
-  hubei.gov.cn、sc.gov.cn）`fetch` 返回壳页，无法被启发式识别。这类目标占
-  失败的 992 条主页中相当大一部分。
-- **同源过滤的边界情况**：若县级网站完全托管在地级市域名下（如 ningbo.gov.cn 下
-  的子目录代表区/县），会被同源过滤接受；反之若县独立子域不在地级市同 base.gov.cn
-  下，则会被排除。本轮整体偏保守。
-- **未做去重对中央 fallback URL 的清理**：早期检查发现少量中央 / 省级 fallback
-  URL（如 sanya.gov.cn 下区级目录共享同一份 `zcwjxx/zcwj.shtml`）。这些链接
-  对县级访问仍有效，但学术研究若需精确"区级唯一入口"应在后续手工核验剔除。
-
-### 14.5 经验沉淀（追加到 SKILL.md）
-
-- **批量阶段的合理过滤组合**：score ≥ 55 + listLooks(≥5 日期 OR "共 N 条")
-  + 同源 host + 单文 URL 排除 + 锚文本长度 ≤12，能在不丢真阳性的前提下把
-  中央门户回链 / 解读详情 / 异站广告等常见错误候选过滤掉 ~30%。
-- **"政策文件"作为兜底关键词**：在县/区级，正式的"政策文件库"未必存在，
-  最实用的兜底入口是普通"政策文件"或"规范性文件"列表，对学术研究亦足够。
-- **海南体例**：海南省所有市县共用 `*.hainan.gov.cn` 子域，绝大多数县级在
-  `xxgk/0500/`、`xxgk/zcwj/`、`xxgk_xxxxx/zfwj/` 三种路径之一；类似
-  广东 `*.gd.gov.cn`、新疆 `*.xinjiang.gov.cn`、上海 `*.shanghai.gov.cn`
-  也存在镜像 CMS 现象，可由首条手动核验向兄弟县扩散。
-- **WAF / JS 渲染高发省**：内蒙古、湖北、山东、四川、甘肃、青海六省省级及
-  其辖下相当数量市/县门户（特别是 .net 子站或 Vue 单页应用）均会让首页抓取
-  返回壳页；此类后续应改用 Playwright + 真实浏览器加载。
-
-### 14.6 后续工作建议
-
-1. 针对 6 个 WAF 省级 + 3 个省会，下一轮使用真实浏览器（Playwright）抓取
-   后再跑同一套打分流程。
-2. 对 v6 中所有 score=55 的"政策文件"入口在前端呈现处保留 fallback 标识，
-   提示用户可点击回到 `rejected.md` 中的候选进行核验。
-3. lowConf（1486 条）中含大量评分 40~54 的候选，下一轮可降低同源限制配合
-   人工抽样补齐县级覆盖。
-
-
-## §15 v7 扩充：放宽 listLooks + 浏览器请求头复探（2024-Q3）
-
-### 15.1 背景与问题诊断
-
-v6 完成后覆盖率 25/31（省）+ 104/439（市）+ 553/2742（县），共 682 条。
-用户提出"覆盖率太低，省级与省会城市是否还有进一步挖掘的可能"。
-跑 `diagnose-missing.ts` 按失败原因分桶，发现：
-
-- **score=100 + listLooks=false**：50 个市级（"政策文件库" 入口被识别但
-  Vue/Ajax 渲染列表，日期未在 SSR 出现）
-- **score=80 + listLooks=false**：52 个市级（"规范性文件" 同上）
-- **score=55 + listLooks=false**：27 个市级
-- **homepage-unreachable**：44 个市级、4 个省级，均因默认 UA 被 WAF 拒绝
-- **no-candidate**：65 个市级（首页能拉，但没匹配关键词，多为 SPA 首页）
-
-结论：v6 的过滤组合（score ≥ 55 AND listLooks）对静态渲染有效，但漏掉了
-~140 个候选，且 ~50 个 WAF 站根本没进探测。
-
-### 15.2 v7 改动
-
-1. **放宽分类阶梯**（`emit-policy-entries.ts` `classify()`）
-
-   | 第 N 阶梯 | 条件 | 解释 |
-   | --- | --- | --- |
-   | 1 | score ≥ 80 | 关键词本身已是强信号，listLooks 是否触发不再硬性要求 |
-   | 2 | score ≥ 55 + listLooks=true | 与 v6 一致 |
-   | 3 | score ≥ 55 + URL 命中 `CANONICAL_PATH` | 兜底 JS 渲染列表 |
-   | 4 | score ≥ 40 + listLooks=true + URL 命中 `CANONICAL_PATH` | "政府文件" 兜底 |
-
-   `CANONICAL_PATH` 覆盖 zcwjk / zcwj / gfxwj / xzgfxwj / szfwj / qzfwj /
-   xzfwj / zfwj / fgwj / zcfg / zcfgk / zhengce / fzfgk / wjk / zcwjs /
-   policydoc / policycontent。
-
-2. **增量发出**：`emit-policy-entries.ts` 读取 `missing-policy.json`，
-   只发出当前仍缺失的 key，避免与 v5/v6 已落地条目重复。
-
-3. **强化请求头**（`probe-policy.ts` `fetchHtml()`）
-
-   - 全套 Sec-Fetch-* / Cache-Control / Upgrade-Insecure-Requests / 完整 UA
-   - HTTPS 失败时回退到 HTTP（部分 WAF 仅拦 HTTPS 路径）
-   - 超时 12s → 15s
-
-4. **复探脚本** (`reprobe-failed.ts`)：仅对 v6 中 homepage-unreachable /
-   no-candidate / target-unreachable 的 992 条用强化请求头重跑，回写
-   `policy-probe-results.json`。
-
-### 15.3 增益
-
-| 维度 | v6 | v7 | 增量 |
-| --- | --- | --- | --- |
-| 省级 | 25/31 | **28/31** | +3（仅剩湖北/甘肃/青海，全为 WAF 拒抓） |
-| 省会城市（27 个） | 24/27 | **26/27** | +2（剩成都，homepage-unreachable） |
-| 地级市 | 104/439 | **225/439** | +121 |
-| 县区 | 553/2742 | **1030/2742** | +477 |
-| **总条目** | 682 | **1283** | **+601** |
-
-reprobe-failed 992 条中恢复 164 条候选；放宽阶梯+复探合计带来 599 条
-auto-accept，加上 2 条手工补录（山东省、长春市）共 +601。
-
-### 15.4 仍未覆盖的省/省会（共 4 处）
-
-- **湖北省 / 甘肃省 / 青海省**：默认 UA 与浏览器 UA 均被 WAF 拒；HTTP 回退
-  也无效。
-- **四川省/成都市**：homepage-unreachable，机制同上。
-
-下一轮拟改用 Playwright 真实浏览器加载（含 cookie/JS）后再跑同一套打分。
-
-### 15.5 经验沉淀
-
-- **listLooks 不是充要条件**：score=80~100 的关键词锚点 + 命中 CANONICAL_PATH
-  的 URL 已是强信号，不必硬卡 ≥5 日期，否则会大量漏 SPA 列表页。
-- **WAF 集中于省级门户**：省门户更可能上 WAF，市/县反而开放；应区分对待。
-- **HTTP 回退收益有限**：现代政府门户基本全 HTTPS，WAF 也跟着上 HTTPS，
-  HTTP 回退本轮恢复率不到 5%。继续提升必须上浏览器。
-
-
-## §16 v8 扩充：跨域复用 + Playwright SPA 探测
-
-### 16.1 改动
-
-1. **跨域复用规则**（v8.a，已合并 1502 条前）：子级（县/区）首页若把"政策文件库"链回母级（市/省）门户，且母级 host 已有 POLICY_URL_MAP 入口，则子级直接复用母级 URL（备注 `// shared from "母级 key"`），把 +217 条县区一次性挂上。
-2. **Playwright 渲染探测**（v8.b，`probe-policy-pw.ts`）：对剩余 1292 条仍缺失项用 chromium headless 重新加载首页（含 SPA hydration、networkidle 等待），重新抽 `<a>` 链接打分。增量保存 + 中断可续。
-3. **PW 接受**：73 条（v8 块）+ 3 条 PW 跨域复用（v8.b 块）= +76 条。
-4. **结构化备注迁移**：从 `docs/website-policy-log.md` 的散文式记录改为 `data/website-policy.xlsx`，工作表 `summary` / `entries` / `missing` 三页，前者展示覆盖率，后两者带 `来源（auto / auto-pw / shared / shared-pw / manual）`、`失败原因`、`候选 URL / 分数 / listLooks` 等列，自动从 `data/website-policy.ts` 与 probe 缓存生成（`scripts/website_management/build-policy-xlsx.mjs`）。
-
-### 16.2 增量结果
-
-| 维度 | v7 | v8 | Δ |
-| --- | --- | --- | --- |
-| 省级 | 28/31 | **30/31** | +2 |
-| 省会城市 | 25/27 | **26/27** | +1 |
-| 地级市 | 225/439 | **259/439** | +34 |
-| 县区 | 1030/2742 | **1289/2742** | +259 |
-| 总条目 | 1283 | **1578** | **+295** |
-
-省级仅余青海省（chromium 仍 no-candidate；门户 SPA 路由可能含 token 校验）。
-
-### 16.3 PW 投入产出
-
-| 指标 | 数字 |
-| --- | --- |
-| 探测 targets | 1292 |
-| picked any | 298 (23%) |
-| listLooks=true | 151 (12%) |
-| 通过 classify 接受 | 73 |
-| 跨域复用 | 3 |
-
-低于预期的原因：剩余地区主因不是 SPA 渲染，而是**首页根本没有政策入口**（一些县级 gov 直接把所有公开类目放在 `zwgk/` 大目录里，未单列）。后续应改为针对 `zwgk/` 二级目录硬性枚举常见 path，而非依赖锚文本扫描。
+1. 对剩余 WAF 站点，不再用普通 fetch 重试；优先人工确认或浏览器导出 DOM。
+2. 对“首页无候选”的县区，可按同市 CMS 模板批量构造 `zwgk` / `xxgk` / `zfxxgk` 路径，但必须验证非跳首页、非指南、非财政采购窄页。
+3. 对 `data/website-policy.xlsx` 的 `missing` 工作表按省筛选，优先处理省会、地级市，再处理县区。
