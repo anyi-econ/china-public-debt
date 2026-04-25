@@ -298,6 +298,98 @@ export const POLICY_URL_MAP: RegionUrlMap = {
 - **长期 WAF / JS 渲染省级**：内蒙古、湖北、四川、甘肃、青海、山东（v5 新增确认）；浙江、河南、广西、贵州（v3-v4 困难，v5 已部分突破）
 - **长期 WAF / JS 渲染省会**：长春、成都、贵阳（v5 仍未突破）；杭州、济南、海口、昆明、兰州、西宁（v5 已突破）
 - **WAF 的典型表现**：fetch_webpage 返回壳页 / 403 / 521 / `Failed to extract meaningful content`
+
+---
+
+## 自动化批处理流水线（v6-v10 沉淀）
+
+人工逐区研究覆盖到 ~1300 条后边际成本急速上升。v6 起改为"自动化探针 + 后置过滤 + 人工兜底"流水线，现已稳定贡献 1500+ 增量。下面把流水线与对应脚本沉淀下来，新建类似 skill（如 news / industrial）应直接复用同一套模式。
+
+### 流水线整体形状
+
+```
+gov portal → fetch HTML → 抽 anchor / 拼路径 → 评分过滤 → 二次抓取验证
+       ↓                                                ↓
+   缓存(JSON)  ←───── 失败重试逻辑 ─────         接受候选
+       ↓                                                ↓
+   re-emit (.txt)  ←────── 后置窄页过滤 ─────────── merge 入主数据
+       ↓
+   xlsx + log + lint + build + commit
+```
+
+关键观察：
+
+1. **三层探针递进**：HTTP 静态 → Playwright SPA → 政务公开兜底（接受 `zwgk/zfxxgk/xxgk` 等更宽的目录入口）。每层都基于上层 `missing-policy.json` 才跑，不重复抓已收录站点。
+2. **缓存必须可作废**：`shouldRetry` 逻辑判定 `homepage-unreachable` / `error:*` 是临时失败，下次默认重试；切换协议后还要按 host 主动作废旧记录（`invalidate-protocol-switch-cache.mjs`）。否则一次并发抖动会永久锁死可达站点。
+3. **emit 与 probe 解耦**：probe 只产出原始候选 JSON；过滤规则（窄页、单篇文章、非政务公开路由）放在 `emit-*.mjs/ts`，秒级可重跑。
+4. **结构化备注 ≫ 长篇日志**：每条候选的 source/score/path 写入 xlsx；`docs/website-*.md` 只留方法演进、失败聚类、下一步动作。
+
+### 探针打分核心模板
+
+适用于"找一类栏目"的所有探针。源文件：[scripts/website_management/probe-disclosure-fallback.ts](../../../scripts/website_management/probe-disclosure-fallback.ts)。
+
+```ts
+function scoreCategory(text: string, url: string): number {
+  if (NEGATIVE_TEXT.test(text)) return -50;          // 公开指南/年报/单篇文章/财政采购
+  if (NEGATIVE_PATH.test(url))  return -50;
+  if (ARTICLE_PATH.test(url))   return -50;          // /\d{6,}/.html
+  let s = 0;
+  if (TIER_A.test(text+url)) s = Math.max(s, 90);    // 严格命中目标栏目名
+  if (TIER_B.test(text+url)) s = Math.max(s, 80);
+  if (TIER_C.test(text+url)) s = Math.max(s, 65);
+  if (CANONICAL_PATH.test(url)) s += 12;             // /zwgk/.. 之类常用根
+  if (DISTRACTION.test(text))   s -= 30;             // 财政/采购/统计
+  if (ROOT_OR_HOMEPAGE(url))    s -= 10;
+  return s;
+}
+
+// 接受门槛：score≥80 直接收，score≥55 必须二次 fetch 验证非跳首页/非窄页
+```
+
+### 模板路径枚举（v10 经验）
+
+当 anchor 抽取覆盖不足时，对仍缺失的 host 按 **同省 / 同市已收录条目** 抽 Top 25 高频 path 拼接试探。源文件：[scripts/website_management/probe-template-enum.ts](../../../scripts/website_management/probe-template-enum.ts)。**ROI 已递减**：14 个高密度省的 336 个目标只回收 29 条，但仍是当前最可靠的省级 CMS 复用做法。
+
+### 协议修正与缓存作废（v9.5 经验）
+
+`data/website-gov.xlsx` 的"判断依据"列若含 `协议切换→http(s)`，必须：
+
+1. `apply-protocol-switch.mjs` 同步 `data/website-gov.ts`
+2. `apply-protocol-switch-policy.mjs` 同步 `data/website-policy.ts` 同 host 内页 URL
+3. `invalidate-protocol-switch-cache.mjs` 清除该 host 在探针缓存中的旧记录
+4. 重跑探针
+
+否则旧协议下的失败会永久压住可达站点。
+
+### 标准命令套路
+
+```powershell
+# 1. 刷新缺口
+npx tsx scripts/website_management/dump-missing-policy.ts
+
+# 2. 探针（progress bar + resume + retry）
+$env:DISCLOSURE_CONC="8"
+npx tsx scripts/website_management/probe-disclosure-fallback.ts
+
+# 3. emit 过滤
+npx tsx scripts/website_management/emit-disclosure-fallback.ts
+
+# 4. merge 入主数据
+node scripts/website_management/merge-disclosure-fallback.mjs
+
+# 5. xlsx + 健康检查
+node scripts/website_management/build-policy-xlsx.mjs
+npx tsx scripts/website_management/coverage-stats.ts
+npm run lint && npm run build
+```
+
+### 当复用此流水线建立新类目（news / industrial / 其他）
+
+1. 复用 `probe-disclosure-fallback.ts` 结构：替换关键词集合 + 拒绝集合 + canonical path 列表
+2. 复用 `emit-*.ts` 后置过滤架构：把"应剔除的窄页"写成正则集合
+3. 复用 `merge-*.mjs` 增量插入逻辑（按 key 去重、追加 vN 区块）
+4. 复用 `build-*-xlsx.mjs`：每类一份 xlsx，字段固定（区域 / 层级 / gov 入口 / 目标栏目 / source / score / 验证状态 / 备注）
+5. 日志只留方法演进与失败聚类；逐条结果一律入 xlsx
 - 对剩余 WAF 地区，第一轮 fetch_webpage 失败 → 直接标记 unconfirmed → 放入 Playwright 待办，**不要反复 probe**
 
 ### Subagent 并行教训（v5）
