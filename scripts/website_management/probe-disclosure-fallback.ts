@@ -102,13 +102,25 @@ function scoreDisclosure(text: string, url: string): number {
 }
 function constructedCandidates(base: string): Array<{ url: string; text: string; score: number; source: string }> {
   const paths = [
+    // 政务公开根入口
     '/zwgk/', '/zwgk/index.html', '/zfxxgk/', '/zfxxgk/index.html', '/xxgk/', '/xxgk/index.html',
     '/gkml/', '/gkml/index.html', '/openness/', '/openness/index.html', '/public/', '/public/index.html',
+    // 高频政策子路径（来自已收录条目挖掘）
+    '/zwgk/zcwj/', '/zwgk/zcwjk/', '/zwgk/zfwj/', '/zwgk/zfwj/index.html',
+    '/zfxxgk/zcwj/', '/zfxxgk/zcwjk/', '/zfxxgk/zfwj/', '/zfxxgk/fdzdgknr/zfwj/',
+    '/xxgk/zcwj/', '/xxgk/zcwjk/', '/xxgk/zfwj/', '/ztzl/zcwjk/', '/zfwj/list1.shtml',
+    '/policy-find/', '/govxxgk/xxgk.html',
   ];
   const out = [];
   for (const p of paths) {
     const u = normalizeUrl(base, p);
-    if (u) out.push({ url: u, text: p.includes('zfxxgk') ? '政府信息公开' : p.includes('xxgk') ? '信息公开' : '政务公开', score: 58, source: 'constructed' });
+    if (!u) continue;
+    let text = '政务公开';
+    if (/zfxxgk/i.test(p)) text = '政府信息公开';
+    else if (/xxgk/i.test(p)) text = '信息公开';
+    if (/zcwj|zcwjk|policy-find/i.test(p)) text = '政策文件';
+    else if (/zfwj/i.test(p)) text = '政府文件';
+    out.push({ url: u, text, score: 58, source: 'constructed' });
   }
   return out;
 }

@@ -1,49 +1,5 @@
 [
   {
-    "key": "安徽省/安庆市",
-    "govUrl": "https://www.anqing.gov.cn/",
-    "picked": {
-      "url": "https://www.anqing.gov.cn/public/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "安徽省/安庆市/大观区",
-    "govUrl": "https://www.aqdgq.gov.cn/",
-    "picked": {
-      "url": "https://www.aqdgq.gov.cn/content/article/2023158031?type=0",
-      "text": "关于大观区政务公开工作满意度情况调查问卷",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "安徽省/安庆市/潜山市",
-    "govUrl": "https://www.qss.gov.cn/",
-    "picked": {
-      "url": "https://www.qss.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "安徽省/安庆市/宿松县",
-    "govUrl": "http://www.susong.gov.cn/",
-    "picked": {
-      "url": "http://www.susong.gov.cn/public/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "安徽省/安庆市/太湖县",
     "govUrl": "http://www.thx.gov.cn/",
     "reason": "no-disclosure-route"
@@ -52,28 +8,6 @@
     "key": "安徽省/安庆市/宜秀区",
     "govUrl": "https://www.yixiu.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "安徽省/安庆市/迎江区",
-    "govUrl": "https://www.ahyingjiang.gov.cn/",
-    "picked": {
-      "url": "https://www.ahyingjiang.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "安徽省/安庆市/岳西县",
-    "govUrl": "http://www.yuexi.gov.cn/",
-    "picked": {
-      "url": "http://www.yuexi.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
   },
   {
     "key": "安徽省/蚌埠市/怀远县",
@@ -123,69 +57,14 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "安徽省/滁州市/凤阳县",
-    "govUrl": "http://www.fengyang.gov.cn/",
-    "picked": {
-      "url": "http://www.fengyang.gov.cn/public/column/161055613?type=4&action=rel&excludeOrganIds=1&includeParentOrganIds=3194306,161055467,161055468,161055469&includeIds=170001860,170002626,170002356,170001810&nav=3",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "安徽省/滁州市/南谯区",
-    "govUrl": "https://www.cznq.gov.cn/",
-    "picked": {
-      "url": "https://www.cznq.gov.cn/public/column/161054625?type=4&action=rel&excludeOrganIds=1&includeParentOrganIds=3194299,161054532,161054533,161054534&includeIds=170001860,170002626,170002356,170001810&nav=3",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "安徽省/滁州市/全椒县",
-    "govUrl": "http://www.quanjiao.gov.cn/",
-    "picked": {
-      "url": "http://www.quanjiao.gov.cn/public/column/161054992?type=4&action=rel&includeIds=170001860,170002626,170002356,170001810&excludeOrganIds=1&includeParentOrganIds=3194308,161055463,161055464,161055465&nav=3",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "安徽省/滁州市/天长市",
     "govUrl": "http://www.tianchang.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "安徽省/阜阳市",
-    "govUrl": "https://www.fy.gov.cn/",
-    "picked": {
-      "url": "https://www.fy.gov.cn/OpennessBranch/",
-      "text": "政府信息公开专栏",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "安徽省/阜阳市/阜南县",
     "govUrl": "https://www.funan.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "安徽省/阜阳市/临泉县",
-    "govUrl": "https://www.linquan.gov.cn/",
-    "picked": {
-      "url": "https://www.linquan.gov.cn/OpennessGuide/show/10.html",
-      "text": "&#xe002; 政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "安徽省/合肥市/包河区",
@@ -273,39 +152,6 @@
     "reason": "homepage-unreachable"
   },
   {
-    "key": "安徽省/马鞍山市",
-    "govUrl": "https://www.mas.gov.cn/",
-    "picked": {
-      "url": "https://www.mas.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "安徽省/马鞍山市/和县",
-    "govUrl": "http://www.hx.gov.cn/",
-    "picked": {
-      "url": "https://www.hx.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "安徽省/马鞍山市/雨山区",
-    "govUrl": "http://www.masys.gov.cn/",
-    "picked": {
-      "url": "http://www.masys.gov.cn/zfxxgkai/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "安徽省/宣城市/广德市",
     "govUrl": "https://www.guangde.gov.cn/",
     "picked": {
@@ -323,30 +169,8 @@
   },
   {
     "key": "北京市/朝阳区",
-    "govUrl": "https://www.bjchy.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "福建省/漳州市/漳浦县",
-    "govUrl": "http://www.zhangpu.gov.cn/",
-    "picked": {
-      "url": "http://www.zhangpu.gov.cn/cms/html/zpxrmzf/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/白银市",
-    "govUrl": "http://www.baiyin.gov.cn/",
-    "picked": {
-      "url": "http://www.baiyin.gov.cn/zwgk/zfxxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
+    "govUrl": "http://www.bjchy.gov.cn/",
+    "reason": "no-disclosure-route"
   },
   {
     "key": "甘肃省/白银市/景泰县",
@@ -369,39 +193,6 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "甘肃省/金昌市",
-    "govUrl": "https://www.jcs.gov.cn/",
-    "picked": {
-      "url": "https://www.jcs.gov.cn/zfxxgk/fdzdgknr/zdgkml/index.html",
-      "text": "主动公开目录",
-      "score": 77,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/金昌市/永昌县",
-    "govUrl": "https://www.yongchang.gov.cn/",
-    "picked": {
-      "url": "https://www.yongchang.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/酒泉市",
-    "govUrl": "https://www.jiuquan.gov.cn/",
-    "picked": {
-      "url": "https://www.jiuquan.gov.cn/jiuquan/c100037/zfxxgk_zn.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "甘肃省/酒泉市/阿克塞哈萨克族自治县",
     "govUrl": "http://www.akesai.gov.cn/",
     "reason": "no-disclosure-route"
@@ -410,72 +201,6 @@
     "key": "甘肃省/酒泉市/敦煌市",
     "govUrl": "http://www.dunhuang.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "甘肃省/酒泉市/瓜州县",
-    "govUrl": "http://www.guazhou.gov.cn/",
-    "picked": {
-      "url": "http://www.guazhou.gov.cn/guazhou/c109739/xxgj_list.shtml",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/酒泉市/金塔县",
-    "govUrl": "http://www.jtxzf.gov.cn/",
-    "picked": {
-      "url": "http://www.jtxzf.gov.cn/jintaxian/c102154/zfxxgk_zn.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/酒泉市/肃北蒙古族自治县",
-    "govUrl": "https://www.subei.gov.cn/",
-    "picked": {
-      "url": "https://www.subei.gov.cn/suBei/c101189/zfxxgk_zn.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/酒泉市/肃州区",
-    "govUrl": "http://www.jqsz.gov.cn/",
-    "picked": {
-      "url": "http://www.jqsz.gov.cn/jqsz/c108169/zfxxgk_zn.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/酒泉市/玉门市",
-    "govUrl": "http://www.yumen.gov.cn/",
-    "picked": {
-      "url": "http://www.yumen.gov.cn/yuMen/c103400/jgjj_xxgk.shtml",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/兰州市/安宁区",
-    "govUrl": "https://www.lzanning.gov.cn/",
-    "picked": {
-      "url": "https://www.lzanning.gov.cn/col/col11998/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "甘肃省/兰州市/城关区",
@@ -498,17 +223,6 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "甘肃省/兰州市/西固区",
-    "govUrl": "https://www.xigu.gov.cn/",
-    "picked": {
-      "url": "https://www.xigu.gov.cn/col/col13055/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "甘肃省/兰州市/永登县",
     "govUrl": "http://www.yongdeng.gov.cn/",
     "reason": "no-disclosure-route"
@@ -524,229 +238,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "甘肃省/陇南市",
-    "govUrl": "https://www.longnan.gov.cn/",
-    "picked": {
-      "url": "https://www.longnan.gov.cn/zfxxgk/public/column/4455693?type=2",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/陇南市/成县",
-    "govUrl": "http://www.gscx.gov.cn/",
-    "picked": {
-      "url": "http://www.gscx.gov.cn/zfxxgk/public/column/32127978?type=2",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/陇南市/宕昌县",
-    "govUrl": "https://www.tanchang.gov.cn/",
-    "picked": {
-      "url": "https://www.tanchang.gov.cn/zfxxgk/public/column/32128948?type=2",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/陇南市/康县",
-    "govUrl": "http://www.gskx.gov.cn/",
-    "picked": {
-      "url": "http://www.gskx.gov.cn/zfxxgk/public/column/32127990?type=2",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/陇南市/礼县",
-    "govUrl": "https://www.gslx.gov.cn/",
-    "picked": {
-      "url": "https://www.gslx.gov.cn/zfxxgk/public/column/32129604?type=2",
-      "text": "&#xe611; 政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/陇南市/文县",
-    "govUrl": "https://www.lnwx.gov.cn/",
-    "picked": {
-      "url": "https://www.lnwx.gov.cn/zfxxgk/public/column/32130683?type=2",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/陇南市/武都区",
-    "govUrl": "http://www.gslnwd.gov.cn/",
-    "picked": {
-      "url": "http://www.gslnwd.gov.cn/zfxxgk/public/column/32128522?type=2",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/陇南市/西和县",
-    "govUrl": "https://www.xihe.gov.cn/",
-    "picked": {
-      "url": "https://www.xihe.gov.cn/zfxxgk/public/column/5664062?type=2",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/武威市",
-    "govUrl": "https://www.gswuwei.gov.cn/",
-    "picked": {
-      "url": "https://www.gswuwei.gov.cn/col/col3/index.html",
-      "text": "信息公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/武威市/古浪县",
-    "govUrl": "https://www.gulang.gov.cn/",
-    "picked": {
-      "url": "https://www.gulang.gov.cn/col/col9896/index.html",
-      "text": "信息公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/武威市/凉州区",
-    "govUrl": "http://www.gsliangzhou.gov.cn/",
-    "picked": {
-      "url": "http://www.gsliangzhou.gov.cn/col/col2888/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "甘肃省/武威市/天祝藏族自治县",
-    "govUrl": "http://www.gstianzhu.gov.cn/",
-    "picked": {
-      "url": "http://www.gstianzhu.gov.cn/col/col4001/index.html",
-      "text": "乡镇部门信息公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广东省/潮州市",
-    "govUrl": "http://www.chaozhou.gov.cn/",
-    "picked": {
-      "url": "https://www.chaozhou.gov.cn/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广东省/佛山市/禅城区",
-    "govUrl": "https://www.chancheng.gov.cn/",
-    "picked": {
-      "url": "https://www.chancheng.gov.cn/zwgk",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广东省/惠州市/惠阳区",
-    "govUrl": "http://www.huiyang.gov.cn/",
-    "picked": {
-      "url": "http://www.huiyang.gov.cn/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "广东省/揭阳市/揭东区",
     "govUrl": "http://www.jiedong.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "广东省/茂名市/电白区",
-    "govUrl": "http://www.dianbai.gov.cn/",
-    "picked": {
-      "url": "http://www.dianbai.gov.cn/gkmlpt/index",
-      "text": "政府信息公开专栏",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广东省/茂名市/化州市",
-    "govUrl": "http://www.huazhou.gov.cn/",
-    "picked": {
-      "url": "http://www.huazhou.gov.cn/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广东省/梅州市/大埔县",
-    "govUrl": "https://www.dabu.gov.cn/",
-    "picked": {
-      "url": "http://www.dabu.gov.cn/gkmlzl/",
-      "text": "&#xe6f5; 政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广东省/梅州市/梅江区",
-    "govUrl": "http://www.meijiang.gov.cn/",
-    "picked": {
-      "url": "http://www.meijiang.gov.cn/zwgk/xxgkmlxt/qzfxxgkml/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广东省/梅州市/兴宁市",
-    "govUrl": "http://www.xingning.gov.cn/",
-    "picked": {
-      "url": "https://www.xingning.gov.cn/gkmlzl/",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "广东省/清远市",
@@ -764,66 +258,6 @@
     "reason": "homepage-unreachable"
   },
   {
-    "key": "广东省/深圳市/光明区",
-    "govUrl": "https://www.szgm.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "广东省/阳江市/江城区",
-    "govUrl": "https://www.jiangcheng.gov.cn/",
-    "picked": {
-      "url": "https://www.jiangcheng.gov.cn/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广东省/阳江市/阳春市",
-    "govUrl": "https://www.yangchun.gov.cn/",
-    "picked": {
-      "url": "http://www.yangchun.gov.cn/xxgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广东省/阳江市/阳东区",
-    "govUrl": "http://www.yangdong.gov.cn/",
-    "picked": {
-      "url": "http://www.yangdong.gov.cn/gkmlpt/index",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广东省/肇庆市/鼎湖区",
-    "govUrl": "https://www.zqdh.gov.cn/",
-    "picked": {
-      "url": "https://www.zqdh.gov.cn/gkmlpt/link",
-      "text": "【政府信息公开】",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广东省/肇庆市/高要区",
-    "govUrl": "http://www.gaoyao.gov.cn/",
-    "picked": {
-      "url": "http://www.gaoyao.gov.cn/gkmlpt/link",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "广东省/珠海市/斗门区",
     "govUrl": "https://www.doumen.gov.cn/",
     "reason": "no-disclosure-route"
@@ -834,328 +268,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "广西壮族自治区/百色市/德保县",
-    "govUrl": "http://www.debao.gov.cn/",
-    "picked": {
-      "url": "http://www.debao.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/百色市/凌云县",
-    "govUrl": "http://www.lingyun.gov.cn/",
-    "picked": {
-      "url": "http://www.lingyun.gov.cn/zwgk/zfxxgkzl/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/百色市/隆林各族自治县",
-    "govUrl": "http://www.gxll.gov.cn/",
-    "picked": {
-      "url": "http://www.gxll.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/百色市/那坡县",
-    "govUrl": "http://www.napo.gov.cn/",
-    "picked": {
-      "url": "http://www.napo.gov.cn/zfxxgkzl/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/百色市/平果市",
-    "govUrl": "http://www.pingguo.gov.cn/",
-    "picked": {
-      "url": "http://www.pingguo.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/百色市/田东县",
-    "govUrl": "http://www.gxtd.gov.cn/",
-    "picked": {
-      "url": "http://www.gxtd.gov.cn/xxgk/fdzdgknr/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/百色市/西林县",
-    "govUrl": "http://www.gxxl.gov.cn/",
-    "picked": {
-      "url": "http://www.gxxl.gov.cn/xxgk/gkbz/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/百色市/右江区",
-    "govUrl": "http://www.bsyj.gov.cn/",
-    "picked": {
-      "url": "http://www.bsyj.gov.cn/xxgk/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/北海市/铁山港区",
-    "govUrl": "http://www.bhtsg.gov.cn/",
-    "picked": {
-      "url": "http://www.bhtsg.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/崇左市",
-    "govUrl": "http://www.chongzuo.gov.cn/",
-    "picked": {
-      "url": "http://www.chongzuo.gov.cn/zfxxgkzl/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/崇左市/大新县",
-    "govUrl": "http://www.daxin.gov.cn/",
-    "picked": {
-      "url": "http://www.daxin.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/崇左市/扶绥县",
-    "govUrl": "http://www.fusui.gov.cn/",
-    "picked": {
-      "url": "http://www.fusui.gov.cn/xxgk/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/崇左市/江州区",
-    "govUrl": "http://www.czsjzq.gov.cn/",
-    "picked": {
-      "url": "http://www.czsjzq.gov.cn/xxfb/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/崇左市/龙州县",
-    "govUrl": "http://www.longzhou.gov.cn/",
-    "picked": {
-      "url": "http://www.longzhou.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/崇左市/宁明县",
-    "govUrl": "http://www.ningming.gov.cn/",
-    "picked": {
-      "url": "http://www.ningming.gov.cn/xxfbml/zfxxgkzl/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/崇左市/凭祥市",
-    "govUrl": "http://www.pxszf.gov.cn/",
-    "picked": {
-      "url": "http://www.pxszf.gov.cn/zwgk_1568/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/崇左市/天等县",
-    "govUrl": "http://www.tiandeng.gov.cn/",
-    "picked": {
-      "url": "http://www.tiandeng.gov.cn/zfxxgg/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/贵港市",
-    "govUrl": "http://www.gxgg.gov.cn/",
-    "picked": {
-      "url": "http://www.gxgg.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/贵港市/港北区",
-    "govUrl": "http://www.gbq.gov.cn/",
-    "picked": {
-      "url": "http://www.gbq.gov.cn/ztzl/zfxxgkzl/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/贵港市/桂平市",
-    "govUrl": "http://www.guiping.gov.cn/",
-    "picked": {
-      "url": "http://www.guiping.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/贵港市/平南县",
-    "govUrl": "http://www.pnxzf.gov.cn/",
-    "picked": {
-      "url": "http://www.pnxzf.gov.cn/zfxxgk/index.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/桂林市/叠彩区",
-    "govUrl": "http://www.glsdcqzf.gov.cn/",
-    "picked": {
-      "url": "http://www.glsdcqzf.gov.cn/xxgk/fdzdgknr/jcxxgk/",
-      "text": "基础信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/桂林市/灵川县",
-    "govUrl": "http://www.lcxzf.gov.cn/",
-    "picked": {
-      "url": "http://www.lcxzf.gov.cn/xxgk/fdzdgknr/jbxxgk/",
-      "text": "基本信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/桂林市/平乐县",
-    "govUrl": "http://www.pingle.gov.cn/",
-    "picked": {
-      "url": "http://www.pingle.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "广西壮族自治区/桂林市/阳朔县",
     "govUrl": "http://www.yangshuo.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "广西壮族自治区/河池市/巴马瑶族自治县",
-    "govUrl": "http://www.bama.gov.cn/",
-    "picked": {
-      "url": "http://www.bama.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/河池市/都安瑶族自治县",
-    "govUrl": "http://www.duan.gov.cn/",
-    "picked": {
-      "url": "http://www.duan.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/河池市/罗城仫佬族自治县",
-    "govUrl": "http://www.luocheng.gov.cn/",
-    "picked": {
-      "url": "http://www.luocheng.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/河池市/天峨县",
-    "govUrl": "http://www.tiane.gov.cn/",
-    "picked": {
-      "url": "http://www.tiane.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/贺州市",
-    "govUrl": "http://www.gxhz.gov.cn/",
-    "picked": {
-      "url": "http://www.gxhz.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "广西壮族自治区/贺州市/富川瑶族自治县",
@@ -1163,299 +278,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "广西壮族自治区/贺州市/昭平县",
-    "govUrl": "http://www.gxzp.gov.cn/",
-    "picked": {
-      "url": "http://www.gxzp.gov.cn/zwgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/来宾市",
-    "govUrl": "https://www.laibin.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "广西壮族自治区/来宾市/金秀瑶族自治县",
-    "govUrl": "http://www.jinxiu.gov.cn/",
-    "picked": {
-      "url": "http://www.jinxiu.gov.cn/xxgk/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/来宾市/武宣县",
-    "govUrl": "https://www.wuxuan.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "广西壮族自治区/来宾市/象州县",
-    "govUrl": "http://www.xiangzhou.gov.cn/",
-    "picked": {
-      "url": "http://www.xiangzhou.gov.cn/zfxxgk/",
-      "text": "政府信息公开专栏",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/南宁市/宾阳县",
-    "govUrl": "http://www.binyang.gov.cn/",
-    "picked": {
-      "url": "http://www.binyang.gov.cn/gk/xxgkml/jcxxgk/",
-      "text": "基础信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/南宁市/横州市",
-    "govUrl": "http://www.gxhx.gov.cn/",
-    "picked": {
-      "url": "http://www.gxhx.gov.cn/xxgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/南宁市/江南区",
-    "govUrl": "http://www.nnjn.gov.cn/",
-    "picked": {
-      "url": "http://www.nnjn.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/南宁市/马山县",
-    "govUrl": "http://www.nnms.gov.cn/",
-    "picked": {
-      "url": "http://www.nnms.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/南宁市/青秀区",
-    "govUrl": "http://www.qingxiu.gov.cn/",
-    "picked": {
-      "url": "http://www.qingxiu.gov.cn/gongkai/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/南宁市/武鸣区",
-    "govUrl": "http://www.wuming.gov.cn/",
-    "picked": {
-      "url": "http://www.wuming.gov.cn/gk/zfxxgkml/",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/南宁市/西乡塘区",
-    "govUrl": "https://www.xxtq.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "广西壮族自治区/钦州市/灵山县",
-    "govUrl": "http://www.gxls.gov.cn/",
-    "picked": {
-      "url": "http://www.gxls.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/钦州市/浦北县",
-    "govUrl": "http://www.gxpb.gov.cn/",
-    "picked": {
-      "url": "http://www.gxpb.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/梧州市/苍梧县",
-    "govUrl": "http://www.cangwu.gov.cn/",
-    "picked": {
-      "url": "http://www.cangwu.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/梧州市/岑溪市",
-    "govUrl": "http://www.cenxi.gov.cn/",
-    "picked": {
-      "url": "http://www.cenxi.gov.cn/zwgk/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/梧州市/藤县",
-    "govUrl": "http://www.tengxian.gov.cn/",
-    "picked": {
-      "url": "http://www.tengxian.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/玉林市/博白县",
-    "govUrl": "http://www.bobai.gov.cn/",
-    "picked": {
-      "url": "http://www.bobai.gov.cn/xxgk/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/玉林市/福绵区",
-    "govUrl": "http://www.ylfm.gov.cn/",
-    "picked": {
-      "url": "http://www.ylfm.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "广西壮族自治区/玉林市/玉州区",
-    "govUrl": "http://www.ylyz.gov.cn/",
-    "picked": {
-      "url": "http://www.ylyz.gov.cn/zfxxgkzl/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "贵州省/毕节市/纳雍县",
-    "govUrl": "http://www.gznayong.gov.cn/",
-    "picked": {
-      "url": "https://www.gznayong.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "贵州省/毕节市/七星关区",
     "govUrl": "http://www.bjqixingguan.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "贵州省/毕节市/威宁彝族回族苗族自治县",
-    "govUrl": "http://www.gzweining.gov.cn/",
-    "picked": {
-      "url": "https://www.gzweining.gov.cn/zwgk/",
-      "text": "政务公开 GOVEMMENT",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "贵州省/六盘水市/六枝特区",
-    "govUrl": "https://www.liuzhi.gov.cn/",
-    "picked": {
-      "url": "https://www.liuzhi.gov.cn/newsite/zwgk_5753282/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "贵州省/黔东南苗族侗族自治州/丹寨县",
-    "govUrl": "https://www.qdndz.gov.cn/",
-    "picked": {
-      "url": "https://www.qdndz.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "贵州省/黔东南苗族侗族自治州/施秉县",
-    "govUrl": "https://www.qdnsb.gov.cn/",
-    "picked": {
-      "url": "https://www.qdnsb.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "贵州省/黔南布依族苗族自治州/独山县",
-    "govUrl": "http://www.dushan.gov.cn/",
-    "picked": {
-      "url": "http://www.dushan.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "贵州省/黔南布依族苗族自治州/平塘县",
-    "govUrl": "https://www.gzpt.gov.cn/",
-    "picked": {
-      "url": "http://www.gzpt.gov.cn/zwgk_500411/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "贵州省/黔西南布依族苗族自治州/兴仁市",
-    "govUrl": "https://gzxr.gov.cn/",
-    "picked": {
-      "url": "https://gzxr.gov.cn/xxgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "贵州省/铜仁市",
@@ -1463,86 +288,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "贵州省/遵义市/赤水市",
-    "govUrl": "https://www.gzchishui.gov.cn/",
-    "picked": {
-      "url": "https://www.gzchishui.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "贵州省/遵义市/湄潭县",
-    "govUrl": "http://www.meitan.gov.cn/",
-    "picked": {
-      "url": "http://www.meitan.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "海南省/白沙黎族自治县",
-    "govUrl": "http://baisha.hainan.gov.cn/",
-    "picked": {
-      "url": "http://baisha.hainan.gov.cn/zfxxgkzl/zc/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "海南省/保亭黎族苗族自治县",
-    "govUrl": "http://baoting.hainan.gov.cn/",
-    "picked": {
-      "url": "http://baoting.hainan.gov.cn/zfxxgk/zc/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "海南省/五指山市",
-    "govUrl": "http://wzs.hainan.gov.cn/",
-    "picked": {
-      "url": "http://wzs.hainan.gov.cn/wzs/zccc/newxxgk_index.shtml",
-      "text": "信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河北省/保定市/安国市",
     "govUrl": "http://www.anguo.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "河北省/保定市/安新县",
-    "govUrl": "https://www.anxin.gov.cn/",
-    "picked": {
-      "url": "https://www.anxin.gov.cn/news/4/4/1.html",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/保定市/定兴县",
-    "govUrl": "https://www.dingxing.gov.cn/",
-    "picked": {
-      "url": "https://www.dingxing.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "河北省/保定市/定州市",
@@ -1553,50 +301,6 @@
     "key": "河北省/保定市/阜平县",
     "govUrl": "https://www.bdfuping.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "河北省/保定市/高碑店市",
-    "govUrl": "http://www.gaobeidian.gov.cn/",
-    "picked": {
-      "url": "http://www.gaobeidian.gov.cn/xxgkcontent-888888035-26305.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/保定市/竞秀区",
-    "govUrl": "https://www.jingxiu.gov.cn/",
-    "picked": {
-      "url": "https://www.jingxiu.gov.cn/zfxxgk1/16",
-      "text": "信息公开目录",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/保定市/莲池区",
-    "govUrl": "https://www.lianchi.gov.cn/",
-    "picked": {
-      "url": "https://www.lianchi.gov.cn/cms/zfxxgk/lists2.html?cateid=14",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/保定市/满城区",
-    "govUrl": "http://www.mancheng.gov.cn/",
-    "picked": {
-      "url": "http://www.mancheng.gov.cn/list-zwgk.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "河北省/保定市/顺平县",
@@ -1612,138 +316,6 @@
     "key": "河北省/保定市/易县",
     "govUrl": "https://www.bdyixian.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "河北省/沧州市",
-    "govUrl": "http://www.cangzhou.gov.cn/",
-    "picked": {
-      "url": "http://www.cangzhou.gov.cn/cangzhou/c100534/infoopen_index2.shtml",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/沧州市/沧县",
-    "govUrl": "http://www.cangxian.gov.cn/",
-    "picked": {
-      "url": "http://www.cangxian.gov.cn/cangxian/c103241/infoopen_index.shtml",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/沧州市/东光县",
-    "govUrl": "http://www.dongguang.gov.cn/",
-    "picked": {
-      "url": "http://www.dongguang.gov.cn/dongguang/c101018/listCollect.shtml",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/沧州市/海兴县",
-    "govUrl": "https://www.haixing.gov.cn/",
-    "picked": {
-      "url": "https://www.haixing.gov.cn/haixing/c101043/listCollect.shtml",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/沧州市/黄骅市",
-    "govUrl": "http://www.huanghua.gov.cn/",
-    "picked": {
-      "url": "http://www.huanghua.gov.cn/huanghua/c103140/infoopen_index.shtml",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/沧州市/南皮县",
-    "govUrl": "http://www.nanpi.gov.cn/",
-    "picked": {
-      "url": "http://www.nanpi.gov.cn/nanpi/c101064/listCollect.shtml",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/沧州市/泊头市",
-    "govUrl": "http://www.botou.gov.cn/",
-    "picked": {
-      "url": "http://www.botou.gov.cn/botou/c100827/listCollect.shtml",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/沧州市/青县",
-    "govUrl": "https://www.qingxian.gov.cn/",
-    "picked": {
-      "url": "https://www.qingxian.gov.cn/qingxian/c103186/infoopen_index.shtml",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/沧州市/任丘市",
-    "govUrl": "https://www.renqiu.gov.cn/",
-    "picked": {
-      "url": "https://www.renqiu.gov.cn/renqiu/zwgk/newslist_zhengwu.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/沧州市/献县",
-    "govUrl": "https://www.xianxian.gov.cn/",
-    "picked": {
-      "url": "https://www.xianxian.gov.cn/xianxian/c100915/listCollect.shtml",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/沧州市/新华区",
-    "govUrl": "http://www.czxh.gov.cn/",
-    "picked": {
-      "url": "http://www.czxh.gov.cn/czxh/c100082/listCollect.shtml",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/沧州市/运河区",
-    "govUrl": "http://www.czyh.gov.cn/",
-    "picked": {
-      "url": "http://www.czyh.gov.cn/czyh/c103460/infoopen_index.shtml",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "河北省/承德市/鹰手营子矿区",
@@ -1766,42 +338,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "河北省/邯郸市/大名县",
-    "govUrl": "http://www.daming.gov.cn/",
-    "picked": {
-      "url": "http://www.daming.gov.cn/dmxxxgk/zc/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河北省/邯郸市/肥乡区",
     "govUrl": "https://www.fxq.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "河北省/邯郸市/峰峰矿区",
-    "govUrl": "http://www.ff.gov.cn/",
-    "picked": {
-      "url": "http://www.ff.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邯郸市/邯山区",
-    "govUrl": "http://www.hdhs.gov.cn/",
-    "picked": {
-      "url": "http://www.hdhs.gov.cn/hsqxxgk/hsq_zfxxgkml/",
-      "text": "部门信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "河北省/邯郸市/鸡泽县",
@@ -1809,64 +348,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "河北省/邯郸市/邱县",
-    "govUrl": "http://www.qiuxian.gov.cn/",
-    "picked": {
-      "url": "http://www.qiuxian.gov.cn/qxxxgk/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河北省/邯郸市/曲周县",
     "govUrl": "http://www.qzx.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "河北省/邯郸市/涉县",
-    "govUrl": "http://www.shexian.gov.cn/",
-    "picked": {
-      "url": "http://www.shexian.gov.cn/sxxxgk",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邯郸市/武安市",
-    "govUrl": "http://www.wuan.gov.cn/",
-    "picked": {
-      "url": "http://www.wuan.gov.cn/wasxxgk/xxgkslcycs/",
-      "text": "信息公开受理查阅场所地图",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邯郸市/永年区",
-    "govUrl": "https://www.hdyn.gov.cn/",
-    "picked": {
-      "url": "https://www.hdyn.gov.cn/bmxxgklb/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/衡水市",
-    "govUrl": "https://www.hengshui.gov.cn/",
-    "picked": {
-      "url": "http://xxgk.hengshui.gov.cn/",
-      "text": "政务公开",
-      "score": 82,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "河北省/衡水市/安平县",
@@ -1929,17 +413,6 @@
     "reason": "homepage-unreachable"
   },
   {
-    "key": "河北省/廊坊市/广阳区",
-    "govUrl": "http://www.guangyang.gov.cn/",
-    "picked": {
-      "url": "http://www.guangyang.gov.cn/xinxigongkai.html",
-      "text": "信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河北省/廊坊市/文安县",
     "govUrl": "http://www.wenan.gov.cn/",
     "reason": "no-disclosure-route"
@@ -1950,79 +423,8 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "河北省/秦皇岛市",
-    "govUrl": "http://www.qhd.gov.cn/",
-    "picked": {
-      "url": "http://www.qhd.gov.cn/front_pcsec_zw.do",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/秦皇岛市/北戴河区",
-    "govUrl": "https://www.beidaihe.gov.cn/",
-    "picked": {
-      "url": "https://www.beidaihe.gov.cn/channel/17/index.html",
-      "text": "政府信息公开平台",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/秦皇岛市/昌黎县",
-    "govUrl": "http://www.clxzf.gov.cn/",
-    "picked": {
-      "url": "http://www.clxzf.gov.cn/__sys_block__/xxgkIndex.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/秦皇岛市/抚宁区",
-    "govUrl": "https://www.chinafuning.gov.cn/",
-    "picked": {
-      "url": "https://www.chinafuning.gov.cn/channel/245/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/秦皇岛市/海港区",
-    "govUrl": "http://www.qhdhgq.gov.cn/",
-    "picked": {
-      "url": "http://www.qhdhgq.gov.cn/zwgk.aspx",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河北省/秦皇岛市/卢龙县",
     "govUrl": "https://www.lulong.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "河北省/秦皇岛市/青龙满族自治县",
-    "govUrl": "https://www.chinaqinglong.gov.cn/",
-    "picked": {
-      "url": "https://www.chinaqinglong.gov.cn/xxgk/index.jsp",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/石家庄市/辛集市",
-    "govUrl": "http://www.xinji.gov.cn/",
     "reason": "homepage-unreachable"
   },
   {
@@ -2046,234 +448,14 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "河北省/唐山市/丰润区",
-    "govUrl": "http://www.fengrun.gov.cn/",
-    "picked": {
-      "url": "http://www.fengrun.gov.cn/fengrun/ts_fengrunqu/",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/唐山市/古冶区",
-    "govUrl": "http://www.guye.gov.cn/",
-    "picked": {
-      "url": "http://www.guye.gov.cn/guye/jgxxgk/index.html",
-      "text": "机构信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/唐山市/乐亭县",
-    "govUrl": "https://www.laoting.gov.cn/",
-    "picked": {
-      "url": "https://www.laoting.gov.cn/laoting/ts_laotingxian/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/唐山市/路北区",
-    "govUrl": "http://www.tslb.gov.cn/",
-    "picked": {
-      "url": "http://www.tslb.gov.cn/index.php?m=content&c=index&a=lists&catid=12",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河北省/唐山市/滦州市",
     "govUrl": "http://www.luanxian.gov.cn/",
     "reason": "homepage-unreachable"
   },
   {
-    "key": "河北省/唐山市/迁西县",
-    "govUrl": "http://www.qianxi.gov.cn/",
-    "picked": {
-      "url": "http://www.qianxi.gov.cn/qianxi/ts_qianxixian/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邢台市/柏乡县",
-    "govUrl": "http://www.baixiangxian.gov.cn/",
-    "picked": {
-      "url": "http://www.baixiangxian.gov.cn/xxgk/index.jsp",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邢台市/广宗县",
-    "govUrl": "http://www.gzx.gov.cn/",
-    "picked": {
-      "url": "http://www.gzx.gov.cn/xxgk/index.html",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邢台市/临城县",
-    "govUrl": "https://www.lincheng.gov.cn/",
-    "picked": {
-      "url": "https://www.lincheng.gov.cn/xxgk/index.html",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邢台市/南和区",
-    "govUrl": "https://www.nanhe.gov.cn/",
-    "picked": {
-      "url": "http://info.nanhe.gov.cn/index.jsp",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邢台市/平乡县",
-    "govUrl": "https://www.pingxiangxian.gov.cn/",
-    "picked": {
-      "url": "https://www.pingxiangxian.gov.cn/channel/17/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邢台市/清河县",
-    "govUrl": "https://www.qinghexian.gov.cn/",
-    "picked": {
-      "url": "http://info.qinghexian.gov.cn/",
-      "text": "信息公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邢台市/任泽区",
-    "govUrl": "http://www.renze.gov.cn/",
-    "picked": {
-      "url": "http://www.renze.gov.cn/__sys_block__/zwgk.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邢台市/沙河市",
-    "govUrl": "http://www.shaheshi.gov.cn/",
-    "picked": {
-      "url": "http://www.shaheshi.gov.cn/info/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/邢台市/襄都区",
-    "govUrl": "https://www.xiangdu.gov.cn/",
-    "picked": {
-      "url": "https://www.xiangdu.gov.cn/channel/17/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/张家口市/怀安县",
-    "govUrl": "http://www.zjkha.gov.cn/",
-    "picked": {
-      "url": "https://www.zjkha.gov.cn/xxgk/index.jsp",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/张家口市/桥东区",
-    "govUrl": "http://www.zjkqd.gov.cn/",
-    "picked": {
-      "url": "http://www.zjkqd.gov.cn/xxgk.jsp",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/张家口市/万全区",
-    "govUrl": "http://www.zjkwq.gov.cn/",
-    "picked": {
-      "url": "http://www.zjkwq.gov.cn/xxgk/index.jsp",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/张家口市/下花园区",
-    "govUrl": "http://www.zjkxhy.gov.cn/",
-    "picked": {
-      "url": "http://www.zjkxhy.gov.cn/xxgk/index.jsp",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河北省/张家口市/阳原县",
-    "govUrl": "http://www.zjkyy.gov.cn/",
-    "picked": {
-      "url": "http://www.zjkyy.gov.cn/channel/17/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/安阳市",
-    "govUrl": "https://www.anyang.gov.cn/",
-    "picked": {
-      "url": "https://www.anyang.gov.cn/zwgk/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河南省/安阳市/内黄县",
-    "govUrl": "https://www.neihuang.gov.cn/",
-    "reason": "homepage-unreachable"
+    "govUrl": "http://www.neihuang.gov.cn/",
+    "reason": "no-disclosure-route"
   },
   {
     "key": "河南省/鹤壁市",
@@ -2281,256 +463,14 @@
     "reason": "homepage-unreachable"
   },
   {
-    "key": "河南省/鹤壁市/鹤山区",
-    "govUrl": "http://www.hbhsq.gov.cn/",
-    "picked": {
-      "url": "http://www.hbhsq.gov.cn/zfxxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河南省/鹤壁市/浚县",
     "govUrl": "https://www.xunxian.gov.cn/",
     "reason": "homepage-unreachable"
   },
   {
-    "key": "河南省/鹤壁市/淇滨区",
-    "govUrl": "http://www.hbqbq.gov.cn/",
-    "picked": {
-      "url": "http://www.hbqbq.gov.cn/zfxxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河南省/鹤壁市/淇县",
     "govUrl": "http://www.qxzf.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "河南省/鹤壁市/山城区",
-    "govUrl": "http://www.hbscq.gov.cn/",
-    "picked": {
-      "url": "http://www.hbscq.gov.cn/zfxxgk/zfbmxxgk/index.html",
-      "text": "部门信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/开封市",
-    "govUrl": "https://www.kaifeng.gov.cn/",
-    "picked": {
-      "url": "https://www.kaifeng.gov.cn/kfsrmzfwz/zwgk/pc/list.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市",
-    "govUrl": "https://www.ly.gov.cn/",
-    "picked": {
-      "url": "https://www.ly.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/瀍河回族区",
-    "govUrl": "https://www.chanhe.gov.cn/",
-    "picked": {
-      "url": "https://www.chanhe.gov.cn/xxgk/zfxxgkml",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/涧西区",
-    "govUrl": "http://www.jxq.gov.cn/",
-    "picked": {
-      "url": "http://www.jxq.gov.cn/zfxxgk/zfxxgkml",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/老城区",
-    "govUrl": "http://www.lylc.gov.cn/",
-    "picked": {
-      "url": "https://www.lylc.gov.cn/zwgk",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/栾川县",
-    "govUrl": "http://www.luanchuan.gov.cn/",
-    "picked": {
-      "url": "http://www.luanchuan.gov.cn/zfxxgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/洛龙区",
-    "govUrl": "https://www.luolong.gov.cn/",
-    "picked": {
-      "url": "https://www.luolong.gov.cn/zwgk/zfxxgkpt/zfxxzn",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/洛宁县",
-    "govUrl": "http://www.luoning.gov.cn/",
-    "picked": {
-      "url": "http://www.luoning.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/孟津区",
-    "govUrl": "https://www.mengjin.gov.cn/",
-    "picked": {
-      "url": "http://www.mengjin.gov.cn/zwgk/zfxxgkml",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/汝阳县",
-    "govUrl": "http://www.ry.gov.cn/",
-    "picked": {
-      "url": "http://www.ry.gov.cn/html/1/2/3/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/西工区",
-    "govUrl": "http://www.xigong.gov.cn/",
-    "picked": {
-      "url": "http://www.xigong.gov.cn/zwgk",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/新安县",
-    "govUrl": "https://www.xinan.gov.cn/",
-    "picked": {
-      "url": "http://www.xinan.gov.cn/wzsy/zwgk",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/伊川县",
-    "govUrl": "http://www.yichuan.gov.cn/",
-    "picked": {
-      "url": "http://www.yichuan.gov.cn/sy/zwgk",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/洛阳市/宜阳县",
-    "govUrl": "http://www.yyzfw.gov.cn/",
-    "picked": {
-      "url": "http://www.yyzfw.gov.cn/zwgk",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/漯河市",
-    "govUrl": "https://www.luohe.gov.cn/",
-    "picked": {
-      "url": "https://www.luohe.gov.cn/zfxxgkpt",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/漯河市/临颍县",
-    "govUrl": "https://www.linying.gov.cn/",
-    "picked": {
-      "url": "https://www.linying.gov.cn/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/漯河市/舞阳县",
-    "govUrl": "https://www.wuyang.gov.cn/",
-    "picked": {
-      "url": "https://www.wuyang.gov.cn/zwgk/fdzdgknr/ldzy1/wyxzf",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/漯河市/郾城区",
-    "govUrl": "https://www.lhyc.gov.cn/",
-    "picked": {
-      "url": "https://www.lhyc.gov.cn/zwgk/fdzdgknr",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/漯河市/召陵区",
-    "govUrl": "http://www.lhsl.gov.cn/",
-    "picked": {
-      "url": "http://www.lhsl.gov.cn/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "河南省/平顶山市/郏县",
@@ -2543,47 +483,14 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "河南省/濮阳市",
-    "govUrl": "https://www.puyang.gov.cn/",
-    "picked": {
-      "url": "https://www.puyang.gov.cn/zwxx/index.thtml",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河南省/濮阳市/范县",
     "govUrl": "http://www.fanxian.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "河南省/濮阳市/南乐县",
-    "govUrl": "http://www.nanle.gov.cn/",
-    "picked": {
-      "url": "http://www.nanle.gov.cn/channel/list/20754.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/濮阳市/濮阳县",
-    "govUrl": "http://www.puyangxian.gov.cn/",
-    "picked": {
-      "url": "http://www.puyangxian.gov.cn/publicly/index",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河南省/濮阳市/清丰县",
     "govUrl": "http://www.qingfeng.gov.cn/",
-    "reason": "no-disclosure-route"
+    "reason": "homepage-unreachable"
   },
   {
     "key": "河南省/三门峡市/卢氏县",
@@ -2596,141 +503,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "河南省/商丘市",
-    "govUrl": "https://www.shangqiu.gov.cn/",
-    "picked": {
-      "url": "https://www.shangqiu.gov.cn/zwgk/fdzdgknr",
-      "text": "市政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/商丘市/梁园区",
-    "govUrl": "https://www.liangyuan.gov.cn/",
-    "picked": {
-      "url": "https://www.liangyuan.gov.cn/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/商丘市/民权县",
-    "govUrl": "http://www.minquan.gov.cn/",
-    "picked": {
-      "url": "http://www.minquan.gov.cn/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/商丘市/宁陵县",
-    "govUrl": "https://www.ningling.gov.cn/",
-    "picked": {
-      "url": "https://www.ningling.gov.cn/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/商丘市/睢县",
-    "govUrl": "http://www.suixian.gov.cn/",
-    "picked": {
-      "url": "http://www.suixian.gov.cn/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/商丘市/睢阳区",
-    "govUrl": "https://www.suiyangqu.gov.cn/",
-    "picked": {
-      "url": "https://www.suiyangqu.gov.cn/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/商丘市/夏邑县",
-    "govUrl": "https://www.xiayi.gov.cn/",
-    "picked": {
-      "url": "https://www.xiayi.gov.cn/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/商丘市/永城市",
-    "govUrl": "https://www.ycs.gov.cn/",
-    "picked": {
-      "url": "https://www.ycs.gov.cn/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/商丘市/虞城县",
-    "govUrl": "https://www.yuchengxian.gov.cn/",
-    "picked": {
-      "url": "https://www.yuchengxian.gov.cn/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河南省/商丘市/柘城县",
     "govUrl": "https://www.zhecheng.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "河南省/新乡市/辉县市",
-    "govUrl": "https://www.huixianshi.gov.cn/",
-    "picked": {
-      "url": "https://www.huixianshi.gov.cn/PublicInfo",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/新乡市/获嘉县",
-    "govUrl": "https://www.huojia.gov.cn/",
-    "picked": {
-      "url": "https://www.huojia.gov.cn/htmls/zwgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/新乡市/卫辉市",
-    "govUrl": "http://www.weihui.gov.cn/",
-    "picked": {
-      "url": "http://www.weihui.gov.cn/portal/zfxxgk/zfxxgkml/ldzc/A001003002001index_1.htm",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "河南省/新乡市/新乡县",
@@ -2744,185 +519,9 @@
     }
   },
   {
-    "key": "河南省/新乡市/原阳县",
-    "govUrl": "https://www.yuanyang.gov.cn/",
-    "picked": {
-      "url": "https://www.yuanyang.gov.cn/channels/3.html",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/信阳市",
-    "govUrl": "https://www.xinyang.gov.cn/",
-    "picked": {
-      "url": "https://www.xinyang.gov.cn/xxgkp/zc/gz/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/信阳市/光山县",
-    "govUrl": "http://www.guangshan.gov.cn/",
-    "picked": {
-      "url": "http://www.guangshan.gov.cn/gsxzfxxgkw/gsxrmzf/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/信阳市/浉河区",
-    "govUrl": "http://www.shihe.gov.cn/",
-    "picked": {
-      "url": "http://www.shihe.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/信阳市/新县",
-    "govUrl": "http://www.hnxx.gov.cn/",
-    "picked": {
-      "url": "http://www.hnxx.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "河南省/周口市/郸城县",
     "govUrl": "http://www.dancheng.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "河南省/驻马店市",
-    "govUrl": "https://www.zhumadian.gov.cn/",
-    "picked": {
-      "url": "https://www.zhumadian.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/驻马店市/泌阳县",
-    "govUrl": "http://www.biyang.gov.cn/",
-    "picked": {
-      "url": "http://www.biyang.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/驻马店市/平舆县",
-    "govUrl": "http://www.pingyu.gov.cn/",
-    "picked": {
-      "url": "http://www.pingyu.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/驻马店市/遂平县",
-    "govUrl": "http://www.suiping.gov.cn/",
-    "picked": {
-      "url": "http://www.suiping.gov.cn/zwgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "河南省/驻马店市/西平县",
-    "govUrl": "http://www.xiping.gov.cn/",
-    "picked": {
-      "url": "http://www.xiping.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/大庆市",
-    "govUrl": "https://www.daqing.gov.cn/",
-    "picked": {
-      "url": "https://www.daqing.gov.cn/daqing/c100360/redirect_secondChannel.shtml",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/大庆市/大同区",
-    "govUrl": "https://www.dqdt.gov.cn/",
-    "picked": {
-      "url": "https://www.dqdt.gov.cn/datong/fdzdgknr/open_classes.shtml",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/大庆市/杜尔伯特蒙古族自治县",
-    "govUrl": "https://www.drbt.gov.cn/",
-    "picked": {
-      "url": "https://www.drbt.gov.cn/duerbote/zfxxgk/redirect_secondChannel.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/大庆市/红岗区",
-    "govUrl": "http://www.honggang.gov.cn/",
-    "picked": {
-      "url": "http://www.honggang.gov.cn/honggang/zfxxgk/redirect_secondChannel.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/大庆市/林甸县",
-    "govUrl": "http://www.lindian.gov.cn/",
-    "picked": {
-      "url": "http://www.lindian.gov.cn/lindian/zfxxgk/redirect_firstChannel.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/大庆市/龙凤区",
-    "govUrl": "http://www.dqlf.gov.cn/",
-    "picked": {
-      "url": "http://www.dqlf.gov.cn/longfeng/zfxxgk/redirect_secondChannel.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "黑龙江省/大庆市/让胡路区",
@@ -2930,157 +529,14 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "黑龙江省/大庆市/萨尔图区",
-    "govUrl": "http://www.saertu.gov.cn/",
-    "picked": {
-      "url": "http://www.saertu.gov.cn/saertu/zfxxgk/redirect_secondChannel.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/大庆市/肇源县",
-    "govUrl": "http://www.zgzy.gov.cn/",
-    "picked": {
-      "url": "http://www.zgzy.gov.cn/zhaoyuan/zfxxgk/redirect_secondChannel.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "黑龙江省/大庆市/肇州县",
     "govUrl": "http://www.zhaozhou.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "黑龙江省/哈尔滨市/阿城区",
-    "govUrl": "http://www.acheng.gov.cn/",
-    "picked": {
-      "url": "http://www.acheng.gov.cn/achengqu/zwgk/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "黑龙江省/哈尔滨市/宾县",
     "govUrl": "http://www.chinabx.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "黑龙江省/哈尔滨市/道里区",
-    "govUrl": "http://www.hrbdl.gov.cn/",
-    "picked": {
-      "url": "http://www.hrbdl.gov.cn/hebdlq/col22/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/哈尔滨市/道外区",
-    "govUrl": "http://www.hrbdw.gov.cn/",
-    "picked": {
-      "url": "http://www.hrbdw.gov.cn/hrbdw/c110462/zwgktb.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/哈尔滨市/方正县",
-    "govUrl": "http://www.hrbfz.gov.cn/",
-    "picked": {
-      "url": "http://www.hrbfz.gov.cn/fzx/c109806/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/哈尔滨市/呼兰区",
-    "govUrl": "http://www.hulan.gov.cn/",
-    "picked": {
-      "url": "http://www.hulan.gov.cn/hebhlq/zwgk/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/哈尔滨市/南岗区",
-    "govUrl": "http://www.hrbng.gov.cn/",
-    "picked": {
-      "url": "http://www.hrbng.gov.cn/hebngq/zwgk/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/哈尔滨市/双城区",
-    "govUrl": "http://www.hrbsc.gov.cn/",
-    "picked": {
-      "url": "http://www.hrbsc.gov.cn/hebscq/c110739/new_jczwgklby.shtml",
-      "text": "基层政务公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/哈尔滨市/松北区",
-    "govUrl": "http://www.songbei.gov.cn/",
-    "picked": {
-      "url": "http://www.songbei.gov.cn/hebsbq/zwgk/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/哈尔滨市/通河县",
-    "govUrl": "http://www.hrbtonghe.gov.cn/",
-    "picked": {
-      "url": "http://www.hrbtonghe.gov.cn/hebthxx/zwgk/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/哈尔滨市/延寿县",
-    "govUrl": "http://www.hrbyanshou.gov.cn/",
-    "picked": {
-      "url": "http://www.hrbyanshou.gov.cn/hebysx/21600/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/哈尔滨市/依兰县",
-    "govUrl": "http://www.hrbyl.gov.cn/",
-    "picked": {
-      "url": "http://www.hrbyl.gov.cn/hebylx/zwgk/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "黑龙江省/黑河市",
@@ -3164,28 +620,6 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "黑龙江省/齐齐哈尔市/泰来县",
-    "govUrl": "http://www.tailai.gov.cn/",
-    "picked": {
-      "url": "http://www.tailai.gov.cn/tailai/c100261/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "黑龙江省/齐齐哈尔市/铁锋区",
-    "govUrl": "http://www.tfqzf.gov.cn/",
-    "picked": {
-      "url": "http://www.tfqzf.gov.cn/tfq/c101773/zwgk.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "黑龙江省/双鸭山市/宝清县",
     "govUrl": "https://hlbaoqing.gov.cn/",
     "reason": "no-disclosure-route"
@@ -3229,17 +663,6 @@
     "key": "黑龙江省/绥化市/肇东市",
     "govUrl": "https://www.hljzhaodong.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "黑龙江省/伊春市/南岔县",
-    "govUrl": "https://www.nancha.gov.cn/",
-    "picked": {
-      "url": "https://www.nancha.gov.cn/ncxrmzf/c100808/redirect2.shtml",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "黑龙江省/伊春市/乌翠区",
@@ -3287,61 +710,6 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "湖北省/荆门市/东宝区",
-    "govUrl": "https://www.jmdbq.gov.cn/",
-    "picked": {
-      "url": "https://www.jmdbq.gov.cn/col/col16642/index.html",
-      "text": "公共企事业信息公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖北省/荆门市/掇刀区",
-    "govUrl": "http://www.duodao.gov.cn/",
-    "picked": {
-      "url": "http://www.duodao.gov.cn/col/col16667/index.html",
-      "text": "公共企事业信息公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖北省/荆门市/京山市",
-    "govUrl": "http://www.jingshan.gov.cn/",
-    "picked": {
-      "url": "http://www.jingshan.gov.cn/col/col16681/index.html",
-      "text": "公共企事业信息公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖北省/荆门市/沙洋县",
-    "govUrl": "http://www.shayang.gov.cn/",
-    "picked": {
-      "url": "http://www.shayang.gov.cn/col/col2335/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖北省/荆门市/钟祥市",
-    "govUrl": "http://www.zhongxiang.gov.cn/",
-    "picked": {
-      "url": "http://www.zhongxiang.gov.cn/col/col16736/index.html",
-      "text": "公共企事业信息公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "湖北省/荆州市/荆州区",
     "govUrl": "http://www.jingzhouqu.gov.cn/",
     "reason": "no-disclosure-route"
@@ -3353,8 +721,14 @@
   },
   {
     "key": "湖北省/神农架林区",
-    "govUrl": "https://www.snj.gov.cn/",
-    "reason": "homepage-unreachable"
+    "govUrl": "http://www.snj.gov.cn/",
+    "picked": {
+      "url": "http://www.snj.gov.cn/zwgk/xxgkml/jgzn/",
+      "text": "法定主动公开",
+      "score": 87,
+      "source": "anchor",
+      "validated": true
+    }
   },
   {
     "key": "湖北省/十堰市/茅箭区",
@@ -3397,17 +771,6 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "湖北省/仙桃市",
-    "govUrl": "https://www.xiantao.gov.cn/",
-    "picked": {
-      "url": "https://www.xiantao.gov.cn/ztzl/jczwgk/",
-      "text": "政府信息公开目录",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "湖北省/咸宁市/崇阳县",
     "govUrl": "http://chongyang.gov.cn/",
     "reason": "no-disclosure-route"
@@ -3448,31 +811,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "湖北省/襄阳市/襄州区",
-    "govUrl": "http://www.xyxz.gov.cn/",
-    "picked": {
-      "url": "http://www.xyxz.gov.cn/zwgk/fdzdgknr/jczwgk/",
-      "text": "基层政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "湖北省/襄阳市/宜城市",
     "govUrl": "http://ych.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "湖北省/孝感市/安陆市",
-    "govUrl": "https://www.anlu.gov.cn/",
-    "picked": {
-      "url": "http://www.anlu.gov.cn/ggqsydwxxgk.jhtml",
-      "text": "公共企事业单位信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "湖北省/孝感市/大悟县",
@@ -3485,97 +826,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "湖北省/孝感市/孝昌县",
-    "govUrl": "http://www.xiaochang.gov.cn/",
-    "picked": {
-      "url": "http://www.xiaochang.gov.cn/ggqsydwxxgk.jhtml",
-      "text": "企事业信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖北省/孝感市/孝南区",
-    "govUrl": "http://www.xiaonan.gov.cn/",
-    "picked": {
-      "url": "http://www.xiaonan.gov.cn/ggqsydwxxgk.jhtml",
-      "text": "公共企事业单位信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖北省/孝感市/应城市",
-    "govUrl": "http://www.yingcheng.gov.cn/",
-    "picked": {
-      "url": "http://www.yingcheng.gov.cn/dwxxgkpt/index.jhtml",
-      "text": "党务信息公开平台",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "湖北省/孝感市/云梦县",
     "govUrl": "http://www.yunmeng.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "湖南省/常德市/安乡县",
-    "govUrl": "http://www.anxiang.gov.cn/",
-    "picked": {
-      "url": "https://www.anxiang.gov.cn/zwgk/public/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/常德市/汉寿县",
-    "govUrl": "http://www.hanshou.gov.cn/",
-    "picked": {
-      "url": "http://www.hanshou.gov.cn/zwgk/public/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/常德市/临澧县",
-    "govUrl": "http://www.linli.gov.cn/",
-    "picked": {
-      "url": "https://www.linli.gov.cn/zwgk/public/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/常德市/石门县",
-    "govUrl": "http://www.shimen.gov.cn/",
-    "picked": {
-      "url": "https://www.shimen.gov.cn/zwgk/public/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/常德市/武陵区",
-    "govUrl": "http://www.wuling.gov.cn/",
-    "picked": {
-      "url": "https://www.wuling.gov.cn/zwgk/public/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "湖南省/郴州市",
@@ -3609,7 +862,7 @@
   },
   {
     "key": "湖南省/郴州市/临武县",
-    "govUrl": "https://www.lwx.gov.cn/",
+    "govUrl": "http://www.lwx.gov.cn/",
     "reason": "homepage-unreachable"
   },
   {
@@ -3668,72 +921,6 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "湖南省/娄底市",
-    "govUrl": "https://www.hnloudi.gov.cn/",
-    "picked": {
-      "url": "https://www.hnloudi.gov.cn/loudi/2019ldszwgkgzyd/2019zwgk.shtml",
-      "text": "&#xe63f; 政务公开 工作要点专栏",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/娄底市/冷水江市",
-    "govUrl": "http://www.lsj.gov.cn/",
-    "picked": {
-      "url": "http://www.lsj.gov.cn/lsj/zwgk/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/娄底市/涟源市",
-    "govUrl": "https://www.lianyuan.gov.cn/",
-    "picked": {
-      "url": "https://www.lianyuan.gov.cn/lianyuan/zwgk/zwgk.shtml",
-      "text": "政府信息公开平台",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/娄底市/娄星区",
-    "govUrl": "https://www.louxing.gov.cn/",
-    "picked": {
-      "url": "https://www.louxing.gov.cn/louxing/xxgk/xxgk.shtml",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/娄底市/双峰县",
-    "govUrl": "https://www.hnsf.gov.cn/",
-    "picked": {
-      "url": "https://www.hnsf.gov.cn/hnsf/xxgk/xxgk.shtml",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/娄底市/新化县",
-    "govUrl": "https://www.xinhua.gov.cn/",
-    "picked": {
-      "url": "https://www.xinhua.gov.cn/xinhua/xxgk/gongkai.shtml",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "湖南省/邵阳市",
     "govUrl": "https://www.shaoyang.gov.cn/",
     "reason": "no-disclosure-route"
@@ -3742,50 +929,6 @@
     "key": "湖南省/邵阳市/城步苗族自治县",
     "govUrl": "http://www.chengbu.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "湖南省/邵阳市/大祥区",
-    "govUrl": "https://www.dxzc.gov.cn/",
-    "picked": {
-      "url": "https://www.dxzc.gov.cn/dxzc/zwgk/class_zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/邵阳市/洞口县",
-    "govUrl": "http://www.dongkou.gov.cn/",
-    "picked": {
-      "url": "http://www.dongkou.gov.cn/dongkou/xxgkml/bmxxgkml.shtml",
-      "text": "信息公开目录",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/邵阳市/隆回县",
-    "govUrl": "http://www.longhui.gov.cn/",
-    "picked": {
-      "url": "http://www.longhui.gov.cn/longhui/xxgk/xxgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/邵阳市/邵东市",
-    "govUrl": "http://www.shaodong.gov.cn/",
-    "picked": {
-      "url": "http://www.shaodong.gov.cn/shaodong/zfxxgk/zwgkList.shtml",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "湖南省/邵阳市/邵阳县",
@@ -3798,42 +941,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "湖南省/邵阳市/绥宁县",
-    "govUrl": "https://www.hnsn.gov.cn/",
-    "picked": {
-      "url": "https://www.hnsn.gov.cn/hnsn/xzfxxgkmlq/bm_new.shtml",
-      "text": "县政府信息公开目录",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/邵阳市/武冈市",
-    "govUrl": "http://www.wugang.gov.cn/",
-    "picked": {
-      "url": "http://www.wugang.gov.cn/wugang/wgzwgk/zwgkn.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "湖南省/邵阳市/新宁县",
     "govUrl": "http://www.xinning.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "湖南省/邵阳市/新邵县",
-    "govUrl": "http://www.xinshao.gov.cn/",
-    "picked": {
-      "url": "http://www.xinshao.gov.cn/xinshao/xzwgk/2020zwgkList.shtml",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "湖南省/湘潭市",
@@ -3996,17 +1106,6 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "湖南省/张家界市",
-    "govUrl": "https://www.zjj.gov.cn/",
-    "picked": {
-      "url": "https://www.zjj.gov.cn/c10623/index.html",
-      "text": "政府信息公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "湖南省/张家界市/慈利县",
     "govUrl": "http://www.cili.gov.cn/",
     "reason": "no-disclosure-route"
@@ -4017,17 +1116,6 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "湖南省/张家界市/武陵源区",
-    "govUrl": "https://www.zjjwly.gov.cn/",
-    "picked": {
-      "url": "http://www.zjjwly.gov.cn/c12486/index.html",
-      "text": "政府信息公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "湖南省/张家界市/永定区",
     "govUrl": "http://www.zjjyd.gov.cn/",
     "reason": "no-disclosure-route"
@@ -4035,17 +1123,35 @@
   {
     "key": "湖南省/长沙市/芙蓉区",
     "govUrl": "http://www.furong.gov.cn/",
-    "reason": "no-disclosure-route"
+    "picked": {
+      "url": "http://www.furong.gov.cn/zt/zwgkzt/",
+      "text": "“政务公开主题日”活动",
+      "score": 92,
+      "source": "anchor",
+      "validated": true
+    }
   },
   {
     "key": "湖南省/长沙市/宁乡市",
     "govUrl": "http://www.nxcity.gov.cn/",
-    "reason": "no-disclosure-route"
+    "picked": {
+      "url": "http://www.nxcity.gov.cn/zw229/",
+      "text": "政府信息公开",
+      "score": 90,
+      "source": "anchor",
+      "validated": true
+    }
   },
   {
     "key": "湖南省/长沙市/长沙县",
     "govUrl": "http://www.csx.gov.cn/",
-    "reason": "no-disclosure-route"
+    "picked": {
+      "url": "http://www.csx.gov.cn/zwgk/",
+      "text": "政务公开",
+      "score": 92,
+      "source": "anchor",
+      "validated": true
+    }
   },
   {
     "key": "湖南省/株洲市",
@@ -4058,414 +1164,14 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "湖南省/株洲市/荷塘区",
-    "govUrl": "http://www.hetang.gov.cn/",
-    "picked": {
-      "url": "http://www.hetang.gov.cn/c11700/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/株洲市/醴陵市",
-    "govUrl": "http://www.liling.gov.cn/",
-    "picked": {
-      "url": "http://www.liling.gov.cn/c21328/",
-      "text": "基层政务公开标准化规范化建设",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/株洲市/芦淞区",
-    "govUrl": "http://www.lusong.gov.cn/",
-    "picked": {
-      "url": "http://www.lusong.gov.cn/c184/index.html",
-      "text": "信息公开目录",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/株洲市/渌口区",
-    "govUrl": "http://www.lukou.gov.cn/",
-    "picked": {
-      "url": "http://www.lukou.gov.cn/c18442",
-      "text": "信息公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/株洲市/石峰区",
-    "govUrl": "http://www.shifeng.gov.cn/",
-    "picked": {
-      "url": "http://www.shifeng.gov.cn/c4596/index.html",
-      "text": "政府信息公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/株洲市/天元区",
-    "govUrl": "http://www.tianyuan.gov.cn/",
-    "picked": {
-      "url": "http://www.tianyuan.gov.cn/c23591/",
-      "text": "查看专题详情 信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "湖南省/株洲市/炎陵县",
-    "govUrl": "http://www.hnyanling.gov.cn/",
-    "picked": {
-      "url": "http://www.hnyanling.gov.cn/c14879",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/白城市",
-    "govUrl": "http://www.jlbc.gov.cn/",
-    "picked": {
-      "url": "http://www.jlbc.gov.cn/xxgk_3148/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "吉林省/白山市",
     "govUrl": "http://www.cbs.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "吉林省/白山市/江源区",
-    "govUrl": "http://jy.cbs.gov.cn/",
-    "picked": {
-      "url": "http://jy.cbs.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/白山市/长白朝鲜族自治县",
-    "govUrl": "http://www.changbai.gov.cn/",
-    "picked": {
-      "url": "http://www.changbai.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/吉林市",
-    "govUrl": "https://www.jlcity.gov.cn/",
-    "picked": {
-      "url": "http://xxgk.jlcity.gov.cn/",
-      "text": "--> 政府信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "吉林省/吉林市/船营区",
     "govUrl": "http://www.jlcy.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "吉林省/吉林市/桦甸市",
-    "govUrl": "http://www.huadian.gov.cn/",
-    "picked": {
-      "url": "http://www.huadian.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/吉林市/蛟河市",
-    "govUrl": "http://www.jiaohe.gov.cn/",
-    "picked": {
-      "url": "http://www.jiaohe.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/吉林市/龙潭区",
-    "govUrl": "http://www.longtan.gov.cn/",
-    "picked": {
-      "url": "http://www.longtan.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/吉林市/磐石市",
-    "govUrl": "http://www.panshi.gov.cn/",
-    "picked": {
-      "url": "http://www.panshi.gov.cn/xxgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/吉林市/舒兰市",
-    "govUrl": "http://www.shulan.gov.cn/",
-    "picked": {
-      "url": "http://www.shulan.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/吉林市/永吉县",
-    "govUrl": "http://www.jlyj.gov.cn/",
-    "picked": {
-      "url": "http://www.jlyj.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/辽源市",
-    "govUrl": "https://www.liaoyuan.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "吉林省/辽源市/东丰县",
-    "govUrl": "http://www.dongfeng.gov.cn/",
-    "picked": {
-      "url": "http://www.dongfeng.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/四平市",
-    "govUrl": "https://www.siping.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "吉林省/四平市/双辽市",
-    "govUrl": "http://www.shuangliao.gov.cn/",
-    "picked": {
-      "url": "http://xxgk.shuangliao.gov.cn/",
-      "text": "政府信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/四平市/铁东区",
-    "govUrl": "http://tdq.siping.gov.cn/",
-    "picked": {
-      "url": "http://tdq.siping.gov.cn/zw/zt/zwgkztr/",
-      "text": "铁东区政务公开主题日活动专栏",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/四平市/铁西区",
-    "govUrl": "http://txq.siping.gov.cn/",
-    "picked": {
-      "url": "http://txq.siping.gov.cn/zw/zt/sydw/",
-      "text": "公共企事业单位信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/四平市/伊通满族自治县",
-    "govUrl": "http://www.yitong.gov.cn/",
-    "picked": {
-      "url": "http://xxgk.yitong.gov.cn/",
-      "text": "政府信息公开 notice",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/松原市",
-    "govUrl": "https://www.jlsy.gov.cn/",
-    "picked": {
-      "url": "https://www.jlsy.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/松原市/扶余市",
-    "govUrl": "http://www.jlfy.gov.cn/",
-    "picked": {
-      "url": "http://xxgk.jlfy.gov.cn/ml_1918/",
-      "text": "政府信息公开目录 >",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/松原市/宁江区",
-    "govUrl": "http://www.ningjiang.gov.cn/",
-    "picked": {
-      "url": "http://www.ningjiang.gov.cn/zwgk/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/松原市/前郭尔罗斯蒙古族自治县",
-    "govUrl": "http://www.qianguo.gov.cn/",
-    "picked": {
-      "url": "http://xxgk.qianguo.gov.cn/",
-      "text": "政府信息公开专栏搜索",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/松原市/乾安县",
-    "govUrl": "http://www.jlqa.gov.cn/",
-    "picked": {
-      "url": "http://www.jlqa.gov.cn/zwgk/zwdt/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/松原市/长岭县",
-    "govUrl": "http://www.jlcl.gov.cn/",
-    "picked": {
-      "url": "http://xxgk.jlcl.gov.cn/ml_1918/",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/通化市",
-    "govUrl": "http://www.tonghua.gov.cn/",
-    "picked": {
-      "url": "http://www.tonghua.gov.cn/zwgk/",
-      "text": "政 务 公 开 政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/通化市/东昌区",
-    "govUrl": "http://www.dc.gov.cn/",
-    "picked": {
-      "url": "http://www.dc.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/通化市/二道江区",
-    "govUrl": "http://www.edj.gov.cn/",
-    "picked": {
-      "url": "http://www.edj.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/通化市/辉南县",
-    "govUrl": "http://www.huinanxian.gov.cn/",
-    "picked": {
-      "url": "http://www.huinanxian.gov.cn/zwgk/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/通化市/集安市",
-    "govUrl": "http://www.jilinja.gov.cn/",
-    "picked": {
-      "url": "http://xxgk.jilinja.gov.cn/",
-      "text": "政府信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/通化市/柳河县",
-    "govUrl": "http://www.jllh.gov.cn/",
-    "picked": {
-      "url": "http://www.jllh.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/通化市/通化县",
-    "govUrl": "http://www.tonghuaxian.gov.cn/",
-    "picked": {
-      "url": "http://www.tonghuaxian.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/延边朝鲜族自治州",
-    "govUrl": "https://www.yanbian.gov.cn/",
-    "reason": "homepage-unreachable"
   },
   {
     "key": "吉林省/延边朝鲜族自治州/延吉市",
@@ -4479,86 +1185,9 @@
     }
   },
   {
-    "key": "吉林省/长春市/朝阳区",
-    "govUrl": "http://chaoyang.changchun.gov.cn/",
-    "picked": {
-      "url": "http://chaoyang.changchun.gov.cn/zwgk/zfxxgkzl/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/长春市/德惠市",
-    "govUrl": "http://www.dehui.gov.cn/",
-    "picked": {
-      "url": "http://www.dehui.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/长春市/二道区",
-    "govUrl": "http://erdao.changchun.gov.cn/",
-    "picked": {
-      "url": "http://erdao.changchun.gov.cn/zwgk/zfzn/ldjj/qwldcy/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/长春市/九台区",
-    "govUrl": "http://www.jiutai.gov.cn/",
-    "picked": {
-      "url": "http://www.jiutai.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/长春市/宽城区",
-    "govUrl": "http://www.jckc.gov.cn/",
-    "picked": {
-      "url": "http://www.jckc.gov.cn/xxgk/xxgkyjx/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "吉林省/长春市/农安县",
     "govUrl": "http://www.nongan.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "吉林省/长春市/双阳区",
-    "govUrl": "http://www.shuangyang.gov.cn/",
-    "picked": {
-      "url": "http://www.shuangyang.gov.cn/zwgk/zfxxgkzl/zfxxgkbmcyd/",
-      "text": "政府信息公开便民查阅点",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "吉林省/长春市/榆树市",
-    "govUrl": "http://www.yushu.gov.cn/",
-    "picked": {
-      "url": "http://www.yushu.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "江苏省/淮安市/金湖县",
@@ -4576,145 +1205,14 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "江苏省/南通市/启东市",
-    "govUrl": "http://www.qidong.gov.cn/",
-    "picked": {
-      "url": "http://www.qidong.gov.cn/qdsrmzf/zfxxgkzd/content/487b146d-86c4-4600-a60c-8942a2b209cb.html",
-      "text": "· 中华人民共和国政府信息公开条例【置顶】",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "江苏省/南通市/如皋市",
     "govUrl": "https://www.rugao.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "江苏省/宿迁市/沭阳县",
-    "govUrl": "http://www.shuyang.gov.cn/",
-    "picked": {
-      "url": "http://www.shuyang.gov.cn/shuyang/xxgk/xxgk.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/宿迁市/泗洪县",
-    "govUrl": "http://www.sihong.gov.cn/",
-    "picked": {
-      "url": "http://www.sihong.gov.cn/sihong/xxgk/zwgk.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/宿迁市/泗阳县",
-    "govUrl": "http://www.siyang.gov.cn/",
-    "picked": {
-      "url": "http://www.siyang.gov.cn/siyang/xxgk/xxgk.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/徐州市/丰县",
-    "govUrl": "http://www.chinafx.gov.cn/",
-    "picked": {
-      "url": "http://www.chinafx.gov.cn/002/governmentAffairs.html",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/徐州市/鼓楼区",
-    "govUrl": "https://www.xzgl.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
     "key": "江苏省/徐州市/贾汪区",
     "govUrl": "http://www.xzjw.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "江苏省/徐州市/沛县",
-    "govUrl": "http://www.px.gov.cn/",
-    "picked": {
-      "url": "http://www.px.gov.cn/zfxxgk/governmentAffairs.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/徐州市/邳州市",
-    "govUrl": "https://www.pz.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "江苏省/徐州市/泉山区",
-    "govUrl": "http://www.xzqs.gov.cn/",
-    "picked": {
-      "url": "http://www.xzqs.gov.cn/zfxxgk/governmentAffairs.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/徐州市/睢宁县",
-    "govUrl": "http://www.cnsn.gov.cn/",
-    "picked": {
-      "url": "http://www.cnsn.gov.cn/zwgk/governmentAffairs.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/徐州市/铜山区",
-    "govUrl": "http://www.zgts.gov.cn/",
-    "picked": {
-      "url": "http://www.zgts.gov.cn/002/governmentAffairs.html",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/徐州市/新沂市",
-    "govUrl": "http://www.xy.gov.cn/",
-    "picked": {
-      "url": "http://www.xy.gov.cn/002/governmentAffairs.html",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/徐州市/云龙区",
-    "govUrl": "http://www.xzyl.gov.cn/",
-    "picked": {
-      "url": "http://www.xzyl.gov.cn/zfxxgk/governmentAffairs.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "江苏省/盐城市/东台市",
@@ -4730,105 +1228,6 @@
     "key": "江苏省/盐城市/响水县",
     "govUrl": "https://www.xiangshui.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "江苏省/扬州市",
-    "govUrl": "https://www.yangzhou.gov.cn/",
-    "picked": {
-      "url": "https://www.yangzhou.gov.cn/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/扬州市/高邮市",
-    "govUrl": "http://gaoyou.yangzhou.gov.cn/",
-    "picked": {
-      "url": "http://gaoyou.yangzhou.gov.cn/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/扬州市/邗江区",
-    "govUrl": "http://www.hj.gov.cn/",
-    "picked": {
-      "url": "http://www.hj.gov.cn/zfxxgk/fdzdgknr/index.html",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/扬州市/江都区",
-    "govUrl": "http://www.jiangdu.gov.cn/",
-    "picked": {
-      "url": "http://www.jiangdu.gov.cn/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/扬州市/仪征市",
-    "govUrl": "https://www.yizheng.gov.cn/",
-    "picked": {
-      "url": "https://www.yizheng.gov.cn/zfxxgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/镇江市/丹阳市",
-    "govUrl": "http://www.danyang.gov.cn/",
-    "picked": {
-      "url": "http://www.danyang.gov.cn/danyang/zwgk/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/镇江市/京口区",
-    "govUrl": "http://www.jingkou.gov.cn/",
-    "picked": {
-      "url": "http://www.jingkou.gov.cn/jingkou/tmzf/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江苏省/镇江市/扬中市",
-    "govUrl": "http://www.yz.gov.cn/",
-    "picked": {
-      "url": "http://www.yz.gov.cn/yangzhong/zwgk/xxgkpt.shtml",
-      "text": "部门政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/抚州市",
-    "govUrl": "https://www.jxfz.gov.cn/",
-    "picked": {
-      "url": "https://www.jxfz.gov.cn/col/col42/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "江西省/抚州市/东乡区",
@@ -4866,17 +1265,6 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "江西省/抚州市/宜黄县",
-    "govUrl": "http://www.jxyh.gov.cn/",
-    "picked": {
-      "url": "http://www.jxyh.gov.cn/col/col2186/index.html?number=",
-      "text": "部门信息公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "江西省/抚州市/资溪县",
     "govUrl": "http://www.zixi.gov.cn/",
     "reason": "no-disclosure-route"
@@ -4885,138 +1273,6 @@
     "key": "江西省/吉安市/安福县",
     "govUrl": "http://www.afx.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "江西省/吉安市/吉安县",
-    "govUrl": "http://www.jianxian.gov.cn/",
-    "picked": {
-      "url": "http://www.jianxian.gov.cn/xxgk-list-jjafdzdgknr.html",
-      "text": "法定主动公开",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/吉安市/吉水县",
-    "govUrl": "http://www.jishui.gov.cn/",
-    "picked": {
-      "url": "http://www.jishui.gov.cn/xxgk-list-jsxfdzdgknr.html",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/吉安市/吉州区",
-    "govUrl": "http://www.jzq.gov.cn/",
-    "picked": {
-      "url": "http://www.jzq.gov.cn/xxgk-list-jzqzf.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/吉安市/井冈山市",
-    "govUrl": "http://www.jgs.gov.cn/",
-    "picked": {
-      "url": "http://www.jgs.gov.cn/xxgk-list-zhengfuxinxigongkaizhinan.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/吉安市/青原区",
-    "govUrl": "http://www.qyq.gov.cn/",
-    "picked": {
-      "url": "http://www.qyq.gov.cn/xxgk-list-zfxxgkiazlir.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/吉安市/遂川县",
-    "govUrl": "http://www.suichuan.gov.cn/",
-    "picked": {
-      "url": "http://www.suichuan.gov.cn/xxgk-show-10179787.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/吉安市/泰和县",
-    "govUrl": "http://www.jxth.gov.cn/",
-    "picked": {
-      "url": "http://www.jxth.gov.cn/xxgk-list-zhengfuxinxigongkaizhinan.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/吉安市/万安县",
-    "govUrl": "http://www.wanan.gov.cn/",
-    "picked": {
-      "url": "http://www.wanan.gov.cn/xxgk-list-wafdzdgknr.html",
-      "text": "法定主动公开",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/吉安市/峡江县",
-    "govUrl": "http://www.xiajiang.gov.cn/",
-    "picked": {
-      "url": "http://www.xiajiang.gov.cn/xxgk-show-10236169.html",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/吉安市/新干县",
-    "govUrl": "http://www.xingan.gov.cn/",
-    "picked": {
-      "url": "http://www.xingan.gov.cn/xxgk-list-xgfdzdgknr.html",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/吉安市/永丰县",
-    "govUrl": "http://www.jxyongfeng.gov.cn/",
-    "picked": {
-      "url": "http://www.jxyongfeng.gov.cn/xxgk-list-xinxigongkaizhinan.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/吉安市/永新县",
-    "govUrl": "http://www.yongxin.gov.cn/",
-    "picked": {
-      "url": "http://www.yongxin.gov.cn/xxgk-list-yxfdzdgknr.html",
-      "text": "信息公开目录",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "江西省/景德镇市",
@@ -5042,28 +1298,6 @@
     "key": "江西省/景德镇市/珠山区",
     "govUrl": "http://www.jdzzsq.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "江西省/九江市/德安县",
-    "govUrl": "http://www.dean.gov.cn/",
-    "picked": {
-      "url": "http://www.dean.gov.cn/zw/",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/九江市/濂溪区",
-    "govUrl": "http://www.lianxi.gov.cn/",
-    "picked": {
-      "url": "http://www.lianxi.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "江西省/九江市/瑞昌市",
@@ -5101,75 +1335,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "江西省/上饶市",
-    "govUrl": "https://www.zgsr.gov.cn/",
-    "picked": {
-      "url": "https://www.zgsr.gov.cn/zgsr/zwgk/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "江西省/上饶市/德兴市",
     "govUrl": "http://www.dxs.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "江西省/上饶市/广丰区",
-    "govUrl": "http://www.gfx.gov.cn/",
-    "picked": {
-      "url": "http://www.gfx.gov.cn/gfx/xxgk/zwgk_v2.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/上饶市/鄱阳县",
-    "govUrl": "http://www.poyang.gov.cn/",
-    "picked": {
-      "url": "http://www.poyang.gov.cn/poyang/xiangzhenxinxigongkai/ygxxgkxiangzhen.shtml",
-      "text": "乡镇政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/上饶市/铅山县",
-    "govUrl": "http://www.jxyanshan.gov.cn/",
-    "picked": {
-      "url": "http://www.jxyanshan.gov.cn/jxyanshan/zwgk/zwgk1639985245001.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/上饶市/万年县",
-    "govUrl": "http://www.zgwn.gov.cn/",
-    "picked": {
-      "url": "http://www.zgwn.gov.cn/zgwn/zwgk/zwgk.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/上饶市/信州区",
-    "govUrl": "http://www.jxxz.gov.cn/",
-    "picked": {
-      "url": "http://www.jxxz.gov.cn/jxxz/xxgk/xxgk_v2.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "江西省/上饶市/弋阳县",
@@ -5177,256 +1345,9 @@
     "reason": "homepage-unreachable"
   },
   {
-    "key": "江西省/上饶市/余干县",
-    "govUrl": "http://www.yugan.gov.cn/",
-    "picked": {
-      "url": "http://www.yugan.gov.cn/yugan/xzfxxgkygx/zw_xxgk_xz.shtml",
-      "text": "部门信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "江西省/上饶市/玉山县",
     "govUrl": "http://www.zgys.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "江西省/新余市",
-    "govUrl": "https://www.xinyu.gov.cn/",
-    "picked": {
-      "url": "https://www.xinyu.gov.cn/xinyu/zwgk/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/新余市/分宜县",
-    "govUrl": "http://www.fenyi.gov.cn/",
-    "picked": {
-      "url": "http://www.fenyi.gov.cn/fenyi/fdzdgknr/xxgk_zlists.shtml",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/新余市/渝水区",
-    "govUrl": "http://www.yushui.gov.cn/",
-    "picked": {
-      "url": "http://www.yushui.gov.cn/yushui/zwgk/zwgk.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/宜春市",
-    "govUrl": "https://www.yichun.gov.cn/",
-    "picked": {
-      "url": "https://www.yichun.gov.cn/ycsrmzf/zwgk/pc/list.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/宜春市/奉新县",
-    "govUrl": "http://www.fengxin.gov.cn/",
-    "picked": {
-      "url": "http://www.fengxin.gov.cn/fxxrmzf/zwgk95/pc/list.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/宜春市/高安市",
-    "govUrl": "http://www.gaoan.gov.cn/",
-    "picked": {
-      "url": "http://zwgk.gcly.gaoan.gov.cn/web",
-      "text": "政府信息公开导航页",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/宜春市/靖安县",
-    "govUrl": "http://www.jxjaxzf.gov.cn/",
-    "picked": {
-      "url": "http://www.jxjaxzf.gov.cn/jaxrmzf/zwgka7/pc/list.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/宜春市/樟树市",
-    "govUrl": "http://www.zhangshu.gov.cn/",
-    "picked": {
-      "url": "http://www.zhangshu.gov.cn/zssrmzf/zwgkee/pc/list.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "江西省/鹰潭市",
-    "govUrl": "https://www.yingtan.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "江西省/鹰潭市/余江区",
-    "govUrl": "http://www.yujiang.gov.cn/",
-    "picked": {
-      "url": "http://www.yujiang.gov.cn/col/col8937/index.html",
-      "text": "基层政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/鞍山市",
-    "govUrl": "http://www.anshan.gov.cn/",
-    "picked": {
-      "url": "http://www.anshan.gov.cn/asszf/zfxxgkml/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/鞍山市/海城市",
-    "govUrl": "http://www.haicheng.gov.cn/",
-    "picked": {
-      "url": "http://www.haicheng.gov.cn/hcs/zfxxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/鞍山市/立山区",
-    "govUrl": "http://www.lishan.gov.cn/",
-    "picked": {
-      "url": "http://www.lishan.gov.cn/asslsqzf/zwgkr/index.html",
-      "text": "立山区“5.15政务公开日”专题",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/鞍山市/千山区",
-    "govUrl": "http://www.qianshan.gov.cn/",
-    "picked": {
-      "url": "http://www.qianshan.gov.cn/assqsq/zfxxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/鞍山市/台安县",
-    "govUrl": "http://www.lntaian.gov.cn/",
-    "picked": {
-      "url": "http://www.lntaian.gov.cn/taxzf/zfxxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/鞍山市/铁东区",
-    "govUrl": "http://www.tiedong.gov.cn/",
-    "picked": {
-      "url": "http://www.tiedong.gov.cn/asstdq/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/鞍山市/铁西区",
-    "govUrl": "http://www.astxqzf.gov.cn/",
-    "picked": {
-      "url": "http://www.astxqzf.gov.cn/txq/zfxxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/鞍山市/岫岩满族自治县",
-    "govUrl": "http://www.xiuyan.gov.cn/",
-    "picked": {
-      "url": "http://www.xiuyan.gov.cn/xyxzf/zfxxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/本溪市",
-    "govUrl": "https://www.benxi.gov.cn/",
-    "picked": {
-      "url": "https://www.benxi.gov.cn/zt/515zwgkr",
-      "text": "5·15政务公开日",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/朝阳市/双塔区",
-    "govUrl": "https://www.lnst.gov.cn/",
-    "picked": {
-      "url": "http://www.lnst.gov.cn//cystq/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/大连市",
-    "govUrl": "https://www.dl.gov.cn/",
-    "picked": {
-      "url": "https://www.dl.gov.cn/col/col41/index.html?number=&vc_xxgkarea=2102000056-1&jh=263",
-      "text": "信息公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/大连市/甘井子区",
-    "govUrl": "https://www.dlgjz.gov.cn/",
-    "picked": {
-      "url": "https://www.dlgjz.gov.cn/col/col11253/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "辽宁省/大连市/金州区",
@@ -5434,42 +1355,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "辽宁省/大连市/旅顺口区",
-    "govUrl": "http://www.dllsk.gov.cn/",
-    "picked": {
-      "url": "http://www.dllsk.gov.cn/zfxxgk/index.html",
-      "text": "政府信息公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/大连市/普兰店区",
-    "govUrl": "http://www.dlpld.gov.cn/",
-    "picked": {
-      "url": "http://www.dlpld.gov.cn/xxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "辽宁省/大连市/沙河口区",
     "govUrl": "http://www.dlshk.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "辽宁省/大连市/瓦房店市",
-    "govUrl": "https://www.dlwfd.gov.cn/",
-    "picked": {
-      "url": "https://www.dlwfd.gov.cn/wfdxxgk/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "辽宁省/大连市/西岗区",
@@ -5484,7 +1372,7 @@
   {
     "key": "辽宁省/大连市/中山区",
     "govUrl": "http://www.dlzs.gov.cn/",
-    "reason": "no-disclosure-route"
+    "reason": "homepage-unreachable"
   },
   {
     "key": "辽宁省/大连市/庄河市",
@@ -5507,64 +1395,9 @@
     "reason": "homepage-unreachable"
   },
   {
-    "key": "辽宁省/葫芦岛市/建昌县",
-    "govUrl": "https://www.jianchang.gov.cn/",
-    "picked": {
-      "url": "https://www.jianchang.gov.cn/xxgk_3511/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/葫芦岛市/连山区",
-    "govUrl": "http://www.lianshan.gov.cn/",
-    "picked": {
-      "url": "http://www.lianshan.gov.cn/zwgk/xxgkml/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/葫芦岛市/龙港区",
-    "govUrl": "https://www.lgq.gov.cn/",
-    "picked": {
-      "url": "https://www.lgq.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "辽宁省/葫芦岛市/南票区",
     "govUrl": "http://www.npq.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "辽宁省/葫芦岛市/绥中县",
-    "govUrl": "http://www.szx.gov.cn/",
-    "picked": {
-      "url": "http://www.szx.gov.cn/xxgk_21446/",
-      "text": "信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/锦州市/北镇市",
-    "govUrl": "https://www.bzs.gov.cn/",
-    "picked": {
-      "url": "https://www.bzs.gov.cn/zwgk.htm",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "辽宁省/锦州市/古塔区",
@@ -5572,322 +1405,14 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "辽宁省/锦州市/凌海市",
-    "govUrl": "http://www.lnlh.gov.cn/",
-    "picked": {
-      "url": "http://www.lnlh.gov.cn/zwgk1.htm",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/锦州市/凌河区",
-    "govUrl": "https://www.jzlhqzf.gov.cn/",
-    "picked": {
-      "url": "https://www.jzlhqzf.gov.cn/zwgk1/fdzdgknr/lzyj.htm",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/锦州市/太和区",
-    "govUrl": "http://www.jzth.gov.cn/",
-    "picked": {
-      "url": "http://www.jzth.gov.cn/zwgongka/fdzdgknr/zwgkrhdzl.htm",
-      "text": "政务公开日活动专栏",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/锦州市/义县",
-    "govUrl": "http://www.lnyx.gov.cn/",
-    "picked": {
-      "url": "http://www.lnyx.gov.cn/xxgk/zfxxgkml.htm",
-      "text": "信息公开目录",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "辽宁省/辽阳市",
     "govUrl": "http://www.liaoyang.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "辽宁省/辽阳市/白塔区",
-    "govUrl": "http://www.lybtq.gov.cn/",
-    "picked": {
-      "url": "http://www.lybtq.gov.cn/info_open.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/辽阳市/灯塔市",
-    "govUrl": "http://www.dengta.gov.cn/",
-    "picked": {
-      "url": "http://www.dengta.gov.cn/info_open.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/辽阳市/弓长岭区",
-    "govUrl": "http://www.lygcl.gov.cn/",
-    "picked": {
-      "url": "http://www.lygcl.gov.cn/info_open.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/辽阳市/宏伟区",
-    "govUrl": "http://www.lyhw.gov.cn/",
-    "picked": {
-      "url": "http://www.lyhw.gov.cn/info_open.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/辽阳市/辽阳县",
-    "govUrl": "http://www.liaoyangxian.gov.cn/",
-    "picked": {
-      "url": "http://www.liaoyangxian.gov.cn/info_open.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/辽阳市/太子河区",
-    "govUrl": "http://www.tzh.gov.cn/",
-    "picked": {
-      "url": "http://www.tzh.gov.cn/info_open.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/辽阳市/文圣区",
-    "govUrl": "http://www.wensheng.gov.cn/",
-    "picked": {
-      "url": "http://www.wensheng.gov.cn/info_open.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/盘锦市",
-    "govUrl": "https://www.panjin.gov.cn/",
-    "picked": {
-      "url": "http://www.panjin.gov.cn/html/1840/",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/盘锦市/盘山县",
-    "govUrl": "https://www.panshan.gov.cn/",
-    "picked": {
-      "url": "http://www.panshan.gov.cn/13058/",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/盘锦市/兴隆台区",
-    "govUrl": "http://www.xlt.gov.cn/",
-    "picked": {
-      "url": "http://www.xlt.gov.cn/12874/",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/沈阳市/大东区",
-    "govUrl": "http://www.sydd.gov.cn/",
-    "picked": {
-      "url": "http://www.sydd.gov.cn/zwgk/fdzdgknr/qtzfxx/",
-      "text": "重点政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/沈阳市/皇姑区",
-    "govUrl": "http://www.syhg.gov.cn/",
-    "picked": {
-      "url": "http://www.syhg.gov.cn/xxgk/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/沈阳市/沈河区",
-    "govUrl": "http://www.shenhe.gov.cn/",
-    "picked": {
-      "url": "http://www.shenhe.gov.cn/dzgk/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/沈阳市/于洪区",
-    "govUrl": "http://www.syyh.gov.cn/",
-    "picked": {
-      "url": "http://www.syyh.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/铁岭市",
-    "govUrl": "https://www.tieling.gov.cn/",
-    "picked": {
-      "url": "https://www.tieling.gov.cn/tieling/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/铁岭市/昌图县",
-    "govUrl": "http://www.changtu.gov.cn/",
-    "picked": {
-      "url": "http://www.changtu.gov.cn/changtu/zwgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/铁岭市/调兵山市",
-    "govUrl": "http://www.lndbss.gov.cn/",
-    "picked": {
-      "url": "http://www.lndbss.gov.cn/diaobingshan/zfxxgk/zfxxgkml/index.html",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/铁岭市/开原市",
-    "govUrl": "http://www.lnky.gov.cn/",
-    "picked": {
-      "url": "http://www.lnky.gov.cn/kaiyuan/zfxxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/铁岭市/清河区",
-    "govUrl": "http://www.tlqh.gov.cn/",
-    "picked": {
-      "url": "http://www.tlqh.gov.cn/qinghe/zwgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/铁岭市/铁岭县",
-    "govUrl": "http://www.tielingxian.gov.cn/",
-    "picked": {
-      "url": "http://www.tielingxian.gov.cn/tlx/xxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/铁岭市/西丰县",
-    "govUrl": "http://www.lntlxf.gov.cn/",
-    "picked": {
-      "url": "http://www.lntlxf.gov.cn/xifeng/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "辽宁省/铁岭市/银州区",
-    "govUrl": "http://www.tlyz.gov.cn/",
-    "picked": {
-      "url": "http://www.tlyz.gov.cn/yinzhou/zwgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "内蒙古自治区/阿拉善盟",
     "govUrl": "https://www.als.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "内蒙古自治区/阿拉善盟/阿拉善右旗",
-    "govUrl": "https://www.alsyq.gov.cn/",
-    "picked": {
-      "url": "https://www.alsyq.gov.cn/col/col4519/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/阿拉善盟/阿拉善左旗",
-    "govUrl": "http://www.alszq.gov.cn/",
-    "picked": {
-      "url": "http://www.alszq.gov.cn/col/col4789/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "内蒙古自治区/阿拉善盟/额济纳旗",
@@ -5900,243 +1425,14 @@
     "reason": "homepage-unreachable"
   },
   {
-    "key": "内蒙古自治区/包头市/达尔罕茂明安联合旗",
-    "govUrl": "http://www.dmlhq.gov.cn/",
-    "picked": {
-      "url": "http://www.dmlhq.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/赤峰市/阿鲁科尔沁旗",
-    "govUrl": "https://www.alkeqq.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
     "key": "内蒙古自治区/赤峰市/克什克腾旗",
-    "govUrl": "https://www.kskt.gov.cn/",
+    "govUrl": "http://www.kskt.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "内蒙古自治区/赤峰市/宁城县",
-    "govUrl": "https://www.ningchengxian.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "内蒙古自治区/赤峰市/翁牛特旗",
-    "govUrl": "https://www.wnt.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "内蒙古自治区/赤峰市/元宝山区",
-    "govUrl": "https://www.ybs.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "内蒙古自治区/鄂尔多斯市",
-    "govUrl": "https://www.ordos.gov.cn/",
-    "picked": {
-      "url": "https://www.ordos.gov.cn/gk_128120/zfxxgkzl/zdgksxmlqd/",
-      "text": "政府信息公开主动事项目录清单",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/呼和浩特市/清水河县",
-    "govUrl": "http://www.qingshuihe.gov.cn/",
-    "picked": {
-      "url": "http://www.qingshuihe.gov.cn/zwgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/呼伦贝尔市",
-    "govUrl": "http://www.hlbe.gov.cn/",
-    "picked": {
-      "url": "http://www.hlbe.gov.cn/Openness/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/呼伦贝尔市/陈巴尔虎旗",
-    "govUrl": "http://www.cbrhq.gov.cn/",
-    "picked": {
-      "url": "http://www.cbrhq.gov.cn/Openness/",
-      "text": "&#xea41; 政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/呼伦贝尔市/额尔古纳市",
-    "govUrl": "http://www.eegn.gov.cn/",
-    "picked": {
-      "url": "http://www.eegn.gov.cn/Openness/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/呼伦贝尔市/鄂伦春自治旗",
-    "govUrl": "http://www.elc.gov.cn/",
-    "picked": {
-      "url": "http://www.elc.gov.cn/OpennessGuide/showList/463.html?page=1",
-      "text": "政府信息公开专栏",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/呼伦贝尔市/海拉尔区",
-    "govUrl": "https://www.hailar.gov.cn/",
-    "picked": {
-      "url": "https://www.hailar.gov.cn/Openness/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/呼伦贝尔市/新巴尔虎左旗",
-    "govUrl": "http://www.xzq.gov.cn/",
-    "picked": {
-      "url": "http://www.xzq.gov.cn/Openness/",
-      "text": "&#xea41; 政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/呼伦贝尔市/牙克石市",
-    "govUrl": "https://www.yks.gov.cn/",
-    "picked": {
-      "url": "https://www.yks.gov.cn/Openness/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/呼伦贝尔市/扎兰屯市",
-    "govUrl": "https://www.zhalantun.gov.cn/",
-    "picked": {
-      "url": "https://www.zhalantun.gov.cn/Openness/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/乌海市/海勃湾区",
-    "govUrl": "https://www.haibowan.gov.cn/",
-    "picked": {
-      "url": "https://www.haibowan.gov.cn/zfxxgk/fdzdgknr/?gk=3",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "内蒙古自治区/锡林郭勒盟/苏尼特右旗",
     "govUrl": "https://www.sntyq.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "内蒙古自治区/兴安盟",
-    "govUrl": "https://www.xam.gov.cn/",
-    "picked": {
-      "url": "https://www.xam.gov.cn/xam/zwgk73/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/兴安盟/阿尔山市",
-    "govUrl": "http://www.aes.gov.cn/",
-    "picked": {
-      "url": "http://www.aes.gov.cn/aes/zwgk98/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/兴安盟/科尔沁右翼前旗",
-    "govUrl": "http://www.kyqq.gov.cn/",
-    "picked": {
-      "url": "http://www.kyqq.gov.cn/kyqq/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/兴安盟/科尔沁右翼中旗",
-    "govUrl": "http://www.kyzq.gov.cn/",
-    "picked": {
-      "url": "http://www.kyzq.gov.cn/kyzq/zwgk/zfxxgk27/bmzfxxgk/index.html",
-      "text": "部门政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/兴安盟/突泉县",
-    "govUrl": "http://www.tq.gov.cn/",
-    "picked": {
-      "url": "http://www.tq.gov.cn/tq/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/兴安盟/乌兰浩特市",
-    "govUrl": "http://www.wlht.gov.cn/",
-    "picked": {
-      "url": "http://www.wlht.gov.cn/wlht/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "内蒙古自治区/兴安盟/扎赉特旗",
-    "govUrl": "http://www.zltq.gov.cn/",
-    "picked": {
-      "url": "http://www.zltq.gov.cn/zltq/zwgk/index.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "宁夏回族自治区/固原市/彭阳县",
@@ -6145,13 +1441,8 @@
   },
   {
     "key": "宁夏回族自治区/吴忠市/盐池县",
-    "govUrl": "https://www.yanchi.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "青海省",
-    "govUrl": "https://www.qinghai.gov.cn/",
-    "reason": "homepage-unreachable"
+    "govUrl": "http://www.yanchi.gov.cn/",
+    "reason": "no-disclosure-route"
   },
   {
     "key": "青海省/果洛藏族自治州",
@@ -6187,28 +1478,6 @@
     "key": "青海省/果洛藏族自治州/玛沁县",
     "govUrl": "http://www.maqin.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "青海省/海北藏族自治州",
-    "govUrl": "https://www.haibei.gov.cn/",
-    "picked": {
-      "url": "https://www.haibei.gov.cn/public/column/6616331?type=2&nav=1",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "青海省/海北藏族自治州/门源回族自治县",
-    "govUrl": "http://www.menyuan.gov.cn/",
-    "picked": {
-      "url": "http://www.menyuan.gov.cn/public/column/6617041?type=2&nav=1",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "青海省/海东市/化隆回族自治县",
@@ -6247,7 +1516,7 @@
   },
   {
     "key": "青海省/黄南藏族自治州",
-    "govUrl": "https://www.huangnan.gov.cn/",
+    "govUrl": "http://www.huangnan.gov.cn/",
     "reason": "homepage-unreachable"
   },
   {
@@ -6266,20 +1535,15 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "青海省/西宁市/大通回族土族自治县",
-    "govUrl": "https://www.datong.gov.cn/",
+    "key": "青海省/西宁市/湟源县",
+    "govUrl": "https://www.huangyuan.gov.cn/",
     "picked": {
-      "url": "https://www.datong.gov.cn/index.php?s=news&c=show&id=15230",
-      "text": "保障人民群众依法获取政府信息——政府信息公开条例解...",
+      "url": "https://www.huangyuan.gov.cn/index.php?s=news&c=category&id=53",
+      "text": "政府信息公开",
       "score": 90,
       "source": "anchor",
       "validated": true
     }
-  },
-  {
-    "key": "青海省/西宁市/湟源县",
-    "govUrl": "https://www.huangyuan.gov.cn/",
-    "reason": "no-disclosure-route"
   },
   {
     "key": "青海省/西宁市/湟中区",
@@ -6287,223 +1551,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "青海省/玉树藏族自治州",
-    "govUrl": "http://www.yushuzhou.gov.cn/",
-    "picked": {
-      "url": "https://www.yushuzhou.gov.cn/xxgk/Default.aspx",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "青海省/玉树藏族自治州/称多县",
-    "govUrl": "http://www.chengduo.gov.cn/",
-    "picked": {
-      "url": "http://www.chengduo.gov.cn/xxgk.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "青海省/玉树藏族自治州/囊谦县",
-    "govUrl": "http://www.nangqian.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "青海省/玉树藏族自治州/曲麻莱县",
-    "govUrl": "https://www.qumalai.gov.cn/",
-    "picked": {
-      "url": "https://www.qumalai.gov.cn/xxgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "青海省/玉树藏族自治州/玉树市",
-    "govUrl": "https://www.yushushi.gov.cn/",
-    "picked": {
-      "url": "https://www.yushushi.gov.cn/xxgk/",
-      "text": "信息公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "青海省/玉树藏族自治州/杂多县",
-    "govUrl": "http://www.zaduo.gov.cn/",
-    "picked": {
-      "url": "http://www.zaduo.gov.cn/xxgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/滨州市/滨城区",
-    "govUrl": "http://www.bincheng.gov.cn/",
-    "picked": {
-      "url": "http://bincheng.gov.cn/zfxxgk/zdgknr/class/0.html",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/滨州市/博兴县",
-    "govUrl": "http://www.boxing.gov.cn/",
-    "picked": {
-      "url": "http://www.boxing.gov.cn/col/col214376/index.html?vc_xxgkarea=1137162500439166XY-1&number=",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/滨州市/惠民县",
-    "govUrl": "http://www.huimin.gov.cn/",
-    "picked": {
-      "url": "http://www.huimin.gov.cn/col/col239117/index.html?vc_xxgkarea=11371621673187420N-1",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/滨州市/无棣县",
-    "govUrl": "http://www.wudi.gov.cn/",
-    "picked": {
-      "url": "http://www.wudi.gov.cn/col/col119147/index.html?vc_xxgkarea=11371623004384523M-1",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/滨州市/阳信县",
-    "govUrl": "http://www.yangxin.gov.cn/",
-    "picked": {
-      "url": "http://www.yangxin.gov.cn/col/col125007/index.html?vc_xxgkarea=11371622004380928G-1&jh=263",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/滨州市/沾化区",
-    "govUrl": "http://www.zhanhua.gov.cn/",
-    "picked": {
-      "url": "http://www.zhanhua.gov.cn/col/col198019/index.html?vc_xxgkarea=11371603004387601R-1&jh=263",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/滨州市/邹平市",
-    "govUrl": "http://www.zouping.gov.cn/",
-    "picked": {
-      "url": "http://www.zouping.gov.cn/col/col229487/index.html?vc_xxgkarea=004394115&jh=263",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/德州市/临邑县",
-    "govUrl": "http://www.linyixian.gov.cn/",
-    "picked": {
-      "url": "http://www.linyixian.gov.cn/n30334494/xxgkml_index.html",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/德州市/陵城区",
-    "govUrl": "http://www.dzlc.gov.cn/",
-    "picked": {
-      "url": "http://www.dzlc.gov.cn/n30888572/n31109385/n42893507/c56525170/content.html",
-      "text": "陵城区政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/德州市/宁津县",
-    "govUrl": "http://sdningjin.gov.cn/",
-    "picked": {
-      "url": "http://www.sdningjin.gov.cn/n50593881/xxgk_index.html",
-      "text": "信息公开目录",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "山东省/德州市/平原县",
     "govUrl": "http://www.zgpingyuan.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "山东省/德州市/齐河县",
-    "govUrl": "http://www.qihe.gov.cn/",
-    "picked": {
-      "url": "http://www.qihe.gov.cn/n30552226/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/德州市/庆云县",
-    "govUrl": "http://www.qingyun.gov.cn/",
-    "picked": {
-      "url": "http://www.qingyun.gov.cn/n30398511/n37909930/n37914827/n37915726/index.html",
-      "text": "政府信息公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/德州市/夏津县",
-    "govUrl": "http://www.xiajin.gov.cn/",
-    "picked": {
-      "url": "http://www.xiajin.gov.cn/n31121413/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/东营市",
-    "govUrl": "http://www.dongying.gov.cn/",
-    "picked": {
-      "url": "http://www.dongying.gov.cn/col/col38805/index.html?number=&vc_xxgkarea=dongyingshi&jh=263",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "山东省/东营市/东营区",
@@ -6521,28 +1571,6 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "山东省/东营市/利津县",
-    "govUrl": "http://www.lijin.gov.cn/",
-    "picked": {
-      "url": "http://www.lijin.gov.cn/col/col41103/index.html?vc_xxgkarea=12370522K21505011R&jh=263",
-      "text": "政府信息公开目录",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/菏泽市/单县",
-    "govUrl": "http://www.shanxian.gov.cn/",
-    "picked": {
-      "url": "http://www.shanxian.gov.cn/sxzwgk/",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "山东省/济南市/历下区",
     "govUrl": "http://www.lixia.gov.cn/",
     "reason": "no-disclosure-route"
@@ -6556,17 +1584,6 @@
     "key": "山东省/济宁市/金乡县",
     "govUrl": "http://www.jinxiang.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "山东省/济宁市/梁山县",
-    "govUrl": "http://www.liangshan.gov.cn/",
-    "picked": {
-      "url": "http://www.liangshan.gov.cn/col/col31896/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "山东省/济宁市/曲阜市",
@@ -6587,17 +1604,6 @@
     "key": "山东省/济宁市/鱼台县",
     "govUrl": "http://jiytzwfw.sd.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "山东省/济宁市/邹城市",
-    "govUrl": "http://www.zoucheng.gov.cn/",
-    "picked": {
-      "url": "http://www.zoucheng.gov.cn/col/col23393/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "山东省/聊城市",
@@ -6631,212 +1637,14 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "山东省/日照市/东港区",
-    "govUrl": "http://www.rzdonggang.gov.cn/",
-    "picked": {
-      "url": "http://www.rzdonggang.gov.cn/col/col31627/index.html",
-      "text": "政府信息公开链接",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/日照市/莒县",
-    "govUrl": "http://www.juxian.gov.cn/",
-    "picked": {
-      "url": "http://www.juxian.gov.cn/col/col163412/index.html",
-      "text": "法定主动公开内容",
-      "score": 65,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/日照市/岚山区",
-    "govUrl": "http://www.rzlanshan.gov.cn/",
-    "picked": {
-      "url": "http://www.rzlanshan.gov.cn/col/col158649/index.html",
-      "text": "法定主动公开内容",
-      "score": 65,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "山东省/日照市/五莲县",
     "govUrl": "http://www.wulian.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "山东省/泰安市/岱岳区",
-    "govUrl": "http://www.daiyue.gov.cn/",
-    "picked": {
-      "url": "http://www.daiyue.gov.cn/col/col171531/index.html?vc_xxgkarea=DS1015454545-1",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/泰安市/东平县",
-    "govUrl": "http://www.dongping.gov.cn/",
-    "picked": {
-      "url": "http://www.dongping.gov.cn/col/col171598/index.html?vc_xxgkarea=DP0122144554545A-1",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/泰安市/新泰市",
-    "govUrl": "http://www.xintai.gov.cn/",
-    "picked": {
-      "url": "http://www.xintai.gov.cn/col/col171552/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "山东省/威海市/文登区",
     "govUrl": "http://www.wendeng.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "山东省/潍坊市/坊子区",
-    "govUrl": "http://www.fangzi.gov.cn/",
-    "picked": {
-      "url": "http://www.fangzi.gov.cn/fzq/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/潍坊市/高密市",
-    "govUrl": "http://www.gaomi.gov.cn/",
-    "picked": {
-      "url": "http://www.gaomi.gov.cn/xxgk/gkml.html",
-      "text": "市政府部门与各镇街区信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/潍坊市/寒亭区",
-    "govUrl": "http://www.hanting.gov.cn/",
-    "picked": {
-      "url": "http://www.hanting.gov.cn/htzwgk/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/潍坊市/临朐县",
-    "govUrl": "http://www.linqu.gov.cn/",
-    "picked": {
-      "url": "http://www.linqu.gov.cn/xxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/潍坊市/青州市",
-    "govUrl": "http://www.qingzhou.gov.cn/",
-    "picked": {
-      "url": "http://www.qingzhou.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/潍坊市/潍城区",
-    "govUrl": "http://www.weicheng.gov.cn/",
-    "picked": {
-      "url": "http://www.weicheng.gov.cn/WCQZWGK/",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/烟台市/福山区",
-    "govUrl": "https://www.ytfushan.gov.cn/",
-    "picked": {
-      "url": "http://www.ytfushan.gov.cn/col/col32133/index.html?jh=263",
-      "text": "法定主动公开内容",
-      "score": 65,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/烟台市/莱山区",
-    "govUrl": "https://www.ytlaishan.gov.cn/",
-    "picked": {
-      "url": "https://www.ytlaishan.gov.cn/col/col45721/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/烟台市/莱州市",
-    "govUrl": "https://www.laizhou.gov.cn/",
-    "picked": {
-      "url": "https://www.laizhou.gov.cn/col/col44497/index.html?vc_xxgkarea=12370683MB27263668A&jh=263",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/烟台市/龙口市",
-    "govUrl": "https://www.longkou.gov.cn/",
-    "picked": {
-      "url": "https://www.longkou.gov.cn/col/col41255/index.html?vc_xxgkarea=113706000042603877B1&jh=263",
-      "text": "法定主动公开内容",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/烟台市/牟平区",
-    "govUrl": "https://www.muping.gov.cn/",
-    "picked": {
-      "url": "http://www.muping.gov.cn/col/col41243/index.html?vc_xxgkarea=113706000042603877A&jh=263",
-      "text": "法定主动公开",
-      "score": 75,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山东省/烟台市/蓬莱区",
-    "govUrl": "https://www.penglai.gov.cn/",
-    "picked": {
-      "url": "https://www.penglai.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
   },
   {
     "key": "山东省/枣庄市/峄城区",
@@ -6859,27 +1667,6 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "山西省/大同市/天镇县",
-    "govUrl": "https://www.dttz.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "山西省/大同市/阳高县",
-    "govUrl": "https://www.dtyg.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "山西省/晋中市/灵石县",
-    "govUrl": "http://www.lingshi.gov.cn/",
-    "picked": {
-      "url": "http://www.lingshi.gov.cn/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "山西省/晋中市/平遥县",
     "govUrl": "http://www.pingyao.gov.cn/",
     "reason": "no-disclosure-route"
@@ -6887,38 +1674,11 @@
   {
     "key": "山西省/晋中市/祁县",
     "govUrl": "http://www.qixian.gov.cn/",
-    "reason": "no-disclosure-route"
-  },
-  {
-    "key": "山西省/晋中市/寿阳县",
-    "govUrl": "http://www.shouyang.gov.cn/",
     "picked": {
-      "url": "http://www.shouyang.gov.cn/zwgk/zfxxgkml",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/晋中市/太谷区",
-    "govUrl": "http://www.taigu.gov.cn/",
-    "picked": {
-      "url": "http://www.taigu.gov.cn/zwgk/bmxxgkml",
-      "text": "部门信息公开目录",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/晋中市/昔阳县",
-    "govUrl": "http://www.xiyang.gov.cn/",
-    "picked": {
-      "url": "https://www.xiyang.gov.cn/zwgk/zfxxgkml",
+      "url": "http://www.qixian.gov.cn/zwgk/",
       "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
+      "score": 58,
+      "source": "constructed",
       "validated": true
     }
   },
@@ -6930,23 +1690,12 @@
   {
     "key": "山西省/晋中市/左权县",
     "govUrl": "http://www.jzzq.gov.cn/",
-    "reason": "no-disclosure-route"
+    "reason": "homepage-unreachable"
   },
   {
     "key": "山西省/吕梁市/岚县",
     "govUrl": "http://www.lanxian.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "山西省/太原市/古交市",
-    "govUrl": "https://www.sxgujiao.gov.cn/",
-    "picked": {
-      "url": "https://www.sxgujiao.gov.cn/zcjd.html",
-      "text": "信息公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "山西省/太原市/尖草坪区",
@@ -6966,128 +1715,7 @@
   {
     "key": "山西省/太原市/杏花岭区",
     "govUrl": "https://www.sxtyxhl.gov.cn/",
-    "reason": "no-disclosure-route"
-  },
-  {
-    "key": "山西省/忻州市",
-    "govUrl": "http://www.sxxz.gov.cn/",
-    "picked": {
-      "url": "https://zwgk.sxxz.gov.cn/szfgzbm/index_1249.shtml",
-      "text": "信息公开目录",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/忻州市/繁峙县",
-    "govUrl": "http://www.fanshi.gov.cn/",
-    "picked": {
-      "url": "http://www.fanshi.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/忻州市/河曲县",
-    "govUrl": "http://www.hequ.gov.cn/",
-    "picked": {
-      "url": "http://www.hequ.gov.cn/zwgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/忻州市/静乐县",
-    "govUrl": "http://www.sxjl.gov.cn/",
-    "picked": {
-      "url": "http://www.sxjl.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/忻州市/岢岚县",
-    "govUrl": "http://www.xzkl.gov.cn/",
-    "picked": {
-      "url": "http://www.xzkl.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/忻州市/宁武县",
-    "govUrl": "http://www.ningwu.gov.cn/",
-    "picked": {
-      "url": "http://www.ningwu.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/忻州市/神池县",
-    "govUrl": "http://www.shenchi.gov.cn/",
-    "picked": {
-      "url": "http://www.shenchi.gov.cn/scxzw/zwgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/忻州市/五台县",
-    "govUrl": "http://www.wutai.gov.cn/",
-    "picked": {
-      "url": "http://www.wutai.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/忻州市/五寨县",
-    "govUrl": "http://www.xzwz.gov.cn/",
-    "picked": {
-      "url": "http://www.xzwz.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/忻州市/忻府区",
-    "govUrl": "http://www.xzxfq.gov.cn/",
-    "picked": {
-      "url": "http://www.xzxfq.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "山西省/忻州市/原平市",
-    "govUrl": "http://www.yuanping.gov.cn/",
-    "picked": {
-      "url": "http://www.yuanping.gov.cn/zwgk/xxgk/zfxxgkml/",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
+    "reason": "homepage-unreachable"
   },
   {
     "key": "山西省/阳泉市/城区",
@@ -7100,31 +1728,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "山西省/运城市/芮城县",
-    "govUrl": "https://www.rcx.gov.cn/",
-    "picked": {
-      "url": "https://www.rcx.gov.cn/zfxxgk/index.shtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "山西省/运城市/夏县",
     "govUrl": "https://www.sxxiaxian.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "山西省/运城市/永济市",
-    "govUrl": "http://www.yongji.gov.cn/",
-    "picked": {
-      "url": "http://www.yongji.gov.cn/zfxxgk/xxgkzd/index.shtml",
-      "text": "信息公开 制度",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "山西省/长治市/潞州区",
@@ -7142,97 +1748,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "陕西省/商洛市/洛南县",
-    "govUrl": "https://www.luonan.gov.cn/",
-    "picked": {
-      "url": "https://www.luonan.gov.cn/zfxxgk/fdzdgk1/zfxxgkml.htm",
-      "text": "公开目录",
-      "score": 77,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "陕西省/商洛市/商南县",
-    "govUrl": "https://www.shangnan.gov.cn/",
-    "picked": {
-      "url": "https://www.shangnan.gov.cn/xxgk/fdzdgknr/ldzc.htm",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "陕西省/商洛市/商州区",
-    "govUrl": "https://www.shangzhou.gov.cn/",
-    "picked": {
-      "url": "https://www.shangzhou.gov.cn/zfxxgk/fdzdgknr/zfxxgkml.htm",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "陕西省/商洛市/柞水县",
-    "govUrl": "https://www.snzs.gov.cn/",
-    "picked": {
-      "url": "https://www.snzs.gov.cn/zfxxgk/zc/gwzl/xzfwj.htm",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "陕西省/铜川市",
-    "govUrl": "http://www.tongchuan.gov.cn/",
-    "picked": {
-      "url": "http://www.tongchuan.gov.cn/resources/site/1/html/xxgk/xxgkml/zfjg/index.html",
-      "text": "市政府部门和区县政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "陕西省/铜川市/王益区",
-    "govUrl": "http://www.tcwy.gov.cn/",
-    "picked": {
-      "url": "http://www.tcwy.gov.cn/resources/site/151/html/zfxxgk/qzfbmhzbxxgk/index.html",
-      "text": "部门和镇办信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "陕西省/铜川市/耀州区",
-    "govUrl": "http://www.yaozhou.gov.cn/",
-    "picked": {
-      "url": "http://www.yaozhou.gov.cn/news_list.rt?channlId=5627",
-      "text": "政府部门和镇办信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "陕西省/铜川市/印台区",
     "govUrl": "http://www.yintai.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "陕西省/渭南市",
-    "govUrl": "http://www.weinan.gov.cn/",
-    "picked": {
-      "url": "http://www.weinan.gov.cn/zfxxgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "陕西省/渭南市/韩城市",
@@ -7240,73 +1758,13 @@
     "reason": "homepage-unreachable"
   },
   {
-    "key": "陕西省/渭南市/华阴市",
-    "govUrl": "http://www.huayin.gov.cn/",
-    "picked": {
-      "url": "http://www.huayin.gov.cn/zfxxgk/zdxx/czxx/1.html",
-      "text": "重点信息公开目录",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "陕西省/渭南市/华州区",
     "govUrl": "https://www.hzqu.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "陕西省/西安市/鄠邑区",
-    "govUrl": "https://www.xahy.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
-    "key": "陕西省/西安市/蓝田县",
-    "govUrl": "http://www.lantian.gov.cn/",
-    "picked": {
-      "url": "http://www.lantian.gov.cn/zwgk/xxgkml/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "陕西省/西安市/莲湖区",
-    "govUrl": "http://www.lianhu.gov.cn/",
-    "picked": {
-      "url": "http://www.lianhu.gov.cn/zwgk/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "陕西省/西安市/临潼区",
-    "govUrl": "http://www.lintong.gov.cn/",
-    "picked": {
-      "url": "http://www.lintong.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "陕西省/咸阳市/淳化县",
-    "govUrl": "http://www.snchunhua.gov.cn/",
-    "picked": {
-      "url": "https://www.snchunhua.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "陕西省/咸阳市/旬邑县",
-    "govUrl": "https://www.snxunyi.gov.cn/",
+    "govUrl": "http://www.snxunyi.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
@@ -7315,85 +1773,14 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "陕西省/榆林市/佳县",
-    "govUrl": "http://www.sxjiaxian.gov.cn/",
-    "picked": {
-      "url": "http://www.sxjiaxian.gov.cn/zfxxgk/zfxxgkml/",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "陕西省/榆林市/神木市",
     "govUrl": "https://www.sxsm.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "陕西省/榆林市/子洲县",
-    "govUrl": "https://www.zizhou.gov.cn/",
-    "picked": {
-      "url": "http://www.zizhou.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "上海市/金山区",
-    "govUrl": "https://www.jinshan.gov.cn/",
-    "picked": {
-      "url": "https://www.jinshan.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
     "key": "上海市/闵行区",
     "govUrl": "https://www.shmh.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "上海市/普陀区",
-    "govUrl": "https://www.putuo.gov.cn/",
-    "picked": {
-      "url": "https://www.putuo.gov.cn/col/col1229702391/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "上海市/徐汇区",
-    "govUrl": "https://www.xuhui.gov.cn/",
-    "picked": {
-      "url": "http://www.xuhui.gov.cn/zwgk/zfxxgk/wj/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/巴中市",
-    "govUrl": "https://www.cnbz.gov.cn/",
-    "picked": {
-      "url": "https://www.cnbz.gov.cn/public/column/6600041?type=2",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/成都市",
-    "govUrl": "https://www.chengdu.gov.cn/",
-    "reason": "homepage-unreachable"
   },
   {
     "key": "四川省/成都市/成华区",
@@ -7501,83 +1888,6 @@
     "reason": "homepage-unreachable"
   },
   {
-    "key": "四川省/德阳市",
-    "govUrl": "http://www.deyang.gov.cn/",
-    "picked": {
-      "url": "http://www.deyang.gov.cn/zwgks.htm",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/德阳市/广汉市",
-    "govUrl": "http://www.guanghan.gov.cn/",
-    "picked": {
-      "url": "http://www.guanghan.gov.cn/zwgks.htm",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/德阳市/旌阳区",
-    "govUrl": "http://www.tfjy.gov.cn/",
-    "picked": {
-      "url": "http://www.tfjy.gov.cn/zwgks.htm",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/德阳市/罗江区",
-    "govUrl": "http://www.luojiang.gov.cn/",
-    "picked": {
-      "url": "http://www.luojiang.gov.cn/zwgks.htm",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/德阳市/绵竹市",
-    "govUrl": "https://www.mz.gov.cn/",
-    "picked": {
-      "url": "https://www.mz.gov.cn/zwgks.htm",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/德阳市/什邡市",
-    "govUrl": "https://www.shifang.gov.cn/",
-    "picked": {
-      "url": "https://www.shifang.gov.cn/zwgks.htm",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/德阳市/中江县",
-    "govUrl": "http://www.zhongjiang.gov.cn/",
-    "picked": {
-      "url": "http://www.zhongjiang.gov.cn/zwgks.htm",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "四川省/广安市/武胜县",
     "govUrl": "https://www.wusheng.gov.cn/",
     "reason": "no-disclosure-route"
@@ -7628,542 +1938,14 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "四川省/乐山市/市中区",
-    "govUrl": "https://www.neijiangshizhongqu.gov.cn/",
-    "picked": {
-      "url": "https://www.neijiangshizhongqu.gov.cn/szq/xxgk/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州",
-    "govUrl": "http://www.lsz.gov.cn/",
-    "picked": {
-      "url": "http://www.lsz.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州/布拖县",
-    "govUrl": "http://www.bt.gov.cn/",
-    "picked": {
-      "url": "http://www.bt.gov.cn/zfxxgk/jczwgkzl/",
-      "text": "基层政务公开专栏",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州/甘洛县",
-    "govUrl": "http://www.ganluo.gov.cn/",
-    "picked": {
-      "url": "http://www.ganluo.gov.cn/zfxxgk/zfxxgknr/zfld_30953/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州/会理市",
-    "govUrl": "http://www.huili.gov.cn/",
-    "picked": {
-      "url": "http://www.huili.gov.cn/zfxxgk/jczwgkzl_21/",
-      "text": "基层政务公开专栏",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州/雷波县",
-    "govUrl": "http://www.lbx.gov.cn/",
-    "picked": {
-      "url": "http://www.lbx.gov.cn/zfxxgk/zfxxgknr/zfld_31013/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州/美姑县",
-    "govUrl": "http://www.meigu.gov.cn/",
-    "picked": {
-      "url": "http://www.meigu.gov.cn/zfxxgk/fdzdgknr/tzgs/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州/冕宁县",
-    "govUrl": "http://www.mn.gov.cn/",
-    "picked": {
-      "url": "http://www.mn.gov.cn/zfxxgk_31429/zfxxgknr/zfld/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州/宁南县",
-    "govUrl": "http://www.ningnan.gov.cn/",
-    "picked": {
-      "url": "http://www.ningnan.gov.cn/zfxxgk_31568/zfxxgknr/zfld/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州/普格县",
-    "govUrl": "http://www.pgx.gov.cn/",
-    "picked": {
-      "url": "http://www.pgx.gov.cn/zfxxgk/zfxxgknr/zfld_30917/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州/西昌市",
-    "govUrl": "http://www.xichang.gov.cn/",
-    "picked": {
-      "url": "http://www.xichang.gov.cn/zfxxgk/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州/盐源县",
-    "govUrl": "http://www.yanyuan.gov.cn/",
-    "picked": {
-      "url": "http://www.yanyuan.gov.cn/zfxxgk/zfxxgknr/jgjj/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/凉山彝族自治州/昭觉县",
-    "govUrl": "http://www.zhaojue.gov.cn/",
-    "picked": {
-      "url": "http://www.zhaojue.gov.cn/xxgk/zdxxgk_34509/zfld_35335/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/泸州市/江阳区",
-    "govUrl": "http://www.jiangyang.gov.cn/",
-    "picked": {
-      "url": "http://www.jiangyang.gov.cn/zwgk",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/眉山市/丹棱县",
-    "govUrl": "http://www.scdl.gov.cn/",
-    "picked": {
-      "url": "http://www.scdl.gov.cn/zfxxgk/fdzdgknr/zfld.htm",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/眉山市/青神县",
-    "govUrl": "http://www.scqs.gov.cn/",
-    "picked": {
-      "url": "http://www.scqs.gov.cn/zwgk.htm",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/眉山市/仁寿县",
-    "govUrl": "http://www.rs.gov.cn/",
-    "picked": {
-      "url": "http://www.rs.gov.cn/xbdh/zwgk.htm",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "四川省/绵阳市/安州区",
     "govUrl": "http://www.anzhou.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "四川省/绵阳市/涪城区",
-    "govUrl": "http://www.myfc.gov.cn/",
-    "picked": {
-      "url": "http://www.myfc.gov.cn/fcqrmzf/c122235/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/绵阳市/平武县",
-    "govUrl": "http://www.pingwu.gov.cn/",
-    "picked": {
-      "url": "http://www.pingwu.gov.cn/pingwu/c115904/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/南充市/高坪区",
-    "govUrl": "http://www.gaoping.gov.cn/",
-    "picked": {
-      "url": "http://www.gaoping.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/南充市/营山县",
-    "govUrl": "http://www.yingshan.gov.cn/",
-    "picked": {
-      "url": "http://www.yingshan.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
     "key": "四川省/雅安市",
     "govUrl": "http://www.yaan.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "四川省/雅安市/宝兴县",
-    "govUrl": "http://www.baoxing.gov.cn/",
-    "picked": {
-      "url": "http://www.baoxing.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/雅安市/汉源县",
-    "govUrl": "http://www.hanyuan.gov.cn/",
-    "picked": {
-      "url": "http://www.hanyuan.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/雅安市/芦山县",
-    "govUrl": "http://www.yals.gov.cn/",
-    "picked": {
-      "url": "http://www.yals.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/雅安市/名山区",
-    "govUrl": "http://www.scms.gov.cn/",
-    "picked": {
-      "url": "http://www.scms.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/雅安市/石棉县",
-    "govUrl": "http://www.shimian.gov.cn/",
-    "picked": {
-      "url": "http://www.shimian.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/雅安市/天全县",
-    "govUrl": "http://www.tqx.gov.cn/",
-    "picked": {
-      "url": "http://www.tqx.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/雅安市/荥经县",
-    "govUrl": "http://www.yingjing.gov.cn/",
-    "picked": {
-      "url": "http://www.yingjing.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/雅安市/雨城区",
-    "govUrl": "http://www.yayc.gov.cn/",
-    "picked": {
-      "url": "http://www.yayc.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/宜宾市/翠屏区",
-    "govUrl": "http://www.cuiping.gov.cn/",
-    "picked": {
-      "url": "http://www.cuiping.gov.cn/zwgk/fzgh/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/宜宾市/高县",
-    "govUrl": "http://www.gaoxian.gov.cn/",
-    "picked": {
-      "url": "http://www.gaoxian.gov.cn/zwgk/zfxxgkzl/zcwj/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/宜宾市/珙县",
-    "govUrl": "http://www.gongxian.gov.cn/",
-    "picked": {
-      "url": "https://www.gongxian.gov.cn/xxgk/fdzdgknr/ghjh/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/宜宾市/江安县",
-    "govUrl": "http://www.ybja.gov.cn/",
-    "picked": {
-      "url": "http://www.ybja.gov.cn/zwgk/jbxxgk/ghjh/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/宜宾市/南溪区",
-    "govUrl": "http://www.scnx.gov.cn/",
-    "picked": {
-      "url": "http://www.scnx.gov.cn/ztzl/xxgkptzl/",
-      "text": "信息公开平台专栏",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/宜宾市/屏山县",
-    "govUrl": "http://www.ybps.gov.cn/",
-    "picked": {
-      "url": "http://www.ybps.gov.cn/zwgk/fzgh/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/宜宾市/兴文县",
-    "govUrl": "http://www.scxw.gov.cn/",
-    "picked": {
-      "url": "http://www.scxw.gov.cn/zwgk/ghjh/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/宜宾市/叙州区",
-    "govUrl": "http://www.ybxz.gov.cn/",
-    "picked": {
-      "url": "http://www.ybxz.gov.cn/xxgk/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/宜宾市/筠连县",
-    "govUrl": "http://www.scjlx.gov.cn/",
-    "picked": {
-      "url": "https://www.scjlx.gov.cn/zwgk/ghxx/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/宜宾市/长宁县",
-    "govUrl": "http://www.sccn.gov.cn/",
-    "picked": {
-      "url": "http://www.sccn.gov.cn/zwgk/zwdt/ghjh/",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/资阳市",
-    "govUrl": "http://www.ziyang.gov.cn/",
-    "picked": {
-      "url": "http://www.ziyang.gov.cn/zysrmzf/zwgk/pc/list.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/资阳市/安岳县",
-    "govUrl": "http://www.aysc.gov.cn/",
-    "picked": {
-      "url": "http://www.aysc.gov.cn/ayxrmzf/zwgk/pc/list.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/资阳市/乐至县",
-    "govUrl": "https://www.lezhi.gov.cn/",
-    "picked": {
-      "url": "https://www.lezhi.gov.cn/lzxrmzf/zwgk/pc/list.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/资阳市/雁江区",
-    "govUrl": "http://www.yanjiang.gov.cn/",
-    "picked": {
-      "url": "http://www.yanjiang.gov.cn/yjqrmzf/zwgk/pc/list.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "四川省/自贡市",
-    "govUrl": "http://www.zg.gov.cn/",
-    "picked": {
-      "url": "http://www.zg.gov.cn/zgsrmzf/zwgk/pc/list.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "天津市/宝坻区",
-    "govUrl": "https://www.tjbd.gov.cn/",
-    "picked": {
-      "url": "https://www.tjbd.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "天津市/河北区",
-    "govUrl": "http://www.tjhb.gov.cn/",
-    "picked": {
-      "url": "http://www.tjhb.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "天津市/津南区",
-    "govUrl": "https://www.tjjn.gov.cn/",
-    "picked": {
-      "url": "https://www.tjjn.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "天津市/武清区",
-    "govUrl": "https://www.tjwq.gov.cn/",
-    "picked": {
-      "url": "http://www.tjwq.gov.cn/zwgk/zfxxgk/wbj2/",
-      "text": "政府信息公开单位",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "西藏自治区/拉萨市/城关区",
@@ -8177,206 +1959,14 @@
     }
   },
   {
-    "key": "西藏自治区/林芝市",
-    "govUrl": "https://www.linzhi.gov.cn/",
-    "reason": "homepage-unreachable"
-  },
-  {
     "key": "西藏自治区/那曲市/聂荣县",
     "govUrl": "http://www.nqnrx.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "西藏自治区/日喀则市/桑珠孜区",
-    "govUrl": "http://www.sangzhuzi.gov.cn/",
-    "picked": {
-      "url": "http://www.sangzhuzi.gov.cn/info-public-item-list-single.thtml?id=14952",
-      "text": "政府信息公开目录",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿克苏地区",
-    "govUrl": "https://www.aks.gov.cn/",
-    "picked": {
-      "url": "https://www.aks.gov.cn/zwgk/zfxxgkml/index.html",
-      "text": "政府信息公开目录",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿克苏地区/阿克苏市",
-    "govUrl": "https://www.akss.gov.cn/",
-    "picked": {
-      "url": "https://www.akss.gov.cn/zwgk/jgxx/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿克苏地区/阿瓦提县",
-    "govUrl": "https://www.xjawt.gov.cn/",
-    "picked": {
-      "url": "https://www.xjawt.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
     "key": "新疆维吾尔自治区/阿克苏地区/拜城县",
     "govUrl": "https://www.xjbc.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "新疆维吾尔自治区/阿克苏地区/柯坪县",
-    "govUrl": "https://www.xjkpx.gov.cn/",
-    "picked": {
-      "url": "http://www.xjkpx.gov.cn/xxgkml/xxgkjzbz/index.html",
-      "text": "信息公开机制保障",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿克苏地区/库车市",
-    "govUrl": "https://www.xjkc.gov.cn/",
-    "picked": {
-      "url": "http://www.xjkc.gov.cn/cslm/zfxxgkyjx/index.html",
-      "text": "政府信息公开意见箱",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿克苏地区/温宿县",
-    "govUrl": "https://www.wszf.gov.cn/",
-    "picked": {
-      "url": "https://www.wszf.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿克苏地区/乌什县",
-    "govUrl": "https://www.ws.gov.cn/",
-    "picked": {
-      "url": "https://www.ws.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿克苏地区/新和县",
-    "govUrl": "http://www.xjxinhe.gov.cn/",
-    "picked": {
-      "url": "http://www.xjxinhe.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿勒泰地区",
-    "govUrl": "http://wap.xjalt.gov.cn/",
-    "picked": {
-      "url": "http://wap.xjalt.gov.cn/govxxgk/xxgk.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿勒泰地区/阿勒泰市",
-    "govUrl": "https://www.alt.gov.cn/",
-    "picked": {
-      "url": "https://www.alt.gov.cn/govxxgk/xxgk.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿勒泰地区/布尔津县",
-    "govUrl": "https://www.brj.gov.cn/",
-    "picked": {
-      "url": "https://www.brj.gov.cn/zwgk/infopublic.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿勒泰地区/福海县",
-    "govUrl": "https://www.xjfhx.gov.cn/",
-    "picked": {
-      "url": "https://www.xjfhx.gov.cn/govxxgk/xxgk.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿勒泰地区/富蕴县",
-    "govUrl": "http://www.xjfy.gov.cn/",
-    "picked": {
-      "url": "http://www.xjfy.gov.cn/govxxgk/xxgk.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿勒泰地区/哈巴河县",
-    "govUrl": "https://www.hbh.gov.cn/",
-    "picked": {
-      "url": "https://www.hbh.gov.cn/govxxgk/xxgk.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿勒泰地区/吉木乃县",
-    "govUrl": "https://www.jmn.gov.cn/",
-    "picked": {
-      "url": "https://www.jmn.gov.cn/govxxgk/gov-listTwoPage.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/阿勒泰地区/青河县",
-    "govUrl": "http://www.xjqh.gov.cn/",
-    "picked": {
-      "url": "http://www.xjqh.gov.cn/govxxgk/xxgk.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "新疆维吾尔自治区/博尔塔拉蒙古自治州/博乐市",
@@ -8415,141 +2005,9 @@
     }
   },
   {
-    "key": "新疆维吾尔自治区/乌鲁木齐市/水磨沟区",
-    "govUrl": "http://www.xjsmgq.gov.cn/",
-    "picked": {
-      "url": "http://www.xjsmgq.gov.cn/info/iList.jsp?tm_id=126",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/新疆生产建设兵团/阿拉尔市",
-    "govUrl": "http://www.ale.gov.cn/",
-    "picked": {
-      "url": "http://www.ale.gov.cn/zwgk",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "新疆维吾尔自治区/新疆生产建设兵团/白杨市",
     "govUrl": "https://www.btdjs.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "新疆维吾尔自治区/新疆生产建设兵团/北屯市",
-    "govUrl": "http://www.bts.gov.cn/",
-    "picked": {
-      "url": "http://www.bts.gov.cn/zwgk/zcwj/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/新疆生产建设兵团/胡杨河市",
-    "govUrl": "http://www.nqs.gov.cn/",
-    "picked": {
-      "url": "http://www.nqs.gov.cn/zwgk",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/新疆生产建设兵团/可克达拉市",
-    "govUrl": "http://www.cocodala.gov.cn/",
-    "picked": {
-      "url": "http://www.cocodala.gov.cn/html/1468/",
-      "text": "政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/新疆生产建设兵团/石河子市",
-    "govUrl": "http://www.shz.gov.cn/",
-    "picked": {
-      "url": "http://www.shz.gov.cn/zwgk/govement_open.html",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/新疆生产建设兵团/铁门关市",
-    "govUrl": "http://www.tmg.gov.cn/",
-    "picked": {
-      "url": "http://www.tmg.gov.cn/gk/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/新疆生产建设兵团/图木舒克市",
-    "govUrl": "https://www.xjbtnss.gov.cn/",
-    "picked": {
-      "url": "https://www.xjbtnss.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/新疆生产建设兵团/五家渠市",
-    "govUrl": "http://www.wjq.gov.cn/",
-    "picked": {
-      "url": "http://www.wjq.gov.cn/zwgk/zfxxgk/index.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "新疆维吾尔自治区/新疆生产建设兵团/新星市",
-    "govUrl": "https://www.btnsss.gov.cn/",
-    "picked": {
-      "url": "https://www.btnsss.gov.cn/gk/",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/楚雄彝族自治州/禄丰市",
-    "govUrl": "https://www.ynlf.gov.cn/",
-    "picked": {
-      "url": "https://www.ynlf.gov.cn/zfxxgk.htm",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/楚雄彝族自治州/永仁县",
-    "govUrl": "https://www.yr.gov.cn/",
-    "picked": {
-      "url": "https://www.yr.gov.cn/zfxxgk.htm",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "云南省/红河哈尼族彝族自治州/石屏县",
@@ -8562,75 +2020,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "云南省/昆明市/安宁市",
-    "govUrl": "http://www.kman.gov.cn/",
-    "picked": {
-      "url": "http://www.kman.gov.cn/zfxxgk/fdzdgknr/zfxxgkml/",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/昆明市/晋宁区",
-    "govUrl": "http://www.kmjn.gov.cn/",
-    "picked": {
-      "url": "http://www.kmjn.gov.cn/jczwgk/",
-      "text": "基层政务公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/昆明市/嵩明县",
-    "govUrl": "http://www.kmsm.gov.cn/",
-    "picked": {
-      "url": "http://www.kmsm.gov.cn/zfxxgk/",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "云南省/昆明市/五华区",
     "govUrl": "http://www.kmwh.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "云南省/丽江市",
-    "govUrl": "https://www.lijiang.gov.cn/",
-    "picked": {
-      "url": "https://www.lijiang.gov.cn/ljsrmzf/c101823/zwgk.shtml",
-      "text": "政务公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/丽江市/华坪县",
-    "govUrl": "http://www.huaping.gov.cn/",
-    "picked": {
-      "url": "http://www.huaping.gov.cn/xljhpx/c101699/zfxxgk_nrz.shtml",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/丽江市/宁蒗彝族自治县",
-    "govUrl": "https://www.ynnl.gov.cn/",
-    "picked": {
-      "url": "https://www.ynnl.gov.cn/xljnlx/c101265/zfxxgk_nr.shtml",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "云南省/临沧市/耿马傣族佤族自治县",
@@ -8648,163 +2040,9 @@
     "reason": "homepage-unreachable"
   },
   {
-    "key": "云南省/怒江傈僳族自治州",
-    "govUrl": "https://www.nujiang.gov.cn/",
-    "picked": {
-      "url": "https://www.nujiang.gov.cn/html/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/怒江傈僳族自治州/福贡县",
-    "govUrl": "https://www.fugong.gov.cn/",
-    "picked": {
-      "url": "https://www.fugong.gov.cn/html/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/怒江傈僳族自治州/贡山独龙族怒族自治县",
-    "govUrl": "https://www.gongshan.gov.cn/",
-    "picked": {
-      "url": "https://www.gongshan.gov.cn/html/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/怒江傈僳族自治州/兰坪白族普米族自治县",
-    "govUrl": "https://www.lanping.gov.cn/",
-    "picked": {
-      "url": "https://www.lanping.gov.cn/html/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/怒江傈僳族自治州/泸水市",
-    "govUrl": "https://www.ynls.gov.cn/",
-    "picked": {
-      "url": "https://www.ynls.gov.cn/html/zwgk",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "云南省/普洱市",
     "govUrl": "https://www.puershi.gov.cn/",
     "reason": "homepage-unreachable"
-  },
-  {
-    "key": "云南省/普洱市/澜沧拉祜族自治县",
-    "govUrl": "https://www.lancang.gov.cn/",
-    "picked": {
-      "url": "https://www.lancang.gov.cn/zfxxgk/fdzdgknr/zfxxgkml.htm",
-      "text": "法定主动公开内容",
-      "score": 87,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/普洱市/宁洱哈尼族彝族自治县",
-    "govUrl": "https://www.ne.gov.cn/",
-    "picked": {
-      "url": "https://www.ne.gov.cn/zwgk1/ggqsydwxxgk.htm",
-      "text": "公共企事业单位信息公开",
-      "score": 92,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/普洱市/思茅区",
-    "govUrl": "https://www.smqzf.gov.cn/",
-    "picked": {
-      "url": "https://www.smqzf.gov.cn/zfxxgk/gkml.htm",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/曲靖市/富源县",
-    "govUrl": "http://www.qjfy.gov.cn/",
-    "picked": {
-      "url": "http://www.qjfy.gov.cn/fuyuan/public/special.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/曲靖市/会泽县",
-    "govUrl": "http://www.huize.gov.cn/",
-    "picked": {
-      "url": "http://www.huize.gov.cn/huize/public/web/720.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/曲靖市/罗平县",
-    "govUrl": "http://www.luoping.gov.cn/",
-    "picked": {
-      "url": "http://www.luoping.gov.cn/public/special/zfxxgk.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/曲靖市/麒麟区",
-    "govUrl": "http://www.ql.gov.cn/",
-    "picked": {
-      "url": "http://www.ql.gov.cn/gov/public/info/1zfxxgk.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/曲靖市/师宗县",
-    "govUrl": "http://www.ynsz.gov.cn/",
-    "picked": {
-      "url": "https://www.ynsz.gov.cn/shizong/public/special.html",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/曲靖市/沾益区",
-    "govUrl": "http://www.zhanyi.gov.cn/",
-    "picked": {
-      "url": "http://www.zhanyi.gov.cn/pub/special.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "云南省/文山壮族苗族自治州/富宁县",
@@ -8837,212 +2075,14 @@
     "reason": "homepage-unreachable"
   },
   {
-    "key": "云南省/西双版纳傣族自治州",
-    "govUrl": "https://www.xsbn.gov.cn/",
-    "picked": {
-      "url": "https://www.xsbn.gov.cn/zwgk/",
-      "text": "政务公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/西双版纳傣族自治州/勐海县",
-    "govUrl": "https://www.ynmh.gov.cn/",
-    "picked": {
-      "url": "https://www.ynmh.gov.cn/zfxxgk.dhtml",
-      "text": "政府信息公开",
-      "score": 102,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "云南省/西双版纳傣族自治州/勐腊县",
     "govUrl": "https://www.ynml.gov.cn/",
     "reason": "homepage-unreachable"
   },
   {
-    "key": "云南省/昭通市/鲁甸县",
-    "govUrl": "http://www.ludian.gov.cn/",
-    "picked": {
-      "url": "https://www.ludian.gov.cn/channels/3071.html",
-      "text": "基层政务公开标准目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "云南省/昭通市/巧家县",
     "govUrl": "http://www.qiaojia.gov.cn/",
-    "reason": "no-disclosure-route"
-  },
-  {
-    "key": "云南省/昭通市/威信县",
-    "govUrl": "http://www.weixin.gov.cn/",
-    "picked": {
-      "url": "https://www.weixin.gov.cn/channels/5719.html",
-      "text": "政府信息公开基本目录",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/昭通市/永善县",
-    "govUrl": "https://www.ynys.gov.cn/",
-    "picked": {
-      "url": "https://www.ynys.gov.cn/channels/2383.html",
-      "text": "政府信息公开",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "云南省/昭通市/昭阳区",
-    "govUrl": "http://www.zyq.gov.cn/",
-    "picked": {
-      "url": "https://www.zyq.gov.cn/channels/6567.html",
-      "text": "昭阳区政府信息公开保密审查制度",
-      "score": 90,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/杭州市/临安区",
-    "govUrl": "https://www.linan.gov.cn/",
-    "picked": {
-      "url": "https://www.linan.gov.cn/col/col1229657992/index.html",
-      "text": "法定主动公开内容",
-      "score": 65,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/杭州市/临平区",
-    "govUrl": "https://www.linping.gov.cn/",
-    "picked": {
-      "url": "https://www.linping.gov.cn/col/col1229530662/index.html",
-      "text": "部门信息公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/杭州市/上城区",
-    "govUrl": "https://www.hzsc.gov.cn/",
-    "picked": {
-      "url": "http://www.hzsc.gov.cn/col/col1229463125/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/杭州市/桐庐县",
-    "govUrl": "http://www.tonglu.gov.cn/",
-    "picked": {
-      "url": "http://www.tonglu.gov.cn/col/col1228922212/index.html",
-      "text": "法治政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/杭州市/西湖区",
-    "govUrl": "https://www.hzxh.gov.cn/",
-    "picked": {
-      "url": "https://www.hzxh.gov.cn/col/col1229701487/index.html",
-      "text": "公共企事业单位信息公开专...",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/杭州市/余杭区",
-    "govUrl": "https://www.yuhang.gov.cn/",
-    "picked": {
-      "url": "https://www.yuhang.gov.cn/col/col1229191867/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/湖州市",
-    "govUrl": "https://www.huzhou.gov.cn/",
-    "picked": {
-      "url": "https://www.huzhou.gov.cn/zfxxgk/",
-      "text": "政府信息公开",
-      "score": 58,
-      "source": "constructed",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/湖州市/德清县",
-    "govUrl": "https://www.deqing.gov.cn/",
-    "picked": {
-      "url": "https://www.deqing.gov.cn/col/col1229518653/fdzdgknr/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/湖州市/南浔区",
-    "govUrl": "https://www.nanxun.gov.cn/",
-    "picked": {
-      "url": "http://www.nanxun.gov.cn/col/col1229211227/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/湖州市/吴兴区",
-    "govUrl": "https://www.wuxing.gov.cn/",
-    "picked": {
-      "url": "https://www.wuxing.gov.cn/col/col1229253826/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/嘉兴市/嘉善县",
-    "govUrl": "https://www.jiashan.gov.cn/",
-    "picked": {
-      "url": "https://www.jiashan.gov.cn/col/col1229545446/index.html",
-      "text": "部门、镇（街道）政府信息公开平台",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/嘉兴市/秀洲区",
-    "govUrl": "https://www.xiuzhou.gov.cn/",
-    "picked": {
-      "url": "http://www.xiuzhou.gov.cn/col/col1229104166/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
+    "reason": "homepage-unreachable"
   },
   {
     "key": "浙江省/金华市",
@@ -9050,130 +2090,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "浙江省/金华市/东阳市",
-    "govUrl": "http://www.dongyang.gov.cn/",
-    "picked": {
-      "url": "http://www.dongyang.gov.cn/col/col1229734678/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/金华市/磐安县",
-    "govUrl": "https://www.panan.gov.cn/",
-    "picked": {
-      "url": "https://www.panan.gov.cn/col/col1229169761/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/丽水市/景宁畲族自治县",
-    "govUrl": "http://www.jingning.gov.cn/",
-    "picked": {
-      "url": "http://www.jingning.gov.cn/col/col1229437960/index.html?number=JN001",
-      "text": "政府信息公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/丽水市/龙泉市",
-    "govUrl": "https://www.longquan.gov.cn/",
-    "picked": {
-      "url": "https://www.longquan.gov.cn/col/col1229382996/index.html",
-      "text": "政府信息公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/丽水市/遂昌县",
-    "govUrl": "http://www.suichang.gov.cn/",
-    "picked": {
-      "url": "http://www.suichang.gov.cn/col/col1229365240/index.html",
-      "text": "政府信息公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "浙江省/丽水市/云和县",
     "govUrl": "http://www.yunhe.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "浙江省/宁波市/慈溪市",
-    "govUrl": "http://www.cixi.gov.cn/",
-    "picked": {
-      "url": "http://www.cixi.gov.cn/col/col1229036916/zzjg/index.html",
-      "text": "法定主动公开内容",
-      "score": 65,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/宁波市/奉化区",
-    "govUrl": "http://www.fh.gov.cn/",
-    "picked": {
-      "url": "http://www.fh.gov.cn/",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/宁波市/江北区",
-    "govUrl": "https://www.nbjb.gov.cn/",
-    "picked": {
-      "url": "http://www.nbjb.gov.cn/col/col1229056904/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/宁波市/鄞州区",
-    "govUrl": "http://www.nbyz.gov.cn/",
-    "picked": {
-      "url": "http://www.nbyz.gov.cn/col/col1229109466/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/宁波市/余姚市",
-    "govUrl": "http://www.yy.gov.cn/",
-    "picked": {
-      "url": "http://www.yy.gov.cn/col/col1229454663/index.html",
-      "text": "政府信息公开 >",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/衢州市",
-    "govUrl": "https://www.qz.gov.cn/",
-    "picked": {
-      "url": "https://www.qz.gov.cn/col/col1229136124/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "浙江省/衢州市/常山县",
@@ -9181,69 +2100,14 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "浙江省/衢州市/江山市",
-    "govUrl": "https://www.jiangshan.gov.cn/",
-    "picked": {
-      "url": "https://www.jiangshan.gov.cn/col/col1229113758/index.html",
-      "text": "政府信息公开平台",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "浙江省/衢州市/开化县",
     "govUrl": "https://www.kaihua.gov.cn/",
     "reason": "no-disclosure-route"
   },
   {
-    "key": "浙江省/衢州市/龙游县",
-    "govUrl": "http://www.longyou.gov.cn/",
-    "picked": {
-      "url": "http://www.longyou.gov.cn/col/col1242942/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "浙江省/衢州市/衢江区",
     "govUrl": "https://www.qjq.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "浙江省/绍兴市",
-    "govUrl": "https://www.sx.gov.cn/",
-    "picked": {
-      "url": "http://www.sx.gov.cn/col/col1229268924/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/绍兴市/柯桥区",
-    "govUrl": "https://www.kq.gov.cn/",
-    "picked": {
-      "url": "https://www.kq.gov.cn/col/col1229404685/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/绍兴市/诸暨市",
-    "govUrl": "https://www.zhuji.gov.cn/",
-    "picked": {
-      "url": "https://www.zhuji.gov.cn/col/col1402338/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "浙江省/台州市",
@@ -9261,64 +2125,9 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "浙江省/台州市/天台县",
-    "govUrl": "https://www.zjtt.gov.cn/",
-    "picked": {
-      "url": "https://www.zjtt.gov.cn/col/col1229799134/index.html",
-      "text": "政府信息公开目录",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/台州市/温岭市",
-    "govUrl": "https://www.wl.gov.cn/",
-    "picked": {
-      "url": "https://www.wl.gov.cn/col/col1229296116/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/台州市/仙居县",
-    "govUrl": "http://www.zjxj.gov.cn/",
-    "picked": {
-      "url": "http://www.zjxj.gov.cn/col/col1562550/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
-    "key": "浙江省/台州市/玉环市",
-    "govUrl": "https://www.yuhuan.gov.cn/",
-    "picked": {
-      "url": "https://www.yuhuan.gov.cn/col/col1229299636/index.html",
-      "text": "政务公开",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "浙江省/温州市",
     "govUrl": "https://www.wenzhou.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "浙江省/温州市/苍南县",
-    "govUrl": "http://www.cncn.gov.cn/",
-    "picked": {
-      "url": "http://www.cncn.gov.cn/col/col1229219159/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   },
   {
     "key": "浙江省/温州市/乐清市",
@@ -9326,30 +2135,8 @@
     "reason": "no-disclosure-route"
   },
   {
-    "key": "浙江省/温州市/鹿城区",
-    "govUrl": "http://www.lucheng.gov.cn/",
-    "picked": {
-      "url": "http://www.lucheng.gov.cn/col/col1229122591/index.html",
-      "text": "信息公开目录",
-      "score": 70,
-      "source": "anchor",
-      "validated": true
-    }
-  },
-  {
     "key": "浙江省/温州市/瑞安市",
     "govUrl": "http://www.ruian.gov.cn/",
     "reason": "no-disclosure-route"
-  },
-  {
-    "key": "浙江省/舟山市/岱山县",
-    "govUrl": "https://www.daishan.gov.cn/",
-    "picked": {
-      "url": "https://www.daishan.gov.cn/col/col1229664584/index.html",
-      "text": "政府信息公开",
-      "score": 80,
-      "source": "anchor",
-      "validated": true
-    }
   }
 ]

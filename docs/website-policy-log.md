@@ -2,18 +2,19 @@
 
 > 结构化明细（每条 URL、来源、失败原因、候选 URL、分数、`listLooks`）已迁移到 [data/website-policy.xlsx](../data/website-policy.xlsx)。本文件只保留 xlsx 难以表达的判断口径、阶段结论和后续策略。
 
-## 0. 当前覆盖概览（v9 增量）
+## 0. 当前覆盖概览（v9.5）
 
-截至 v9 增量轮，`POLICY_URL_MAP` 覆盖 **2777** 条：
+截至 v9.5，`POLICY_URL_MAP` 覆盖 **2805** 条：
 
 | 维度 | 已覆盖 | 总数 | 说明 |
 | --- | ---: | ---: | --- |
-| 省级 | 30 | 31 | 仅青海省仍未稳定确认 |
-| 地级市（含省会） | 394 | 439 | 约 90% |
-| 县区 | 2353 | 2742 | 约 86% |
-| 总计 | 2777 | 3209 | 约 86% |
+| 省级 | 31 | 31 | 青海手工补 `xxgk/1/` 后覆盖满 |
+| 省会城市 | 27 | 27 | 成都手工补 `cdsrmzf/c165075/zcwjk.shtml` 后覆盖满 |
+| 地级市（含省会） | 402 | 439 | 约 92% |
+| 县区 | 2372 | 2742 | 约 86% |
+| 总计 | 2805 | 3209 | 约 87% |
 
-当前仍缺 **432** 条；这些缺口不是单一问题，而是不同类型政府门户的信息公开组织方式差异造成的。
+当前仍缺 **404** 条，集中于湖南、81​、河北、33​、四川、33​、湖北、31​、安徽 30 等 5 个省（合计 ≈48%）。这些缺口不是单一问题，而是不同类型政府门户的信息公开组织方式差异造成的。
 
 ## 1. 政策公开入口的主要类型
 
@@ -90,6 +91,19 @@ v9 首轮重滤后接受约 550 条，覆盖提升到 2128 条。
 
 这也说明此前 900+ `homepage-unreachable` 主要是并发抓取下的临时 fetch 失败缓存，不代表政府门户本身长期不可访问；修复 `shouldRetry` 后一次重跑即收回大半缺口。
 
+### v9.5：协议修正 + 手工补全 + 扩展路径枚举
+
+2026-04-26 后期。以 [data/website-gov.xlsx](../data/website-gov.xlsx) `判断依据` 列为准，识别出 **76 个需协议切换** 的政府门户（诛塭「协议切换→http」与「协议切换→https」两类）。剧本化修正流程：
+
+1. `apply-protocol-switch.mjs` — 按 host 将 [data/website-gov.ts](../data/website-gov.ts) 中 76 条 URL 切换到正确协议。
+2. `apply-protocol-switch-policy.mjs` — 同 host 在 [data/website-policy.ts](../data/website-policy.ts) 的页面 URL 同步切换（同一域名内页与首页协议必须一致），共修 44 条。
+3. `invalidate-protocol-switch-cache.mjs` — 清除 `policy-disclosure-fallback-results.json` 中 host 在切换集合的缓存记录（并发下的错误会锁定老协议url结果），本轮清除 36 条。
+4. 重跑 `probe-disclosure-fallback.ts`：picked 30/432 → emit 过滤后接受 **21**，merge 后覆盖 2777 → 2798。
+5. 手工补全：青海省 `http://www.qinghai.gov.cn/xxgk/1/`，四川省/成都市 `https://www.chengdu.gov.cn/cdsrmzf/c165075/zcwjk.shtml`。省级、省会覆盖都完成 31/31、27/27。
+6. 扩展路径枚举：从已收录条目中挖出高频路径（`/zwgk/zcwj/`、`/zwgk/zcwjk/`、`/ztzl/zcwjk/`、`/zfxxgk/zfwj/`、`/zfxxgk/fdzdgknr/zfwj/`、`/policy-find/` 等）并入 `constructedCandidates`。`invalidate-no-route-cache.mjs` 作废原 `no-disclosure-route` 缓存 276 条，重跑 picked 15/410 → emit 接受 **6**，merge 后覆盖 2798 → **2805**。
+
+v9.5 后剩余 404 条，集中在 湖南 / 河北 / 四川 / 湖北 / 安徽 5 省的县区。Playwright 重跑在当前缺口集上未产生新接受条目（lowConf 38，rejected 306），表明这些站点不是 SPA 渲染问题而是首页本来就不暴露任何可识别的公开/政策错点。
+
 ## 4. 文件与命令
 
 - 主数据：[data/website-policy.ts](../data/website-policy.ts)
@@ -101,6 +115,7 @@ v9 首轮重滤后接受约 550 条，覆盖提升到 2128 条。
 
 ## 5. 后续策略
 
-1. 对剩余 WAF 站点，不再用普通 fetch 重试；优先人工确认或浏览器导出 DOM。
-2. 对“首页无候选”的县区，可按同市 CMS 模板批量构造 `zwgk` / `xxgk` / `zfxxgk` 路径，但必须验证非跳首页、非指南、非财政采购窄页。
-3. 对 `data/website-policy.xlsx` 的 `missing` 工作表按省筛选，优先处理省会、地级市，再处理县区。
+1. 剩余 404 条集中在 5 个省（湖南 / 河北 / 四川 / 湖北 / 安徽）。这些省的县区门户多为同一“省级统一站群”模板，可顺着已收录县区的路径手工代代三个同类县区。
+2. 对 [data/website-policy.xlsx](../data/website-policy.xlsx) 的 `missing` 工作表按省筛选，优先处理 地级市（38 条），再处理县区。
+3. WAF / 长期不可达的站点不再重试，转人工浏览器确认 + 手工写入。
+4. 考虑增加 `verify-existing.ts` 定期检查已收录的 2805 条务是否 404 / 跳首页 / 改版，覆盖到 87% 后维护比扩张重要。

@@ -1,6 +1,6 @@
 {
   "北京市/朝阳区": {
-    "url": "https://www.bjchy.gov.cn/"
+    "url": "http://www.bjchy.gov.cn/"
   },
   "上海市/闵行区": {
     "url": "https://www.shmh.gov.cn/"
@@ -10,9 +10,6 @@
   },
   "河北省/石家庄市/赞皇县": {
     "url": "http://www.zanhuang.gov.cn/"
-  },
-  "河北省/石家庄市/辛集市": {
-    "url": "http://www.xinji.gov.cn/"
   },
   "河北省/唐山市": {
     "url": "https://www.tangshan.gov.cn/"
@@ -119,12 +116,6 @@
   "山西省/太原市/娄烦县": {
     "url": "https://www.sxlf.gov.cn/"
   },
-  "山西省/大同市/阳高县": {
-    "url": "https://www.dtyg.gov.cn/"
-  },
-  "山西省/大同市/天镇县": {
-    "url": "https://www.dttz.gov.cn/"
-  },
   "山西省/阳泉市/城区": {
     "url": "http://www.yqcq.gov.cn/"
   },
@@ -140,9 +131,6 @@
   "山西省/晋中市/左权县": {
     "url": "http://www.jzzq.gov.cn/"
   },
-  "山西省/晋中市/祁县": {
-    "url": "http://www.qixian.gov.cn/"
-  },
   "山西省/晋中市/平遥县": {
     "url": "http://www.pingyao.gov.cn/"
   },
@@ -152,20 +140,8 @@
   "山西省/吕梁市/岚县": {
     "url": "http://www.lanxian.gov.cn/"
   },
-  "内蒙古自治区/赤峰市/元宝山区": {
-    "url": "https://www.ybs.gov.cn/"
-  },
-  "内蒙古自治区/赤峰市/阿鲁科尔沁旗": {
-    "url": "https://www.alkeqq.gov.cn/"
-  },
   "内蒙古自治区/赤峰市/克什克腾旗": {
-    "url": "https://www.kskt.gov.cn/"
-  },
-  "内蒙古自治区/赤峰市/翁牛特旗": {
-    "url": "https://www.wnt.gov.cn/"
-  },
-  "内蒙古自治区/赤峰市/宁城县": {
-    "url": "https://www.ningchengxian.gov.cn/"
+    "url": "http://www.kskt.gov.cn/"
   },
   "内蒙古自治区/巴彦淖尔市/乌拉特中旗": {
     "url": "http://www.wltzq.gov.cn/"
@@ -221,17 +197,8 @@
   "吉林省/吉林市/船营区": {
     "url": "http://www.jlcy.gov.cn/"
   },
-  "吉林省/四平市": {
-    "url": "https://www.siping.gov.cn/"
-  },
-  "吉林省/辽源市": {
-    "url": "https://www.liaoyuan.gov.cn/"
-  },
   "吉林省/白山市": {
     "url": "http://www.cbs.gov.cn/"
-  },
-  "吉林省/延边朝鲜族自治州": {
-    "url": "https://www.yanbian.gov.cn/"
   },
   "吉林省/延边朝鲜族自治州/延吉市": {
     "url": "http://www.yanji.gov.cn/"
@@ -320,14 +287,8 @@
   "黑龙江省/绥化市/海伦市": {
     "url": "http://www.hailun.gov.cn/"
   },
-  "江苏省/徐州市/鼓楼区": {
-    "url": "https://www.xzgl.gov.cn/"
-  },
   "江苏省/徐州市/贾汪区": {
     "url": "http://www.xzjw.gov.cn/"
-  },
-  "江苏省/徐州市/邳州市": {
-    "url": "https://www.pz.gov.cn/"
   },
   "江苏省/南通市/崇川区": {
     "url": "https://www.chongchuan.gov.cn/"
@@ -509,9 +470,6 @@
   "江西省/九江市/瑞昌市": {
     "url": "http://www.ruichang.gov.cn/"
   },
-  "江西省/鹰潭市": {
-    "url": "https://www.yingtan.gov.cn/"
-  },
   "江西省/吉安市/安福县": {
     "url": "http://www.afx.gov.cn/"
   },
@@ -621,7 +579,7 @@
     "url": "http://www.jiaxian.gov.cn/"
   },
   "河南省/安阳市/内黄县": {
-    "url": "https://www.neihuang.gov.cn/"
+    "url": "http://www.neihuang.gov.cn/"
   },
   "河南省/鹤壁市": {
     "url": "https://www.hebi.gov.cn/"
@@ -742,18 +700,6 @@
   },
   "湖北省/恩施土家族苗族自治州/咸丰县": {
     "url": "http://www.xianfeng.gov.cn/"
-  },
-  "湖北省/神农架林区": {
-    "url": "https://www.snj.gov.cn/"
-  },
-  "湖南省/长沙市/芙蓉区": {
-    "url": "http://www.furong.gov.cn/"
-  },
-  "湖南省/长沙市/长沙县": {
-    "url": "http://www.csx.gov.cn/"
-  },
-  "湖南省/长沙市/宁乡市": {
-    "url": "http://www.nxcity.gov.cn/"
   },
   "湖南省/株洲市": {
     "url": "https://www.zhuzhou.gov.cn/"
@@ -876,7 +822,7 @@
     "url": "http://www.hnjh.gov.cn/"
   },
   "湖南省/郴州市/临武县": {
-    "url": "https://www.lwx.gov.cn/"
+    "url": "http://www.lwx.gov.cn/"
   },
   "湖南省/郴州市/汝城县": {
     "url": "http://www.rc.gov.cn/"
@@ -941,9 +887,6 @@
   "广东省/韶关市/乐昌市": {
     "url": "https://www.lechang.gov.cn/"
   },
-  "广东省/深圳市/光明区": {
-    "url": "https://www.szgm.gov.cn/"
-  },
   "广东省/珠海市/斗门区": {
     "url": "https://www.doumen.gov.cn/"
   },
@@ -956,23 +899,11 @@
   "广东省/揭阳市/揭东区": {
     "url": "http://www.jiedong.gov.cn/"
   },
-  "广西壮族自治区/南宁市/西乡塘区": {
-    "url": "https://www.xxtq.gov.cn/"
-  },
   "广西壮族自治区/桂林市/阳朔县": {
     "url": "http://www.yangshuo.gov.cn/"
   },
   "广西壮族自治区/贺州市/富川瑶族自治县": {
     "url": "http://www.gxfc.gov.cn/"
-  },
-  "广西壮族自治区/来宾市": {
-    "url": "https://www.laibin.gov.cn/"
-  },
-  "广西壮族自治区/来宾市/武宣县": {
-    "url": "https://www.wuxuan.gov.cn/"
-  },
-  "四川省/成都市": {
-    "url": "https://www.chengdu.gov.cn/"
   },
   "四川省/成都市/锦江区": {
     "url": "http://www.cdjinjiang.gov.cn/"
@@ -1127,14 +1058,8 @@
   "西藏自治区/拉萨市/城关区": {
     "url": "https://www.cgq.gov.cn/"
   },
-  "西藏自治区/林芝市": {
-    "url": "https://www.linzhi.gov.cn/"
-  },
   "西藏自治区/那曲市/聂荣县": {
     "url": "http://www.nqnrx.gov.cn/"
-  },
-  "陕西省/西安市/鄠邑区": {
-    "url": "https://www.xahy.gov.cn/"
   },
   "陕西省/铜川市/印台区": {
     "url": "http://www.yintai.gov.cn/"
@@ -1146,7 +1071,7 @@
     "url": "http://www.taibai.gov.cn/"
   },
   "陕西省/咸阳市/旬邑县": {
-    "url": "https://www.snxunyi.gov.cn/"
+    "url": "http://www.snxunyi.gov.cn/"
   },
   "陕西省/渭南市/华州区": {
     "url": "https://www.hzqu.gov.cn/"
@@ -1199,9 +1124,6 @@
   "甘肃省/临夏回族自治州/临夏县": {
     "url": "https://www.linxiaxian.gov.cn/"
   },
-  "青海省": {
-    "url": "https://www.qinghai.gov.cn/"
-  },
   "青海省/西宁市/城中区": {
     "url": "https://xncz.gov.cn/"
   },
@@ -1211,9 +1133,6 @@
   "青海省/西宁市/湟中区": {
     "url": "https://www.huangzhong.gov.cn/"
   },
-  "青海省/西宁市/湟源县": {
-    "url": "https://www.huangyuan.gov.cn/"
-  },
   "青海省/海东市/化隆回族自治县": {
     "url": "http://www.hualongxian.gov.cn/"
   },
@@ -1221,7 +1140,7 @@
     "url": "http://www.xunhua.gov.cn/"
   },
   "青海省/黄南藏族自治州": {
-    "url": "https://www.huangnan.gov.cn/"
+    "url": "http://www.huangnan.gov.cn/"
   },
   "青海省/黄南藏族自治州/河南蒙古族自治县": {
     "url": "http://www.henanxian.gov.cn/"
@@ -1247,9 +1166,6 @@
   "青海省/果洛藏族自治州/玛多县": {
     "url": "http://www.maduo.gov.cn/"
   },
-  "青海省/玉树藏族自治州/囊谦县": {
-    "url": "http://www.nangqian.gov.cn/"
-  },
   "青海省/海西蒙古族藏族自治州": {
     "url": "https://www.haixi.gov.cn/"
   },
@@ -1266,7 +1182,7 @@
     "url": "http://www.tianjun.gov.cn/"
   },
   "宁夏回族自治区/吴忠市/盐池县": {
-    "url": "https://www.yanchi.gov.cn/"
+    "url": "http://www.yanchi.gov.cn/"
   },
   "宁夏回族自治区/固原市/彭阳县": {
     "url": "https://www.pengyang.gov.cn/"
