@@ -56,40 +56,52 @@ function scoreLink(text: string, href: string): number {
   return s;
 }
 
-async function fetchHtml(url: string, timeout = 12000): Promise<string | null> {
-  try {
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), timeout);
-    const res = await fetch(url, {
-      headers: {
-        'User-Agent': UA,
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-        'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-      },
-      redirect: 'follow',
-      signal: ctrl.signal,
-    });
-    clearTimeout(t);
-    if (!res.ok) return null;
-    const buf = Buffer.from(await res.arrayBuffer());
-    // Detect charset
-    const ctype = res.headers.get('content-type') || '';
-    let enc = 'utf-8';
-    const m = /charset=([^;]+)/i.exec(ctype);
-    if (m) enc = m[1].trim().toLowerCase();
-    if (enc === 'utf-8') {
-      const text = buf.toString('utf8');
-      const meta = /<meta[^>]+charset=["']?([^"'>\s/]+)/i.exec(text.slice(0, 4096));
-      if (meta && meta[1].toLowerCase() !== 'utf-8') enc = meta[1].toLowerCase();
+async function fetchHtml(url: string, timeout = 15000): Promise<string | null> {
+  // Try twice: once with default https, once with http fallback for stubborn WAF sites.
+  const variants = [url];
+  if (url.startsWith('https://')) variants.push('http://' + url.slice('https://'.length));
+  for (const v of variants) {
+    try {
+      const ctrl = new AbortController();
+      const t = setTimeout(() => ctrl.abort(), timeout);
+      const res = await fetch(v, {
+        headers: {
+          'User-Agent': UA,
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Cache-Control': 'no-cache',
+          'Sec-Fetch-Dest': 'document',
+          'Sec-Fetch-Mode': 'navigate',
+          'Sec-Fetch-Site': 'none',
+          'Sec-Fetch-User': '?1',
+          'Upgrade-Insecure-Requests': '1',
+        },
+        redirect: 'follow',
+        signal: ctrl.signal,
+      });
+      clearTimeout(t);
+      if (!res.ok) continue;
+      const buf = Buffer.from(await res.arrayBuffer());
+      const ctype = res.headers.get('content-type') || '';
+      let enc = 'utf-8';
+      const m = /charset=([^;]+)/i.exec(ctype);
+      if (m) enc = m[1].trim().toLowerCase();
+      if (enc === 'utf-8') {
+        const text = buf.toString('utf8');
+        const meta = /<meta[^>]+charset=["']?([^"'>\s/]+)/i.exec(text.slice(0, 4096));
+        if (meta && meta[1].toLowerCase() !== 'utf-8') enc = meta[1].toLowerCase();
+      }
+      if (enc === 'gb2312' || enc === 'gbk' || enc === 'gb18030') {
+        const { TextDecoder } = await import('node:util');
+        return new TextDecoder('gb18030').decode(buf);
+      }
+      return buf.toString('utf8');
+    } catch {
+      // try next variant
     }
-    if (enc === 'gb2312' || enc === 'gbk' || enc === 'gb18030') {
-      const { TextDecoder } = await import('node:util');
-      return new TextDecoder('gb18030').decode(buf);
-    }
-    return buf.toString('utf8');
-  } catch {
-    return null;
   }
+  return null;
 }
 
 function extractLinks(html: string, base: string): { text: string; href: string }[] {

@@ -382,3 +382,79 @@ website-gov.ts → 抽取所有未覆盖区域（3158 个） →
    提示用户可点击回到 `rejected.md` 中的候选进行核验。
 3. lowConf（1486 条）中含大量评分 40~54 的候选，下一轮可降低同源限制配合
    人工抽样补齐县级覆盖。
+
+
+## §15 v7 扩充：放宽 listLooks + 浏览器请求头复探（2024-Q3）
+
+### 15.1 背景与问题诊断
+
+v6 完成后覆盖率 25/31（省）+ 104/439（市）+ 553/2742（县），共 682 条。
+用户提出"覆盖率太低，省级与省会城市是否还有进一步挖掘的可能"。
+跑 `diagnose-missing.ts` 按失败原因分桶，发现：
+
+- **score=100 + listLooks=false**：50 个市级（"政策文件库" 入口被识别但
+  Vue/Ajax 渲染列表，日期未在 SSR 出现）
+- **score=80 + listLooks=false**：52 个市级（"规范性文件" 同上）
+- **score=55 + listLooks=false**：27 个市级
+- **homepage-unreachable**：44 个市级、4 个省级，均因默认 UA 被 WAF 拒绝
+- **no-candidate**：65 个市级（首页能拉，但没匹配关键词，多为 SPA 首页）
+
+结论：v6 的过滤组合（score ≥ 55 AND listLooks）对静态渲染有效，但漏掉了
+~140 个候选，且 ~50 个 WAF 站根本没进探测。
+
+### 15.2 v7 改动
+
+1. **放宽分类阶梯**（`emit-policy-entries.ts` `classify()`）
+
+   | 第 N 阶梯 | 条件 | 解释 |
+   | --- | --- | --- |
+   | 1 | score ≥ 80 | 关键词本身已是强信号，listLooks 是否触发不再硬性要求 |
+   | 2 | score ≥ 55 + listLooks=true | 与 v6 一致 |
+   | 3 | score ≥ 55 + URL 命中 `CANONICAL_PATH` | 兜底 JS 渲染列表 |
+   | 4 | score ≥ 40 + listLooks=true + URL 命中 `CANONICAL_PATH` | "政府文件" 兜底 |
+
+   `CANONICAL_PATH` 覆盖 zcwjk / zcwj / gfxwj / xzgfxwj / szfwj / qzfwj /
+   xzfwj / zfwj / fgwj / zcfg / zcfgk / zhengce / fzfgk / wjk / zcwjs /
+   policydoc / policycontent。
+
+2. **增量发出**：`emit-policy-entries.ts` 读取 `missing-policy.json`，
+   只发出当前仍缺失的 key，避免与 v5/v6 已落地条目重复。
+
+3. **强化请求头**（`probe-policy.ts` `fetchHtml()`）
+
+   - 全套 Sec-Fetch-* / Cache-Control / Upgrade-Insecure-Requests / 完整 UA
+   - HTTPS 失败时回退到 HTTP（部分 WAF 仅拦 HTTPS 路径）
+   - 超时 12s → 15s
+
+4. **复探脚本** (`reprobe-failed.ts`)：仅对 v6 中 homepage-unreachable /
+   no-candidate / target-unreachable 的 992 条用强化请求头重跑，回写
+   `policy-probe-results.json`。
+
+### 15.3 增益
+
+| 维度 | v6 | v7 | 增量 |
+| --- | --- | --- | --- |
+| 省级 | 25/31 | **28/31** | +3（仅剩湖北/甘肃/青海，全为 WAF 拒抓） |
+| 省会城市（27 个） | 24/27 | **26/27** | +2（剩成都，homepage-unreachable） |
+| 地级市 | 104/439 | **225/439** | +121 |
+| 县区 | 553/2742 | **1030/2742** | +477 |
+| **总条目** | 682 | **1283** | **+601** |
+
+reprobe-failed 992 条中恢复 164 条候选；放宽阶梯+复探合计带来 599 条
+auto-accept，加上 2 条手工补录（山东省、长春市）共 +601。
+
+### 15.4 仍未覆盖的省/省会（共 4 处）
+
+- **湖北省 / 甘肃省 / 青海省**：默认 UA 与浏览器 UA 均被 WAF 拒；HTTP 回退
+  也无效。
+- **四川省/成都市**：homepage-unreachable，机制同上。
+
+下一轮拟改用 Playwright 真实浏览器加载（含 cookie/JS）后再跑同一套打分。
+
+### 15.5 经验沉淀
+
+- **listLooks 不是充要条件**：score=80~100 的关键词锚点 + 命中 CANONICAL_PATH
+  的 URL 已是强信号，不必硬卡 ≥5 日期，否则会大量漏 SPA 列表页。
+- **WAF 集中于省级门户**：省门户更可能上 WAF，市/县反而开放；应区分对待。
+- **HTTP 回退收益有限**：现代政府门户基本全 HTTPS，WAF 也跟着上 HTTPS，
+  HTTP 回退本轮恢复率不到 5%。继续提升必须上浏览器。

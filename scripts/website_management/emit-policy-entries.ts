@@ -17,6 +17,15 @@ const all: ProbeResult[] = JSON.parse(
   readFileSync('scripts/website_management/policy-probe-results.json', 'utf8'),
 );
 
+// Only emit entries not already present in POLICY_URL_MAP (so re-runs don't duplicate).
+let stillMissing: Set<string> | null = null;
+try {
+  const missing = JSON.parse(readFileSync('missing-policy.json', 'utf8')) as Record<string, unknown>;
+  stillMissing = new Set(Object.keys(missing));
+} catch {
+  // missing-policy.json absent — emit everything (initial run)
+}
+
 function isSpecificDoc(text: string): boolean {
   if (/[《》]/.test(text)) return true;
   if (text.length > 12) return true;
@@ -55,50 +64,55 @@ function sameOrg(candidateUrl: string, provUrl: string): boolean {
   return aTail === bTail;
 }
 /** Known bad hosts that indicate candidate resolved to a completely different org. */
-const BAD_HOSTS = new Set(['www.gov.cn', 'www.jiangxi.gov.cn', 'www.cq.gov.cn']);
+const BAD_HOSTS = new Set(['www.gov.cn', 'www.jiangxi.gov.cn']);
+
+/** Canonical policy-list URL patterns: when present, the URL alone is a strong signal
+ *  even if our listLooks heuristic fails (typical for JS-rendered list pages). */
+const CANONICAL_PATH = /\/(zcwjk|zcwj|gfxwj|xzgfxwj|szfwj|qzfwj|xzfwj|zfwj|fgwj|zcfg|zcfgk|zhengce|fzfgk|wjk|zcwjs|policydoc|policycontent)\b/i;
 
 const accepted: ProbeResult[] = [];
 const lowConf: ProbeResult[] = [];
 const rejected: ProbeResult[] = [];
 
-for (const r of all) {
-  if (!r.picked) {
-    rejected.push(r);
-    continue;
+function classify(r: ProbeResult): 'accept' | 'low' | 'reject' {
+  if (!r.picked) return 'reject';
+  const p = r.picked;
+  // Hard filters: detail-doc / single-article URLs are always rejected.
+  if (isSpecificDoc(p.text)) return 'low';
+  if (isDetailUrl(p.url)) return 'low';
+  // host: candidate must live on portal's same gov.cn base, or be a known
+  // permitted province-fallback (handled below as 'low' fallback class).
+  if (!sameOrg(p.url, r.provUrl)) {
+    // Allow national index gov.cn as universal fallback only? No — too noisy.
+    return 'low';
   }
-  if (!r.picked.listLooks) {
-    lowConf.push(r);
-    continue;
-  }
-  if (isSpecificDoc(r.picked.text) || isDetailUrl(r.picked.url)) {
-    lowConf.push(r);
-    continue;
-  }
-  if (!sameOrg(r.picked.url, r.provUrl)) {
-    lowConf.push(r);
-    continue;
-  }
-  const h = hostOf(r.picked.url);
-  if (BAD_HOSTS.has(h) && hostOf(r.provUrl) !== h) {
-    lowConf.push(r);
-    continue;
-  }
-  // URL with fragment only (e.g. #menu1) or ending at host root
+  const h = hostOf(p.url);
+  if (BAD_HOSTS.has(h) && hostOf(r.provUrl) !== h) return 'low';
   try {
-    const u = new URL(r.picked.url);
-    if (!u.pathname || u.pathname === '/' || u.pathname === '') {
-      lowConf.push(r);
-      continue;
-    }
+    const u = new URL(p.url);
+    if (!u.pathname || u.pathname === '/' || u.pathname === '') return 'low';
   } catch {
-    lowConf.push(r);
-    continue;
+    return 'low';
   }
-  if (r.picked.score < 55) {
-    lowConf.push(r);
-    continue;
-  }
-  accepted.push(r);
+  // Acceptance ladder:
+  //  1. score ≥ 80 (规范性/行政规范性/政策文件库/找政策) → accept regardless of listLooks
+  //     since the keyword itself is a strong signal and these pages are commonly JS-rendered.
+  //  2. score ≥ 55 + listLooks=true → accept (already vetted).
+  //  3. score ≥ 55 + URL on canonical path (/zcwj/, /gfxwj/, etc.) → accept.
+  //  4. score ≥ 40 + listLooks=true + canonical path → accept (政府文件 兜底).
+  if (p.score >= 80) return 'accept';
+  if (p.score >= 55 && p.listLooks) return 'accept';
+  if (p.score >= 55 && CANONICAL_PATH.test(p.url)) return 'accept';
+  if (p.score >= 40 && p.listLooks && CANONICAL_PATH.test(p.url)) return 'accept';
+  return 'low';
+}
+
+for (const r of all) {
+  if (stillMissing && !stillMissing.has(r.key)) continue;
+  const c = classify(r);
+  if (c === 'accept') accepted.push(r);
+  else if (c === 'low') lowConf.push(r);
+  else rejected.push(r);
 }
 
 accepted.sort((a, b) => a.key.localeCompare(b.key, 'zh-Hans-CN'));
