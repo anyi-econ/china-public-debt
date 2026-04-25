@@ -1331,6 +1331,8 @@ export const POLICY_URL_MAP: RegionUrlMap = {
   "浙江省/丽水市/莲都区": "https://www.liandu.gov.cn/col/col1229430187/index.html", // 行政规范性文件 (score=80)
   // —— v7 手工补录省级 / 省会（候选已验证，但 listLooks 因 JS 渲染或 query-only URL 未触发）——
   "山东省": "https://www.shandong.gov.cn/col/col320658/index.html", // 政策文件（手工补录）
+  "湖北省": "https://www.hubei.gov.cn/zfwj/list1.shtml", // 省政府文件（用户手工补录，WAF 拒抓）
+  "甘肃省": "https://www.gansu.gov.cn/gsszf/c100055/xxgk_zc.shtml", // 省政府政策文件（用户手工补录，WAF 拒抓）
   "吉林省/长春市": "http://zwgk.changchun.gov.cn/?stit=%E9%95%BF%E5%BA%9C%E5%8F%91&num=4", // 市政府文件 (score=60, query-only URL)
 };
 
