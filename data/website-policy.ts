@@ -56,7 +56,37 @@ export const POLICY_URL_MAP: RegionUrlMap = {
   "辽宁省/沈阳市": "https://www.shenyang.gov.cn/zwgk/zcwj/zfwj/",             // 政府文件
   // —— v4 扩充（省会/市级）——
   "福建省/福州市": "http://www.fuzhou.gov.cn/zwgk/zxwj/szfwj/",               // 市政府文件
-  // ═══════ 其余地区因动态渲染/访问限制暂未稳定核验，留空待后续补充 ═══════
+  // —— v5 扩充（基于政府官网下钻：5 个并行 subagent + fetch_webpage）——
+  // 省级（11 个）
+  "天津市": "https://www.tj.gov.cn/zwgk/zcwjk/",                              // 政策文件库（可检索）Tier A
+  "河北省": "https://www.hebei.gov.cn/columns/49f13cc2-db03-4d0c-b4fe-2f3f659d3b6e/index.html", // 政策（政府文件列表）Tier B
+  "山西省": "https://www.shanxi.gov.cn/zcwjk/",                               // 政策文件省级服务平台 Tier A
+  "浙江省": "https://www.zj.gov.cn/col/col1544911/index.html",                // 法规文件 Tier B
+  "安徽省": "https://www.ah.gov.cn/site/tpl/4931?activeId=6784771",           // "我要找政策" Tier A
+  "江西省": "http://xzgfxwjk.jiangxi.gov.cn/",                                // 省级规章规范性文件发布平台 Tier A
+  "河南省": "https://www.henan.gov.cn/zwgk/fgwj/szfl/",                       // 省政府令 Tier B
+  "广西壮族自治区": "http://www.gxzf.gov.cn/zfwj/",                           // 政府文件 Tier B
+  "西藏自治区": "https://www.xizang.gov.cn/zwgk/xxfb/zfwj/",                  // 政府文件 Tier B
+  "贵州省": "https://www.guizhou.gov.cn/ztzl/zcwjk/",                         // 政策文件库 Tier A
+  "陕西省": "https://www.shaanxi.gov.cn/zfxxgk/zcwjk/",                       // 省政府政策文件库（可检索）Tier A
+  // 省会 / 副省级（15 个）
+  "河北省/石家庄市": "https://www.sjz.gov.cn/columns/3ec31d57-6be5-4350-ad03-6e5801a534eb/index.html", // 政策文件库 Tier A
+  "山西省/太原市": "https://www.taiyuan.gov.cn/gfxwj2.html",                  // 规范性文件 Tier B
+  "内蒙古自治区/呼和浩特市": "http://www.huhhot.gov.cn/zfxxgknew/fdzdgknr/?gk=3&cid=15493", // 政府文件 Tier B
+  "黑龙江省/哈尔滨市": "https://www.harbin.gov.cn/haerbin/zcwjk/heb_zcwjk.shtml", // 政策文件库 Tier A
+  "江苏省/南京市": "https://www.nanjing.gov.cn/xxgkn/szgfxwj/index.html",     // 行政规范性文件库 Tier A
+  "浙江省/杭州市": "http://www.hangzhou.gov.cn/col/col1229417972/index.html", // 杭州市规范性文件数据库 Tier A
+  "安徽省/合肥市": "https://www.hefei.gov.cn/zwgk/publicColumn/hfszcwjk/index.html", // 市级政策文件库 Tier A
+  "山东省/济南市": "https://www.jinan.gov.cn/col/col85285/index.html",        // 政府规章 Tier B（避开 API 端点）
+  "河南省/郑州市": "https://public.zhengzhou.gov.cn/?a=dir&h=1&p=D0104X",     // 政府文件（信息公开平台目录）Tier C
+  "湖南省/长沙市": "http://www.changsha.gov.cn/zfxxgk/zfwjk/srmzf/",          // 行政规范性文件库 Tier A
+  "广西壮族自治区/南宁市": "https://www.nanning.gov.cn/zwgk/fdzdgknr/zcwj/zfwj/", // 政府文件 Tier B
+  "海南省/海口市": "http://www.haikou.gov.cn/xxgk/szfbjxxgk/zcfg/",           // 政策文件 Tier B
+  "云南省/昆明市": "https://www.km.gov.cn/zfxxgk/zcwj/",                      // 政策文件 Tier B
+  "甘肃省/兰州市": "https://www.lanzhou.gov.cn/col/col15333/index.html",      // 政策文件 Tier B
+  "青海省/西宁市": "https://www.xining.gov.cn/zwgk/fdzdgknr/zcwj/szfwj_35/",  // 市政府文件 Tier B
+  // ═══════ 仍未稳定核验：山东省、湖北省、四川省、甘肃省、青海省、内蒙古自治区（省级） ═══════
+  // 仍未稳定核验：吉林省/长春市、四川省/成都市、贵州省/贵阳市
   // 详见 docs/website-policy-log.md
 };
 

@@ -213,3 +213,75 @@ v1 + v2 共收录 9 条政策入口（北京、上海黄浦、广州、深圳、
 - 使用 Playwright（`webapp-testing` 技能）按省批量访问 §12.3 中的门户，等待 JS 渲染后提取 `政策文件/规范性文件/行政规范性文件` 栏目 URL。
 - 优先级：省级 > 省会 > 副省级市 > 其他地级市。
 - 批处理脚本建议位置：`scripts/website_management/policy-probe.mjs`。
+## 13. v5 扩充（基于政府官网下钻 + 5 路并行 subagent）
+
+本轮按新建 skill `policy-site-from-gov-site` 流程：从已核验的政府门户出发，逐站定位政策栏目；将剩余 35 个目标分成 5 组分发并行 subagent，每组 6-8 个区域。
+
+### 13.1 本轮新增确认（26 个）
+
+#### 省级（11 个）
+
+| 路径 | Tier | 入口名 | URL |
+|---|---|---|---|
+| 天津市 | A | 政策文件库 | https://www.tj.gov.cn/zwgk/zcwjk/ |
+| 河北省 | B | 政策（政府文件） | https://www.hebei.gov.cn/columns/49f13cc2-db03-4d0c-b4fe-2f3f659d3b6e/index.html |
+| 山西省 | A | 山西省政策文件省级服务平台 | https://www.shanxi.gov.cn/zcwjk/ |
+| 浙江省 | B | 法规文件 | https://www.zj.gov.cn/col/col1544911/index.html |
+| 安徽省 | A | 我要找政策 | https://www.ah.gov.cn/site/tpl/4931?activeId=6784771 |
+| 江西省 | A | 省级规章规范性文件发布平台 | http://xzgfxwjk.jiangxi.gov.cn/ |
+| 河南省 | B | 省政府令 | https://www.henan.gov.cn/zwgk/fgwj/szfl/ |
+| 广西壮族自治区 | B | 政府文件 | http://www.gxzf.gov.cn/zfwj/ |
+| 西藏自治区 | B | 政府文件 | https://www.xizang.gov.cn/zwgk/xxfb/zfwj/ |
+| 贵州省 | A | 政策文件库 | https://www.guizhou.gov.cn/ztzl/zcwjk/ |
+| 陕西省 | A | 省政府政策文件库 | https://www.shaanxi.gov.cn/zfxxgk/zcwjk/ |
+
+#### 省会 / 副省级（15 个）
+
+| 路径 | Tier | 入口名 | URL |
+|---|---|---|---|
+| 河北省/石家庄市 | A | 政策文件库 | https://www.sjz.gov.cn/columns/3ec31d57-6be5-4350-ad03-6e5801a534eb/index.html |
+| 山西省/太原市 | B | 规范性文件 | https://www.taiyuan.gov.cn/gfxwj2.html |
+| 内蒙古自治区/呼和浩特市 | B | 政府文件 | http://www.huhhot.gov.cn/zfxxgknew/fdzdgknr/?gk=3&cid=15493 |
+| 黑龙江省/哈尔滨市 | A | 政策文件库 | https://www.harbin.gov.cn/haerbin/zcwjk/heb_zcwjk.shtml |
+| 江苏省/南京市 | A | 行政规范性文件库 | https://www.nanjing.gov.cn/xxgkn/szgfxwj/index.html |
+| 浙江省/杭州市 | A | 杭州市规范性文件数据库 | http://www.hangzhou.gov.cn/col/col1229417972/index.html |
+| 安徽省/合肥市 | A | 市级政策文件库 | https://www.hefei.gov.cn/zwgk/publicColumn/hfszcwjk/index.html |
+| 山东省/济南市 | B | 政府规章 | https://www.jinan.gov.cn/col/col85285/index.html |
+| 河南省/郑州市 | C | 政府文件（信息公开平台目录） | https://public.zhengzhou.gov.cn/?a=dir&h=1&p=D0104X |
+| 湖南省/长沙市 | A | 行政规范性文件库 | http://www.changsha.gov.cn/zfxxgk/zfwjk/srmzf/ |
+| 广西壮族自治区/南宁市 | B | 政府文件 | https://www.nanning.gov.cn/zwgk/fdzdgknr/zcwj/zfwj/ |
+| 海南省/海口市 | B | 政策文件 | http://www.haikou.gov.cn/xxgk/szfbjxxgk/zcfg/ |
+| 云南省/昆明市 | B | 政策文件 | https://www.km.gov.cn/zfxxgk/zcwj/ |
+| 甘肃省/兰州市 | B | 政策文件 | https://www.lanzhou.gov.cn/col/col15333/index.html |
+| 青海省/西宁市 | B | 市政府文件 | https://www.xining.gov.cn/zwgk/fdzdgknr/zcwj/szfwj_35/ |
+
+### 13.2 未采用候选
+
+| 区域 | 候选 URL | 排除原因 |
+|---|---|---|
+| 山东省/济南市 | https://www.jinan.gov.cn/api-gateway/jpaas-jpolicy-web-server/front/info/index | API 端点（沿用 v4 排除原则） |
+| 内蒙古自治区 | https://www.nmg.gov.cn/nmg_zcwjk/ | JS 渲染 fetch_webpage 无法验证内容 |
+| 四川省 | https://www.sc.gov.cn/10462/scszcwjkss/scszcwjkss.shtml | 主页有该入口，但点开返回 403 (WAF) |
+
+### 13.3 仍未能稳定核验
+
+**省级（5）**：山东、湖北、四川、甘肃、青海、内蒙古 —— 均为 WAF / JS 渲染，`fetch_webpage` 仅返回壳。
+
+**省会（3）**：吉林省/长春市、四川省/成都市、贵州省/贵阳市 —— `fetch_webpage` 返回壳或 WAF 拦截。贵阳的候选 `/zwgk/zfxxgks/.../szfgfxwj/` 找到但内容未能确认。
+
+这些地区已在新 skill 的 §经验法则 中累计为 "WAF / JS 渲染高发地区"，下一阶段建议改用 Playwright 实际加载。
+
+### 13.4 覆盖率变化
+
+| 类别 | v4 | v5 新增 | 当前合计 |
+|---|---|---|---|
+| 地区政策 | 25 | 26 | **51** |
+
+### 13.5 经验沉淀（已写入 `policy-site-from-gov-site/SKILL.md`）
+
+- **CMS 模式按省镜像**：浙江系一律 `col/col<id>/index.html`；安徽系 `/site/tpl/...?activeId=...`、合肥同源 `publicColumn`。
+- **省名常带子域名**：江西省级规范性文件库实际位于子域 `xzgfxwjk.jiangxi.gov.cn`。一级首页找不到时应在 HTML 里搜 `*.gov.cn` 子域。
+- **"政策" vs "政府令"**：河南省门户唯一稳定的政策入口是 `省政府令`（`/zwgk/fgwj/szfl/`），范围窄于 "政策文件"，仍属 Tier B 可接受。
+- **Tier A 不必都是 "找政策"**：哈尔滨/南京/杭州/合肥/石家庄/陕西的政策入口名各不同（"政策文件库""规范性文件库""规范性文件数据库"），只要有检索框 + 列表 + 标题命中同义集合即算 Tier A。
+- **郑州的 `public.zhengzhou.gov.cn` 例外**：政府信息公开平台一般过宽，但郑州主门户已将政策入口直接挂在该子站，且子站 URL 可带参数 `?a=dir&p=D0104X` 直接跳到"政府文件"目录，因此可作为 Tier C 接受。
+
