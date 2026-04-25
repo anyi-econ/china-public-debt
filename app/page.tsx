@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Route } from "next";
-import { getAppData, getDashboardStats, getLatestWeeklyReport, getRecentUpdates } from "@/lib/data";
+import { getAppData, getDashboardStats, getLatestWeeklyReport, getWeeklyReports } from "@/lib/data";
 import { formatDate } from "@/lib/utils";
 import { SiteShell } from "@/components/layout/site-shell";
 
@@ -44,8 +44,8 @@ const topicCards: Array<{
 export default function HomePage() {
   const data = getAppData();
   const stats = getDashboardStats();
-  const updates = getRecentUpdates();
   const weeklyReport = getLatestWeeklyReport();
+  const weeklyReports = getWeeklyReports();
 
   return (
     <SiteShell currentPath="/">
@@ -92,20 +92,47 @@ export default function HomePage() {
                 本周周报
                 <span className="section-sub">{weeklyReport.weekStart.replace(/-/g, ".")}—{weeklyReport.weekEnd.replace(/-/g, ".")}</span>
               </h2>
+
+              <div className="weekly-stats-bar">
+                <span className="weekly-stat">发行 <strong>{weeklyReport.totalBonds}</strong> 只</span>
+                <span className="weekly-stat">合计 <strong>{weeklyReport.totalAmount.toLocaleString("zh-CN")}</strong> {weeklyReport.unit}</span>
+                <span className="weekly-stat">{weeklyReport.regions.length} 省份参与</span>
+              </div>
+
               <div className="editorial-prose">
-                <p>
-                  <strong>{weeklyReport.title}</strong>
-                </p>
                 <p>{weeklyReport.summary}</p>
+
+                <h3 className="weekly-section-heading">要点</h3>
                 {weeklyReport.highlights.map((item) => (
                   <p key={item}>— {item}</p>
                 ))}
-                <div className="mt-4" style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
-                  {weeklyReport.regions.map((r) => (
-                    <span key={r.name} className="metric-badge">
-                      {r.name} {r.amount.toLocaleString("zh-CN")} 亿元（{r.count} 只）
-                    </span>
-                  ))}
+
+                <h3 className="weekly-section-heading">各省发行明细</h3>
+                <table className="weekly-region-table">
+                  <thead>
+                    <tr>
+                      <th>省份</th>
+                      <th>发行规模（亿元）</th>
+                      <th>债券只数</th>
+                      <th>占比</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {weeklyReport.regions.map((r) => (
+                      <tr key={r.name}>
+                        <td>{r.name}</td>
+                        <td>{r.amount.toLocaleString("zh-CN")}</td>
+                        <td>{r.count}</td>
+                        <td>{(r.amount / weeklyReport.totalAmount * 100).toFixed(1)}%</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+
+                <div className="weekly-download">
+                  <span>下载完整报告：</span>
+                  <a href={weeklyReport.pdfPath} className="weekly-download-link">PDF</a>
+                  <a href={weeklyReport.docxPath} className="weekly-download-link">Word</a>
                 </div>
               </div>
             </div>
@@ -129,16 +156,17 @@ export default function HomePage() {
         </div>
 
         <aside className="home-sidebar">
-          <h2 className="section-title">最新更新</h2>
+          <h2 className="section-title">每周周报</h2>
           <ul className="sidebar-papers">
-            {updates.slice(0, 6).map((item) => (
-              <li key={item.id} className="sidebar-paper-item">
+            {weeklyReports.map((r) => (
+              <li key={r.id} className="sidebar-paper-item">
                 <span className="sidebar-paper-meta">
-                  {formatDate(item.date)} · {item.type}
+                  {r.weekStart.replace(/-/g, ".")}—{r.weekEnd.replace(/-/g, ".")}
                 </span>
-                <span className="sidebar-paper-title-text">{item.title}</span>
-                <span className="sidebar-paper-authors-text">{item.source}</span>
-                <p className="sidebar-paper-note">{item.note}</p>
+                <span className="sidebar-paper-title-text">{r.title}</span>
+                <span className="sidebar-paper-authors-text">
+                  {r.totalBonds} 只 · {r.totalAmount.toLocaleString("zh-CN")} {r.unit}
+                </span>
               </li>
             ))}
           </ul>

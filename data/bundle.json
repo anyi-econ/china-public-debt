@@ -1,6 +1,20 @@
 {
   "policies": [
     {
+      "id": "policy-财政部关于修订2026年政府收支分类科目的通知-2026-03-11",
+      "title": "财政部关于修订2026年政府收支分类科目的通知",
+      "date": "2026-03-11",
+      "source": "财政部",
+      "category": "债务管理",
+      "tags": [
+        "财政部",
+        "预算司",
+        "政策原文"
+      ],
+      "summary": "政策摘要：财政部关于修订2026年政府收支分类科目的通知。当前为规则摘要，后续可接入模型进一步优化。",
+      "url": "https://yss.mof.gov.cn/zhengceguizhang/202603/t20260311_3985079.htm"
+    },
+    {
       "id": "policy-npc-2026-budget-report",
       "title": "关于2025年中央和地方预算执行情况与2026年中央和地方预算草案的报告",
       "date": "2026-03-16",
@@ -398,6 +412,15 @@
   ],
   "updates": [
     {
+      "id": "update-生成-2026年3月中国政府债务月度简报-1776585373168-d291",
+      "date": "2026-04-19",
+      "type": "policy",
+      "title": "生成 2026年3月中国政府债务月度简报",
+      "source": "系统简报生成器",
+      "status": "新增",
+      "note": "基于 2026-03 元数据生成月度简报并完成归档。"
+    },
+    {
       "id": "update-生成-2026年3月中国政府债务月度简报-1775025866676-e11d",
       "date": "2026-04-01",
       "type": "policy",
@@ -498,106 +521,106 @@
     ]
   },
   "metadata": {
-    "lastUpdated": "2026-04-01",
-    "updateMode": "monthly",
+    "lastUpdated": "2026-04-19",
+    "updateMode": "weekly",
     "sourceStatus": [
       {
         "name": "财政部预算司政策规章",
         "category": "policy",
-        "status": "fallback",
-        "message": "财政部预算司正式政策规章页面，可直接回跳到地方政府债务、预算制度与信息公开原文。；本次使用兜底记录。fetch failed",
-        "updatedAt": "2026-04-01"
+        "status": "success",
+        "message": "财政部预算司正式政策规章页面，可直接回跳到地方政府债务、预算制度与信息公开原文。；本次处理 1 条候选记录。",
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "中国人大网预算与债务报告",
         "category": "policy",
         "status": "success",
         "message": "全国人大公开预算报告和政府债务管理报告全文，可直接获取年度国债、地方政府债务余额和限额安排。；本次处理 1 条候选记录。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "中国政府网政策库",
         "category": "policy",
         "status": "fallback",
-        "message": "中国政府网政策库与转载新华社稿件，是专项债、化债和财政政策的重要权威来源。；本次使用兜底记录。fetch failed",
-        "updatedAt": "2026-04-01"
+        "message": "中国政府网政策库与转载新华社稿件，是专项债、化债和财政政策的重要权威来源。；本次处理 0 条候选记录。",
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "国家发展改革委政策发布",
         "category": "policy",
         "status": "fallback",
         "message": "首版仅作为导航源，暂不自动抓取。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "中国人民银行公告与政策",
         "category": "policy",
         "status": "fallback",
         "message": "首版仅作为导航源，暂不自动抓取。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "新华社",
         "category": "news",
         "status": "success",
         "message": "新华社是政策发布和两会财经口径的重要权威媒体来源。；本次处理 1 条候选记录。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "人民日报",
         "category": "news",
         "status": "fallback",
         "message": "该来源当前仅作为导航源保留，不执行自动抓取。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "央视新闻",
         "category": "news",
         "status": "fallback",
         "message": "该来源当前仅作为导航源保留，不执行自动抓取。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "财新网",
         "category": "news",
         "status": "fallback",
         "message": "仅导航，不做自动抓取。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "第一财经",
         "category": "news",
         "status": "fallback",
         "message": "仅导航，不做自动抓取。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "财政部债务管理司月度统计",
         "category": "debt",
         "status": "success",
         "message": "财政部债务管理司月度统计页面，持续发布地方政府债券发行和债务余额情况。；本次纳入 2 条月度统计记录。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "中国地方政府债券信息公开平台",
         "category": "debt",
         "status": "fallback",
         "message": "该来源当前仅作为导航源保留，不执行自动抓取。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "中国知网",
         "category": "paper",
         "status": "fallback",
         "message": "出于访问限制与合规考虑，首版仅做导航与手动导入。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       },
       {
         "name": "NBER / ScienceDirect / 社科院研究",
         "category": "paper",
         "status": "fallback",
         "message": "文献页优先保留 NBER、正式期刊落地页、RePEc 索引和中国社科院公开研究。；本次处理 0 条候选记录。",
-        "updatedAt": "2026-04-01"
+        "updatedAt": "2026-04-19"
       }
     ]
   }

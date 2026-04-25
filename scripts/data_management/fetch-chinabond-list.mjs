@@ -15,7 +15,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUTPUT_PATH = path.resolve(__dirname, "../data/chinabond-list.json");
+const OUTPUT_PATH = path.resolve(__dirname, "../../data/chinabond-list.json");
 
 const BASE_URL = "https://www.chinabond.com.cn";
 const LIST_API = `${BASE_URL}/cbiw/LgbBondInfo`;

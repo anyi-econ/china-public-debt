@@ -105,7 +105,7 @@ export function BondIssuanceClient({ items }: { items: CelmaBondIssuanceItem[] }
       <div className="gov-search-header">
         <h2 className="section-title">
           债券发行动态
-          <span className="section-sub">抓取 CELMA 发行安排、发行前公告、发行结果三个栏目</span>
+          <span className="section-sub">抓取 CELMA 发行安排/发行前公告/发行结果，并补充 Chinabond 发行前披露</span>
         </h2>
         <div className="muted" style={{ marginTop: "0.3rem" }}>
           共 {items.length} 条记录 · 栏目 {CATEGORY_OPTIONS.length} 个

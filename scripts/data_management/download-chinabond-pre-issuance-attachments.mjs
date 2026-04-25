@@ -14,9 +14,9 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const INPUT_PATH = path.resolve(__dirname, "../data/chinabond-bond-issuance.json");
-const OUTPUT_PATH = path.resolve(__dirname, "../data/chinabond-bond-issuance.json");
-const ATTACHMENTS_ROOT = path.resolve(__dirname, "../data/chinabond-pre-issuance-attachments");
+const INPUT_PATH = path.resolve(__dirname, "../../data/chinabond-bond-issuance.json");
+const OUTPUT_PATH = path.resolve(__dirname, "../../data/chinabond-bond-issuance.json");
+const ATTACHMENTS_ROOT = path.resolve(__dirname, "../../data/chinabond-pre-issuance-attachments");
 const RAW_ROOT = path.join(ATTACHMENTS_ROOT, "raw");
 const RAW_LIST_DIR = path.join(RAW_ROOT, "list-pages");
 const RAW_DETAIL_DIR = path.join(RAW_ROOT, "details");

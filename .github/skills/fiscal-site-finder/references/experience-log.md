@@ -215,3 +215,44 @@ Two-letter domain aliases causing cross-city contamination:
 - 甘肃: 3/9 via gov portal
 - 湖南: 3/7 via gov portal
 - 湖北: 2/7 via gov portal
+
+---
+
+## Heilongjiang County-Level Batch (2026-07)
+
+### Task: 4 counties — 宝山区(双鸭山), 勃利县(七台河), 嫩江市(黑河), 兰西县(绥化)
+
+### Results: 1/4 found
+
+| County | Prefecture | Result | URL |
+|--------|-----------|--------|-----|
+| 宝山区 | 双鸭山市 | ✅ FOUND | `sysbsq.gov.cn/bs/366/xxgk_list.shtml` |
+| 勃利县 | 七台河市 | ❌ NOT FOUND | No fiscal column visible on site |
+| 嫩江市 | 黑河市 | ❌ NOT FOUND | c100783 column doesn't exist on CMS |
+| 兰西县 | 绥化市 | ❌ NOT FOUND | Sibling pattern `/ysjs/zfxxgk.shtml` 404 |
+
+### Key Lessons
+
+**Domain trap — 兰西县 vs 兰溪市:**
+- `lanxi.gov.cn` = 浙江省兰溪市 (浙ICP05000088), NOT 黑龙江兰西县
+- Real 兰西县 domain: `www.hljlanxi.gov.cn` (黑ICP12002120号-1)
+- Always verify ICP备案 and footer text to confirm domain ownership
+
+**CMS column sharing varies by prefecture:**
+- 黑河市: Siblings (爱辉/逊克/孙吴/北安/五大连池) all share column c100783, but 嫩江 has completely different column numbering (c100368–c100743 range). Column c100783 simply doesn't exist on 嫩江's CMS instance.
+- 七台河市: Each county has unique column IDs (新兴区=c100619, 桃山区=c100885, 茄子河区=c100740). No shared fiscal column pattern.
+- 双鸭山市: Uses numeric-ID-based paths (e.g., `/bs/366/xxgk_list.shtml`). Siblings have IDs like 729, 19, 231, 547, 15444, 1278, 24864.
+
+**Numeric ID probing (双鸭山 CMS):**
+- Probed IDs 362–400 for 宝山区; found fiscal at ID 366
+- ID 365 = "财政资金直达基层" (related but different)
+- Systematic probing with 4-URL batches is effective for this CMS type
+
+**勃利县 missing fiscal section:**
+- 法定主动公开内容 only shows 4 sub-sections: 规划信息(c100464), 政府采购(external), 应急管理(c100498), 人事信息(c100502)
+- Probed c100465–c100515 (20+ IDs): all 404
+- The fiscal budget section was never set up on this site
+
+**Search engines consistently blocked:**
+- Bing, Google, Baidu all returned CAPTCHA/verification pages for `site:` searches
+- This is NOT a viable discovery method via fetch_webpage tool

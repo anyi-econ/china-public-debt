@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "WebSearch",
+      "Bash(curl:*)",
+      "Bash(grep -v \"javascript\\\\|css\\\\|png\\\\|jpg\\\\|ico\\\\|font\\\\|shtml\\\\\"\\\\$\")",
+      "Bash(grep -v \"css\\\\|js\\\\|png\\\\|jpg\\\\|ico\\\\|font\\\\|doc\\\\|shtml\\\\\"\\\\$\")",
+      "Bash(nslookup:*)",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(grep -v -E 'css|javascript|gov\\\\.cn$|\\\\.html$\"')"
+    ]
+  }
+}

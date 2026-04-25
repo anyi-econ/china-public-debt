@@ -17,8 +17,8 @@ import { load } from "cheerio";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const INPUT_PATH = path.resolve(__dirname, "../data/celma-bond-issuance.json");
-const ATTACHMENTS_ROOT = path.resolve(__dirname, "../data/celma-pre-issuance-attachments");
+const INPUT_PATH = path.resolve(__dirname, "../../data/celma-bond-issuance.json");
+const ATTACHMENTS_ROOT = path.resolve(__dirname, "../../data/celma-pre-issuance-attachments");
 const LOG_PATH = path.join(ATTACHMENTS_ROOT, "download-log.csv");
 
 const DETAIL_CONCURRENCY = parseInt(process.env.DETAIL_CONCURRENCY, 10) || 5;

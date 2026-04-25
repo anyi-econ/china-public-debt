@@ -1,0 +1,4 @@
+  // —— v8.b 跨域复用（Playwright 探测发现链接回母级，复用母级 URL）——
+  "贵州省/铜仁市/松桃苗族自治县": "https://www.guizhou.gov.cn/ztzl/zcwjk/", // shared from "贵州省" (pw, 省政府文件 score=60)
+  "贵州省/铜仁市/沿河土家族自治县": "https://www.guizhou.gov.cn/ztzl/zcwjk/", // shared from "贵州省" (pw, 省政府文件 score=60)
+  "湖北省/咸宁市/赤壁市": "https://www.hubei.gov.cn/zfwj/list1.shtml", // shared from "湖北省" (pw, 湖北省法规规章规范性文件数据库 score=80)

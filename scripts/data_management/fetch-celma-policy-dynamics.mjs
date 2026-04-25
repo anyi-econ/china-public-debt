@@ -6,8 +6,8 @@ import { load } from "cheerio";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const OUTPUT_PATH = path.resolve(__dirname, "../data/celma-policy-dynamics.json");
-const ATTACHMENTS_ROOT = path.resolve(__dirname, "../data/celma-major-events-attachments");
+const OUTPUT_PATH = path.resolve(__dirname, "../../data/celma-policy-dynamics.json");
+const ATTACHMENTS_ROOT = path.resolve(__dirname, "../../data/celma-major-events-attachments");
 const LOG_PATH = path.join(ATTACHMENTS_ROOT, "download-log.csv");
 const SOURCE_NAME = "中国地方政府债券信息公开平台 / celma";
 const MAJOR_EVENT_CATEGORY = "重大事项";

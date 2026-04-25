@@ -17,7 +17,7 @@ import { load } from "cheerio";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const OUTPUT_PATH = path.resolve(__dirname, "../data/celma-bond-issuance.json");
+const OUTPUT_PATH = path.resolve(__dirname, "../../data/celma-bond-issuance.json");
 const SOURCE_NAME = "中国地方政府债券信息公开平台 / celma";
 const BASE = "https://www.celma.org.cn";
 
