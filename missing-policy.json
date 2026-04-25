@@ -104,9 +104,6 @@
   "河北省/衡水市/深州市": {
     "url": "http://www.shenzhou.gov.cn/"
   },
-  "山西省/太原市/杏花岭区": {
-    "url": "https://www.sxtyxhl.gov.cn/"
-  },
   "山西省/太原市/尖草坪区": {
     "url": "https://www.tyjcp.gov.cn/"
   },
@@ -167,26 +164,17 @@
   "辽宁省/大连市/金州区": {
     "url": "http://www.dljp.gov.cn/"
   },
-  "辽宁省/大连市/长海县": {
-    "url": "https://www.dlch.gov.cn/"
-  },
   "辽宁省/大连市/庄河市": {
     "url": "http://dlzh.gov.cn/"
   },
   "辽宁省/抚顺市/东洲区": {
     "url": "http://www.fsdz.gov.cn/"
   },
-  "辽宁省/抚顺市/新宾满族自治县": {
-    "url": "http://www.xinbin.gov.cn/"
-  },
   "辽宁省/锦州市/古塔区": {
     "url": "http://www.jzgtq.gov.cn/"
   },
   "辽宁省/阜新市/阜新蒙古族自治县": {
     "url": "https://www.fmx.gov.cn/"
-  },
-  "辽宁省/辽阳市": {
-    "url": "http://www.liaoyang.gov.cn/"
   },
   "辽宁省/葫芦岛市/南票区": {
     "url": "http://www.npq.gov.cn/"
@@ -368,26 +356,14 @@
   "安徽省/合肥市/巢湖市": {
     "url": "https://www.chaohu.gov.cn/"
   },
-  "安徽省/蚌埠市/龙子湖区": {
-    "url": "https://www.bblzh.gov.cn/"
-  },
-  "安徽省/蚌埠市/怀远县": {
-    "url": "https://www.ahhy.gov.cn/"
-  },
   "安徽省/淮南市/大通区": {
     "url": "https://www.hndt.gov.cn/"
-  },
-  "安徽省/淮南市/凤台县": {
-    "url": "https://www.ft.gov.cn/"
   },
   "安徽省/淮南市/寿县": {
     "url": "https://www.shouxian.gov.cn/"
   },
   "安徽省/安庆市/宜秀区": {
     "url": "https://www.yixiu.gov.cn/"
-  },
-  "安徽省/安庆市/太湖县": {
-    "url": "http://www.thx.gov.cn/"
   },
   "安徽省/黄山市/黄山区": {
     "url": "https://www.hsq.gov.cn/"
@@ -427,12 +403,6 @@
   },
   "安徽省/亳州市/利辛县": {
     "url": "https://www.lixin.gov.cn/"
-  },
-  "安徽省/宣城市/宣州区": {
-    "url": "https://www.xuanzhou.gov.cn/"
-  },
-  "安徽省/宣城市/广德市": {
-    "url": "https://www.guangde.gov.cn/"
   },
   "江西省/景德镇市": {
     "url": "https://www.jdz.gov.cn/"
@@ -506,21 +476,6 @@
   "江西省/上饶市/德兴市": {
     "url": "http://www.dxs.gov.cn/"
   },
-  "山东省/济南市/历下区": {
-    "url": "http://www.lixia.gov.cn/"
-  },
-  "山东省/淄博市/临淄区": {
-    "url": "http://www.linzi.gov.cn/"
-  },
-  "山东省/淄博市/高青县": {
-    "url": "http://www.gaoqing.gov.cn/"
-  },
-  "山东省/淄博市/沂源县": {
-    "url": "http://www.yiyuan.gov.cn/"
-  },
-  "山东省/枣庄市/峄城区": {
-    "url": "http://www.ycq.gov.cn/"
-  },
   "山东省/东营市/东营区": {
     "url": "http://www.dyq.gov.cn/"
   },
@@ -590,9 +545,6 @@
   "河南省/鹤壁市/淇县": {
     "url": "http://www.qxzf.gov.cn/"
   },
-  "河南省/新乡市/新乡县": {
-    "url": "http://www.xinxiangxian.gov.cn/"
-  },
   "河南省/濮阳市/清丰县": {
     "url": "http://www.qingfeng.gov.cn/"
   },
@@ -620,17 +572,11 @@
   "湖北省/武汉市/江夏区": {
     "url": "https://www.jiangxia.gov.cn/"
   },
-  "湖北省/黄石市/下陆区": {
-    "url": "https://www.xialuqu.gov.cn/"
-  },
   "湖北省/黄石市/铁山区": {
     "url": "https://www.hsdz.gov.cn/"
   },
   "湖北省/十堰市/茅箭区": {
     "url": "http://maojian.shiyan.gov.cn/"
-  },
-  "湖北省/十堰市/郧西县": {
-    "url": "http://www.yunxi.gov.cn/"
   },
   "湖北省/十堰市/竹山县": {
     "url": "http://www.zhushan.gov.cn/"
@@ -644,14 +590,8 @@
   "湖北省/襄阳市/樊城区": {
     "url": "http://www.fc.gov.cn/"
   },
-  "湖北省/襄阳市/南漳县": {
-    "url": "http://www.hbnz.gov.cn/"
-  },
   "湖北省/襄阳市/谷城县": {
     "url": "http://www.hbgucheng.gov.cn/"
-  },
-  "湖北省/襄阳市/保康县": {
-    "url": "https://www.baokang.gov.cn/"
   },
   "湖北省/襄阳市/宜城市": {
     "url": "http://ych.gov.cn/"
@@ -686,20 +626,11 @@
   "湖北省/黄冈市/武穴市": {
     "url": "http://www.wuxue.gov.cn/"
   },
-  "湖北省/咸宁市/咸安区": {
-    "url": "http://www.xianan.gov.cn/"
-  },
   "湖北省/咸宁市/嘉鱼县": {
     "url": "http://www.jiayu.gov.cn/"
   },
-  "湖北省/咸宁市/崇阳县": {
-    "url": "http://chongyang.gov.cn/"
-  },
   "湖北省/随州市/随县": {
     "url": "http://www.zgsuixian.gov.cn/"
-  },
-  "湖北省/恩施土家族苗族自治州/咸丰县": {
-    "url": "http://www.xianfeng.gov.cn/"
   },
   "湖南省/株洲市": {
     "url": "https://www.zhuzhou.gov.cn/"
@@ -740,9 +671,6 @@
   "湖南省/邵阳市/城步苗族自治县": {
     "url": "http://www.chengbu.gov.cn/"
   },
-  "湖南省/岳阳市": {
-    "url": "https://www.yueyang.gov.cn/"
-  },
   "湖南省/岳阳市/岳阳楼区": {
     "url": "https://www.yylq.gov.cn/"
   },
@@ -757,9 +685,6 @@
   },
   "湖南省/岳阳市/华容县": {
     "url": "https://www.huarong.gov.cn/"
-  },
-  "湖南省/岳阳市/湘阴县": {
-    "url": "https://www.xiangyin.gov.cn/"
   },
   "湖南省/岳阳市/平江县": {
     "url": "https://www.pingjiang.gov.cn/"
@@ -1001,17 +926,11 @@
   "四川省/达州市/大竹县": {
     "url": "http://www.dazhu.gov.cn/"
   },
-  "四川省/雅安市": {
-    "url": "http://www.yaan.gov.cn/"
-  },
   "贵州省/毕节市/七星关区": {
     "url": "http://www.bjqixingguan.gov.cn/"
   },
   "贵州省/铜仁市": {
     "url": "https://www.tongren.gov.cn/"
-  },
-  "云南省/昆明市/五华区": {
-    "url": "http://www.kmwh.gov.cn/"
   },
   "云南省/昭通市/巧家县": {
     "url": "http://www.qiaojia.gov.cn/"
@@ -1030,9 +949,6 @@
   },
   "云南省/红河哈尼族彝族自治州/石屏县": {
     "url": "https://hhsp.gov.cn/"
-  },
-  "云南省/红河哈尼族彝族自治州/元阳县": {
-    "url": "https://www.hhyy.gov.cn/"
   },
   "云南省/文山壮族苗族自治州/文山市": {
     "url": "http://www.ynwss.gov.cn/"
@@ -1096,9 +1012,6 @@
   },
   "甘肃省/兰州市/永登县": {
     "url": "http://www.yongdeng.gov.cn/"
-  },
-  "甘肃省/兰州市/皋兰县": {
-    "url": "http://www.gaolan.gov.cn/"
   },
   "甘肃省/兰州市/榆中县": {
     "url": "https://www.lzyuzhong.gov.cn/"

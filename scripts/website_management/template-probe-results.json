@@ -1,0 +1,1892 @@
+[
+  {
+    "key": "河北省/唐山市",
+    "govUrl": "https://www.tangshan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/邯郸市/丛台区",
+    "govUrl": "http://www.hdct.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/石家庄市/赞皇县",
+    "govUrl": "http://www.zanhuang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/唐山市/丰南区",
+    "govUrl": "https://www.fengnanqu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/石家庄市/裕华区",
+    "govUrl": "http://www.yuhuaqu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/邯郸市/肥乡区",
+    "govUrl": "https://www.fxq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/邯郸市/磁县",
+    "govUrl": "http://www.cixian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/邯郸市/成安县",
+    "govUrl": "https://www.chengan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/邯郸市/曲周县",
+    "govUrl": "http://www.qzx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/秦皇岛市/卢龙县",
+    "govUrl": "https://www.lulong.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/唐山市/滦州市",
+    "govUrl": "http://www.luanxian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/邯郸市/鸡泽县",
+    "govUrl": "http://www.jize.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/保定市/望都县",
+    "govUrl": "http://www.wangdu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/保定市/易县",
+    "govUrl": "https://www.bdyixian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/保定市/顺平县",
+    "govUrl": "http://www.shunping.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/保定市/定州市",
+    "govUrl": "http://www.dzs.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/廊坊市/香河县",
+    "govUrl": "http://www.xianghe.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/保定市/阜平县",
+    "govUrl": "https://www.bdfuping.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/廊坊市/大城县",
+    "govUrl": "https://www.dacheng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/保定市/安国市",
+    "govUrl": "http://www.anguo.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/承德市/鹰手营子矿区",
+    "govUrl": "http://www.ysyz.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/廊坊市/文安县",
+    "govUrl": "http://www.wenan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/廊坊市/大厂回族自治县",
+    "govUrl": "https://www.lfdc.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/衡水市/桃城区",
+    "govUrl": "http://www.taocheng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/衡水市/冀州区",
+    "govUrl": "http://www.jizhou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/衡水市/枣强县",
+    "govUrl": "http://www.zaoqiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/衡水市/武强县",
+    "govUrl": "http://www.wuqiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/廊坊市/安次区",
+    "govUrl": "https://www.anci.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/衡水市/饶阳县",
+    "govUrl": "http://www.raoyang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/衡水市/安平县",
+    "govUrl": "http://www.anping.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/衡水市/景县",
+    "govUrl": "http://www.jingxian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/太原市/尖草坪区",
+    "govUrl": "https://www.tyjcp.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/太原市/万柏林区",
+    "govUrl": "https://www.sxtywbl.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/衡水市/深州市",
+    "govUrl": "http://www.shenzhou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/太原市/娄烦县",
+    "govUrl": "https://www.sxlf.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/阳泉市/郊区",
+    "govUrl": "http://www.yqjq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/阳泉市/城区",
+    "govUrl": "http://www.yqcq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/晋中市/榆社县",
+    "govUrl": "http://www.yushe.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/长治市/潞州区",
+    "govUrl": "http://www.luzhouqu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/晋中市/左权县",
+    "govUrl": "http://www.jzzq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/运城市/夏县",
+    "govUrl": "https://www.sxxiaxian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "辽宁省/大连市/西岗区",
+    "govUrl": "http://www.dlxg.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/晋中市/平遥县",
+    "govUrl": "http://www.pingyao.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "辽宁省/大连市/长海县",
+    "govUrl": "https://www.dlch.gov.cn/",
+    "tried": 2,
+    "picked": {
+      "url": "https://www.dlch.gov.cn/zwgk/",
+      "finalUrl": "https://www.dlch.gov.cn/zwgk/",
+      "path": "/zwgk/",
+      "title": "长海县人民政府",
+      "sample": "长海县人民政府 We're sorry but default doesn't work properly without JavaScript enabled. Please enable it to continue."
+    }
+  },
+  {
+    "key": "辽宁省/抚顺市/东洲区",
+    "govUrl": "http://www.fsdz.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "辽宁省/大连市/金州区",
+    "govUrl": "http://www.dljp.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "辽宁省/大连市/沙河口区",
+    "govUrl": "http://www.dlshk.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "辽宁省/抚顺市/新宾满族自治县",
+    "govUrl": "http://www.xinbin.gov.cn/",
+    "tried": 8,
+    "picked": {
+      "url": "http://www.xinbin.gov.cn/list_wj.asp?s=188",
+      "finalUrl": "http://www.xinbin.gov.cn/list_wj.asp?s=188",
+      "path": "/list_wj.asp?s=188",
+      "title": "�±������� �±�������������������",
+      "sample": "�±������� �±������������������� ��ӭ�������±��������������������ٷ���վ�� �������±���ӭ���� ��Ϊ��ҳ | �����ղ� ��վ��ҳ �������� ����Ҫ�� ͼƬ���� ���湫ʾ ��ע�±� ����̬ ���Ŷ�̬ ������Ϣ ������Ϣ ר��ר�� ������Ϣ���� ���"
+    }
+  },
+  {
+    "key": "辽宁省/辽阳市",
+    "govUrl": "http://www.liaoyang.gov.cn/",
+    "tried": 3,
+    "picked": {
+      "url": "http://www.liaoyang.gov.cn/info_open.html",
+      "finalUrl": "http://www.liaoyang.gov.cn/info_open.html",
+      "path": "/info_open.html",
+      "title": "政府信息公开",
+      "sample": "政府信息公开 市政府领导 tab1 tab2 tab3 tab4"
+    }
+  },
+  {
+    "key": "辽宁省/大连市/庄河市",
+    "govUrl": "http://dlzh.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "辽宁省/锦州市/古塔区",
+    "govUrl": "http://www.jzgtq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "辽宁省/阜新市/阜新蒙古族自治县",
+    "govUrl": "https://www.fmx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/哈尔滨市/宾县",
+    "govUrl": "http://www.chinabx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "辽宁省/葫芦岛市/南票区",
+    "govUrl": "http://www.npq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/鸡西市",
+    "govUrl": "https://www.jixi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/鸡西市/鸡冠区",
+    "govUrl": "https://www.jgq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/鸡西市/滴道区",
+    "govUrl": "http://www.didaoqu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/鸡西市/恒山区",
+    "govUrl": "https://www.jixihengshan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/鸡西市/梨树区",
+    "govUrl": "https://jixilishu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/鸡西市/密山市",
+    "govUrl": "http://hljms.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/双鸭山市/宝清县",
+    "govUrl": "https://hlbaoqing.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/鸡西市/城子河区",
+    "govUrl": "https://www.czh.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/鸡西市/麻山区",
+    "govUrl": "https://www.jiximashan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/七台河市",
+    "govUrl": "https://www.qth.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/大庆市/让胡路区",
+    "govUrl": "http://www.dqrhl.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/大庆市/肇州县",
+    "govUrl": "http://www.zhaozhou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/七台河市/新兴区",
+    "govUrl": "http://www.hljxinxing.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/七台河市/茄子河区",
+    "govUrl": "http://www.hljqzh.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/七台河市/桃山区",
+    "govUrl": "http://www.hljtsq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/黑河市",
+    "govUrl": "https://www.heihe.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/七台河市/勃利县",
+    "govUrl": "http://www.hljboli.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/伊春市/乌翠区",
+    "govUrl": "http://www.ycwc.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/绥化市/兰西县",
+    "govUrl": "https://www.hljlanxi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/绥化市/青冈县",
+    "govUrl": "https://www.qgnet.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/绥化市",
+    "govUrl": "https://www.suihua.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/黑河市/五大连池市",
+    "govUrl": "https://www.wdlc.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/绥化市/明水县",
+    "govUrl": "http://www.mingshui.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/绥化市/安达市",
+    "govUrl": "http://www.hlanda.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/绥化市/绥棱县",
+    "govUrl": "http://www.suiling.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/绥化市/肇东市",
+    "govUrl": "https://www.hljzhaodong.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "黑龙江省/绥化市/海伦市",
+    "govUrl": "http://www.hailun.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "浙江省/温州市/瑞安市",
+    "govUrl": "http://www.ruian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "浙江省/温州市",
+    "govUrl": "https://www.wenzhou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "浙江省/温州市/乐清市",
+    "govUrl": "https://www.yueqing.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "浙江省/金华市",
+    "govUrl": "https://www.jinhua.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "浙江省/衢州市/衢江区",
+    "govUrl": "https://www.qjq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "浙江省/衢州市/常山县",
+    "govUrl": "https://www.zjcs.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "浙江省/台州市",
+    "govUrl": "https://www.zjtz.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "浙江省/衢州市/开化县",
+    "govUrl": "https://www.kaihua.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "浙江省/台州市/黄岩区",
+    "govUrl": "https://www.zjhy.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "浙江省/台州市/临海市",
+    "govUrl": "https://www.linhai.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "浙江省/丽水市/云和县",
+    "govUrl": "http://www.yunhe.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/合肥市/庐阳区",
+    "govUrl": "https://www.ahhfly.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/太原市/杏花岭区",
+    "govUrl": "https://www.sxtyxhl.gov.cn/",
+    "tried": 21,
+    "picked": {
+      "url": "https://www.sxtyxhl.gov.cn/zcwjjjd.html?chan=8709",
+      "finalUrl": "https://www.sxtyxhl.gov.cn/zcwjjjd.html?chan=8709",
+      "path": "/zcwjjjd.html?chan=8709",
+      "title": "太原市杏花岭区人民政府-政策文件及解读",
+      "sample": "太原市杏花岭区人民政府-政策文件及解读 太原市杏花岭区人民政府 政府信息公开 政府信息公开导航 政府信息 公开指南 政府信息 公开制度 法定主动 公开内容 政府领导 安全应急 工作报告 统计数据 规划计划 单位概况 公共企事业单位 建议提案结果公开 涉农补贴 重大建设项目 公共文化服务 促进民营经济发展壮大 政策文件及解读 人事信息 权责及监管信息 食品药品 重大会议 民生保障 就业创业 财政信息"
+    }
+  },
+  {
+    "key": "安徽省/合肥市/蜀山区",
+    "govUrl": "https://www.hfss.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/合肥市/包河区",
+    "govUrl": "https://www.baohe.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/合肥市/长丰县",
+    "govUrl": "https://www.changfeng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/合肥市/肥东县",
+    "govUrl": "https://www.feidong.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/合肥市/肥西县",
+    "govUrl": "https://www.ahfeixi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/蚌埠市/怀远县",
+    "govUrl": "https://www.ahhy.gov.cn/",
+    "tried": 6,
+    "picked": {
+      "url": "https://www.ahhy.gov.cn/zfxxgk/zwgk/zcwjkzs/index.html?columnId=21981",
+      "finalUrl": "https://www.ahhy.gov.cn/zfxxgk/zwgk/zcwjkzs/index.html?columnId=21981",
+      "path": "/zfxxgk/zwgk/zcwjkzs/index.html?columnId=21981",
+      "title": "政策文件库_蚌埠市政府信息公开网",
+      "sample": "政策文件库_蚌埠市政府信息公开网 404状态页面 {未找到} 页面不出来! 尝试返回上一页 404状态页面 焦点政策集成 “三地一区” 扩大内需 科技创新 消费环境 新质生产力 对外开放 长三角一体化 文化旅游 “高效办成一件事” “双招双引” 分类导航 文件类型 发布机构 发布年份 主题分类 用户类型 办事需求 服务类型 废止失效的规范性文件 关键词 发文日期 请选择公开主体 搜索范围 标题 全"
+    }
+  },
+  {
+    "key": "安徽省/合肥市/庐江县",
+    "govUrl": "https://www.lj.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/淮南市/凤台县",
+    "govUrl": "https://www.ft.gov.cn/",
+    "tried": 5,
+    "picked": {
+      "url": "https://www.ft.gov.cn/xxgk/",
+      "finalUrl": "https://www.ft.gov.cn/xxgk/",
+      "path": "/xxgk/",
+      "title": "政府信息公开_凤台县人民政府",
+      "sample": "政府信息公开_凤台县人民政府 繁体 加入收藏 首页 凤台概况 领导之窗 新闻中心 政府信息公开 政务服务 互动交流 数说凤台 首页 凤台概况 领导之窗 新闻中心 政府信息公开 政务服务 互动交流 数说凤台 决策公开 执行公开 管理公开 结果公开 服务公开 最新公开 政府会议 政策文件 政策解读 新闻发布会 重点领域信息公开 三大攻坚战 “放管服”改革 社会公益事业与社会福利 公共资源配置 公共监管"
+    }
+  },
+  {
+    "key": "安徽省/合肥市/巢湖市",
+    "govUrl": "https://www.chaohu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/淮南市/大通区",
+    "govUrl": "https://www.hndt.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/淮南市/寿县",
+    "govUrl": "https://www.shouxian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/安庆市/太湖县",
+    "govUrl": "http://www.thx.gov.cn/",
+    "tried": 9,
+    "picked": {
+      "url": "http://www.thx.gov.cn/public/index.html",
+      "finalUrl": "https://www.thx.gov.cn/public/index.html",
+      "path": "/public/index.html",
+      "title": "太湖县人民政府",
+      "sample": "太湖县人民政府 --> RSS订阅 --> 走进太湖 观光旅游 太湖印象 数据发布 网站首页 走进太湖 太湖新闻 政府信息公开 数据发布 政务服务 政民互动 太湖县人民政府网站工作年度报表 天气预报：今天白天到明天早晨多云，偏东风2～3级，今天白天最高气温23℃，明晨最低气温11℃；预计：25日，多云到晴天。昼夜温差较大，请注意及时增减衣物，谨防感冒！【太湖气象 2026.04.24】 热点关注 "
+    }
+  },
+  {
+    "key": "安徽省/黄山市/歙县",
+    "govUrl": "https://www.ahshx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/黄山市/徽州区",
+    "govUrl": "https://www.ahhz.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/黄山市/休宁县",
+    "govUrl": "https://www.xiuning.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/黄山市/黟县",
+    "govUrl": "https://www.yixian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河北省/廊坊市/固安县",
+    "govUrl": "http://www.guan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/安庆市/宜秀区",
+    "govUrl": "https://www.yixiu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/黄山市/黄山区",
+    "govUrl": "https://www.hsq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/黄山市/祁门县",
+    "govUrl": "https://www.ahqimen.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/亳州市/谯城区",
+    "govUrl": "https://www.bzqc.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/阜阳市/阜南县",
+    "govUrl": "https://www.funan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/蚌埠市/龙子湖区",
+    "govUrl": "https://www.bblzh.gov.cn/",
+    "tried": 5,
+    "picked": {
+      "url": "https://www.bblzh.gov.cn/xxgk/",
+      "finalUrl": "https://www.bblzh.gov.cn/xxgk/",
+      "path": "/xxgk/",
+      "title": "政府信息公开_蚌埠市龙子湖区人民政府",
+      "sample": "政府信息公开_蚌埠市龙子湖区人民政府 关怀版 无障碍 加入收藏 首 页 首 页 走进龙子湖 新闻中心 政府信息公开 网上办事 互动交流 数据发布 政府信息公开 决策公开 执行和结果公开 管理和服务公开 政策文件 重大决策预公开 政府工作报告 政府会议 国民经济和社会发展规划 年度重点工作 督查督办情况 重大决策跟踪反馈和执行效果评估 审计公开 建议提案办理 政府领导 政府机构 人事信息 财政资金 "
+    }
+  },
+  {
+    "key": "安徽省/亳州市",
+    "govUrl": "http://www.bozhou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/滁州市/天长市",
+    "govUrl": "http://www.tianchang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/亳州市/涡阳县",
+    "govUrl": "http://www.gy.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/亳州市/蒙城县",
+    "govUrl": "https://www.mengcheng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/宣城市/宣州区",
+    "govUrl": "https://www.xuanzhou.gov.cn/",
+    "tried": 4,
+    "picked": {
+      "url": "https://www.xuanzhou.gov.cn/Openness/",
+      "finalUrl": "https://www.xuanzhou.gov.cn/Openness/",
+      "path": "/Openness/",
+      "title": "政府信息公开-宣城市宣州区人民政府",
+      "sample": "政府信息公开-宣城市宣州区人民政府 中国政府网 安徽省人民政府 宣城市人民政府 繁体 支持IPV6 长辈版 无障碍 搜站点 搜站群 首页 网站首页 走进宣州 资讯中心 政府信息公开 解读回应 政务服务 互动交流 数据发布 政府信息公开专栏 政府信息公开指南 政府信息公开制度 政府信息公开内容 政府信息公开年报 依申请公开 规范性文件库 机构职责 政府会议 人事信息 政府工作报告 教育信息 政府采购"
+    }
+  },
+  {
+    "key": "安徽省/亳州市/利辛县",
+    "govUrl": "https://www.lixin.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "安徽省/宣城市/广德市",
+    "govUrl": "https://www.guangde.gov.cn/",
+    "tried": 2,
+    "picked": {
+      "url": "https://www.guangde.gov.cn/PolicyContent/",
+      "finalUrl": "https://www.guangde.gov.cn/PolicyContent/",
+      "path": "/PolicyContent/",
+      "title": "政策文件库-广德市人民政府",
+      "sample": "政策文件库-广德市人民政府 欢迎访问广德市政府网站！ 无障碍 长辈版 智能问答 繁体版 返回首页 “放管服”改革 减税降费 社会保障 营商环境 长三角区域合作 广德市人民政府政策文件库 全部文件 市政府文件 规范性文件 网站地图 | 使用帮助 | 版权声明 | 联系我们 | 页面纠错 主办：广德市人民政府办公室 承办：广德市信息中心 地址：广德市爱民路99号 邮编：242200 运维电话：0563"
+    }
+  },
+  {
+    "key": "江西省/景德镇市/昌江区",
+    "govUrl": "http://www.jdzcjq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/萍乡市/安源区",
+    "govUrl": "http://www.jxay.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/景德镇市/乐平市",
+    "govUrl": "http://www.lps.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/景德镇市",
+    "govUrl": "https://www.jdz.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/萍乡市/莲花县",
+    "govUrl": "http://www.zglh.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/萍乡市",
+    "govUrl": "https://www.pingxiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/萍乡市/湘东区",
+    "govUrl": "http://www.jxxd.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/景德镇市/浮梁县",
+    "govUrl": "https://fuliang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/景德镇市/珠山区",
+    "govUrl": "http://www.jdzzsq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/九江市/瑞昌市",
+    "govUrl": "http://www.ruichang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/萍乡市/芦溪县",
+    "govUrl": "http://www.luxi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/吉安市/安福县",
+    "govUrl": "http://www.afx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/抚州市/临川区",
+    "govUrl": "http://www.jxlc.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/萍乡市/上栗县",
+    "govUrl": "https://www.jxslx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/抚州市/南城县",
+    "govUrl": "http://www.jxnc.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/抚州市/乐安县",
+    "govUrl": "http://www.jxlean.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/抚州市/南丰县",
+    "govUrl": "http://www.jxnf.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/抚州市/金溪县",
+    "govUrl": "http://www.jinxi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/抚州市/东乡区",
+    "govUrl": "http://www.jxfzdx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/上饶市/玉山县",
+    "govUrl": "http://www.zgys.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/济南市/历下区",
+    "govUrl": "http://www.lixia.gov.cn/",
+    "tried": 1,
+    "picked": {
+      "url": "http://www.lixia.gov.cn/zwgk/",
+      "finalUrl": "http://www.lixia.gov.cn/zwgk/",
+      "path": "/zwgk/",
+      "title": "济南市历下区人民政府",
+      "sample": "济南市历下区人民政府 --> 党 务 政 务 人 大 政 协 纪 委 网站地图 | 网站声明 | 安全隐私 | 联系我们 鲁公网安备 37010202001204号 网站标识码：3701020017 鲁ICP备05024547号-1 中共历下区委、历下区人民政府主办"
+    }
+  },
+  {
+    "key": "江西省/抚州市/黎川县",
+    "govUrl": "http://www.jxlcx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/抚州市/资溪县",
+    "govUrl": "http://www.zixi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/枣庄市/峄城区",
+    "govUrl": "http://www.ycq.gov.cn/",
+    "tried": 1,
+    "picked": {
+      "url": "http://www.ycq.gov.cn/zwgk/",
+      "finalUrl": "http://www.ycq.gov.cn/zwgk/",
+      "path": "/zwgk/",
+      "title": "峄城区人民政府- 政务公开",
+      "sample": "峄城区人民政府- 政务公开 欢迎进入枣庄市峄城区人民政府网站！ 个人中心 | --> 长者专区 | 繁体 | 简体 | 无障碍 首 页 要闻动态 政务公开 政务服务 政民互动 走进峄城 数据开放 头条新闻 图片新闻 今日峄城 工作动态 通知公告 媒体看峄 视频之窗 政府部门 领导简介 乡镇街道 政府信息公开 政策文件 政策解读 政府公报 财政信息 行政执法公示 个人办事 企业办事 便民服务 在线访"
+    }
+  },
+  {
+    "key": "山东省/淄博市/沂源县",
+    "govUrl": "http://www.yiyuan.gov.cn/",
+    "tried": 3,
+    "picked": {
+      "url": "http://www.yiyuan.gov.cn/gongkai/",
+      "finalUrl": "http://www.yiyuan.gov.cn/gongkai/",
+      "path": "/gongkai/",
+      "title": "政务公开-沂源县人民政府",
+      "sample": "政务公开-沂源县人民政府 简体 | 繁体 | 无障碍浏览 淄博市政府 | 山东省政府 | 国务院 首页 走进沂源 沂源时讯 政务公开 政民互动 全域旅游 政务服务 数据查询 专题专栏 重大决策预公开 政府会议 政策文件 规划计划 重要部署执行公开 行政执法公示 市场监管与安全生产 重大建设项目 乡村振兴 “双随机、一公开” 机构职能专题 人事信息 职责任务清单 职责边界清单 权责清单 行政处罚/强"
+    }
+  },
+  {
+    "key": "山东省/淄博市/临淄区",
+    "govUrl": "http://www.linzi.gov.cn/",
+    "tried": 3,
+    "picked": {
+      "url": "http://www.linzi.gov.cn/gongkai/",
+      "finalUrl": "http://www.linzi.gov.cn/gongkai/",
+      "path": "/gongkai/",
+      "title": "政务公开-临淄区人民政府",
+      "sample": "政务公开-临淄区人民政府 简体 | 繁体 | RSS --> | 无障碍阅读 | 公务邮箱 站群导航 山东省政府 国务院 首页 走进临淄 要闻动态 政务公开 政务服务 政民互动 数据开放 专题专栏 齐文化 热门搜索：居住证 社保卡 落户 教师资格证认定 军人退役 领导信息 康义文 --> 康义文 区长 职责及简介 给我写信 副区长： 张敬帅 房美男 高晋 于海南 韩明 梁小明 最新公开 关于规范节"
+    }
+  },
+  {
+    "key": "山东省/淄博市/高青县",
+    "govUrl": "http://www.gaoqing.gov.cn/",
+    "tried": 3,
+    "picked": {
+      "url": "http://www.gaoqing.gov.cn/gongkai/",
+      "finalUrl": "http://www.gaoqing.gov.cn/gongkai/",
+      "path": "/gongkai/",
+      "title": "政务公开-高青县人民政府",
+      "sample": "政务公开-高青县人民政府 简体 | 繁体 | 无障碍浏览 淄博市政府 | 山东省政府 | 国务院 首页 走进高青 要闻动态 政务公开 政民互动 招商引资 --> 办事服务 数据查询 专题专栏 重大行政决策 意见征集 政府会议 政策文件 规划计划 政府公报 重要部署执行公开 财政信息 重大建设项目 生态环境 社会救助 社会福利 教育信息 医疗卫生 公共文化服务 稳岗就业 政府采购 机构职能 权责清单"
+    }
+  },
+  {
+    "key": "江西省/上饶市/弋阳县",
+    "govUrl": "http://www.jxyy.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "江西省/上饶市/德兴市",
+    "govUrl": "http://www.dxs.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/济宁市/任城区",
+    "govUrl": "http://jirczwfw.sd.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/济宁市/微山县",
+    "govUrl": "http://jiwszwfw.sd.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/济宁市/鱼台县",
+    "govUrl": "http://jiytzwfw.sd.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/济宁市/嘉祥县",
+    "govUrl": "http://www.jiaxiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/东营市/东营区",
+    "govUrl": "http://www.dyq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/济宁市/金乡县",
+    "govUrl": "http://www.jinxiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/济宁市/曲阜市",
+    "govUrl": "http://www.qufu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/东营市/广饶县",
+    "govUrl": "http://www.guangrao.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/东营市/河口区",
+    "govUrl": "http://www.hekou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/日照市",
+    "govUrl": "http://www.rizhao.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/日照市/五莲县",
+    "govUrl": "http://www.wulian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "辽宁省/大连市/中山区",
+    "govUrl": "http://www.dlzs.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山西省/吕梁市/岚县",
+    "govUrl": "http://www.lanxian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/临沂市/郯城县",
+    "govUrl": "http://www.tancheng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/威海市/文登区",
+    "govUrl": "http://www.wendeng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/临沂市",
+    "govUrl": "https://www.linyi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/德州市/平原县",
+    "govUrl": "http://www.zgpingyuan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河南省/平顶山市/郏县",
+    "govUrl": "http://www.jiaxian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "山东省/聊城市",
+    "govUrl": "http://www.liaocheng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河南省/新乡市/新乡县",
+    "govUrl": "http://www.xinxiangxian.gov.cn/",
+    "tried": 2,
+    "picked": {
+      "url": "http://www.xinxiangxian.gov.cn/?a=info",
+      "finalUrl": "http://www.xinxiangxian.gov.cn/htmls/index.html",
+      "path": "/?a=info",
+      "title": "新乡县人民政府门户网站",
+      "sample": "新乡县人民政府门户网站 微信 微博 --> 移动版 智能问答 繁 | 简 | --> EN --> 登录 | 注册 --> 进入适老模式 无障碍阅读 --> 本 站 --> 首页 新闻资讯 政务公开 政务服务 政民互动 走进新乡县 市委第十二巡察组对县委政法委机关、县人民检察院党组、县人民法院党组、县公安局党委、县司法局党组专项巡察工作动员会召开 市委第十二巡察组对县委政法委机关、县人民检察院党组"
+    }
+  },
+  {
+    "key": "河南省/安阳市/内黄县",
+    "govUrl": "http://www.neihuang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河南省/平顶山市/石龙区",
+    "govUrl": "https://www.shilongqu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河南省/三门峡市/渑池县",
+    "govUrl": "https://www.mianchi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河南省/濮阳市/清丰县",
+    "govUrl": "http://www.qingfeng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河南省/鹤壁市",
+    "govUrl": "https://www.hebi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河南省/鹤壁市/浚县",
+    "govUrl": "https://www.xunxian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河南省/三门峡市/卢氏县",
+    "govUrl": "https://www.lushixian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/武汉市/江夏区",
+    "govUrl": "https://www.jiangxia.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/武汉市/蔡甸区",
+    "govUrl": "https://www.caidian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/武汉市/江汉区",
+    "govUrl": "https://www.jianghan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河南省/鹤壁市/淇县",
+    "govUrl": "http://www.qxzf.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/黄石市/下陆区",
+    "govUrl": "https://www.xialuqu.gov.cn/",
+    "tried": 7,
+    "picked": {
+      "url": "https://www.xialuqu.gov.cn/zwgk/zc/zfwj/",
+      "finalUrl": "https://www.xialuqu.gov.cn/zwgk/zc/zfwj/",
+      "path": "/zwgk/zc/zfwj/",
+      "title": "下陆区政府网_信息公开",
+      "sample": "下陆区政府网_信息公开 设为首页 加入收藏 无障碍阅读 长者版 首善下陆V --> 首页 魅力下陆 政府信息公开 在线办事 数据开放 互动交流 专题专栏 搜 索 依申请公开 政策 规范性文件 规范性文件 规范性文件清理备案 其它主动公开文件 政策解读 政府信息 公开指南 政府信息 公开制度 法定主动 公开内容 区政府领导 机构简介 机构职能 机构设置 规划信息 “十四五”规划 其他规划 历史规划 "
+    }
+  },
+  {
+    "key": "湖北省/十堰市/郧西县",
+    "govUrl": "http://www.yunxi.gov.cn/",
+    "tried": 16,
+    "picked": {
+      "url": "http://www.yunxi.gov.cn/xxgk/zc/gfxwj/",
+      "finalUrl": "http://www.yunxi.gov.cn/xxgk/zc/gfxwj/",
+      "path": "/xxgk/zc/gfxwj/",
+      "title": "规范性文件 - 郧西县人民政府门户网站",
+      "sample": "规范性文件 - 郧西县人民政府门户网站 郧西县人民政府 首页 政府信息公开 政府信息公开 首页 新闻中心 政府信息公开 一网通办 便民服务 政民互动 依申请公开 政策 规范性文件 其他主动公开文件 政策解读 政府信息公开指南 政府信息公开制度 法定主动公开内容 县领导 县委 县人大 县政府 县政协 政府工作机构 通知公告 规划信息 统计信息 许可/服务 依据、条件、程序 行政许可结果 处罚/强制 "
+    }
+  },
+  {
+    "key": "湖北省/十堰市/茅箭区",
+    "govUrl": "http://maojian.shiyan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/黄石市/铁山区",
+    "govUrl": "https://www.hsdz.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/十堰市/竹山县",
+    "govUrl": "http://www.zhushan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/十堰市/竹溪县",
+    "govUrl": "http://www.zhuxi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/襄阳市/樊城区",
+    "govUrl": "http://www.fc.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/襄阳市/南漳县",
+    "govUrl": "http://www.hbnz.gov.cn/",
+    "tried": 16,
+    "picked": {
+      "url": "http://www.hbnz.gov.cn/xxgk/zc/gfxwj/",
+      "finalUrl": "http://www.hbnz.gov.cn/xxgk/zc/gfxwj/",
+      "path": "/xxgk/zc/gfxwj/",
+      "title": "规范性文件 - 南漳县人民政府门户网站",
+      "sample": "规范性文件 - 南漳县人民政府门户网站 政府信息公开-南漳县人民政府 南漳县人民政府 政府信息公开 搜 索 依申请公开 政策 规范性文件 政策解读 其他主动公开文件 政策问答平台 政府信息 公开指南 政府信息 公开制度 法定主动 公开内容 政府领导 政府工作机构 规划信息 统计信息 统计年鉴 统计公报 统计数据 数据发布 许可/服务 依据、条件、程序 行政许可结果 处罚/强制 依据、条件、程序 行"
+    }
+  },
+  {
+    "key": "河南省/周口市/郸城县",
+    "govUrl": "http://www.dancheng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/襄阳市/保康县",
+    "govUrl": "https://www.baokang.gov.cn/",
+    "tried": 6,
+    "picked": {
+      "url": "https://www.baokang.gov.cn/xxgk/zc/zfwj/",
+      "finalUrl": "https://www.baokang.gov.cn/xxgk/zc/zfwj/",
+      "path": "/xxgk/zc/zfwj/",
+      "title": "其他主动公开文件 - 保康县人民政府",
+      "sample": "其他主动公开文件 - 保康县人民政府 政府信息公开-保康县人民政府 保康县人民政府 政府信息公开 搜 索 依申请公开 政策 规范性文件 其他主动公开文件 政策解读 政策问答 政府信息 公开指南 政府信息 公开制度 法定主动 公开内容 政府领导 政府工作机构 机构职能 领导分工 规划信息 统计信息 统计数据 数据发布 许可/服务 依据、条件、程序 行政许可结果 处罚/强制 依据、条件、程序 行政处罚"
+    }
+  },
+  {
+    "key": "湖北省/襄阳市/谷城县",
+    "govUrl": "http://www.hbgucheng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/襄阳市/宜城市",
+    "govUrl": "http://ych.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/鄂州市/华容区",
+    "govUrl": "https://www.hbhr.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/孝感市/大悟县",
+    "govUrl": "http://www.hbdawu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/襄阳市",
+    "govUrl": "https://www.xiangyang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/荆州市/荆州区",
+    "govUrl": "http://www.jingzhouqu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/荆州市/石首市",
+    "govUrl": "http://www.shishou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/孝感市/云梦县",
+    "govUrl": "http://www.yunmeng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/黄冈市/团风县",
+    "govUrl": "http://www.tfzf.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/黄冈市/罗田县",
+    "govUrl": "http://www.luotian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/黄冈市/英山县",
+    "govUrl": "http://www.chinays.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/黄冈市/武穴市",
+    "govUrl": "http://www.wuxue.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河南省/濮阳市/范县",
+    "govUrl": "http://www.fanxian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/恩施土家族苗族自治州/咸丰县",
+    "govUrl": "http://www.xianfeng.gov.cn/",
+    "tried": 16,
+    "picked": {
+      "url": "http://www.xianfeng.gov.cn/xxgk/zc/gfxwj/",
+      "finalUrl": "http://www.xianfeng.gov.cn/xxgk/zc/gfxwj/",
+      "path": "/xxgk/zc/gfxwj/",
+      "title": "规范性文件-咸丰县人民政府",
+      "sample": "规范性文件-咸丰县人民政府 咸丰县人民政府 政府信息公开 文号 标题 正文 搜 索 依申请公开 政&emsp;&emsp;策 规范性文件 其他主动公开文件 政策解读 政府信息公开指南 政府信息公开制度 法定主动公开内容 政府领导 政府工作机构 规划信息 规划计划 “十四五”规划 “十四五”规划解读 统计信息 许可/服务 依据、条件、程序 行政许可结果 处罚/强制 依据、条件、程序 行政处罚决定 权"
+    }
+  },
+  {
+    "key": "湖北省/随州市/随县",
+    "govUrl": "http://www.zgsuixian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/咸宁市/崇阳县",
+    "govUrl": "http://chongyang.gov.cn/",
+    "tried": 6,
+    "picked": {
+      "url": "http://chongyang.gov.cn/xxgk/zc/zfwj/",
+      "finalUrl": "http://chongyang.gov.cn/xxgk/zc/zfwj/",
+      "path": "/xxgk/zc/zfwj/",
+      "title": "其他主动公开文件-崇阳政府网",
+      "sample": "其他主动公开文件-崇阳政府网 崇阳县人民政府 政府信息公开 搜 索 依申请公开 政策 规范性文件 其他主动公开文件 政策解读 部门文件 政府信息公开指南 政府信息公开制度 法定主动公开内容 政府领导 政府工作机构 规划信息 统计信息 许可服务 依据、条件、程序 行政许可结果 行政处罚 依据、条件、程序 行政处罚结果 权责清单 确需保留的证明事项清单 财政资金 政府预算 政府决算 政府债务 财政专项"
+    }
+  },
+  {
+    "key": "湖南省/株洲市/茶陵县",
+    "govUrl": "http://www.chaling.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/咸宁市/咸安区",
+    "govUrl": "http://www.xianan.gov.cn/",
+    "tried": 16,
+    "picked": {
+      "url": "http://www.xianan.gov.cn/xxgk/zc/gfxwj/",
+      "finalUrl": "http://www.xianan.gov.cn/xxgk/zc/gfxwj/",
+      "path": "/xxgk/zc/gfxwj/",
+      "title": "规范性文件-咸安区政府网",
+      "sample": "规范性文件-咸安区政府网 咸安区人民政府 政府信息公开 搜 索 依申请公开 政策 规范性文件 其他主动公开文件 政策解读 政府信息公开指南 政府信息公开制度 法定主动公开内容 政府领导 咸安区政府 咸安概况 政府工作机构 规划信息 \"十四五\"规划 历史规划 其他规划 统计信息 许可/服务 依据、条件、程序 行政许可结果 处罚/强制 依据、条件、程序 行政处罚结果 权责清单 确需保留的证明事项清单 "
+    }
+  },
+  {
+    "key": "湖北省/咸宁市/嘉鱼县",
+    "govUrl": "http://www.jiayu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘潭市/雨湖区",
+    "govUrl": "http://www.xtyh.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘潭市/岳塘区",
+    "govUrl": "http://www.hnxtyt.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖北省/孝感市/汉川市",
+    "govUrl": "http://www.hanchuan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘潭市",
+    "govUrl": "https://www.xiangtan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/邵阳市",
+    "govUrl": "https://www.shaoyang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘潭市/湘潭县",
+    "govUrl": "http://www.xtx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/邵阳市/新宁县",
+    "govUrl": "http://www.xinning.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/邵阳市/邵阳县",
+    "govUrl": "http://www.syx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘潭市/韶山市",
+    "govUrl": "https://www.shaoshan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘潭市/湘乡市",
+    "govUrl": "http://www.xxs.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/岳阳市",
+    "govUrl": "https://www.yueyang.gov.cn/",
+    "tried": 3,
+    "picked": {
+      "url": "https://www.yueyang.gov.cn/zwgk/index.html",
+      "finalUrl": "https://www.yueyang.gov.cn/zwgk/index.html",
+      "path": "/zwgk/index.html",
+      "title": "���񹫿�",
+      "sample": "���񹫿� >\"/> --> -->"
+    }
+  },
+  {
+    "key": "湖南省/邵阳市/城步苗族自治县",
+    "govUrl": "http://www.chengbu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/岳阳市/岳阳楼区",
+    "govUrl": "https://www.yylq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/邵阳市/双清区",
+    "govUrl": "https://www.shuangqing.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/株洲市",
+    "govUrl": "https://www.zhuzhou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/岳阳市/湘阴县",
+    "govUrl": "https://www.xiangyin.gov.cn/",
+    "tried": 3,
+    "picked": {
+      "url": "https://www.xiangyin.gov.cn/zwgk/index.html",
+      "finalUrl": "https://www.xiangyin.gov.cn/zwgk/index.html",
+      "path": "/zwgk/index.html",
+      "title": "- �����������Ż���",
+      "sample": "' /> ' /> ' /> ' /> |����' /> ' /> - �����������Ż��� ������ҳ �ƽ�Ȩ���嵥�������嵥�����������ƶ�����������������������ͨ�������Ż���վȫ�湫��������չʾȨ���嵥�������嵥���ƽ��г���ܹ���͸����Χ�Ƽ�ǿ�����º��ܣ����������������"
+    }
+  },
+  {
+    "key": "山东省/临沂市/平邑县",
+    "govUrl": "http://www.pingyi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/岳阳市/云溪区",
+    "govUrl": "https://www.yunxiqu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/岳阳市/君山区",
+    "govUrl": "https://www.junshan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/张家界市/永定区",
+    "govUrl": "http://www.zjjyd.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/张家界市/慈利县",
+    "govUrl": "http://www.cili.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/岳阳市/岳阳县",
+    "govUrl": "https://www.yyx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/张家界市/桑植县",
+    "govUrl": "http://www.sangzhi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/岳阳市/汨罗市",
+    "govUrl": "https://www.miluo.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/岳阳市/平江县",
+    "govUrl": "https://www.pingjiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/岳阳市/华容县",
+    "govUrl": "https://www.huarong.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/岳阳市/临湘市",
+    "govUrl": "https://www.linxiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/益阳市/资阳区",
+    "govUrl": "http://www.hnziyang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/益阳市/赫山区",
+    "govUrl": "http://www.hnhs.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/益阳市/桃江县",
+    "govUrl": "http://www.taojiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市/北湖区",
+    "govUrl": "http://www.czbeihu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市",
+    "govUrl": "https://www.czs.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/益阳市/沅江市",
+    "govUrl": "http://www.yuanjiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/益阳市/安化县",
+    "govUrl": "http://www.anhua.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市/宜章县",
+    "govUrl": "http://www.yzx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市/桂阳县",
+    "govUrl": "http://www.hngy.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市/苏仙区",
+    "govUrl": "http://www.hnsx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市/嘉禾县",
+    "govUrl": "http://www.hnjh.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市/临武县",
+    "govUrl": "http://www.lwx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市/永兴县",
+    "govUrl": "http://www.yxx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市/汝城县",
+    "govUrl": "http://www.rc.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市/桂东县",
+    "govUrl": "http://www.gdx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市/安仁县",
+    "govUrl": "http://www.anrenzf.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/郴州市/资兴市",
+    "govUrl": "https://www.zixing.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/怀化市/辰溪县",
+    "govUrl": "https://www.chenxi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/益阳市",
+    "govUrl": "https://www.yiyang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/怀化市/鹤城区",
+    "govUrl": "https://www.hechengqu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/怀化市/中方县",
+    "govUrl": "http://www.zhongfang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘西土家族苗族自治州",
+    "govUrl": "https://www.xxz.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘西土家族苗族自治州/吉首市",
+    "govUrl": "http://www.jishou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/怀化市/麻阳苗族自治县",
+    "govUrl": "https://www.mayang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘西土家族苗族自治州/泸溪县",
+    "govUrl": "http://www.lxx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘西土家族苗族自治州/凤凰县",
+    "govUrl": "http://www.fhzf.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘西土家族苗族自治州/花垣县",
+    "govUrl": "http://www.huayuan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘西土家族苗族自治州/保靖县",
+    "govUrl": "http://www.bjzf.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/益阳市/南县",
+    "govUrl": "http://www.nanxian.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘西土家族苗族自治州/古丈县",
+    "govUrl": "http://www.guzhang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘西土家族苗族自治州/龙山县",
+    "govUrl": "http://www.xxls.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/湘西土家族苗族自治州/永顺县",
+    "govUrl": "http://www.ysx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/锦江区",
+    "govUrl": "http://www.cdjinjiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/青羊区",
+    "govUrl": "http://www.cdqingyang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/金牛区",
+    "govUrl": "http://www.jinniu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/武侯区",
+    "govUrl": "http://www.cdwh.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/成华区",
+    "govUrl": "http://www.chenghua.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/青白江区",
+    "govUrl": "http://www.qbj.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/新都区",
+    "govUrl": "http://www.xindu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/龙泉驿区",
+    "govUrl": "http://www.longquanyi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/温江区",
+    "govUrl": "http://www.wenjiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/双流区",
+    "govUrl": "http://www.shuangliu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/郫都区",
+    "govUrl": "http://www.pidu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/新津区",
+    "govUrl": "http://www.xinjin.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/都江堰市",
+    "govUrl": "http://www.djy.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/彭州市",
+    "govUrl": "http://www.pengzhou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/邛崃市",
+    "govUrl": "http://www.qionglai.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/怀化市/沅陵县",
+    "govUrl": "https://www.yuanling.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/崇州市",
+    "govUrl": "http://www.chongzhou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/简阳市",
+    "govUrl": "http://www.scjy.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/广元市",
+    "govUrl": "http://www.cngy.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/金堂县",
+    "govUrl": "http://www.jintang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/大邑县",
+    "govUrl": "http://www.day.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "湖南省/怀化市/芷江侗族自治县",
+    "govUrl": "http://www.chnzj.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/成都市/蒲江县",
+    "govUrl": "http://www.pujiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/绵阳市/安州区",
+    "govUrl": "http://www.anzhou.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/广元市/青川县",
+    "govUrl": "http://www.cnqc.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/乐山市/沙湾区",
+    "govUrl": "http://www.shawan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/广元市/剑阁县",
+    "govUrl": "http://www.cnjg.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/广安市/岳池县",
+    "govUrl": "https://www.scyc.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/广元市/利州区",
+    "govUrl": "https://www.lzq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/昆明市/五华区",
+    "govUrl": "http://www.kmwh.gov.cn/",
+    "tried": 1,
+    "picked": {
+      "url": "http://www.kmwh.gov.cn/zfxxgk/zcwj/",
+      "finalUrl": "http://www.kmwh.gov.cn/zfxxgk/zcwj/",
+      "path": "/zfxxgk/zcwj/",
+      "title": "昆明市五华区人民政府_政策文件",
+      "sample": "昆明市五华区人民政府_政策文件 昆明市五华区人民政府 www.kmwh.gov.cn 长者模式 无障碍浏览 政府信息公开 政府信息公开指南 政府信息公开制度 政策文件 行政规范性文件 其他文件 区政府文件 区政府办公室文件 法定主动公开内容 政府信息公开目录 政府领导 组织机构 人事任免 公示公告 政策解读 会议信息 政府工作报告 政府网站工作年度报表 2025年 2024年 2023年 2022"
+    }
+  },
+  {
+    "key": "四川省/雅安市",
+    "govUrl": "http://www.yaan.gov.cn/",
+    "tried": 3,
+    "picked": {
+      "url": "http://www.yaan.gov.cn/zwgk/",
+      "finalUrl": "https://www.yaan.gov.cn/zwgk/",
+      "path": "/zwgk/",
+      "title": "政务公开 - 雅安市人民政府",
+      "sample": "政务公开 - 雅安市人民政府 无障碍浏览 长者专区 网站支持IPv6 热门搜索： 新型冠状病毒感染 新型冠状病毒感染肺炎 --> 高级搜索 网站首页 雅安领导 市委领导 廖文彬 彭映梅 黎明 张大奇 李蓉 杨庆利 何连俊 陈万见 龚兵 熊启然 市政府领导 彭映梅 陈万见 于冀川 邓朝金 郑胡勇 孙云一 曾琦 黄芝晏 余云峰 刘剑飞 市政府重要会议 | 领导活动 政务公开 政府文件 文件解读 人事信"
+    }
+  },
+  {
+    "key": "四川省/广安市/武胜县",
+    "govUrl": "https://www.wusheng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/广元市/昭化区",
+    "govUrl": "https://www.cnzh.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/广元市/旺苍县",
+    "govUrl": "http://www.scgw.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/广元市/朝天区",
+    "govUrl": "http://www.gyct.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/昭通市/巧家县",
+    "govUrl": "http://www.qiaojia.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/普洱市",
+    "govUrl": "https://www.puershi.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/临沧市/双江拉祜族佤族布朗族傣族自治县",
+    "govUrl": "https://www.shuangjiang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/红河哈尼族彝族自治州/元阳县",
+    "govUrl": "https://www.hhyy.gov.cn/",
+    "tried": 4,
+    "picked": {
+      "url": "https://www.hhyy.gov.cn/zfxxgk/zcwj/xzgfxwj/rmzf.htm",
+      "finalUrl": "https://www.hhyy.gov.cn/zfxxgk/zcwj/xzgfxwj/rmzf.htm",
+      "path": "/zfxxgk/zcwj/xzgfxwj/rmzf.htm",
+      "title": "人民政府-元阳县人民政府门户网站",
+      "sample": "人民政府-元阳县人民政府门户网站 登录 | 注册 加入收藏 --> 退出 长者模式 无障碍浏览 当前栏目高亮class为on --> 政府信息公开指南 当前栏目高亮class为on --> 政府信息公开制度 当前栏目高亮class为on --> 政策文件 行政规范性文件 人民政府 政府文件 元政发 元政办发 其他 政策解读 当前栏目高亮class为on --> 法定主动公开内容 政府领导 政府会议"
+    }
+  },
+  {
+    "key": "云南省/临沧市/云县",
+    "govUrl": "http://www.ynyx.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/临沧市/耿马傣族佤族自治县",
+    "govUrl": "http://www.yngm.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/红河哈尼族彝族自治州/石屏县",
+    "govUrl": "https://hhsp.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/文山壮族苗族自治州/西畴县",
+    "govUrl": "https://www.xczw.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/文山壮族苗族自治州/文山市",
+    "govUrl": "http://www.ynwss.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/文山壮族苗族自治州/砚山县",
+    "govUrl": "http://www.yanshan.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/兰州市/城关区",
+    "govUrl": "https://www.lzcgq.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/兰州市/七里河区",
+    "govUrl": "http://www.qilihe.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/文山壮族苗族自治州/丘北县",
+    "govUrl": "http://www.ynqb.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/文山壮族苗族自治州/富宁县",
+    "govUrl": "https://www.ynfn.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "云南省/文山壮族苗族自治州/麻栗坡县",
+    "govUrl": "http://www.ynmlp.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/兰州市/皋兰县",
+    "govUrl": "http://www.gaolan.gov.cn/",
+    "tried": 6,
+    "picked": {
+      "url": "http://www.gaolan.gov.cn/col/col15863/index.html",
+      "finalUrl": "http://www.gaolan.gov.cn/col/col15863/index.html",
+      "path": "/col/col15863/index.html",
+      "title": "皋兰县人民政府 2017",
+      "sample": "皋兰县人民政府 2017 皋兰县人民政府 www.gaolan.gov.cn begin-->皋兰县2017年政府信息公开年度报告 end--> 发布日期：2018-02-05 浏览次数: 字号：[ 大 中 小 ] begin--> 按照兰州市人民政府办公厅《关于切实做好政府信息公开年度报告编制发布工作的通知》要求，现将皋兰县2017年政府信息公开工作年度报告编制如下： 一、工作概况 2017年以"
+    }
+  },
+  {
+    "key": "云南省/西双版纳傣族自治州/勐腊县",
+    "govUrl": "https://www.ynml.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/兰州市/永登县",
+    "govUrl": "http://www.yongdeng.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/兰州市/红古区",
+    "govUrl": "https://www.honggu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/兰州市/榆中县",
+    "govUrl": "https://www.lzyuzhong.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/定西市/安定区",
+    "govUrl": "http://www.anding.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/定西市/临洮县",
+    "govUrl": "http://www.lintao.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/白银市/景泰县",
+    "govUrl": "https://www.jingtai.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/定西市/通渭县",
+    "govUrl": "http://www.tongwei.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/临夏回族自治州/临夏县",
+    "govUrl": "https://www.linxiaxian.gov.cn/",
+    "tried": 10,
+    "picked": {
+      "url": "https://www.linxiaxian.gov.cn/ghx/zfxxgk/zfwj/gfxwj/art/2025/art_ca976555783b4889ba7b878208216056.html",
+      "finalUrl": "https://www.linxiaxian.gov.cn/ghx/zfxxgk/zfwj/gfxwj/art/2025/art_ca976555783b4889ba7b878208216056.html",
+      "path": "/ghx/zfxxgk/zfwj/gfxwj/art/2025/art_ca976555783b4889ba7b878208216056.html",
+      "title": "什么是规范性文件？",
+      "sample": "什么是规范性文件？ 首页 > 政务公开 > 法定主动公开内容 > 政府文件 > 规范性文件 什么是规范性文件？ 来源：青苗法鸣公众号 浏览次数： 次 添加时间：2025-05-26 19:28 字号： 大 中 小 收藏 摘要： 规范性文件是制定法的初始组成单位，也是公法学的主要研究对象之一。但现有朴素观点并未厘清该概念。根据行权行为模式和言语行为要件可确定，规范性文件及其构成条件来源于立规行为。立"
+    }
+  },
+  {
+    "key": "甘肃省/酒泉市/敦煌市",
+    "govUrl": "http://www.dunhuang.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "甘肃省/酒泉市/阿克塞哈萨克族自治县",
+    "govUrl": "http://www.akesai.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "四川省/达州市/大竹县",
+    "govUrl": "http://www.dazhu.gov.cn/",
+    "tried": 25
+  },
+  {
+    "key": "河南省/商丘市/柘城县",
+    "govUrl": "https://www.zhecheng.gov.cn/",
+    "tried": 25
+  }
+]
