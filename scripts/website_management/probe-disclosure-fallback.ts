@@ -159,13 +159,22 @@ async function main() {
   const limit = Number(process.env.DISCLOSURE_LIMIT || 0);
   const list = limit ? keys.slice(0, limit) : keys;
   const targetSet = new Set(list);
+  const retryFailures = process.env.DISCLOSURE_RETRY_FAILURES !== '0';
   console.log(`disclosure targets: ${list.length}`);
   const OUT = 'scripts/website_management/policy-disclosure-fallback-results.json';
-  const existing: Array<Awaited<ReturnType<typeof probeOne>>> = fs.existsSync(OUT)
+  const existingRaw: Array<Awaited<ReturnType<typeof probeOne>>> = fs.existsSync(OUT)
     ? JSON.parse(fs.readFileSync(OUT, 'utf8')).filter((r: { key: string }) => targetSet.has(r.key))
     : [];
+  const existingMap = new Map<string, Awaited<ReturnType<typeof probeOne>>>();
+  for (const r of existingRaw) existingMap.set(r.key, r);
+  const shouldRetry = (r: Awaited<ReturnType<typeof probeOne>>) =>
+    retryFailures && /homepage-unreachable|error:/.test(r.reason || '');
+  const existing = [...existingMap.values()].filter((r) => !shouldRetry(r));
   const done = new Set(existing.map((r) => r.key));
-  console.log(`already done: ${done.size}; remaining: ${list.filter((k) => !done.has(k)).length}`);
+  const retryCount = [...existingMap.values()].filter(shouldRetry).length;
+  console.log(
+    `already done: ${done.size}; retrying cached fetch failures: ${retryCount}; remaining: ${list.filter((k) => !done.has(k)).length}`,
+  );
   const results: Array<Awaited<ReturnType<typeof probeOne>>> = [...existing];
   const start = Date.now();
   const total = list.length;
