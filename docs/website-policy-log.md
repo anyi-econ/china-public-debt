@@ -458,3 +458,37 @@ auto-accept，加上 2 条手工补录（山东省、长春市）共 +601。
 - **WAF 集中于省级门户**：省门户更可能上 WAF，市/县反而开放；应区分对待。
 - **HTTP 回退收益有限**：现代政府门户基本全 HTTPS，WAF 也跟着上 HTTPS，
   HTTP 回退本轮恢复率不到 5%。继续提升必须上浏览器。
+
+
+## §16 v8 扩充：跨域复用 + Playwright SPA 探测
+
+### 16.1 改动
+
+1. **跨域复用规则**（v8.a，已合并 1502 条前）：子级（县/区）首页若把"政策文件库"链回母级（市/省）门户，且母级 host 已有 POLICY_URL_MAP 入口，则子级直接复用母级 URL（备注 `// shared from "母级 key"`），把 +217 条县区一次性挂上。
+2. **Playwright 渲染探测**（v8.b，`probe-policy-pw.ts`）：对剩余 1292 条仍缺失项用 chromium headless 重新加载首页（含 SPA hydration、networkidle 等待），重新抽 `<a>` 链接打分。增量保存 + 中断可续。
+3. **PW 接受**：73 条（v8 块）+ 3 条 PW 跨域复用（v8.b 块）= +76 条。
+4. **结构化备注迁移**：从 `docs/website-policy-log.md` 的散文式记录改为 `data/website-policy.xlsx`，工作表 `summary` / `entries` / `missing` 三页，前者展示覆盖率，后两者带 `来源（auto / auto-pw / shared / shared-pw / manual）`、`失败原因`、`候选 URL / 分数 / listLooks` 等列，自动从 `data/website-policy.ts` 与 probe 缓存生成（`scripts/website_management/build-policy-xlsx.mjs`）。
+
+### 16.2 增量结果
+
+| 维度 | v7 | v8 | Δ |
+| --- | --- | --- | --- |
+| 省级 | 28/31 | **30/31** | +2 |
+| 省会城市 | 25/27 | **26/27** | +1 |
+| 地级市 | 225/439 | **259/439** | +34 |
+| 县区 | 1030/2742 | **1289/2742** | +259 |
+| 总条目 | 1283 | **1578** | **+295** |
+
+省级仅余青海省（chromium 仍 no-candidate；门户 SPA 路由可能含 token 校验）。
+
+### 16.3 PW 投入产出
+
+| 指标 | 数字 |
+| --- | --- |
+| 探测 targets | 1292 |
+| picked any | 298 (23%) |
+| listLooks=true | 151 (12%) |
+| 通过 classify 接受 | 73 |
+| 跨域复用 | 3 |
+
+低于预期的原因：剩余地区主因不是 SPA 渲染，而是**首页根本没有政策入口**（一些县级 gov 直接把所有公开类目放在 `zwgk/` 大目录里，未单列）。后续应改为针对 `zwgk/` 二级目录硬性枚举常见 path，而非依赖锚文本扫描。
