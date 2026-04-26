@@ -3938,7 +3938,14 @@
     "key": "广东省/韶关市/曲江区",
     "level": "县区",
     "govUrl": "https://www.qujiang.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.qujiang.gov.cn/zjqj/zsyz/index.html",
+      "text": "招商引资 ZHAO SHANG YIN ZI",
+      "score": 65,
+      "source": "anchor",
+      "tier": "C",
+      "validated": true
+    }
   },
   {
     "key": "广东省/韶关市/仁化县",
@@ -7106,7 +7113,7 @@
     "key": "河北省/秦皇岛市",
     "level": "地级",
     "govUrl": "http://www.qhd.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "河北省/秦皇岛市/北戴河区",
@@ -7130,7 +7137,14 @@
     "key": "河北省/秦皇岛市/海港区",
     "level": "县区",
     "govUrl": "http://www.qhdhgq.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.qhdhgq.gov.cn/zwgk_show.aspx?id=16939",
+      "text": "影响营商环境建设问题线索征集",
+      "score": 75,
+      "source": "anchor",
+      "tier": "B",
+      "validated": true
+    }
   },
   {
     "key": "河北省/秦皇岛市/卢龙县",
@@ -8673,7 +8687,14 @@
     "key": "河南省/商丘市/柘城县",
     "level": "县区",
     "govUrl": "https://www.zhecheng.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "https://www.zhecheng.gov.cn/ztzl/sqhzjcgszl",
+      "text": "涉企行政检查公示专栏",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    }
   },
   {
     "key": "河南省/新乡市",
@@ -14604,7 +14625,14 @@
     "key": "辽宁省/本溪市/本溪满族自治县",
     "level": "县区",
     "govUrl": "http://www.bx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.bx.gov.cn/ztlm/yhyshj",
+      "text": "优化营商环境",
+      "score": 75,
+      "source": "anchor",
+      "tier": "B",
+      "validated": true
+    }
   },
   {
     "key": "辽宁省/本溪市/桓仁满族自治县",
@@ -15757,7 +15785,7 @@
     "key": "内蒙古自治区/赤峰市/克什克腾旗",
     "level": "县区",
     "govUrl": "http://www.kskt.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "内蒙古自治区/赤峰市/林西县",
@@ -18731,109 +18759,116 @@
     "key": "山西省/临汾市",
     "level": "地级",
     "govUrl": "http://www.linfen.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/安泽县",
     "level": "县区",
     "govUrl": "http://www.anze.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/大宁县",
     "level": "县区",
     "govUrl": "http://www.daning.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/汾西县",
     "level": "县区",
     "govUrl": "http://www.fenxi.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/浮山县",
     "level": "县区",
     "govUrl": "http://www.fushan.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/古县",
     "level": "县区",
     "govUrl": "http://www.guxian.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/洪洞县",
     "level": "县区",
     "govUrl": "http://www.hongtong.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/侯马市",
     "level": "县区",
     "govUrl": "http://www.houma.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/霍州市",
     "level": "县区",
     "govUrl": "http://www.huozhou.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.huozhou.gov.cn/hdjl/yshjts/",
+      "text": "营商环境 投诉",
+      "score": 85,
+      "source": "anchor",
+      "tier": "B",
+      "validated": true
+    }
   },
   {
     "key": "山西省/临汾市/吉县",
     "level": "县区",
     "govUrl": "http://www.zgjx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/蒲县",
     "level": "县区",
     "govUrl": "http://www.puxian.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/曲沃县",
     "level": "县区",
     "govUrl": "http://www.quwo.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/隰县",
     "level": "县区",
     "govUrl": "http://www.sxxx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/乡宁县",
     "level": "县区",
     "govUrl": "http://www.xiangning.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/襄汾县",
     "level": "县区",
     "govUrl": "http://www.xiangfen.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/尧都区",
     "level": "县区",
     "govUrl": "http://www.yaodu.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/翼城县",
     "level": "县区",
     "govUrl": "http://www.yicheng.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/临汾市/永和县",
     "level": "县区",
     "govUrl": "http://www.sxyh.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "山西省/吕梁市",
@@ -21175,7 +21210,7 @@
     "key": "四川省/乐山市/五通桥区",
     "level": "县区",
     "govUrl": "http://www.wtq.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "四川省/凉山彝族自治州",
@@ -22494,13 +22529,20 @@
     "key": "西藏自治区/那曲市",
     "level": "地级",
     "govUrl": "http://www.naqu.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.naqu.gov.cn/nqsrmzf/c100151/yhyshj.shtml",
+      "text": "优化营商环境",
+      "score": 75,
+      "source": "anchor",
+      "tier": "B",
+      "validated": true
+    }
   },
   {
     "key": "西藏自治区/那曲市/安多县",
     "level": "县区",
     "govUrl": "http://www.nqadx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "西藏自治区/那曲市/巴青县",
@@ -22512,19 +22554,19 @@
     "key": "西藏自治区/那曲市/班戈县",
     "level": "县区",
     "govUrl": "http://www.nqbgx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "西藏自治区/那曲市/比如县",
     "level": "县区",
     "govUrl": "http://www.nqbrx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "西藏自治区/那曲市/嘉黎县",
     "level": "县区",
     "govUrl": "http://www.nqjlx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "西藏自治区/那曲市/尼玛县",
@@ -22536,19 +22578,19 @@
     "key": "西藏自治区/那曲市/聂荣县",
     "level": "县区",
     "govUrl": "http://www.nqnrx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "西藏自治区/那曲市/色尼区",
     "level": "县区",
     "govUrl": "http://www.nqsnq.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "西藏自治区/那曲市/申扎县",
     "level": "县区",
     "govUrl": "http://www.nqszx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "西藏自治区/那曲市/双湖县",
@@ -22560,7 +22602,7 @@
     "key": "西藏自治区/那曲市/索县",
     "level": "县区",
     "govUrl": "http://www.nqsx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "西藏自治区/日喀则市",
@@ -22915,7 +22957,14 @@
     "key": "新疆维吾尔自治区/阿克苏地区/拜城县",
     "level": "县区",
     "govUrl": "https://www.xjbc.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "https://www.xjbc.gov.cn/hqzc/",
+      "text": "惠企政策",
+      "score": 70,
+      "source": "constructed",
+      "tier": "A",
+      "validated": true
+    }
   },
   {
     "key": "新疆维吾尔自治区/阿克苏地区/柯坪县",
@@ -22947,7 +22996,14 @@
     "key": "新疆维吾尔自治区/阿克苏地区/沙雅县",
     "level": "县区",
     "govUrl": "https://www.xjsy.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "https://www.xjsy.gov.cn/hqzc/",
+      "text": "惠企政策",
+      "score": 70,
+      "source": "constructed",
+      "tier": "A",
+      "validated": true
+    }
   },
   {
     "key": "新疆维吾尔自治区/阿克苏地区/温宿县",
@@ -23775,7 +23831,7 @@
     "key": "新疆维吾尔自治区/新疆生产建设兵团/胡杨河市",
     "level": "县区",
     "govUrl": "http://www.nqs.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "新疆维吾尔自治区/新疆生产建设兵团/可克达拉市",
@@ -24078,7 +24134,7 @@
     "key": "云南省/大理白族自治州/宾川县",
     "level": "县区",
     "govUrl": "http://www.bc.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "云南省/大理白族自治州/大理市",
@@ -24544,7 +24600,14 @@
     "key": "云南省/普洱市/景东彝族自治县",
     "level": "县区",
     "govUrl": "http://www.jingdong.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.jingdong.gov.cn/ztzl/yhyshj.htm",
+      "text": "优化营商环境",
+      "score": 75,
+      "source": "anchor",
+      "tier": "B",
+      "validated": true
+    }
   },
   {
     "key": "云南省/普洱市/景谷傣族彝族自治县",
@@ -24575,7 +24638,7 @@
     "key": "云南省/普洱市/墨江哈尼族自治县",
     "level": "县区",
     "govUrl": "http://www.mojiang.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "云南省/普洱市/宁洱哈尼族彝族自治县",
@@ -24940,7 +25003,7 @@
     "key": "云南省/昭通市/昭阳区",
     "level": "县区",
     "govUrl": "http://www.zyq.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found"
   },
   {
     "key": "云南省/昭通市/镇雄县",
