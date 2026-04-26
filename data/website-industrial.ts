@@ -10,7 +10,7 @@
  * 惠企政策入口常常藏在"专题""营商环境""企业服务""政务服务"等栏目下，
  * 不要只看一级导航。
  *
- * url 为空表示暂未核验。详见 `docs/website-indutrial-log.md`。
+ * url 为空表示暂未核验。详见 `docs/website-industrial-log.md`。
  */
 
 import { buildRegionTree, type RegionUrlMap } from "./website-region-builder";
@@ -51,7 +51,7 @@ export const PRO_BUSINESS_URL_MAP: RegionUrlMap = {
   // 西安：西安政策通（独立政策平台，整合营商环境信息）
   "陕西省/西安市": "https://zwfw.xa.gov.cn/policy-web-new/#/",
   // ═══════ 其余地区因动态渲染/访问限制暂未稳定核验，留空待后续补充 ═══════
-  // 详见 docs/website-indutrial-log.md
+  // 详见 docs/website-industrial-log.md
 };
 
 export const PRO_BUSINESS_REGIONS: RegionLinkNode[] = buildRegionTree(PRO_BUSINESS_URL_MAP);

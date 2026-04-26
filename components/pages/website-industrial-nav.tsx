@@ -1,6 +1,6 @@
 "use client";
 
-import { PRO_BUSINESS_REGIONS } from "@/data/website-indutrial";
+import { PRO_BUSINESS_REGIONS } from "@/data/website-industrial";
 import { RegionLinkNav } from "./website-region-nav";
 
 export function ProBusinessPolicyNav() {
