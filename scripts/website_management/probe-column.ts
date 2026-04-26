@@ -55,12 +55,14 @@ type Config = {
 };
 
 const NEWS: Config = {
-  // Tier A also matches geographic-prefix patterns like "丰台要闻" / "河北新闻" / "涪陵要闻"
-  // (2–3 char place name + 要闻/新闻). REJECT_TEXT below filters out 中央/省委/部门/镇街 etc.
-  TIER_A: /本地要闻|本市要闻|本县要闻|本区要闻|要闻速递|今日要闻|政务要闻|时政要闻|头版头条|^.{2,3}(要闻|新闻)$/,
+  // Tier A also matches geographic-prefix patterns:
+  //   ^{2-3 char}+(要闻|新闻|动态|资讯)$  —— 丰台要闻 / 河北新闻 / 衡阳动态 / 腾冲资讯
+  //   ^今日{2-3 char}$                     —— 今日鞍山 / 今日楚雄 / 今日汶川
+  // REJECT_TEXT below filters out 中央/省委/部门/区县/乡镇/转载/24节气 等.
+  TIER_A: /本地要闻|本市要闻|本县要闻|本区要闻|要闻速递|今日要闻|政务要闻|时政要闻|头版头条|^.{2,3}(要闻|新闻|动态|资讯)$|^今日.{2,3}$/,
   TIER_B: /政务动态|工作动态|政府要闻|综合要闻|综合新闻|政务新闻|政府新闻/,
   TIER_C: /新闻中心|新闻动态|要闻|新闻/,
-  REJECT_TEXT: /部门动态|部门信息|单位动态|上级要闻|中央要闻|国务院要闻|省委要闻|省政府要闻|全国要闻|国内要闻|国内新闻|国际要闻|国际新闻|域外新闻|域外要闻|外地新闻|外埠新闻|双语新闻|英文新闻|通知公告|公示公告|政府公告|媒体看|媒体聚焦|视频新闻|图说|影像|专题|乡镇要闻|镇街动态|街道动态|图片新闻|宣传片|访谈|直播/,
+  REJECT_TEXT: /部门动态|部门信息|单位动态|上级要闻|中央要闻|国务院要闻|省委要闻|省政府要闻|全国要闻|国内要闻|国内新闻|国际要闻|国际新闻|国内资讯|国际资讯|域外新闻|域外要闻|外地新闻|外埠新闻|双语新闻|英文新闻|要闻转载|新闻转载|区县动态|县区动态|县市区动态|区县新闻|区县要闻|招商资讯|省内资讯|州内资讯|县内资讯|系统动态|网站动态|公告动态|今日(立春|雨水|惊蛰|春分|清明|谷雨|立夏|小满|芒种|夏至|小暑|大暑|立秋|处暑|白露|秋分|寒露|霜降|立冬|小雪|大雪|冬至|小寒|大寒|头条|关注|聚焦|看点|话题|视点)|通知公告|公示公告|政府公告|媒体看|媒体聚焦|视频新闻|图说|影像|专题|乡镇要闻|乡镇动态|乡镇新闻|镇街动态|街道动态|图片新闻|宣传片|访谈|直播/,
   REJECT_PATH: /tzgg|gsgg|tongzhi|gonggao|videos?|tupian|zhuanti|spxw|fangtan|zhibo|zhxx|bmdt|bmxx|jcdt|xzjd|xjyw|szyw_/i,
   CANONICAL_PATH: /\/(yw|bdyw|jryw|szyw|swyw|sxyw|qyyw|xqyw|zwdt|gzdt|zfdt|zfyw|zwyw|news[a-z]*|xwzx[\/\?])/i,
   // 单篇文章 URL 拒绝（v1 实测后加固）：
@@ -144,7 +146,13 @@ async function fetchHtml(url: string, timeout = 12000): Promise<string | null> {
     if (!res.ok) return null;
     const ct = res.headers.get('content-type') || '';
     if (ct && !/text|html|xml/.test(ct)) return null;
-    const text = await res.text();
+    const buf = await res.arrayBuffer();
+    let text = new TextDecoder('utf-8', { fatal: false }).decode(buf);
+    // Detect gbk/gb2312 declared encoding and re-decode
+    const enc = (text.match(/<meta[^>]+charset\s*=\s*["']?([\w-]+)/i) || ct.match(/charset=([\w-]+)/i) || [])[1];
+    if (enc && /gb/i.test(enc)) {
+      try { text = new TextDecoder('gbk').decode(buf); } catch { /* keep utf-8 */ }
+    }
     if (text.length < 200) return null;
     return text;
   } catch { return null; } finally { clearTimeout(timer); }
@@ -176,7 +184,6 @@ function extractTitle(html: string): string {
 function scoreCandidate(text: string, url: string): { score: number; tier?: 'A' | 'B' | 'C' | 'D' } {
   let path = '';
   try { path = new URL(url).pathname.toLowerCase(); } catch { return { score: -100 }; }
-  const t = `${text} ${url}`;
   // hard reject
   if (CFG.ARTICLE_PATH.test(path)) return { score: -50 };
   if (CFG.REJECT_TEXT.test(text)) return { score: -50 };
@@ -184,8 +191,11 @@ function scoreCandidate(text: string, url: string): { score: number; tier?: 'A' 
   if (/www\.gov\.cn|english|login|javascript|^mailto/i.test(url)) return { score: -50 };
   let s = 0;
   let tier: 'A' | 'B' | 'C' | 'D' | undefined;
-  if (CFG.TIER_A.test(text)) { s = Math.max(s, 90); tier = 'A'; }
-  else if (CFG.TIER_B.test(text)) { s = Math.max(s, 75); tier = 'B'; }
+  // Order: explicit Tier B / Tier C phrases beat loose Tier-A geo-prefix.
+  // The loose Tier-A geo-prefix regex (^.{2,3}(要闻|新闻|动态|资讯)$) would otherwise mis-tag
+  // generic phrases like "政务动态" / "工作动态" / "新闻动态" as Tier A.
+  if (CFG.TIER_B.test(text)) { s = Math.max(s, 75); tier = 'B'; }
+  else if (CFG.TIER_A.test(text)) { s = Math.max(s, 90); tier = 'A'; }
   else if (CFG.TIER_C.test(text)) { s = Math.max(s, 55); tier = 'C'; }
   if (CFG.CANONICAL_PATH.test(path)) s += 10;
   // root index page penalty
