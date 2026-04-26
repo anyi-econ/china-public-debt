@@ -209,3 +209,211 @@ node scripts/website_management/build-industrial-xlsx.mjs
 - 看域名是否独立（非 `gov.cn` 二级域）
 - 看页脚版权是否署"X 市人民政府主办" / "X 市发改委承办"
 - 跳转链路要可追溯：政府门户首页 → 中间页 → 平台
+
+---
+
+## v1 实测沉淀（2026-04 一次性 3209 portal 全扫描）
+
+### 总体覆盖
+
+| 维度 | 命中数 | 比例 |
+|---|---|---|
+| **总计 picked** | 1059 / 3209 | **33%** |
+| Tier A（惠企 / 涉企 / 政策兑现）| 593 | 56% of picked |
+| Tier B（营商环境）| 394 | 37% of picked |
+| Tier C（产业 / 招商）| 72 | 7% of picked |
+| 省级 picked | 17 / 31 | 55% |
+| 地级 picked | 256 / 439 | 58% |
+| 县区 picked | 786 / 2739 | **29%** |
+| anchor 来源 | 891 | 84% |
+| constructed 兜底 | 168 | 16% |
+
+> **核心观察**：industrial 比 news（55%）低 22 个百分点。原因：县区"惠企"栏目本身就大面积缺位，不是探针漏判，而是页面客观不存在。Tier C 仅 72 个意味着 Tier A/B 关键词覆盖已经足够，再放宽阈值只会引入更多噪音。
+
+### 高频命中标签 Top 10（实测 anchor 文本）
+
+| 文本 | 次数 | 备注 |
+|---|---|---|
+| 惠企政策 | 156 | Tier A 主力 |
+| 招商引资 | 70 | Tier C |
+| 优化营商环境 | 69 | Tier B |
+| 营商环境 | 67 | Tier B |
+| 助企纾困 | 47 | Tier A |
+| **涉企行政检查公示专栏** | **43** | ⚠️ 边界，见下文 |
+| 涉企收费 | 31 | Tier A |
+| 政策兑现 | 28 | Tier A 外部平台 |
+| 营商环境专栏 | 25 | Tier B |
+| 产业政策 | 22 | Tier C |
+
+### 高频命中路径 Top 10
+
+| 路径头 | 次数 |
+|---|---|
+| `/hqzc/` | 112 |
+| `/zsyz/` | 22 |
+| `/ztzl/hqzc/` | 16 |
+| `/ywdt/qyfw/` | 11 |
+| `/zwgk/hqzc/` | 10 |
+| `/yshj/` | 9 |
+| `/qyfw/` | 8 |
+| `/cyzc/` | 6 |
+| `/cyfz/` | 6 |
+| `/zcdx/` | 5 |
+
+### 失败聚类（unreach + noroute）Top 10 省
+
+| 省 | 总失败 | 主要类型 |
+|---|---|---|
+| 四川省 | 150 | noroute 占多数（县区栏目缺位） |
+| 河北省 | 141 | unreach（DNS / 超时为主） |
+| 云南省 | 124 | noroute |
+| 河南省 | 118 | noroute |
+| 湖南省 | 111 | noroute |
+| 黑龙江省 | 100 | unreach |
+| 广西壮族自治区 | 93 | noroute |
+| 广东省 | 91 | 江门 / 茂名等地县区 noroute |
+| 安徽省 | 76 | **合肥系整片 521 WAF** |
+| 江苏省 | 53 | **53/53 县区全 SPA noroute** |
+
+> **关键洞察**：江苏省所有县区门户走 SPA，HTML 渲染前没有可解析的 `<a>`，需要 Playwright 二次渲染或人工兜底。安徽合肥及其下辖（包河 / 巢湖 / 肥东 / 阜南）整片 Cloudflare 521，建议跳过自动化、走 subagent 人工。
+
+---
+
+## ⚠️ 已知漏判模式 → ARTICLE_PATH 加固
+
+v1 扫描发现 **99 个被 picked 但实为单篇文章 / 公告页面** 的误判（占 picked 9.4%，远高于 news 的 0.6%）。industrial 误判率高的根因：很多政府发"关于征集影响营商环境……"的单篇通告时，标题里直接含 "营商环境"，被 Tier B 锚点抓走。
+
+### 典型漏判 URL 形态
+
+```
+https://www.bengbu.gov.cn/content/article/51079542.html         ← /content/article/<id>
+https://www.mas.gov.cn/zxzx/tzgg/21346381.html                  ← 通知公告里的单篇
+https://www.huidong.gov.cn/.../content/post_5739716.html        ← /content/post_<id>
+https://www.xxx.gov.cn/202604/t20260424_3282331.htm             ← /YYYYMM/t<YYYYMMDD>_<id>
+https://www.xxx.gov.cn/art/2026/4/24/art_1234_5678901.html      ← /art/Y/M/D/art_<a>_<b>
+```
+
+### 现有 ARTICLE_PATH 漏掉的两种关键模式
+
+```ts
+// 当前实现（probe-column.ts）
+const ARTICLE_PATH = /\/\d{4}[\-_/]\d{2}([\-_/]\d{2})?\/|\/art\/\d{4}\/|\/[a-f0-9]{20,}\.s?html?$/i;
+
+// ⚠️ 漏判 1：YYYYMM（无分隔符）+ tYYYYMMDD_<id>
+//   /202604/t20260424_3282331.htm     ← /\d{4}\d{2}/t\d{8}_\d+\.s?html?$/
+// ⚠️ 漏判 2：/content/(article|post)_<id>
+//   /content/article/51079542.html    ← /\/content\/(article|post)[_\/]?\d+\.s?html?$/
+// ⚠️ 漏判 3：/zxzx/tzgg/<id>.html     （通知公告单篇，纯数字 id）
+//   ← /\/(tzgg|tongzhi|gonggao)\/\d{6,}\.s?html?$/i
+```
+
+**建议补丁**（probe-column.ts）：
+
+```ts
+const ARTICLE_PATH = new RegExp([
+  /\/\d{4}[\-_/]\d{2}([\-_/]\d{2})?\//,
+  /\/\d{4}\d{2}\/t\d{8}_\d+\.s?html?$/,           // YYYYMM/tYYYYMMDD_id
+  /\/content\/(article|post)[_\/]?\d+\.s?html?$/,  // /content/article/id
+  /\/(tzgg|tongzhi|gonggao|tzggk?)\/\d{6,}\.s?html?$/,
+  /\/art\/\d{4}\//,
+  /\/[a-f0-9]{20,}\.s?html?$/,
+].map(r => r.source).join('|'), 'i');
+```
+
+补完后重跑应能从 1059 中剔除 ~80 条单篇，**真实命中率会从 33% 降到 ~30%，但精度上升**。这是值得的：industrial 的下游用户（财政课题组）比 news 更不能容忍单篇噪音。
+
+---
+
+## 涉企行政检查公示专栏 vs 惠企政策 边界
+
+v1 共 **43 个**栏目命中文本"涉企行政检查公示专栏"。这是**国办 2024 年统一要求**地市开设的公示栏，性质类似"涉企收费目录"——本质是**约束政府执法**而非"为企业服务"。
+
+### 判定
+
+| 场景 | Tier | 说明 |
+|---|---|---|
+| 仅有"涉企行政检查公示专栏"，无其他惠企入口 | **不收** | 性质属"行政公开"，不属"惠企政策"导航；标 D，存档 |
+| 同时有"惠企政策" + "涉企行政检查" | 收"惠企政策"，丢"涉企行政检查" | 主路径走前者 |
+| 仅有"涉企收费目录" | **收 Tier A** | 直接为企业减负，性质 = 惠企 |
+
+> 当前 v1 流水线把 "涉企行政检查公示专栏" 误收进 Tier A 是因为 TIER_A 里的 `涉企` 关键词太宽。下一版应：把 TIER_A 的 `涉企` 替换为 `涉企(收费|减负|帮扶|服务)`，并在 REJECT_TEXT 里追加 `涉企行政检查|行政检查公示`。
+
+---
+
+## 外部平台域名清单（v1 实测 39 个）
+
+build-column-xlsx 阶段已自动识别，下游可直接 filter `是否外部平台 = 是`。Top 出现频次：
+
+| 外部域名 | 次数 | 备注 |
+|---|---|---|
+| `sanya.gov.cn` | 4 | 三亚市本级跳本级，旁支县区共用 |
+| `db.hainan.gov.cn` | 2 | 海南省"惠企政策直达" |
+| `zfxxgk.yanbian.gov.cn` | 2 | 延边政务公开二级域 |
+| `nbinvest.ningbo.gov.cn` | 1 | 宁波招商二级 |
+| `zsj.sz.gov.cn` | 1 | 深圳招商局 |
+| `huiqi.fz12345.gov.cn` | 1 | 福州 12345 挂载 |
+| `zcfb.guizhou.gov.cn` | 1 | 贵州政策发布 |
+| `zcdd.<city>.gov.cn` | ~6 | 多地"政策兑现"独立子域 |
+| `huiqitong.<city>.gov.cn` | ~4 | "惠企通"独立子域 |
+| `zhengcezhida.<city>.gov.cn` | ~3 | "政策直达" |
+| ... 其余 18 个 | 1 | 长尾，多为单地市自建 |
+
+**模式提炼**：外部平台域名规律性极强 —— `(huiqi|zcdd|zhengcezhida|huiqitong|zcfb|qyfw)[a-z0-9]*\.[a-z]+\.gov\.cn`。可加进 `EXTERNAL_HINT` 提前预测。
+
+---
+
+## CMS 路径模式库（按片区收集）
+
+| 片区 / CMS | 典型路径 | 命中省 |
+|---|---|---|
+| 国办通用 `/zwgk/hqzc/` | 政务公开二级目录 | 大部分省级 + 地级 |
+| 浙系 `/hqzc/` 一级 | 顶层短路径 | 浙江 / 江苏 / 安徽 |
+| 鲁系 `/ztzl/hqzc/` | 专题专栏挂载 | 山东 / 河南 |
+| 粤系 `/ywdt/qyfw/` | "要闻动态-企业服务" | 广东 / 广西 |
+| 川渝系 `/zsyz/` + `/cyzc/` 并列 | 招商和产业分两栏 | 四川 / 重庆 / 云南 |
+| 政策兑现独立平台 | `huiqi.<city>.gov.cn` 或 `zcdd.<city>.gov.cn` | 长三角 / 珠三角 |
+| 老 .NET CMS | `/News/showList/<deptId>` | 西北若干市县 |
+
+---
+
+## Subagent 并行模板（人工兜底失败用）
+
+当某省/某地市自动化漏判 ≥10 个，启 subagent 一次性扫一片：
+
+```text
+你是一个 Chinese 政府门户结构识别助手。给定 N 个 <city.gov.cn> 首页 HTML，
+请：
+1. 列出每个门户的"惠企/涉企/营商环境/政策兑现"导航条目（含锚文本和 href）
+2. 标记是否为外部平台跳转（host 不同于 gov.cn 主域）
+3. 若首页未直接出现，请在 /zwgk/、/ztzl/、/ywdt/ 三个二级目录下尝试
+4. 用 JSON 数组返回 [{ gov: "...", picks: [{label, url, externalHost?}] }]
+
+⚠️ 不要收以下页面：
+- 单篇通告（URL 含 /content/article/、/202604/t<...>.html、/post_<id>.html）
+- "涉企行政检查公示专栏"（除非同时有"惠企政策"则只取后者）
+- "工商联"/"行业协会"/"招聘信息"/"党建"/"纪检"
+- "12345 留言板"
+```
+
+---
+
+## 经验法则（v1 后更新）
+
+### 频率回报的命名洞察
+
+- "惠企政策" (156) >> "政策兑现" (28)：内部栏目 vs 外部平台之比 ≈ 5.6:1，说明大多数地市还没建独立平台，仍走门户内栏
+- Tier C "产业政策" 仅 22 次：说明国办未统一要求地市单独建"产业政策"栏，多数挂在"经信局工作动态"下
+- Tier B "营商环境" 系列（69+67+25=161）反而比 Tier A 单 keyword "惠企政策" 还多 → **不可降权 Tier B**
+
+### 假阳性高发陷阱（v1 实测）
+
+1. **单篇通告**：`/content/article/<id>`、`/202604/t<...>.htm`、`/post_<id>.html` —— 现有 ARTICLE_PATH 漏判，需要补丁（见上节）
+2. **"涉企行政检查公示专栏"**：43 例边界，按上节规则处理
+3. **"营商环境征集意见"单篇**：标题命中 Tier B 但内容是单次活动公告，需要 CONTENT_REQUIRE 加严
+4. **国资委 / 产业园区招商单篇**：如"XX 工业园 2026 春季招商推介会"，命中 Tier C "招商引资"
+
+### 失败重灾区路线图
+
+- 江苏全省 53/53 县区 SPA → **下一步上 Playwright headless 渲染**
+- 安徽合肥系（合肥/包河/巢湖/肥东/阜南）整片 521 WAF → **subagent 一次性人工查 5 个**
+- 河北 / 四川 / 云南 / 河南 / 湖南 noroute 集中 → **大概率栏目客观不存在，标 D 存档即可，不要勉强**
