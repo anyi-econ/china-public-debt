@@ -29,3 +29,6 @@ data/chinabond-pre-issuance-attachments/
 data/crawl-index.json
 data/chinabond-list.json
 data/website-gov.xlsx
+
+scripts/website_management/*.bak
+scripts/website_management/*-run.log

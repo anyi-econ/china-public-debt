@@ -686,14 +686,7 @@
     "key": "安徽省/马鞍山市",
     "level": "地级",
     "govUrl": "https://www.mas.gov.cn/",
-    "picked": {
-      "url": "https://www.mas.gov.cn/zxzx/tzgg/21346381.html",
-      "text": "关于公开征集马鞍山市涉企行政执法突出问题线索的公告",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "安徽省/马鞍山市/博望区",
@@ -1181,14 +1174,7 @@
     "key": "重庆市",
     "level": "省级",
     "govUrl": "https://www.cq.gov.cn/",
-    "picked": {
-      "url": "https://www.cq.gov.cn/zwgk/zfxxgkml/zcjd_120614/bmjd/202604/t20260409_15600766.html",
-      "text": "《重庆市2026年度优化营商环境工作任务清单》政策解读",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "重庆市/巴南区",
@@ -1232,14 +1218,7 @@
     "key": "重庆市/大渡口区",
     "level": "地级",
     "govUrl": "https://www.ddk.gov.cn/",
-    "picked": {
-      "url": "https://www.ddk.gov.cn/zsyz/tzzc/202301/t20230103_11447309.html",
-      "text": "一图读懂丨成渝地区双城经济圈优化营商环境方案",
-      "score": 85,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "重庆市/大足区",
@@ -1563,14 +1542,7 @@
     "key": "福建省",
     "level": "省级",
     "govUrl": "https://www.fujian.gov.cn/",
-    "picked": {
-      "url": "https://www.fujian.gov.cn/hdjl/zxft/fthz/fthz/202601/t20260113_7074342.htm",
-      "text": "打造外事惠企三大工程 服务福建民营经济高质量发展",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "福建省/福州市",
@@ -1677,14 +1649,7 @@
     "key": "福建省/福州市/台江区",
     "level": "县区",
     "govUrl": "http://www.taijiang.gov.cn/",
-    "picked": {
-      "url": "http://www.taijiang.gov.cn/xjwz/hdjl/zxft/wqft/202603/t20260330_5302326.htm",
-      "text": "优化营商环境，提升服务水平",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "福建省/福州市/永泰县",
@@ -1913,14 +1878,7 @@
     "key": "福建省/宁德市/福安市",
     "level": "县区",
     "govUrl": "http://www.fjfa.gov.cn/",
-    "picked": {
-      "url": "http://www.fjfa.gov.cn/zwgk/yw/bmdt/202603/t20260318_2447477.htm",
-      "text": "规范涉企检查主动靠前服务优化营商环境",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "福建省/宁德市/福鼎市",
@@ -1945,14 +1903,7 @@
     "key": "福建省/宁德市/蕉城区",
     "level": "县区",
     "govUrl": "http://www.jiaocheng.gov.cn/",
-    "picked": {
-      "url": "http://www.jiaocheng.gov.cn/zwgk/tpxw/202601/t20260113_2433980.htm",
-      "text": "区委经济工作会议暨全区营商环境工作部署会召开",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "福建省/宁德市/屏南县",
@@ -1977,14 +1928,7 @@
     "key": "福建省/宁德市/霞浦县",
     "level": "县区",
     "govUrl": "http://www.xiapu.gov.cn/",
-    "picked": {
-      "url": "http://www.xiapu.gov.cn/hdjl/zxft/202510/t20251017_2404643.htm",
-      "text": "介绍扩大有效投资、优化营商环境、支持中小企业纾困的具体举措",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "福建省/宁德市/柘荣县",
@@ -2112,27 +2056,13 @@
     "key": "福建省/泉州市/丰泽区",
     "level": "县区",
     "govUrl": "https://www.qzfz.gov.cn/",
-    "picked": {
-      "url": "https://www.qzfz.gov.cn/wsbs/nrrh/202503/t20250304_3145248.htm",
-      "text": "海丝中央法务区泉州片区惠企政策奖励开始申报啦！",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "福建省/泉州市/惠安县",
     "level": "县区",
     "govUrl": "http://www.huian.gov.cn/",
-    "picked": {
-      "url": "http://www.huian.gov.cn/zwgk/fgwj/zcfg/202604/t20260410_3282331.htm",
-      "text": "惠安县农业农村局关于公布涉企行政检查事项清单的通知",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "福建省/泉州市/晋江市",
@@ -2331,14 +2261,7 @@
     "key": "福建省/三明市/永安市",
     "level": "县区",
     "govUrl": "http://www.ya.gov.cn/",
-    "picked": {
-      "url": "http://www.ya.gov.cn/zwgk/gzdt/202402/t20240201_1999232.htm",
-      "text": "关于征集影响营商环境建设问题线索的公告",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "福建省/三明市/尤溪县",
@@ -3271,14 +3194,7 @@
     "key": "甘肃省/张掖市/高台县",
     "level": "县区",
     "govUrl": "http://www.gaotai.gov.cn/",
-    "picked": {
-      "url": "http://www.gaotai.gov.cn/zfxxgk/fdzdgknr/zdmsxx/wsjk_6468/202604/t20260417_1533410.html",
-      "text": "高台县卫生健康局涉企行政检查事项清单",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "甘肃省/张掖市/临泽县",
@@ -3302,14 +3218,7 @@
     "key": "甘肃省/张掖市/肃南裕固族自治县",
     "level": "县区",
     "govUrl": "http://www.gssn.gov.cn/",
-    "picked": {
-      "url": "http://www.gssn.gov.cn/dzdt/bmdt/202604/t20260422_1535011.html",
-      "text": "数字赋能优服务 惠企纾困显担当",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省",
@@ -3395,14 +3304,7 @@
     "key": "广东省/佛山市/顺德区",
     "level": "县区",
     "govUrl": "https://www.shunde.gov.cn/",
-    "picked": {
-      "url": "http://www.shunde.gov.cn/sdqrmzf/zwgk/gzdt/sqdt/content/post_7144485.html",
-      "text": "法治护航+暖春助企！龙江全力打造一流营商环境",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/广州市",
@@ -3605,14 +3507,7 @@
     "key": "广东省/惠州市/博罗县",
     "level": "县区",
     "govUrl": "http://www.boluo.gov.cn/",
-    "picked": {
-      "url": "http://www.boluo.gov.cn/zwgk/zwdt/zfhy/content/post_5692244.html",
-      "text": "博罗召开惠企服务暨女企业家联合会座谈会",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/惠州市/惠城区",
@@ -3718,14 +3613,7 @@
     "key": "广东省/揭阳市",
     "level": "地级",
     "govUrl": "http://www.jieyang.gov.cn/",
-    "picked": {
-      "url": "http://www.jieyang.gov.cn/xwdt/gsgg/content/post_995326.html",
-      "text": "揭阳市关于全面推行涉企行政检查“亮码入企”工作..",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/揭阳市/惠来县",
@@ -3743,27 +3631,13 @@
     "key": "广东省/揭阳市/揭西县",
     "level": "县区",
     "govUrl": "http://www.jiexi.gov.cn/",
-    "picked": {
-      "url": "http://www.jiexi.gov.cn/xwzx/jxdt/content/post_831246.html",
-      "text": "关于征集影响营商环境建设问题线索的公告",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/揭阳市/普宁市",
     "level": "县区",
     "govUrl": "http://www.puning.gov.cn/",
-    "picked": {
-      "url": "http://www.puning.gov.cn/zfxxgkmlfg/jyspnssfj/gzdt/content/post_995770.html",
-      "text": "揭阳市关于全面推行涉企行政检查...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/揭阳市/榕城区",
@@ -3781,27 +3655,13 @@
     "key": "广东省/茂名市/电白区",
     "level": "县区",
     "govUrl": "http://www.dianbai.gov.cn/",
-    "picked": {
-      "url": "http://www.dianbai.gov.cn/ywdt/dbyw/content/post_1292406.html",
-      "text": "关于征集影响营商环境建设问题线索的公告",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/茂名市/高州市",
     "level": "县区",
     "govUrl": "http://www.gaozhou.gov.cn/",
-    "picked": {
-      "url": "http://www.gaozhou.gov.cn/zwgk/gggs/content/post_1292412.html",
-      "text": "关于征集影响营商环境建设问题线索的公告",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/茂名市/化州市",
@@ -3826,14 +3686,7 @@
     "key": "广东省/茂名市/信宜市",
     "level": "县区",
     "govUrl": "http://www.xinyi.gov.cn/",
-    "picked": {
-      "url": "http://www.xinyi.gov.cn/ywdt/zwdt/content/post_1292398.html",
-      "text": "关于征集影响营商环境建设问题线索的公告",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/梅州市",
@@ -3845,14 +3698,7 @@
     "key": "广东省/梅州市/大埔县",
     "level": "县区",
     "govUrl": "https://www.dabu.gov.cn/",
-    "picked": {
-      "url": "https://www.dabu.gov.cn/zwgk/dpyw/content/post_2594849.html",
-      "text": "关于征集影响营商环境建设问题线索的公告",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/梅州市/丰顺县",
@@ -3883,14 +3729,7 @@
     "key": "广东省/梅州市/梅县区",
     "level": "县区",
     "govUrl": "https://www.gdmx.gov.cn/",
-    "picked": {
-      "url": "http://www.gdmx.gov.cn/zwgk/gzdt/bmdt/content/post_2897045.html",
-      "text": "区司法局：梅县区召开纠治涉企违规行政执法专项行动部署会",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/梅州市/平远县",
@@ -3902,27 +3741,13 @@
     "key": "广东省/梅州市/五华县",
     "level": "县区",
     "govUrl": "https://www.wuhua.gov.cn/",
-    "picked": {
-      "url": "https://www.wuhua.gov.cn/xxgk/gsgg/content/post_2892882.html",
-      "text": "关于设立涉企行政执法监督联系点的公告",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/梅州市/兴宁市",
     "level": "县区",
     "govUrl": "http://www.xingning.gov.cn/",
-    "picked": {
-      "url": "https://www.xingning.gov.cn/jrxn/bmdt/content/post_2883763.html",
-      "text": "市发改局：关于梅州市优化营商环...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/清远市",
@@ -4132,14 +3957,7 @@
     "key": "广东省/韶关市/乳源瑶族自治县",
     "level": "县区",
     "govUrl": "https://www.ruyuan.gov.cn/",
-    "picked": {
-      "url": "http://www.ruyuan.gov.cn/ryxw/xwzx/ryyw/content/post_2835995.html",
-      "text": "我县召开规范涉企行政执法专项行动“双专班”工作推进会",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/韶关市/始兴县",
@@ -4256,27 +4074,13 @@
     "key": "广东省/阳江市",
     "level": "地级",
     "govUrl": "http://www.yangjiang.gov.cn/",
-    "picked": {
-      "url": "http://www.yangjiang.gov.cn/yj/ywdt/gggs/content/post_951761.html",
-      "text": "阳江市关于全面推行涉企行政检查“亮码入企”工作的公告",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/阳江市/江城区",
     "level": "县区",
     "govUrl": "https://www.jiangcheng.gov.cn/",
-    "picked": {
-      "url": "https://www.jiangcheng.gov.cn/gnlm/sydblbt/content/post_508202.html",
-      "text": "国务院“互联网+监督”平台公开征集涉企乱收费问题线索",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/阳江市/阳春市",
@@ -4370,14 +4174,7 @@
     "key": "广东省/湛江市/赤坎区",
     "level": "县区",
     "govUrl": "https://www.chikan.gov.cn/",
-    "picked": {
-      "url": "http://www.chikan.gov.cn/ckqzfw/xxgk/ckyw/ckdt/content/post_1870190.html",
-      "text": "关于征集影响营商环境建设问题线索的公告",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/湛江市/雷州市",
@@ -4446,14 +4243,7 @@
     "key": "广东省/湛江市/徐闻县",
     "level": "县区",
     "govUrl": "http://www.xuwen.gov.cn/",
-    "picked": {
-      "url": "http://www.xuwen.gov.cn/xwyw/shgz/content/post_2129764.html",
-      "text": "“徐闻营商环境”调查问卷邀您来评价",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/肇庆市",
@@ -4966,14 +4756,7 @@
     "key": "广西壮族自治区/桂林市/阳朔县",
     "level": "县区",
     "govUrl": "http://www.yangshuo.gov.cn/",
-    "picked": {
-      "url": "http://www.yangshuo.gov.cn/zntj/202508/t20250826_2901109.htm",
-      "text": "阳朔县住房和城乡建设局涉企行政检查事项和依据",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广西壮族自治区/桂林市/永福县",
@@ -5162,27 +4945,13 @@
     "key": "广西壮族自治区/柳州市",
     "level": "地级",
     "govUrl": "http://www.liuzhou.gov.cn/",
-    "picked": {
-      "url": "http://www.liuzhou.gov.cn/yhkj/rdgz/cnxlj/202206/t20220610_3074926.shtml",
-      "text": "2022年柳州人社惠企政策汇编(人才人事单位篇)（6月版本）",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广西壮族自治区/柳州市/城中区",
     "level": "县区",
     "govUrl": "http://www.czq.gov.cn/",
-    "picked": {
-      "url": "http://www.czq.gov.cn/20wzxx/cnxlj/202604/t20260407_3739396.shtml",
-      "text": "普法先行，优化营商 城中区市场监督管理局助力营商环境持续优化",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广西壮族自治区/柳州市/柳北区",
@@ -5645,14 +5414,7 @@
     "key": "贵州省/毕节市/金沙县",
     "level": "县区",
     "govUrl": "http://www.gzjinsha.gov.cn/",
-    "picked": {
-      "url": "https://www.gzjinsha.gov.cn/zfbm/sfj_5686668/gzdt_5686673/202604/t20260417_90017282.html",
-      "text": "金沙县2026年新增拟纳入涉企行政检查“白名单...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/毕节市/纳雍县",
@@ -5689,14 +5451,7 @@
     "key": "贵州省/毕节市/织金县",
     "level": "县区",
     "govUrl": "http://www.gzzhijin.gov.cn/",
-    "picked": {
-      "url": "http://www.gzzhijin.gov.cn/xwzx/tzgg/202604/t20260424_90040000.html",
-      "text": "织金县关于拟纳入涉企行政检查“白名单”企业公示",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/贵阳市",
@@ -5708,14 +5463,7 @@
     "key": "贵州省/贵阳市/白云区",
     "level": "县区",
     "govUrl": "https://www.gzbaiyun.gov.cn/",
-    "picked": {
-      "url": "https://www.gzbaiyun.gov.cn/xwz/jdhy_5748402/zcjd_5748465/wzjd/202602/t20260210_89486371.html",
-      "text": "《白云区涉企重大事项政商沟通及问题解决机...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/贵阳市/观山湖区",
@@ -5740,14 +5488,7 @@
     "key": "贵州省/贵阳市/开阳县",
     "level": "县区",
     "govUrl": "http://www.kaiyang.gov.cn/",
-    "picked": {
-      "url": "http://www.kaiyang.gov.cn/xwzx/bmdt/202604/t20260422_90032720.html",
-      "text": "开阳县司法局组织开展涉企走访活动",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/贵阳市/南明区",
@@ -5759,14 +5500,7 @@
     "key": "贵州省/贵阳市/清镇市",
     "level": "县区",
     "govUrl": "https://www.gzqz.gov.cn/",
-    "picked": {
-      "url": "https://www.gzqz.gov.cn/xwdt/tzgg/202604/t20260422_90033985.html",
-      "text": "清镇市拟纳入涉企行政检查“白名单” 企业公示",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/贵阳市/乌当区",
@@ -5797,14 +5531,7 @@
     "key": "贵州省/贵阳市/云岩区",
     "level": "县区",
     "govUrl": "http://www.yunyan.gov.cn/",
-    "picked": {
-      "url": "https://www.yunyan.gov.cn/xwzx/gsgg/202604/t20260424_90041285.html",
-      "text": "关于公示云岩区拟初步确定纳入涉企行政检查“白名单”企业的通知",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/六盘水市",
@@ -5854,14 +5581,7 @@
     "key": "贵州省/黔东南苗族侗族自治州",
     "level": "地级",
     "govUrl": "https://www.qdn.gov.cn/",
-    "picked": {
-      "url": "http://www.qdn.gov.cn/zwfw_5872270/bmlqfw/tzfw_5872344/tzdt_5880931/202604/t20260424_90042131.html",
-      "text": "黔东南：助企纾困提质效 精准服... 2026-04-24",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/黔东南苗族侗族自治州/岑巩县",
@@ -5967,14 +5687,7 @@
     "key": "贵州省/黔东南苗族侗族自治州/施秉县",
     "level": "县区",
     "govUrl": "https://www.qdnsb.gov.cn/",
-    "picked": {
-      "url": "https://www.qdnsb.gov.cn/xwzx/tzgg/202604/t20260416_90014238.html",
-      "text": "施秉县民政局部门2025年度涉企行政检查工作计划",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/黔东南苗族侗族自治州/台江县",
@@ -5986,14 +5699,7 @@
     "key": "贵州省/黔东南苗族侗族自治州/天柱县",
     "level": "县区",
     "govUrl": "https://www.tianzhu.gov.cn/",
-    "picked": {
-      "url": "https://www.tianzhu.gov.cn/xwzx/tzgg/202604/t20260424_90044019.html",
-      "text": "关于天柱县2026年涉企行政检查“白名单”的公示",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/黔东南苗族侗族自治州/镇远县",
@@ -6063,27 +5769,13 @@
     "key": "贵州省/黔南布依族苗族自治州/惠水县",
     "level": "县区",
     "govUrl": "https://www.gzhs.gov.cn/",
-    "picked": {
-      "url": "http://www.gzhs.gov.cn/xwdt/tzgg/202604/t20260422_90033551.html",
-      "text": "惠水县教育局涉企行政检查非学科类校外培训机构白名单公告",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/黔南布依族苗族自治州/荔波县",
     "level": "县区",
     "govUrl": "http://www.libo.gov.cn/",
-    "picked": {
-      "url": "http://www.libo.gov.cn/xwdt/tzgg/202604/t20260423_90038759.html",
-      "text": "拟纳入荔波县2026年涉企行政检查“白名单”企业公示",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/黔南布依族苗族自治州/龙里县",
@@ -6108,14 +5800,7 @@
     "key": "贵州省/黔南布依族苗族自治州/平塘县",
     "level": "县区",
     "govUrl": "https://www.gzpt.gov.cn/",
-    "picked": {
-      "url": "http://www.gzpt.gov.cn/tzpt/dtzx/qyxw/202603/t20260320_89893395.html",
-      "text": "平塘县企业定制流程图、企业诉求化解流程图、惠企政策兑...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/黔南布依族苗族自治州/三都水族自治县",
@@ -6153,14 +5838,7 @@
     "key": "贵州省/黔西南布依族苗族自治州",
     "level": "地级",
     "govUrl": "https://www.qxn.gov.cn/",
-    "picked": {
-      "url": "https://www.qxn.gov.cn/zwgk/zfjg/zswj_5135186/bmxxgkml_5135189/bmgg_5135194/202604/t20260424_90042301.html",
-      "text": "州水务局行政执法部门涉企行政检查年度计划清单",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/黔西南布依族苗族自治州/安龙县",
@@ -6179,27 +5857,13 @@
     "key": "贵州省/黔西南布依族苗族自治州/册亨县",
     "level": "县区",
     "govUrl": "https://www.gzch.gov.cn/",
-    "picked": {
-      "url": "https://www.gzch.gov.cn/zwgk/tzgg/bmgs/202604/t20260415_90007807.html",
-      "text": "册亨县2026年动态调整拟纳入涉企行政检查“白名单...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/黔西南布依族苗族自治州/普安县",
     "level": "县区",
     "govUrl": "https://puan.gov.cn/",
-    "picked": {
-      "url": "https://www.puan.gov.cn/xwfb/bmdt/202604/t20260416_90012801.html",
-      "text": "普安县消防救援大队2026年度“涉企行政检查“计划表",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/黔西南布依族苗族自治州/晴隆县",
@@ -6218,27 +5882,13 @@
     "key": "贵州省/黔西南布依族苗族自治州/望谟县",
     "level": "县区",
     "govUrl": "https://www.gzwm.gov.cn/",
-    "picked": {
-      "url": "https://www.gzwm.gov.cn/xxgk/xxgkml/jcxxgk/jdjc/202604/t20260416_90015364.html",
-      "text": "· ​望谟县水务局2026年度涉企行政检查计划表",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/黔西南布依族苗族自治州/兴仁市",
     "level": "县区",
     "govUrl": "https://gzxr.gov.cn/",
-    "picked": {
-      "url": "http://www.gzxr.gov.cn/xwzx/tzgg/202604/t20260424_90041542.html",
-      "text": "兴仁市烟草专卖局（涉企）行...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/黔西南布依族苗族自治州/兴义市",
@@ -6262,27 +5912,13 @@
     "key": "贵州省/铜仁市/碧江区",
     "level": "县区",
     "govUrl": "https://www.bjq.gov.cn/",
-    "picked": {
-      "url": "https://www.bjq.gov.cn/qdmz/tzbj/zsxm/202602/t20260210_89487479.html",
-      "text": "碧江：政务服务提质增效 激发营商环境新活力",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/铜仁市/德江县",
     "level": "县区",
     "govUrl": "http://www.dejiang.gov.cn/",
-    "picked": {
-      "url": "https://www.dejiang.gov.cn/zwgk/xxgkml/zdlyxxgk/czxx/czsz/202604/t20260410_89979011.html",
-      "text": "铜仁市涉企行政事业性收费目录清单（2026年3月31日）",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/铜仁市/江口县",
@@ -6362,14 +5998,7 @@
     "key": "贵州省/遵义市/赤水市",
     "level": "县区",
     "govUrl": "https://www.gzchishui.gov.cn/",
-    "picked": {
-      "url": "https://www.gzchishui.gov.cn/xwzx/bmdt/zxxx_5150161/202604/t20260413_89991975.html",
-      "text": "赤水市发展和改革局2026年度涉企行政检...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/遵义市/道真仡佬族苗族自治县",
@@ -6501,14 +6130,7 @@
     "key": "海南省/保亭黎族苗族自治县",
     "level": "地级",
     "govUrl": "http://baoting.hainan.gov.cn/",
-    "picked": {
-      "url": "http://baoting.hainan.gov.cn/ywdt/jrbt/202604/t20260425_4065647.html",
-      "text": "县委优化营商环境领导小组第六次会议召开",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "海南省/昌江黎族自治县",
@@ -6636,27 +6258,13 @@
     "key": "海南省/临高县",
     "level": "地级",
     "govUrl": "http://lingao.hainan.gov.cn/",
-    "picked": {
-      "url": "http://lingao.hainan.gov.cn/xxgkzl/zwfwzx/xxgkml/202601/t20260130_4020115.html",
-      "text": "临高县营商环境建设局 2025年工作总结及2026年工作计划",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "海南省/陵水黎族自治县",
     "level": "地级",
     "govUrl": "http://lingshui.hainan.gov.cn/",
-    "picked": {
-      "url": "http://lingshui.hainan.gov.cn/jdhy_57548/zcjd/sjjd/202507/t20250703_3890468.html",
-      "text": "《严格规范涉企行政检查的若干措施》政策解读",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "海南省/琼海市",
@@ -6759,14 +6367,7 @@
     "key": "海南省/屯昌县",
     "level": "地级",
     "govUrl": "http://tunchang.hainan.gov.cn/",
-    "picked": {
-      "url": "http://tunchang.hainan.gov.cn/ywdt/jrtc/202604/t20260420_4062422.html",
-      "text": "县委优化营商环境领导小组会议暨历史遗留重点疑难问...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "海南省/万宁市",
@@ -7248,14 +6849,7 @@
     "key": "河北省/邯郸市/肥乡区",
     "level": "县区",
     "govUrl": "https://www.fxq.gov.cn/",
-    "picked": {
-      "url": "https://www.fxq.gov.cn/xwzx/fxyw/202604/t20260401_2196465.html",
-      "text": "肥乡区召开优化营商环境和产业发展“六大工程”...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "河北省/邯郸市/峰峰矿区",
@@ -7273,14 +6867,7 @@
     "key": "河北省/邯郸市/馆陶县",
     "level": "县区",
     "govUrl": "http://www.guantao.gov.cn/",
-    "picked": {
-      "url": "http://www.guantao.gov.cn/zmhd/dczj/202410/t20241008_2070059.html",
-      "text": "馆陶县房建市政项目招标投标领域营商环境专项治...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "河北省/邯郸市/广平县",
@@ -10943,14 +10530,7 @@
     "key": "湖北省/黄石市/下陆区",
     "level": "县区",
     "govUrl": "https://www.xialuqu.gov.cn/",
-    "picked": {
-      "url": "https://www.xialuqu.gov.cn/zwgk/zfxxgkml/qzbmzsjg/qfgj/zc/zfwj/202508/t20250808_1248603.html",
-      "text": "文字解读：《关于加强涉企收费长效监管工作的通知》政策...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "湖北省/黄石市/阳新县",
@@ -11188,14 +10768,7 @@
     "key": "湖北省/随州市",
     "level": "地级",
     "govUrl": "http://www.suizhou.gov.cn/",
-    "picked": {
-      "url": "http://www.suizhou.gov.cn/zwgk/zfwj/qt_5744/tzgg/202402/t20240201_1193158.shtml",
-      "text": "国务院“互联网+督查”平台公开征集影响营商环境建设问题线索",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "湖北省/随州市/曾都区",
@@ -11294,14 +10867,7 @@
     "key": "湖北省/武汉市/江汉区",
     "level": "县区",
     "govUrl": "https://www.jianghan.gov.cn/",
-    "picked": {
-      "url": "https://www.jianghan.gov.cn/xwzx/tzgg/202603/t20260331_2747421.shtml",
-      "text": "江汉区财政局涉企行政检查计划",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "湖北省/武汉市/江夏区",
@@ -11430,14 +10996,7 @@
     "key": "湖北省/襄阳市/老河口市",
     "level": "县区",
     "govUrl": "http://www.lhk.gov.cn/",
-    "picked": {
-      "url": "http://www.lhk.gov.cn/gwgg/zfgg/202604/t20260423_3990853.shtml",
-      "text": "老河口市气象局2026年度涉企行政检查计划表",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "湖北省/襄阳市/南漳县",
@@ -12481,40 +12040,19 @@
     "key": "湖南省/长沙市/芙蓉区",
     "level": "县区",
     "govUrl": "http://www.furong.gov.cn/",
-    "picked": {
-      "url": "http://www.furong.gov.cn/interactive/dczj/feedback/202601/t20260127_12260811.html",
-      "text": "关于公开征集涉企行政执法领域突出问题线索...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "湖南省/长沙市/开福区",
     "level": "县区",
     "govUrl": "http://www.kaifu.gov.cn/",
-    "picked": {
-      "url": "http://www.kaifu.gov.cn/zfxxgk/fdzdgknr/tzgg/202601/t20260114_12227202.html",
-      "text": "长沙市开福区消防救援大队2026年一季度涉企行政检查计划",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "湖南省/长沙市/浏阳市",
     "level": "县区",
     "govUrl": "http://www.liuyang.gov.cn/",
-    "picked": {
-      "url": "http://www.liuyang.gov.cn/zwgk/zfxxgk/fdzdgknr/zcwj/zwwj/202604/t20260424_12367736.html",
-      "text": "铁腕整治涉企执法突出问题",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "湖南省/长沙市/宁乡市",
@@ -12637,14 +12175,7 @@
     "key": "吉林省",
     "level": "省级",
     "govUrl": "https://www.jl.gov.cn/",
-    "picked": {
-      "url": "https://www.jl.gov.cn/szyw/zwlb/202604/t20260422_3625655.html",
-      "text": "白山：以一流营商环境激活发展新动能",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/白城市",
@@ -12663,27 +12194,13 @@
     "key": "吉林省/白城市/大安市",
     "level": "县区",
     "govUrl": "http://www.daan.gov.cn/",
-    "picked": {
-      "url": "http://www.daan.gov.cn/zwgk/tzgg/202603/t20260323_1033004.html",
-      "text": "大安市营商环境建设办公室关于征集202...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/白城市/洮北区",
     "level": "县区",
     "govUrl": "http://www.taobei.gov.cn/",
-    "picked": {
-      "url": "http://www.taobei.gov.cn/ttxw/202510/t20251022_1023623.html",
-      "text": "关于开展用电营商环境评价问卷调查的公告",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/白城市/洮南市",
@@ -12740,27 +12257,13 @@
     "key": "吉林省/白山市/浑江区",
     "level": "县区",
     "govUrl": "http://www.hunjiang.gov.cn/",
-    "picked": {
-      "url": "http://www.hunjiang.gov.cn/zw/zcjd/202509/t20250918_856249.html",
-      "text": "【微动画】涉企行政执法检查备案的解读",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/白山市/江源区",
     "level": "县区",
     "govUrl": "http://jy.cbs.gov.cn/",
-    "picked": {
-      "url": "http://jy.cbs.gov.cn/tzjy/hqzc/202409/t20240925_823040.html",
-      "text": "惠企政策手册2",
-      "score": 100,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/白山市/靖宇县",
@@ -12848,14 +12351,7 @@
     "key": "吉林省/吉林市/龙潭区",
     "level": "县区",
     "govUrl": "http://www.longtan.gov.cn/",
-    "picked": {
-      "url": "http://www.longtan.gov.cn/sllt/jrlt/202604/t20260417_1318350.html",
-      "text": "政策上门精准服务 助企纾困促发展 2026-04-17",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/吉林市/磐石市",
@@ -12910,27 +12406,13 @@
     "key": "吉林省/辽源市/西安区",
     "level": "县区",
     "govUrl": "http://www.lyxa.gov.cn/",
-    "picked": {
-      "url": "http://www.lyxa.gov.cn/xxgk/zwxxgkfl/zcjd/202507/t20250703_716248.html",
-      "text": "转载：辽源市持续优化营商环境2025年重点行动方案解读",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/四平市",
     "level": "地级",
     "govUrl": "http://www.siping.gov.cn/",
-    "picked": {
-      "url": "http://www.siping.gov.cn/zw/spdt/sz/202604/t20260421_764729.html",
-      "text": "市审计局持续跟进优化营商环境审计工作",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/四平市/梨树县",
@@ -12955,14 +12437,7 @@
     "key": "吉林省/四平市/铁东区",
     "level": "县区",
     "govUrl": "http://tdq.siping.gov.cn/",
-    "picked": {
-      "url": "http://tdq.siping.gov.cn/zw/zt/202505/t20250530_738787.html",
-      "text": "关于征集涉企为民服务领域问题线索的公告",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/四平市/铁西区",
@@ -12994,14 +12469,7 @@
     "key": "吉林省/松原市",
     "level": "地级",
     "govUrl": "https://www.jlsy.gov.cn/",
-    "picked": {
-      "url": "https://www.jlsy.gov.cn/xwzx/tj/202207/t20220725_471903.html",
-      "text": "《吉林省优化营商环境条例》（第三期）",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/松原市/扶余市",
@@ -13026,14 +12494,7 @@
     "key": "吉林省/松原市/前郭尔罗斯蒙古族自治县",
     "level": "县区",
     "govUrl": "http://www.qianguo.gov.cn/",
-    "picked": {
-      "url": "http://www.qianguo.gov.cn/ygzw/gsgg/202603/t20260319_569226.html",
-      "text": "关于公开征集涉企行政执法问题线索的公告",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/松原市/乾安县",
@@ -13051,14 +12512,7 @@
     "key": "吉林省/通化市",
     "level": "地级",
     "govUrl": "http://www.tonghua.gov.cn/",
-    "picked": {
-      "url": "http://www.tonghua.gov.cn/zwgk/thlb/thdt/202604/t20260424_771719.html",
-      "text": "长春海关“惠企兴吉”政策宣讲走... 04-24",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/通化市/东昌区",
@@ -13100,27 +12554,13 @@
     "key": "吉林省/通化市/通化县",
     "level": "县区",
     "govUrl": "http://www.tonghuaxian.gov.cn/",
-    "picked": {
-      "url": "http://www.tonghuaxian.gov.cn/hdjl/myzjlb/202603/t20260316_767959.html",
-      "text": "【征集中】关于公开征集住建领域、城市管理领域涉企违...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/延边朝鲜族自治州",
     "level": "地级",
     "govUrl": "http://www.yanbian.gov.cn/",
-    "picked": {
-      "url": "http://zfxxgk.yanbian.gov.cn/cyqzf/zcjd/202604/t20260411_571728.html",
-      "text": "《延边州2026年持续优化营商环境重点行动方案》政策解读",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/延边朝鲜族自治州/安图县",
@@ -13132,14 +12572,7 @@
     "key": "吉林省/延边朝鲜族自治州/敦化市",
     "level": "县区",
     "govUrl": "http://www.dunhua.gov.cn/",
-    "picked": {
-      "url": "http://www.dunhua.gov.cn/zw_2131/sp/202404/t20240417_455947.html",
-      "text": "营商环境服务中心：提升政务服务水平 打...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/延边朝鲜族自治州/和龙市",
@@ -13151,14 +12584,7 @@
     "key": "吉林省/延边朝鲜族自治州/珲春市",
     "level": "县区",
     "govUrl": "http://www.yanbian.gov.cn/",
-    "picked": {
-      "url": "http://zfxxgk.yanbian.gov.cn/cyqzf/zcjd/202604/t20260411_571728.html",
-      "text": "《延边州2026年持续优化营商环境重点行动方案》政策解读",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/延边朝鲜族自治州/龙井市",
@@ -13170,14 +12596,7 @@
     "key": "吉林省/延边朝鲜族自治州/图们市",
     "level": "县区",
     "govUrl": "http://www.tumen.gov.cn/",
-    "picked": {
-      "url": "http://www.tumen.gov.cn/zw_2185/tzgg/202604/t20260422_572383.html",
-      "text": "关于设立财政系统涉企行政执...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/延边朝鲜族自治州/汪清县",
@@ -13189,14 +12608,7 @@
     "key": "吉林省/延边朝鲜族自治州/延吉市",
     "level": "县区",
     "govUrl": "http://www.yanji.gov.cn/",
-    "picked": {
-      "url": "http://www.yanji.gov.cn/zw_2497/tzgg/202604/t20260403_571017.html",
-      "text": "吉林省营商环境建设办公室关...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/长春市",
@@ -13251,14 +12663,7 @@
     "key": "吉林省/长春市/绿园区",
     "level": "县区",
     "govUrl": "http://www.luyuan.gov.cn/",
-    "picked": {
-      "url": "http://www.luyuan.gov.cn/zwdt/lyq/202604/t20260416_3480798.html",
-      "text": "高文禄调研涉企执法、安全生产等工作",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/长春市/南关区",
@@ -13276,14 +12681,7 @@
     "key": "吉林省/长春市/双阳区",
     "level": "县区",
     "govUrl": "http://www.shuangyang.gov.cn/",
-    "picked": {
-      "url": "http://www.shuangyang.gov.cn/hdjl/dczj/202504/t20250401_3390635.html",
-      "text": "关于征集涉企为民服务领域群众身边不正之风...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "吉林省/长春市/榆树市",
@@ -13516,14 +12914,7 @@
     "key": "江苏省/南京市/高淳区",
     "level": "县区",
     "govUrl": "http://www.njgc.gov.cn/",
-    "picked": {
-      "url": "http://www.njgc.gov.cn/gcqrmzf/202604/t20260424_5829750.html",
-      "text": "惠企政策直达 护航企业创新升级",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "江苏省/南京市/鼓楼区",
@@ -13554,14 +12945,7 @@
     "key": "江苏省/南京市/溧水区",
     "level": "县区",
     "govUrl": "http://www.njls.gov.cn/",
-    "picked": {
-      "url": "http://www.njls.gov.cn/lsqrmzf/202603/t20260326_5812590.html",
-      "text": "《南京市2026年优化营商环境行动方案》图解",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "江苏省/南京市/六合区",
@@ -13579,14 +12963,7 @@
     "key": "江苏省/南京市/栖霞区",
     "level": "县区",
     "govUrl": "https://www.njqxq.gov.cn/",
-    "picked": {
-      "url": "https://www.njqxq.gov.cn/qxqrmzf/202511/t20251110_5686229.html",
-      "text": "【H5】栖霞区2025年优化营商环境实施方案",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "江苏省/南京市/秦淮区",
@@ -14644,27 +14021,13 @@
     "key": "江西省/九江市/都昌县",
     "level": "县区",
     "govUrl": "http://www.duchang.gov.cn/",
-    "picked": {
-      "url": "http://www.duchang.gov.cn/zwzx/ttxw/202604/t20260416_7222985.html",
-      "text": "县委书记徐翔调研项目建设和营商环境诉求办理工作",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "江西省/九江市/共青城市",
     "level": "县区",
     "govUrl": "http://www.gongqing.gov.cn/",
-    "picked": {
-      "url": "http://www.gongqing.gov.cn/02/01/202602/t20260222_7169115.html",
-      "text": "我市举行2026年“双招双引”新春恳谈会",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "江西省/九江市/湖口县",
@@ -14676,14 +14039,7 @@
     "key": "江西省/九江市/濂溪区",
     "level": "县区",
     "govUrl": "http://www.lianxi.gov.cn/",
-    "picked": {
-      "url": "http://www.lianxi.gov.cn/zwzx/tzgg/202604/t20260403_7216320.html",
-      "text": "区委第一巡察组向区营商环境服务中心党支部反馈巡...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "江西省/九江市/庐山市",
@@ -14725,14 +14081,7 @@
     "key": "江西省/九江市/永修县",
     "level": "县区",
     "govUrl": "http://www.yongxiu.gov.cn/",
-    "picked": {
-      "url": "http://www.yongxiu.gov.cn/zwgkx/01_298277/fgzc/zcjd_186175/202509/t20250910_7011303.html",
-      "text": "【负责人解读】《永修县关于严格规范涉企行政检查...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "江西省/南昌市",
@@ -15689,27 +15038,13 @@
     "key": "辽宁省/葫芦岛市/建昌县",
     "level": "县区",
     "govUrl": "https://www.jianchang.gov.cn/",
-    "picked": {
-      "url": "https://www.jianchang.gov.cn/xxgk_3511/zfxxgk/fdzdgknr/xzql_zq/202602/t20260228_1231033.html",
-      "text": "关于公布2026年度涉企行政执法检查计划的通知",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "辽宁省/葫芦岛市/连山区",
     "level": "县区",
     "govUrl": "http://www.lianshan.gov.cn/",
-    "picked": {
-      "url": "http://www.lianshan.gov.cn/hdjl/zjdc/202506/t20250606_1209131.html",
-      "text": "连山区关于公开征集涉企行政执法突出问题线索的公告",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "辽宁省/葫芦岛市/龙港区",
@@ -15721,14 +15056,7 @@
     "key": "辽宁省/葫芦岛市/南票区",
     "level": "县区",
     "govUrl": "http://www.npq.gov.cn/",
-    "picked": {
-      "url": "http://www.npq.gov.cn/xxgk/zfxxgk/fdzdgknr/lzyj/nanzhengbanfa/202510/t20251031_1221009.html",
-      "text": "关于印发《南票区2025年优化营商环境行动方案》的通知",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "辽宁省/葫芦岛市/绥中县",
@@ -15956,14 +15284,7 @@
     "key": "辽宁省/沈阳市",
     "level": "地级",
     "govUrl": "https://www.shenyang.gov.cn/",
-    "picked": {
-      "url": "https://www.shenyang.gov.cn/zmhd/szxx/xjhff/qz/202604/t20260423_5018591.html",
-      "text": "营商环境诉求",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "辽宁省/沈阳市/大东区",
@@ -16038,14 +15359,7 @@
     "key": "辽宁省/沈阳市/沈河区",
     "level": "县区",
     "govUrl": "http://www.shenhe.gov.cn/",
-    "picked": {
-      "url": "http://www.shenhe.gov.cn/dzgk/zwgk/fdzdgknr/jgjj/qzfbmxx/202206/t20220608_3076483.html",
-      "text": "沈河区营商环境建设局",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "辽宁省/沈阳市/苏家屯区",
@@ -16070,27 +15384,13 @@
     "key": "辽宁省/沈阳市/新民市",
     "level": "县区",
     "govUrl": "https://www.xinmin.gov.cn/",
-    "picked": {
-      "url": "https://www.xinmin.gov.cn/zwgk/fdzdgknr/jgjj/szfbm/202208/t20220815_3920612.html",
-      "text": "营商环境建设局",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "辽宁省/沈阳市/于洪区",
     "level": "县区",
     "govUrl": "http://www.syyh.gov.cn/",
-    "picked": {
-      "url": "http://www.syyh.gov.cn/xwzx/bmxx/202604/t20260422_5018171.html",
-      "text": "优化营商环境精准助企 聚力打造沈阳西部汽...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "辽宁省/铁岭市",
@@ -16463,27 +15763,13 @@
     "key": "内蒙古自治区/赤峰市/林西县",
     "level": "县区",
     "govUrl": "http://www.linxixian.gov.cn/",
-    "picked": {
-      "url": "http://www.linxixian.gov.cn/zwdt/bmdt/202604/t20260421_2757130.html",
-      "text": "三项举措齐发力，助企纾困促发展",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/赤峰市/宁城县",
     "level": "县区",
     "govUrl": "http://www.ningchengxian.gov.cn/",
-    "picked": {
-      "url": "http://www.ningchengxian.gov.cn/ncx_lbt/202604/t20260401_2748699.html",
-      "text": "宁城县政数局：多措并举优服务精准惠企促发展",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/赤峰市/松山区",
@@ -16507,27 +15793,13 @@
     "key": "内蒙古自治区/鄂尔多斯市",
     "level": "地级",
     "govUrl": "https://www.ordos.gov.cn/",
-    "picked": {
-      "url": "https://www.ordos.gov.cn/xw_127672/qqdt/202604/t20260425_3893473.html",
-      "text": "“伊企会客厅”打造惠企暖心港湾",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/鄂尔多斯市/达拉特旗",
     "level": "县区",
     "govUrl": "http://www.dlt.gov.cn/",
-    "picked": {
-      "url": "http://www.dlt.gov.cn/dltqrmzf2023/zjdlt_151514/wdslzt/zszc/202603/t20260326_3884359.html",
-      "text": "协商赋能发展 助企纾困增效！达拉... 2026-03-23",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/鄂尔多斯市/东胜区",
@@ -16614,14 +15886,7 @@
     "key": "内蒙古自治区/呼和浩特市/回民区",
     "level": "县区",
     "govUrl": "http://www.huiminqu.gov.cn/",
-    "picked": {
-      "url": "http://www.huiminqu.gov.cn/zwdt/zwyw/202603/t20260320_1984470.html",
-      "text": "回民区政数局：帮办代办服务提质升级 绘就营商环境暖心底色",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/呼和浩特市/清水河县",
@@ -16663,14 +15928,7 @@
     "key": "内蒙古自治区/呼和浩特市/玉泉区",
     "level": "县区",
     "govUrl": "http://www.yuquan.gov.cn/",
-    "picked": {
-      "url": "http://www.yuquan.gov.cn/dtzx/zwyw/202602/t20260227_1978612.html",
-      "text": "聚焦“1571”｜“无感监测”推动营商环境优化提升",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/呼伦贝尔市",
@@ -16815,14 +16073,7 @@
     "key": "内蒙古自治区/通辽市",
     "level": "地级",
     "govUrl": "https://www.tongliao.gov.cn/",
-    "picked": {
-      "url": "https://www.tongliao.gov.cn/xwzx/jrgz/202604/t20260423_1044751.html",
-      "text": "关注 科左后旗：聚焦精细服务“小切口” 撬动营商环境“...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/通辽市/霍林郭勒市",
@@ -16834,27 +16085,13 @@
     "key": "内蒙古自治区/通辽市/开鲁县",
     "level": "县区",
     "govUrl": "http://www.kailu.gov.cn/",
-    "picked": {
-      "url": "http://www.kailu.gov.cn/xwzx/kldt/202604/t20260424_1044961.html",
-      "text": "动态 县纪委监委优化营商环境工作公开承诺",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/通辽市/科尔沁区",
     "level": "县区",
     "govUrl": "http://www.keerqin.gov.cn/",
-    "picked": {
-      "url": "http://www.keerqin.gov.cn/xwzx/xwfbh/202506/t20250604_950965.html",
-      "text": "新闻 聚焦企业群众关切 打造一流营商环境“科尔沁区优化...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/通辽市/科尔沁左翼后旗",
@@ -16891,14 +16128,7 @@
     "key": "内蒙古自治区/通辽市/扎鲁特旗",
     "level": "县区",
     "govUrl": "http://www.zhalute.gov.cn/",
-    "picked": {
-      "url": "http://www.zhalute.gov.cn/xwzx/zwyw/202603/t20260324_1039561.html",
-      "text": "要闻 全旗优化营商环境暨招商引资大会召开",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/乌海市",
@@ -17274,14 +16504,7 @@
     "key": "宁夏回族自治区",
     "level": "省级",
     "govUrl": "https://www.nx.gov.cn/",
-    "picked": {
-      "url": "https://www.nx.gov.cn/zwxx_11337/nxyw/202604/t20260422_5222882.html",
-      "text": "我区印发实施2026年营商环境提升行动方案",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "宁夏回族自治区/固原市",
@@ -17379,14 +16602,7 @@
     "key": "宁夏回族自治区/吴忠市/青铜峡市",
     "level": "县区",
     "govUrl": "http://www.qtx.gov.cn/",
-    "picked": {
-      "url": "https://www.qtx.gov.cn/xwzx/tttj/202402/t20240201_4445044.html",
-      "text": "关于征集影响营商环境建设问题线索的公告",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "宁夏回族自治区/吴忠市/同心县",
@@ -17436,14 +16652,7 @@
     "key": "宁夏回族自治区/银川市/灵武市",
     "level": "县区",
     "govUrl": "http://www.nxlw.gov.cn/",
-    "picked": {
-      "url": "http://www.nxlw.gov.cn/zwgk/zfxxgkml/hygk/zyhy/202503/t20250326_4867161.html",
-      "text": "灵武市第三届民营经济高质量发展暨营商环境...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "宁夏回族自治区/银川市/西夏区",
@@ -17474,14 +16683,7 @@
     "key": "宁夏回族自治区/中卫市",
     "level": "地级",
     "govUrl": "https://www.nxzw.gov.cn/",
-    "picked": {
-      "url": "https://www.nxzw.gov.cn/xwzx/zwkx/zwyw/202604/t20260415_5218080.html",
-      "text": "中卫市优化营商环境推进会召开",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "宁夏回族自治区/中卫市/海原县",
@@ -17493,14 +16695,7 @@
     "key": "宁夏回族自治区/中卫市/沙坡头区",
     "level": "县区",
     "govUrl": "https://www.spt.gov.cn/",
-    "picked": {
-      "url": "https://www.spt.gov.cn/xwzx/tpxw/202604/t20260421_5222040.html",
-      "text": "精准施策助企纾困 科技创新赋能发展",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "宁夏回族自治区/中卫市/中宁县",
@@ -18751,14 +17946,7 @@
     "key": "山东省/青岛市/市南区",
     "level": "县区",
     "govUrl": "http://www.qdsn.gov.cn/",
-    "picked": {
-      "url": "http://www.qdsn.gov.cn/zfbmjdxxgk_8/zfxxgkml_8/qsfj_8/xxgkml_8/tzgg_8/202204/t20220421_5711721.shtml",
-      "text": "惠企政策 法律服务团",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山东省/日照市",
@@ -19183,14 +18371,7 @@
     "key": "山东省/枣庄市/山亭区",
     "level": "县区",
     "govUrl": "http://www.shanting.gov.cn/",
-    "picked": {
-      "url": "http://www.shanting.gov.cn/stxw/zjyq/202604/t20260416_2269836.html",
-      "text": "水泉镇全力推进营商环境优化升级",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山东省/枣庄市/市中区",
@@ -19215,14 +18396,7 @@
     "key": "山东省/枣庄市/滕州市",
     "level": "县区",
     "govUrl": "http://www.tengzhou.gov.cn/",
-    "picked": {
-      "url": "http://www.tengzhou.gov.cn/xwzx/gsgg/202603/t20260323_2259906.html",
-      "text": "关于2025年政风行风评议暨“营商环境大家评...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山东省/枣庄市/薛城区",
@@ -19399,14 +18573,7 @@
     "key": "山西省/晋城市/高平市",
     "level": "县区",
     "govUrl": "https://www.sxgp.gov.cn/",
-    "picked": {
-      "url": "http://xxgk.sxgp.gov.cn/gzbm/gpczj/fdzdgknr/gzdt/202604/t20260424_2344363.shtml",
-      "text": "高平市财政局、税务局2026年度涉企行政检查计划表",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山西省/晋城市/陵川县",
@@ -19437,14 +18604,7 @@
     "key": "山西省/晋城市/泽州县",
     "level": "县区",
     "govUrl": "http://www.zezhou.gov.cn/",
-    "picked": {
-      "url": "http://www.zezhou.gov.cn/zwgk/zcjd/202508/t20250827_2191834.shtml",
-      "text": "《泽州县营商环境创优提升若干举措》政策解读",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山西省/晋中市",
@@ -19698,14 +18858,7 @@
     "key": "山西省/吕梁市/汾阳市",
     "level": "县区",
     "govUrl": "http://www.fenyang.gov.cn/",
-    "picked": {
-      "url": "http://www.fenyang.gov.cn/fyszw/zwgk/zfbwj/202604/t20260403_2025556.shtml",
-      "text": "汾阳市人民政府办公室关于印发《汾阳市优化营商环境 ...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山西省/吕梁市/交城县",
@@ -19767,14 +18920,7 @@
     "key": "山西省/吕梁市/文水县",
     "level": "县区",
     "govUrl": "http://www.wenshui.gov.cn/",
-    "picked": {
-      "url": "http://www.wenshui.gov.cn/zmhd/yjzj/202604/t20260415_2027608.html",
-      "text": "省应急管理厅公开征集涉企行政执法问题线索 ​征集时间...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山西省/吕梁市/孝义市",
@@ -19805,14 +18951,7 @@
     "key": "山西省/朔州市",
     "level": "地级",
     "govUrl": "http://www.shuozhou.gov.cn/",
-    "picked": {
-      "url": "http://www.shuozhou.gov.cn/xwzx/jrsz/szsyw/bmgz/202604/t20260424_770407.shtml",
-      "text": "朔州市人民检察院精准履职护航法治化营商环境",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山西省/朔州市/怀仁市",
@@ -19969,14 +19108,7 @@
     "key": "山西省/忻州市",
     "level": "地级",
     "govUrl": "http://www.sxxz.gov.cn/",
-    "picked": {
-      "url": "http://www.sxxz.gov.cn/zwyw/qxdt/202604/t20260417_4177309.shtml",
-      "text": "五台山营商环境实现从“赚快钱”到“做...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山西省/忻州市/保德县",
@@ -20120,14 +19252,7 @@
     "key": "山西省/阳泉市/郊区",
     "level": "县区",
     "govUrl": "http://www.yqjq.gov.cn/",
-    "picked": {
-      "url": "http://www.yqjq.gov.cn/zcjd/202511/t20251125_2141917.html",
-      "text": "《阳泉市郊区“郊我办”惠企直通车...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山西省/阳泉市/矿区",
@@ -20261,14 +19386,7 @@
     "key": "山西省/长治市/黎城县",
     "level": "县区",
     "govUrl": "http://www.sxlc.gov.cn/",
-    "picked": {
-      "url": "http://www.sxlc.gov.cn/lczw/zfxxgk/zfxxgkml/zfwj/lczffwwj_227006/202304/t20230412_2734603.html",
-      "text": "黎城县人民政府关于印发黎城县营商环境创新提升行动方案...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山西省/长治市/潞城区",
@@ -20465,27 +19583,13 @@
     "key": "陕西省/宝鸡市/扶风县",
     "level": "县区",
     "govUrl": "http://www.fufeng.gov.cn/",
-    "picked": {
-      "url": "http://www.fufeng.gov.cn/col13432/col13435/col14429/col14430/202507/t20250701_1163462.html",
-      "text": "扶风县人民政府关于印发扶风县营商环境...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "陕西省/宝鸡市/金台区",
     "level": "县区",
     "govUrl": "http://www.jintai.gov.cn/",
-    "picked": {
-      "url": "http://www.jintai.gov.cn/col6845/col6850/202604/t20260421_1264663.html",
-      "text": "简讯 | 我区举行2026年第二期“助企纾困”区...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "陕西省/宝鸡市/麟游县",
@@ -20970,14 +20074,7 @@
     "key": "陕西省/咸阳市/淳化县",
     "level": "县区",
     "govUrl": "http://www.snchunhua.gov.cn/",
-    "picked": {
-      "url": "http://www.snchunhua.gov.cn/xw/zwzx/202603/t20260331_2073247.html",
-      "text": "审计监督助力优化营商环境",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "陕西省/咸阳市/泾阳县",
@@ -21002,14 +20099,7 @@
     "key": "陕西省/咸阳市/乾县",
     "level": "县区",
     "govUrl": "https://www.snqianxian.gov.cn/",
-    "picked": {
-      "url": "https://www.snqianxian.gov.cn/xwzx/jcdt/202603/t20260316_2066798.html",
-      "text": "生态环境局乾县分局从严规范涉企检查 优化营商环境...",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "陕西省/咸阳市/秦都区",
@@ -21039,14 +20129,7 @@
     "key": "陕西省/咸阳市/兴平市",
     "level": "县区",
     "govUrl": "https://www.snxingping.gov.cn/",
-    "picked": {
-      "url": "https://www.snxingping.gov.cn/zwgk/fdzdgknr/jdhy/zcjd/202510/t20251009_2021592.html",
-      "text": "• 一图读懂 咸阳市优化营商环境条例...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "陕西省/咸阳市/旬邑县",
@@ -21065,14 +20148,7 @@
     "key": "陕西省/咸阳市/杨陵区",
     "level": "县区",
     "govUrl": "https://www.ylq.gov.cn/",
-    "picked": {
-      "url": "https://www.ylq.gov.cn/zfxxgk/fdzdgknr/tzgg/2046858705745719298.html",
-      "text": "关于公布杨陵区综合性涉企收费目录清单的公告",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "陕西省/咸阳市/永寿县",
@@ -21170,14 +20246,7 @@
     "key": "陕西省/延安市/宜川县",
     "level": "县区",
     "govUrl": "https://www.ycx.gov.cn/",
-    "picked": {
-      "url": "https://www.ycx.gov.cn/xwzx/tzgg/2046903333087854594.html",
-      "text": "关于公布惠企政策 “免申即享”项目清单的通知",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "陕西省/延安市/志丹县",
@@ -22198,14 +21267,7 @@
     "key": "四川省/凉山彝族自治州/普格县",
     "level": "县区",
     "govUrl": "http://www.pgx.gov.cn/",
-    "picked": {
-      "url": "http://www.pgx.gov.cn/pgyw/ldhd/202603/t20260326_2959479.html",
-      "text": "普格县召开工业企业助企纾困专题座谈会",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "四川省/凉山彝族自治州/西昌市",
@@ -23075,14 +22137,7 @@
     "key": "天津市/河北区",
     "level": "地级",
     "govUrl": "http://www.tjhb.gov.cn/",
-    "picked": {
-      "url": "http://www.tjhb.gov.cn/zwgk/zcydt/zcjd/wzjd/202501/t20250116_6835350.html",
-      "text": "《天津市河北区2024年营商环境质量提升行动方...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "天津市/河东区",
@@ -23101,14 +22156,7 @@
     "key": "天津市/河西区",
     "level": "地级",
     "govUrl": "http://www.tjhx.gov.cn/",
-    "picked": {
-      "url": "http://www.tjhx.gov.cn/zmhd/wsdc/202101/t20210127_5338655.html",
-      "text": "· 国务院“互联网+督查”平台公开征集涉企乱收费问题线索",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "天津市/红桥区",
@@ -23185,14 +22233,7 @@
     "key": "天津市/武清区",
     "level": "地级",
     "govUrl": "https://www.tjwq.gov.cn/",
-    "picked": {
-      "url": "https://www.tjwq.gov.cn/zwgk/zcwj/wqqzc/qscjgj/202501/t20250110_6830812.html",
-      "text": "关于印发《关于持续优化营商环境依法规范市场...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "天津市/西青区",
@@ -24777,14 +23818,7 @@
     "key": "新疆维吾尔自治区/新疆生产建设兵团/图木舒克市",
     "level": "县区",
     "govUrl": "https://www.xjbtnss.gov.cn/",
-    "picked": {
-      "url": "https://www.xjbtnss.gov.cn/zwgk/czj/202601/t20260112_64235.html",
-      "text": "兵团涉企行政事业性收费目录清单",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "新疆维吾尔自治区/新疆生产建设兵团/五家渠市",
@@ -24895,14 +23929,7 @@
     "key": "云南省",
     "level": "省级",
     "govUrl": "https://www.yn.gov.cn/",
-    "picked": {
-      "url": "https://www.yn.gov.cn/zwgk/zcjd/spjd/202604/t20260403_325687.html",
-      "text": "视频解读丨2026云南10件惠企实事条条干货",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "云南省/保山市",

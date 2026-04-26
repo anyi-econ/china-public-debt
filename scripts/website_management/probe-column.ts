@@ -61,7 +61,11 @@ const NEWS: Config = {
   REJECT_TEXT: /部门动态|部门信息|单位动态|上级要闻|中央要闻|国务院要闻|省委要闻|省政府要闻|通知公告|公示公告|政府公告|媒体看|媒体聚焦|视频新闻|图说|影像|专题|乡镇要闻|镇街动态|街道动态|图片新闻|宣传片|访谈|直播/,
   REJECT_PATH: /tzgg|gsgg|tongzhi|gonggao|videos?|tupian|zhuanti|spxw|fangtan|zhibo|zhxx|bmdt|bmxx|jcdt|xzjd|xjyw|szyw_/i,
   CANONICAL_PATH: /\/(yw|bdyw|jryw|szyw|swyw|sxyw|qyyw|xqyw|zwdt|gzdt|zfdt|zfyw|zwyw|news[a-z]*|xwzx[\/\?])/i,
-  ARTICLE_PATH: /\/\d{4}[\-_/]\d{2}([\-_/]\d{2})?\/|\/art\/\d{4}\/|\/[a-f0-9]{20,}\.s?html?$|\/[ct]_\d+\.s?html?$/i,
+  // 单篇文章 URL 拒绝（v1 实测后加固）：
+  //   /2026-04-25/、/2026/04/、/202604/、/art/2026/、/<32hex>.html、/c_123.html、/t_123.html
+  //   /202604/t20260425_1234.htm、/content/article/123.html、/content/post_123.html
+  //   /tzgg/123456.html 等单篇通告数字 id
+  ARTICLE_PATH: /\/\d{4}[\-_/]\d{2}([\-_/]\d{2})?\/|\/\d{4}\d{2}\/t\d{8}_\d+\.s?html?$|\/content\/(article|post)[_\/]?\d+\.s?html?$|\/(tzgg|tongzhi|gonggao)\/\d{6,}\.s?html?$|\/art\/\d{4}\/|\/[a-f0-9]{20,}\.s?html?$|\/[ct]_\d+\.s?html?$/i,
   CONTENT_REQUIRE: /要闻|动态|新闻|今日|政务/,
   CONTENT_REJECT: /页面不存在|404|not found|访问出错|无法访问|维护中/,
   CONSTRUCT_PATHS: [
@@ -87,7 +91,8 @@ const INDUSTRIAL: Config = {
   REJECT_TEXT: /工商联|行业协会|招聘信息|就业创业|党建|纪检监察|人才引进|人才公寓|12345|留言板|信访|举报|信用|失信/,
   REJECT_PATH: /jb12345|dangjian|jjjc|rcyj|rcgy|liuyan|xinfang|jubao|xinyong|sx[ig]/i,
   CANONICAL_PATH: /\/(hqzc|hqfw|hqtd|hqt|zcdx|zcdd|qyfw|wqfw|cyzc|cyfz|zsyz|yshj|ysjs|wqfw)/i,
-  ARTICLE_PATH: /\/\d{4}[\-_/]\d{2}([\-_/]\d{2})?\/|\/art\/\d{4}\/|\/[a-f0-9]{20,}\.s?html?$/i,
+  // 单篇文章 URL 拒绝（v1 实测 industrial 中 99 例单篇误判后加固）
+  ARTICLE_PATH: /\/\d{4}[\-_/]\d{2}([\-_/]\d{2})?\/|\/\d{4}\d{2}\/t\d{8}_\d+\.s?html?$|\/content\/(article|post)[_\/]?\d+\.s?html?$|\/(tzgg|tongzhi|gonggao)\/\d{6,}\.s?html?$|\/art\/\d{4}\/|\/[a-f0-9]{20,}\.s?html?$/i,
   CONTENT_REQUIRE: /惠企|涉企|企业|营商|产业|政策/,
   CONTENT_REJECT: /页面不存在|404|not found|访问出错|无法访问|维护中/,
   CONSTRUCT_PATHS: [

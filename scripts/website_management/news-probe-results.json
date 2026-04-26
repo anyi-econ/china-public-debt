@@ -4086,14 +4086,7 @@
     "key": "广东省/惠州市/惠东县",
     "level": "县区",
     "govUrl": "https://www.huidong.gov.cn/",
-    "picked": {
-      "url": "http://www.huidong.gov.cn/hdxwz/zwgk/zwdt/zwyw/content/post_5739716.html",
-      "text": "【政务要闻】李强主持召开国务院常务会议",
-      "score": 100,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广东省/惠州市/惠阳区",
@@ -6261,14 +6254,7 @@
     "key": "广西壮族自治区/柳州市/融安县",
     "level": "县区",
     "govUrl": "http://www.rongan.gov.cn/",
-    "picked": {
-      "url": "http://www.rongan.gov.cn/xwzx/xzkx/202208/t20220805_3112062.shtml",
-      "text": "【工作动态】大将镇：乡村治理出实招 村屯面貌换新颜",
-      "score": 85,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "广西壮族自治区/柳州市/融水苗族自治县",
@@ -6931,14 +6917,7 @@
     "key": "贵州省/贵阳市/花溪区",
     "level": "县区",
     "govUrl": "http://www.huaxi.gov.cn/",
-    "picked": {
-      "url": "http://www.huaxi.gov.cn/xwzx/hxyw/202604/t20260425_90044173.html",
-      "text": "花溪时政｜4月24日政务新闻",
-      "score": 85,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/贵阳市/开阳县",
@@ -7595,14 +7574,7 @@
     "key": "贵州省/铜仁市/思南县",
     "level": "县区",
     "govUrl": "http://www.sinan.gov.cn/",
-    "picked": {
-      "url": "http://www.sinan.gov.cn/jdhy/xwfbh/202602/t20260204_89371958.html",
-      "text": "贵州省政府新闻办举行贵州高质量提升农村供水保障能力新闻发布会",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "贵州省/铜仁市/松桃苗族自治县",
@@ -13120,14 +13092,7 @@
     "key": "湖北省/随州市",
     "level": "地级",
     "govUrl": "http://www.suizhou.gov.cn/",
-    "picked": {
-      "url": "http://www.suizhou.gov.cn/gzhd/xwfbh/202512/t20251230_1394766.shtml",
-      "text": "市人民政府新闻办公室召开元旦春节系列活动安排新闻发布会",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "湖北省/随州市/曾都区",
@@ -14700,14 +14665,7 @@
     "key": "湖南省/长沙市/芙蓉区",
     "level": "县区",
     "govUrl": "http://www.furong.gov.cn/",
-    "picked": {
-      "url": "http://www.furong.gov.cn/affairs/fdzdgknr/qtfdxx/zwdt/news/202604/t20260417_12363140.html",
-      "text": "[ 芙蓉要闻] 崔晓调研全区基层党建工作并主持召开座谈会",
-      "score": 65,
-      "source": "anchor",
-      "tier": "C",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "湖南省/长沙市/开福区",
@@ -14778,14 +14736,7 @@
     "key": "湖南省/长沙市/雨花区",
     "level": "县区",
     "govUrl": "http://www.yuhua.gov.cn/",
-    "picked": {
-      "url": "http://www.yuhua.gov.cn/zwgk97/jcxxgk/qtfdxx/gzdt59_1/zwdt/202604/t20260421_12364583.html",
-      "text": "【政务要闻】雨花区领导干部廉洁从政教育暨第二...",
-      "score": 100,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "湖南省/长沙市/岳麓区",
@@ -19143,14 +19094,7 @@
     "key": "内蒙古自治区/赤峰市/宁城县",
     "level": "县区",
     "govUrl": "http://www.ningchengxian.gov.cn/",
-    "picked": {
-      "url": "http://www.ningchengxian.gov.cn/zwgk/zwdt/spnc/ncxw/202604/t20260422_2757911.html",
-      "text": "2026-04-22 宁城新闻2026-04-20",
-      "score": 65,
-      "source": "anchor",
-      "tier": "C",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/赤峰市/松山区",
@@ -19162,14 +19106,7 @@
     "key": "内蒙古自治区/赤峰市/翁牛特旗",
     "level": "县区",
     "govUrl": "http://www.wnt.gov.cn/",
-    "picked": {
-      "url": "http://www.wnt.gov.cn/xxgk/202604/t20260424_2758982.html",
-      "text": "每周处级领导干部接访下访工作动态 2026-04-24",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "内蒙古自治区/赤峰市/元宝山区",
@@ -20310,14 +20247,7 @@
     "key": "宁夏回族自治区/银川市/永宁县",
     "level": "县区",
     "govUrl": "http://www.nxyn.gov.cn/",
-    "picked": {
-      "url": "http://www.nxyn.gov.cn/jryn/ynyw/202604/t20260424_5225051.html",
-      "text": "时政要闻丨永宁县第十九届人民政府2026年第9次常务会议召开",
-      "score": 90,
-      "source": "anchor",
-      "tier": "A",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "宁夏回族自治区/中卫市",
@@ -22176,14 +22106,7 @@
     "key": "山东省/枣庄市/滕州市",
     "level": "县区",
     "govUrl": "http://www.tengzhou.gov.cn/",
-    "picked": {
-      "url": "http://www.tengzhou.gov.cn/xwzx/jrtz/202604/t20260424_2274078.html",
-      "text": "市政府新闻办举行新闻发布会介绍全市“知识...",
-      "score": 85,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山东省/枣庄市/薛城区",
@@ -23025,14 +22948,7 @@
     "key": "山西省/朔州市",
     "level": "地级",
     "govUrl": "http://www.shuozhou.gov.cn/",
-    "picked": {
-      "url": "http://www.shuozhou.gov.cn/xwzx/jrsz/szsyw/bmgz/202603/t20260328_767419.shtml",
-      "text": "朔州市政府新闻办举行新闻发布会 介绍水利工作成效及工作计划",
-      "score": 85,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "山西省/朔州市/怀仁市",
@@ -27811,14 +27727,7 @@
     "key": "西藏自治区/山南市",
     "level": "地级",
     "govUrl": "https://www.shannan.gov.cn/",
-    "picked": {
-      "url": "https://www.shannan.gov.cn/zwgk/xwfbh/202512/t20251225_162069.html",
-      "text": "市政府新闻办召开新闻发布会（介绍...",
-      "score": 75,
-      "source": "anchor",
-      "tier": "B",
-      "validated": true
-    }
+    "reason": "rejected:single-article-postv1"
   },
   {
     "key": "西藏自治区/山南市/措美县",
