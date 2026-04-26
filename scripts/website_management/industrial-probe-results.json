@@ -3938,14 +3938,7 @@
     "key": "广东省/韶关市/曲江区",
     "level": "县区",
     "govUrl": "https://www.qujiang.gov.cn/",
-    "picked": {
-      "url": "http://www.qujiang.gov.cn/zjqj/zsyz/index.html",
-      "text": "招商引资 ZHAO SHANG YIN ZI",
-      "score": 65,
-      "source": "anchor",
-      "tier": "C",
-      "validated": true
-    }
+    "reason": "homepage-unreachable"
   },
   {
     "key": "广东省/韶关市/仁化县",
@@ -5745,11 +5738,11 @@
     "level": "县区",
     "govUrl": "http://www.dushan.gov.cn/",
     "picked": {
-      "url": "http://www.dushan.gov.cn/zsyz/",
-      "text": "招商引资",
-      "score": 65,
-      "source": "anchor",
-      "tier": "C",
+      "url": "http://www.dushan.gov.cn/zsyz/zszx/yhyshj/",
+      "text": "优化营商环境",
+      "score": 85,
+      "source": "anchor-d1",
+      "tier": "B",
       "validated": true
     }
   },
@@ -10446,11 +10439,11 @@
     "level": "县区",
     "govUrl": "http://www.huangzhou.gov.cn/",
     "picked": {
-      "url": "http://www.huangzhou.gov.cn/zsyz/index.html",
-      "text": "招商引资",
-      "score": 65,
-      "source": "anchor",
-      "tier": "C",
+      "url": "http://www.huangzhou.gov.cn/zsyz/hqzczq/index.html",
+      "text": "惠企政策专区",
+      "score": 100,
+      "source": "anchor-d1",
+      "tier": "A",
       "validated": true
     }
   },
@@ -15174,11 +15167,11 @@
     "level": "县区",
     "govUrl": "http://www.jzth.gov.cn/",
     "picked": {
-      "url": "http://www.jzth.gov.cn/zsyz/tzhj.htm",
-      "text": "招商引资",
-      "score": 65,
-      "source": "anchor",
-      "tier": "C",
+      "url": "http://www.jzth.gov.cn/info/1020/5363.htm",
+      "text": "· 太和区优化营商环境建设年实施方案",
+      "score": 75,
+      "source": "anchor-d1",
+      "tier": "B",
       "validated": true
     }
   },
@@ -15773,11 +15766,11 @@
     "level": "县区",
     "govUrl": "http://www.klq.gov.cn/",
     "picked": {
-      "url": "http://www.klq.gov.cn/zwgk/zfxxgk/fdzdgknr/klq_zdlyxxgk/zsyz/",
-      "text": "招商引资",
-      "score": 65,
-      "source": "anchor",
-      "tier": "C",
+      "url": "http://www.klq.gov.cn/zwgk/zfxxgk/fdzdgknr/klq_zdlyxxgk/zqsk/",
+      "text": "助企纾困",
+      "score": 90,
+      "source": "anchor-d1",
+      "tier": "A",
       "validated": true
     }
   },
@@ -20617,11 +20610,11 @@
     "level": "县区",
     "govUrl": "http://www.scey.gov.cn/",
     "picked": {
-      "url": "http://www.scey.gov.cn/zsyz/index.html",
-      "text": "招商引资",
-      "score": 65,
-      "source": "anchor",
-      "tier": "C",
+      "url": "https://www.scey.gov.cn/zsyz/yhzc/11660165.html",
+      "text": "巴中市恩阳区惠企政策事项清单（2024年版第一批）",
+      "score": 100,
+      "source": "anchor-d1",
+      "tier": "A",
       "validated": true
     }
   },

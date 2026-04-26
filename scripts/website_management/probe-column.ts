@@ -55,10 +55,12 @@ type Config = {
 };
 
 const NEWS: Config = {
-  TIER_A: /本地要闻|本市要闻|本县要闻|本区要闻|要闻速递|今日要闻|政务要闻|时政要闻|头版头条/,
+  // Tier A also matches geographic-prefix patterns like "丰台要闻" / "河北新闻" / "涪陵要闻"
+  // (2–3 char place name + 要闻/新闻). REJECT_TEXT below filters out 中央/省委/部门/镇街 etc.
+  TIER_A: /本地要闻|本市要闻|本县要闻|本区要闻|要闻速递|今日要闻|政务要闻|时政要闻|头版头条|^.{2,3}(要闻|新闻)$/,
   TIER_B: /政务动态|工作动态|政府要闻|综合要闻|综合新闻|政务新闻|政府新闻/,
   TIER_C: /新闻中心|新闻动态|要闻|新闻/,
-  REJECT_TEXT: /部门动态|部门信息|单位动态|上级要闻|中央要闻|国务院要闻|省委要闻|省政府要闻|通知公告|公示公告|政府公告|媒体看|媒体聚焦|视频新闻|图说|影像|专题|乡镇要闻|镇街动态|街道动态|图片新闻|宣传片|访谈|直播/,
+  REJECT_TEXT: /部门动态|部门信息|单位动态|上级要闻|中央要闻|国务院要闻|省委要闻|省政府要闻|全国要闻|国内要闻|国内新闻|国际要闻|国际新闻|域外新闻|域外要闻|外地新闻|外埠新闻|双语新闻|英文新闻|通知公告|公示公告|政府公告|媒体看|媒体聚焦|视频新闻|图说|影像|专题|乡镇要闻|镇街动态|街道动态|图片新闻|宣传片|访谈|直播/,
   REJECT_PATH: /tzgg|gsgg|tongzhi|gonggao|videos?|tupian|zhuanti|spxw|fangtan|zhibo|zhxx|bmdt|bmxx|jcdt|xzjd|xjyw|szyw_/i,
   CANONICAL_PATH: /\/(yw|bdyw|jryw|szyw|swyw|sxyw|qyyw|xqyw|zwdt|gzdt|zfdt|zfyw|zwyw|news[a-z]*|xwzx[\/\?])/i,
   // 单篇文章 URL 拒绝（v1 实测后加固）：
@@ -236,11 +238,61 @@ async function probeOne(row: GovRow): Promise<Result> {
     if (!uniq.has(c.url)) uniq.set(c.url, c);
   }
   const sorted = [...uniq.values()].sort((a, b) => b.score - a.score);
+
+  // Phase 1: try direct candidates by score order (existing behaviour)
+  let firstTierC: Candidate | null = null;
   for (const c of sorted.slice(0, 8)) {
     if (await validate(c)) {
       c.validated = true;
-      return { key: row.key, level: row.level, govUrl: row.url, picked: c };
+      // For Tier C aggregators, defer the pick until phase 2 attempts a Tier A/B drill-down
+      if (c.tier === 'C' && !firstTierC) {
+        firstTierC = c;
+        continue;
+      }
+      // Tier A/B validated direct — accept immediately
+      if (c.tier === 'A' || c.tier === 'B') {
+        return { key: row.key, level: row.level, govUrl: row.url, picked: c };
+      }
+      // Tier D / unknown — accept too
+      if (!c.tier || c.tier === 'D') {
+        return { key: row.key, level: row.level, govUrl: row.url, picked: c };
+      }
     }
+  }
+
+  // Phase 2: Tier C drill-down.
+  // The homepage only yielded an aggregator (新闻中心 / 新闻动态 / 产业发展). Fetch it once and
+  // re-probe one level deep. Accept any validated A/B/C with score ≥ 55, but prefer
+  // A/B by sort. Exclude self-loops back to the aggregator.
+  if (firstTierC) {
+    const aggHtml = await fetchHtml(firstTierC.url, 9000);
+    if (aggHtml) {
+      const subCands: Candidate[] = [];
+      for (const a of extractAnchors(firstTierC.url, aggHtml)) {
+        if (!sameBase(a.url, row.url)) continue;
+        if (a.url === firstTierC.url) continue; // self-loop
+        const { score, tier } = scoreCandidate(a.text, a.url);
+        if (score >= 55 && (tier === 'A' || tier === 'B' || tier === 'C')) {
+          subCands.push({ ...a, score, source: 'anchor-d1', tier });
+        }
+      }
+      // Prefer Tier A > B > C, then by score
+      const tierRank = { A: 3, B: 2, C: 1, D: 0 } as const;
+      const sub = [...new Map(
+        subCands
+          .sort((a, b) => (tierRank[(b.tier || 'D')] - tierRank[(a.tier || 'D')]) || (b.score - a.score))
+          .map((c) => [c.url, c]),
+      ).values()];
+      for (const c of sub.slice(0, 5)) {
+        // Only escalate if at least as strong as the aggregator (Tier A/B), or Tier C with stronger geo signal
+        if ((c.tier === 'A' || c.tier === 'B') && (await validate(c))) {
+          c.validated = true;
+          return { key: row.key, level: row.level, govUrl: row.url, picked: c };
+        }
+      }
+    }
+    // No deeper Tier A/B found — fall back to the aggregator pick
+    return { key: row.key, level: row.level, govUrl: row.url, picked: firstTierC };
   }
   return { key: row.key, level: row.level, govUrl: row.url, reason: html ? 'no-route-found' : 'homepage-unreachable' };
 }
@@ -254,10 +306,15 @@ async function main() {
   console.log(`[${cat}] targets: ${list.length}`);
   const OUT = `scripts/website_management/${cat}-probe-results.json`;
   const retry = process.env.COL_RETRY === '1';
+  const retryNoRoute = process.env.COL_RETRY_NOROUTE === '1';
+  const retryTierC = process.env.COL_RETRY_TIERC === '1';
   const existingRaw: Result[] = fs.existsSync(OUT)
     ? (JSON.parse(fs.readFileSync(OUT, 'utf8')) as Result[]).filter((r) => targetSet.has(r.key))
     : [];
-  const shouldRetry = (r: Result) => retry && /homepage-unreachable|error:/.test(r.reason || '');
+  const shouldRetry = (r: Result) =>
+    (retry && /homepage-unreachable|error:/.test(r.reason || '')) ||
+    (retryNoRoute && r.reason === 'no-route-found') ||
+    (retryTierC && r.picked?.tier === 'C');
   const existing = existingRaw.filter((r) => !shouldRetry(r));
   const done = new Set(existing.map((r) => r.key));
   console.log(`[${cat}] cached: ${done.size}; retry-failures: ${existingRaw.length - existing.length}; remaining: ${list.length - done.size}`);
