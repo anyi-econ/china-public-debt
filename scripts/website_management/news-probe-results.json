@@ -3038,7 +3038,15 @@
     "key": "福建省/厦门市/同安区",
     "level": "县区",
     "govUrl": "https://www.xmta.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.xmta.gov.cn/xw/",
+      "text": "同安要闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "福建省/厦门市/翔安区",
@@ -5388,7 +5396,8 @@
     "key": "广东省/汕头市/潮南区",
     "level": "县区",
     "govUrl": "http://www.chaonan.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found",
+    "accessMethod": "direct"
   },
   {
     "key": "广东省/汕头市/潮阳区",
@@ -5522,7 +5531,15 @@
     "key": "广东省/韶关市/乐昌市",
     "level": "县区",
     "govUrl": "https://www.lechang.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.lechang.gov.cn/xwzx/lcyw/index.html",
+      "text": "乐昌要闻",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "广东省/韶关市/南雄市",
@@ -5573,7 +5590,15 @@
     "key": "广东省/韶关市/始兴县",
     "level": "县区",
     "govUrl": "https://www.gdsx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.gdsx.gov.cn/xwdt/sxyw/index.html",
+      "text": "始兴要闻",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "广东省/韶关市/翁源县",
@@ -10424,7 +10449,15 @@
     "key": "河北省/秦皇岛市",
     "level": "地级",
     "govUrl": "http://www.qhd.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.qhd.gov.cn/front_pcsec.do?tid=B55A5624C86E7FA51FEB2B9B098047A57&p=1",
+      "text": "时政要闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "ua-mobile"
   },
   {
     "key": "河北省/秦皇岛市/北戴河区",
@@ -10910,7 +10943,15 @@
     "key": "河北省/邢台市",
     "level": "地级",
     "govUrl": "https://www.xingtai.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.xingtai.gov.cn/ywdt/",
+      "text": "要闻动态",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "河北省/邢台市/柏乡县",
@@ -16013,7 +16054,15 @@
     "key": "湖北省/仙桃市",
     "level": "地级",
     "govUrl": "https://www.xiantao.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "https://www.xiantao.gov.cn/zwgk/xtyw/",
+      "text": "仙桃要闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "ua-baidu"
   },
   {
     "key": "湖北省/咸宁市",
@@ -16435,7 +16484,15 @@
     "key": "湖南省",
     "level": "省级",
     "govUrl": "https://www.hunan.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "https://www.hunan.gov.cn/hnszf/hnyw/hnyw.html",
+      "text": "政务要闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "slow-direct"
   },
   {
     "key": "湖南省/常德市",
@@ -17200,7 +17257,15 @@
     "key": "湖南省/湘潭市",
     "level": "地级",
     "govUrl": "https://www.xiangtan.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "https://www.xiangtan.gov.cn/109/171/172/index.htm",
+      "text": "政务要闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "湖南省/湘潭市/韶山市",
@@ -17245,7 +17310,15 @@
     "key": "湖南省/湘潭市/雨湖区",
     "level": "县区",
     "govUrl": "http://www.xtyh.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.xtyh.gov.cn/2997/2998/2999/index.htm",
+      "text": "政务要闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "湖南省/湘潭市/岳塘区",
@@ -17725,7 +17798,15 @@
     "key": "湖南省/长沙市",
     "level": "地级",
     "govUrl": "http://www.changsha.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.changsha.gov.cn/szf/ywdt/zwdt/",
+      "text": "政务动态",
+      "score": 85,
+      "source": "anchor",
+      "tier": "B",
+      "validated": true
+    },
+    "accessMethod": "ua-mobile"
   },
   {
     "key": "湖南省/长沙市/芙蓉区",
@@ -17756,7 +17837,15 @@
     "key": "湖南省/长沙市/宁乡市",
     "level": "县区",
     "govUrl": "http://www.nxcity.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.nxcity.gov.cn/szf/zfdt/nxyw436/",
+      "text": "政府动态",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "slow-direct"
   },
   {
     "key": "湖南省/长沙市/天心区",
@@ -17792,61 +17881,141 @@
     "key": "湖南省/株洲市",
     "level": "地级",
     "govUrl": "https://www.zhuzhou.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "https://www.zhuzhou.gov.cn/c15608/",
+      "text": "头条新闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "ua-mobile"
   },
   {
     "key": "湖南省/株洲市/茶陵县",
     "level": "县区",
     "govUrl": "http://www.chaling.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.chaling.gov.cn/c23995/index.html",
+      "text": "头条新闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "湖南省/株洲市/荷塘区",
     "level": "县区",
     "govUrl": "https://www.hetang.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.hetang.gov.cn/c24004/index.html",
+      "text": "头条新闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "湖南省/株洲市/醴陵市",
     "level": "县区",
     "govUrl": "https://www.liling.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.liling.gov.cn/c1051/index.html",
+      "text": "醴陵要闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "湖南省/株洲市/芦淞区",
     "level": "县区",
     "govUrl": "http://www.lusong.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.lusong.gov.cn/c23998/index.html",
+      "text": "头条新闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "湖南省/株洲市/渌口区",
     "level": "县区",
     "govUrl": "http://www.lukou.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.lukou.gov.cn/c23997/index.html",
+      "text": "头条新闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "湖南省/株洲市/石峰区",
     "level": "县区",
     "govUrl": "https://www.shifeng.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.shifeng.gov.cn/c23999/index.html",
+      "text": "头条新闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "湖南省/株洲市/天元区",
     "level": "县区",
     "govUrl": "https://www.tianyuan.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.tianyuan.gov.cn/c23993/index.html",
+      "text": "头条新闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "湖南省/株洲市/炎陵县",
     "level": "县区",
     "govUrl": "http://www.hnyanling.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.hnyanling.gov.cn/c23994/index.html",
+      "text": "头条新闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "湖南省/株洲市/攸县",
     "level": "县区",
     "govUrl": "https://www.hnyx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.hnyx.gov.cn/c24003/index.html",
+      "text": "头条新闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省",
@@ -18013,127 +18182,281 @@
     "key": "吉林省/吉林市",
     "level": "地级",
     "govUrl": "https://www.jlcity.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.jlcity.gov.cn/yw/",
+      "text": "要闻动态",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "吉林省/吉林市/昌邑区",
     "level": "县区",
     "govUrl": "http://www.jlscy.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.jlscy.gov.cn/gzdt/xwdt/",
+      "text": "工作动态",
+      "score": 85,
+      "source": "anchor",
+      "tier": "B",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/吉林市/船营区",
     "level": "县区",
     "govUrl": "http://www.jlcy.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.jlcy.gov.cn/cyzw/",
+      "text": "船营要闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/吉林市/丰满区",
     "level": "县区",
     "govUrl": "http://www.jlfm.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.jlfm.gov.cn/sy/fmyw/",
+      "text": "丰满要闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/吉林市/桦甸市",
     "level": "县区",
     "govUrl": "http://www.huadian.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.huadian.gov.cn/jcyw/",
+      "text": "金城要闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "ua-mobile"
   },
   {
     "key": "吉林省/吉林市/蛟河市",
     "level": "县区",
     "govUrl": "http://www.jiaohe.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.jiaohe.gov.cn/jhdt/zwdt/",
+      "text": "政务动态",
+      "score": 85,
+      "source": "anchor",
+      "tier": "B",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/吉林市/龙潭区",
     "level": "县区",
     "govUrl": "http://www.longtan.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.longtan.gov.cn/sllt/jrlt/",
+      "text": "今日龙潭",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/吉林市/磐石市",
     "level": "县区",
     "govUrl": "http://www.panshi.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.panshi.gov.cn/snyw/",
+      "text": "要闻动态",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "ua-mobile"
   },
   {
     "key": "吉林省/吉林市/舒兰市",
     "level": "县区",
     "govUrl": "http://www.shulan.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.shulan.gov.cn/xxgk/zwdt/",
+      "text": "市内要闻",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "ua-mobile"
   },
   {
     "key": "吉林省/吉林市/永吉县",
     "level": "县区",
     "govUrl": "http://www.jlyj.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.jlyj.gov.cn/xxgk/jryj/",
+      "text": "今日永吉",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/辽源市",
     "level": "地级",
     "govUrl": "http://www.liaoyuan.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found",
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/辽源市/东丰县",
     "level": "县区",
     "govUrl": "http://www.dongfeng.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.dongfeng.gov.cn/jrdf/jryw/",
+      "text": "今日要闻",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/辽源市/东辽县",
     "level": "县区",
     "govUrl": "http://www.dongliao.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.dongliao.gov.cn/xxgk/dtxw/dlxw/",
+      "text": "东辽新闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/辽源市/龙山区",
     "level": "县区",
     "govUrl": "http://www.jllyls.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.jllyls.gov.cn/lsdt/",
+      "text": "龙山动态",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/辽源市/西安区",
     "level": "县区",
     "govUrl": "http://www.lyxa.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.lyxa.gov.cn/xxgk/zwyw/jrxa/",
+      "text": "今日西安",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/四平市",
     "level": "地级",
     "govUrl": "http://www.siping.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.siping.gov.cn/zw/spdt/",
+      "text": "四平动态",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/四平市/梨树县",
     "level": "县区",
     "govUrl": "http://www.lishu.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.lishu.gov.cn/zw/lsdt/",
+      "text": "梨树动态",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/四平市/双辽市",
     "level": "县区",
     "govUrl": "http://www.shuangliao.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.shuangliao.gov.cn/zw/sldt/",
+      "text": "双辽动态",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/四平市/铁东区",
     "level": "县区",
     "govUrl": "http://tdq.siping.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://tdq.siping.gov.cn/zw/tddt/",
+      "text": "今日铁东",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/四平市/铁西区",
     "level": "县区",
     "govUrl": "http://txq.siping.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found",
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/四平市/伊通满族自治县",
     "level": "县区",
     "govUrl": "http://www.yitong.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.yitong.gov.cn/zw/zwdt/",
+      "text": "政务动态",
+      "score": 85,
+      "source": "anchor",
+      "tier": "B",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "吉林省/松原市",
@@ -18408,7 +18731,15 @@
     "key": "吉林省/长春市/德惠市",
     "level": "县区",
     "govUrl": "http://www.dehui.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.dehui.gov.cn/ywdt/zwdt/bdxx/",
+      "text": "德惠要闻",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "ua-mobile"
   },
   {
     "key": "吉林省/长春市/二道区",
@@ -18420,7 +18751,15 @@
     "key": "吉林省/长春市/公主岭市",
     "level": "县区",
     "govUrl": "http://www.gongzhuling.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.gongzhuling.gov.cn/zw/dzxx/zwdt/",
+      "text": "政务动态",
+      "score": 85,
+      "source": "anchor",
+      "tier": "B",
+      "validated": true
+    },
+    "accessMethod": "ua-mobile"
   },
   {
     "key": "吉林省/长春市/九台区",
@@ -18462,7 +18801,15 @@
     "key": "吉林省/长春市/榆树市",
     "level": "县区",
     "govUrl": "http://www.yushu.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.yushu.gov.cn/ywdt/",
+      "text": "要闻动态",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "ua-mobile"
   },
   {
     "key": "江苏省",
@@ -21703,7 +22050,8 @@
     "key": "辽宁省/阜新市/阜新蒙古族自治县",
     "level": "县区",
     "govUrl": "https://www.fmx.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found",
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "辽宁省/阜新市/海州区",
@@ -22701,7 +23049,8 @@
     "key": "内蒙古自治区/鄂尔多斯市/达拉特旗",
     "level": "县区",
     "govUrl": "http://www.dlt.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found",
+    "accessMethod": "direct"
   },
   {
     "key": "内蒙古自治区/鄂尔多斯市/东胜区",
@@ -23142,7 +23491,15 @@
     "key": "内蒙古自治区/通辽市/霍林郭勒市",
     "level": "县区",
     "govUrl": "https://www.hlgls.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.hlgls.gov.cn/hsxw/",
+      "text": "霍市新闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "内蒙古自治区/通辽市/开鲁县",
@@ -23213,7 +23570,15 @@
     "key": "内蒙古自治区/通辽市/奈曼旗",
     "level": "县区",
     "govUrl": "https://www.naimanqi.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.naimanqi.gov.cn/xwzx/nmxw/",
+      "text": "奈曼新闻",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "内蒙古自治区/通辽市/扎鲁特旗",
@@ -24139,7 +24504,15 @@
     "key": "青海省/海东市/乐都区",
     "level": "县区",
     "govUrl": "https://www.ledu.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.ledu.gov.cn/html/article/news.html",
+      "text": "政务要闻",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "青海省/海东市/民和回族土族自治县",
@@ -24665,7 +25038,15 @@
     "key": "山东省/德州市/乐陵市",
     "level": "县区",
     "govUrl": "http://www.laoling.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.laoling.gov.cn/n30203422/n30204054/index.html",
+      "text": "乐陵要闻",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "山东省/德州市/临邑县",
@@ -27709,7 +28090,15 @@
     "key": "山西省/运城市/夏县",
     "level": "县区",
     "govUrl": "https://www.sxxiaxian.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.sxxiaxian.gov.cn/xwzx/index.shtml",
+      "text": "要闻动态",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "山西省/运城市/新绛县",
@@ -28385,7 +28774,15 @@
     "key": "陕西省/商洛市/商南县",
     "level": "县区",
     "govUrl": "https://www.shangnan.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "https://www.shangnan.gov.cn/xwzx/jrsn.htm",
+      "text": "今日商南",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "direct"
   },
   {
     "key": "陕西省/商洛市/商州区",
@@ -29020,13 +29417,29 @@
     "key": "陕西省/延安市/安塞区",
     "level": "县区",
     "govUrl": "https://www.ansai.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.ansai.gov.cn/xwzx/bdyw/1.html",
+      "text": "本地要闻",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "陕西省/延安市/宝塔区",
     "level": "县区",
     "govUrl": "https://www.baotaqu.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.baotaqu.gov.cn/xwzx/bdyw/1.html",
+      "text": "本地要闻",
+      "score": 100,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "陕西省/延安市/富县",
@@ -29677,7 +30090,15 @@
     "key": "四川省/阿坝藏族羌族自治州/小金县",
     "level": "县区",
     "govUrl": "https://www.xiaojin.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.xiaojin.gov.cn/xjxrmzf/c100050/nav_list.shtml",
+      "text": "政务动态",
+      "score": 75,
+      "source": "anchor",
+      "tier": "B",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "四川省/巴中市",
@@ -31299,7 +31720,8 @@
     "key": "四川省/遂宁市/船山区",
     "level": "县区",
     "govUrl": "http://www.chuanshan.gov.cn/",
-    "reason": "homepage-unreachable"
+    "reason": "no-route-found",
+    "accessMethod": "direct"
   },
   {
     "key": "四川省/遂宁市/大英县",
@@ -34601,7 +35023,15 @@
     "key": "云南省/楚雄彝族自治州/元谋县",
     "level": "县区",
     "govUrl": "https://www.yncxym.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.yncxym.gov.cn/xwdt.htm",
+      "text": "新闻动态",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "云南省/大理白族自治州",
@@ -35034,7 +35464,15 @@
     "key": "云南省/红河哈尼族彝族自治州/石屏县",
     "level": "县区",
     "govUrl": "https://hhsp.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://hhsp.gov.cn/xwzx.htm",
+      "text": "新闻资讯",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "云南省/红河哈尼族彝族自治州/元阳县",
@@ -36530,7 +36968,15 @@
     "key": "浙江省/丽水市/莲都区",
     "level": "县区",
     "govUrl": "https://www.liandu.gov.cn/",
-    "reason": "homepage-unreachable"
+    "picked": {
+      "url": "http://www.liandu.gov.cn/col/col1229369547/index.html",
+      "text": "今日莲都",
+      "score": 90,
+      "source": "anchor",
+      "tier": "A",
+      "validated": true
+    },
+    "accessMethod": "protocol-switch"
   },
   {
     "key": "浙江省/丽水市/龙泉市",

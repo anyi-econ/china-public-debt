@@ -28,7 +28,6 @@ data/chinabond-pre-issuance-attachments/
 # Data files not used by web frontend
 data/crawl-index.json
 data/chinabond-list.json
-data/website-gov.xlsx
 
 scripts/website_management/*.bak
 scripts/website_management/*-run.log

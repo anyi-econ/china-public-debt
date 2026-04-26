@@ -25,7 +25,7 @@ if (cat !== 'news' && cat !== 'industrial') {
 
 type GovRow = { key: string; url: string; level: '省级' | '地级' | '县区' };
 type Candidate = { url: string; text: string; score: number; source: string; tier?: 'A' | 'B' | 'C' | 'D'; validated?: boolean };
-type Result = { key: string; level: string; govUrl: string; picked?: Candidate; reason?: string };
+type Result = { key: string; level: string; govUrl: string; picked?: Candidate; reason?: string; accessMethod?: string };
 
 const flat: GovRow[] = JSON.parse(
   fs.readFileSync('scripts/website_management/gov-flat.json', 'utf8'),
@@ -138,11 +138,11 @@ function normalizeUrl(base: string, href: string): string | null {
     return u.toString();
   } catch { return null; }
 }
-async function fetchHtml(url: string, timeout = 12000): Promise<string | null> {
+async function fetchHtml(url: string, timeout = 12000, headers: Record<string, string> = HEADERS): Promise<string | null> {
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), timeout);
   try {
-    const res = await fetch(url, { headers: HEADERS, redirect: 'follow', signal: ctl.signal });
+    const res = await fetch(url, { headers, redirect: 'follow', signal: ctl.signal });
     if (!res.ok) return null;
     const ct = res.headers.get('content-type') || '';
     if (ct && !/text|html|xml/.test(ct)) return null;
@@ -156,6 +156,36 @@ async function fetchHtml(url: string, timeout = 12000): Promise<string | null> {
     if (text.length < 200) return null;
     return text;
   } catch { return null; } finally { clearTimeout(timer); }
+}
+
+// Multi-strategy homepage fetcher.
+// Returns { html, finalUrl, accessMethod } where accessMethod records what worked,
+// so callers can persist it for future-agent guidance.
+const UA_MOBILE = 'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36';
+const UA_BAIDU = 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)';
+
+async function fetchHomepage(url: string): Promise<{ html: string; finalUrl: string; accessMethod: string } | null> {
+  // 1. direct (default)
+  const h1 = await fetchHtml(url);
+  if (h1) return { html: h1, finalUrl: url, accessMethod: 'direct' };
+  // 2. protocol switch
+  let altUrl = url;
+  if (/^https:/i.test(url)) altUrl = url.replace(/^https:/i, 'http:');
+  else if (/^http:/i.test(url)) altUrl = url.replace(/^http:/i, 'https:');
+  if (altUrl !== url) {
+    const h2 = await fetchHtml(altUrl);
+    if (h2) return { html: h2, finalUrl: altUrl, accessMethod: 'protocol-switch' };
+  }
+  // 3. mobile UA
+  const h3 = await fetchHtml(url, 12000, { ...HEADERS, 'User-Agent': UA_MOBILE });
+  if (h3) return { html: h3, finalUrl: url, accessMethod: 'ua-mobile' };
+  // 4. baidu spider UA (some old portals whitelist spiders)
+  const h4 = await fetchHtml(url, 12000, { ...HEADERS, 'User-Agent': UA_BAIDU });
+  if (h4) return { html: h4, finalUrl: url, accessMethod: 'ua-baidu' };
+  // 5. longer timeout direct
+  const h5 = await fetchHtml(url, 25000);
+  if (h5) return { html: h5, finalUrl: url, accessMethod: 'slow-direct' };
+  return null;
 }
 function stripTags(s: string): string {
   return s.replace(/<script[\s\S]*?<\/script>/gi, '')
@@ -231,10 +261,13 @@ async function validate(c: Candidate): Promise<boolean> {
 }
 
 async function probeOne(row: GovRow): Promise<Result> {
-  const html = await fetchHtml(row.url);
+  const fetched = await fetchHomepage(row.url);
+  const html = fetched?.html ?? null;
+  const accessMethod = fetched?.accessMethod;
+  const baseUrl = fetched?.finalUrl ?? row.url;
   const cands: Candidate[] = [];
   if (html) {
-    for (const a of extractAnchors(row.url, html)) {
+    for (const a of extractAnchors(baseUrl, html)) {
       if (!sameBase(a.url, row.url)) continue;
       const { score, tier } = scoreCandidate(a.text, a.url);
       if (score >= 55) cands.push({ ...a, score, source: 'anchor', tier });
@@ -261,11 +294,11 @@ async function probeOne(row: GovRow): Promise<Result> {
       }
       // Tier A/B validated direct — accept immediately
       if (c.tier === 'A' || c.tier === 'B') {
-        return { key: row.key, level: row.level, govUrl: row.url, picked: c };
+        return { key: row.key, level: row.level, govUrl: row.url, picked: c, accessMethod };
       }
       // Tier D / unknown — accept too
       if (!c.tier || c.tier === 'D') {
-        return { key: row.key, level: row.level, govUrl: row.url, picked: c };
+        return { key: row.key, level: row.level, govUrl: row.url, picked: c, accessMethod };
       }
     }
   }
@@ -297,14 +330,14 @@ async function probeOne(row: GovRow): Promise<Result> {
         // Only escalate if at least as strong as the aggregator (Tier A/B), or Tier C with stronger geo signal
         if ((c.tier === 'A' || c.tier === 'B') && (await validate(c))) {
           c.validated = true;
-          return { key: row.key, level: row.level, govUrl: row.url, picked: c };
+          return { key: row.key, level: row.level, govUrl: row.url, picked: c, accessMethod };
         }
       }
     }
     // No deeper Tier A/B found — fall back to the aggregator pick
-    return { key: row.key, level: row.level, govUrl: row.url, picked: firstTierC };
+    return { key: row.key, level: row.level, govUrl: row.url, picked: firstTierC, accessMethod };
   }
-  return { key: row.key, level: row.level, govUrl: row.url, reason: html ? 'no-route-found' : 'homepage-unreachable' };
+  return { key: row.key, level: row.level, govUrl: row.url, reason: html ? 'no-route-found' : 'homepage-unreachable', accessMethod };
 }
 
 // ─────────────────────────── main loop (with progress + cache resume) ───
