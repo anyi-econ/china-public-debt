@@ -11,7 +11,7 @@ export default function NewsPage() {
       <PageIntro
         eyebrow="News & Commentary"
         title="新闻与讨论"
-        description="统一使用中国政府网与新华社等权威口径，并通过地区要闻导航直达各级政府门户本地新闻栏目。"
+        description="统一使用中国政府网与新华社等权威口径，并通过地区要闻导航与地区官媒导航直达各级政府门户新闻栏目和省级党报数字版入口。"
         meta={`共 ${items.length} 条权威稿件 · 按日期倒序`}
       />
 

@@ -4,12 +4,14 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import type { NewsItem } from "@/lib/types";
 import { NewsClient } from "@/components/pages/news-client";
+import { MediaSiteNav } from "@/components/pages/website-media-nav";
 import { NewsSiteNav } from "@/components/pages/website-news-nav";
 import { SectionCard } from "@/components/ui/section-card";
 
 const subTabs = [
   { key: "news-list", label: "权威解读与发布稿", dot: "#1B4965" },
   { key: "region-news", label: "地区要闻导航", dot: "#8B6914" },
+  { key: "region-media", label: "地区官媒导航", dot: "#8C3B2A" },
 ] as const;
 
 type TabKey = (typeof subTabs)[number]["key"];
@@ -42,6 +44,7 @@ export function NewsPageClient({ items }: { items: NewsItem[] }) {
           </SectionCard>
         )}
         {activeTab === "region-news" && <NewsSiteNav />}
+        {activeTab === "region-media" && <MediaSiteNav />}
       </div>
     </>
   );

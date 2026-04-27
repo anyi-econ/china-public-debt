@@ -17,6 +17,10 @@ import { useState } from "react";
 export interface RegionLinkNode {
   name: string;
   url: string;
+  leaderCollections?: Array<{
+    label: string;
+    url: string;
+  }>;
   children?: RegionLinkNode[];
 }
 
@@ -262,15 +266,48 @@ export function RegionLinkNav({ regions, title, parentLinkLabel, coverageNote }:
           )}
         </div>
 
-        {parent && parent.url && (
-          <a
-            href={parent.url}
-            target="_blank"
-            rel="noreferrer"
-            className="mb-3 block rounded border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2 text-[0.9rem] font-semibold hover:border-[var(--color-link)] hover:text-[var(--color-link)]"
-          >
-            {parentLinkLabel(parent.name)}
-          </a>
+        {parent && (parent.url || (parent.leaderCollections?.length ?? 0) > 0) && (
+          <div className="mb-3 rounded border border-[var(--color-border)] bg-[var(--color-surface)] p-3">
+            {parent.url ? (
+              <a
+                href={parent.url}
+                target="_blank"
+                rel="noreferrer"
+                className="block text-[0.9rem] font-semibold hover:text-[var(--color-link)]"
+              >
+                {parentLinkLabel(parent.name)}
+              </a>
+            ) : (
+              <div className="text-[0.9rem] font-semibold text-[var(--color-ink)]">
+                {parentLinkLabel(parent.name)}
+              </div>
+            )}
+
+            {(parent.leaderCollections?.length ?? 0) > 0 && (
+              <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                {parent.leaderCollections?.map((item) =>
+                  item.url ? (
+                    <a
+                      key={item.label}
+                      href={item.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded border border-[var(--color-border)] bg-white px-3 py-2 text-center text-[0.82rem] font-medium text-[var(--color-link)] transition hover:border-[var(--color-link)]"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <span
+                      key={item.label}
+                      className="rounded border border-dashed border-[var(--color-border)] bg-white px-3 py-2 text-center text-[0.82rem] text-[var(--color-muted)]"
+                    >
+                      {item.label}
+                    </span>
+                  ),
+                )}
+              </div>
+            )}
+          </div>
         )}
 
         {items.length > 0 ? (
